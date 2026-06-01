@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import Marquee from "../components/Marquee.astro";
+import Section from "../components/Section.astro";
+import ServicesGrid from "../components/ServicesGrid.astro";
+import PortfolioGrid from "../components/PortfolioGrid.astro";
+import AnimatedCounter from "../components/AnimatedCounter.astro";
+import Testimonials from "../components/Testimonials.astro";
+import FAQ from "../components/FAQ.astro";
+import CTASection from "../components/CTASection.astro";
+import MoveYourMouse from "../components/MoveYourMouse.astro";
+import Button from "../components/Button.astro";
+import { stats } from "../data/site";
+---
+<BaseLayout
+  title="Professional Websites, Marketing & Digital Solutions"
+  description="Cozelos Data is a premium digital agency in Vernal, Utah. Custom websites, SEO, video, advertising, branding, and automation built to grow your business."
+>
+  <Hero />
+
+  <Marquee />
+
+  <!-- Interactive statistics -->
+  <Section class="!py-16">
+    <div class="reveal grid grid-cols-2 gap-8 rounded-[var(--radius-xl2)] border border-[var(--border)] bg-[var(--surface-2)] p-10 sm:gap-12 lg:grid-cols-4">
+      {stats.map((s) => (
+        <AnimatedCounter value={s.value} suffix={s.suffix} label={s.label} class="reveal" />
+      ))}
+    </div>
+  </Section>
+
+  <!-- Services preview -->
+  <Section
+    eyebrow="What We Do"
+    title="Six disciplines. One unified system."
+    lead="We don't sell isolated deliverables — we build a digital system designed to compound. Every service connects to the next."
+  >
+    <ServicesGrid />
+    <div class="mt-10 flex justify-center">
+      <Button href="/services/" variant="secondary" size="lg" icon="arrow">Explore all services</Button>
+    </div>
+  </Section>
+
+  <!-- Featured projects -->
+  <Section
+    eyebrow="Selected Work"
+    title="Real businesses. Real transformations."
+    lead="A growing roster of businesses we've moved from generic templates to modern digital systems."
+  >
+    <PortfolioGrid featuredFirst />
+    <div class="mt-10 flex justify-center">
+      <Button href="/portfolio/" variant="secondary" size="lg" icon="arrow">See the full portfolio</Button>
+    </div>
+  </Section>
+
+  <!-- Wow factor -->
+  <MoveYourMouse />
+
+  <!-- Testimonials -->
+  <Section
+    eyebrow="Client Voices"
+    title="They didn't just get a website."
+    center
+  >
+    <Testimonials />
+  </Section>
+
+  <!-- FAQ -->
+  <Section
+    eyebrow="Common Questions"
+    title="Everything you actually want to ask."
+    lead="Pricing, timelines, ownership — straight answers before you ever get on a call."
+    center
+  >
+    <FAQ limit={5} />
+    <div class="mt-8 text-center">
+      <Button href="/contact/" variant="ghost" icon="arrow">Still have a question? Ask us</Button>
+    </div>
+  </Section>
+
+  <CTASection />
+</BaseLayout>

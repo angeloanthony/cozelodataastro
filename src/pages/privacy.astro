@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import { site } from "../data/site";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Privacy", href: "/privacy/" },
+];
+const updated = "January 2026";
+
+const sections = [
+  { h: "Information we collect", p: "When you contact us through our website, request a quote, or become a client, we may collect your name, email address, phone number, business name, and any project details you choose to share. We also collect standard, anonymized analytics data such as pages visited and general location to improve our site." },
+  { h: "How we use your information", p: "We use your information solely to respond to inquiries, deliver and support the services you've requested, send invoices, and communicate about your projects. We do not sell, rent, or trade your personal information to third parties." },
+  { h: "Cookies & analytics", p: "Our site may use privacy-respecting analytics to understand aggregate traffic patterns. These tools do not identify you personally. You can disable cookies in your browser settings at any time without losing access to the site." },
+  { h: "Data security", p: "We use encrypted hosting and secure development workflows. Payment information is handled exclusively by PCI-compliant third-party processors — we never store full card details on our systems." },
+  { h: "Third-party services", p: "We may use trusted third-party providers for hosting, analytics, email, and payment processing. Each operates under its own privacy policy, and we only share the minimum information necessary to deliver our services." },
+  { h: "Your rights", p: "You may request access to, correction of, or deletion of the personal information we hold about you at any time. Contact us and we'll respond promptly." },
+  { h: "Changes to this policy", p: "We may update this policy as our practices evolve. Material changes will be reflected by the updated date at the top of this page." },
+];
+---
+<BaseLayout
+  title="Privacy Policy"
+  description="How Cozelos Data collects, uses, and protects your information."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero eyebrow="Legal" title="Privacy Policy" lead={`Last updated: ${updated}`} breadcrumbs={breadcrumbs} />
+
+  <section class="container-x pb-20">
+    <div class="reveal mx-auto max-w-3xl space-y-8">
+      <p class="text-lg leading-relaxed text-[var(--text-muted)]">
+        {site.name} ("we," "us," or "our") respects your privacy. This policy explains what information we collect and how we use it when you visit our website or work with us.
+      </p>
+      {sections.map((s) => (
+        <div>
+          <h2 class="font-display text-xl font-bold tracking-tight">{s.h}</h2>
+          <p class="mt-2 leading-relaxed text-[var(--text-muted)]">{s.p}</p>
+        </div>
+      ))}
+      <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface-2)] p-6">
+        <h2 class="font-display text-xl font-bold tracking-tight">Contact us</h2>
+        <p class="mt-2 leading-relaxed text-[var(--text-muted)]">
+          Questions about this policy? Email <a href={site.emailHref} class="font-semibold text-[var(--color-brand)] hover:underline">{site.email}</a> or call <a href={site.phoneHref} class="font-semibold text-[var(--color-brand)] hover:underline">{site.phone}</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

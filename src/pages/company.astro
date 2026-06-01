@@ -1,0 +1,116 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Section from "../components/Section.astro";
+import Timeline from "../components/Timeline.astro";
+import Credentials from "../components/Credentials.astro";
+import CTASection from "../components/CTASection.astro";
+import Button from "../components/Button.astro";
+import Icon from "../components/Icon.astro";
+import { site, values } from "../data/site";
+import { getImage } from "../lib/images";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Company", href: "/company/" },
+];
+
+const officeImg = getImage("CozeloOffice.webp");
+---
+<BaseLayout
+  title="About Cozelos Data — Premium Digital Agency in Vernal, Utah"
+  description="Cozelos Data is a WOSB digital agency in Vernal, Utah, built on a conviction: too many great businesses run on websites that don't match the quality of their work."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow="Who We Are"
+    title="A digital agency built in Utah."
+    lead="Cozelos Data exists because too many great businesses run on websites that don't match the quality of their work. We build the kind of digital presence that finally does."
+    breadcrumbs={breadcrumbs}
+  />
+
+  <!-- Story -->
+  <Section eyebrow="Our Story" title="Big-city quality. Built right here.">
+    <div class="grid gap-10 lg:grid-cols-2">
+      <div class="reveal space-y-4 text-lg leading-relaxed text-[var(--text-muted)]">
+        <p>We started Cozelos Data after watching one too many business owners pay thousands for cookie-cutter websites that didn't load fast, didn't rank, and didn't convert. The frustration was personal.</p>
+        <p>So we built our own playbook — pillar-and-spoke architecture, hand-written code, cinematic motion design, structured data graphs, AI integration — and started applying it to clients across the Uintah Basin and beyond.</p>
+        <p>Today, our work powers tour operators, hotels, healthcare practices, storage facilities, pest control companies, luxury services, and genealogy researchers. The common thread: businesses that take their craft seriously and want their digital presence to do the same.</p>
+      </div>
+      <div class="reveal" data-delay="120">
+        <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8">
+          <h3 class="font-display text-xl font-bold tracking-tight">Our philosophy</h3>
+          <p class="mt-3 text-[var(--text-muted)]">A website should be your best salesperson — working 24/7, never tired, never off-message, closing leads while you sleep.</p>
+          <p class="mt-3 text-[var(--text-muted)]">We build websites the way you'd build a flagship retail location: as a unified statement of who you are, where you are, and why someone should choose you. Then we keep them running — updated, optimized, and faster every quarter, not slower.</p>
+          <div class="mt-6 flex items-center gap-3 rounded-2xl bg-[var(--surface-3)] p-4">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-[var(--color-brand)] text-white"><Icon name="pin" size={18} /></span>
+            <div class="text-sm">
+              <p class="font-semibold text-[var(--text)]">Headquartered in Vernal, Utah</p>
+              <p class="text-[var(--text-subtle)]">Serving clients across the country</p>
+            </div>
+          </div>
+          {officeImg && (
+            <div class="mt-5 overflow-hidden rounded-2xl border border-[var(--border)]">
+              <Image
+                src={officeImg}
+                alt="Cozelos Data office in Vernal, Utah"
+                widths={[400, 700]}
+                sizes="(min-width: 1024px) 38vw, 92vw"
+                loading="lazy"
+                decoding="async"
+                format="webp"
+                class="w-full object-cover"
+              />
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Values -->
+  <Section
+    eyebrow="What We Believe"
+    title="Six principles. Zero exceptions."
+    lead="Our values aren't a wall poster — they're operating instructions for everything we ship."
+  >
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {values.map((v, i) => (
+        <div data-delay={i * 50} class="reveal group rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7 transition-colors hover:border-[var(--color-brand)]/40">
+          <span class="font-mono text-sm font-semibold text-[var(--color-brand)]">{v.n}</span>
+          <h3 class="mt-3 font-display text-lg font-bold tracking-tight">{v.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{v.body}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <!-- Timeline -->
+  <Section eyebrow="The Journey" title="How we got here." center>
+    <Timeline />
+  </Section>
+
+  <!-- Government contracting -->
+  <Section
+    id="government"
+    eyebrow="Federal · State · Local"
+    title="Built for government work."
+    lead="A WOSB-eligible, credentialed digital agency ready to support agencies with web development, SEO, video documentation, and AI tooling — without the overhead of large primes."
+  >
+    <Credentials />
+
+    <div class="reveal mt-8 grid gap-6 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 lg:grid-cols-2 lg:items-center">
+      <div>
+        <h3 class="font-display text-xl font-bold tracking-tight">Need a capability statement?</h3>
+        <p class="mt-2 text-[var(--text-muted)]">We'll prepare and send a current capability statement tailored to your acquisition file, typically within 24 business hours. Have a solicitation? Send the SOL number and we'll respond with capability fit.</p>
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row lg:justify-end">
+        <Button href={site.emailHref} icon="mail">Request Statement</Button>
+        <Button href="/contact/" variant="secondary">Schedule a Call</Button>
+      </div>
+    </div>
+  </Section>
+
+  <CTASection />
+</BaseLayout>

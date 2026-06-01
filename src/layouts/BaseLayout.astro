@@ -1,0 +1,144 @@
+---
+/**
+ * BaseLayout — wraps every page. Loads fonts, global CSS, the SEO head,
+ * enables Astro View Transitions, and renders the shared header & footer.
+ */
+import { ClientRouter } from "astro:transitions";
+import Seo from "../components/Seo.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+interface Crumb { name: string; href: string; }
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  breadcrumbs?: Crumb[];
+  serviceName?: string;
+}
+
+const { title, description, image, breadcrumbs, serviceName } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#b91c1c" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Preconnect to font host for faster first paint -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Geist+Mono:wght@400;500&display=swap"
+    />
+
+    <!-- Prevent dark-mode flash: apply stored / system preference before paint -->
+    <script is:inline>
+      (function () {
+        try {
+          const stored = localStorage.getItem("theme");
+          const prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          if (stored === "dark" || (!stored && prefersDark)) {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <Seo
+      title={title}
+      description={description}
+      image={image}
+      breadcrumbs={breadcrumbs}
+      serviceName={serviceName}
+    />
+
+    <!-- Tawk.to live chat — loaded once, kept alive across View Transitions -->
+    <script is:inline>
+      (function () {
+        // Inject the Tawk widget a single time per full page load.
+        if (!window.__tawkLoaded) {
+          window.__tawkLoaded = true;
+          window.Tawk_API = window.Tawk_API || {};
+          window.Tawk_LoadStart = new Date();
+          var s = document.createElement("script");
+          s.async = true;
+          s.src = "https://embed.tawk.to/6a1d2b484c7c4c1c2e811631/1jq0v254a";
+          s.setAttribute("charset", "UTF-8");
+          s.setAttribute("crossorigin", "*");
+          document.head.appendChild(s);
+        }
+
+        // Tawk injects its widget directly into <body>. Astro's ClientRouter
+        // replaces <body> on every client-side navigation, which would discard
+        // the widget — leaving it broken until a full refresh. So, right before
+        // a navigation swaps the body, move Tawk's nodes into #tawk-root, a
+        // container Astro carries across navigations intact (transition:persist).
+        // We only touch the widget at navigation time, never during normal use,
+        // so the chat behaves exactly as it would on a plain page load.
+        if (!window.__tawkStowBound) {
+          window.__tawkStowBound = true;
+          document.addEventListener("astro:before-swap", function () {
+            var root = document.getElementById("tawk-root");
+            if (!root) return;
+            // Tawk's widget is a <body>-level <div> holding iframes whose src is
+            // blank — and its id/class are randomized on every load, so we match
+            // on structure, not id. The site's own iframes (e.g. the contact-page
+            // map) live inside <main> with real URLs, so they're never caught.
+            var kids = Array.prototype.slice.call(document.body.children);
+            for (var i = 0; i < kids.length; i++) {
+              var el = kids[i];
+              if (el === root || root.contains(el) || el.tagName !== "DIV") continue;
+              var frame = el.querySelector("iframe");
+              if (!frame) continue;
+              var src = frame.getAttribute("src") || "";
+              if (src === "" || src === "about:blank") root.appendChild(el);
+            }
+          });
+        }
+      })();
+    </script>
+
+    <!-- Smooth, animated page-to-page navigation -->
+    <ClientRouter />
+  </head>
+
+  <body>
+    <!-- Skip link for keyboard / screen-reader users -->
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-[var(--color-brand)] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+    >Skip to content</a>
+
+    <Header />
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <Footer />
+
+    <!--
+      Persisted home for the Tawk.to chat widget. Astro carries elements with
+      transition:persist across client-side navigations, so the chat (moved in
+      here by the script in <head>) stays alive instead of being wiped on each
+      page change. Keep this present on every page.
+    -->
+    <div id="tawk-root" transition:persist="tawk-root"></div>
+
+    <!-- Global interactions -->
+    <script>
+      import "../scripts/main.ts";
+    </script>
+  </body>
+</html>

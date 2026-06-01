@@ -1,0 +1,18 @@
+---
+/**
+ * SectionLabel — small uppercase eyebrow pill that sits above section headings.
+ */
+interface Props {
+  class?: string;
+}
+const { class: className = "" } = Astro.props;
+---
+<span
+  class:list={[
+    "inline-flex items-center gap-2 rounded-full border border-[var(--border-strong)] bg-[var(--surface-2)] px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--text-muted)]",
+    className,
+  ]}
+>
+  <span class="h-1.5 w-1.5 rounded-full bg-[var(--color-brand)]"></span>
+  <slot />
+</span>

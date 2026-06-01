@@ -1,0 +1,80 @@
+---
+/**
+ * ServicesGrid — interactive service cards with 3D tilt (data-tilt), a
+ * cursor-tracking glow, a self-drawing border on hover, and an icon that
+ * animates independently of the card.
+ */
+import { Image } from "astro:assets";
+import { services } from "../data/site";
+import Icon from "./Icon.astro";
+import { getImage } from "../lib/images";
+
+interface Props {
+  limit?: number;
+}
+const { limit } = Astro.props;
+const list = limit ? services.slice(0, limit) : services;
+---
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {list.map((s, i) => {
+    const img = s.image ? getImage(s.image) : undefined;
+    return (
+    <a
+      href={`/services/#${s.slug}`}
+      data-tilt="7"
+      data-delay={i * 60}
+      class="reveal group relative flex flex-col overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7 transition-[box-shadow,border-color] duration-300 hover:border-transparent hover:shadow-2xl hover:shadow-[var(--color-brand)]/10"
+      style="transform-style: preserve-3d;"
+    >
+      <!-- Cursor-follow glow -->
+      <span
+        class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        style="background: radial-gradient(260px circle at var(--mx,50%) var(--my,50%), color-mix(in srgb, var(--color-brand) 14%, transparent), transparent 70%);"
+        aria-hidden="true"
+      ></span>
+
+      <!-- Self-drawing animated border -->
+      <span class="pointer-events-none absolute inset-0 rounded-3xl" aria-hidden="true">
+        <span class="absolute left-0 top-0 h-[2px] w-0 bg-[var(--color-brand)] transition-[width] duration-300 group-hover:w-full"></span>
+        <span class="absolute right-0 top-0 h-0 w-[2px] bg-[var(--color-brand)] transition-[height] delay-150 duration-300 group-hover:h-full"></span>
+        <span class="absolute bottom-0 right-0 h-[2px] w-0 bg-[var(--color-brand)] transition-[width] delay-300 duration-300 group-hover:w-full"></span>
+        <span class="absolute bottom-0 left-0 h-0 w-[2px] bg-[var(--color-brand)] transition-[height] delay-[450ms] duration-300 group-hover:h-full"></span>
+      </span>
+
+      <div class="relative flex items-center justify-between" style="transform: translateZ(40px);">
+        <span class="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)] transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-[var(--color-brand)] group-hover:text-white">
+          <Icon name={s.icon} size={26} />
+        </span>
+        <span class="font-mono text-sm font-medium text-[var(--text-subtle)]">{s.index}</span>
+      </div>
+
+      {img && (
+        <div class="relative mt-5 overflow-hidden rounded-2xl border border-[var(--border)]" style="transform: translateZ(15px);">
+          <Image
+            src={img}
+            alt={`${s.title} preview`}
+            widths={[300, 450, 600]}
+            sizes="(min-width: 1024px) 26vw, (min-width: 640px) 44vw, 88vw"
+            loading="lazy"
+            decoding="async"
+            format="webp"
+            class="aspect-[16/10] w-full object-cover transition-transform duration-700 ease-[var(--ease-out-quint)] group-hover:scale-105"
+          />
+        </div>
+      )}
+
+      <h3 class="relative mt-6 font-display text-xl font-bold tracking-tight" style="transform: translateZ(30px);">
+        {s.title}
+      </h3>
+      <p class="relative mt-2 flex-1 text-sm leading-relaxed text-[var(--text-muted)]" style="transform: translateZ(20px);">
+        {s.short}
+      </p>
+
+      <span class="relative mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-brand)]" style="transform: translateZ(25px);">
+        Learn more
+        <Icon name="arrow" size={16} class="transition-transform duration-300 group-hover:translate-x-1.5" />
+      </span>
+    </a>
+    );
+  })}
+</div>

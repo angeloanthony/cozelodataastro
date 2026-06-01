@@ -1,0 +1,34 @@
+---
+/**
+ * Section — consistent vertical rhythm + optional centered heading block.
+ */
+import SectionLabel from "./SectionLabel.astro";
+
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  lead?: string;
+  center?: boolean;
+  class?: string;
+  id?: string;
+}
+const { eyebrow, title, lead, center = false, class: className = "", id } = Astro.props;
+---
+<section id={id} class:list={["container-x py-20", className]}>
+  {(eyebrow || title || lead) && (
+    <div class:list={["mb-12 max-w-2xl", center && "mx-auto text-center"]}>
+      {eyebrow && (
+        <div class:list={["reveal", center && "flex justify-center"]}>
+          <SectionLabel>{eyebrow}</SectionLabel>
+        </div>
+      )}
+      {title && (
+        <h2 class="reveal mt-4 font-display text-3xl font-extrabold tracking-tight sm:text-4xl" data-delay="60">{title}</h2>
+      )}
+      {lead && (
+        <p class="reveal mt-4 text-lg leading-relaxed text-[var(--text-muted)]" data-delay="120">{lead}</p>
+      )}
+    </div>
+  )}
+  <slot />
+</section>

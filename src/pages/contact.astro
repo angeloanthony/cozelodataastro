@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Section from "../components/Section.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Icon from "../components/Icon.astro";
+import { site } from "../data/site";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Contact", href: "/contact/" },
+];
+
+const mapQuery = encodeURIComponent(
+  `${site.address.street}, ${site.address.city}, ${site.address.region} ${site.address.postal}`
+);
+---
+<BaseLayout
+  title="Contact Cozelos Data — Get a Quote"
+  description="Tell us about your business and we'll tell you what we'd build and what it would cost. Based in Vernal, Utah. Call (435) 219-5120 or send a message."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow="Start a Project"
+    title="Let's talk about your business."
+    lead="Tell us your goal and we'll tell you exactly what we'd build — and what it would actually cost. No sales pressure, and we reply within one business day."
+    breadcrumbs={breadcrumbs}
+  />
+
+  <Section class="!pt-4">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <!-- Form -->
+      <div class="reveal lg:col-span-7">
+        <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7 sm:p-9">
+          <h2 class="font-display text-2xl font-extrabold tracking-tight">Send a message</h2>
+          <p class="mt-2 text-[var(--text-muted)]">Text or call us — we reply fast.</p>
+          <div class="mt-7">
+            <ContactForm />
+          </div>
+        </div>
+      </div>
+
+      <!-- Details -->
+      <div class="reveal space-y-5 lg:col-span-5" data-delay="120">
+        <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7">
+          <h2 class="font-display text-xl font-bold tracking-tight">Reach us directly</h2>
+          <ul class="mt-5 space-y-4 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="phone" size={18} /></span>
+              <span><span class="block text-[var(--text-subtle)]">Phone</span><a href={site.phoneHref} class="font-semibold text-[var(--text)] hover:text-[var(--color-brand)]">{site.phone}</a></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="mail" size={18} /></span>
+              <span><span class="block text-[var(--text-subtle)]">Email</span><a href={site.emailHref} class="font-semibold text-[var(--text)] hover:text-[var(--color-brand)]">{site.email}</a></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="pin" size={18} /></span>
+              <span><span class="block text-[var(--text-subtle)]">Office</span><span class="font-semibold text-[var(--text)]">{site.address.street}<br />{site.address.city}, {site.address.region} {site.address.postal}</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="clock" size={18} /></span>
+              <span><span class="block text-[var(--text-subtle)]">Hours</span><span class="font-semibold text-[var(--text)]">{site.hours}</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Map -->
+        <div class="reveal overflow-hidden rounded-3xl border border-[var(--border)]" data-delay="180">
+          <iframe
+            title="Cozelos Data office location map"
+            width="100%"
+            height="260"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            style="border:0; display:block;"
+            src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>

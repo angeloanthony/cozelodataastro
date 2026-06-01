@@ -1,0 +1,189 @@
+---
+import { Image } from "astro:assets";
+import { projects } from "../data/site";
+import Icon from "./Icon.astro";
+import { getImage } from "../lib/images";
+
+interface Props {
+  limit?: number;
+  featuredOnly?: boolean;
+  featuredFirst?: boolean;
+}
+const { limit, featuredOnly = false, featuredFirst = false } = Astro.props;
+
+let list = featuredOnly ? projects.filter((p) => p.featured) : [...projects];
+if (featuredFirst) {
+  list = [...list].sort((a, b) => Number(b.featured ?? false) - Number(a.featured ?? false));
+}
+if (limit) list = list.slice(0, limit);
+---
+
+<div class="relative">
+  <div 
+    id="portfolio-carousel"
+    class="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-12 scrollbar-hide"
+    style="scrollbar-width: none; -ms-overflow-style: none;"
+  >
+    {list.map((p) => {
+      const img = p.image ? getImage(p.image) : undefined;
+      return (
+        <article
+          class="reveal group relative min-w-[92vw] sm:min-w-[440px] flex-shrink-0 snap-start overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+          style={`--accent:${p.accent}`}
+        >
+          <!-- Image Container -->
+          <div class="relative aspect-[16/10] overflow-hidden">
+            {img ? (
+              <Image
+                src={img}
+                alt={`${p.name}`}
+                widths={[500, 800, 1200]}
+                sizes="(min-width: 768px) 440px, 92vw"
+                loading="lazy"
+                class="h-full w-full object-cover transition-all duration-700 group-hover:scale-110"
+              />
+            ) : (
+              <div class="h-full w-full" style={`background: radial-gradient(130% 130% at 30% 20%, color-mix(in srgb, ${p.accent} 60%, #111827), #111827);`}></div>
+            )}
+
+            <!-- Category Badge -->
+            <span class="absolute top-6 right-6 px-5 py-1.5 text-xs font-semibold tracking-widest rounded-full bg-black/70 text-white backdrop-blur-md border border-white/10">
+              {p.category}
+            </span>
+
+            <!-- Subtle shine overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+          </div>
+
+          <!-- Content -->
+          <div class="p-8">
+            <h3 class="font-display text-2xl font-bold tracking-tight leading-tight">{p.name}</h3>
+            <p class="mt-3 text-[var(--text-muted)] leading-relaxed">{p.summary}</p>
+
+            <!-- Results -->
+            <div class="mt-8 grid grid-cols-3 gap-6 border-t border-[var(--border)] pt-8">
+              {p.results.map((r) => (
+                <div class="text-center">
+                  <div class="font-display text-3xl font-extrabold tracking-tighter" style={`color: ${p.accent}`}>{r.metric}</div>
+                  <div class="text-xs uppercase tracking-[0.5px] text-[var(--text-subtle)] mt-1 font-medium">{r.label}</div>
+                </div>
+              ))}
+            </div>
+
+            <!-- CTA -->
+            <a
+              href={p.liveUrl ?? `/portfolio/#${p.slug}`}
+              {...(p.liveUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              class="mt-10 group/btn relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-[var(--color-brand)] to-red-600 py-4 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl active:scale-[0.985]"
+            >
+              <span class="relative z-10 flex items-center gap-2">
+                {p.liveUrl ? "Visit Website" : "View Case Study"}
+                <Icon name={p.liveUrl ? "external" : "arrow"} size={18} class="transition-transform group-hover/btn:translate-x-1" />
+              </span>
+            </a>
+          </div>
+        </article>
+      );
+    })}
+  </div>
+
+  <!-- Dots -->
+  <div id="carousel-dots" class="flex justify-center gap-3 mt-10"></div>
+
+  <!-- Arrows -->
+  <button id="prev-btn" class="absolute -left-3 top-1/2 z-30 hidden md:flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-xl border border-[var(--border)] text-3xl hover:bg-gray-50 transition-all active:scale-95">
+    ←
+  </button>
+  <button id="next-btn" class="absolute -right-3 top-1/2 z-30 hidden md:flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-xl border border-[var(--border)] text-3xl hover:bg-gray-50 transition-all active:scale-95">
+    →
+  </button>
+</div>
+
+<script>
+  function initPortfolioCarousel() {
+    const carousel = document.getElementById("portfolio-carousel");
+    const dotsContainer = document.getElementById("carousel-dots");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    if (!carousel || !dotsContainer) return;
+    const carouselEl = carousel as HTMLElement;
+    const dotsEl = dotsContainer as HTMLElement;
+
+    const cards = Array.from(carouselEl.children) as HTMLElement[];
+    if (cards.length === 0) return;
+    let currentIndex = 0;
+
+    // Build dots
+    dotsEl.innerHTML = cards
+      .map(
+        (_, i) => `
+      <button aria-label="Go to slide ${i + 1}" class="dot w-3 h-3 rounded-full transition-all ${
+          i === 0 ? "bg-[var(--color-brand)] scale-125" : "bg-gray-300 dark:bg-gray-600"
+        }"></button>`
+      )
+      .join("");
+
+    const dots = Array.from(dotsEl.querySelectorAll<HTMLButtonElement>(".dot"));
+
+    const cardStep = () => {
+      const first = cards[0];
+      const second = cards[1];
+      // Real distance between two cards (covers any gap), falling back to width.
+      if (second) return second.offsetLeft - first.offsetLeft;
+      return first.offsetWidth;
+    };
+
+    // True when all cards already fit without scrolling — controls are pointless.
+    const fitsWithoutScroll = () => carouselEl.scrollWidth <= carouselEl.clientWidth + 4;
+
+    function updateControlsVisibility() {
+      const fits = fitsWithoutScroll();
+      dotsEl.style.display = fits ? "none" : "flex";
+      // Arrow buttons keep their responsive `hidden md:flex`; just toggle when fitting.
+      [prevBtn, nextBtn].forEach((btn) => {
+        if (!btn) return;
+        btn.style.display = fits ? "none" : "";
+      });
+    }
+
+    function updateDots() {
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("bg-[var(--color-brand)]", i === currentIndex);
+        dot.classList.toggle("scale-125", i === currentIndex);
+        dot.classList.toggle("bg-gray-300", i !== currentIndex);
+        dot.classList.toggle("dark:bg-gray-600", i !== currentIndex);
+      });
+    }
+
+    function goTo(index: number) {
+      currentIndex = (index + cards.length) % cards.length; // wrap around
+      carouselEl.scrollTo({ left: currentIndex * cardStep(), behavior: "smooth" });
+      updateDots();
+    }
+
+    prevBtn?.addEventListener("click", () => goTo(currentIndex - 1));
+    nextBtn?.addEventListener("click", () => goTo(currentIndex + 1));
+    dots.forEach((dot, i) => dot.addEventListener("click", () => goTo(i)));
+
+    // Keep dots in sync with manual / touch scrolling.
+    let scrollRaf = 0;
+    carouselEl.addEventListener("scroll", () => {
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = requestAnimationFrame(() => {
+        const step = cardStep();
+        if (step > 0) {
+          currentIndex = Math.round(carouselEl.scrollLeft / step);
+          updateDots();
+        }
+      });
+    });
+
+    window.addEventListener("resize", updateControlsVisibility);
+    updateControlsVisibility();
+    updateDots();
+  }
+
+  // Run on first load and on every client-side navigation (ClientRouter).
+  document.addEventListener("astro:page-load", initPortfolioCarousel);
+</script>

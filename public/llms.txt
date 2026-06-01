@@ -1,0 +1,29 @@
+# Cozelos Data
+
+> Premium digital agency in Vernal, Utah. We build custom websites, SEO, video, online marketing, branding, and business automation for local and government clients.
+
+## About
+Cozelos Data is a Woman-Owned Small Business (WOSB) digital agency headquartered in Vernal, Utah. We build cinematic, fast, search-optimized websites and the marketing systems that make them work. Clients own everything we build — domain, hosting, code, and content.
+
+- Phone: (435) 219-5120
+- Email: info@cozelosdata.com
+- Location: 431 East Main St. Suite 201, Vernal, UT 84078
+- Hours: Mon–Fri 9:00 AM – 5:00 PM MT
+
+## Services
+- Website Design & Development: Custom, mobile-first, sub-second websites starting at $1,000.
+- SEO Optimization: Pillar-and-spoke architecture, JSON-LD schema, AI search optimization.
+- Video Production: 4K aerial drone footage, on-location filming, cinematic color grading.
+- Online Marketing: Meta & Google Ads, conversion tracking, landing pages, monthly reporting.
+- Business Automation: AI assistants, scheduling, CRM integration, workflow automation.
+- Ongoing Support: Maintenance from $50/month — updates, backups, monitoring, optimization.
+
+## Government Contracting
+WOSB-eligible. DUNS 059220399. CAGE 897W0. NAICS 513210, 541511 (primary), 541512, 541513. Section 508 / WCAG 2.1 AA accessible. Capability statement available on request.
+
+## Key Pages
+- Home: https://cozelosdata.com/
+- Services: https://cozelosdata.com/services/
+- Portfolio: https://cozelosdata.com/portfolio/
+- Company: https://cozelosdata.com/company/
+- Contact: https://cozelosdata.com/contact/

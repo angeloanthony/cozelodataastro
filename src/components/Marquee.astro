@@ -1,0 +1,28 @@
+---
+/**
+ * Marquee — an infinite, pause-on-hover scrolling band of the industries and
+ * clients Cozelos Data serves. Text-based to stay crisp and dependency-free.
+ */
+const items = [
+  "Tour Operators", "Hotels", "Healthcare", "Pest Control", "Self Storage",
+  "Genealogy", "Luxury Services", "Law Firms", "Restaurants", "Contractors",
+  "Government", "Medicare",
+];
+// Duplicate the list so the -50% translate loops seamlessly.
+const loop = [...items, ...items];
+---
+<div transition:persist class="marquee relative overflow-hidden border-y border-[var(--border)] bg-[var(--surface-2)] py-6">
+  <!-- Edge fades -->
+  <div class="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-[var(--surface-2)] to-transparent"></div>
+  <div class="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-[var(--surface-2)] to-transparent"></div>
+
+  <div class="marquee-track flex w-max items-center gap-10" aria-hidden="true">
+    {loop.map((item) => (
+      <span class="flex items-center gap-10">
+        <span class="font-display text-lg font-bold tracking-tight text-[var(--text-subtle)] transition-colors hover:text-[var(--color-brand)]">{item}</span>
+        <span class="h-1.5 w-1.5 rounded-full bg-[var(--color-brand)]/40"></span>
+      </span>
+    ))}
+  </div>
+  <span class="sr-only">Industries served: {items.join(", ")}</span>
+</div>

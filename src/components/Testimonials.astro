@@ -1,0 +1,108 @@
+---
+/**
+ * Testimonials — an accessible, auto-advancing carousel with manual controls
+ * and dot indicators. Pauses on hover/focus. All logic is vanilla and
+ * re-initializes after View Transitions.
+ */
+import { testimonials } from "../data/site";
+import Icon from "./Icon.astro";
+---
+<div class="reveal relative mx-auto max-w-3xl" data-testimonials>
+  <div class="relative overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-12">
+    <!-- Decorative quote mark -->
+    <span class="absolute right-8 top-4 font-display text-[7rem] leading-none text-[var(--color-brand)]/10 select-none">&rdquo;</span>
+
+    <div data-slides class="relative">
+      {testimonials.map((t, i) => (
+        <figure
+          data-slide={i}
+          class:list={[
+            "transition-opacity duration-500",
+            i === 0 ? "" : "absolute inset-0 opacity-0 pointer-events-none",
+          ]}
+        >
+          <div class="flex gap-1 text-[var(--color-brand)]">
+            {Array.from({ length: 5 }).map(() => <Icon name="star" size={18} class="fill-current" />)}
+          </div>
+          <blockquote class="mt-5 font-display text-xl font-semibold leading-relaxed tracking-tight text-[var(--text)] sm:text-2xl">
+            {t.quote}
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-3">
+            <span class="grid h-11 w-11 place-items-center rounded-full bg-[var(--color-brand)] font-display text-sm font-bold text-white">
+              {t.author.split(" ").map((w) => w[0]).slice(0, 2).join("")}
+            </span>
+            <span>
+              <span class="block font-semibold text-[var(--text)]">{t.author}</span>
+              <span class="block text-sm text-[var(--text-subtle)]">{t.role}</span>
+            </span>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="mt-6 flex items-center justify-center gap-4">
+    <button data-prev type="button" aria-label="Previous testimonial" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]">
+      <Icon name="arrow" size={18} class="rotate-180" />
+    </button>
+    <div data-dots class="flex items-center gap-2">
+      {testimonials.map((_, i) => (
+        <button data-dot={i} type="button" aria-label={`Go to testimonial ${i + 1}`} class:list={["h-2 rounded-full transition-all duration-300", i === 0 ? "w-6 bg-[var(--color-brand)]" : "w-2 bg-[var(--border-strong)]"]}></button>
+      ))}
+    </div>
+    <button data-next type="button" aria-label="Next testimonial" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]">
+      <Icon name="arrow" size={18} />
+    </button>
+  </div>
+</div>
+
+<script>
+  function initTestimonials() {
+    const root = document.querySelector<HTMLElement>("[data-testimonials]");
+    if (!root || root.dataset.init) return;
+    root.dataset.init = "true";
+
+    const slides = Array.from(root.querySelectorAll<HTMLElement>("[data-slide]"));
+    const dots = Array.from(root.querySelectorAll<HTMLElement>("[data-dot]"));
+    let idx = 0;
+    let timer: number | undefined;
+
+    const show = (n: number) => {
+      idx = (n + slides.length) % slides.length;
+      slides.forEach((s, i) => {
+        const active = i === idx;
+        s.classList.toggle("opacity-0", !active);
+        s.classList.toggle("pointer-events-none", !active);
+        s.classList.toggle("absolute", !active);
+        s.classList.toggle("inset-0", !active);
+      });
+      dots.forEach((d, i) => {
+        const active = i === idx;
+        d.classList.toggle("w-6", active);
+        d.classList.toggle("bg-[var(--color-brand)]", active);
+        d.classList.toggle("w-2", !active);
+        d.classList.toggle("bg-[var(--border-strong)]", !active);
+      });
+    };
+
+    const next = () => show(idx + 1);
+    const start = () => {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      stop();
+      timer = window.setInterval(next, 6000);
+    };
+    const stop = () => timer && clearInterval(timer);
+
+    root.querySelector("[data-next]")?.addEventListener("click", () => { next(); start(); });
+    root.querySelector("[data-prev]")?.addEventListener("click", () => { show(idx - 1); start(); });
+    dots.forEach((d, i) => d.addEventListener("click", () => { show(i); start(); }));
+    root.addEventListener("mouseenter", stop);
+    root.addEventListener("mouseleave", start);
+    root.addEventListener("focusin", stop);
+    root.addEventListener("focusout", start);
+
+    start();
+  }
+  document.addEventListener("astro:page-load", initTestimonials);
+</script>

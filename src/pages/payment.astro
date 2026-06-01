@@ -1,0 +1,91 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Section from "../components/Section.astro";
+import CTASection from "../components/CTASection.astro";
+import Icon from "../components/Icon.astro";
+import { site } from "../data/site";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Pay", href: "/payment/" },
+];
+
+const steps = [
+  { icon: "mail", title: "Get your invoice", body: "We email a detailed invoice with your project reference number and the amount due." },
+  { icon: "card", title: "Pay securely", body: "Use the secure link in your invoice, or contact us for ACH, card, or check options." },
+  { icon: "check", title: "Instant confirmation", body: "You receive a receipt immediately, and we get straight back to work." },
+];
+
+const faqs = [
+  { q: "What payment methods do you accept?", a: "Major credit and debit cards, ACH bank transfer, and business checks. Recurring maintenance plans can be set to auto-pay." },
+  { q: "Is online payment secure?", a: "Yes. Payments are processed through a PCI-compliant, encrypted payment processor. We never see or store your full card details." },
+  { q: "When is payment due?", a: "Most projects are billed 50% to start and 50% at launch. Maintenance plans are billed monthly. Terms are always confirmed in writing first." },
+  { q: "Can I get a receipt or W-9?", a: "Absolutely. Receipts are automatic, and we're happy to provide a W-9 or any documentation your bookkeeping needs." },
+];
+---
+<BaseLayout
+  title="Pay Your Invoice — Cozelos Data"
+  description="Securely pay your Cozelos Data invoice. We accept card, ACH, and check, with instant receipts and PCI-compliant processing."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow="Client Payments"
+    title="Pay your invoice securely."
+    lead="Already a client? Use the secure link from your invoice email, or reach out and we'll send a fresh payment link right away."
+    breadcrumbs={breadcrumbs}
+  />
+
+  <Section class="!pt-4">
+    <div class="reveal mx-auto max-w-2xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 text-center sm:p-12">
+      <span class="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="lock" size={30} /></span>
+      <h2 class="mt-6 font-display text-2xl font-extrabold tracking-tight">Make a payment</h2>
+      <p class="mx-auto mt-3 max-w-md text-[var(--text-muted)]">For your security, payment links are generated per invoice. Contact us with your invoice number and we'll send your secure payment link immediately.</p>
+      <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a href={`${site.emailHref}?subject=Invoice%20Payment`} class="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-7 py-3.5 font-semibold text-white transition-transform hover:-translate-y-0.5"><Icon name="card" size={18} />Request Payment Link</a>
+        <a href={site.phoneHref} class="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--border-strong)] px-7 py-3.5 font-semibold transition-colors hover:border-[var(--color-brand)]"><Icon name="phone" size={18} />{site.phone}</a>
+      </div>
+      <div class="mt-7 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-[var(--text-subtle)]">
+        <span class="inline-flex items-center gap-1.5"><Icon name="shield" size={14} class="text-[var(--color-brand)]" />PCI compliant</span>
+        <span class="inline-flex items-center gap-1.5"><Icon name="lock" size={14} class="text-[var(--color-brand)]" />256-bit encryption</span>
+        <span class="inline-flex items-center gap-1.5"><Icon name="check" size={14} class="text-[var(--color-brand)]" />Instant receipt</span>
+      </div>
+    </div>
+  </Section>
+
+  <Section eyebrow="How It Works" title="Three simple steps." center>
+    <div class="grid gap-6 md:grid-cols-3">
+      {steps.map((s, i) => (
+        <div data-delay={i * 60} class="reveal rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7 text-center">
+          <span class="mx-auto grid h-12 w-12 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name={s.icon} size={22} /></span>
+          <h3 class="mt-4 font-display text-lg font-bold tracking-tight">{s.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{s.body}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <Section eyebrow="Payment Questions" title="Good to know." center>
+    <div class="mx-auto max-w-3xl divide-y divide-[var(--border)] overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)]">
+      {faqs.map((f) => (
+        <details class="group" name="pay-faq">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-display text-base font-semibold tracking-tight transition-colors hover:text-[var(--color-brand)] [&::-webkit-details-marker]:hidden">
+            {f.q}
+            <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-all duration-300 group-open:rotate-45 group-open:border-[var(--color-brand)] group-open:text-[var(--color-brand)]"><span class="text-xl leading-none">+</span></span>
+          </summary>
+          <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-[var(--ease-out-quint)] group-open:grid-rows-[1fr]">
+            <div class="overflow-hidden"><p class="px-6 pb-6 text-[15px] leading-relaxed text-[var(--text-muted)]">{f.a}</p></div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </Section>
+
+  <CTASection
+    title="Not a client yet?"
+    body="See what we'd build for your business — and what it would cost."
+    primaryLabel="Start a Project"
+    secondaryLabel="View Services"
+    secondaryHref="/services/"
+  />
+</BaseLayout>

@@ -1,0 +1,182 @@
+---
+/**
+ * Header — sticky glass navigation with:
+ *  - active link highlighting
+ *  - animated underlines
+ *  - responsive mobile menu (no JS framework needed)
+ *  - persistent dark mode toggle
+ *  - a thin scroll-progress indicator 
+ */
+import { Image } from "astro:assets";
+import logoImg from "../assets/cozeloslogo.webp";
+
+import { site, primaryNav } from "../data/site";
+import Icon from "./Icon.astro";
+import Button from "./Button.astro";
+
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === "/" ? path === "/" : path.startsWith(href);
+
+---
+<header
+  id="site-header"
+  class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+  transition:persist
+>
+  <!-- Scroll progress bar -->
+  <div
+    id="scroll-progress"
+    class="absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-[var(--color-brand)]"
+    aria-hidden="true"
+  ></div>
+
+  <nav class="container-x" aria-label="Primary">
+    <div
+      class="mt-3 flex items-center justify-between rounded-2xl border border-[var(--glass-border)] px-4 py-2.5 transition-all duration-300 [.is-scrolled_&]:shadow-lg [.is-scrolled_&]:shadow-black/5 glass"
+    >
+      <!-- Logo -->
+      <a href="/" class="group flex items-center gap-3" aria-label={`${site.name} home`}>
+  <Image
+  src={logoImg}
+  alt="Cozelos Data"
+  width={200}
+  class="h-12 w-auto"
+ />
+
+  <span class="font-display text-3xl font-extrabold tracking-tight text-red-600">
+  COZELOS DATA
+</span>
+</a>
+
+      <!-- Desktop nav -->
+      <ul class="hidden items-center gap-1 lg:flex">
+        {primaryNav.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              aria-current={isActive(item.href) ? "page" : undefined}
+              class:list={[
+                "link-underline rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200",
+                isActive(item.href)
+                  ? "text-[var(--color-brand)]"
+                  : "text-[var(--text-muted)] hover:text-[var(--text)]",
+              ]}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="flex items-center gap-2">
+        <!-- Dark mode toggle -->
+        <button
+          id="theme-toggle"
+          type="button"
+          class="grid h-9 w-9 place-items-center rounded-xl border border-[var(--border)] text-[var(--text-muted)] transition-colors duration-200 hover:text-[var(--color-brand)]"
+          aria-label="Toggle dark mode"
+        >
+          <Icon name="sun" size={18} class="hidden dark:block" />
+          <Icon name="moon" size={18} class="block dark:hidden" />
+        </button>
+
+        <div class="hidden lg:block">
+          <Button href="/contact/" size="md" magnetic icon="arrow">Get a Quote</Button>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          id="menu-open"
+          type="button"
+          class="grid h-9 w-9 place-items-center rounded-xl border border-[var(--border)] text-[var(--text)] lg:hidden"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <Icon name="menu" size={20} />
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile menu overlay -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-[60] translate-x-full transition-transform duration-400 ease-[var(--ease-spring)] lg:hidden"
+  aria-hidden="true"
+>
+  <div class="absolute inset-0 bg-[var(--surface)]"></div>
+  <div class="relative flex h-full flex-col p-6">
+    <div class="flex items-center justify-between">
+      <span class="font-display text-lg font-extrabold">Menu</span>
+      <button
+        id="menu-close"
+        type="button"
+        class="grid h-10 w-10 place-items-center rounded-xl border border-[var(--border)]"
+        aria-label="Close menu"
+      >
+        <Icon name="close" size={22} />
+      </button>
+    </div>
+
+    <ul class="mt-10 flex flex-col gap-1">
+      {primaryNav.map((item, i) => (
+        <li>
+          <a
+            href={item.href}
+            class="flex items-center justify-between rounded-2xl px-4 py-4 font-display text-2xl font-bold text-[var(--text)] transition-colors hover:bg-[var(--surface-3)] hover:text-[var(--color-brand)]"
+            style={`transition-delay:${i * 40}ms`}
+          >
+            {item.label}
+            <Icon name="arrow" size={22} class="text-[var(--text-subtle)]" />
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <div class="mt-auto space-y-4">
+      <Button href="/contact/" size="lg" icon="arrow" class="w-full">Get a Quote</Button>
+      <div class="flex flex-col gap-1 text-sm text-[var(--text-muted)]">
+        <a href={site.phoneHref} class="font-semibold text-[var(--text)]">{site.phone}</a>
+        <a href={site.emailHref}>{site.email}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Mobile menu + dark mode wiring. Re-runs after View Transitions.
+  function wireHeader() {
+    const menu = document.getElementById("mobile-menu");
+    const open = document.getElementById("menu-open");
+    const close = document.getElementById("menu-close");
+
+    const setMenu = (show: boolean) => {
+      if (!menu) return;
+      menu.classList.toggle("translate-x-full", !show);
+      menu.setAttribute("aria-hidden", String(!show));
+      open?.setAttribute("aria-expanded", String(show));
+      document.body.style.overflow = show ? "hidden" : "";
+    };
+
+    open?.addEventListener("click", () => setMenu(true));
+    close?.addEventListener("click", () => setMenu(false));
+    menu?.querySelectorAll("a").forEach((a) =>
+      a.addEventListener("click", () => setMenu(false))
+    );
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setMenu(false);
+    });
+
+    const toggle = document.getElementById("theme-toggle");
+    toggle?.addEventListener("click", () => {
+      const isDark = document.documentElement.classList.toggle("dark");
+      try {
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+      } catch {}
+    });
+  }
+  document.addEventListener("astro:page-load", wireHeader);
+</script>

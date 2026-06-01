@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Section from "../components/Section.astro";
+import CTASection from "../components/CTASection.astro";
+import Icon from "../components/Icon.astro";
+import { services } from "../data/site";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Services", href: "/services/" },
+];
+
+// Explainer video shown in the hero. Replace this with your YouTube video ID
+// (the part after "v=" in the URL, e.g. youtube.com/watch?v=ABC123 → "ABC123").
+const heroVideoId = "Z8G8vGcDxss";
+---
+<BaseLayout
+  title="Web Design, SEO, Video & Marketing Services"
+  description="Six unified digital services from one Vernal, Utah team: custom website design, SEO, video production, online marketing, business automation, and ongoing support."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow="What We Do"
+    title="Six disciplines. One unified system."
+    lead="Every service connects to the next — no coordinating multiple vendors, no gaps between design, content, and marketing. Each section below answers the only three questions that matter: what problem it solves, why you should care, and what results to expect."
+    breadcrumbs={breadcrumbs}
+  >
+    <!-- Hero explainer video: floats gently, lifts toward you on hover -->
+    <figure class="group w-full">
+      <!-- Float layer (continuous bob; pauses while hovered) -->
+      <div class="animate-float group-hover:[animation-play-state:paused]">
+        <!-- Lift layer (interactive: rises + scales on hover) -->
+        <div class="relative transition-transform duration-500 ease-out will-change-transform group-hover:-translate-y-2.5 group-hover:scale-[1.015]">
+          <!-- Brand glow that blooms behind the frame on hover -->
+          <div
+            class="pointer-events-none absolute -inset-4 -z-10 rounded-[2rem] bg-[var(--color-brand)]/30 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
+            aria-hidden="true"
+          ></div>
+          <!-- The framed video -->
+          <div class="overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] shadow-xl shadow-black/10 transition-shadow duration-500 ease-out group-hover:shadow-2xl group-hover:shadow-[var(--color-brand)]/25">
+            <div class="aspect-video">
+              <iframe
+                class="h-full w-full"
+                src={`https://www.youtube-nocookie.com/embed/${heroVideoId}`}
+                title="How Cozelos Data works — a quick overview"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption class="mt-4 text-sm text-[var(--text-subtle)]">
+        Watch a 90-second overview of how we work and what you can expect.
+      </figcaption>
+    </figure>
+  </PageHero>
+
+  {services.map((s) => (
+    <Section id={s.slug} class="!py-16">
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+        <!-- Left: intro -->
+        <div class="reveal lg:col-span-5 lg:sticky lg:top-28">
+          <div class="flex items-center gap-4">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]">
+              <Icon name={s.icon} size={26} />
+            </span>
+            <span class="font-mono text-sm text-[var(--text-subtle)]">{s.index} / {s.title.split(" ")[0].toUpperCase()}</span>
+          </div>
+          <h2 class="mt-5 font-display text-3xl font-extrabold tracking-tight">{s.title}</h2>
+          <p class="mt-3 text-lg text-[var(--text-muted)]">{s.short}</p>
+
+          <div class="mt-6 space-y-4">
+            <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface-2)] p-5">
+              <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--color-brand)]">The problem</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{s.problem}</p>
+            </div>
+            <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface-2)] p-5">
+              <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--color-brand)]">Why it matters</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{s.why}</p>
+            </div>
+            <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface-2)] p-5">
+              <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--color-brand)]">What you can expect</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{s.results}</p>
+            </div>
+          </div>
+
+          <a href="/contact/" class="mt-6 inline-flex items-center gap-2 rounded-full bg-[var(--color-brand)] px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">
+            {s.cta}<Icon name="arrow" size={16} />
+          </a>
+        </div>
+
+        <!-- Right: benefits / process / deliverables -->
+        <div class="reveal space-y-6 lg:col-span-7" data-delay="120">
+          <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7">
+            <h3 class="font-display text-lg font-bold tracking-tight">Benefits</h3>
+            <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+              {s.benefits.map((b) => (
+                <li class="flex items-start gap-2.5 text-sm text-[var(--text-muted)]">
+                  <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-[var(--color-brand)]/15 text-[var(--color-brand)]"><Icon name="check" size={13} /></span>
+                  {b}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7">
+              <h3 class="font-display text-lg font-bold tracking-tight">Our process</h3>
+              <ol class="mt-4 space-y-3">
+                {s.process.map((step, n) => (
+                  <li class="flex items-center gap-3 text-sm text-[var(--text-muted)]">
+                    <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-[var(--color-brand)]/40 font-mono text-xs font-bold text-[var(--color-brand)]">{n + 1}</span>
+                    {step}
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7">
+              <h3 class="font-display text-lg font-bold tracking-tight">Deliverables</h3>
+              <ul class="mt-4 space-y-3">
+                {s.deliverables.map((d) => (
+                  <li class="flex items-center gap-2.5 text-sm text-[var(--text-muted)]">
+                    <Icon name="doc" size={16} class="shrink-0 text-[var(--color-brand)]" />{d}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+  ))}
+
+  <CTASection
+    title="Not sure which service you need?"
+    body="Tell us your goal. We'll tell you exactly what we'd build and what it would cost — no obligation."
+  />
+</BaseLayout>

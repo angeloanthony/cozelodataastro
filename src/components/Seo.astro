@@ -1,0 +1,129 @@
+---
+/**
+ * Seo — centralizes all <head> metadata: title, description, canonical,
+ * Open Graph, Twitter cards, and JSON-LD structured data (LocalBusiness +
+ * optional Service / Breadcrumb graphs).
+ */
+import { site } from "../data/site";
+
+interface Crumb { name: string; href: string; }
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  type?: "website" | "article";
+  breadcrumbs?: Crumb[];
+  serviceName?: string;
+}
+
+const {
+  title,
+  description = site.description,
+  image = "/og-image.svg",
+  type = "website",
+  breadcrumbs,
+  serviceName,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, site.url).href;
+const ogImage = new URL(image, site.url).href;
+const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+
+// --- Structured data graph -------------------------------------------------
+const graph: Record<string, unknown>[] = [
+  {
+    "@type": ["ProfessionalService", "Organization"],
+    "@id": `${site.url}/#organization`,
+    name: site.name,
+    url: site.url,
+    description: site.description,
+    telephone: site.phone,
+    email: site.email,
+    priceRange: "$$",
+    founder: { "@type": "Person", name: site.founder },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: site.address.street,
+      addressLocality: site.address.city,
+      addressRegion: site.address.region,
+      postalCode: site.address.postal,
+      addressCountry: site.address.country,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: site.geo.latitude,
+      longitude: site.geo.longitude,
+    },
+    areaServed: [
+      { "@type": "City", name: "Vernal" },
+      { "@type": "AdministrativeArea", name: "Uintah Basin" },
+      { "@type": "State", name: "Utah" },
+      { "@type": "Country", name: "United States" },
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "17:00",
+      },
+    ],
+    identifier: [
+      { "@type": "PropertyValue", name: "DUNS", value: site.credentials.duns },
+      { "@type": "PropertyValue", name: "CAGE", value: site.credentials.cage },
+    ],
+  },
+  {
+    "@type": "WebSite",
+    "@id": `${site.url}/#website`,
+    url: site.url,
+    name: site.name,
+    publisher: { "@id": `${site.url}/#organization` },
+  },
+];
+
+if (serviceName) {
+  graph.push({
+    "@type": "Service",
+    name: serviceName,
+    provider: { "@id": `${site.url}/#organization` },
+    areaServed: { "@type": "State", name: "Utah" },
+  });
+}
+
+if (breadcrumbs?.length) {
+  graph.push({
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      item: new URL(c.href, site.url).href,
+    })),
+  });
+}
+
+const jsonLd = { "@context": "https://schema.org", "@graph": graph };
+---
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+<!-- Open Graph -->
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={site.name} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<!-- Structured data -->
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />

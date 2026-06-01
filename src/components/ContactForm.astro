@@ -1,0 +1,91 @@
+---
+import { site } from "../data/site";
+import Icon from "./Icon.astro";
+---
+<div class="space-y-6">
+  <p class="text-[var(--text-muted)] leading-relaxed">
+    Tap below to start a live chat with us right here — no app required.
+    We usually reply within minutes during business hours.
+  </p>
+
+  <div class="flex flex-wrap items-center gap-4">
+    <button
+      type="button"
+      data-tawk-open
+      class="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--color-brand)]/25 transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-xl"
+    >
+      <Icon name="chat" size={18} />
+      <span>Text us now</span>
+    </button>
+
+    <a
+      href={site.phoneHref}
+      class="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--border-strong)] bg-[var(--surface)] px-6 py-3.5 text-base font-semibold text-[var(--text)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
+    >
+      <Icon name="phone" size={18} />
+      <span>Call us</span>
+    </a>
+  </div>
+
+  <p class="text-sm text-[var(--text-subtle)]">
+    No sales pressure. Prefer email?
+    <a href={site.emailHref} class="font-medium text-[var(--color-brand)] hover:underline">{site.email}</a>
+  </p>
+</div>
+
+<script>
+  // Open the Tawk.to live chat when "Text us now" is clicked.
+  //
+  // Tawk loads asynchronously and only finishes a couple of seconds after the
+  // page is ready, so `maximize` often isn't available on an early click. When
+  // that happens we show a brief loading state and open the chat the moment the
+  // widget finishes loading — rather than bouncing to the SMS link (which would
+  // pop the desktop "pick an app" dialog). SMS is only used as a last resort.
+  document.addEventListener("astro:page-load", () => {
+    document.querySelectorAll<HTMLElement>("[data-tawk-open]").forEach((btn) => {
+      if (btn.dataset.tawkWired) return;
+      btn.dataset.tawkWired = "1";
+
+      const canOpen = () =>
+        typeof window.Tawk_API?.maximize === "function";
+
+      btn.addEventListener("click", () => {
+        // Chat already loaded → open immediately.
+        if (canOpen()) {
+          window.Tawk_API!.maximize!();
+          return;
+        }
+
+        // Not ready yet (Tawk still downloading on a first, uncached visit).
+        // Show a loading state and poll until `maximize` exists — the same
+        // ready state a refresh reaches — then open. We deliberately do NOT
+        // rely on Tawk_API.onLoad here: Tawk captures that callback internally
+        // when it loads, so one assigned after the fact is silently ignored.
+        const label = btn.querySelector("span");
+        const original = label?.textContent ?? "";
+        btn.setAttribute("aria-busy", "true");
+        if (label) label.textContent = "Connecting…";
+
+        const reset = () => {
+          btn.removeAttribute("aria-busy");
+          if (label) label.textContent = original;
+        };
+
+        let waited = 0;
+        const poll = window.setInterval(() => {
+          waited += 250;
+          if (canOpen()) {
+            window.clearInterval(poll);
+            reset();
+            window.Tawk_API!.maximize!();
+          } else if (waited >= 12000) {
+            // Genuinely failed to load (blocked / offline) → SMS fallback.
+            window.clearInterval(poll);
+            reset();
+            window.location.href = "sms:+14352195120";
+          }
+        }, 250);
+      });
+    });
+  });
+</script>

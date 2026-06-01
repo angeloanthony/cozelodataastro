@@ -1,0 +1,30 @@
+---
+/**
+ * FAQ — accessible accordion built on native <details>/<summary>, enhanced with
+ * a smooth height/opacity reveal and a rotating chevron. Works without JS.
+ */
+import { faqs } from "../data/site";
+
+interface Props {
+  limit?: number;
+}
+const { limit } = Astro.props;
+const list = limit ? faqs.slice(0, limit) : faqs;
+---
+<div class="mx-auto max-w-3xl divide-y divide-[var(--border)] overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)]">
+  {list.map((f, i) => (
+    <details class="group" data-delay={i * 40} name="faq">
+      <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-display text-base font-semibold tracking-tight transition-colors hover:text-[var(--color-brand)] [&::-webkit-details-marker]:hidden">
+        {f.q}
+        <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-all duration-300 group-open:rotate-45 group-open:border-[var(--color-brand)] group-open:text-[var(--color-brand)]">
+          <span class="text-xl leading-none">+</span>
+        </span>
+      </summary>
+      <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-[var(--ease-out-quint)] group-open:grid-rows-[1fr]">
+        <div class="overflow-hidden">
+          <p class="px-6 pb-6 text-[15px] leading-relaxed text-[var(--text-muted)]">{f.a}</p>
+        </div>
+      </div>
+    </details>
+  ))}
+</div>

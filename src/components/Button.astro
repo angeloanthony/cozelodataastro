@@ -1,0 +1,61 @@
+---
+/**
+ * Button — primary CTA primitive. Renders as <a> when href is set, else <button>.
+ * Supports a magnetic cursor-follow effect via data-magnetic (handled in main.ts).
+ */
+import Icon from "./Icon.astro";
+
+interface Props {
+  href?: string;
+  variant?: "primary" | "secondary" | "ghost";
+  size?: "md" | "lg";
+  magnetic?: boolean;
+  icon?: string;
+  class?: string;
+  type?: "button" | "submit";
+  id?: string;
+}
+
+const {
+  href,
+  variant = "primary",
+  size = "md",
+  magnetic = false,
+  icon,
+  class: className = "",
+  type = "button",
+  id,
+} = Astro.props;
+
+const base =
+  "group relative inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-tight transition-[transform,background,color,box-shadow] duration-300 ease-[var(--ease-spring)] will-change-transform focus-visible:outline-2 focus-visible:outline-offset-2";
+
+const sizes = {
+  md: "px-5 py-2.5 text-sm",
+  lg: "px-7 py-3.5 text-base",
+};
+
+const variants = {
+  primary:
+    "bg-[var(--color-brand)] text-white shadow-lg shadow-[var(--color-brand)]/25 hover:shadow-xl hover:shadow-[var(--color-brand)]/35 hover:-translate-y-0.5",
+  secondary:
+    "bg-[var(--surface)] text-[var(--text)] ring-1 ring-[var(--border-strong)] hover:ring-[var(--color-brand)] hover:-translate-y-0.5",
+  ghost:
+    "bg-transparent text-[var(--text)] hover:bg-[var(--surface-3)]",
+};
+
+const cls = [base, sizes[size], variants[variant], className].join(" ");
+const Tag = href ? "a" : "button";
+---
+<Tag
+  id={id}
+  class={cls}
+  href={href}
+  type={href ? undefined : type}
+  data-magnetic={magnetic ? "0.3" : undefined}
+>
+  <span class="relative z-10 flex items-center gap-2">
+    <slot />
+    {icon && <Icon name={icon} size={18} class="transition-transform duration-300 group-hover:translate-x-1" />}
+  </span>
+</Tag>
