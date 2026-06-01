@@ -55,6 +55,7 @@ const isActive = (href: string) =>
           <li>
             <a
               href={item.href}
+              data-nav-link
               aria-current={isActive(item.href) ? "page" : undefined}
               class:list={[
                 "link-underline rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200",
@@ -178,5 +179,26 @@ const isActive = (href: string) =>
       } catch {}
     });
   }
-  document.addEventListener("astro:page-load", wireHeader);
+
+  // The header is transition:persist'd, so its server-rendered active highlight
+  // is frozen from whatever page first rendered it. Recompute it on every
+  // navigation so the correct nav item is highlighted for the current page.
+  function updateActiveNav() {
+    const path = window.location.pathname;
+    const isActive = (href: string) =>
+      href === "/" ? path === "/" : path.startsWith(href);
+    document.querySelectorAll<HTMLAnchorElement>("[data-nav-link]").forEach((a) => {
+      const active = isActive(a.getAttribute("href") || "");
+      a.classList.toggle("text-[var(--color-brand)]", active);
+      a.classList.toggle("text-[var(--text-muted)]", !active);
+      a.classList.toggle("hover:text-[var(--text)]", !active);
+      if (active) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+  }
+
+  document.addEventListener("astro:page-load", () => {
+    wireHeader();
+    updateActiveNav();
+  });
 </script>

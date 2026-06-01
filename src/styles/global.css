@@ -305,3 +305,13 @@
   animation: float-bob 6s ease-in-out infinite;
   will-change: transform;
 }
+
+/* Horizontal nudge — hints that a carousel can be swiped sideways. */
+@keyframes bounce-x {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(7px); }
+}
+.animate-bounce-x {
+  animation: bounce-x 1.2s ease-in-out infinite;
+  will-change: transform;
+}
