@@ -17,6 +17,10 @@ const steps = [
   { icon: "check", title: "Instant confirmation", body: "You receive a receipt immediately, and we get straight back to work." },
 ];
 
+// When a Stripe Payment Link is configured, the button pays directly; otherwise
+// it falls back to requesting a per-invoice link by email.
+const hasStripeLink = site.stripePaymentLink.length > 0;
+
 const faqs = [
   { q: "What payment methods do you accept?", a: "Major credit and debit cards, ACH bank transfer, and business checks. Recurring maintenance plans can be set to auto-pay." },
   { q: "Is online payment secure?", a: "Yes. Payments are processed through a PCI-compliant, encrypted payment processor. We never see or store your full card details." },
@@ -40,9 +44,13 @@ const faqs = [
     <div class="reveal mx-auto max-w-2xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 text-center sm:p-12">
       <span class="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="lock" size={30} /></span>
       <h2 class="mt-6 font-display text-2xl font-extrabold tracking-tight">Make a payment</h2>
-      <p class="mx-auto mt-3 max-w-md text-[var(--text-muted)]">For your security, payment links are generated per invoice. Contact us with your invoice number and we'll send your secure payment link immediately.</p>
+      <p class="mx-auto mt-3 max-w-md text-[var(--text-muted)]">{hasStripeLink ? "Pay securely through our Stripe-protected checkout. Have your invoice number handy so we can match your payment." : "For your security, payment links are generated per invoice. Contact us with your invoice number and we'll send your secure payment link immediately."}</p>
       <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-        <a href={`${site.emailHref}?subject=Invoice%20Payment`} class="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-7 py-3.5 font-semibold text-white transition-transform hover:-translate-y-0.5"><Icon name="card" size={18} />Request Payment Link</a>
+        {hasStripeLink ? (
+          <a href={site.stripePaymentLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-7 py-3.5 font-semibold text-white transition-transform hover:-translate-y-0.5"><Icon name="card" size={18} />Pay Invoice Now</a>
+        ) : (
+          <a href={`${site.emailHref}?subject=Invoice%20Payment`} class="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-7 py-3.5 font-semibold text-white transition-transform hover:-translate-y-0.5"><Icon name="card" size={18} />Request Payment Link</a>
+        )}
         <a href={site.phoneHref} class="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--border-strong)] px-7 py-3.5 font-semibold transition-colors hover:border-[var(--color-brand)]"><Icon name="phone" size={18} />{site.phone}</a>
       </div>
       <div class="mt-7 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-[var(--text-subtle)]">

@@ -17,6 +17,10 @@ export const site = {
   email: "info@cozelosdata.com",
   emailHref: "mailto:info@cozelosdata.com",
   smsHref: "sms:+14352195120",
+  // Stripe-hosted Payment Link (Stripe Dashboard → Payments → Payment Links → Create).
+  // Paste the full https://buy.stripe.com/... URL here. Leave "" to fall back to
+  // the "request a link by email" button. Stripe account: acct_1FW1bTIMRuSrokBY.
+  stripePaymentLink: "https://buy.stripe.com/6oU14ocQQ59M0RZ5HObQY03",
   address: {
     street: "431 East Main St. Suite 201",
     city: "Vernal",
