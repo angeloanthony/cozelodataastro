@@ -5,15 +5,17 @@
  */
 import SectionLabel from "./SectionLabel.astro";
 import Icon from "./Icon.astro";
+import AiSummary from "./AiSummary.astro";
 
 interface Crumb { name: string; href: string; }
 interface Props {
   eyebrow: string;
   title: string;
   lead?: string;
+  summary?: string;
   breadcrumbs?: Crumb[];
 }
-const { eyebrow, title, lead, breadcrumbs = [] } = Astro.props;
+const { eyebrow, title, lead, summary, breadcrumbs = [] } = Astro.props;
 ---
 <section class="relative overflow-hidden pt-36 pb-14 sm:pt-44 sm:pb-20">
   <div class="bg-grid pointer-events-none absolute inset-0 -z-10 opacity-50" aria-hidden="true"></div>
@@ -53,6 +55,7 @@ const { eyebrow, title, lead, breadcrumbs = [] } = Astro.props;
         {lead && (
           <p class="reveal mt-5 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]" data-delay="180">{lead}</p>
         )}
+        {summary && <AiSummary class="mt-6">{summary}</AiSummary>}
       </div>
 
       {Astro.slots.has("default") && (

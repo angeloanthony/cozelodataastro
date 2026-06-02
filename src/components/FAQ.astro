@@ -10,7 +10,21 @@ interface Props {
 }
 const { limit } = Astro.props;
 const list = limit ? faqs.slice(0, limit) : faqs;
+
+// FAQPage structured data — emitted for exactly the questions rendered below,
+// so the schema always matches what's visible (Google's requirement). Lets
+// these Q&As qualify for FAQ rich results and feed AI Overview citations.
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: list.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
 ---
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} is:inline />
 <div class="mx-auto max-w-3xl divide-y divide-[var(--border)] overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)]">
   {list.map((f, i) => (
     <details class="group" data-delay={i * 40} name="faq">

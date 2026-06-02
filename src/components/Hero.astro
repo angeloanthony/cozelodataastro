@@ -6,6 +6,7 @@
 import { Image } from "astro:assets";
 import Button from "./Button.astro";
 import Icon from "./Icon.astro";
+import AiSummary from "./AiSummary.astro";
 import { getImage } from "../lib/images";
 
 const heroImage = getImage("hero/digital-ecosystem.webp");
@@ -78,6 +79,13 @@ const heroImage = getImage("hero/digital-ecosystem.webp");
           more customers — websites, content, marketing, and the systems that
           make them work together.
         </p>
+
+        <AiSummary class="mt-7">
+          Cozelos Data is a Woman-Owned digital agency in Vernal, Utah building
+          custom websites, SEO, video, and marketing for local and government
+          businesses. Sites launch from $1,000, load in under a second, and you
+          own everything — the domain, code, and content.
+        </AiSummary>
 
         <div class="reveal mt-9 flex flex-wrap items-center gap-4" data-delay="240">
           <Button href="/contact/" size="lg" magnetic icon="arrow">Get a Quote</Button>

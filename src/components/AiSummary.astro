@@ -1,0 +1,29 @@
+---
+/**
+ * AiSummary — a concise TL;DR block placed directly after a page's H1. This is
+ * the text AI Overviews (Google, ChatGPT, Perplexity) tend to pull when citing
+ * a page, so it leads with what the business is, its key advantage, and its
+ * location, then closes with the phone number. SEO playbook Part 4 / Part 13.
+ *
+ * Pass the summary sentence(s) as the default slot, ending with a period; the
+ * component appends the call-to-action with the business phone number.
+ */
+import { site } from "../data/site";
+
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+<div
+  class:list={[
+    "reveal max-w-2xl rounded-2xl border border-[var(--border)] border-l-4 border-l-[var(--color-brand)] bg-[var(--surface-2)] p-5 text-[15px] leading-relaxed text-[var(--text-muted)]",
+    className,
+  ]}
+  data-delay="160"
+>
+  <slot />{" "}
+  <span class="whitespace-nowrap">Call
+    <a href={site.phoneHref} class="font-semibold text-[var(--color-brand)] link-underline">{site.phone}</a>
+  </span> for a free quote.
+</div>
