@@ -81,3 +81,17 @@ import { stats } from "../data/site";
 
   <CTASection />
 </BaseLayout>
+
+<!--
+  Home-page-only background tint. This <style> ships only on the home page, so
+  overriding --surface here darkens the page background without touching other
+  routes. Both themes are nudged a step darker than the global defaults.
+-->
+<style is:global>
+  :root {
+    --surface: #f1f5f9;
+  }
+  .dark {
+    --surface: #06070b;
+  }
+</style>
