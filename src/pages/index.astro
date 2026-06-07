@@ -4,7 +4,7 @@ import Hero from "../components/Hero.astro";
 import Marquee from "../components/Marquee.astro";
 import Section from "../components/Section.astro";
 import ServicesGrid from "../components/ServicesGrid.astro";
-import PortfolioGrid from "../components/PortfolioGrid.astro";
+import FeaturedProjects from "../components/FeaturedProjects.astro";
 import AnimatedCounter from "../components/AnimatedCounter.astro";
 import Testimonials from "../components/Testimonials.astro";
 import FAQ from "../components/FAQ.astro";
@@ -42,15 +42,15 @@ import { stats } from "../data/site";
     </div>
   </Section>
 
-  <!-- Featured projects -->
+  <!-- Featured work — teaser cards that drive exploration of the Portfolio page -->
   <Section
-    eyebrow="Selected Work"
+    eyebrow="Featured Work"
     title="Real businesses. Real transformations."
-    lead="A growing roster of businesses we've moved from generic templates to modern digital systems."
+    lead="A glimpse of the work. See the full case studies — stack, results, and live sites — in the portfolio."
   >
-    <PortfolioGrid featuredFirst />
+    <FeaturedProjects />
     <div class="mt-10 flex justify-center">
-      <Button href="/portfolio/" variant="secondary" size="lg" icon="arrow">See the full portfolio</Button>
+      <Button href="/portfolio/" variant="ghost" icon="arrow">See all projects</Button>
     </div>
   </Section>
 

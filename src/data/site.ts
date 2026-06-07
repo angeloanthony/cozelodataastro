@@ -300,6 +300,8 @@ export type Project = {
   name: string;
   category: string;
   summary: string;
+  /** Short, plain-English subtitle for homepage teaser cards. Falls back to `summary`. */
+  tagline?: string;
   overview: string;
   services: string[];
   stack: string[];
@@ -316,6 +318,7 @@ export const projects: Project[] = [
     name: "Forebear Find",
     category: "Genealogy",
     summary: "Italian genealogy & dual citizenship research service.",
+    tagline: "Italian Genealogy & Dual Citizenship",
     overview:
       "A bilingual (English / Italian) research firm specializing in Italian jure sanguinis citizenship and vital record retrieval. We built a 30+ page pillar-and-spoke site mapping geographic and regional service areas, with structured data and AI search optimization throughout.",
     services: ["Website Design", "SEO", "Content Architecture", "Maintenance"],
@@ -335,6 +338,7 @@ export const projects: Project[] = [
     name: "ParkingWay.it",
     category: "Parking Management",
     summary: "Modern parking management platform and business website.",
+    tagline: "Parking Management Platform",
     overview:
       "A parking management platform designed to streamline reservations, customer communications, and parking operations. Built with a modern user experience, responsive design, and SEO-focused architecture.",
     services: ["Website Design", "SEO", "Business Automation"],
@@ -372,6 +376,7 @@ export const projects: Project[] = [
     name: "Best Western Vernal Inn",
     category: "Hospitality",
     summary: "Cinematic Ken Burns hero · canonical SEO rebuild.",
+    tagline: "Hotel Website & Direct Bookings",
     overview:
       "A hospitality rebuild featuring a cinematic Ken Burns hero, a clean canonical SEO structure, and a rates presentation engineered for direct bookings.",
     services: ["Website Design", "SEO", "Maintenance"],
@@ -384,12 +389,14 @@ export const projects: Project[] = [
     accent: "#1D4ED8",
     image: "portfolio/best-western.webp",
     liveUrl: "https://bestwesternvernalinn.com",
+    featured: true,
   },
   {
     slug: "vernal-medicare",
     name: "Vernal Medicare",
     category: "Healthcare",
     summary: "27 SEO pages · 5-phase rollout · CMS compliance.",
+    tagline: "Medicare Insurance Practice",
     overview:
       "A licensed Medicare insurance practice built on a split-sitemap architecture across 27+ SEO pages, with CMS compliance baked into every page and an AEP anchor calendar.",
     services: ["Website Design", "SEO", "Compliance"],
@@ -402,6 +409,7 @@ export const projects: Project[] = [
     accent: "#0E7490",
     image: "portfolio/vernalmedicare.webp",        // ← Added
     liveUrl: "https://vernalmedicare.com",
+    featured: true,
   },
   {
     slug: "high-class-limousine",

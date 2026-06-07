@@ -1,0 +1,88 @@
+---
+/**
+ * FeaturedProjects — homepage "Featured Work" row.
+ *
+ * A CURATED showcase, not the full catalog. It shows only projects flagged
+ * `featured` (capped), so the homepage stays small forever — whether you have 6
+ * client sites or 150, this section never grows. The full, searchable list lives
+ * on the Portfolio page; the "See all projects" link funnels visitors there.
+ *
+ * Desktop: a clean 2×2 grid that instantly communicates quality (no carousel —
+ * grids out-engage carousels here). Mobile: a swipeable snap row, cards ~one
+ * viewport wide so the next one peeks, with dot indicators.
+ */
+import { projects } from "../data/site";
+import ProjectCard from "./ProjectCard.astro";
+
+interface Props {
+  /** Max teaser cards to show. The homepage should stay curated, never exhaustive. */
+  limit?: number;
+}
+const { limit = 5 } = Astro.props;
+
+// Only featured projects, capped. Add `featured: true` in site.ts to surface a
+// project here; everything else stays on the Portfolio page automatically.
+const list = projects.filter((p) => p.featured).slice(0, limit);
+---
+
+<div class="relative">
+  <div
+    id="featured-carousel"
+    class="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 -mx-4 px-4 scrollbar-hide md:mx-0 md:grid md:grid-cols-2 md:gap-7 md:overflow-visible md:px-0 md:pb-0"
+    style="scrollbar-width: none; -ms-overflow-style: none;"
+  >
+    {list.map((p) => (
+      <ProjectCard project={p} variant="featured" class="w-[78vw] flex-shrink-0 snap-start md:w-auto" />
+    ))}
+  </div>
+
+  <!-- Swipe dots — mobile only (desktop is a static grid with nothing to scroll). -->
+  <div id="featured-dots" class="mt-6 flex justify-center gap-2 md:hidden"></div>
+</div>
+
+<script>
+  function initFeatured() {
+    const track = document.getElementById("featured-carousel") as HTMLElement | null;
+    const dotsWrap = document.getElementById("featured-dots") as HTMLElement | null;
+    if (!track || !dotsWrap) return;
+
+    const cards = Array.from(track.children) as HTMLElement[];
+    if (cards.length <= 1) {
+      dotsWrap.style.display = "none";
+      return;
+    }
+
+    dotsWrap.innerHTML = cards
+      .map(
+        (_, i) =>
+          `<button aria-label="Go to project ${i + 1}" class="fdot h-2 w-2 rounded-full transition-all ${
+            i === 0 ? "bg-[var(--color-brand)] scale-125" : "bg-gray-300 dark:bg-gray-600"
+          }"></button>`
+      )
+      .join("");
+
+    const dots = Array.from(dotsWrap.querySelectorAll<HTMLButtonElement>(".fdot"));
+    const step = () => (cards[1] ? cards[1].offsetLeft - cards[0].offsetLeft : cards[0].offsetWidth);
+
+    dots.forEach((dot, i) =>
+      dot.addEventListener("click", () => track.scrollTo({ left: i * step(), behavior: "smooth" }))
+    );
+
+    let raf = 0;
+    track.addEventListener("scroll", () => {
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const s = step();
+        const idx = s > 0 ? Math.round(track.scrollLeft / s) : 0;
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("bg-[var(--color-brand)]", i === idx);
+          dot.classList.toggle("scale-125", i === idx);
+          dot.classList.toggle("bg-gray-300", i !== idx);
+          dot.classList.toggle("dark:bg-gray-600", i !== idx);
+        });
+      });
+    });
+  }
+
+  document.addEventListener("astro:page-load", initFeatured);
+</script>

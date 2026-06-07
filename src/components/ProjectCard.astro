@@ -1,0 +1,146 @@
+---
+/**
+ * ProjectCard — the single source of truth for rendering a project.
+ *
+ * Two variants, two intentions:
+ *
+ *   variant="featured"  Homepage teaser. Image-first, minimal text. Sells and
+ *                       sparks curiosity: image, name, one-line subtitle, a
+ *                       single "View Project" CTA. NO stats, stack, or long copy.
+ *
+ *   variant="full"      Portfolio page. Rewards curiosity with the full story:
+ *                       image, description, stats, technologies/services, and
+ *                       the live-site / case-study CTA.
+ *
+ * Layout/sizing classes (carousel width, snap, grid placement) are passed in via
+ * `class` by the parent so this component owns appearance, not flow.
+ */
+import { Image } from "astro:assets";
+import Icon from "./Icon.astro";
+import { getImage } from "../lib/images";
+import type { Project } from "../data/site";
+
+interface Props {
+  project: Project;
+  variant?: "featured" | "full";
+  class?: string;
+}
+const { project: p, variant = "full", class: className = "" } = Astro.props;
+const img = p.image ? getImage(p.image) : undefined;
+---
+
+{variant === "featured" ? (
+  <a
+    href={`/portfolio/#${p.slug}`}
+    class:list={[
+      "reveal group relative flex flex-col overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] shadow-lg transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl",
+      className,
+    ]}
+    style={`--accent:${p.accent}`}
+  >
+    <!-- Image on top. Nothing overlaid — image, then a clean text block below. -->
+    <div class="relative aspect-[4/3] overflow-hidden">
+      {img ? (
+        <Image
+          src={img}
+          alt={`${p.name} — ${p.category}`}
+          widths={[400, 600, 900]}
+          sizes="(min-width: 768px) 46vw, 78vw"
+          loading="lazy"
+          class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+      ) : (
+        <div
+          class="h-full w-full"
+          style={`background: radial-gradient(130% 130% at 30% 20%, color-mix(in srgb, ${p.accent} 60%, #111827), #111827);`}
+        />
+      )}
+    </div>
+
+    <!-- Minimal text: name, one-line subtitle, single CTA. No stats/stack/badges. -->
+    <div class="flex flex-1 flex-col p-5 sm:p-6">
+      <h3 class="font-display text-lg font-bold leading-tight tracking-tight sm:text-xl">
+        {p.name}
+      </h3>
+      <p class="mt-1.5 line-clamp-2 text-sm text-[var(--text-muted)]">{p.tagline ?? p.summary}</p>
+      <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-brand)]">
+        View Project
+        <Icon
+          name="arrow"
+          size={16}
+          class="transition-transform duration-300 group-hover:translate-x-1"
+        />
+      </span>
+    </div>
+  </a>
+) : (
+  <article
+    class:list={[
+      "reveal group relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface-2)] shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl sm:rounded-3xl sm:shadow-xl",
+      className,
+    ]}
+    style={`--accent:${p.accent}`}
+  >
+    <!-- Image -->
+    <div class="relative aspect-[16/10] overflow-hidden">
+      {img ? (
+        <Image
+          src={img}
+          alt={`${p.name}`}
+          widths={[500, 800, 1200]}
+          sizes="(min-width: 768px) 440px, 92vw"
+          loading="lazy"
+          class="h-full w-full object-cover transition-all duration-700 group-hover:scale-110"
+        />
+      ) : (
+        <div
+          class="h-full w-full"
+          style={`background: radial-gradient(130% 130% at 30% 20%, color-mix(in srgb, ${p.accent} 60%, #111827), #111827);`}
+        />
+      )}
+
+      <!-- Category Badge -->
+      <span class="absolute top-4 right-4 rounded-full border border-white/10 bg-black/70 px-3 py-1 text-[10px] font-semibold tracking-widest text-white backdrop-blur-md sm:top-6 sm:right-6 sm:px-5 sm:py-1.5 sm:text-xs">
+        {p.category}
+      </span>
+
+      <!-- Subtle shine overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/30 opacity-0 transition-opacity duration-700 group-hover:opacity-100"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="p-5 sm:p-8">
+      <h3 class="font-display text-xl font-bold leading-tight tracking-tight sm:text-2xl">{p.name}</h3>
+      <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)] sm:mt-3 sm:text-base">{p.summary}</p>
+
+      <!-- Results -->
+      <div class="mt-6 grid grid-cols-3 gap-3 border-t border-[var(--border)] pt-6 sm:mt-8 sm:gap-6 sm:pt-8">
+        {p.results.map((r) => (
+          <div class="text-center">
+            <div class="font-display text-2xl font-extrabold tracking-tighter sm:text-3xl" style={`color: ${p.accent}`}>{r.metric}</div>
+            <div class="mt-1 text-[10px] font-medium uppercase tracking-[0.5px] text-[var(--text-subtle)] sm:text-xs">{r.label}</div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Technologies / stack -->
+      <div class="mt-5 flex flex-wrap gap-2">
+        {p.stack.map((tech) => (
+          <span class="rounded-full bg-[var(--surface-3)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">{tech}</span>
+        ))}
+      </div>
+
+      <!-- CTA -->
+      <a
+        href={p.liveUrl ?? `/portfolio/#${p.slug}`}
+        {...(p.liveUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+        class="group/btn relative mt-6 inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-[var(--color-brand)] to-red-600 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl active:scale-[0.985] sm:mt-8 sm:py-4"
+      >
+        <span class="relative z-10 flex items-center gap-2">
+          {p.liveUrl ? "Visit Website" : "View Case Study"}
+          <Icon name={p.liveUrl ? "external" : "arrow"} size={18} class="transition-transform group-hover/btn:translate-x-1" />
+        </span>
+      </a>
+    </div>
+  </article>
+)}

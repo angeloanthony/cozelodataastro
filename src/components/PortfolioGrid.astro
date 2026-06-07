@@ -1,8 +1,7 @@
 ---
-import { Image } from "astro:assets";
 import { projects } from "../data/site";
 import Icon from "./Icon.astro";
-import { getImage } from "../lib/images";
+import ProjectCard from "./ProjectCard.astro";
 
 interface Props {
   limit?: number;
@@ -24,67 +23,13 @@ if (limit) list = list.slice(0, limit);
     class="flex gap-5 sm:gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-12 scrollbar-hide"
     style="scrollbar-width: none; -ms-overflow-style: none;"
   >
-    {list.map((p) => {
-      const img = p.image ? getImage(p.image) : undefined;
-      return (
-        <article
-          class="reveal group relative w-[80vw] sm:w-[440px] flex-shrink-0 snap-start overflow-hidden rounded-2xl sm:rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] shadow-lg sm:shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
-          style={`--accent:${p.accent}`}
-        >
-          <!-- Image Container -->
-          <div class="relative aspect-[16/10] overflow-hidden">
-            {img ? (
-              <Image
-                src={img}
-                alt={`${p.name}`}
-                widths={[500, 800, 1200]}
-                sizes="(min-width: 768px) 440px, 92vw"
-                loading="lazy"
-                class="h-full w-full object-cover transition-all duration-700 group-hover:scale-110"
-              />
-            ) : (
-              <div class="h-full w-full" style={`background: radial-gradient(130% 130% at 30% 20%, color-mix(in srgb, ${p.accent} 60%, #111827), #111827);`}></div>
-            )}
-
-            <!-- Category Badge -->
-            <span class="absolute top-4 right-4 sm:top-6 sm:right-6 px-3 py-1 sm:px-5 sm:py-1.5 text-[10px] sm:text-xs font-semibold tracking-widest rounded-full bg-black/70 text-white backdrop-blur-md border border-white/10">
-              {p.category}
-            </span>
-
-            <!-- Subtle shine overlay -->
-            <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-          </div>
-
-          <!-- Content -->
-          <div class="p-5 sm:p-8">
-            <h3 class="font-display text-xl sm:text-2xl font-bold tracking-tight leading-tight">{p.name}</h3>
-            <p class="mt-2 sm:mt-3 text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">{p.summary}</p>
-
-            <!-- Results -->
-            <div class="mt-6 sm:mt-8 grid grid-cols-3 gap-3 sm:gap-6 border-t border-[var(--border)] pt-6 sm:pt-8">
-              {p.results.map((r) => (
-                <div class="text-center">
-                  <div class="font-display text-2xl sm:text-3xl font-extrabold tracking-tighter" style={`color: ${p.accent}`}>{r.metric}</div>
-                  <div class="text-[10px] sm:text-xs uppercase tracking-[0.5px] text-[var(--text-subtle)] mt-1 font-medium">{r.label}</div>
-                </div>
-              ))}
-            </div>
-
-            <!-- CTA -->
-            <a
-              href={p.liveUrl ?? `/portfolio/#${p.slug}`}
-              {...(p.liveUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              class="mt-6 sm:mt-10 group/btn relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-[var(--color-brand)] to-red-600 py-3.5 sm:py-4 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl active:scale-[0.985]"
-            >
-              <span class="relative z-10 flex items-center gap-2">
-                {p.liveUrl ? "Visit Website" : "View Case Study"}
-                <Icon name={p.liveUrl ? "external" : "arrow"} size={18} class="transition-transform group-hover/btn:translate-x-1" />
-              </span>
-            </a>
-          </div>
-        </article>
-      );
-    })}
+    {list.map((p) => (
+      <ProjectCard
+        project={p}
+        variant="full"
+        class="w-[80vw] sm:w-[440px] flex-shrink-0 snap-start"
+      />
+    ))}
   </div>
 
   <!-- Mobile swipe hint: an animated arrow over the right edge of the first
