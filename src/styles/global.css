@@ -41,6 +41,11 @@
   Components reference these via arbitrary values, e.g. bg-[var(--surface)].
 */
 :root {
+  /* Height of the fixed header's footprint (top margin + glass bar). The logo
+     is a fixed 48px tall, so this is viewport-independent and identical on every
+     phone width. Used to offset content that sits beneath the fixed header. */
+  --header-h: 5.125rem; /* mt-3 (12px) + py-2.5 (20px) + logo 48px + 2px border */
+
   --surface: #ffffff;
   --surface-2: #f8fafc;
   --surface-3: #f1f5f9;

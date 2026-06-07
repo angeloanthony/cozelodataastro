@@ -41,10 +41,10 @@ const isActive = (href: string) =>
   src={logoImg}
   alt="Cozelos Data"
   width={200}
-  class="h-12 w-auto"
+  class="site-logo h-12 w-auto"
  />
 
-  <span class="font-display text-3xl font-extrabold tracking-tight text-red-600">
+  <span class="site-wordmark whitespace-nowrap font-display text-3xl font-extrabold tracking-tight text-red-600">
   COZELOS DATA
 </span>
 </a>
@@ -101,6 +101,37 @@ const isActive = (href: string) =>
     </div>
   </nav>
 </header>
+
+<style>
+  /*
+    Mobile header (≤480px). Desktop is untouched.
+
+    The logo mark stays 48px so the header height keeps matching --header-h
+    (which is derived from that 48px logo). To stop "COZELOS DATA" from wrapping
+    to two lines beside it, the wordmark gets `whitespace-nowrap` (in markup)
+    plus a fluid clamp() that shrinks it just enough to sit on one line next to
+    the logo across the whole phone range. The slope (≈13.9vw − 2.25rem) is
+    derived from the measured single-line width vs. the space left beside the
+    48px logo + the right-hand controls, so it never overflows and meets the
+    desktop 30px size again at ~475px (a seamless handoff to the default).
+  */
+  @media (max-width: 480px) {
+    .site-wordmark {
+      /* Slope derived from the measured single-line width vs. available space,
+         then backed off ~8px so there's a real gap before the controls. */
+      font-size: clamp(0.8125rem, 13.9vw - 2.3rem, 1.875rem);
+      letter-spacing: -0.03em; /* a hair tighter to buy a little width */
+    }
+  }
+
+  /* Below ~360px there isn't enough room for a legible one-line wordmark next
+     to the logo, so show the logo mark alone — the cleanest premium fallback
+     rather than a cramped or wrapped wordmark. The header height is unaffected
+     because the 48px logo still sets it. */
+  @media (max-width: 359px) {
+    .site-wordmark { display: none; }
+  }
+</style>
 
 <!-- Mobile menu overlay -->
 <div
