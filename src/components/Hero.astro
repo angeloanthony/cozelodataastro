@@ -74,13 +74,22 @@ const heroImage = getImage("hero/digital-ecosystem.webp");
           </span>
         </h1>
 
-        <p class="hero-lead reveal mt-6 max-w-xl text-lg leading-relaxed text-[var(--text-muted)]" data-delay="160">
+        <!-- Phones get a short, 5-second value prop. The full lead returns at
+             md+ (≥768px) so desktop/tablet are pixel-identical. -->
+        <p class="hero-lead reveal mt-6 max-w-xl text-lg leading-relaxed text-[var(--text-muted)] md:hidden" data-delay="160">
+          Built to rank, load fast, and convert.
+        </p>
+        <p class="hero-lead reveal mt-6 max-w-xl text-lg leading-relaxed text-[var(--text-muted)] hidden md:block" data-delay="160">
           Everything your business needs to look professional online and attract
           more customers — websites, content, marketing, and the systems that
           make them work together.
         </p>
 
-        <AiSummary class="hero-summary mt-7">
+        <!-- The AI summary stays in the HTML for AI Overviews / SEO, but is
+             hidden on phones to keep the hero scannable; it reappears at md+ so
+             desktop is unchanged. The scannable trust row below the buttons is
+             what carries the quick-facts job on mobile. -->
+        <AiSummary class="hero-summary mt-7 hidden md:block">
           Cozelos Data is a Woman-Owned digital agency in Vernal, Utah building
           custom websites, SEO, video, and marketing for local and government
           businesses. Sites launch from $1,000, load in under a second, and you
@@ -176,8 +185,7 @@ const heroImage = getImage("hero/digital-ecosystem.webp");
     /* Tighten the vertical rhythm so the whole hero fits one viewport. */
     .hero-section .hero-h1 { margin-top: 0.875rem; }   /* was mt-6  (24px) */
     .hero-section .hero-lead { margin-top: 0.875rem; } /* was mt-6  (24px) */
-    .hero-section .hero-summary { margin-top: 1rem; }  /* was mt-7  (28px) */
-    .hero-section .hero-actions { margin-top: 1.25rem; } /* was mt-9 (36px) */
+    .hero-section .hero-actions { margin-top: 1.5rem; } /* was mt-9 (36px) */
     .hero-section .hero-trust { margin-top: 1rem; }    /* was mt-8  (32px) */
 
     /*
