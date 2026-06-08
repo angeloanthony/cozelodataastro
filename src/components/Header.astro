@@ -179,7 +179,10 @@ const isActive = (href: string) =>
 </div>
 
 <script>
-  // Mobile menu + dark mode wiring. Re-runs after View Transitions.
+  // Mobile menu + dark mode wiring. The header is transition:persist'd, so its
+  // elements survive navigations — bind listeners only once to avoid stacking
+  // duplicate handlers on every astro:page-load.
+  let headerWired = false;
   function wireHeader() {
     const menu = document.getElementById("mobile-menu");
     const open = document.getElementById("menu-open");
@@ -189,9 +192,19 @@ const isActive = (href: string) =>
       if (!menu) return;
       menu.classList.toggle("translate-x-full", !show);
       menu.setAttribute("aria-hidden", String(!show));
+      // Keep off-screen links out of the tab order + AT tree when closed.
+      if (show) menu.removeAttribute("inert");
+      else menu.setAttribute("inert", "");
       open?.setAttribute("aria-expanded", String(show));
       document.body.style.overflow = show ? "hidden" : "";
+      // Move focus into the menu on open, return it to the trigger on close.
+      if (show) close?.focus();
+      else open?.focus();
     };
+
+    if (headerWired) return;
+    headerWired = true;
+    menu?.setAttribute("inert", ""); // closed by default on first paint
 
     open?.addEventListener("click", () => setMenu(true));
     close?.addEventListener("click", () => setMenu(false));

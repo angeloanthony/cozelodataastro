@@ -1,0 +1,138 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Section from "../components/Section.astro";
+import CTASection from "../components/CTASection.astro";
+import Icon from "../components/Icon.astro";
+import Button from "../components/Button.astro";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Our Approach", href: "/our-approach/" },
+];
+
+const chapters = [
+  {
+    n: "01",
+    icon: "star",
+    kicker: "First impressions",
+    headline: "Beautiful design earns attention.",
+    paragraphs: [
+      "You have less time than you think. A visitor forms an opinion about your business in roughly 50 milliseconds — faster than they can read a single word. In that instant, design is doing all the talking. It signals whether you're serious, whether you're current, and whether you're worth a moment more of their day.",
+      "Beautiful design isn't decoration — it's credibility made visible. Confident typography, intentional spacing, cinematic motion, and a clear visual hierarchy tell a visitor, before they've read anything, that the business behind the screen takes its craft seriously. A template that looks like ten thousand other businesses quietly says the opposite.",
+      "So we design every page to earn the next five seconds, and the five after that. Attention is the price of admission. Without it, nothing else we build is ever seen.",
+    ],
+    takeaway: "If you don't earn attention, nothing else matters.",
+  },
+  {
+    n: "02",
+    icon: "bolt",
+    kicker: "Speed & experience",
+    headline: "Performance keeps visitors engaged.",
+    paragraphs: [
+      "Attention is fragile. You can win it with a stunning first frame and lose it half a second later to a spinner. Most visitors abandon a page that takes more than three seconds to load — and on mobile, where the majority of your traffic now lives, slow sites bleed customers by the thousands.",
+      "Performance is respect for your visitor's time. Sub-second load times, buttery scrolling, instant interactions — these aren't engineering vanity. They're the difference between a visitor who explores and one who's already gone. Every hundred milliseconds you shave off shows up in conversions.",
+      "We hand-build for speed from the first line of code, then guard it relentlessly. The result is a site that feels effortless — so the visitor stays long enough to become genuinely interested.",
+    ],
+    takeaway: "A fast site keeps the attention a beautiful one earned.",
+  },
+  {
+    n: "03",
+    icon: "search",
+    kicker: "Visibility & search",
+    headline: "SEO brings customers.",
+    paragraphs: [
+      "Design and speed only matter to the people who actually arrive. The hard truth: the most beautiful website in the world is worthless if no one can find it. Visibility is the difference between a brochure that sits in a drawer and a storefront on the busiest street in town.",
+      "Search engine optimization is how the right people find you at the exact moment they're looking. We architect every site to be understood — by Google, and now by AI engines like ChatGPT and Claude — with structured data, clean content architecture, and local SEO that puts you in front of customers in your area. This is an audience you don't rent click by click; it's one that compounds.",
+      "Beautiful, fast, and found — now you have a steady stream of qualified visitors who were already searching for exactly what you offer.",
+    ],
+    takeaway: "Visibility turns a great website into a source of customers.",
+  },
+  {
+    n: "04",
+    icon: "target",
+    kicker: "Outcomes & growth",
+    headline: "Strategy turns customers into growth.",
+    paragraphs: [
+      "Attention, engagement, and traffic are only inputs. None of them pay the bills on their own. The final — and most important — layer is strategy: aiming everything at a business outcome. More calls. More bookings. More qualified leads. More revenue.",
+      "This is where most web projects stop short, and where ours begins. We design the path a visitor takes from first impression to paying customer, and we engineer every page, headline, and call-to-action to move them along it. Then we measure what actually matters — leads and revenue — and refine.",
+      "Strategy is what turns a website into a digital asset: a system that doesn't just look good, but actively grows the business behind it, year after year.",
+    ],
+    takeaway: "Strategy is what turns visitors into growth.",
+  },
+];
+---
+<BaseLayout
+  title="Our Approach — How Cozelos Data Builds Digital Assets"
+  description="Our philosophy in four layers: beautiful design attracts attention, performance keeps visitors engaged, SEO brings customers, and strategy grows businesses. See how Cozelos Data turns a website into a system for growth."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow="Our Approach"
+    title="Four layers between a stranger and a customer."
+    lead="Great digital work isn't a pile of features — it's a sequence. Each layer earns the next, turning a passing glance into attention, attention into interest, interest into a customer, and customers into growth. This is how we think about every project we build."
+    summary="Cozelos Data follows a four-layer philosophy: beautiful design earns attention, performance keeps visitors engaged, SEO brings customers, and strategy turns customers into growth. Each layer builds on the one before it, turning a website into a growth platform engineered for measurable results."
+    breadcrumbs={breadcrumbs}
+  />
+
+  <!-- The four chapters -->
+  <Section
+    eyebrow="The Philosophy"
+    title="Attention. Engagement. Customers. Growth."
+    lead="Skip any one layer and the system breaks — a gorgeous site no one can find, or a fast site with nothing to convert. Done in order, they compound."
+  >
+    <div class="space-y-6">
+      {chapters.map((c, i) => (
+        <article
+          data-delay={(i % 2) * 80}
+          class="reveal grid gap-8 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-10 lg:grid-cols-12 lg:items-start"
+        >
+          <!-- Index + icon rail -->
+          <div class="flex items-center gap-4 lg:col-span-3 lg:flex-col lg:items-start lg:gap-5">
+            <span class="font-display text-5xl font-extrabold leading-none text-[var(--color-brand)]/25 sm:text-6xl">{c.n}</span>
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]">
+              <Icon name={c.icon} size={26} />
+            </span>
+          </div>
+
+          <!-- Narrative -->
+          <div class="lg:col-span-9">
+            <span class="text-xs font-bold uppercase tracking-[0.18em] text-[var(--text-subtle)]">{c.kicker}</span>
+            <h3 class="mt-3 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{c.headline}</h3>
+            <div class="mt-4 space-y-4 leading-relaxed text-[var(--text-muted)]">
+              {c.paragraphs.map((p) => <p>{p}</p>)}
+            </div>
+            <p class="mt-6 border-l-2 border-[var(--color-brand)] pl-4 font-display text-lg font-semibold text-[var(--text)]">
+              {c.takeaway}
+            </p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </Section>
+
+  <!-- Synthesis -->
+  <Section class="!pt-4">
+    <div class="reveal mx-auto max-w-3xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-10 text-center sm:p-14">
+      <h2 class="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">Four layers. One system.</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">
+        Most agencies are good at one layer. They make pretty sites, or they chase
+        rankings, or they run ads. We engineer all four to work as a single system —
+        because attention without speed is wasted, traffic without strategy is noise,
+        and a beautiful site no one can find is just an expensive secret. Stacked in
+        order, they stop being features and start being a machine for growth.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <Button href="/services/" size="lg" variant="secondary" icon="arrow">See it applied across our services</Button>
+        <Button href="/contact/" size="lg" magnetic icon="arrow">Start Your Project</Button>
+      </div>
+    </div>
+  </Section>
+
+  <CTASection
+    title="Let's build your growth engine."
+    body="Tell us about your business. We'll show you exactly what we'd build — and the growth it's engineered to create."
+    primaryLabel="Start Your Project"
+    secondaryLabel="See the Work"
+  />
+</BaseLayout>

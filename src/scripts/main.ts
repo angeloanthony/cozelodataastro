@@ -151,6 +151,82 @@ function initPointerEffects() {
   });
 }
 
+/* ---- Hero rotating word (typewriter) -------------------------------------- */
+function initWordRotator() {
+  const els = document.querySelectorAll<HTMLElement>(
+    "[data-word-rotate]:not([data-word-rotate-init])"
+  );
+  els.forEach((el) => {
+    el.setAttribute("data-word-rotate-init", "true");
+
+    // Words include the trailing period (so it hugs the word at every length).
+    const words = ["Businesses.", "Revenues.", "Reach."];
+
+    // Reserve a fixed width on the parent box equal to the widest word, so the
+    // headline never reflows as the word changes length. Measured live (not
+    // hard-coded) so it stays exact across responsive font sizes, and re-run on
+    // resize because the breakpoints change the hero font-size.
+    const box = el.parentElement;
+    const reserveWidth = () => {
+      if (!box) return;
+      const shown = el.textContent;
+      let max = 0;
+      words.forEach((w) => {
+        el.textContent = w;
+        max = Math.max(max, el.offsetWidth);
+      });
+      el.textContent = shown;
+      box.style.minWidth = `${Math.ceil(max)}px`;
+    };
+    reserveWidth();
+
+    // Respect reduced-motion: leave the static word in place, no typing/caret.
+    if (prefersReduced()) return;
+
+    let resizeTimer = 0;
+    window.addEventListener("resize", () => {
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(reserveWidth, 150);
+    });
+
+    el.classList.add("is-typing"); // start the blinking caret
+
+    // Begin fully typed on whatever the markup already shows.
+    let wordIndex = Math.max(0, words.indexOf(el.textContent?.trim() ?? ""));
+    let charIndex = words[wordIndex].length;
+
+    const TYPE_MS = 90; // per character while typing in
+    const HOLD_MS = 1700; // pause once a word is fully typed
+    const PRE_TYPE_MS = 300; // pause after a word is cleared, before the next
+
+    const tick = () => {
+      const word = words[wordIndex];
+
+      charIndex += 1;
+      el.textContent = word.slice(0, charIndex);
+
+      if (charIndex >= word.length) {
+        // Word complete: hold, then clear it all at once and type the next.
+        return window.setTimeout(() => {
+          wordIndex = (wordIndex + 1) % words.length;
+          charIndex = 0;
+          el.textContent = "";
+          window.setTimeout(tick, PRE_TYPE_MS);
+        }, HOLD_MS);
+      }
+      return window.setTimeout(tick, TYPE_MS);
+    };
+
+    // Hold the initial word briefly, then clear and start cycling.
+    window.setTimeout(() => {
+      wordIndex = (wordIndex + 1) % words.length;
+      charIndex = 0;
+      el.textContent = "";
+      window.setTimeout(tick, PRE_TYPE_MS);
+    }, HOLD_MS);
+  });
+}
+
 /* ---- Scroll progress bar -------------------------------------------------- */
 function initScrollProgress() {
   const bar = document.getElementById("scroll-progress");
@@ -182,6 +258,7 @@ function initAll() {
   initMagnetic();
   initTilt();
   initPointerEffects();
+  initWordRotator();
   initScrollProgress();
   initHeaderState();
 }

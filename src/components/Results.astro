@@ -1,0 +1,33 @@
+---
+/**
+ * Results — sells outcomes, not features. The tangible ways a Cozelos Data
+ * build makes a business measurably stronger.
+ */
+import Section from "./Section.astro";
+import Icon from "./Icon.astro";
+
+const results = [
+  "Faster websites",
+  "Better Google rankings",
+  "More qualified leads",
+  "Higher conversion rates",
+  "Greater credibility",
+  "Lower long-term maintenance",
+];
+---
+<Section
+  eyebrow="The Results"
+  title="Stronger businesses, by every measure."
+  lead="You don't buy a website. You buy outcomes — the kind that show up in your rankings, your leads, and your bottom line."
+>
+  <div class="reveal mx-auto grid max-w-3xl gap-x-10 gap-y-4 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:grid-cols-2 sm:p-10">
+    {results.map((r) => (
+      <div class="flex items-center gap-3 text-lg font-medium text-[var(--text)]">
+        <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-[var(--color-brand)]/15 text-[var(--color-brand)]">
+          <Icon name="check" size={15} />
+        </span>
+        {r}
+      </div>
+    ))}
+  </div>
+</Section>

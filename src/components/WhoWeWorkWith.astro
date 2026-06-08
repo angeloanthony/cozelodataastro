@@ -1,0 +1,38 @@
+---
+/**
+ * WhoWeWorkWith — helps a visitor instantly self-identify with the brand by
+ * naming the industries Cozelos Data serves.
+ */
+import Section from "./Section.astro";
+import Icon from "./Icon.astro";
+
+const industries = [
+  { icon: "doc", label: "Attorneys" },
+  { icon: "shield", label: "Medical Professionals" },
+  { icon: "building", label: "Contractors" },
+  { icon: "pin", label: "Tourism Companies" },
+  { icon: "award", label: "Government" },
+  { icon: "star", label: "Small Businesses" },
+  { icon: "bolt", label: "Manufacturers" },
+  { icon: "chat", label: "Nonprofits" },
+];
+---
+<Section
+  eyebrow="Who We Work With"
+  title="Built for businesses that take their work seriously."
+  lead="Your industry has its own customers, language, and competition. These are the businesses we help win online every day."
+>
+  <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+    {industries.map((it, i) => (
+      <div
+        data-delay={i * 40}
+        class="reveal group flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface-2)] p-5 transition-colors duration-300 hover:border-[var(--color-brand)]/40"
+      >
+        <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)] transition-all duration-300 group-hover:bg-[var(--color-brand)] group-hover:text-white">
+          <Icon name={it.icon} size={20} />
+        </span>
+        <span class="font-display text-sm font-bold tracking-tight sm:text-base">{it.label}</span>
+      </div>
+    ))}
+  </div>
+</Section>

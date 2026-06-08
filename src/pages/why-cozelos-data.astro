@@ -1,0 +1,190 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Section from "../components/Section.astro";
+import CTASection from "../components/CTASection.astro";
+import Icon from "../components/Icon.astro";
+import Button from "../components/Button.astro";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Why Cozelos Data", href: "/why-cozelos-data/" },
+];
+
+// The commodity website vs. the digital asset — the core argument.
+const contrast = [
+  { commodity: "Looks like a template anyone could buy", asset: "Custom and cinematic — unmistakably yours" },
+  { commodity: "Slow, bloated, and plugin-heavy", asset: "Hand-built, sub-second, and secure" },
+  { commodity: "You rent it — locked hosting and builders", asset: "You own the domain, code, and content" },
+  { commodity: "SEO bolted on at the end, if at all", asset: "SEO and AI search engineered from day one" },
+  { commodity: "Built once, then quietly neglected", asset: "Maintained and improving every quarter" },
+  { commodity: 'Measured in "likes" and page views', asset: "Measured in leads and revenue" },
+];
+
+// The six reasons, expanded and persuasive.
+const pillars = [
+  {
+    n: "01",
+    icon: "target",
+    title: "Strategy before pixels",
+    lead: "We don't start with a design. We start with your business.",
+    body: "Anyone can make a page look nice. The hard part — the valuable part — is engineering it to produce a specific outcome: more calls, more bookings, more qualified leads. Before we design a single screen, we map your customers, your competitors, and the exact path from stranger to paying client. Every decision after that serves that goal.",
+    stat: "Outcome-first",
+    statLabel: "Every project begins with strategy, never a template.",
+  },
+  {
+    n: "02",
+    icon: "lock",
+    title: "You own everything",
+    lead: "Your domain. Your code. Your content. No exceptions.",
+    body: "Most agencies quietly trap you — proprietary builders, locked hosting, content you can't export, and a monthly bill you can never escape. We do the opposite. You own the domain, the source code, the hosting account, and every word of content. If you ever decide to leave, we hand it all over — no drama, no ransom. Real assets are owned, not rented.",
+    stat: "100%",
+    statLabel: "Ownership of your domain, code, and content.",
+  },
+  {
+    n: "03",
+    icon: "bolt",
+    title: "Engineered for speed",
+    lead: "Sub-second load times, built by hand.",
+    body: "Half of your visitors leave if a page takes more than three seconds to load — and they leave before they ever see what you offer. We build lean, hand-coded sites that paint in under a second on a phone, on real networks. Speed isn't a vanity metric; it's higher Google rankings, lower ad costs, and far more customers who actually stay.",
+    stat: "<1s",
+    statLabel: "First paint on the websites we build.",
+  },
+  {
+    n: "04",
+    icon: "shield",
+    title: "Secure by design",
+    lead: "A smaller attack surface means less to break and less to exploit.",
+    body: "Bloated websites stitched together from dozens of third-party plugins are a standing invitation to hackers and a constant maintenance headache. Our builds ship as fast, static, hardened pages with almost nothing to exploit — no sprawling admin panels, no plugin soup, no scramble to patch the next vulnerability. Your site stays online, stays safe, and stays yours.",
+    stat: "Hardened",
+    statLabel: "Static architecture with a minimal attack surface.",
+  },
+  {
+    n: "05",
+    icon: "award",
+    title: "Built for ROI",
+    lead: "A growth platform should pay for itself — then keep paying.",
+    body: "We measure success the way you do: in leads, bookings, and revenue — not page views or vague “engagement.” A site that brings in a handful of new clients a month pays for itself in weeks and earns for years. Every page is designed around conversion, and we report on the numbers that actually move your business forward.",
+    stat: "Compounds",
+    statLabel: "Returns that grow long after launch day.",
+  },
+  {
+    n: "06",
+    icon: "chat",
+    title: "A long-term partnership",
+    lead: "We don't build it and vanish. We stay invested.",
+    body: "After launch, we keep your asset fast, secure, and climbing — monitoring uptime, refreshing content, and improving SEO quarter after quarter. When your business grows, your digital presence grows with it. You get a partner with skin in the game and a stake in your results, not a vendor who disappears the moment the invoice clears.",
+    stat: "Quarter over quarter",
+    statLabel: "Your site gets faster and ranks higher — not slower.",
+  },
+];
+---
+<BaseLayout
+  title="Why Cozelos Data — A Digital Asset, Not Just a Website"
+  description="Why businesses choose Cozelos Data: strategy-led, owner-controlled, lightning fast, secure by design, and built for measurable ROI — a long-term partner, not a one-time vendor."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow="Why Cozelos Data"
+    title="Most agencies sell you a website. We hand you an asset."
+    lead="A website is a one-time expense. A digital asset is an investment that compounds — generating leads, authority, and revenue for years. Here's why ambitious businesses across Utah and beyond trust us to build theirs."
+    summary="Businesses choose Cozelos Data because we lead with strategy, give clients full ownership of their domain, code, and content, build hand-coded sites that load in under a second, harden them against attack, design every page for measurable ROI, and stay on as a long-term partner that keeps the site improving quarter after quarter."
+    breadcrumbs={breadcrumbs}
+  />
+
+  <!-- The core argument: cost vs. asset -->
+  <Section
+    eyebrow="The Difference"
+    title="A website is a cost. A digital asset is an advantage."
+    lead="The market is flooded with people selling websites. Almost no one is building digital assets — the kind of online presence that keeps generating value for years. That distinction is everything."
+  >
+    <div class="reveal grid gap-px overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--border)] md:grid-cols-2">
+      <!-- Commodity -->
+      <div class="bg-[var(--surface-2)] p-8 sm:p-10">
+        <h3 class="font-display text-lg font-bold tracking-tight text-[var(--text-muted)]">A commodity website</h3>
+        <ul class="mt-6 space-y-4">
+          {contrast.map((c) => (
+            <li class="flex items-start gap-3 text-sm leading-relaxed text-[var(--text-muted)]">
+              <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-[var(--surface-3)] text-[var(--text-subtle)]"><Icon name="close" size={12} /></span>
+              {c.commodity}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <!-- Asset -->
+      <div class="relative bg-[var(--surface-2)] p-8 sm:p-10">
+        <span class="pointer-events-none absolute inset-0 bg-[var(--color-brand)]/[0.05]" aria-hidden="true"></span>
+        <h3 class="relative font-display text-lg font-bold tracking-tight">A Cozelos Data digital asset</h3>
+        <ul class="relative mt-6 space-y-4">
+          {contrast.map((c) => (
+            <li class="flex items-start gap-3 text-sm font-medium leading-relaxed text-[var(--text)]">
+              <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-[var(--color-brand)]/15 text-[var(--color-brand)]"><Icon name="check" size={13} /></span>
+              {c.asset}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <!-- The six reasons -->
+  <Section
+    eyebrow="Six Reasons"
+    title="What you actually get when you work with us."
+    lead="Not features for the sake of features — six advantages that show up directly in your rankings, your reputation, and your revenue."
+  >
+    <div class="space-y-6">
+      {pillars.map((p, i) => (
+        <div
+          data-delay={(i % 2) * 80}
+          class="reveal grid items-center gap-8 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-10 lg:grid-cols-12"
+        >
+          <!-- Narrative -->
+          <div class:list={["lg:col-span-8", i % 2 === 1 && "lg:order-last"]}>
+            <div class="flex items-center gap-4">
+              <span class="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]">
+                <Icon name={p.icon} size={26} />
+              </span>
+              <span class="font-mono text-sm font-semibold text-[var(--text-subtle)]">{p.n}</span>
+            </div>
+            <h3 class="mt-5 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{p.title}</h3>
+            <p class="mt-3 font-display text-lg font-semibold text-[var(--text)]">{p.lead}</p>
+            <p class="mt-3 leading-relaxed text-[var(--text-muted)]">{p.body}</p>
+          </div>
+          <!-- Proof callout -->
+          <div class="lg:col-span-4">
+            <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-7 text-center">
+              <p class="font-display text-3xl font-extrabold leading-none text-gradient sm:text-4xl">{p.stat}</p>
+              <p class="mt-3 text-sm leading-relaxed text-[var(--text-muted)]">{p.statLabel}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <!-- The bottom line -->
+  <Section class="!pt-4">
+    <div class="reveal mx-auto max-w-3xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-10 text-center sm:p-14">
+      <h2 class="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">The bottom line</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">
+        You can buy a website almost anywhere. What you can't buy on the cheap is
+        a strategy-led, owner-controlled, lightning-fast, secure growth platform
+        with a team that stays invested in its growth. That's what we build — and
+        it's why our clients stop thinking of their website as a bill and start
+        treating it as one of their most valuable assets.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <Button href="/contact/" size="lg" magnetic icon="arrow">Start Your Project</Button>
+        <Button href="/portfolio/" size="lg" variant="secondary">See the Work</Button>
+      </div>
+    </div>
+  </Section>
+
+  <CTASection
+    title="Let's build your digital foundation."
+    body="Tell us about your business. We'll show you exactly what we'd build — and the growth it's engineered to create."
+    primaryLabel="Start Your Project"
+    secondaryLabel="See the Work"
+  />
+</BaseLayout>

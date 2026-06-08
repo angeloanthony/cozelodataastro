@@ -1,0 +1,62 @@
+---
+/**
+ * FounderTeaser — surfaces Ellen Cozelos on the homepage. Her background is one
+ * of the brand's biggest credibility assets, so it shouldn't stay buried.
+ */
+import { Image } from "astro:assets";
+import Section from "./Section.astro";
+import Button from "./Button.astro";
+import { getImage } from "../lib/images";
+
+const officeImg = getImage("CozeloOffice.webp");
+const titles = ["Software Engineer", "Cyber Security Specialist", "AI Professional", "Digital Strategist"];
+---
+<Section eyebrow="The Leader Behind the Work" title="Meet Ellen Cozelos.">
+  <div class="reveal grid items-center gap-8 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-10 lg:grid-cols-12">
+    <!-- Narrative -->
+    <div class="lg:col-span-7">
+      <div class="flex flex-wrap gap-2">
+        {titles.map((t) => (
+          <span class="rounded-full bg-[var(--color-brand)]/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wide text-[var(--color-brand)]">{t}</span>
+        ))}
+      </div>
+      <p class="mt-5 text-lg leading-relaxed text-[var(--text-muted)]">
+        More than 20 years supporting
+        <span class="font-semibold text-[var(--text)]">NASA, Department of Defense programs</span>,
+        and commercial organizations — now bringing that same enterprise standard
+        to businesses like yours. The kind of partner who treats your success as
+        the whole point.
+      </p>
+      <div class="mt-6">
+        <Button href="/ellen-cozelos/" variant="secondary" icon="arrow">Learn More</Button>
+      </div>
+    </div>
+
+    <!-- Portrait card -->
+    <div class="lg:col-span-5">
+      <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6">
+        <div class="flex items-center gap-4">
+          <span class="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--color-brand)] font-display text-lg font-extrabold text-white">EC</span>
+          <div>
+            <p class="font-display text-lg font-bold tracking-tight">Ellen Cozelos</p>
+            <p class="text-sm text-[var(--text-muted)]">Founder &amp; Principal</p>
+          </div>
+        </div>
+        {officeImg && (
+          <div class="mt-5 overflow-hidden rounded-xl border border-[var(--border)]">
+            <Image
+              src={officeImg}
+              alt="Cozelos Data — founded by Ellen Cozelos in Vernal, Utah"
+              widths={[400, 600]}
+              sizes="(min-width: 1024px) 30vw, 92vw"
+              loading="lazy"
+              decoding="async"
+              format="webp"
+              class="w-full object-cover"
+            />
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</Section>

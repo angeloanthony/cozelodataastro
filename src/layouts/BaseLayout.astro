@@ -17,9 +17,10 @@ interface Props {
   image?: string;
   breadcrumbs?: Crumb[];
   serviceName?: string;
+  noindex?: boolean;
 }
 
-const { title, description, image, breadcrumbs, serviceName } = Astro.props;
+const { title, description, image, breadcrumbs, serviceName, noindex } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -31,6 +32,12 @@ const { title, description, image, breadcrumbs, serviceName } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Fail-safe: if JS never runs, the IntersectionObserver can't reveal
+         content, so neutralize the hidden initial state and show everything. -->
+    <noscript>
+      <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+    </noscript>
 
     <!-- Preconnect to font host for faster first paint -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,6 +68,7 @@ const { title, description, image, breadcrumbs, serviceName } = Astro.props;
       image={image}
       breadcrumbs={breadcrumbs}
       serviceName={serviceName}
+      noindex={noindex}
     />
 
     <!-- Tawk.to live chat — loaded once, kept alive across View Transitions -->

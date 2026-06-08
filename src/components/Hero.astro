@@ -63,26 +63,22 @@ const heroImage = getImage("hero/digital-ecosystem.webp");
           Woman-Owned Small Business · Vernal, Utah
         </div>
 
-        <h1 class="hero-h1 reveal mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl" data-delay="80">
-          Professional Websites,
-          <span class="text-gradient">Marketing &amp; Digital</span>
-          Solutions
-          <span class="block">
-            built to grow your
-            <span id="typewriter" class="text-[var(--color-brand)]" aria-hidden="true"></span>
-            <span class="sr-only">business</span>
-          </span>
+        <h1 class="hero-h1 reveal mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-[2.75rem] lg:text-[3.35rem]" data-delay="80">
+          We Build Digital Assets That
+          <span class="text-gradient">Grow <span class="hero-rotate"><span class="text-gradient hero-rotate-text" data-word-rotate>Businesses.</span></span></span>
         </h1>
 
-        <!-- Phones get a short, 5-second value prop. The full lead returns at
-             md+ (≥768px) so desktop/tablet are pixel-identical. -->
-        <p class="hero-lead reveal mt-6 max-w-xl text-lg leading-relaxed text-[var(--text-muted)] md:hidden" data-delay="160">
-          Built to rank, load fast, and convert.
+        <p class="reveal mt-4 font-display text-lg font-semibold tracking-tight text-[var(--text-muted)] sm:text-xl" data-delay="120">
+          Making Businesses Stronger. Making Life Better.
         </p>
-        <p class="hero-lead reveal mt-6 max-w-xl text-lg leading-relaxed text-[var(--text-muted)] hidden md:block" data-delay="160">
-          Everything your business needs to look professional online and attract
-          more customers — websites, content, marketing, and the systems that
-          make them work together.
+
+        <p class="reveal mt-4 text-sm font-bold uppercase tracking-[0.18em] text-[var(--color-brand)]" data-delay="150">
+          Fast. Secure. Built to Rank.
+        </p>
+
+        <p class="hero-lead reveal mt-6 max-w-xl text-lg leading-relaxed text-[var(--text-muted)]" data-delay="180">
+          We design and engineer complete digital systems that generate leads,
+          build authority, and create long-term growth.
         </p>
 
         <!-- The AI summary stays in the HTML for AI Overviews / SEO, but is
@@ -92,17 +88,17 @@ const heroImage = getImage("hero/digital-ecosystem.webp");
         <AiSummary class="hero-summary mt-7 hidden md:block">
           Cozelos Data is a Woman-Owned digital agency in Vernal, Utah building
           custom websites, SEO, video, and marketing for local and government
-          businesses. Sites launch from $1,000, load in under a second, and you
-          own everything — the domain, code, and content.
+          businesses. Custom projects start at $2,500, load in under a second,
+          and you own everything — the domain, code, and content.
         </AiSummary>
 
         <div class="hero-actions reveal mt-9 flex flex-wrap items-center gap-4" data-delay="240">
-          <Button href="/contact/" size="lg" magnetic icon="arrow">Get a Quote</Button>
-          <Button href="/portfolio/" size="lg" variant="secondary">View Our Work</Button>
+          <Button href="/contact/" size="lg" magnetic icon="arrow">Start Your Project</Button>
+          <Button href="/portfolio/" size="lg" variant="secondary">See the Work</Button>
         </div>
 
         <div class="hero-trust reveal mt-8 flex items-center gap-5 text-sm text-[var(--text-subtle)]" data-delay="320">
-          <span class="inline-flex items-center gap-1.5"><Icon name="check" size={16} class="text-[var(--color-brand)]" /> $1,000 to launch</span>
+          <span class="inline-flex items-center gap-1.5"><Icon name="check" size={16} class="text-[var(--color-brand)]" /> From $2,500</span>
           <span class="inline-flex items-center gap-1.5"><Icon name="check" size={16} class="text-[var(--color-brand)]" /> You own everything</span>
           <span class="inline-flex items-center gap-1.5"><Icon name="check" size={16} class="text-[var(--color-brand)]" /> No lock-ins</span>
         </div>
@@ -157,6 +153,41 @@ const heroImage = getImage("hero/digital-ecosystem.webp");
 </section>
 
 <style is:global>
+  /*
+    Rotating hero word — typewriter effect cycling "Businesses → Revenues →
+    Reach". JS types one character at a time (see initWordRotator in main.ts);
+    the static word renders without JS, so the headline is fully functional
+    unenhanced.
+
+    .hero-rotate is a fixed-width reservation box: JS sets its min-width to the
+    widest word so the rest of the headline NEVER reflows as the word changes
+    length (otherwise "Assets" jumps between rows). The period is part of the
+    typed word, so shorter words leave only invisible trailing whitespace at the
+    end of the line — no gap before the period.
+  */
+  .hero-rotate {
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+  }
+  /* The caret is a border on the text span so it hugs the typed characters
+     rather than the right edge of the reservation box. The text is
+     gradient/transparent, so the caret needs an explicit brand color. */
+  .hero-rotate-text {
+    border-right: 0.08em solid var(--color-brand-500);
+    padding-right: 0.04em;
+  }
+  /* Only blink the caret once JS takes over, so the no-JS state is static. */
+  .hero-rotate-text.is-typing {
+    animation: hero-caret 1s steps(1) infinite;
+  }
+  @keyframes hero-caret {
+    50% { border-color: transparent; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-rotate-text.is-typing { animation: none; }
+  }
+
   /*
     Mobile hero layout (≤768px). Desktop (≥769px) is completely untouched —
     every rule lives inside the media query and is namespaced under
@@ -241,40 +272,3 @@ const heroImage = getImage("hero/digital-ecosystem.webp");
     .hero-section .hero-actions > a { flex-basis: auto; }
   }
 </style>
-
-<script>
-  function initTypewriter() {
-    const el = document.getElementById("typewriter");
-    if (!el || el.dataset.init) return;
-    el.dataset.init = "true";
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      el.textContent = "business.";
-      return;
-    }
-
-    const words = ["business.", "brand.", "revenue.", "reach."];
-    let w = 0, c = 0, deleting = false;
-
-    const tick = () => {
-      const word = words[w];
-      el.textContent = word.slice(0, c);
-      if (!deleting && c < word.length) {
-        c++;
-        setTimeout(tick, 90);
-      } else if (!deleting && c === word.length) {
-        deleting = true;
-        setTimeout(tick, 1600);
-      } else if (deleting && c > 0) {
-        c--;
-        setTimeout(tick, 45);
-      } else {
-        deleting = false;
-        w = (w + 1) % words.length;
-        setTimeout(tick, 250);
-      }
-    };
-    tick();
-  }
-  document.addEventListener("astro:page-load", initTypewriter);
-</script>

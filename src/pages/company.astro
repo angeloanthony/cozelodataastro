@@ -8,7 +8,7 @@ import Credentials from "../components/Credentials.astro";
 import CTASection from "../components/CTASection.astro";
 import Button from "../components/Button.astro";
 import Icon from "../components/Icon.astro";
-import { site, values } from "../data/site";
+import { site } from "../data/site";
 import { getImage } from "../lib/images";
 
 const breadcrumbs = [
@@ -17,42 +17,82 @@ const breadcrumbs = [
 ];
 
 const officeImg = getImage("CozeloOffice.webp");
+
+const founderCreds = [
+  { icon: "bolt", label: "NASA & DoD programs" },
+  { icon: "shield", label: "Cybersecurity & AI" },
+  { icon: "award", label: "M.S., Columbia University" },
+  { icon: "clock", label: "20+ years in technology" },
+];
 ---
 <BaseLayout
-  title="Digital Agency in Vernal, Utah — About Cozelos Data"
-  description="Cozelos Data is a WOSB digital agency in Vernal, Utah, built on a conviction: too many great businesses run on websites that don't match the quality of their work."
+  title="About Cozelos Data — Enterprise Expertise, Built in Utah"
+  description="The story of Cozelos Data: founded by Ellen Cozelos, a software engineer and cybersecurity and AI specialist with 20+ years across NASA, DoD, and commercial programs. A Woman-Owned Small Business in Vernal, Utah making businesses stronger and life better."
   breadcrumbs={breadcrumbs}
 >
   <PageHero
-    eyebrow="Who We Are"
-    title="A digital agency built in Utah."
-    lead="Cozelos Data exists because too many great businesses run on websites that don't match the quality of their work. We build the kind of digital presence that finally does."
-    summary="Cozelos Data is a Woman-Owned Small Business (WOSB) digital agency headquartered in Vernal, Utah, with an active DUNS and CAGE code for government work. We build cinematic, fast, search-optimized websites and the marketing systems that make them work — and clients own the domain, code, and content."
+    eyebrow="Our Story"
+    title="Enterprise expertise, built for the businesses that matter."
+    lead="Cozelos Data brings two decades of NASA- and Department of Defense-grade engineering to the businesses that power our communities — making them stronger, and making life better."
+    summary="Cozelos Data is a Woman-Owned Small Business in Vernal, Utah, founded by Ellen Cozelos — a software engineer, cybersecurity specialist, and AI expert with 20+ years across NASA, Department of Defense, aerospace, and commercial programs, and a Master's degree from Columbia University. The company's mission is simple: making businesses stronger and life better."
     breadcrumbs={breadcrumbs}
   />
 
-  <!-- Story -->
-  <Section eyebrow="Our Story" title="Big-city quality. Built right here.">
-    <div class="grid gap-10 lg:grid-cols-2">
-      <div class="reveal space-y-4 text-lg leading-relaxed text-[var(--text-muted)]">
-        <p>We started Cozelos Data after watching one too many business owners pay thousands for cookie-cutter websites that didn't load fast, didn't rank, and didn't convert. The frustration was personal.</p>
-        <p>So we built our own playbook — pillar-and-spoke architecture, hand-written code, cinematic motion design, structured data graphs, AI integration — and started applying it to clients across the Uintah Basin and beyond.</p>
-        <p>Today, our work powers tour operators, hotels, healthcare practices, storage facilities, pest control companies, luxury services, and genealogy researchers. The common thread: businesses that take their craft seriously and want their digital presence to do the same.</p>
+  <!-- Founder story -->
+  <Section eyebrow="The Founder" title="Meet Ellen Cozelos.">
+    <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+      <!-- Narrative -->
+      <div class="reveal space-y-4 text-lg leading-relaxed text-[var(--text-muted)] lg:col-span-7">
+        <p>
+          Cozelos Data was founded by <strong class="text-[var(--text)]">Ellen Cozelos</strong> — an
+          accomplished software engineer, cybersecurity specialist, digital marketing
+          professional, and AI expert with more than 20 years delivering innovative
+          technology across government, aerospace, and commercial sectors.
+        </p>
+        <p>
+          For years, Ellen supported mission-critical software for NASA and Department
+          of Defense programs — the kind of secure, reliable, scalable systems where
+          precision and performance aren't features, but requirements. Her expertise
+          spans software engineering, cybersecurity, artificial intelligence, and
+          digital marketing: a rare combination that lets her solve complex problems
+          and turn them into practical engines for growth.
+        </p>
+        <p>
+          Holding a Master's degree from Columbia University and carrying her craft from
+          Huntsville, Alabama to Eastern Utah, Ellen pairs enterprise-grade technical
+          depth with a personal, client-centered approach. She founded Cozelos Data on a
+          single conviction: the businesses that hold up our communities deserve the same
+          caliber of technology as the Fortune 500 and the federal government — without
+          the big-city overhead or the cold, transactional treatment.
+        </p>
+        <p class="border-l-2 border-[var(--color-brand)] pl-5 font-display text-xl font-semibold text-[var(--text)]">
+          She leads by one guiding principle: if it's important to our clients, it's important to us.
+        </p>
+        <div class="mt-7">
+          <Button href="/ellen-cozelos/" variant="secondary" icon="arrow">Read Ellen's full biography</Button>
+        </div>
       </div>
-      <div class="reveal" data-delay="120">
-        <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8">
-          <h3 class="font-display text-xl font-bold tracking-tight">Our philosophy</h3>
-          <p class="mt-3 text-[var(--text-muted)]">A website should be your best salesperson — working 24/7, never tired, never off-message, closing leads while you sleep.</p>
-          <p class="mt-3 text-[var(--text-muted)]">We build websites the way you'd build a flagship retail location: as a unified statement of who you are, where you are, and why someone should choose you. Then we keep them running — updated, optimized, and faster every quarter, not slower.</p>
-          <div class="mt-6 flex items-center gap-3 rounded-2xl bg-[var(--surface-3)] p-4">
-            <span class="grid h-10 w-10 place-items-center rounded-xl bg-[var(--color-brand)] text-white"><Icon name="pin" size={18} /></span>
-            <div class="text-sm">
-              <p class="font-semibold text-[var(--text)]">Headquartered in Vernal, Utah</p>
-              <p class="text-[var(--text-subtle)]">Serving clients across the country</p>
+
+      <!-- Founder card -->
+      <div class="reveal lg:col-span-5" data-delay="120">
+        <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7">
+          <div class="flex items-center gap-4">
+            <span class="grid h-16 w-16 place-items-center rounded-2xl bg-[var(--color-brand)] font-display text-xl font-extrabold text-white">EC</span>
+            <div>
+              <p class="font-display text-lg font-bold tracking-tight">Ellen Cozelos</p>
+              <p class="text-sm text-[var(--text-muted)]">Founder & Principal</p>
             </div>
           </div>
+          <ul class="mt-6 space-y-3">
+            {founderCreds.map((c) => (
+              <li class="flex items-center gap-3 text-sm text-[var(--text-muted)]">
+                <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name={c.icon} size={18} /></span>
+                {c.label}
+              </li>
+            ))}
+          </ul>
           {officeImg && (
-            <div class="mt-5 overflow-hidden rounded-2xl border border-[var(--border)]">
+            <div class="mt-6 overflow-hidden rounded-2xl border border-[var(--border)]">
               <Image
                 src={officeImg}
                 alt="Cozelos Data office in Vernal, Utah"
@@ -65,39 +105,103 @@ const officeImg = getImage("CozeloOffice.webp");
               />
             </div>
           )}
+          <div class="mt-5 flex items-center gap-3 rounded-2xl bg-[var(--surface-3)] p-4">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-[var(--color-brand)] text-white"><Icon name="pin" size={18} /></span>
+            <div class="text-sm">
+              <p class="font-semibold text-[var(--text)]">Headquartered in Vernal, Utah</p>
+              <p class="text-[var(--text-subtle)]">Serving clients across the country</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </Section>
 
-  <!-- Values -->
-  <Section
-    eyebrow="What We Believe"
-    title="Six principles. Zero exceptions."
-    lead="Our values aren't a wall poster — they're operating instructions for everything we ship."
-  >
-    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {values.map((v, i) => (
-        <div data-delay={i * 50} class="reveal group rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7 transition-colors hover:border-[var(--color-brand)]/40">
-          <span class="font-mono text-sm font-semibold text-[var(--color-brand)]">{v.n}</span>
-          <h3 class="mt-3 font-display text-lg font-bold tracking-tight">{v.title}</h3>
-          <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{v.body}</p>
-        </div>
-      ))}
+  <!-- Mission & Vision -->
+  <Section eyebrow="Why We Exist" title="Mission & vision.">
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="reveal rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8">
+        <span class="grid h-12 w-12 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="target" size={24} /></span>
+        <h3 class="mt-5 font-display text-xl font-bold tracking-tight">Our mission</h3>
+        <p class="mt-3 leading-relaxed text-[var(--text-muted)]">
+          To build the growth platforms that make businesses stronger and life better —
+          giving local and growing organizations the visibility, credibility, and
+          technology they need to thrive, protect what matters most, and create new
+          opportunities for the people they serve.
+        </p>
+      </div>
+      <div class="reveal rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8" data-delay="120">
+        <span class="grid h-12 w-12 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="star" size={24} /></span>
+        <h3 class="mt-5 font-display text-xl font-bold tracking-tight">Our vision</h3>
+        <p class="mt-3 leading-relaxed text-[var(--text-muted)]">
+          A West where world-class technology isn't reserved for big cities and big
+          budgets — where any ambitious business can compete, and win, on the strength
+          of its work. We're building the agency that proves great engineering can come
+          from anywhere and serve everyone.
+        </p>
+      </div>
     </div>
   </Section>
 
-  <!-- Timeline -->
-  <Section eyebrow="The Journey" title="How we got here." center>
-    <Timeline />
+  <!-- Philosophy -->
+  <Section class="!pb-10">
+    <div class="reveal mx-auto max-w-3xl rounded-3xl border border-[var(--color-brand)]/30 bg-[var(--surface-2)] p-10 text-center sm:p-14">
+      <span class="text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand)]">Our Philosophy</span>
+      <p class="mt-4 font-display text-3xl font-extrabold leading-[1.15] tracking-tight sm:text-4xl">
+        Making Businesses Stronger.<br />Making Life Better.
+      </p>
+      <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">
+        Technology is never the point — people are. When a business grows stronger,
+        families are supported, employees thrive, and entire communities get better.
+        That's the real measure of our work: not the code we write or the rankings we
+        earn, but the lives those results make better. It's why we do this.
+      </p>
+    </div>
   </Section>
 
-  <!-- Government contracting -->
+  <!-- Community -->
+  <Section eyebrow="Where We're Rooted" title="From Huntsville to the Uintah Basin.">
+    <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+      <div class="reveal space-y-4 text-lg leading-relaxed text-[var(--text-muted)]">
+        <p>
+          We chose to plant Cozelos Data in Vernal, Utah on purpose. The businesses of
+          Eastern Utah and the Uintah Basin — the contractors, hotels, healthcare
+          practices, tour operators, and family shops — are the backbone of their
+          communities. They deserve technology built to the same standard as the
+          aerospace and defense programs Ellen spent her career supporting.
+        </p>
+        <p>
+          When our neighbors' businesses win, we all win. Stronger local businesses mean
+          more jobs, more opportunity, and a more resilient community. That's not a
+          marketing line for us — it's the reason we set up shop here, and the standard
+          we hold ourselves to on every project.
+        </p>
+      </div>
+      <div class="reveal" data-delay="120">
+        <div class="grid gap-4 sm:grid-cols-2">
+          {[
+            { icon: "pin", title: "Local roots", body: "Headquartered in Vernal, invested in the Basin." },
+            { icon: "building", title: "Big-league standards", body: "Aerospace-grade engineering for Main Street businesses." },
+            { icon: "chat", title: "Real relationships", body: "You work directly with us — no call center, no runaround." },
+            { icon: "star", title: "Community first", body: "When local businesses grow, the whole community gets stronger." },
+          ].map((c) => (
+            <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface-2)] p-5">
+              <span class="grid h-10 w-10 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name={c.icon} size={20} /></span>
+              <h3 class="mt-3 font-display text-base font-bold tracking-tight">{c.title}</h3>
+              <p class="mt-1 text-sm leading-relaxed text-[var(--text-muted)]">{c.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Woman-Owned Small Business / Government -->
   <Section
     id="government"
-    eyebrow="Federal · State · Local"
-    title="Built for government work."
-    lead="A WOSB-eligible, credentialed digital agency ready to support agencies with web development, SEO, video documentation, and AI tooling — without the overhead of large primes."
+    eyebrow="Woman-Owned Small Business"
+    title="Credentialed, and built for government work."
+    lead="Cozelos Data is a proud Woman-Owned Small Business (WOSB) with active federal credentials — ready to support agencies with web development, SEO, video documentation, and AI tooling, without the overhead of large primes."
   >
     <Credentials />
 
@@ -113,5 +217,35 @@ const officeImg = getImage("CozeloOffice.webp");
     </div>
   </Section>
 
-  <CTASection />
+  <!-- Commitment to clients -->
+  <Section eyebrow="Our Commitment" title="If it's important to you, it's important to us.">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {[
+        { icon: "chat", title: "True partnership", body: "Ellen believes strong partnerships create the best outcomes. You get a partner invested in your results, not a vendor counting deliverables." },
+        { icon: "lock", title: "You own everything", body: "Your domain, code, and content are yours — always. No lock-ins, no hostage retainers, no surprises." },
+        { icon: "shield", title: "Built to last", body: "Secure, reliable, and maintained — engineered to the standards of mission-critical systems, not disposable templates." },
+        { icon: "check", title: "Honest & transparent", body: "Fixed quotes in writing, clear milestones, and straight answers. We tell you what we'd build and what it costs." },
+        { icon: "bolt", title: "Responsive & present", body: "We actually answer the phone. Clients on a plan get priority support and a team that stays engaged after launch." },
+        { icon: "target", title: "Focused on outcomes", body: "We measure success the way you do — in leads, growth, and results that strengthen your business for years." },
+      ].map((c, i) => (
+        <div data-delay={i * 50} class="reveal rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7 transition-colors hover:border-[var(--color-brand)]/40">
+          <span class="grid h-12 w-12 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name={c.icon} size={22} /></span>
+          <h3 class="mt-5 font-display text-lg font-bold tracking-tight">{c.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{c.body}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <!-- Timeline -->
+  <Section eyebrow="The Journey" title="How we got here." center>
+    <Timeline />
+  </Section>
+
+  <CTASection
+    title="Let's make your business stronger."
+    body="Whether you're a local business ready to grow or an agency in need of a credentialed partner, we'd love to hear what you're building. Start with a conversation — no pressure, no obligation."
+    primaryLabel="Start the Conversation"
+    secondaryLabel="See the Work"
+  />
 </BaseLayout>

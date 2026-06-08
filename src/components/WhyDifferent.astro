@@ -1,0 +1,39 @@
+---
+/**
+ * WhyDifferent — a head-to-head comparison that frames the typical agency
+ * against the Cozelos Data standard. One of the strongest sales tools on the site.
+ */
+import Section from "./Section.astro";
+import Icon from "./Icon.astro";
+
+const rows = [
+  { typical: "Templates", us: "Custom engineered" },
+  { typical: "Slow", us: "Lightning fast" },
+  { typical: "Plugin dependent", us: "Lean architecture" },
+  { typical: "You rent", us: "You own" },
+  { typical: "Build and leave", us: "Long-term partner" },
+  { typical: "Vanity metrics", us: "Business results" },
+];
+---
+<Section eyebrow="Why We're Different" title="The difference is night and day." center>
+  <div class="reveal mx-auto max-w-3xl overflow-hidden rounded-3xl border border-[var(--border)]">
+    <div class="grid grid-cols-2 bg-[var(--surface-3)] text-xs font-bold uppercase tracking-[0.14em] sm:text-sm">
+      <div class="px-5 py-4 text-[var(--text-subtle)] sm:px-6">Typical Agency</div>
+      <div class="px-5 py-4 text-[var(--color-brand)] sm:px-6">Cozelos Data</div>
+    </div>
+    <div class="divide-y divide-[var(--border)]">
+      {rows.map((r) => (
+        <div class="grid grid-cols-2">
+          <div class="flex items-center gap-2.5 px-5 py-4 text-sm text-[var(--text-muted)] sm:px-6 sm:text-base">
+            <Icon name="close" size={15} class="shrink-0 text-[var(--text-subtle)]" />
+            {r.typical}
+          </div>
+          <div class="flex items-center gap-2.5 bg-[var(--color-brand)]/[0.05] px-5 py-4 text-sm font-semibold text-[var(--text)] sm:px-6 sm:text-base">
+            <Icon name="check" size={15} class="shrink-0 text-[var(--color-brand)]" />
+            {r.us}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Section>

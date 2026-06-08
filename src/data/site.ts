@@ -14,8 +14,8 @@ export const site = {
   url: "https://cozelosdata.com",
   phone: "(435) 219-5120",
   phoneHref: "tel:+14352195120",
-  email: "info@cozelosdata.com",
-  emailHref: "mailto:info@cozelosdata.com",
+  email: "ellen.cozelos@cozelosdata.com",
+  emailHref: "mailto:ellen.cozelos@cozelosdata.com",
   smsHref: "sms:+14352195120",
   // Stripe-hosted Payment Link (Stripe Dashboard → Payments → Payment Links → Create).
   // Paste the full https://buy.stripe.com/... URL here. Leave "" to fall back to
@@ -31,7 +31,7 @@ export const site = {
   },
   geo: { latitude: 40.4555, longitude: -109.5287 },
   hours: "Mon–Fri · 9:00 AM – 5:00 PM MT",
-  founder: "Rocco DeLuca",
+  founder: "Ellen Cozelos",
   credentials: {
     wosb: "Woman-Owned Small Business (WOSB)",
     duns: "059220399",
@@ -51,10 +51,11 @@ export type NavItem = { label: string; href: string };
 export const primaryNav: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services/" },
+  { label: "Why Us", href: "/why-cozelos-data/" },
+  { label: "Investment", href: "/pricing/" },
   { label: "Portfolio", href: "/portfolio/" },
   { label: "Company", href: "/company/" },
   { label: "Contact", href: "/contact/" },
-  { label: "Pay", href: "/payment/" },
 ];
 
 export type Stat = { value: number; suffix: string; label: string };
@@ -74,6 +75,7 @@ export type Service = {
   problem: string;
   why: string;
   results: string;
+  value: string;
   benefits: string[];
   process: string[];
   deliverables: string[];
@@ -89,10 +91,12 @@ export const services: Service[] = [
     title: "Website Design & Development",
     short: "Custom, cinematic websites engineered to convert.",
     problem:
-      "Your website is the front door, sales rep, and brand experience all at once — and a slow, generic template loses customers before they ever read a word.",
-    why: "A custom, mobile-first build loads in under a second, ranks on search, and is engineered around the exact moment a visitor decides to call.",
+      "Your website is your hardest-working employee — the first impression, the sales pitch, and the storefront all at once. A slow, generic template quietly turns away the customers you paid to attract, costing you leads you never even knew you had.",
+    why: "We design and build custom websites in Vernal, Utah — engineered by hand, mobile-first, and optimized for search from the first line of code. Every page loads in under a second and is built around the exact moment a visitor decides to call, fill out a form, or buy.",
     results:
-      "Faster load times, higher conversion rates, and a digital presence that finally matches the quality of your work.",
+      "More qualified leads, higher conversion rates, and a professional online presence that finally reflects the quality of your work — so the businesses that find you take you seriously.",
+    value:
+      "A fast, custom website is an appreciating asset. It keeps ranking, converting, and earning trust for years — needing fewer rebuilds and less maintenance than the cheap template it replaced.",
     benefits: [
       "Fully custom design — never a template",
       "Mobile-first, responsive on every screen",
@@ -116,7 +120,7 @@ export const services: Service[] = [
     ],
     icon: "browser",
     image: "services/web-development.webp",
-    cta: "Start at $1,000",
+    cta: "Starting at $2,500",
   },
   {
     slug: "video-production",
@@ -124,10 +128,12 @@ export const services: Service[] = [
     title: "Video Production",
     short: "Cinematic video that elevates your brand on every platform.",
     problem:
-      "Static photos can't communicate energy, scale, or trust the way motion can — and most businesses have none of it.",
-    why: "From 4K aerial drone footage of your location to vertical reels built for Instagram and TikTok, professional video makes a brand feel established and premium.",
+      "Photos can't capture the energy, scale, and credibility of your business — and in a feed full of competitors, static images get scrolled past in under a second.",
+    why: "Our video production team in Vernal, Utah films cinematic brand films, 4K aerial drone footage, and vertical reels built for Instagram, TikTok, and YouTube — color-graded, sound-designed, and optimized for the web.",
     results:
-      "Higher engagement, stronger brand recall, and content that works across your website, ads, and social channels.",
+      "Higher engagement, stronger brand recall, and content that makes a local business look established and premium across your website, ads, and social channels.",
+    value:
+      "Professional video is a library of assets you own and reuse for years — fueling ads, landing pages, and social content long after the shoot, compounding your brand's authority every time it's seen.",
     benefits: [
       "4K aerial drone footage",
       "On-location filming",
@@ -159,10 +165,12 @@ export const services: Service[] = [
     title: "Online Marketing",
     short: "Paid traffic and social content that actually converts.",
     problem:
-      "Most ad accounts quietly leak money on the wrong audiences with no tracking and no landing page strategy.",
-    why: "We design the creative, configure pixel tracking, build the landing page, and tune campaigns until cost-per-lead drops — then scale only what works.",
+      "Most ad budgets quietly leak money — wrong audiences, no tracking, and a homepage that was never built to convert clicks into customers.",
+    why: "We build the full funnel: Google Ads and Meta (Facebook & Instagram) campaigns, conversion-focused landing pages, pixel tracking, and relentless A/B testing — then scale only the campaigns that actually produce leads.",
     results:
-      "Lower cost per lead, predictable pipeline, and marketing spend you can actually measure.",
+      "A lower cost per lead, a predictable pipeline of new customers, and marketing spend you can finally measure to the dollar.",
+    value:
+      "Over time, a tuned acquisition system becomes a growth engine you can turn up on demand — turning advertising from a gamble into a reliable, repeatable source of revenue.",
     benefits: [
       "Meta & Google Ads management",
       "YouTube ad campaigns",
@@ -194,10 +202,12 @@ export const services: Service[] = [
     title: "SEO Optimization",
     short: "Be found by the customers already searching for you.",
     problem:
-      "A beautiful website is only worth what it ranks for — and most never get indexed properly or structured for AI search.",
-    why: "We architect content with a pillar-and-spoke strategy, structured data graphs, and llms.txt so Google, ChatGPT, and Claude all know exactly what you offer.",
+      "A beautiful website is invisible if it doesn't rank. Most sites are never indexed properly, never structured for AI search, and never appear when local customers in the Uintah Basin search for what you sell.",
+    why: "We engineer search engine optimization from the ground up — pillar-and-spoke content architecture, JSON-LD schema, local SEO, Google Business Profile tuning, and llms.txt so Google, ChatGPT, and Claude all understand exactly what you offer.",
     results:
-      "Meaningful ranking improvement within 60–90 days, more qualified organic traffic, and citations in AI search results.",
+      "Meaningful ranking improvement within 60–90 days, more qualified organic traffic, and a steady stream of customers who were already searching for you — at no cost per click.",
+    value:
+      "Unlike paid ads, SEO compounds. Every page and citation you earn keeps working for years, building a durable moat of organic visibility that competitors can't simply outspend.",
     benefits: [
       "Pillar & spoke content architecture",
       "JSON-LD schema graphs",
@@ -229,10 +239,12 @@ export const services: Service[] = [
     title: "Business Automation",
     short: "AI and automation that give you hours back every week.",
     problem:
-      "Manual scheduling, follow-ups, and data entry quietly drain the hours you should be spending on the business.",
-    why: "We connect your tools, add AI assistants, and automate the repetitive work so leads get answered instantly and nothing falls through the cracks.",
+      "Manual scheduling, follow-ups, and data entry quietly drain the hours you should spend growing the business — and every slow reply is a lead that goes cold.",
+    why: "We connect your tools, add AI assistants and chatbots, and automate the repetitive work — instant lead responses, automated scheduling and reminders, CRM integrations, and invoice workflows tailored to how your business actually runs.",
     results:
-      "Faster response times, fewer missed leads, and a team freed from busywork.",
+      "Faster response times, fewer missed leads, and a team freed from busywork to focus on customers and revenue.",
+    value:
+      "Automation is leverage that compounds: as you grow, the systems scale with you — handling more volume without more overhead, so profit isn't eaten up by headcount.",
     benefits: [
       "AI chat & lead capture",
       "Automated scheduling & reminders",
@@ -264,10 +276,12 @@ export const services: Service[] = [
     title: "Ongoing Support & Maintenance",
     short: "We keep your site fast, secure, and improving every quarter.",
     problem:
-      "Most websites are built once and maintained by nobody — slowly breaking, slowing down, and falling out of search.",
-    why: "Our maintenance plan keeps your site updated, backed up, monitored, and optimized so it gets faster every quarter, not slower.",
+      "Most websites are built once and maintained by no one — slowly breaking, slowing down, and quietly falling out of Google's rankings until they need an expensive rebuild.",
+    why: "Our website maintenance plan keeps your site fast, secure, and improving — security monitoring, daily backups, performance tuning, content updates, and uptime monitoring handled for you, every month.",
     results:
-      "Reliable uptime, compounding SEO, and a site that stays modern without surprise invoices.",
+      "Reliable uptime, compounding SEO, and the peace of mind that your digital asset keeps getting better — without surprise invoices or technical headaches.",
+    value:
+      "A maintained website appreciates instead of decaying. Quarter over quarter it gets faster, ranks higher, and outlasts the competitors who let theirs rot — protecting the investment you made.",
     benefits: [
       "Monthly content updates",
       "Security monitoring",
@@ -303,6 +317,12 @@ export type Project = {
   /** Short, plain-English subtitle for homepage teaser cards. Falls back to `summary`. */
   tagline?: string;
   overview: string;
+  /** Business-transformation case-study fields (Technologies = `stack`). */
+  challenge: string;
+  strategy: string;
+  solution: string;
+  outcome: string;
+  businessImpact: string;
   services: string[];
   stack: string[];
   results: { metric: string; label: string }[];
@@ -328,6 +348,16 @@ export const projects: Project[] = [
       { metric: "EN/IT", label: "Bilingual Build" },
       { metric: "<1s", label: "Load Time" },
     ],
+    challenge:
+      "A specialized Italian genealogy and dual-citizenship firm had deep expertise but almost no online visibility — and needed to look credible to clients across two languages and two countries.",
+    strategy:
+      "Position the firm as the authority on Italian jure sanguinis citizenship by mapping every region and service into a pillar-and-spoke content architecture that ranks in both English and Italian.",
+    solution:
+      "A hand-built, 30+ page bilingual site with structured data, regional service pages, and AI-search optimization throughout — fast, polished, and effortless to navigate in either language.",
+    outcome:
+      "30+ pages indexed across two languages, sub-second load times, and a presence that finally matches the firm's expertise.",
+    businessImpact:
+      "Forebear Find now attracts qualified, ready-to-hire clients from organic search in both markets — turning a word-of-mouth practice into a discoverable, trusted brand.",
     accent: "#B91C1C",
     image: "portfolio/forebear-find.webp",
     liveUrl: "https://forebearfind.com",
@@ -348,6 +378,16 @@ export const projects: Project[] = [
       { metric: "Mobile", label: "Optimized" },
       { metric: "SEO", label: "Ready" },
     ],
+    challenge:
+      "A growing parking operation was managing reservations and customer communication by hand, with no central platform and a website that couldn't scale.",
+    strategy:
+      "Replace the manual workflow with a streamlined booking-and-management platform, wrapped in a modern, SEO-ready site that earns trust at first glance.",
+    solution:
+      "A responsive parking-management platform with online reservations, automated customer communications, and a clean, conversion-focused interface.",
+    outcome:
+      "24/7 online booking, a fully mobile-optimized experience, and an SEO-ready foundation built to grow.",
+    businessImpact:
+      "Customers now reserve and manage parking around the clock without a phone call — cutting manual work and capturing the bookings the old site quietly lost.",
     accent: "#0F766E",
     image: "portfolio/parkingway.webp",
     liveUrl: "https://parkingway.it",
@@ -367,6 +407,16 @@ export const projects: Project[] = [
       { metric: "Booking", label: "System" },
       { metric: "Local #1", label: "Search Goal" },
     ],
+    challenge:
+      "A guided UTV tour operator relied on phone calls and walk-ins, with a thin website that didn't rank for the high-intent searches travelers were making.",
+    strategy:
+      "Own local search for UTV and off-road tours around Vernal by building deep, trail-by-trail content and a frictionless path to booking.",
+    solution:
+      "A 30+ page pillar-architecture site organized around the fleet, pricing, and trail experiences, with an online booking flow and full local SEO.",
+    outcome:
+      "30+ pages targeting local search, an integrated booking system, and a build aimed squarely at the #1 local ranking.",
+    businessImpact:
+      "More tours booked online instead of over the phone, and a discoverable brand that captures travelers the moment they search — before they find a competitor.",
     accent: "#B45309",
     image: "portfolio/adventuretour.webp",        // ← Added
     liveUrl: "https://adventuretoursvernal.com",
@@ -386,6 +436,16 @@ export const projects: Project[] = [
       { metric: "Canonical", label: "SEO Rebuild" },
       { metric: "Direct", label: "Bookings" },
     ],
+    challenge:
+      "A hotel was losing direct bookings to online travel agencies and running on a dated site that didn't reflect the quality of the property.",
+    strategy:
+      "Win back direct bookings with a cinematic first impression and a clean, canonical SEO structure that ranks the hotel for its own name and market.",
+    solution:
+      "A hospitality rebuild featuring a cinematic Ken Burns hero, a canonical SEO architecture, and a rates presentation engineered to drive direct reservations.",
+    outcome:
+      "A cinematic, high-trust presence, a clean canonical SEO rebuild, and a direct-booking-focused rates experience.",
+    businessImpact:
+      "Guests booking direct means higher margins per stay and less dependence on third-party commissions — value that compounds every season.",
     accent: "#1D4ED8",
     image: "portfolio/best-western.webp",
     liveUrl: "https://bestwesternvernalinn.com",
@@ -406,6 +466,16 @@ export const projects: Project[] = [
       { metric: "CMS", label: "Compliant" },
       { metric: "5-Phase", label: "Rollout" },
     ],
+    challenge:
+      "A licensed Medicare practice operates under strict CMS marketing rules and needed to rank for dozens of plan- and location-specific searches without risking compliance.",
+    strategy:
+      "Build broad, compliant search coverage through a split-sitemap architecture and an enrollment-aligned content calendar that captures seasonal demand.",
+    solution:
+      "A 27+ page site on a split-sitemap structure with CMS compliance baked into every page and an Annual Enrollment Period anchor calendar.",
+    outcome:
+      "27+ compliant SEO pages, a clean split-sitemap index, and a disciplined five-phase rollout.",
+    businessImpact:
+      "The practice now reaches Medicare-eligible clients across more searches and seasons — safely, compliantly, and without the risk of a costly violation.",
     accent: "#0E7490",
     image: "portfolio/vernalmedicare.webp",        // ← Added
     liveUrl: "https://vernalmedicare.com",
@@ -425,6 +495,16 @@ export const projects: Project[] = [
       { metric: "4", label: "Interactive Tools" },
       { metric: "Cinematic", label: "Aesthetic" },
     ],
+    challenge:
+      "A luxury transportation brand needed to feel unmistakably premium and make quoting and planning effortless for high-end events like proms and weddings.",
+    strategy:
+      "Translate 'luxury' into the experience itself — cinematic design paired with interactive tools that let clients price, plan, and book with confidence.",
+    solution:
+      "A 14-page cinematic site with four interactive tools: a price calculator, a prom-planning timeline, a venue map, and an itinerary builder.",
+    outcome:
+      "14 polished pages, 4 custom interactive tools, and a cinematic aesthetic that signals premium at every touch.",
+    businessImpact:
+      "Self-service quoting and planning capture leads after hours and qualify them before the first call — fewer tire-kickers, more booked events.",
     accent: "#6D28D9",
     image: "portfolio/highclasslimousine.webp",    // ← Added
     liveUrl: "https://highclasslimousineservices.com",
@@ -443,6 +523,16 @@ export const projects: Project[] = [
       { metric: "Booking", label: "System" },
       { metric: "<2s", label: "Load Time" },
     ],
+    challenge:
+      "A local pest-control company was invisible in search across its service area and had no way for customers to book without calling during business hours.",
+    strategy:
+      "Dominate local SEO across the Uintah Basin with dedicated service-area pages, and remove every barrier between an anxious customer and a booking.",
+    solution:
+      "A complete digital build with service-area mapping, online booking, and strong local SEO optimization across the region.",
+    outcome:
+      "#1 local rankings as the goal, an online booking system, and load times under two seconds.",
+    businessImpact:
+      "Customers find Wernex first and book on the spot — converting urgent, high-intent searches into scheduled jobs around the clock.",
     accent: "#15803D",
     image: "portfolio/wernexpestcontrol.webp",
     liveUrl: "https://wernexpestcontrol.com",
@@ -484,42 +574,176 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
-export type Faq = { q: string; a: string };
+export type Faq = { q: string; a: string; category: string };
 
+// Answers are written for Google featured snippets and AI Overviews: the first
+// sentence is a direct, self-contained answer, followed by 1–2 supporting lines.
+// The `category` field groups them on the dedicated /faq/ page.
 export const faqs: Faq[] = [
+  // — Homepage shows the first five (a deliberate cross-section) —
   {
-    q: "How much does a website actually cost?",
-    a: "Our professional website starts at $1,000 and includes custom design, mobile optimization, SEO-ready architecture, contact forms, and analytics. Larger sites with more pages or complex functionality are quoted individually after a discovery call.",
+    category: "Pricing",
+    q: "How much does a custom website cost?",
+    a: "Custom website projects from Cozelos Data start at $2,500 for Essential Presence, $4,500 for Professional Growth, and $7,500 for Market Leader, with Enterprise builds scoped individually. Every project begins with a $500 Discovery Session that's credited toward your build, and you receive a fixed quote in writing before any work starts.",
   },
   {
-    q: "What's included in the $50/month maintenance plan?",
-    a: "Monthly content updates, security monitoring, daily backups, performance optimization, uptime monitoring, and priority technical support. Hosting and domain are included for most clients.",
+    category: "Timeline",
+    q: "How long does it take to build a website?",
+    a: "Most custom websites launch in 4–6 weeks from kickoff. Larger sites with many pages or heavy content writing take 8–10 weeks, and simple landing pages can go live in 2–3 weeks. You receive a clear schedule with milestones on day one.",
   },
   {
-    q: "Are there hidden fees or surprise invoices?",
-    a: "No. Your initial quote is fixed and approved in writing before any work begins. The only ongoing cost is the optional maintenance plan, and that price is locked.",
-  },
-  {
-    q: "How long does it take to launch a new website?",
-    a: "Most professional websites launch in 4–6 weeks from kickoff. Larger projects or sites needing significant content writing can take 8–10 weeks. You get a clear schedule on day one.",
-  },
-  {
+    category: "Ownership",
     q: "Do I own my website?",
-    a: "Completely. The domain, the hosting account, the source code, and the content are all yours. We can transfer everything at any time, no questions asked.",
+    a: "Yes — completely. You own the domain, the hosting account, the source code, and all content. There are no proprietary builders or lock-ins, and we can transfer everything to you at any time. With Cozelos Data, your website is an asset you own outright.",
   },
   {
-    q: "Will my new site actually rank on Google?",
-    a: "Every site we build has SEO architecture baked in — schema graphs, sitemaps, llms.txt for AI search, and hub-and-spoke content. Most clients see meaningful ranking improvement within 60–90 days.",
+    category: "SEO",
+    q: "Will my new website actually rank on Google?",
+    a: "Every website we build has SEO engineered in from day one — structured data, clean architecture, fast load times, sitemaps, and local optimization. Most clients see meaningful ranking improvement within 60–90 days, and the gains compound as content and authority grow.",
   },
   {
+    category: "Pricing",
+    q: "Are there any hidden fees or surprise invoices?",
+    a: "No. Your project quote is fixed and approved in writing before any work begins, so the price never changes mid-build. The only ongoing cost is an optional monthly plan, and that rate is locked too — no 'starting from' footnotes and no surprises.",
+  },
+
+  // — Pricing —
+  {
+    category: "Pricing",
+    q: "Why does a custom website cost more than a template?",
+    a: "A custom website costs more because it's engineered, not assembled. Instead of a generic theme loaded with plugins, you get hand-built code that loads in under a second, ranks better, carries far less security risk, and needs less maintenance — so it returns more than its price over time.",
+  },
+
+  // — Timeline —
+  {
+    category: "Timeline",
+    q: "How quickly can you start my project?",
+    a: "We can usually begin within one to two weeks of your Discovery Session. Once we agree on scope and you approve the fixed quote, we schedule a kickoff and start immediately — most clients move from first call to active design inside two weeks.",
+  },
+
+  // — Ownership —
+  {
+    category: "Ownership",
+    q: "What happens if I want to leave or switch providers?",
+    a: "You take everything with you. Because you own the domain, code, hosting, and content, leaving is simple: we hand over full access and files whenever you ask. We keep your business through results, not by holding your website hostage.",
+  },
+
+  // — SEO —
+  {
+    category: "SEO",
+    q: "How long does SEO take to work?",
+    a: "SEO typically shows meaningful movement within 60–90 days, with stronger results building over 6–12 months. Technical fixes and local optimization can lift rankings within weeks, while competitive keywords take longer. Unlike paid ads, the visibility you earn keeps working without ongoing cost-per-click.",
+  },
+  {
+    category: "SEO",
+    q: "What is local SEO and do I need it?",
+    a: "Local SEO helps your business appear when nearby customers search for what you offer — in Google Maps, the local pack, and 'near me' results. If you serve a specific area, you need it. We optimize your Google Business Profile, local citations, and location pages to capture that demand.",
+  },
+
+  // — Hosting —
+  {
+    category: "Hosting",
+    q: "Do you provide website hosting?",
+    a: "Yes. We host on fast, secure, enterprise-grade infrastructure with SSL, daily backups, and uptime monitoring included in our monthly plans. Because our sites are built as lightweight static pages, they load almost instantly and stay online reliably — and you always own the hosting account.",
+  },
+  {
+    category: "Hosting",
+    q: "Is my website secure from hackers?",
+    a: "Yes. We build static, hardened websites with a very small attack surface — no sprawling admin panels or vulnerable plugins to exploit. Every site ships with SSL encryption, security monitoring, and daily backups, so it stays safe, online, and protected.",
+  },
+
+  // — Maintenance —
+  {
+    category: "Maintenance",
+    q: "Do I need a monthly maintenance plan?",
+    a: "A maintenance plan is optional but strongly recommended. For $295/month, Maintenance keeps your site fast, secure, and backed up — with hosting, SSL, monitoring, performance tuning, and minor edits handled for you. Without upkeep, any website gradually slows down and slips out of search.",
+  },
+  {
+    category: "Maintenance",
+    q: "What is included in ongoing website maintenance?",
+    a: "Maintenance includes hosting, SSL, security monitoring, daily backups, uptime monitoring, performance optimization, minor content edits, and priority support. Higher tiers add SEO, content, and marketing. The goal is simple: your site gets faster and ranks higher every quarter, not slower.",
+  },
+
+  // — AI —
+  {
+    category: "AI",
+    q: "Can you add AI to my website or business?",
+    a: "Yes. We build AI assistants and chatbots that capture leads and answer customer questions 24/7, plus automations that handle scheduling, follow-ups, and data entry. AI lets a small team respond instantly and never miss a lead, giving you back hours every week.",
+  },
+  {
+    category: "AI",
+    q: "What is AI search optimization and why does it matter?",
+    a: "AI search optimization makes your business easy for tools like ChatGPT, Claude, and Google's AI Overviews to understand and recommend. We structure your content with schema and an llms.txt file so AI engines cite you accurately — capturing customers who now ask AI instead of searching.",
+  },
+
+  // — Video —
+  {
+    category: "Video",
+    q: "Do you offer video production?",
+    a: "Yes. We produce cinematic brand films, 4K aerial drone footage, and vertical reels for Instagram, TikTok, and YouTube — fully filmed, color-graded, and sound-designed. Professional video makes your business look established and premium across your website, ads, and social channels.",
+  },
+  {
+    category: "Video",
+    q: "Why does my business need video?",
+    a: "Video communicates energy, scale, and trust that photos can't, and it consistently earns higher engagement across websites, ads, and social media. It also gives you a reusable library of branded content. In a crowded feed, professional video is what makes a business stop the scroll.",
+  },
+
+  // — Marketing —
+  {
+    category: "Marketing",
+    q: "Do you manage Google and Facebook ads?",
+    a: "Yes. We build and manage Google Ads and Meta (Facebook & Instagram) campaigns end to end — creative, conversion-focused landing pages, pixel tracking, and A/B testing. We tune until cost-per-lead drops, then scale only the campaigns that produce measurable results.",
+  },
+  {
+    category: "Marketing",
+    q: "How do you measure marketing results?",
+    a: "We measure the metrics that matter to your business: leads, bookings, cost per lead, and revenue — not vanity numbers like impressions. With proper conversion tracking in place, you get monthly reports showing exactly what your marketing spend produced and where it can improve.",
+  },
+  {
+    category: "Marketing",
+    q: "What's the difference between SEO and paid ads?",
+    a: "Paid ads buy immediate traffic that stops the moment you stop paying. SEO earns traffic that compounds and keeps working for free over time. The best strategy uses both: ads for fast results today, and SEO for durable, lower-cost growth tomorrow.",
+  },
+
+  // — Support —
+  {
+    category: "Support",
+    q: "Will I be able to reach a real person for support?",
+    a: "Yes. You work directly with our team — not a ticket queue or a call center. Clients on a monthly plan get priority support, and we actually answer the phone. Clear communication and real responsiveness are part of how we work, before and after launch.",
+  },
+  {
+    category: "Support",
+    q: "What happens after my website launches?",
+    a: "Launch is the beginning, not the end. We set up analytics, submit your site for indexing, and — on a monthly plan — keep it updated, secure, and improving. As your business grows, we evolve the site with it, so your digital asset keeps getting better over time.",
+  },
+
+  // — General —
+  {
+    category: "General",
     q: "Do you work with government agencies?",
-    a: "Yes. Cozelos Data is a Woman-Owned Small Business (WOSB) with an active DUNS and CAGE code, contracting under NAICS codes 513210, 541511, 541512, and 541513. A capability statement is available on request.",
+    a: "Yes. Cozelos Data is a Woman-Owned Small Business (WOSB) with an active DUNS (059220399) and CAGE code (897W0), contracting under NAICS 541511, 541512, 541513, and 513210. We build Section 508 / WCAG 2.1 AA accessible sites and provide a capability statement on request.",
   },
   {
-    q: "Are you based in Utah? Do you work with out-of-state clients?",
-    a: "We're headquartered in Vernal, Utah, and work with clients anywhere. Most projects run remotely with occasional on-site visits for video work or strategy sessions.",
+    category: "General",
+    q: "Are you based in Utah? Do you work with clients in other states?",
+    a: "We're headquartered in Vernal, Utah, and work with clients anywhere in the country. Most projects run smoothly online, with occasional on-site visits for video shoots or strategy sessions. Wherever you are, you get the same fast, custom, search-optimized digital asset.",
   },
 ];
+
+// Display order for the grouped /faq/ page.
+export const faqCategories = [
+  "Pricing",
+  "Timeline",
+  "Ownership",
+  "SEO",
+  "Hosting",
+  "Maintenance",
+  "AI",
+  "Video",
+  "Marketing",
+  "Support",
+  "General",
+] as const;
 
 export type TimelineEvent = { year: string; title: string; body: string };
 
@@ -570,7 +794,7 @@ export const values = [
   {
     n: "05",
     title: "Honest pricing",
-    body: "$1,000 to launch. $50/month to maintain. No surprise invoices, no \u201cstarting from\u201d footnotes.",
+    body: "A fixed quote in writing before we start, and plans that scale with you. No surprise invoices, no \u201cstarting from\u201d footnotes.",
   },
   {
     n: "06",

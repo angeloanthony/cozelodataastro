@@ -1,0 +1,35 @@
+---
+/**
+ * OurPromise — a plain-spoken brand promise centered on ownership and custom
+ * craft. The emotional counterpart to the more functional Guarantees section.
+ */
+import Section from "./Section.astro";
+import Icon from "./Icon.astro";
+
+const promises = [
+  "Every project is custom built",
+  "You own your domain",
+  "You own your code",
+  "You own your content",
+  "No lock-ins",
+  "No shortcuts",
+  "No templates disguised as custom work",
+];
+---
+<Section eyebrow="Our Promise" title="A few things we'll never compromise on." center>
+  <div class="reveal mx-auto max-w-4xl rounded-3xl border border-[var(--color-brand)]/30 bg-[var(--surface-2)] p-8 sm:p-12">
+    <ul class="grid gap-x-10 gap-y-4 text-left sm:grid-cols-2">
+      {promises.map((p) => (
+        <li class="flex items-start gap-3 text-lg font-medium text-[var(--text)]">
+          <span class="mt-1 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-[var(--color-brand)]/15 text-[var(--color-brand)]">
+            <Icon name="check" size={14} />
+          </span>
+          {p}
+        </li>
+      ))}
+    </ul>
+    <p class="mt-8 border-t border-[var(--border)] pt-6 text-center font-display text-xl font-bold tracking-tight">
+      We build digital systems designed to serve your business for years.
+    </p>
+  </div>
+</Section>

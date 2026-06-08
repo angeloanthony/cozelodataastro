@@ -6,17 +6,17 @@
 Cozelos Data is a Woman-Owned Small Business (WOSB) digital agency headquartered in Vernal, Utah. We build cinematic, fast, search-optimized websites and the marketing systems that make them work. Clients own everything we build — domain, hosting, code, and content.
 
 - Phone: (435) 219-5120
-- Email: info@cozelosdata.com
+- Email: ellen.cozelos@cozelosdata.com
 - Location: 431 East Main St. Suite 201, Vernal, UT 84078
 - Hours: Mon–Fri 9:00 AM – 5:00 PM MT
 
 ## Services
-- Website Design & Development: Custom, mobile-first, sub-second websites starting at $1,000.
+- Website Design & Development: Custom, mobile-first, sub-second websites. Projects start at $2,500.
 - SEO Optimization: Pillar-and-spoke architecture, JSON-LD schema, AI search optimization.
 - Video Production: 4K aerial drone footage, on-location filming, cinematic color grading.
 - Online Marketing: Meta & Google Ads, conversion tracking, landing pages, monthly reporting.
 - Business Automation: AI assistants, scheduling, CRM integration, workflow automation.
-- Ongoing Support: Maintenance from $50/month — updates, backups, monitoring, optimization.
+- Ongoing Support: Monthly growth plans from $295/month — maintenance, security, SEO, and marketing.
 
 ## Government Contracting
 WOSB-eligible. DUNS 059220399. CAGE 897W0. NAICS 513210, 541511 (primary), 541512, 541513. Section 508 / WCAG 2.1 AA accessible. Capability statement available on request.
@@ -24,6 +24,12 @@ WOSB-eligible. DUNS 059220399. CAGE 897W0. NAICS 513210, 541511 (primary), 54151
 ## Key Pages
 - Home: https://cozelosdata.com/
 - Services: https://cozelosdata.com/services/
+- Founder — Ellen Cozelos: https://cozelosdata.com/ellen-cozelos/
+- Why Cozelos Data: https://cozelosdata.com/why-cozelos-data/
+- The Cozelos Method: https://cozelosdata.com/the-cozelos-method/
+- Our Approach: https://cozelosdata.com/our-approach/
+- Pricing: https://cozelosdata.com/pricing/
+- FAQ: https://cozelosdata.com/faq/
 - Portfolio: https://cozelosdata.com/portfolio/
 - Company: https://cozelosdata.com/company/
 - Contact: https://cozelosdata.com/contact/

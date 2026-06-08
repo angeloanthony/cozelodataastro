@@ -17,6 +17,18 @@ export default defineConfig({
       changefreq: "weekly",
       priority: 0.8,
       lastmod: new Date(),
+      // Keep utility/legal pages out of the sitemap (they're also noindex).
+      filter: (page) =>
+        !["/payment/", "/terms/", "/privacy/"].some((p) => page.endsWith(p)),
+      // Weight the URLs Google should prioritize crawling.
+      serialize(item) {
+        const url = item.url;
+        if (url === `${SITE}/`) item.priority = 1.0;
+        else if (/\/(services|pricing|why-cozelos-data)\/$/.test(url)) item.priority = 0.9;
+        else if (/\/(portfolio|our-approach|company)\/$/.test(url)) item.priority = 0.8;
+        else if (/\/(faq|contact)\/$/.test(url)) item.priority = 0.7;
+        return item;
+      },
     }),
   ],
   // Route prefetching: links are prefetched on hover/viewport for instant navigation.

@@ -15,6 +15,8 @@ interface Props {
   type?: "website" | "article";
   breadcrumbs?: Crumb[];
   serviceName?: string;
+  /** Set on utility pages (pay/terms/privacy) to keep them out of the index. */
+  noindex?: boolean;
 }
 
 const {
@@ -24,6 +26,7 @@ const {
   type = "website",
   breadcrumbs,
   serviceName,
+  noindex = false,
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, site.url).href;
@@ -38,9 +41,13 @@ const graph: Record<string, unknown>[] = [
     name: site.name,
     url: site.url,
     description: site.description,
+    slogan: "Making Businesses Stronger. Making Life Better.",
+    logo: new URL("/favicon.svg", site.url).href,
+    image: ogImage,
     telephone: site.phone,
     email: site.email,
     priceRange: "$$",
+    sameAs: [site.social.facebook, site.social.instagram, site.social.linkedin],
     founder: { "@type": "Person", name: site.founder },
     address: {
       "@type": "PostalAddress",
@@ -109,6 +116,7 @@ const jsonLd = { "@context": "https://schema.org", "@graph": graph };
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex, follow" />}
 
 <!-- Open Graph -->
 <meta property="og:type" content={type} />

@@ -1,0 +1,53 @@
+---
+/**
+ * ProcessSteps — the engagement journey from first call to ongoing growth,
+ * shown as a connected five-step path.
+ */
+import Section from "./Section.astro";
+
+const steps = [
+  {
+    n: "01",
+    title: "Discovery & Strategy",
+    body: "We start with your business — goals, customers, and the outcomes that define success. Strategy before pixels.",
+  },
+  {
+    n: "02",
+    title: "Design & Architecture",
+    body: "Cinematic design meets SEO architecture. We map every page, message, and conversion path before a line of code.",
+  },
+  {
+    n: "03",
+    title: "Build & Engineer",
+    body: "Hand-built for speed, security, and scale. No bloated templates — just clean, fast, custom engineering.",
+  },
+  {
+    n: "04",
+    title: "Launch & Optimize",
+    body: "We go live with analytics, search indexing, and performance dialed in — then watch the data and refine.",
+  },
+  {
+    n: "05",
+    title: "Grow & Support",
+    body: "The asset goes to work. Ongoing SEO, content, and maintenance keep it ranking, converting, and improving.",
+  },
+];
+---
+<Section
+  eyebrow="How We Work"
+  title="A proven path from idea to growth."
+  lead="No mystery, no surprises. A clear path from first call to lasting growth."
+>
+  <ol class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+    {steps.map((s, i) => (
+      <li
+        class="reveal relative rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-6 transition-[border-color,transform] duration-300 hover:-translate-y-1 hover:border-[var(--color-brand)]/40"
+        data-delay={i * 80}
+      >
+        <span class="font-display text-4xl font-extrabold text-[var(--color-brand)]/25">{s.n}</span>
+        <h3 class="mt-3 font-display text-lg font-bold tracking-tight">{s.title}</h3>
+        <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{s.body}</p>
+      </li>
+    ))}
+  </ol>
+</Section>

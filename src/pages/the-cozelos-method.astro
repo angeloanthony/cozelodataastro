@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Section from "../components/Section.astro";
+import CTASection from "../components/CTASection.astro";
+import Icon from "../components/Icon.astro";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "The Cozelos Method", href: "/the-cozelos-method/" },
+];
+
+const stages = [
+  {
+    n: "01",
+    stage: "Attract",
+    icon: "star",
+    principle: "Beautiful design earns attention.",
+    body: "It starts with being seen. Cinematic, intentional design makes the right first impression and earns the few seconds that decide whether a visitor stays or leaves.",
+  },
+  {
+    n: "02",
+    stage: "Engage",
+    icon: "bolt",
+    principle: "Performance keeps visitors engaged.",
+    body: "Attention is fragile. Sub-second load times and a seamless experience hold interest long enough for a visitor to understand why you're the right choice.",
+  },
+  {
+    n: "03",
+    stage: "Convert",
+    icon: "search",
+    principle: "SEO brings customers.",
+    body: "Visibility turns a website into a pipeline. We engineer your site to be found — on Google and in AI search — by the customers already looking for what you offer.",
+  },
+  {
+    n: "04",
+    stage: "Grow",
+    icon: "target",
+    principle: "Strategy turns customers into growth.",
+    body: "The final layer aims everything at outcomes. We measure leads and revenue, refine what works, and keep the system improving — so the results compound year over year.",
+  },
+];
+---
+<BaseLayout
+  title="The Cozelos Method — Attract, Engage, Convert, Grow"
+  description="The Cozelos Method is our proprietary four-stage framework — Attract, Engage, Convert, Grow — for turning a website into a system that generates leads, authority, and long-term growth."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow="Our Framework"
+    title="The Cozelos Method."
+    lead="Every successful project follows the same four stages — a deliberate path that turns a stranger into a customer, and a customer into growth. This is how we think about every system we build."
+    summary="The Cozelos Method is a proprietary four-stage framework used on every Cozelos Data project: Attract (beautiful design earns attention), Engage (performance keeps visitors engaged), Convert (SEO brings customers), and Grow (strategy turns customers into growth). Each stage builds on the last to turn a website into a system for measurable business growth."
+    breadcrumbs={breadcrumbs}
+  />
+
+  <!-- Core belief -->
+  <Section class="!pb-6">
+    <figure class="reveal mx-auto max-w-3xl text-center">
+      <blockquote class="font-display text-3xl font-extrabold leading-[1.15] tracking-tight sm:text-4xl">
+        Technology doesn&rsquo;t grow businesses. <span class="text-gradient">Strategy does.</span>
+      </blockquote>
+      <figcaption class="mt-5 text-lg text-[var(--text-muted)]">
+        Technology simply makes great strategy scalable.
+      </figcaption>
+    </figure>
+  </Section>
+
+  <!-- The four stages -->
+  <Section
+    eyebrow="Attract · Engage · Convert · Grow"
+    title="Four stages. One system for growth."
+    lead="Skip a stage and the system breaks — a gorgeous site no one can find, or traffic with nothing to convert. Run in order, they compound."
+  >
+    <div class="space-y-6">
+      {stages.map((s, i) => (
+        <div
+          data-delay={i * 70}
+          class="reveal grid items-center gap-6 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-10 lg:grid-cols-12"
+        >
+          <div class="flex items-center gap-5 lg:col-span-4">
+            <span class="font-display text-5xl font-extrabold leading-none text-[var(--color-brand)]/25 sm:text-6xl">{s.n}</span>
+            <div>
+              <span class="grid h-12 w-12 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]">
+                <Icon name={s.icon} size={24} />
+              </span>
+              <p class="mt-3 font-display text-2xl font-extrabold uppercase tracking-tight">{s.stage}</p>
+            </div>
+          </div>
+          <div class="lg:col-span-8">
+            <p class="font-display text-xl font-semibold text-[var(--text)]">{s.principle}</p>
+            <p class="mt-2 leading-relaxed text-[var(--text-muted)]">{s.body}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <CTASection
+    title="See the Method applied to your business."
+    body="Start with a strategy session. We'll map your Attract-to-Grow path and show you exactly what we'd build."
+    primaryLabel="Start Your Project"
+    secondaryLabel="Read Our Philosophy"
+    secondaryHref="/our-approach/"
+  />
+</BaseLayout>

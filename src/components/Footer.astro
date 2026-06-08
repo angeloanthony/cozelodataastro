@@ -11,6 +11,21 @@ const year = new Date().getFullYear();
 const logoImg = getImage("cozeloslogo.webp");
 ---
 <footer class="relative mt-24 border-t border-[var(--border)] bg-[var(--surface-2)]">
+  <!-- Brand reinforcement band -->
+  <div class="border-b border-[var(--border)]">
+    <div class="container-x py-14 text-center">
+      <p class="font-display text-2xl font-extrabold leading-[1.2] tracking-tight sm:text-3xl">
+        We Build Digital Assets That Grow Businesses.
+      </p>
+      <p class="mt-2 font-display text-lg font-semibold text-[var(--text-muted)] sm:text-xl">
+        Making Businesses Stronger. Making Life Better.
+      </p>
+      <p class="mt-4 text-sm text-[var(--text-subtle)]">
+        Vernal, Utah &bull; Serving clients nationwide.
+      </p>
+    </div>
+  </div>
+
   <div class="container-x py-16">
     <div class="grid gap-12 lg:grid-cols-12">
       <!-- Brand -->
@@ -32,8 +47,9 @@ const logoImg = getImage("cozeloslogo.webp");
           </span>
         </a>
         <p class="mt-4 max-w-xs text-sm leading-relaxed text-[var(--text-muted)]">
-          Premium digital agency in Vernal, Utah. We build cinematic websites,
-          drive measurable marketing, and grow modern businesses.
+          We build digital assets that grow businesses — design, SEO, marketing,
+          video, and automation, engineered to make businesses stronger and life
+          better. Premium digital agency in Vernal, Utah.
         </p>
         <div class="mt-6 flex gap-3">
           <a href={site.social.facebook} aria-label="Facebook" class="grid h-10 w-10 place-items-center rounded-xl border border-[var(--border)] text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]">
@@ -67,7 +83,13 @@ const logoImg = getImage("cozeloslogo.webp");
         <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--text-subtle)]">Company</h3>
         <ul class="mt-4 space-y-2.5 text-sm">
           <li><a href="/company/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">About</a></li>
+          <li><a href="/ellen-cozelos/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Ellen Cozelos</a></li>
+          <li><a href="/why-cozelos-data/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Why Cozelos Data</a></li>
+          <li><a href="/the-cozelos-method/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">The Cozelos Method</a></li>
+          <li><a href="/our-approach/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Our Approach</a></li>
+          <li><a href="/pricing/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Investment</a></li>
           <li><a href="/portfolio/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Portfolio</a></li>
+          <li><a href="/faq/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">FAQ</a></li>
           <li><a href="/company/#government" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Government</a></li>
           <li><a href="/contact/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Contact</a></li>
           <li><a href="/payment/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Pay Invoice</a></li>

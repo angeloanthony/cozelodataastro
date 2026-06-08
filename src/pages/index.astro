@@ -3,13 +3,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Marquee from "../components/Marquee.astro";
 import Section from "../components/Section.astro";
+import ProblemNarrative from "../components/ProblemNarrative.astro";
+import WhyDifferent from "../components/WhyDifferent.astro";
+import MissionStatement from "../components/MissionStatement.astro";
+import Philosophy from "../components/Philosophy.astro";
+import WhyChooseUs from "../components/WhyChooseUs.astro";
+import FounderTeaser from "../components/FounderTeaser.astro";
 import ServicesGrid from "../components/ServicesGrid.astro";
+import WhoWeWorkWith from "../components/WhoWeWorkWith.astro";
+import ProcessSteps from "../components/ProcessSteps.astro";
+import Results from "../components/Results.astro";
 import FeaturedProjects from "../components/FeaturedProjects.astro";
 import AnimatedCounter from "../components/AnimatedCounter.astro";
 import Testimonials from "../components/Testimonials.astro";
+import OurPromise from "../components/OurPromise.astro";
 import FAQ from "../components/FAQ.astro";
 import CTASection from "../components/CTASection.astro";
-import MoveYourMouse from "../components/MoveYourMouse.astro";
 import Button from "../components/Button.astro";
 import { stats } from "../data/site";
 ---
@@ -19,9 +28,34 @@ import { stats } from "../data/site";
 >
   <Hero />
 
+  <!-- Infinite scrolling band of industries we serve -->
   <Marquee />
 
-  <!-- Interactive statistics -->
+  <!-- PROBLEM — the emotional opening -->
+  <ProblemNarrative />
+
+  <!-- WHY BUSINESSES STRUGGLE — typical agency vs. Cozelos -->
+  <WhyDifferent />
+
+  <!-- OUR PHILOSOPHY — mission + the core belief -->
+  <MissionStatement />
+
+  <Section class="!pt-4 !pb-16">
+    <figure class="reveal mx-auto max-w-3xl text-center">
+      <blockquote class="font-display text-3xl font-extrabold leading-[1.15] tracking-tight sm:text-4xl">
+        Technology doesn&rsquo;t grow businesses. <span class="text-gradient">Strategy does.</span>
+      </blockquote>
+      <figcaption class="mt-5 text-lg text-[var(--text-muted)]">
+        Technology simply makes great strategy scalable.
+      </figcaption>
+    </figure>
+  </Section>
+
+  <!-- OUR APPROACH — the four-layer philosophy + why us -->
+  <Philosophy />
+  <WhyChooseUs />
+
+  <!-- PROOF — numbers + the leader behind the work -->
   <Section class="!py-16">
     <div class="reveal grid grid-cols-2 gap-8 rounded-[var(--radius-xl2)] border border-[var(--border)] bg-[var(--surface-2)] p-10 sm:gap-12 lg:grid-cols-4">
       {stats.map((s) => (
@@ -30,11 +64,13 @@ import { stats } from "../data/site";
     </div>
   </Section>
 
-  <!-- Services preview -->
+  <FounderTeaser />
+
+  <!-- SERVICES -->
   <Section
     eyebrow="What We Do"
-    title="Six disciplines. One unified system."
-    lead="We don't sell isolated deliverables — we build a digital system designed to compound. Every service connects to the next."
+    title="Six disciplines. One growth system."
+    lead="Six services, one connected system. Each one makes the others work harder — and your business grow faster."
   >
     <ServicesGrid />
     <div class="mt-10 flex justify-center">
@@ -42,11 +78,20 @@ import { stats } from "../data/site";
     </div>
   </Section>
 
-  <!-- Featured work — teaser cards that drive exploration of the Portfolio page -->
+  <!-- WHO WE WORK WITH -->
+  <WhoWeWorkWith />
+
+  <!-- PROCESS -->
+  <ProcessSteps />
+
+  <!-- RESULTS -->
+  <Results />
+
+  <!-- PROOF — featured work -->
   <Section
     eyebrow="Featured Work"
-    title="Real businesses. Real transformations."
-    lead="A glimpse of the work. See the full case studies — stack, results, and live sites — in the portfolio."
+    title="Real businesses. Measurable growth."
+    lead="Utah businesses we moved from invisible to in-demand. See the full stories in the portfolio."
   >
     <FeaturedProjects />
     <div class="mt-10 flex justify-center">
@@ -54,16 +99,31 @@ import { stats } from "../data/site";
     </div>
   </Section>
 
-  <!-- Wow factor -->
-  <MoveYourMouse />
-
-  <!-- Testimonials -->
+  <!-- TESTIMONIALS -->
   <Section
     eyebrow="Client Voices"
-    title="They didn't just get a website."
+    title="They didn't buy a website. They built an asset."
     center
   >
     <Testimonials />
+  </Section>
+
+  <!-- TRUST — our promise -->
+  <OurPromise />
+
+  <!-- INVESTMENT -->
+  <Section class="!py-16">
+    <div class="reveal mx-auto max-w-3xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 text-center sm:p-12">
+      <span class="text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand)]">The Investment</span>
+      <h2 class="mt-4 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">An investment in growth — priced for return.</h2>
+      <p class="mx-auto mt-3 max-w-xl text-lg leading-relaxed text-[var(--text-muted)]">
+        Custom projects start at $2,500, with monthly growth plans from $295.
+        Every engagement begins with a strategy session — credited toward your build.
+      </p>
+      <div class="mt-7 flex justify-center">
+        <Button href="/pricing/" size="lg" variant="secondary" icon="arrow">See Investment &amp; Plans</Button>
+      </div>
+    </div>
   </Section>
 
   <!-- FAQ -->
@@ -75,11 +135,17 @@ import { stats } from "../data/site";
   >
     <FAQ limit={5} />
     <div class="mt-8 text-center">
-      <Button href="/contact/" variant="ghost" icon="arrow">Still have a question? Ask us</Button>
+      <Button href="/faq/" variant="ghost" icon="arrow">Read all 25 FAQs</Button>
     </div>
   </Section>
 
-  <CTASection />
+  <!-- FINAL CTA -->
+  <CTASection
+    title="Let's build your growth platform."
+    body="Tell us about your business. We'll show you exactly what we'd build — and the growth it's engineered to create."
+    primaryLabel="Start Your Project"
+    secondaryLabel="See the Work"
+  />
 </BaseLayout>
 
 <!--
