@@ -179,10 +179,23 @@ const isActive = (href: string) =>
 </div>
 
 <script>
-  // Mobile menu + dark mode wiring. The header is transition:persist'd, so its
-  // elements survive navigations — bind listeners only once to avoid stacking
-  // duplicate handlers on every astro:page-load.
-  let headerWired = false;
+  // Mobile menu + dark mode wiring.
+  //
+  // The header is transition:persist'd (so #menu-open / #theme-toggle survive
+  // navigations) but the #mobile-menu overlay is NOT — Astro swaps in a fresh
+  // menu node on every navigation. So we re-query and re-bind on each
+  // astro:page-load. We use idempotent `.onclick` assignment (not
+  // addEventListener) so the *persisted* buttons never accumulate duplicate
+  // handlers across navigations, while the freshly-rendered menu always gets
+  // wired to its live DOM node.
+  //
+  // The one listener that genuinely needs to bind only once is the document
+  // keydown handler (document is never replaced). It calls through a
+  // module-scoped reference that wireHeader refreshes each load, so Escape
+  // always closes the *current* menu rather than a stale, detached one.
+  let currentSetMenu: ((show: boolean) => void) | null = null;
+  let escWired = false;
+
   function wireHeader() {
     const menu = document.getElementById("mobile-menu");
     const open = document.getElementById("menu-open");
@@ -201,27 +214,31 @@ const isActive = (href: string) =>
       if (show) close?.focus();
       else open?.focus();
     };
+    currentSetMenu = setMenu;
 
-    if (headerWired) return;
-    headerWired = true;
-    menu?.setAttribute("inert", ""); // closed by default on first paint
+    menu?.setAttribute("inert", ""); // closed by default on every (re)render
 
-    open?.addEventListener("click", () => setMenu(true));
-    close?.addEventListener("click", () => setMenu(false));
-    menu?.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => setMenu(false))
-    );
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") setMenu(false);
+    if (open) open.onclick = () => setMenu(true);
+    if (close) close.onclick = () => setMenu(false);
+    menu?.querySelectorAll<HTMLAnchorElement>("a").forEach((a) => {
+      a.onclick = () => setMenu(false);
     });
+
+    if (!escWired) {
+      escWired = true;
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") currentSetMenu?.(false);
+      });
+    }
 
     const toggle = document.getElementById("theme-toggle");
-    toggle?.addEventListener("click", () => {
-      const isDark = document.documentElement.classList.toggle("dark");
-      try {
-        localStorage.setItem("theme", isDark ? "dark" : "light");
-      } catch {}
-    });
+    if (toggle)
+      toggle.onclick = () => {
+        const isDark = document.documentElement.classList.toggle("dark");
+        try {
+          localStorage.setItem("theme", isDark ? "dark" : "light");
+        } catch {}
+      };
   }
 
   // The header is transition:persist'd, so its server-rendered active highlight
