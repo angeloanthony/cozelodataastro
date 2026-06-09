@@ -12,11 +12,11 @@ export const site = {
   description:
     "Premium digital agency in Vernal, Utah. Custom websites, SEO, video production, advertising, branding, and business automation built to grow local and government businesses.",
   url: "https://cozelosdata.com",
-  phone: "(256) 604-0665",
-  phoneHref: "tel:+12566040665",
+  phone: "(435) 219-5120",
+  phoneHref: "tel:+14352195120",
   email: "ellen.cozelos@cozelosdata.com",
   emailHref: "mailto:ellen.cozelos@cozelosdata.com",
-  smsHref: "sms:+12566040665",
+  smsHref: "sms:+14352195120",
   // Stripe-hosted Payment Link (Stripe Dashboard → Payments → Payment Links → Create).
   // Paste the full https://buy.stripe.com/... URL here. Leave "" to fall back to
   // the "request a link by email" button. Stripe account: acct_1FW1bTIMRuSrokBY.
