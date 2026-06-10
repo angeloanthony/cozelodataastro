@@ -62,7 +62,33 @@ const heroVideoId = "Z8G8vGcDxss";
 
   {services.map((s) => (
     <Section id={s.slug} class="!py-16">
-      <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+      {s.reelVideoId && (
+        <!-- Full-width video reel: replaces the visible copy below, which stays in the DOM (sr-only) for SEO -->
+        <figure class="group mb-12 w-full">
+          <div class="animate-float group-hover:[animation-play-state:paused]">
+            <div class="relative transition-transform duration-500 ease-out will-change-transform group-hover:-translate-y-2.5 group-hover:scale-[1.01]">
+              <div
+                class="pointer-events-none absolute -inset-4 -z-10 rounded-[2rem] bg-[var(--color-brand)]/30 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
+                aria-hidden="true"
+              ></div>
+              <div class="overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] shadow-xl shadow-black/10 transition-shadow duration-500 ease-out group-hover:shadow-2xl group-hover:shadow-[var(--color-brand)]/25">
+                <div class="aspect-video">
+                  <iframe
+                    class="h-full w-full"
+                    src={`https://www.youtube-nocookie.com/embed/${s.reelVideoId}?autoplay=1&mute=1&loop=1&playlist=${s.reelVideoId}&controls=1&modestbranding=1&rel=0&playsinline=1`}
+                    title={s.title}
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+      )}
+      <div class:list={["grid gap-10 lg:grid-cols-12 lg:items-start", s.reelVideoId && "sr-only"]}>
         <!-- Left: intro -->
         <div class="reveal lg:col-span-5 lg:sticky lg:top-28">
           <div class="flex items-center gap-4">

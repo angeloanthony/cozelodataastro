@@ -81,6 +81,7 @@ export type Service = {
   deliverables: string[];
   icon: string; // key into the Icon component
   image?: string; // optional path under src/assets (falls back to icon tile)
+  reelVideoId?: string; // optional YouTube ID — when set, a full-width video reel replaces the visible text (text stays in DOM for SEO)
   cta: string;
 };
 
@@ -120,6 +121,7 @@ export const services: Service[] = [
     ],
     icon: "browser",
     image: "services/web-development.webp",
+    reelVideoId: "ApGH3skklec",
     cta: "Starting at $2,500",
   },
   {
