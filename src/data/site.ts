@@ -539,6 +539,35 @@ export const projects: Project[] = [
     image: "portfolio/wernexpestcontrol.webp",
     liveUrl: "https://wernexpestcontrol.com",
   },
+  {
+    slug: "alta-medicare",
+    name: "Alta Medicare",
+    category: "Healthcare",
+    summary: "CMS-compliant Medicare site with SEO-driven plan & location pages.",
+    tagline: "Medicare Insurance Practice",
+    overview:
+      "A licensed Medicare insurance practice built on a clean, CMS-compliant architecture with SEO-focused plan and location pages, structured data, and an enrollment-aligned content calendar.",
+    services: ["Website Design", "SEO", "Compliance"],
+    stack: ["CMS Compliance", "Local SEO", "Structured Data"],
+    results: [
+      { metric: "CMS", label: "Compliant" },
+      { metric: "Local", label: "SEO" },
+      { metric: "<1s", label: "Load Time" },
+    ],
+    challenge:
+      "A licensed Medicare practice operates under strict CMS marketing rules and needed to rank for plan- and location-specific searches without risking compliance.",
+    strategy:
+      "Build broad, compliant search coverage with dedicated plan and location pages and an enrollment-aligned content calendar that captures seasonal demand.",
+    solution:
+      "A clean, fast site with CMS compliance baked into every page, structured data throughout, and SEO-driven plan and location coverage.",
+    outcome:
+      "Compliant SEO coverage across plans and locations, sub-second load times, and a presence built to capture Annual Enrollment Period demand.",
+    businessImpact:
+      "The practice now reaches Medicare-eligible clients across more searches and seasons — safely, compliantly, and without the risk of a costly violation.",
+    accent: "#4338CA",
+    image: "portfolio/altamedicare.webp",
+    liveUrl: "https://altamedicare.com",
+  },
 ];
 
 
