@@ -320,3 +320,14 @@
   animation: bounce-x 1.2s ease-in-out infinite;
   will-change: transform;
 }
+
+/* Gentle attention flash — a soft expanding glow that draws the eye to a
+   high-value CTA (e.g. "Leave a Google Review") without being distracting.
+   (The global prefers-reduced-motion rule neutralizes this automatically.) */
+@keyframes attention-flash {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(185, 28, 28, 0); }
+  50% { box-shadow: 0 0 0 6px rgba(185, 28, 28, 0.18); }
+}
+.animate-attention {
+  animation: attention-flash 2.4s ease-in-out infinite;
+}
