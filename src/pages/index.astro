@@ -20,7 +20,7 @@ import OurPromise from "../components/OurPromise.astro";
 import FAQ from "../components/FAQ.astro";
 import CTASection from "../components/CTASection.astro";
 import Button from "../components/Button.astro";
-import { stats } from "../data/site";
+import { stats, site } from "../data/site";
 ---
 <BaseLayout
   title="Web Design & SEO in Vernal, Utah — Custom Sites That Rank"
@@ -106,6 +106,13 @@ import { stats } from "../data/site";
     center
   >
     <Testimonials />
+    <div class="reveal mt-10 flex flex-col items-center gap-3">
+      <p class="text-sm text-[var(--text-muted)]">Worked with us? Share your experience.</p>
+      <Button href={site.googleReviewHref} variant="secondary" icon="star" external>
+        <span class="text-[var(--color-brand)]" aria-hidden="true">★★★★★</span>
+        Leave a Google Review
+      </Button>
+    </div>
   </Section>
 
   <!-- TRUST — our promise -->

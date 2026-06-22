@@ -38,6 +38,8 @@ export const site = {
     cage: "897W0",
     naics: ["513210", "541511", "541512", "541513"],
   },
+  // Google Business Profile "write a review" deep link (from your GBP dashboard).
+  googleReviewHref: "https://g.page/r/CSm0JDFiiZShEBM/review",
   social: {
     // Placeholder handles — update when live profiles are created.
     facebook: "https://www.facebook.com/cozelosdata",

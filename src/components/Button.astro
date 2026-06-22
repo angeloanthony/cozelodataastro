@@ -14,6 +14,7 @@ interface Props {
   class?: string;
   type?: "button" | "submit";
   id?: string;
+  external?: boolean;
 }
 
 const {
@@ -25,6 +26,7 @@ const {
   class: className = "",
   type = "button",
   id,
+  external = false,
 } = Astro.props;
 
 const base =
@@ -52,6 +54,8 @@ const Tag = href ? "a" : "button";
   class={cls}
   href={href}
   type={href ? undefined : type}
+  target={href && external ? "_blank" : undefined}
+  rel={href && external ? "noopener noreferrer" : undefined}
   data-magnetic={magnetic ? "0.3" : undefined}
 >
   <span class="relative z-10 flex items-center gap-2">
