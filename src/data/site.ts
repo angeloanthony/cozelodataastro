@@ -83,7 +83,7 @@ export type Service = {
   deliverables: string[];
   icon: string; // key into the Icon component
   image?: string; // optional path under src/assets (falls back to icon tile)
-  reelVideoId?: string; // optional YouTube ID — when set, a full-width video reel replaces the visible text (text stays in DOM for SEO)
+  reelVideoId?: string; // optional YouTube ID — when set, a full-width video reel leads the section, above the (always visible) service copy
   cta: string;
 };
 

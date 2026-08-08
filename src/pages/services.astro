@@ -14,11 +14,21 @@ const breadcrumbs = [
 // Explainer video shown in the hero. Replace this with your YouTube video ID
 // (the part after "v=" in the URL, e.g. youtube.com/watch?v=ABC123 → "ABC123").
 const heroVideoId = "Z8G8vGcDxss";
+
+// Structured data for the six services documented below. Names and summaries
+// come straight from the rendered sections, so the schema and the visible page
+// never drift apart.
+const serviceSchema = services.map((s) => ({
+  name: s.title,
+  description: s.short,
+  path: `/services/#${s.slug}`,
+}));
 ---
 <BaseLayout
   title="Web Design, SEO & Marketing Services in Vernal, UT"
   description="Six unified digital services from one Vernal, Utah team: custom website design, SEO, video production, online marketing, business automation, and ongoing support."
   breadcrumbs={breadcrumbs}
+  services={serviceSchema}
 >
   <PageHero
     eyebrow="What We Do"
@@ -60,10 +70,24 @@ const heroVideoId = "Z8G8vGcDxss";
     </figure>
   </PageHero>
 
+  <!-- Orientation: where the six services sit relative to the rest of the site -->
+  <Section class="!pt-12 !pb-0">
+    <p class="reveal mx-auto max-w-3xl text-center text-lg leading-relaxed text-[var(--text-muted)]">
+      Every service below is built on the same four layers — design, performance,
+      search, and strategy — described in
+      <a href="/our-approach/" class="font-semibold text-[var(--color-brand)] link-underline">our approach to building digital assets</a>.
+      You can see what each one costs on the
+      <a href="/pricing/" class="font-semibold text-[var(--color-brand)] link-underline">investment and monthly growth plans</a>
+      page, or see them working together in
+      <a href="/portfolio/" class="font-semibold text-[var(--color-brand)] link-underline">real Utah client builds</a>.
+    </p>
+  </Section>
+
   {services.map((s) => (
     <Section id={s.slug} class="!py-16">
       {s.reelVideoId && (
-        <!-- Full-width video reel: replaces the visible copy below, which stays in the DOM (sr-only) for SEO -->
+        <!-- Full-width video reel, shown above the service copy. The copy below
+             stays visible: the reel leads the section, it does not replace it. -->
         <figure class="group mb-12 w-full">
           <div class="animate-float group-hover:[animation-play-state:paused]">
             <div class="relative transition-transform duration-500 ease-out will-change-transform group-hover:-translate-y-2.5 group-hover:scale-[1.01]">
@@ -88,7 +112,7 @@ const heroVideoId = "Z8G8vGcDxss";
           </div>
         </figure>
       )}
-      <div class:list={["grid gap-10 lg:grid-cols-12 lg:items-start", s.reelVideoId && "sr-only"]}>
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
         <!-- Left: intro -->
         <div class="reveal lg:col-span-5 lg:sticky lg:top-28">
           <div class="flex items-center gap-4">

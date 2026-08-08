@@ -8,13 +8,19 @@ import { site } from "../data/site";
 
 interface Crumb { name: string; href: string; }
 
+/**
+ * A service the page actually describes. `path` should point at the section
+ * that documents it, so the Service node has a real address on the site.
+ */
+interface ServiceRef { name: string; description?: string; path?: string; }
+
 interface Props {
   title: string;
   description?: string;
   image?: string;
   type?: "website" | "article";
   breadcrumbs?: Crumb[];
-  serviceName?: string;
+  services?: ServiceRef[];
   /** Set on utility pages (pay/terms/privacy) to keep them out of the index. */
   noindex?: boolean;
 }
@@ -25,7 +31,7 @@ const {
   image = "/og-image.svg",
   type = "website",
   breadcrumbs,
-  serviceName,
+  services,
   noindex = false,
 } = Astro.props;
 
@@ -90,10 +96,17 @@ const graph: Record<string, unknown>[] = [
   },
 ];
 
-if (serviceName) {
+// Service nodes for the services a page actually documents. Each one references
+// the single organization entity as its provider rather than declaring a new
+// business, so the graph keeps exactly one LocalBusiness/Organization.
+for (const s of services ?? []) {
+  const serviceUrl = s.path ? new URL(s.path, site.url).href : undefined;
   graph.push({
     "@type": "Service",
-    name: serviceName,
+    ...(serviceUrl && { "@id": serviceUrl, url: serviceUrl }),
+    name: s.name,
+    serviceType: s.name,
+    ...(s.description && { description: s.description }),
     provider: { "@id": `${site.url}/#organization` },
     areaServed: { "@type": "State", name: "Utah" },
   });

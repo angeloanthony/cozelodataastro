@@ -10,17 +10,18 @@ import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 interface Crumb { name: string; href: string; }
+interface ServiceRef { name: string; description?: string; path?: string; }
 
 interface Props {
   title: string;
   description?: string;
   image?: string;
   breadcrumbs?: Crumb[];
-  serviceName?: string;
+  services?: ServiceRef[];
   noindex?: boolean;
 }
 
-const { title, description, image, breadcrumbs, serviceName, noindex } = Astro.props;
+const { title, description, image, breadcrumbs, services, noindex } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -77,7 +78,7 @@ const { title, description, image, breadcrumbs, serviceName, noindex } = Astro.p
       description={description}
       image={image}
       breadcrumbs={breadcrumbs}
-      serviceName={serviceName}
+      services={services}
       noindex={noindex}
     />
 
