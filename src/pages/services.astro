@@ -190,8 +190,18 @@ const serviceSchema = services.map((s) => ({
     </Section>
   ))}
 
+  <!--
+    The secondary action points at /faq/ rather than /portfolio/. Two reasons:
+    /portfolio/ is already linked editorially in the orientation paragraph above
+    (the duplicate flagged in master-map F2), and /faq/ linked here previously
+    had no return link from this page — the guide asks internal links to run in
+    both directions. Objections about timeline, ownership, and cost are the
+    logical next step for someone still choosing a service.
+  -->
   <CTASection
     title="Not sure which service you need?"
     body="Tell us your goal. We'll tell you exactly what we'd build and what it would cost — no obligation."
+    secondaryLabel="Read Common Questions"
+    secondaryHref="/faq/"
   />
 </BaseLayout>

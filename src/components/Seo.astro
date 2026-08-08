@@ -54,7 +54,14 @@ const graph: Record<string, unknown>[] = [
     email: site.email,
     priceRange: "$$",
     sameAs: [site.social.facebook, site.social.instagram, site.social.linkedin],
-    founder: { "@type": "Person", name: site.founder },
+    // Same @id as the Person node emitted on /ellen-cozelos/, so the founder is
+    // ONE entity in the graph rather than an anonymous duplicate alongside it.
+    founder: {
+      "@type": "Person",
+      "@id": `${site.url}/#ellen-cozelos`,
+      name: site.founder,
+      url: `${site.url}/ellen-cozelos/`,
+    },
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.street,

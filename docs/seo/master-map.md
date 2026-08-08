@@ -21,7 +21,11 @@ invent a strategy alongside it. Update it when pages change or new GSC data land
 | F7 — six-URL split | ⏸ blocked on GSC export |
 | F8 — `?page_id=` URLs | ⏸ blocked on GSC export |
 
-All SEO changes are frozen until the page-filtered GSC exports land.
+**Freeze status changed 2026-08-08.** The blanket freeze is lifted; the gate is now
+*query-specific* work only. Guide-supported, site-verifiable changes are open — see
+[guide-audit-2026-08-08.md](./guide-audit-2026-08-08.md) for the full 11-page compliance
+audit, the A/B/C classification, and the seven Category A changes implemented against it.
+F1, F5, F7, F8 and every keyword/intent decision remain blocked on the GSC exports.
 
 ---
 
