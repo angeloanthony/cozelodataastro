@@ -39,7 +39,32 @@ Google Search Console
 
 Confirm before exporting that the filter chips above the chart read **Last 3 months** and
 **Page: exactly `<url>`**. If the Page chip is absent, the export is sitewide — discard it
-and reapply the filter.
+and reapply the filter. Use **Exact URL** — not `URLs containing`, and not a wildcard.
+
+### Keep the filter record from the ZIP
+
+A page-filtered `Queries.csv` and a sitewide one are **identical in shape** — same five
+columns, no marker distinguishing them. The file alone cannot prove attribution.
+
+Search Console's download ZIP therefore also contains a file recording the applied filters
+(typically `Filters.csv`). **Keep it and save it alongside the query file**, e.g.
+`02-services-filters.csv`. It states the page filter in text and is the only self-contained
+proof that the export is attributable.
+
+If that file is missing, an arithmetic check gives a weaker but usable signal: a
+page-filtered query table can never sum to more impressions than that URL's own total in
+the Pages report. A sitewide export will exceed it immediately.
+
+### Expect few rows — that is not a failed export
+
+Measured 2026-08-08: the sitewide Pages report showed **178 impressions on `/` alone**,
+while the sitewide Queries tab held **13 queries at 1–3 impressions each**. The great
+majority of this property's impressions carry no query-level data, because Google withholds
+rare queries entirely.
+
+A page filter does not unlock them. Expect a handful of rows per URL, sometimes zero. Keep
+the empty files — see below. At this volume, page-level position and CTR will carry more of
+the analysis than query text does.
 
 ## The 11 required exports
 

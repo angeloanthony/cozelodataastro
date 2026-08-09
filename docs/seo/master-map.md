@@ -15,7 +15,7 @@ invent a strategy alongside it. Update it when pages change or new GSC data land
 | F4 — hidden Website Design copy | ✅ implemented 2026-08-08 |
 | F2 — internal-link graph | ✅ implemented 2026-08-08 |
 | F3 — `Service` schema wiring | ✅ implemented 2026-08-08 |
-| F1 — Approach/Method duplication | ⏸ blocked on GSC export |
+| F1 — Approach/Method duplication | ✅ resolved 2026-08-08 — consolidated into `/our-approach/` |
 | F5 — homepage H1 | ⏸ deliberately deferred |
 | F6 — homepage FAQ schema | ❌ **withdrawn — the finding was wrong** |
 | F7 — six-URL split | ⏸ blocked on GSC export |
@@ -131,6 +131,38 @@ decisions. The cluster assignment is safe to treat as settled; the keyword is no
 ---
 
 ## 3. Findings — verified, ordered by value
+
+### F1 — RESOLVED 2026-08-08 ✅ (history below preserved unchanged)
+
+Resolved as a **content consolidation**, not a deletion. GSC evidence
+([gsc-analysis-00-sitewide.md](./gsc-analysis-00-sitewide.md) §6) showed **both** URLs at
+zero impressions over three months, so the merge carried no ranking risk — and the
+reference audit ([f1-redirect-audit.md](./f1-redirect-audit.md)) found the stage names
+`Attract · Engage · Convert · Grow` were the only content unique to
+`/the-cozelos-method/`.
+
+What happened:
+
+1. The four stage names were integrated into the existing four chapters of
+   `/our-approach/` — not appended beneath them. The page now names the framework in its
+   section heading (`The Cozelos Method` / `Attract. Engage. Convert. Grow.`) and in its AI
+   summary. Word count 851 → 864: the framework moved, nothing was padded.
+2. Vocabulary normalised from "layers" to "stages" across six visible references, so the
+   page carries one vocabulary.
+3. `/the-cozelos-method/` retired: page file deleted, footer link removed, the homepage
+   `Philosophy` button repointed to `/our-approach/` (label kept — it still names the
+   framework), and the `llms.txt` entry folded into the `/our-approach/` line.
+
+Sitemap is now **10 URLs**. The canonical inventory in §2 above still lists 11 and predates
+this change.
+
+⚠️ **Outstanding — the 301 does not exist yet.** This project is `output: "static"` with no
+adapter and no redirect configuration, so it cannot emit a real 301. Until a host/CDN rule
+is created, `/the-cozelos-method/` returns **404**. At zero impressions the search cost is
+nil, but the redirect should still be configured — alongside the `www` → apex rule in F9,
+as two separately documented rules.
+
+---
 
 ### F1 — `/our-approach/` and `/the-cozelos-method/` are the same page
 
@@ -324,6 +356,38 @@ Self-healing via canonical, low urgency. A 301 stripping unknown query parameter
 cleaner but must not break any parameter the site legitimately uses. **Do not touch until
 `?page_id=158` (131 impressions, position ~13.6) is identified in the export** — that URL
 has real impressions and needs to be classified before anything redirects it.
+
+**Measured live 2026-08-08** (as Googlebot), after a sitewide GSC Pages report showed
+`?page_id=158` 131 impr / 6 clicks, `?page_id=262` 57 impr, `?page_id=866` 46 impr:
+
+| URL | Status | Canonical emitted | Bytes |
+| --- | --- | --- | --- |
+| `/` | 200 | `https://cozelosdata.com/` | 158,873 |
+| `/?page_id=158` | 200 | `https://cozelosdata.com/` | 158,873 |
+| `/?page_id=262` | 200 | `https://cozelosdata.com/` | 158,873 |
+| `/?page_id=866` | 200 | `https://cozelosdata.com/` | 158,873 |
+
+All three serve **byte-identical homepage HTML**. There is no distinct legacy content
+behind any of them at the serving layer — the "historical content" scenario is ruled out
+*for what Google can fetch today*. What is still unknown is what Google **associates** with
+them from the previous WordPress site, and that is a query-attribution question the
+page-filtered exports answer. Impressions ≠ content. Still do not redirect.
+
+### F9 — `www` is a live duplicate host (new, 2026-08-08)
+
+Measured live: `https://www.cozelosdata.com/` and `https://www.cozelosdata.com/services/`
+both return **200 with no redirect** to the apex. The sitewide GSC Pages report shows
+`www.cozelosdata.com/services/` earning 41 impressions alongside 53 for the apex
+`/services/`.
+
+Mitigating fact: canonical is built from the hardcoded `SITE` constant in
+[astro.config.mjs](../../astro.config.mjs), so **every `www` page emits the apex
+canonical** — verified above. Same self-healing pattern as F8, not a split-index
+emergency.
+
+There is **no redirect configuration in this repository** (no `_redirects`, `_headers`,
+`netlify.toml`, `wrangler.toml`, or `vercel.json`). A `www` → apex 301 is a host/DNS/CDN
+change, not a code change, and is out of scope for any commit here. Record only.
 
 ---
 

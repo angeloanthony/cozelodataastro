@@ -26,8 +26,7 @@ WOSB-eligible. DUNS 059220399. CAGE 897W0. NAICS 513210, 541511 (primary), 54151
 - Services: https://cozelosdata.com/services/
 - Founder — Ellen Cozelos: https://cozelosdata.com/ellen-cozelos/
 - Why Cozelos Data: https://cozelosdata.com/why-cozelos-data/
-- The Cozelos Method: https://cozelosdata.com/the-cozelos-method/
-- Our Approach: https://cozelosdata.com/our-approach/
+- Our Approach (incl. the Cozelos Method framework): https://cozelosdata.com/our-approach/
 - Pricing: https://cozelosdata.com/pricing/
 - FAQ: https://cozelosdata.com/faq/
 - Portfolio: https://cozelosdata.com/portfolio/

@@ -11,9 +11,15 @@ const breadcrumbs = [
   { name: "Our Approach", href: "/our-approach/" },
 ];
 
+// The four stages carry two labels: `stage` is the named framework step (the
+// Cozelos Method), `kicker` is the plain-language description of what that step
+// covers. The stage names were the only content unique to /the-cozelos-method/;
+// they are consolidated here under F1 so one URL carries both the philosophy and
+// the framework. See docs/seo/f1-redirect-audit.md.
 const chapters = [
   {
     n: "01",
+    stage: "Attract",
     icon: "star",
     kicker: "First impressions",
     headline: "Beautiful design earns attention.",
@@ -26,6 +32,7 @@ const chapters = [
   },
   {
     n: "02",
+    stage: "Engage",
     icon: "bolt",
     kicker: "Speed & experience",
     headline: "Performance keeps visitors engaged.",
@@ -38,6 +45,7 @@ const chapters = [
   },
   {
     n: "03",
+    stage: "Convert",
     icon: "search",
     kicker: "Visibility & search",
     headline: "SEO brings customers.",
@@ -50,11 +58,12 @@ const chapters = [
   },
   {
     n: "04",
+    stage: "Grow",
     icon: "target",
     kicker: "Outcomes & growth",
     headline: "Strategy turns customers into growth.",
     paragraphs: [
-      "Attention, engagement, and traffic are only inputs. None of them pay the bills on their own. The final — and most important — layer is strategy: aiming everything at a business outcome. More calls. More bookings. More qualified leads. More revenue.",
+      "Attention, engagement, and traffic are only inputs. None of them pay the bills on their own. The final — and most important — stage is strategy: aiming everything at a business outcome. More calls. More bookings. More qualified leads. More revenue.",
       "This is where most web projects stop short, and where ours begins. We design the path a visitor takes from first impression to paying customer, and we engineer every page, headline, and call-to-action to move them along it. Then we measure what actually matters — leads and revenue — and refine.",
       "Strategy is what turns a website into a digital asset: a system that doesn't just look good, but actively grows the business behind it, year after year.",
     ],
@@ -69,17 +78,17 @@ const chapters = [
 >
   <PageHero
     eyebrow="Our Approach"
-    title="Four layers between a stranger and a customer."
-    lead="Great digital work isn't a pile of features — it's a sequence. Each layer earns the next, turning a passing glance into attention, attention into interest, interest into a customer, and customers into growth. This is how we think about every project we build."
-    summary="Cozelos Data follows a four-layer philosophy: beautiful design earns attention, performance keeps visitors engaged, SEO brings customers, and strategy turns customers into growth. Each layer builds on the one before it, turning a website into a growth platform engineered for measurable results."
+    title="Four stages between a stranger and a customer."
+    lead="Great digital work isn't a pile of features — it's a sequence. Each stage earns the next, turning a passing glance into attention, attention into interest, interest into a customer, and customers into growth. This is how we think about every project we build."
+    summary="Cozelos Data follows a four-stage framework called the Cozelos Method: Attract (beautiful design earns attention), Engage (performance keeps visitors engaged), Convert (SEO brings customers), and Grow (strategy turns customers into growth). Each stage builds on the one before it, turning a website into a growth platform engineered for measurable results."
     breadcrumbs={breadcrumbs}
   />
 
   <!-- The four chapters -->
   <Section
-    eyebrow="The Philosophy"
-    title="Attention. Engagement. Customers. Growth."
-    lead="Skip any one layer and the system breaks — a gorgeous site no one can find, or a fast site with nothing to convert. Done in order, they compound."
+    eyebrow="The Cozelos Method"
+    title="Attract. Engage. Convert. Grow."
+    lead="Skip any one stage and the system breaks — a gorgeous site no one can find, or a fast site with nothing to convert. Done in order, they compound."
   >
     <div class="space-y-6">
       {chapters.map((c, i) => (
@@ -93,6 +102,8 @@ const chapters = [
             <span class="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]">
               <Icon name={c.icon} size={26} />
             </span>
+            <!-- The named framework step (the Cozelos Method) -->
+            <span class="font-display text-xl font-extrabold uppercase tracking-tight sm:text-2xl">{c.stage}</span>
           </div>
 
           <!-- Narrative -->
@@ -114,9 +125,9 @@ const chapters = [
   <!-- Synthesis -->
   <Section class="!pt-4">
     <div class="reveal mx-auto max-w-3xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-10 text-center sm:p-14">
-      <h2 class="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">Four layers. One system.</h2>
+      <h2 class="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">Four stages. One system.</h2>
       <p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">
-        Most agencies are good at one layer. They make pretty sites, or they chase
+        Most agencies are good at one stage. They make pretty sites, or they chase
         rankings, or they run ads. We engineer all four to work as a single system —
         because attention without speed is wasted, traffic without strategy is noise,
         and a beautiful site no one can find is just an expensive secret. Stacked in
