@@ -15,7 +15,7 @@ invent a strategy alongside it. Update it when pages change or new GSC data land
 | F4 — hidden Website Design copy | ✅ implemented 2026-08-08 |
 | F2 — internal-link graph | ✅ implemented 2026-08-08 |
 | F3 — `Service` schema wiring | ✅ implemented 2026-08-08 |
-| F1 — Approach/Method duplication | ✅ resolved 2026-08-08 — consolidated into `/our-approach/` |
+| F1 — Approach/Method duplication | ✅ resolved 2026-08-08 — consolidated into `/our-approach/`, Cloudflare 301 live and verified |
 | F5 — homepage H1 | ⏸ deliberately deferred |
 | F6 — homepage FAQ schema | ❌ **withdrawn — the finding was wrong** |
 | F7 — six-URL split | ⏸ blocked on GSC export |
@@ -25,7 +25,9 @@ invent a strategy alongside it. Update it when pages change or new GSC data land
 *query-specific* work only. Guide-supported, site-verifiable changes are open — see
 [guide-audit-2026-08-08.md](./guide-audit-2026-08-08.md) for the full 11-page compliance
 audit, the A/B/C classification, and the seven Category A changes implemented against it.
-F1, F5, F7, F8 and every keyword/intent decision remain blocked on the GSC exports.
+F5, F7, F8 and every keyword/intent decision remain blocked on the GSC exports. **F1 is no
+longer blocked** — it was resolved as a content consolidation and its 301 configured and
+independently verified in production on 2026-08-08 (§3, F1).
 
 ---
 
@@ -57,9 +59,12 @@ get filled from real data rather than assumption.
 
 ---
 
-## 2. The map — 11 indexable URLs
+## 2. The map — 10 indexable URLs
 
-Sitemap verified live: index → `sitemap-0.xml` → these 11 URLs, all HTTP 200.
+Sitemap verified live: index → `sitemap-0.xml` → **10 URLs**, all HTTP 200 — down from 11
+with the F1 consolidation on 2026-08-08. The `/the-cozelos-method/` rows still present in
+the §2.1–2.3 tables below are the **pre-retirement record**: that URL is no longer in the
+sitemap and now 301s to `/our-approach/`.
 `/payment/`, `/terms/`, `/privacy/` are excluded from the sitemap and carry
 `noindex, follow` — correct, leave alone.
 
@@ -167,6 +172,60 @@ which makes the 301 more necessary than a 404 would have — not less. At zero i
 the practical cost is still nil.
 
 Configure alongside the `www` → apex rule in F9, as two separately documented rules.
+
+#### Resolution — 301 configured and verified 2026-08-08 ✅
+
+Supersedes the ⚠️ block directly above, which is left in place as the record of what was
+outstanding before the rule existed. The soft-404 described there was measured in
+production and is now closed.
+
+The redirect lives in **Cloudflare Redirect Rules** ("Retire The Cozelos Method"), not in
+the repo — this project is still `output: "static"` with no adapter, so nothing about the
+build changed. Rule shape:
+
+| Field | Value |
+| --- | --- |
+| Match | `lower(http.request.uri.path) in {"/the-cozelos-method" "/the-cozelos-method/"}` |
+| Target | `https://cozelosdata.com/our-approach/` |
+| Status | 301 |
+| Preserve query string | enabled |
+
+Matching is on **path only**, not full URI. The first attempt matched the full URI and let
+`/the-cozelos-method/?utm_source=…` fall through to the origin — a 200 soft-404 on the
+homepage. `lower()` keeps the match case-insensitive; the two-value set covers the
+missing trailing slash. Both were live gaps, not hypotheticals.
+
+Verified against production, every variant one 301 then 200, no loops:
+
+| Request | Hops | Final | Query |
+| --- | --- | --- | --- |
+| `/the-cozelos-method/` | 1 | `/our-approach/` 200 | n/a |
+| `/the-cozelos-method` | 1 | `/our-approach/` 200 | n/a |
+| `/the-cozelos-method/?utm_source=test&a=1` | 1 | `/our-approach/?utm_source=test&a=1` 200 | preserved |
+| `/the-cozelos-method?gclid=test` | 1 | `/our-approach/?gclid=test` 200 | preserved |
+| `/THE-COZELOS-METHOD/` | 1 | `/our-approach/` 200 | n/a |
+| `/The-Cozelos-Method/` | 1 | `/our-approach/` 200 | n/a |
+
+`www` + a retired path produces **two** hops, which is correct rather than a defect — F9
+fires first, then F1, each once:
+
+```
+www.cozelosdata.com/the-cozelos-method/?utm_source=test&a=1
+  → 301 → cozelosdata.com/the-cozelos-method/?utm_source=test&a=1   (F9)
+  → 301 → cozelosdata.com/our-approach/?utm_source=test&a=1         (F1)
+  → 200
+```
+
+Collapsing this to one hop would mean duplicating F1's path logic onto the `www` host, so
+it is deliberately left as two.
+
+**F9 re-tested after the F1 edit and still passes** — `/`, `/services/`, `/pricing/`,
+`/portfolio/`, `/?page_id=158` each return exactly one 301 to the apex with path and query
+preserved and a 200 final. No regression from this change.
+
+**F10 was not tested and not touched.** The catch-all remains a separate open finding; the
+F1 redirect now intercepts this one path *before* F10's fallback can serve it, but F10's
+behaviour for every other unknown path is unchanged and still as described below.
 
 ### F10 — the host serves every unknown path as the homepage (new, 2026-08-08)
 
