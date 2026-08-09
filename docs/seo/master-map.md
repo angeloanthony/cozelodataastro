@@ -157,10 +157,70 @@ Sitemap is now **10 URLs**. The canonical inventory in §2 above still lists 11 
 this change.
 
 ⚠️ **Outstanding — the 301 does not exist yet.** This project is `output: "static"` with no
-adapter and no redirect configuration, so it cannot emit a real 301. Until a host/CDN rule
-is created, `/the-cozelos-method/` returns **404**. At zero impressions the search cost is
-nil, but the redirect should still be configured — alongside the `www` → apex rule in F9,
-as two separately documented rules.
+adapter and no redirect configuration, so it cannot emit a real 301.
+
+**Correction (measured 2026-08-08):** an earlier note here said the retired URL would
+return **404**. It will not — see F10. The host serves unknown paths as the homepage with
+HTTP 200. So after deploy, `/the-cozelos-method/` becomes a **soft 404** that
+self-canonicalises to `/`, not to `/our-approach/`. That is the wrong consolidation target,
+which makes the 301 more necessary than a 404 would have — not less. At zero impressions
+the practical cost is still nil.
+
+Configure alongside the `www` → apex rule in F9, as two separately documented rules.
+
+### F10 — the host serves every unknown path as the homepage (new, 2026-08-08)
+
+Measured live. `https://cozelosdata.com/definitely-not-a-real-page-xyz/` returns:
+
+| | Value |
+| --- | --- |
+| Status | **HTTP 200** (not 404) |
+| Body | **158,873 bytes — byte-identical to the homepage** |
+| `<title>` | Web Design & SEO in Vernal, Utah — Custom Sites That Rank |
+| Canonical | `https://cozelosdata.com/` |
+| `noindex` | none |
+
+Production is **Cloudflare** (`Server: cloudflare`, `cf-cache-status: DYNAMIC`, `CF-RAY`
+present on both apex and `www`).
+
+Two consequences:
+
+1. **This fully explains F8.** The `?page_id=` URLs are not special legacy handling — they
+   are the same catch-all. Any URL that does not match a built page returns the homepage
+   with the homepage canonical.
+2. **Every mistyped or stale URL is an indexable soft 404.** Google flags these in the
+   Coverage report and it is an unbounded surface: an infinite space of URLs all returning
+   200 with identical content.
+
+Self-canonicalisation limits the damage, which is why nothing has gone visibly wrong. But
+the correct behaviour is a real 404 for unknown paths, with explicit 301s for the URLs that
+genuinely moved.
+
+Fix location: **Cloudflare**, not this repository.
+
+Header evidence (2026-08-08) says this is **probably not** a default Cloudflare Pages
+deployment:
+
+| Header | Observed | Pages default |
+| --- | --- | --- |
+| `Cache-Control` on hashed `/_astro/*` asset | `public, max-age=14400, must-revalidate` | `public, max-age=31536000, immutable` |
+| `Access-Control-Allow-Origin` on HTML | `*` | not set |
+| `ETag` | plain MD5-style hash | — |
+
+The CORS wildcard plus a plain-hash `ETag` plus a 4-hour asset TTL is the signature of an
+object-storage origin (R2/S3-style) behind Cloudflare, or a Worker — not Pages. That also
+explains F10: a bucket-backed setup returning `index.html` for unmatched keys.
+
+**Therefore: do not add `public/_redirects` to this repo.** If this is not Pages the file
+is never read, and it would sit in the tree looking like a working redirect while doing
+nothing.
+
+**Use Cloudflare Redirect Rules instead.** They run at the edge, before the origin, so they
+work identically whether the backend is Pages, a Worker, or a bucket — which sidesteps the
+question entirely. Two rules is well inside the free-plan allowance.
+
+Note that F10 itself (unknown paths returning 200) **cannot** be fixed by Redirect Rules —
+that is origin behaviour and needs whoever configured the catch-all. Separate task.
 
 ---
 
