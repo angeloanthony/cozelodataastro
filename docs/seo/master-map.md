@@ -158,8 +158,8 @@ What happened:
    `Philosophy` button repointed to `/our-approach/` (label kept — it still names the
    framework), and the `llms.txt` entry folded into the `/our-approach/` line.
 
-Sitemap is now **10 URLs**. The canonical inventory in §2 above still lists 11 and predates
-this change.
+Sitemap is now **10 URLs**. The §2 inventory has since been updated to 10; its per-URL
+tables retain the `/the-cozelos-method/` rows as the pre-retirement record.
 
 ⚠️ **Outstanding — the 301 does not exist yet.** This project is `output: "static"` with no
 adapter and no redirect configuration, so it cannot emit a real 301.
