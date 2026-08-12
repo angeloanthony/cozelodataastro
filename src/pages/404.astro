@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Section from "../components/Section.astro";
+import Button from "../components/Button.astro";
+import Icon from "../components/Icon.astro";
+import { primaryNav } from "../data/site";
+
+// No `breadcrumbs` prop on purpose. A breadcrumb trail — and the BreadcrumbList
+// schema BaseLayout emits from one — would place the requested URL inside the
+// site hierarchy, which is the opposite of what this page is saying.
+//
+// `noindex` is belt-and-braces. A document served with a real HTTP 404 does not
+// need it, but the origin currently serves unknown paths as the homepage at 200
+// (master map F10, Layer 2), so this page must not be indexable if it is ever
+// served with a 200 before that is fixed.
+
+// Home already has the button below and the header logo; the rest of the
+// primary nav becomes the recovery list. Reused rather than restated so this
+// page cannot drift out of step with the real navigation.
+const destinations = primaryNav.filter((item) => item.href !== "/");
+---
+<BaseLayout
+  title="Page Not Found"
+  description="This page does not exist. Links to the main sections of the Cozelos Data site."
+  noindex
+>
+  <PageHero
+    eyebrow="Error 404"
+    title="That page isn't here."
+    lead="The address you requested doesn't match anything on this site. It may have been mistyped, or it may be a link to a page that no longer exists."
+  />
+
+  <Section class="!pt-0">
+    <div class="reveal">
+      <Button href="/" size="lg" icon="arrow" magnetic>Go to the homepage</Button>
+    </div>
+
+    <nav aria-label="Main sections" class="mt-12">
+      <h2 class="reveal font-display text-2xl font-extrabold tracking-tight">
+        Or pick up from here
+      </h2>
+      <ul class="reveal mt-5 grid gap-px overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--border)] sm:grid-cols-2 lg:grid-cols-3">
+        {destinations.map((item, i) => (
+          <li class="bg-[var(--surface-2)]" data-delay={i * 30}>
+            <a
+              href={item.href}
+              class="group flex items-center justify-between gap-4 px-6 py-5 font-display text-base font-semibold tracking-tight transition-colors hover:text-[var(--color-brand)]"
+            >
+              {item.label}
+              <Icon
+                name="arrow"
+                size={16}
+                class="text-[var(--text-subtle)] transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[var(--color-brand)]"
+              />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <p class="reveal mt-10 max-w-2xl leading-relaxed text-[var(--text-muted)]">
+      If a link on this site sent you here, we'd like to fix it —
+      <a href="/contact/" class="font-semibold text-[var(--color-brand)] link-underline">let us know</a>.
+    </p>
+  </Section>
+</BaseLayout>

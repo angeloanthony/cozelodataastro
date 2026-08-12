@@ -16,10 +16,22 @@ invent a strategy alongside it. Update it when pages change or new GSC data land
 | F2 — internal-link graph | ✅ implemented 2026-08-08 |
 | F3 — `Service` schema wiring | ✅ implemented 2026-08-08 |
 | F1 — Approach/Method duplication | ✅ resolved 2026-08-08 — consolidated into `/our-approach/`, Cloudflare 301 live and verified |
-| F5 — homepage H1 | ⏸ deliberately deferred |
+| F5 — homepage H1 | ⏸ deliberately deferred — blocked on `/` query data |
 | F6 — homepage FAQ schema | ❌ **withdrawn — the finding was wrong** |
-| F7 — six-URL split | ⏸ blocked on GSC export |
-| F8 — `?page_id=` URLs | ⏸ blocked on GSC export |
+| F7 — six-URL split | ⏸ **still blocked** — the `/services/` export returned zero query rows, see below |
+| F8 — `?page_id=` URLs | ⏸ still blocked — `?page_id=158` remains unclassified |
+| F9 — `www` duplicate host | ✅ resolved — 301 to apex, path preserved, re-verified live 2026-08-11 |
+| F10 — unknown paths return the homepage at 200 | 🟡 **open — next technical investigation** |
+
+**`/services/` GSC gate completed 2026-08-11 — decision DEFERRED.** The page-filtered
+export passed attribution (58 impr, 0 clicks, pos 6.88, apex isolated) but returned **zero
+query rows**, along with zero Countries, Devices, and Search-appearance rows. Search Console
+therefore provides insufficient query-level evidence to determine the commercial
+architecture of `/services/` — which is a statement about our evidence, *not* a claim that
+Google does not understand the page. The export is preserved as the clean **pre-F9
+baseline**; re-pull after 4–8 weeks of post-consolidation data (no earlier than 2026-09-08)
+and compare. Full record: [gsc-analysis-01-services.md](./gsc-analysis-01-services.md).
+**Preserve the current `/services/` architecture unchanged until then.**
 
 **Freeze status changed 2026-08-08.** The blanket freeze is lifted; the gate is now
 *query-specific* work only. Guide-supported, site-verifiable changes are open — see
@@ -120,7 +132,7 @@ decisions. The cluster assignment is safe to treat as settled; the keyword is no
 | URL | Intent | Cluster | Proposed primary keyword | GSC impr. | GSC pos. |
 | --- | --- | --- | --- | --- | --- |
 | `/` | Commercial brand/entity | Root | web design Vernal Utah / digital agency Vernal Utah | 178 (pasted) | 2.12 (pasted) |
-| `/services/` | Commercial investigation | Services pillar | digital marketing services Vernal Utah | 53 (pasted) | 7.13 (pasted) |
+| `/services/` | Commercial investigation ⛔ | Services pillar | digital marketing services Vernal Utah ⛔ | **58 (verified)** | **6.88 (verified)** |
 | `/pricing/` | Commercial + cost | Services pillar | website design cost Utah | 44 (pasted) | 1.43 (pasted) |
 | `/contact/` | Navigational/transactional | Conversion | contact — brand only | — | — |
 | `/portfolio/` | Evaluative proof | Proof | Utah web design portfolio | 44 (pasted) | 1.43 (pasted) |
@@ -132,6 +144,11 @@ decisions. The cluster assignment is safe to treat as settled; the keyword is no
 | `/faq/` | Informational long-tail | Q&A | many — one per question | — | — |
 
 ⚠️ = unresolved cannibalization, see finding F1.
+⛔ = **not validated and not validatable from current data.** The `/services/` page-filtered
+export (2026-08-11) returned zero query rows, so its intent classification and proposed
+primary keyword remain unverified proposals. Do not act on them. See
+[gsc-analysis-01-services.md](./gsc-analysis-01-services.md). Its impressions/position are
+now verified figures from that export, replacing the earlier pasted numbers.
 
 ---
 
@@ -257,6 +274,14 @@ genuinely moved.
 
 Fix location: **Cloudflare**, not this repository.
 
+> **⚠️ Superseded 2026-08-11.** The object-storage inference below is **withdrawn** — the
+> three headers it rests on have simpler explanations (the 4-hour TTL is Cloudflare's
+> default Browser Cache TTL applied to CDN-cached assets, not an origin setting). The
+> serving layer is a Cloudflare first-party static-asset server. Full evidence and the
+> Layer 2 diagnosis: [f10-layer2-diagnosis.md](./f10-layer2-diagnosis.md). The practical
+> conclusion changed too: `dist/404.html` has **never been deployed**, so deploying it may
+> resolve F10 with no Cloudflare change at all — test before configuring anything.
+
 Header evidence (2026-08-08) says this is **probably not** a default Cloudflare Pages
 deployment:
 
@@ -280,6 +305,83 @@ question entirely. Two rules is well inside the free-plan allowance.
 
 Note that F10 itself (unknown paths returning 200) **cannot** be fixed by Redirect Rules —
 that is origin behaviour and needs whoever configured the catch-all. Separate task.
+
+#### Read-only investigation 2026-08-11 — F10 has two independent layers
+
+Re-probed live as part of the post-`/services/`-gate work. **Nothing was changed.** The
+behaviour is unchanged from 2026-08-08: unknown paths still return `200` with 158,942 bytes
+of homepage HTML, canonical `https://cozelosdata.com/`, no `noindex`.
+
+The probe set below is what is new, and it splits F10 into two layers that can be addressed
+independently:
+
+| Request | Code | Bytes | Reading |
+| --- | --- | --- | --- |
+| `/services` (no trailing slash) | **308** | 0 | → `/services/`. The stack **has a route table.** |
+| `/definitely-not-a-real-page-xyz` | 200 | 158,942 | No 308 first — unknown paths skip normalisation entirely |
+| `/definitely-not-a-real-page-xyz/` | 200 | 158,942 | Catch-all |
+| `/wp-login.php` | 200 | 158,942 | Catch-all |
+| `/_astro/nope.js` | 200 | 158,942 | Catch-all, served as `Content-Type: text/html` |
+| `/?page_id=158` | 200 | 158,942 | Homepage route + ignored query |
+| `/?page_id=262`, `/?page_id=866` | 200 | 158,942 | Same |
+| `/?utm_source=test` | 200 | 158,942 | **Same — byte-identical to the `page_id` URLs** |
+| `/robots.txt` | 200 | 1,911 | Real file |
+| `/sitemap-0.xml` | 200 | 1,865 | Real file |
+
+**Layer 1 — this repository has no 404 document at all.** There is no
+`src/pages/404.astro`, and [astro.config.mjs](../../astro.config.mjs) sets
+`output: "static"`. An Astro static build emits `404.html` **only** when that route is
+authored. So `dist/` currently contains no 404 document — meaning even a host configured to
+serve one has nothing to serve. This half of F10 is a repository concern, it is fixable
+here, and it is a prerequisite for any host-side fix.
+
+**Layer 1 implemented 2026-08-11** — [src/pages/404.astro](../../src/pages/404.astro) added;
+`npm run build` now emits `dist/404.html` (38,212 bytes), page count 13 → 14. `astro check`
+clean. Verified additive-only: every other page's HTML is byte-identical once the
+content-hashed `AiSummary.*.css` filename is normalised, and the shared stylesheet gained
+exactly two Tailwind utilities with none removed or altered. The document carries
+`noindex, follow` and emits **no** `BreadcrumbList` — deliberately, so it never asserts that
+the requested URL has a place in the site hierarchy. **Not committed and not deployed.**
+
+Known limitation, unavoidable without touching canonical logic (out of scope): the document
+self-canonicalises to `https://cozelosdata.com/404/`, since `Seo.astro` derives canonical
+from `Astro.url.pathname` at build time. Served under any unknown path it will therefore
+point at `/404/`. `noindex` neutralises the consequence; revisit only if Layer 2 lands and
+the canonical proves to matter.
+
+**Layer 2 — the origin's unmatched-key behaviour** remains a Cloudflare/origin
+configuration task, as recorded above. **Layer 1 alone changes nothing in production.**
+Until the origin is configured to serve `404.html` with an HTTP 404 status for unmatched
+keys, unknown paths will continue to return the homepage at 200 exactly as before. Header signature re-checked 2026-08-11 and unchanged
+(`Access-Control-Allow-Origin: *` on HTML, `/_astro/*` at `max-age=14400, must-revalidate`,
+plain-hash `ETag`) — still consistent with an object-storage or Worker origin rather than
+Pages default.
+
+#### Correction to point 1 above — F8 does **not** block F10
+
+The claim recorded on 2026-08-08 that the `?page_id=` URLs "are the same catch-all" does not
+survive this probe set. Two pieces of evidence:
+
+1. `/services` returns `308` while `/definitely-not-a-real-page-xyz` returns `200` directly.
+   The stack therefore distinguishes known routes from unknown ones — it is not blind.
+2. `/?utm_source=test` returns bytes identical to `/?page_id=158`. Both are simply the
+   **real `/` route with a query string the static host ignores** — not unmatched keys.
+
+The two URL classes return identical bytes, which is why they looked like one mechanism, but
+they arrive there by different paths. **Consequence: making unknown paths return 404 would
+not change `?page_id=158` behaviour at all**, because `/` is a matched route. The
+`?page_id=158` classification question (F8) genuinely blocks *redirecting* those URLs; it
+does **not** block fixing unknown-path handling.
+
+This decouples F10 from the F8 evidence gap. It does not by itself authorise a change —
+Layer 2 is still someone else's console — but it removes the stated reason F10 was waiting.
+
+#### Secondary observation — stale asset requests return HTML
+
+`/_astro/nope.js` returns homepage HTML with `Content-Type: text/html`. A browser holding a
+stale hashed asset URL after a deploy receives an HTML document where it expects JavaScript,
+which fails as a parse error rather than a clean 404. This is a robustness issue rather than
+an SEO one, and it resolves along with Layer 2.
 
 ---
 
@@ -492,7 +594,29 @@ behind any of them at the serving layer — the "historical content" scenario is
 them from the previous WordPress site, and that is a query-attribution question the
 page-filtered exports answer. Impressions ≠ content. Still do not redirect.
 
-### F9 — `www` is a live duplicate host (new, 2026-08-08)
+### F9 — `www` is a live duplicate host ✅ RESOLVED 2026-08-11 (history below preserved unchanged)
+
+**Re-verified live 2026-08-11** — the redirect is in place at the edge and is correct:
+
+| Request | Result |
+| --- | --- |
+| `https://www.cozelosdata.com/` | `301` → `https://cozelosdata.com/` |
+| `https://www.cozelosdata.com/services/` | `301` → `https://cozelosdata.com/services/` |
+
+One hop, `301` (not `302`), and the **path is preserved** rather than being flattened to the
+homepage — all three properties correct. `Server: cloudflare` on the redirect response, so
+it is running as an edge rule, consistent with the F10 note that redirect configuration
+lives in Cloudflare rather than in this repository.
+
+Consequence for measurement: the apex/`www` impression split recorded below (53 + 41 for
+`/services/`) should collapse onto the apex from the consolidation date forward. That is the
+comparison the pre-F9 baseline in
+[gsc-analysis-01-services.md](./gsc-analysis-01-services.md) exists to support.
+
+Original finding follows.
+
+---
+
 
 Measured live: `https://www.cozelosdata.com/` and `https://www.cozelosdata.com/services/`
 both return **200 with no redirect** to the apex. The sitewide GSC Pages report shows
@@ -507,6 +631,54 @@ emergency.
 There is **no redirect configuration in this repository** (no `_redirects`, `_headers`,
 `netlify.toml`, `wrangler.toml`, or `vercel.json`). A `www` → apex 301 is a host/DNS/CDN
 change, not a code change, and is out of scope for any commit here. Record only.
+
+---
+
+### F11 — the live `robots.txt` is Cloudflare-managed and blocks AI crawlers (new, 2026-08-11)
+
+Found incidentally while probing F10. **Record only — no change proposed here.**
+
+The served [robots.txt](https://cozelosdata.com/robots.txt) is **1,911 bytes**. This
+repository's [public/robots.txt](../../public/robots.txt) is four lines. They are not the
+same file: Cloudflare is injecting a managed block at the edge, delimited by
+`# BEGIN Cloudflare Managed content` / `# END Cloudflare Managed Content`, ahead of the
+repo's own directives.
+
+**This repository is therefore not the source of truth for `robots.txt`.** Editing
+`public/robots.txt` will not remove or alter the managed block.
+
+What the managed block does:
+
+| Directive | Value |
+| --- | --- |
+| `Content-Signal` (on `User-agent: *`) | `search=yes, ai-train=no, use=reference` |
+| `Disallow: /` | Amazonbot, Applebot-Extended, Bytespider, CCBot, **ClaudeBot**, CloudflareBrowserRenderingCrawler, **Google-Extended**, **GPTBot**, meta-externalagent |
+
+Scope of the effect, stated precisely — **not** "the site is blocked from AI":
+
+- **Classic search is unaffected.** Googlebot and Bingbot are not in the disallow list, and
+  the content signal explicitly permits `search=yes`. Indexing and ranking are untouched.
+- Named AI crawlers above are disallowed, and `ai-train=no` reserves rights against
+  training use.
+- Several AI retrieval agents are **not** named and so are not blocked by name — notably
+  OAI-SearchBot and PerplexityBot. GPTBot and OAI-SearchBot are distinct agents serving
+  different purposes.
+- `Google-Extended` governs Gemini/Vertex grounding, which is not the same surface as
+  Google's AI Overviews. Do not assume blocking it removes the site from AI Overviews, and
+  do not assume it does not — verify before claiming either.
+
+**Why this matters later, not now.** Master Guide Part 13 (AI citation) and Part 22 (the
+Agentic Web) both assume AI systems can fetch the site. A managed block that disallows
+several of them is a live tension with that goal, and it is a *business decision* — training
+opt-out versus citation reach — not a technical defect. It belongs to the AI/GEO phase.
+
+Two things to carry forward:
+
+1. Any AI-citation measurement must account for this. Testing "does ChatGPT cite Cozelos"
+   without knowing GPTBot is disallowed would misread the result.
+2. The untidy detail: the merged file contains **two** `User-agent: *` groups (one managed,
+   one from the repo). Both are `Allow: /`, so there is no practical conflict, but a single
+   consolidated group would be cleaner if the managed block is ever configured off.
 
 ---
 
@@ -528,6 +700,26 @@ Nothing here changes the sitemap or robots. Both are verified correct.
 
 Items **4 and 5 are unblocked right now** and are the two highest-confidence on-site
 wins available. Everything else waits for evidence.
+
+### Sprint 02 — revised 2026-08-11, after the `/services/` gate
+
+Item 1 is complete for `/services/` and returned zero query rows, so items 2, 3, 6, 7 and 8
+above stay blocked — and items 2 and 3 are now blocked indefinitely rather than pending,
+since no further export is planned before the post-F9 re-pull. Revised order:
+
+| # | Action | Depends on GSC? | State |
+| --- | --- | --- | --- |
+| 1 | ~~`/services/` page-filtered export~~ ✅ done 2026-08-11 — zero query rows, decision deferred | — | closed |
+| 2 | ~~**F10 Layer 1** — author `src/pages/404.astro`~~ ✅ implemented 2026-08-11, **not deployed** | **no** | done, uncommitted |
+| 3 | **F10 Layer 2** — origin returns 404 for unmatched keys (Cloudflare/origin console) | **no** | outside this repo |
+| 4 | F11 — decide the AI-crawler posture in the Cloudflare managed `robots.txt` | no | business decision |
+| 5 | Re-pull `/services/` and compare to the pre-F9 baseline | — | **not before 2026-09-08** |
+| 6 | Everything intent-related: F5, F7, F8, titles, targeting, money pages | yes | blocked on #5 |
+
+F5, F7 and F8 were each reviewed on 2026-08-11 against this export and **none can be safely
+resolved without `/services/` query intent** — F7 directly, F8 because `?page_id=158`
+remains unclassified, F5 because it needs `/` query data this export does not contain. They
+stay deferred. See [gsc-analysis-01-services.md](./gsc-analysis-01-services.md) §8.
 
 ---
 
