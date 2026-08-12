@@ -1,5 +1,37 @@
 # F10 Layer 2 — read-only diagnosis of the homepage-fallback behaviour
 
+> ## ✅ RESOLVED 2026-08-11 — the §8 hypothesis was correct
+>
+> Commit `859c89c` deployed `dist/404.html`. **No Cloudflare configuration was changed.**
+> Unknown paths now return **HTTP 404** with the real 404 document:
+>
+> | Request | Before | After |
+> | --- | --- | --- |
+> | `/definitely-not-a-real-page-xyz/` | 200, homepage, 158,942 B | **404**, `Page Not Found`, 38,738 B |
+> | `/a/b/c/deeply/nested/nope/` | 200, homepage | **404** |
+> | `/_astro/nope.js` | 200, homepage | **404** |
+> | `/images/nope.png` | 200, homepage | **404** |
+>
+> The cause was exactly what §6 identified: the platform's not-found handling was already in
+> **404-page mode**, and the deployment simply had no `404.html` to serve. The absent file
+> *was* the bug. The SPA-fallback theory is disproved — the asset server never needed
+> reconfiguring.
+>
+> No regressions: all ten real routes 200, `/services` still 308 → `/services/`, `www` still
+> 301 → apex, F1's `/the-cozelos-method/` still 301 → `/our-approach/`, sitemap still 10 URLs.
+>
+> Two artefacts of the fix, both benign and both recorded in
+> [master-map.md](./master-map.md) §3 F10: the document is directly addressable at `/404`
+> with a **200** (harmless — it is `noindex, follow` and absent from the sitemap), and
+> `/404.html` and `/404/` both **308** → `/404`.
+>
+> The F8 legacy URLs were untouched, as predicted: `/?page_id=158`, `262` and `866` still
+> return the homepage at 200, because they resolve to the real `/` route and were never
+> unmatched paths. That decoupling argument is now confirmed in production.
+>
+> The diagnosis below is preserved unchanged as the record of how this was determined.
+
+
 **Date:** 2026-08-11 · **Type:** diagnosis only — nothing changed, nothing deployed
 **Question:** why does `/definitely-not-a-real-page-xyz` return the homepage with HTTP 200,
 and exactly where must that change so it returns HTTP 404?

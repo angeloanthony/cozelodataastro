@@ -21,7 +21,7 @@ invent a strategy alongside it. Update it when pages change or new GSC data land
 | F7 — six-URL split | ⏸ **still blocked** — the `/services/` export returned zero query rows, see below |
 | F8 — `?page_id=` URLs | ⏸ still blocked — `?page_id=158` remains unclassified |
 | F9 — `www` duplicate host | ✅ resolved — 301 to apex, path preserved, re-verified live 2026-08-11 |
-| F10 — unknown paths return the homepage at 200 | 🟡 **open — next technical investigation** |
+| F10 — unknown paths return the homepage at 200 | ✅ **RESOLVED 2026-08-11** — deployed `404.html`; unknown paths now return HTTP 404. No Cloudflare change was needed |
 
 **`/services/` GSC gate completed 2026-08-11 — decision DEFERRED.** The page-filtered
 export passed attribution (58 impr, 0 clicks, pos 6.88, apex isolated) but returned **zero
@@ -349,10 +349,28 @@ from `Astro.url.pathname` at build time. Served under any unknown path it will t
 point at `/404/`. `noindex` neutralises the consequence; revisit only if Layer 2 lands and
 the canonical proves to matter.
 
-**Layer 2 — the origin's unmatched-key behaviour** remains a Cloudflare/origin
-configuration task, as recorded above. **Layer 1 alone changes nothing in production.**
-Until the origin is configured to serve `404.html` with an HTTP 404 status for unmatched
-keys, unknown paths will continue to return the homepage at 200 exactly as before. Header signature re-checked 2026-08-11 and unchanged
+**Layer 2 — RESOLVED 2026-08-11 by deployment alone.** Commit `859c89c` shipped
+`dist/404.html`; unknown paths now return **HTTP 404** with the 404 document (38,738 bytes)
+instead of the homepage at 200 (158,942 bytes). Verified live across four unmatched shapes,
+including `/_astro/nope.js` and `/images/nope.png`, so the stale-asset-returns-HTML issue is
+resolved too. **No Cloudflare setting, DNS record, Worker, `_redirects`, or `_headers` was
+created or changed** — the asset server was already in 404-page mode and had simply never
+been given a `404.html`. Full before/after:
+[f10-layer2-diagnosis.md](./f10-layer2-diagnosis.md).
+
+Two benign artefacts of the fix, recorded so they are not re-discovered as bugs:
+
+| Behaviour | Assessment |
+| --- | --- |
+| `/404` returns the 404 document with **200** | Harmless. The document is `noindex, follow` and absent from the sitemap (verified live: 10 URLs, no `/404`). Every *unmatched* path — the case that matters — returns 404 |
+| `/404.html` and `/404/` both **308** → `/404` | The asset router's normal index normalisation |
+
+The served document canonicalises to `https://cozelosdata.com/404/` under every unknown
+path, as documented in Layer 1. Still neutralised by `noindex`, still out of scope.
+
+F8 confirmation: `/?page_id=158`, `262` and `866` still return the homepage at 200 after this
+change, exactly as predicted — they resolve to the real `/` route and were never unmatched
+paths. The claim that F8 does not block F10 is now verified in production, not just inferred. Header signature re-checked 2026-08-11 and unchanged
 (`Access-Control-Allow-Origin: *` on HTML, `/_astro/*` at `max-age=14400, must-revalidate`,
 plain-hash `ETag`) — still consistent with an object-storage or Worker origin rather than
 Pages default.
@@ -711,7 +729,7 @@ since no further export is planned before the post-F9 re-pull. Revised order:
 | --- | --- | --- | --- |
 | 1 | ~~`/services/` page-filtered export~~ ✅ done 2026-08-11 — zero query rows, decision deferred | — | closed |
 | 2 | ~~**F10 Layer 1** — author `src/pages/404.astro`~~ ✅ implemented 2026-08-11, **not deployed** | **no** | done, uncommitted |
-| 3 | **F10 Layer 2** — origin returns 404 for unmatched keys (Cloudflare/origin console) | **no** | outside this repo |
+| 3 | ~~**F10 Layer 2** — origin returns 404 for unmatched keys~~ ✅ resolved 2026-08-11 by deploying `404.html`; no Cloudflare change required | **no** | closed |
 | 4 | F11 — decide the AI-crawler posture in the Cloudflare managed `robots.txt` | no | business decision |
 | 5 | Re-pull `/services/` and compare to the pre-F9 baseline | — | **not before 2026-09-08** |
 | 6 | Everything intent-related: F5, F7, F8, titles, targeting, money pages | yes | blocked on #5 |
