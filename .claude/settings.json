@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node \"C:\\\\Users\\\\deluc\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-deluc-Documents-cozelodataastro\\\\d4b05564-72f3-4adb-83a1-f75b178ef8df\\\\scratchpad\\\\links.cjs\")",
+      "Bash(grep -oiE \"[^<>]{0,60}\\(UEI|DUNS|SAM[ .]?gov\\)[^<>]{0,60}\" dist/company/index.html)",
+      "Bash(grep -o \".\\\\{60\\\\}googletagmanager.\\\\{80\\\\}\\\\|.\\\\{40\\\\}gtag\\(.\\\\{60\\\\}\\\\|G-[A-Z0-9]\\\\{6,\\\\}\" dist/index.html)"
+    ]
+  }
+}

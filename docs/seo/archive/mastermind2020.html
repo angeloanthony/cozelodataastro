@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PerseusDB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script defer src="js/fontawesome-all.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+    <link href="css/bootsnav.css" rel="stylesheet">  
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png" />
+	<script type="text/javascript" src="js/amazon-cognito-auth.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.596.0.min.js"></script>
+    <script type="text/javascript" src="js/amazon-cognito-identity.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/v4-shims.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed no-background bootsnav">
+    <div class="container-fluid">   
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo-home.png" class="logo logo-large" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="open-button" onclick="openForm()">LogIn</li>
+				<li class="open-button" onclick="openForm2()">Sign up</li>
+            </ul>
+        </div>
+    </div>   
+</nav>
+
+
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <label for="email">Email</label>
+    <input type="email" placeholder="" name="email" id="inputEmail" pattern=".*" required>
+
+    <label for="password">Password</label>
+    <input type="password" placeholder="" name="password" onkeypress="javascript:EnterKey(event)" id="passwordSignIn" pattern=".*" required>
+
+    <button type="submit" class="btn" onclick="signInButton()">Sign in</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <a onclick="forgotPasswordButton()">Forgot your password?</a>
+  </form>
+</div>
+
+
+<div class="form-popup" id="myForm2">
+  <form class="form-container">
+    <label for="username">Email</label>
+    <input type="text" name="username" value="" id="personalemail" placeholder=""
+	pattern=".*" required>
+    <label for="requiredAttributes[given_name]">First Name</label>
+    <input type="text" name="requiredAttributes[given_name]" id="given_name"
+	placeholder="" pattern=".*" required>
+    <label for="requiredAttributes[family_name]">Last Name</label>
+    <input type="text" name="requiredAttributes[family_name]" id="family_name"
+	placeholder="" pattern=".*" required>
+    <label for="passwordRegister">Password</label>
+    <input type="password" placeholder="" name="password"
+	id="passwordRegister" pattern=".*" required="" value="" required>
+	<div id="message" class="text-light" style="background-color:transparent">
+		<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+		<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+		<p id="character" class="invalid">Use <b>[!@#$%\&+]</b></p>
+		<p id="number" class="invalid">A <b>number</b></p>
+		<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+	</div>
+    <label class="container-checkbox"><a href="terms-conditions.html">Agree to terms and conditions</a>
+    <input type="checkbox" id="terms-checkbox" name="breakdown" value="true">
+    </label>
+    <p>Please select your preferred subscription plan below. You will be redirected to Stripe, our secure third party vendor.</p>
+	<p>Once you have selected a subscription plan, a confirmation code will be sent to the email provided. You will need this code to register your account.</p>
+	<p>Need help signing up? Click <a href="sign-up-in-demo.html">here</a> for a video tutorial.</p>
+    <button type="button" class="btn" id="checkout-button-plan_HAxhRoyYjcDUKB" role="link">Monthly $29.95</button>
+    <button type="button" class="btn" id="checkout-button-plan_HBGkl7CSDKufmq" role="link">Yearly $359.99</button>
+	<button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+  </form>
+</div>
+
+
+
+<div class="hero" style="background-image: url(images/img1.png);">
+	<div class="back"></div>
+	<div class="container">
+		<div class="row  hero-title">
+			<div class="col-md-10 col-md-offset-1 text-center" style="z-index: 2">
+					<h1 class="wow flipInX" data-wow-duration="0.7s" data-wow-delay="0.1s">Why PerseusDB?</h1>
+					<p class="wow flipInX" data-wow-duration="0.9s" data-wow-delay="0.3s"><b>The Virtual Assistant to Independent Insurance Agents</b></p>
+					<p class="wow flipInX" data-wow-duration="1.1s" data-wow-delay="0.5s"><b>EVERYTHING You Need to Better Run Your Business</b></p>
+                    <ul>
+						<!--<li class="wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.7s">The Next Evolution of I.A. MASTERMIND</li>-->
+                        <li class="wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.7s">*Track Projected Residual Income</li>
+						<li class="wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="1.2s">*Automatic Alerts</li>
+						<li class="wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="1.7s">*Information of All Your Policies at your Fingertips</li>
+						<li class="wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="2.2s">*PLUS SO MUCH MORE!</li>
+					</ul>
+					<h2 class="wow bounceIn" data-wow-duration="1s" data-wow-delay="2.8s">Sign up NOW for a FREE 14-day trial!</h2>
+					<!--TODO: iframe needs to be updated with new video-->
+					<!--<iframe  class="wow fadeIn" data-wow-duration="0.7s" data-wow-delay="2.8s" width="100%" height="315" src="https://www.youtube.com/embed/wbsjgBupQSY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+			</div>
+			<div class="col-md-12  wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.3s">
+				<div class="tc-testimonial">
+				    <div class="row">
+				        <div class="col-md-12 text-center">
+				            <div id="testimonial-slider" class="owl-carousel">
+				                <div class="testimonial">
+				                    <p class="description">"PerseusDB has helped me to keep track of all my clients that have policies with different companies. Now, it is easier to find the information that I need without having to look at different folders."</p>
+				                    <div class="testimonial-content">
+				                        <h3 class="title">- Sandra G., 30 years in industry</h3>
+				                        <h4></h4>
+				                    </div>
+				                </div>
+				 
+				                <div class="testimonial">
+				                    <p class="description">"Just knowing how much profit I would make at the end of the month from the policies, it's a game changer."</p>
+				                    <div class="testimonial-content">
+				                        <h3 class="title">- Matthew A., 10 years of management</h3>
+				                    </div>
+				                </div>
+				 
+				                <div class="testimonial">
+				                    <p class="description">"Since I have started using this app, it has increased the efficiency of my business."</p>
+				                    <div class="testimonial-content">
+				                        <h3 class="title">- Ted H., 7 years in industry</h3>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="text-center">
+	<a href=""><img src="images/logo-white.png" alt="" class="hero-logo"></a>
+</div>
+
+<!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="vendor/wow/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="js/bootsnav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+	<script>
+	        function openForm() {
+	          document.getElementById("myForm").style.display = "block";
+	        }
+
+	        function closeForm() {
+	          document.getElementById("myForm").style.display = "none";
+	        }
+	    </script>
+
+	    <script>
+	        function openForm2() {
+	          document.getElementById("myForm2").style.display = "block";
+	        }
+
+	        function closeForm2() {
+	          document.getElementById("myForm2").style.display = "none";
+	        }
+		</script>
+	<script type="text/javascript" src="js/signIn.js"></script>
+	<script type="text/javascript" src="js/forgotPassword.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+	<script type="text/javascript" src="js/passwordValidation.js"></script>
+</body>
+
+</html>
