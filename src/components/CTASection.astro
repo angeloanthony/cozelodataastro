@@ -5,6 +5,9 @@
  */
 import Button from "./Button.astro";
 import { site } from "../data/site";
+import { getLangFromUrl } from "../data/i18n";
+import { localizeHref } from "../i18n/content";
+import { getShared } from "../i18n/shared";
 
 interface Props {
   title?: string;
@@ -17,11 +20,28 @@ interface Props {
 const {
   title = "Let's build something worth showing off.",
   body = "Tell us about your business. We'll tell you what we'd build — and what it would actually cost.",
-  primaryLabel = "Start a Project",
+  primaryLabel,
   primaryHref = "/contact/",
-  secondaryLabel = "See Our Work",
+  secondaryLabel,
   secondaryHref = "/portfolio/",
 } = Astro.props;
+
+// Localize the resolved href — the defaults above and anything a caller passes.
+// localizeHref is idempotent on an already-localized path and leaves external,
+// tel:, mailto: and fragment-only hrefs alone, so callers need no changes.
+const lang = getLangFromUrl(Astro.url);
+const primary = localizeHref(primaryHref, lang);
+const secondary = localizeHref(secondaryHref, lang);
+// Shared content (domain 3) — this band closes most pages.
+//
+// The label defaults are resolved here rather than in the destructuring above,
+// because a static default cannot be locale-aware. Precedence is explicit:
+// a caller-supplied label (from a page, or from page JSON) always outranks the
+// shared default, so page-specific CTA copy is never overwritten.
+const cta = getShared(lang).cta;
+const primaryText = primaryLabel ?? cta.start;
+const secondaryText = secondaryLabel ?? cta.work;
+const callNote = cta.callNote;
 ---
 <section class="container-x py-20">
   <div class="reveal relative overflow-hidden rounded-[var(--radius-xl2)] bg-[var(--color-ink)] px-6 py-16 text-center sm:px-12 sm:py-20">
@@ -35,11 +55,11 @@ const {
       <h2 class="font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl">{title}</h2>
       <p class="mx-auto mt-4 max-w-xl text-lg text-white/70">{body}</p>
       <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
-        <Button href={primaryHref} size="lg" magnetic icon="arrow">{primaryLabel}</Button>
-        <a href={secondaryHref} class="link-underline inline-flex items-center gap-2 px-2 py-2 font-semibold text-white/90 hover:text-white">{secondaryLabel}</a>
+        <Button href={primary} size="lg" magnetic icon="arrow">{primaryText}</Button>
+        <a href={secondary} class="link-underline inline-flex items-center gap-2 px-2 py-2 font-semibold text-white/90 hover:text-white">{secondaryText}</a>
       </div>
       <p class="mt-8 text-sm text-white/50">
-        Or call us directly: <a href={site.phoneHref} class="font-semibold text-white hover:text-[var(--color-brand-300)]">{site.phone}</a>
+        {callNote} <a href={site.phoneHref} class="font-semibold text-white hover:text-[var(--color-brand-300)]">{site.phone}</a>
       </p>
     </div>
   </div>

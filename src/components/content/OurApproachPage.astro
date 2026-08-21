@@ -1,0 +1,102 @@
+---
+/**
+ * OurApproachPage — THE template for /our-approach/ (playbook §6.5).
+ *
+ * One shared component implements the page; the master route (/our-approach/)
+ * and the dynamic localized route (/it/our-approach/) both render it. All copy
+ * comes from src/i18n/content/<locale>/our-approach.json — this file is
+ * presentation only.
+ *
+ * The four stages carry two labels: `stage` is the named framework step (the
+ * Cozelos Method), `kicker` is the plain-language description of what that step
+ * covers. The stage names were the only content unique to /the-cozelos-method/;
+ * they are consolidated here under F1 so one URL carries both the philosophy and
+ * the framework. See docs/seo/f1-redirect-audit.md.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../PageHero.astro";
+import Section from "../Section.astro";
+import CTASection from "../CTASection.astro";
+import Icon from "../Icon.astro";
+import Button from "../Button.astro";
+import { getLangFromUrl } from "../../data/i18n";
+import { getPageContent, localizeHref } from "../../i18n/content";
+
+const lang = getLangFromUrl(Astro.url);
+const c = getPageContent<any>("our-approach", lang);
+
+const breadcrumbs = [
+  { name: "Home", href: localizeHref("/", lang) },
+  { name: c.breadcrumb, href: localizeHref("/our-approach/", lang) },
+];
+---
+<BaseLayout
+  title={c.meta.title}
+  description={c.meta.description}
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow={c.hero.eyebrow}
+    title={c.hero.title}
+    lead={c.hero.lead}
+    summary={c.hero.summary}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <!-- The four chapters -->
+  <Section
+    eyebrow={c.method.eyebrow}
+    title={c.method.title}
+    lead={c.method.lead}
+  >
+    <div class="space-y-6">
+      {c.chapters.map((ch: any, i: number) => (
+        <article
+          data-delay={(i % 2) * 80}
+          class="reveal grid gap-8 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-10 lg:grid-cols-12 lg:items-start"
+        >
+          <!-- Index + icon rail -->
+          <div class="flex items-center gap-4 lg:col-span-3 lg:flex-col lg:items-start lg:gap-5">
+            <span class="font-display text-5xl font-extrabold leading-none text-[var(--color-brand)]/25 sm:text-6xl">{ch.n}</span>
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]">
+              <Icon name={ch.icon} size={26} />
+            </span>
+            <!-- The named framework step (the Cozelos Method) -->
+            <span class="font-display text-xl font-extrabold uppercase tracking-tight sm:text-2xl">{ch.stage}</span>
+          </div>
+
+          <!-- Narrative -->
+          <div class="lg:col-span-9">
+            <span class="text-xs font-bold uppercase tracking-[0.18em] text-[var(--text-subtle)]">{ch.kicker}</span>
+            <h3 class="mt-3 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{ch.headline}</h3>
+            <div class="mt-4 space-y-4 leading-relaxed text-[var(--text-muted)]">
+              {ch.paragraphs.map((p: string) => <p>{p}</p>)}
+            </div>
+            <p class="mt-6 border-l-2 border-[var(--color-brand)] pl-4 font-display text-lg font-semibold text-[var(--text)]">
+              {ch.takeaway}
+            </p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </Section>
+
+  <!-- Synthesis -->
+  <Section class="!pt-4">
+    <div class="reveal mx-auto max-w-3xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-10 text-center sm:p-14">
+      <h2 class="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{c.synthesis.title}</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">{c.synthesis.body}</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <Button href={localizeHref("/services/", lang)} size="lg" variant="secondary" icon="arrow">{c.synthesis.ctaServices}</Button>
+        <Button href={localizeHref("/contact/", lang)} size="lg" magnetic icon="arrow">{c.synthesis.ctaPrimary}</Button>
+      </div>
+    </div>
+  </Section>
+
+  <CTASection
+    title={c.cta.title}
+    body={c.cta.body}
+    primaryLabel={c.cta.primaryLabel}
+    secondaryLabel={c.cta.secondaryLabel}
+  />
+</BaseLayout>

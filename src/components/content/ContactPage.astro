@@ -1,0 +1,152 @@
+---
+/**
+ * ContactPage — THE template for /contact/ (playbook §6.5).
+ *
+ * One shared component implements the page; the master route (/contact/) and
+ * the dynamic localized route (/it/contact/) both render it. All copy comes
+ * from src/i18n/content/<locale>/contact.json — this file is presentation only.
+ *
+ * NAP data (phone, email, address, hours) is NOT copy: it stays in
+ * src/data/site.ts and reaches the page either directly or through {placeholder}
+ * tokens (playbook §6.8 — never translate a number).
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../PageHero.astro";
+import Section from "../Section.astro";
+import ContactForm from "../ContactForm.astro";
+import Icon from "../Icon.astro";
+import { site } from "../../data/site";
+import { getLangFromUrl } from "../../data/i18n";
+import { getPageContent, localizeHref, interp } from "../../i18n/content";
+import { getShared } from "../../i18n/shared";
+
+const lang = getLangFromUrl(Astro.url);
+const c = getPageContent<any>("contact", lang);
+
+// Figures stay in the data layer; the copy carries tokens (playbook §6.8).
+const vars = { phone: site.phone, email: site.email };
+
+const breadcrumbs = [
+  { name: "Home", href: localizeHref("/", lang) },
+  { name: c.breadcrumb, href: localizeHref("/contact/", lang) },
+];
+
+const mapQuery = encodeURIComponent(
+  `${site.address.street}, ${site.address.city}, ${site.address.region} ${site.address.postal}`
+);
+---
+<BaseLayout
+  title={c.meta.title}
+  description={interp(c.meta.description, vars)}
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow={c.hero.eyebrow}
+    title={c.hero.title}
+    lead={c.hero.lead}
+    summary={interp(c.hero.summary, vars)}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <!-- What to expect — consultative, no-pressure framing -->
+  <Section
+    eyebrow={c.expect.eyebrow}
+    title={c.expect.title}
+    lead={c.expect.lead}
+  >
+    <div class="grid gap-6 sm:grid-cols-3">
+      {c.steps.map((e: any, i: number) => (
+        <div data-delay={i * 70} class="reveal rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7">
+          <span class="grid h-12 w-12 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name={e.icon} size={22} /></span>
+          <h3 class="mt-5 font-display text-lg font-bold tracking-tight">{e.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{e.body}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- HTML-bearing copy (playbook §3, type 1). Its hrefs are rewritten for the
+         active locale by deepLocalizeHrefs(), which treats any *Html key as markup.
+         set:html output carries no data-astro-cid, so this copy must never depend
+         on page-scoped CSS (playbook §7) — these classes are global utilities. -->
+    <p class="reveal mx-auto mt-10 max-w-2xl text-center leading-relaxed text-[var(--text-muted)]" set:html={c.expect.linkNoteHtml} />
+  </Section>
+
+  <Section class="!pt-4">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <!-- Form -->
+      <div class="reveal lg:col-span-7">
+        <div id="contact-form" class="scroll-mt-28 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7 sm:p-9">
+          <h2 class="font-display text-2xl font-extrabold tracking-tight">{c.form.title}</h2>
+          <p class="mt-2 text-[var(--text-muted)]">{c.form.body}</p>
+          <div class="mt-7">
+            <ContactForm
+              intro={c.form.intro}
+              chatLabel={c.form.chatLabel}
+              callLabel={c.form.callLabel}
+              emailNote={c.form.emailNote}
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Details -->
+      <div class="reveal space-y-5 lg:col-span-5" data-delay="120">
+        <!-- Quick actions -->
+        <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7">
+          <h2 class="font-display text-xl font-bold tracking-tight">{c.quick.title}</h2>
+          <p class="mt-2 text-sm text-[var(--text-muted)]">{c.quick.body}</p>
+          <div class="mt-5 grid gap-3 sm:grid-cols-3">
+            <a href={site.phoneHref} class="flex flex-col items-center gap-2 rounded-2xl border border-[var(--border)] bg-[var(--surface)] px-3 py-4 text-center transition-colors hover:border-[var(--color-brand)]">
+              <span class="grid h-10 w-10 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="phone" size={18} /></span>
+              <span class="text-sm font-semibold text-[var(--text)]">{c.quick.callLabel}</span>
+            </a>
+            <a href={site.smsHref} class="flex flex-col items-center gap-2 rounded-2xl border border-[var(--border)] bg-[var(--surface)] px-3 py-4 text-center transition-colors hover:border-[var(--color-brand)]">
+              <span class="grid h-10 w-10 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="chat" size={18} /></span>
+              <span class="text-sm font-semibold text-[var(--text)]">{c.quick.textLabel}</span>
+            </a>
+            <a href={site.emailHref} class="flex flex-col items-center gap-2 rounded-2xl border border-[var(--border)] bg-[var(--surface)] px-3 py-4 text-center transition-colors hover:border-[var(--color-brand)]">
+              <span class="grid h-10 w-10 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="mail" size={18} /></span>
+              <span class="text-sm font-semibold text-[var(--text)]">{c.quick.emailLabel}</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Reach us directly -->
+        <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7">
+          <h2 class="font-display text-xl font-bold tracking-tight">{c.direct.title}</h2>
+          <ul class="mt-5 space-y-4 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="phone" size={18} /></span>
+              <span><span class="block text-[var(--text-subtle)]">{c.direct.phoneLabel}</span><a href={site.phoneHref} class="font-semibold text-[var(--text)] hover:text-[var(--color-brand)]">{site.phone}</a></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="mail" size={18} /></span>
+              <span><span class="block text-[var(--text-subtle)]">{c.direct.emailLabel}</span><a href={site.emailHref} class="font-semibold text-[var(--text)] hover:text-[var(--color-brand)]">{site.email}</a></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="pin" size={18} /></span>
+              <span><span class="block text-[var(--text-subtle)]">{c.direct.officeLabel}</span><span class="font-semibold text-[var(--text)]">{site.address.street}<br />{site.address.city}, {site.address.region} {site.address.postal}</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="clock" size={18} /></span>
+              <span><span class="block text-[var(--text-subtle)]">{c.direct.hoursLabel}</span><span class="font-semibold text-[var(--text)]">{interp(getShared(lang).business.hours, site.hours)}</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Map -->
+        <div class="reveal overflow-hidden rounded-3xl border border-[var(--border)]" data-delay="180">
+          <iframe
+            title={c.map.title}
+            width="100%"
+            height="260"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            style="border:0; display:block;"
+            src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>

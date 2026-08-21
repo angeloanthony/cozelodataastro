@@ -10,9 +10,11 @@ const breadcrumbs = [
   { name: "FAQ", href: "/faq/" },
 ];
 
-// Group the questions by category in the defined display order.
+// Group the questions by category in the defined display order. The join is on
+// FaqCategory.id — never on the English label — so anchors, accordion groups,
+// and the schema stay put when the labels are eventually translated.
 const grouped = faqCategories
-  .map((category) => ({ category, items: faqs.filter((f) => f.category === category) }))
+  .map((category) => ({ category, items: faqs.filter((f) => f.categoryId === category.id) }))
   .filter((g) => g.items.length > 0);
 
 // One FAQPage schema covering all 25 questions on this page — matches what's
@@ -47,21 +49,21 @@ const faqSchema = {
     <nav aria-label="FAQ categories" class="reveal mb-12 flex flex-wrap gap-2.5">
       {grouped.map((g) => (
         <a
-          href={`#${g.category.toLowerCase()}`}
+          href={`#${g.category.id}`}
           class="rounded-full border border-[var(--border-strong)] bg-[var(--surface-2)] px-4 py-2 text-sm font-semibold text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
         >
-          {g.category}
+          {g.category.label}
         </a>
       ))}
     </nav>
 
     <div class="space-y-14">
       {grouped.map((g) => (
-        <div id={g.category.toLowerCase()} class="scroll-mt-28">
-          <h2 class="reveal font-display text-2xl font-extrabold tracking-tight">{g.category}</h2>
+        <div id={g.category.id} class="scroll-mt-28">
+          <h2 class="reveal font-display text-2xl font-extrabold tracking-tight">{g.category.label}</h2>
           <div class="reveal mt-5 divide-y divide-[var(--border)] overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)]">
             {g.items.map((f, i) => (
-              <details class="group" data-delay={i * 30} name={`faq-${g.category}`}>
+              <details class="group" data-delay={i * 30} name={`faq-${g.category.id}`}>
                 <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-display text-base font-semibold tracking-tight transition-colors hover:text-[var(--color-brand)] [&::-webkit-details-marker]:hidden">
                   {f.q}
                   <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-all duration-300 group-open:rotate-45 group-open:border-[var(--color-brand)] group-open:text-[var(--color-brand)]">

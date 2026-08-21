@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Il nostro approccio — Come Cozelos Data costruisce asset digitali",
+    "description": "Cozelos Data costruisce asset digitali su quattro livelli: il design conquista l’attenzione, le prestazioni mantengono vivo l’interesse, la SEO porta clienti, la strategia genera crescita."
+  },
+  "breadcrumb": "Il nostro approccio",
+  "hero": {
+    "eyebrow": "Il nostro approccio",
+    "title": "Quattro fasi tra uno sconosciuto e un cliente.",
+    "lead": "Il lavoro digitale fatto bene non è un cumulo di funzionalità — è una sequenza. Ogni fase si guadagna la successiva: trasforma uno sguardo distratto in attenzione, l’attenzione in interesse, l’interesse in un cliente e i clienti in crescita. È così che ragioniamo su ogni progetto che costruiamo.",
+    "summary": "Cozelos Data segue un framework in quattro fasi chiamato Metodo Cozelos: Attrarre (un design curato conquista l’attenzione), Coinvolgere (le prestazioni mantengono vivo l’interesse), Convertire (la SEO porta clienti) e Crescere (la strategia trasforma i clienti in crescita). Ogni fase si appoggia alla precedente e trasforma un sito web in una piattaforma di crescita progettata per risultati misurabili."
+  },
+  "method": {
+    "eyebrow": "Il Metodo Cozelos",
+    "title": "Attrarre. Coinvolgere. Convertire. Crescere.",
+    "lead": "Salta anche una sola fase e il sistema si rompe — un sito bellissimo che nessuno trova, oppure un sito velocissimo senza nulla da convertire. Eseguite nell’ordine giusto, si moltiplicano."
+  },
+  "chapters": [
+    {
+      "n": "01",
+      "icon": "star",
+      "stage": "Attrarre",
+      "kicker": "Prime impressioni",
+      "headline": "Un design curato conquista l’attenzione.",
+      "paragraphs": [
+        "Hai meno tempo di quanto pensi. Un visitatore si forma un’opinione sulla tua attività in circa 50 millisecondi — prima ancora di riuscire a leggere una sola parola. In quell’istante è il design a parlare per te. Dice se sei un’azienda seria, se sei al passo con i tempi e se meriti ancora un momento della sua giornata.",
+        "Un design curato non è decorazione — è credibilità resa visibile. Una tipografia sicura, spaziature studiate, animazioni cinematografiche e una gerarchia visiva chiara dicono al visitatore, prima ancora che legga qualcosa, che l’azienda dietro allo schermo prende sul serio il proprio mestiere. Un template identico a diecimila altre aziende dice esattamente il contrario.",
+        "Per questo progettiamo ogni pagina perché si guadagni i cinque secondi successivi, e i cinque dopo ancora. L’attenzione è il biglietto d’ingresso. Senza, nulla di ciò che costruiamo verrà mai visto."
+      ],
+      "takeaway": "Se non conquisti l’attenzione, tutto il resto non conta."
+    },
+    {
+      "n": "02",
+      "icon": "bolt",
+      "stage": "Coinvolgere",
+      "kicker": "Velocità ed esperienza",
+      "headline": "Le prestazioni mantengono vivo il coinvolgimento.",
+      "paragraphs": [
+        "L’attenzione è fragile. Puoi conquistarla con una prima schermata straordinaria e perderla mezzo secondo dopo per colpa di una rotella di caricamento. La maggior parte dei visitatori abbandona una pagina che impiega più di tre secondi a caricarsi — e da mobile, dove ormai si concentra la maggioranza del tuo traffico, i siti lenti perdono clienti a migliaia.",
+        "Le prestazioni sono rispetto per il tempo di chi ti visita. Caricamenti sotto il secondo, scorrimento fluidissimo, interazioni istantanee — non sono vezzi da ingegneri. Sono la differenza tra un visitatore che esplora e uno che se n’è già andato. Ogni centinaio di millisecondi che togli si vede nelle conversioni.",
+        "Costruiamo a mano puntando alla velocità dalla prima riga di codice, e poi la difendiamo senza sosta. Il risultato è un sito che sembra non costare fatica — così il visitatore resta abbastanza a lungo da interessarsi davvero."
+      ],
+      "takeaway": "Un sito veloce mantiene l’attenzione che un sito curato ha conquistato."
+    },
+    {
+      "n": "03",
+      "icon": "search",
+      "stage": "Convertire",
+      "kicker": "Visibilità e ricerca",
+      "headline": "La SEO porta clienti.",
+      "paragraphs": [
+        "Design e velocità contano solo per chi sul sito ci arriva davvero. La verità scomoda è questa: il sito web più bello del mondo non vale nulla se nessuno riesce a trovarlo. La visibilità è la differenza tra un dépliant chiuso in un cassetto e una vetrina sulla via più trafficata della città.",
+        "L’ottimizzazione per i motori di ricerca è ciò che permette alle persone giuste di trovarti nell’esatto momento in cui ti stanno cercando. Progettiamo ogni sito per essere compreso — da Google e ormai anche dai motori AI come ChatGPT e Claude — con dati strutturati, un’architettura dei contenuti pulita e una SEO locale che ti mette davanti ai clienti della tua zona. È un pubblico che non affitti clic dopo clic: è un pubblico che si accumula nel tempo.",
+        "Bello, veloce e trovabile — a questo punto hai un flusso costante di visitatori qualificati che stavano già cercando esattamente ciò che offri."
+      ],
+      "takeaway": "La visibilità trasforma un ottimo sito web in una fonte di clienti."
+    },
+    {
+      "n": "04",
+      "icon": "target",
+      "stage": "Crescere",
+      "kicker": "Risultati e crescita",
+      "headline": "La strategia trasforma i clienti in crescita.",
+      "paragraphs": [
+        "Attenzione, coinvolgimento e traffico sono soltanto punti di partenza. Da soli non pagano le fatture. La fase finale — e più importante — è la strategia: orientare tutto verso un risultato di business. Più chiamate. Più prenotazioni. Più lead qualificati. Più fatturato.",
+        "È qui che la maggior parte dei progetti web si ferma, ed è qui che il nostro comincia. Progettiamo il percorso che un visitatore compie dalla prima impressione fino a diventare cliente pagante, e costruiamo ogni pagina, ogni titolo e ogni call-to-action per accompagnarlo lungo quel percorso. Poi misuriamo ciò che conta davvero — lead e fatturato — e miglioriamo.",
+        "La strategia è ciò che trasforma un sito web in un asset digitale: un sistema che non si limita ad avere un bell’aspetto, ma fa crescere attivamente l’azienda che ha dietro, anno dopo anno."
+      ],
+      "takeaway": "La strategia è ciò che trasforma i visitatori in crescita."
+    }
+  ],
+  "synthesis": {
+    "title": "Quattro fasi. Un solo sistema.",
+    "body": "La maggior parte delle agenzie è brava in una fase sola. Fanno siti graziosi, oppure rincorrono i posizionamenti, oppure gestiscono campagne pubblicitarie. Noi progettiamo tutte e quattro le fasi perché lavorino come un sistema unico — perché l’attenzione senza velocità è sprecata, il traffico senza strategia è rumore e un sito bellissimo che nessuno trova è solo un segreto costoso. Impilate nell’ordine giusto, smettono di essere funzionalità e diventano una macchina per la crescita.",
+    "ctaServices": "Guardalo applicato ai nostri servizi",
+    "ctaPrimary": "Inizia il tuo progetto"
+  },
+  "cta": {
+    "title": "Costruiamo il tuo motore di crescita.",
+    "body": "Raccontaci della tua attività. Ti mostreremo esattamente cosa costruiremmo — e la crescita che è progettato per generare.",
+    "primaryLabel": "Inizia il tuo progetto",
+    "secondaryLabel": "Guarda i lavori"
+  }
+}

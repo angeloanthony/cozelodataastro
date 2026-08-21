@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Chi siamo — Cozelos Data: competenza enterprise, costruita in Utah",
+    "description": "Cozelos Data è una Woman-Owned Small Business a Vernal, Utah, fondata da Ellen Cozelos — oltre 20 anni tra NASA, DoD e tecnologia commerciale."
+  },
+  "breadcrumb": "Azienda",
+  "hero": {
+    "eyebrow": "La nostra storia",
+    "title": "Competenza enterprise, al servizio delle imprese che contano.",
+    "lead": "Cozelos Data porta due decenni di ingegneria di livello NASA e Department of Defense alle imprese che sostengono le nostre comunità — rendendole più forti e migliorando la vita delle persone.",
+    "summary": "Cozelos Data è una Woman-Owned Small Business a Vernal, Utah, fondata da Ellen Cozelos — ingegnere del software, specialista di cybersecurity ed esperta di AI con oltre 20 anni tra NASA, Department of Defense, programmi aerospaziali e commerciali, e un Master conseguito alla Columbia University. La missione dell’azienda è semplice: rendere le imprese più forti e la vita migliore."
+  },
+  "founder": {
+    "eyebrow": "La fondatrice",
+    "title": "Conosci Ellen Cozelos.",
+    "paragraphsHtml": [
+      "Cozelos Data è stata fondata da <strong class=\"text-[var(--text)]\">Ellen Cozelos</strong> — affermata ingegnere del software, specialista di cybersecurity, professionista del marketing digitale ed esperta di AI, con oltre 20 anni di tecnologia innovativa realizzata per il settore pubblico, aerospaziale e commerciale.",
+      "Per anni Ellen ha supportato software mission-critical per i programmi della NASA e del Department of Defense — quei sistemi sicuri, affidabili e scalabili in cui precisione e prestazioni non sono funzionalità, ma requisiti. La sua competenza spazia dall’ingegneria del software alla cybersecurity, dall’intelligenza artificiale al marketing digitale: una combinazione rara, che le permette di risolvere problemi complessi e trasformarli in motori concreti di crescita.",
+      "Con un Master conseguito alla Columbia University e un percorso che l’ha portata da Huntsville, in Alabama, fino all’Utah orientale, Ellen unisce una profondità tecnica di livello enterprise a un approccio personale e centrato sul cliente. Ha fondato Cozelos Data su una sola convinzione: le imprese che sostengono le nostre comunità meritano la stessa qualità tecnologica delle Fortune 500 e del governo federale — senza i costi delle grandi città e senza trattamenti freddi e impersonali."
+    ],
+    "pullQuote": "La guida una sola regola: se è importante per i nostri clienti, è importante per noi.",
+    "bioCta": "Leggi la biografia completa di Ellen",
+    "card": {
+      "initials": "EC",
+      "name": "Ellen Cozelos",
+      "role": "Fondatrice e Principal",
+      "creds": [
+        {
+          "icon": "bolt",
+          "label": "Programmi NASA e DoD"
+        },
+        {
+          "icon": "shield",
+          "label": "Cybersecurity e AI"
+        },
+        {
+          "icon": "award",
+          "label": "M.S., Columbia University"
+        },
+        {
+          "icon": "clock",
+          "label": "Oltre 20 anni nella tecnologia"
+        }
+      ],
+      "imageAlt": "L’ufficio di Cozelos Data a Vernal, Utah",
+      "locationTitle": "Sede a Vernal, Utah",
+      "locationBody": "Al servizio di clienti in tutto il Paese"
+    }
+  },
+  "mission": {
+    "eyebrow": "Perché esistiamo",
+    "title": "Missione e visione.",
+    "cards": [
+      {
+        "icon": "target",
+        "title": "La nostra missione",
+        "body": "Costruire le piattaforme di crescita che rendono le imprese più forti e la vita migliore — dando alle organizzazioni locali e in crescita la visibilità, la credibilità e la tecnologia necessarie per prosperare, proteggere ciò che conta di più e creare nuove opportunità per le persone che servono."
+      },
+      {
+        "icon": "star",
+        "title": "La nostra visione",
+        "body": "Un Ovest in cui la tecnologia di livello mondiale non sia riservata alle grandi città e ai grandi budget — dove qualsiasi impresa ambiziosa possa competere, e vincere, sulla forza del proprio lavoro. Stiamo costruendo l’agenzia che dimostra che la grande ingegneria può nascere ovunque e servire tutti."
+      }
+    ],
+    "noteHtml": "Questa missione si traduce nel lavoro in <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">sei servizi collegati</a> e negli <a href=\"/why-cozelos-data/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">standard che ci imponiamo</a> su ogni progetto."
+  },
+  "philosophy": {
+    "eyebrow": "La nostra filosofia",
+    "body": "La tecnologia non è mai il punto — lo sono le persone. Quando un’impresa diventa più forte, le famiglie trovano sostegno, i dipendenti crescono e intere comunità stanno meglio. È questa la vera misura del nostro lavoro: non il codice che scriviamo o i posizionamenti che otteniamo, ma le vite che quei risultati rendono migliori. È per questo che lo facciamo."
+  },
+  "community": {
+    "eyebrow": "Dove abbiamo le radici",
+    "title": "Da Huntsville allo Uintah Basin.",
+    "paragraphs": [
+      "Abbiamo scelto di piantare Cozelos Data a Vernal, Utah, di proposito. Le imprese dell’Utah orientale e dello Uintah Basin — imprese edili, hotel, studi sanitari, tour operator e negozi a conduzione familiare — sono la spina dorsale delle loro comunità. Meritano una tecnologia costruita secondo lo stesso standard dei programmi aerospaziali e della difesa che Ellen ha supportato per tutta la carriera.",
+      "Quando le imprese dei nostri vicini vincono, vinciamo tutti. Imprese locali più forti significano più lavoro, più opportunità e una comunità più solida. Per noi non è una frase di marketing — è il motivo per cui abbiamo aperto qui, e lo standard che ci imponiamo su ogni progetto."
+    ],
+    "cards": [
+      {
+        "icon": "pin",
+        "title": "Radici locali",
+        "body": "Sede a Vernal, impegnati per il Basin."
+      },
+      {
+        "icon": "building",
+        "title": "Standard da grandi leghe",
+        "body": "Ingegneria di livello aerospaziale per le imprese di quartiere."
+      },
+      {
+        "icon": "chat",
+        "title": "Relazioni vere",
+        "body": "Lavori direttamente con noi — nessun call center, nessun rimpallo."
+      },
+      {
+        "icon": "star",
+        "title": "Prima la comunità",
+        "body": "Quando le imprese locali crescono, tutta la comunità diventa più forte."
+      }
+    ]
+  },
+  "government": {
+    "eyebrow": "Woman-Owned Small Business",
+    "title": "Credenziali attive, pronti per il settore pubblico.",
+    "lead": "Cozelos Data è orgogliosamente una Woman-Owned Small Business (WOSB) con credenziali federali attive — pronta a supportare le agenzie con sviluppo web, SEO, documentazione video e strumenti di AI, senza i costi dei grandi prime contractor.",
+    "credentials": {
+      "capabilities": [
+        {
+          "icon": "award",
+          "title": "Idoneità WOSB",
+          "body": "Woman-Owned Small Business — qualificata per opportunità set-aside e sole-source."
+        },
+        {
+          "icon": "building",
+          "title": "Pronti su SAM",
+          "body": "Registrazione attiva con UEI aggiornato, pronti per affidamenti come prime e come subappaltatore."
+        },
+        {
+          "icon": "doc",
+          "title": "DUNS / UEI attivi",
+          "body": "Universal Entity Identifier attivo e aggiornato per contratti conformi al FAR."
+        },
+        {
+          "icon": "shield",
+          "title": "Section 508",
+          "body": "Sviluppo attento all’accessibilità, allineato a WCAG 2.1 AA e Section 508."
+        },
+        {
+          "icon": "bolt",
+          "title": "Consegna rapida",
+          "body": "Abbastanza piccoli per muoverci in fretta, abbastanza strutturati per rispettare le milestone. La maggior parte dei siti in 4–6 settimane."
+        },
+        {
+          "icon": "lock",
+          "title": "Sicurezza dei dati",
+          "body": "Hosting cifrato, flussi di lavoro sicuri e documentazione di consegna chiara, sempre."
+        }
+      ],
+      "sourcesHtml": "L’accessibilità è misurata rispetto alle <a href=\"https://www.w3.org/TR/WCAG21/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Web Content Accessibility Guidelines (WCAG) 2.1</a> del W3C, al livello AA, che contengono ogni criterio di successo che i Revised Section 508 Standards recepiscono dalle WCAG 2.0. L’idoneità set-aside segue il <a href=\"https://www.sba.gov/federal-contracting/contracting-assistance-programs/women-owned-small-business-federal-contract-program\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Women-Owned Small Business Federal Contract Program</a> della SBA.",
+      "idLabels": {
+        "duns": "DUNS",
+        "cage": "CAGE Code",
+        "status": "Stato"
+      },
+      "table": {
+        "caption": "Codici NAICS con cui Cozelos Data opera",
+        "code": "Codice NAICS",
+        "description": "Descrizione",
+        "tier": "Livello",
+        "primary": "PRIMARIO",
+        "secondary": "Secondario"
+      }
+    },
+    "statement": {
+      "title": "Ti serve un capability statement?",
+      "body": "Prepariamo e inviamo un capability statement aggiornato e calibrato sul tuo fascicolo di acquisizione, di norma entro 24 ore lavorative. Hai una solicitation? Inviaci il numero SOL e ti rispondiamo indicando la nostra capability fit.",
+      "requestCta": "Richiedi il documento"
+    }
+  },
+  "commitment": {
+    "eyebrow": "Il nostro impegno",
+    "title": "Se è importante per te, è importante per noi.",
+    "cards": [
+      {
+        "icon": "chat",
+        "title": "Partnership vera",
+        "body": "Ellen crede che le partnership solide producano i risultati migliori. Ottieni un partner che investe nei tuoi risultati, non un fornitore che conta i deliverable."
+      },
+      {
+        "icon": "lock",
+        "title": "Possiedi tutto",
+        "body": "Dominio, codice e contenuti sono tuoi — sempre. Nessun vincolo, nessun canone che ti tiene in ostaggio, nessuna sorpresa."
+      },
+      {
+        "icon": "shield",
+        "title": "Costruito per durare",
+        "body": "Sicuro, affidabile e mantenuto nel tempo — progettato secondo gli standard dei sistemi mission-critical, non come un template usa e getta."
+      },
+      {
+        "icon": "check",
+        "title": "Onesti e trasparenti",
+        "body": "Preventivi fissi per iscritto, milestone chiare e risposte dirette. Ti diciamo cosa costruiremmo e quanto costa."
+      },
+      {
+        "icon": "bolt",
+        "title": "Reattivi e presenti",
+        "body": "Al telefono rispondiamo davvero. I clienti con un piano attivo ricevono supporto prioritario e un team che resta coinvolto anche dopo il lancio."
+      },
+      {
+        "icon": "target",
+        "title": "Focalizzati sui risultati",
+        "body": "Misuriamo il successo come lo misuri tu — in lead, crescita e risultati che rafforzano la tua impresa per anni."
+      }
+    ]
+  },
+  "timeline": {
+    "eyebrow": "Il percorso",
+    "title": "Come siamo arrivati qui.",
+    "events": [
+      {
+        "year": "Origine",
+        "title": "Nati a Vernal",
+        "body": "Fondata su una sola convinzione: troppe ottime imprese dello Utah hanno siti web che non sono all’altezza della qualità del loro lavoro."
+      },
+      {
+        "year": "Il metodo",
+        "title": "Un sistema ripetibile",
+        "body": "Abbiamo sviluppato un approccio nostro — architettura pillar-and-spoke, codice scritto a mano, animazioni cinematografiche, dati strutturati e integrazione dell’AI."
+      },
+      {
+        "year": "Crescita",
+        "title": "Nel Basin e oltre",
+        "body": "Oggi il nostro lavoro sostiene tour operator, hotel, studi sanitari, self-storage, disinfestazione, servizi di lusso e ricercatori genealogici."
+      },
+      {
+        "year": "Oggi",
+        "title": "Pronti per il settore pubblico",
+        "body": "Oggi siamo un’agenzia con credenziali attive e idoneità WOSB, pronta a supportare il lavoro per il governo federale, statale e locale accanto ai nostri clienti locali."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Rendiamo la tua impresa più forte.",
+    "body": "Che tu sia un’impresa locale pronta a crescere o un’agenzia in cerca di un partner con credenziali attive, ci farebbe piacere sapere cosa stai costruendo. Si parte da una conversazione — senza pressioni e senza impegno.",
+    "primaryLabel": "Iniziamo a parlarne"
+  }
+}

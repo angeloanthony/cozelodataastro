@@ -2,14 +2,27 @@
 /**
  * FAQ — accessible accordion built on native <details>/<summary>, enhanced with
  * a smooth height/opacity reveal and a rotating chevron. Works without JS.
+ *
+ * The questions to show are named by id, never by array position. The homepage
+ * teaser used to be `faqs.slice(0, 5)`, which quietly made "the first five
+ * entries in the master list" the homepage selection — reordering `faqs` would
+ * have changed the homepage without anyone touching this component. Callers now
+ * pass an explicit id list (defaulting to `homepageFaqIds`) and an id that does
+ * not resolve fails the build instead of silently dropping a question.
  */
-import { faqs } from "../data/site";
+import { faqs, homepageFaqIds } from "../data/site";
 
 interface Props {
-  limit?: number;
+  /** FAQ ids to render, in render order. Defaults to the homepage selection. */
+  ids?: readonly string[];
 }
-const { limit } = Astro.props;
-const list = limit ? faqs.slice(0, limit) : faqs;
+const { ids = homepageFaqIds } = Astro.props;
+
+const list = ids.map((id) => {
+  const faq = faqs.find((f) => f.id === id);
+  if (!faq) throw new Error(`FAQ.astro: no FAQ with id "${id}" in src/data/site.ts`);
+  return faq;
+});
 
 // No FAQPage structured data is emitted here. /faq/ owns the single canonical
 // FAQPage entity covering all 25 questions; this component renders a five-item

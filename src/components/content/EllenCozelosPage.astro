@@ -1,0 +1,208 @@
+---
+/**
+ * EllenCozelosPage — THE template for /ellen-cozelos/ (playbook §6.5).
+ *
+ * One shared component implements the page; the master route (/ellen-cozelos/)
+ * and the dynamic localized route (/it/ellen-cozelos/) both render it. All page
+ * copy comes from src/i18n/content/<locale>/ellen-cozelos.json.
+ *
+ * Two strings on this page are NOT page copy: the brand headline and the
+ * company slogan in the Personal Mission block are the same site-wide strings
+ * the footer renders, so they are read from shared.json (domain 3) rather than
+ * duplicated here. See the report note about their `footer.` namespace.
+ *
+ * The Person schema is deliberately left in English: `@id`, `alumniOf` and
+ * `knowsAbout` are canonical entities, not prose, and translating them would
+ * break the entity references that give the markup its value.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../PageHero.astro";
+import Section from "../Section.astro";
+import CTASection from "../CTASection.astro";
+import Icon from "../Icon.astro";
+import Button from "../Button.astro";
+import { Image } from "astro:assets";
+import { site } from "../../data/site";
+import { getImage } from "../../lib/images";
+import { getLangFromUrl } from "../../data/i18n";
+import { getPageContent, localizeHref } from "../../i18n/content";
+import { getShared } from "../../i18n/shared";
+
+const lang = getLangFromUrl(Astro.url);
+const c = getPageContent<any>("ellen-cozelos", lang);
+const brand = getShared(lang).footer;
+
+const breadcrumbs = [
+  { name: "Home", href: localizeHref("/", lang) },
+  { name: c.breadcrumbCompany, href: localizeHref("/company/", lang) },
+  { name: c.breadcrumb, href: localizeHref("/ellen-cozelos/", lang) },
+];
+
+const officeImg = getImage("CozeloOffice.webp");
+
+// Person schema — strengthens E-E-A-T by tying the founder's authority to the
+// organization. Referenced as the org's founder via @id.
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${site.url}/#ellen-cozelos`,
+  name: "Ellen Cozelos",
+  jobTitle: "Founder & Principal",
+  description:
+    "Founder of Cozelos Data — software engineer, cybersecurity specialist, AI specialist, and digital marketing professional with 20+ years across NASA, Department of Defense, aerospace, and commercial programs.",
+  url: `${site.url}/ellen-cozelos/`,
+  worksFor: { "@id": `${site.url}/#organization` },
+  alumniOf: { "@type": "CollegeOrUniversity", name: "Columbia University" },
+  knowsAbout: [
+    "Software Engineering",
+    "Cyber Security",
+    "Artificial Intelligence",
+    "Digital Marketing",
+    "Emerging Technologies",
+  ],
+};
+---
+<BaseLayout
+  title={c.meta.title}
+  description={c.meta.description}
+  breadcrumbs={breadcrumbs}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} is:inline />
+
+  <!-- Hero -->
+  <PageHero
+    eyebrow={c.hero.eyebrow}
+    title={c.hero.title}
+    lead={c.hero.lead}
+    summary={c.hero.summary}
+    breadcrumbs={breadcrumbs}
+  >
+    <!-- Founder card -->
+    <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7">
+      <div class="flex items-center gap-4">
+        <span class="grid h-16 w-16 place-items-center rounded-2xl bg-[var(--color-brand)] font-display text-xl font-extrabold text-white">{c.card.initials}</span>
+        <div>
+          <p class="font-display text-lg font-bold tracking-tight">{c.card.name}</p>
+          <p class="text-sm text-[var(--text-muted)]">{c.card.role}</p>
+        </div>
+      </div>
+      {officeImg && (
+        <div class="mt-6 overflow-hidden rounded-2xl border border-[var(--border)]">
+          <Image
+            src={officeImg}
+            alt={c.card.imageAlt}
+            widths={[400, 700]}
+            sizes="(min-width: 1024px) 38vw, 92vw"
+            loading="eager"
+            decoding="async"
+            format="webp"
+            class="w-full object-cover"
+          />
+        </div>
+      )}
+      <p class="mt-6 border-l-2 border-[var(--color-brand)] pl-4 font-display text-base font-semibold leading-snug text-[var(--text)]">{c.card.quote}</p>
+      <Button href={localizeHref("/contact/", lang)} size="md" magnetic icon="arrow" class="mt-6 w-full justify-center">{c.card.cta}</Button>
+    </div>
+  </PageHero>
+
+  <!-- Executive Biography -->
+  <Section eyebrow={c.story.eyebrow} title={c.story.title}>
+    <div class="grid gap-12 lg:grid-cols-12">
+      <div class="reveal space-y-5 text-lg leading-relaxed text-[var(--text-muted)] lg:col-span-8">
+        <p class="font-display text-2xl font-extrabold leading-snug tracking-tight text-[var(--text)] sm:text-3xl">{c.story.leadIn}</p>
+        {c.story.paragraphsHtml.map((p: string) => <p set:html={p} />)}
+        <p class="border-l-2 border-[var(--color-brand)] pl-5 font-display text-xl font-semibold text-[var(--text)]">{c.story.pullQuote}</p>
+        <p>{c.story.closing}</p>
+      </div>
+
+      <!-- Pull-stats -->
+      <aside class="reveal lg:col-span-4" data-delay="120">
+        <div class="space-y-4 lg:sticky lg:top-28">
+          {c.stats.map((s: any) => (
+            <div class="rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-6">
+              <p class="font-display text-2xl font-extrabold tracking-tight text-gradient">{s.stat}</p>
+              <p class="mt-1.5 text-sm leading-relaxed text-[var(--text-muted)]">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </aside>
+    </div>
+  </Section>
+
+  <!-- Areas of Expertise -->
+  <Section
+    eyebrow={c.expertiseSection.eyebrow}
+    title={c.expertiseSection.title}
+    lead={c.expertiseSection.lead}
+  >
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {c.expertise.map((e: any, i: number) => (
+        <div data-delay={i * 60} class="reveal group rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7 transition-colors duration-300 hover:border-[var(--color-brand)]/40">
+          <span class="grid h-12 w-12 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)] transition-all duration-300 group-hover:scale-110 group-hover:bg-[var(--color-brand)] group-hover:text-white">
+            <Icon name={e.icon} size={22} />
+          </span>
+          <h3 class="mt-5 font-display text-lg font-bold tracking-tight">{e.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{e.body}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <!-- Leadership Philosophy -->
+  <Section
+    eyebrow={c.philosophySection.eyebrow}
+    title={c.philosophySection.title}
+    lead={c.philosophySection.lead}
+  >
+    <div class="grid gap-px overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--border)] lg:grid-cols-2">
+      {c.philosophy.map((p: any, i: number) => (
+        <div data-delay={i * 60} class="reveal bg-[var(--surface-2)] p-8 transition-colors duration-300 hover:bg-[var(--surface-3)]">
+          <span class="font-mono text-sm font-semibold text-[var(--color-brand)]">{p.n}</span>
+          <h3 class="mt-3 font-display text-lg font-bold leading-snug tracking-tight">{p.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{p.body}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <!-- Why Clients Choose Ellen -->
+  <Section
+    eyebrow={c.whySection.eyebrow}
+    title={c.whySection.title}
+  >
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {c.whyEllen.map((w: any, i: number) => (
+        <div data-delay={i * 50} class="reveal flex gap-4 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-6">
+          <span class="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]">
+            <Icon name={w.icon} size={22} />
+          </span>
+          <div>
+            <h3 class="font-display text-base font-bold tracking-tight">{w.title}</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-[var(--text-muted)]">{w.body}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p class="reveal mx-auto mt-10 max-w-2xl text-center leading-relaxed text-[var(--text-muted)]" set:html={c.whyNoteHtml} />
+  </Section>
+
+  <!-- Personal Mission -->
+  <Section class="!pb-10">
+    <div class="reveal mx-auto max-w-3xl rounded-3xl border border-[var(--color-brand)]/30 bg-[var(--surface-2)] p-10 text-center sm:p-14">
+      <span class="text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand)]">{c.mission.eyebrow}</span>
+      <p class="mt-5 font-display text-2xl font-extrabold leading-[1.2] tracking-tight sm:text-3xl">{c.mission.title}</p>
+      <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">{c.mission.body}</p>
+      <p class="mt-7 font-display text-xl font-bold tracking-tight">{brand.brandHeadline}</p>
+      <p class="mt-1 font-display text-lg font-semibold text-[var(--text-muted)]">{brand.tagline}</p>
+    </div>
+  </Section>
+
+  <CTASection
+    title={c.cta.title}
+    body={c.cta.body}
+    primaryLabel={c.cta.primaryLabel}
+    secondaryLabel={c.cta.secondaryLabel}
+    secondaryHref="/company/"
+  />
+</BaseLayout>

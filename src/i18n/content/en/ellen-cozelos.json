@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "Ellen Cozelos — Founder of Cozelos Data | Technology Leader",
+    "description": "Ellen Cozelos founded Cozelos Data — software engineer, cybersecurity and AI leader, 20+ years across NASA and DoD, Master's from Columbia University."
+  },
+  "breadcrumb": "Ellen Cozelos",
+  "breadcrumbCompany": "Company",
+  "hero": {
+    "eyebrow": "Founder · Cozelos Data",
+    "title": "Enterprise technology, brought home to the businesses that matter.",
+    "lead": "For more than 20 years, Ellen Cozelos built secure, mission-critical systems for NASA and the Department of Defense. Today she brings that same standard to businesses across Eastern Utah and beyond — because great technology shouldn't be reserved for the few.",
+    "summary": "Ellen Cozelos is the founder of Cozelos Data, a software engineer, cybersecurity specialist, AI specialist, and digital marketing professional with more than 20 years of experience across NASA, Department of Defense, aerospace, and commercial programs. She holds a Master's degree from Columbia University and brings enterprise-grade technology to businesses throughout Eastern Utah and beyond, guided by a simple principle: if it is important to our clients, it is important to us."
+  },
+  "card": {
+    "initials": "EC",
+    "name": "Ellen Cozelos",
+    "role": "Founder & Principal, Cozelos Data",
+    "imageAlt": "Cozelos Data — founded by Ellen Cozelos in Vernal, Utah",
+    "quote": "“If it is important to our clients, it is important to us.”",
+    "cta": "Schedule a Consultation"
+  },
+  "story": {
+    "eyebrow": "The Story",
+    "title": "The strategic leader behind Cozelos Data.",
+    "leadIn": "Technology is easy. Building trust is hard.",
+    "paragraphsHtml": [
+      "Ellen Cozelos has spent her career on the hard part. More than the code, more than the credentials, she is the strategist clients rely on to turn complex technology into decisions that move a business forward — building for <span class=\"font-semibold text-[var(--text)]\">consequence</span>, the kind of systems where a single line carries real weight and “good enough” was never an option.",
+      "For more than two decades, Ellen supported mission-critical software development for <span class=\"font-semibold text-[var(--text)]\">NASA and Department of Defense</span> programs: secure, reliable, scalable systems engineered for environments where precision and performance aren't features but requirements. From Huntsville, Alabama — a city synonymous with aerospace — she learned a standard of work that most of the commercial world rarely sees.",
+      "Her path was never narrow. Across government, aerospace, and commercial sectors, Ellen became fluent in disciplines that usually live in separate departments: <span class=\"font-semibold text-[var(--text)]\">software engineering, cybersecurity, artificial intelligence, digital marketing, and emerging technologies</span>. She earned a Master's degree from Columbia University and kept learning — because the technologies that move businesses forward never stop evolving.",
+      "That rare combination is the reason Cozelos Data exists. Ellen founded the company on a conviction she'd felt for years: the businesses that power our communities — the contractors, clinics, hotels, and family shops — deserve the same caliber of technology as the agencies and enterprises she'd spent her career serving. Not a watered-down template. The real thing.",
+      "What makes her a trusted advisor isn't only the technical depth — it's how she leads with it. Ellen believes the best results come from genuine partnership, and she operates by a principle that has guided every engagement of her career:"
+    ],
+    "pullQuote": "“If it is important to our clients, it is important to us.”",
+    "closing": "It's a simple line with serious implications. It means strategy before pixels, security before shortcuts, and a long-term commitment to seeing a client's business grow — not just shipping a website and moving on. For Ellen, technology was never the destination. It's the most powerful tool we have for making businesses stronger and life better."
+  },
+  "stats": [
+    { "stat": "20+ yrs", "label": "Delivering innovative technology solutions" },
+    { "stat": "NASA & DoD", "label": "Mission-critical software programs" },
+    { "stat": "Columbia", "label": "Master's degree" },
+    { "stat": "5 fields", "label": "Engineering · Security · AI · Marketing · Strategy" }
+  ],
+  "expertiseSection": {
+    "eyebrow": "Areas of Expertise",
+    "title": "Five disciplines. One unified advantage.",
+    "lead": "Most agencies are strong in one area. Ellen's command of five — and how they reinforce one another — is what turns a website into a system for growth."
+  },
+  "expertise": [
+    {
+      "icon": "browser",
+      "title": "Software Engineering",
+      "body": "Two decades architecting secure, scalable systems for environments where failure isn't an option. For clients, that discipline becomes websites and platforms engineered to perform flawlessly — fast, reliable, and built to last."
+    },
+    {
+      "icon": "shield",
+      "title": "Cyber Security",
+      "body": "A security-first mindset shaped by defense-grade standards. Every build is hardened from the ground up, protecting your data, your customers, and your reputation long before a threat ever appears."
+    },
+    {
+      "icon": "bolt",
+      "title": "Artificial Intelligence",
+      "body": "Practical AI that does real work — assistants that capture leads around the clock, automations that return hours to your team, and content engineered to be found by the AI tools customers now ask first."
+    },
+    {
+      "icon": "target",
+      "title": "Digital Marketing",
+      "body": "Technology means nothing if no one sees it. Ellen pairs engineering with marketing strategy — SEO, advertising, and content — so the systems she builds don't just exist, they generate measurable demand."
+    },
+    {
+      "icon": "star",
+      "title": "Strategic Business Technology",
+      "body": "The rarest skill of all: translating complex technology into business outcomes. Ellen starts with your goals, then engineers the system that gets you there — turning innovation into growth you can measure."
+    }
+  ],
+  "philosophySection": {
+    "eyebrow": "Leadership Philosophy",
+    "title": "The convictions behind the work.",
+    "lead": "How Ellen leads is as deliberate as what she builds. Five principles guide every engagement."
+  },
+  "philosophy": [
+    {
+      "n": "01",
+      "title": "Technology should solve business problems.",
+      "body": "Tools are never the point. The right technology, applied with intent, removes friction, wins customers, and moves the numbers that matter to your business."
+    },
+    {
+      "n": "02",
+      "title": "Innovation should create opportunity.",
+      "body": "Done well, innovation isn't disruption for its own sake — it opens doors: new markets, new efficiencies, and new ways for a business to grow."
+    },
+    {
+      "n": "03",
+      "title": "Strong partnerships produce the best results.",
+      "body": "The best outcomes come from genuine partnership — shared goals, honest communication, and a team that treats your success as its own."
+    },
+    {
+      "n": "04",
+      "title": "Trust is earned through performance.",
+      "body": "Trust isn't claimed in a pitch; it's proven in delivery — on time, in writing, and engineered to the standard the work demands."
+    },
+    {
+      "n": "05",
+      "title": "Long-term success comes from continuous improvement.",
+      "body": "An online presence should get stronger every quarter. Ellen builds for the long game — systems that are maintained, refined, and always improving."
+    }
+  ],
+  "whySection": {
+    "eyebrow": "Why Clients Choose Ellen",
+    "title": "Enterprise expertise, with a personal hand on the work."
+  },
+  "whyEllen": [
+    { "icon": "building", "title": "Enterprise-level experience", "body": "Standards forged on systems where precision and performance are non-negotiable." },
+    { "icon": "award", "title": "Government & aerospace background", "body": "Two decades supporting NASA and Department of Defense mission-critical software." },
+    { "icon": "target", "title": "Strategic thinking", "body": "Every decision starts with your business goals, not a template." },
+    { "icon": "bolt", "title": "Business-focused solutions", "body": "Technology engineered to produce leads, growth, and measurable ROI." },
+    { "icon": "chat", "title": "Personalized service", "body": "You work directly with Ellen — a partner, not a ticket queue." },
+    { "icon": "shield", "title": "Long-term partnerships", "body": "Invested in your results well beyond launch day, quarter after quarter." }
+  ],
+  "whyNoteHtml": "Ellen has a hand on every engagement — see <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">the client work that has come out of it</a>.",
+  "mission": {
+    "eyebrow": "Personal Mission",
+    "title": "Technology is not the goal. It is the tool.",
+    "body": "For Ellen, the real mission was never the code. It's what the code makes possible: businesses that grow stronger, communities that become more resilient, and lives made better through thoughtful innovation and trusted partnership. Cozelos Data isn't a web design company. It's a strategic technology partner — built to help organizations strengthen their operations, protect what matters most, and create new opportunities for the people they serve."
+  },
+  "cta": {
+    "title": "Let's build something that lasts.",
+    "body": "Start with a discovery consultation. Bring your goals; Ellen will bring two decades of enterprise expertise — and an honest plan to get you there.",
+    "primaryLabel": "Schedule a Consultation",
+    "secondaryLabel": "Explore Cozelos Data"
+  }
+}

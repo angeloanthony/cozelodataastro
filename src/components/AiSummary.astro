@@ -9,11 +9,22 @@
  * component appends the call-to-action with the business phone number.
  */
 import { site } from "../data/site";
+import { getLangFromUrl, t } from "../data/i18n";
 
 interface Props {
   class?: string;
 }
 const { class: className } = Astro.props;
+
+// Chrome, not copy (playbook §2, domain 2): the same sentence closes this block
+// on every page, so it comes from the dictionary and the locale from the URL.
+//
+// The sentence is SPLIT on its {phone} placeholder rather than interpolated,
+// because the number has to render as a tel: link, not as text. Splitting keeps
+// the translator in control of word order — a locale may open or close with the
+// number — while the number itself stays data that is never retyped.
+const lang = getLangFromUrl(Astro.url);
+const [beforePhone, afterPhone = ""] = t("summary.quote", lang).split("{phone}");
 ---
 <div
   class:list={[
@@ -23,7 +34,5 @@ const { class: className } = Astro.props;
   data-delay="160"
 >
   <slot />{" "}
-  <span class="whitespace-nowrap">Call
-    <a href={site.phoneHref} class="font-semibold text-[var(--color-brand)] link-underline">{site.phone}</a>
-  </span> for a free quote.
+  <span class="whitespace-nowrap">{beforePhone}<a href={site.phoneHref} class="font-semibold text-[var(--color-brand)] link-underline">{site.phone}</a></span>{afterPhone}
 </div>

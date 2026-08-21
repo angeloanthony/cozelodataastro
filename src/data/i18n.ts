@@ -56,15 +56,30 @@ export const strings = {
     "nav.company": "Company",
     "nav.contact": "Contact",
     "nav.menu": "Menu",
-    "cta.start": "Start Your Project",
-    "cta.work": "See the Work",
-    "cta.call": "Schedule a Call",
+    // Chrome, not shared content: this labels the header/menu button that is part
+    // of the site frame. The persuasive CTA copy lives in shared.json.
+    "cta.quote": "Get a Quote",
     "lang.label": "Language",
     "lang.switch": "Change language",
     "footer.services": "Services",
     "footer.company": "Company",
     "footer.contact": "Contact",
     "skip.main": "Skip to content",
+    // Accessibility labels: never rendered as visible text, but they are chrome
+    // like any other string — a screen-reader user on /it/ hears the landmark
+    // and control names, so they translate with the rest of the frame.
+    "a11y.primaryNav": "Primary",
+    "a11y.breadcrumb": "Breadcrumb",
+    "a11y.theme": "Toggle dark mode",
+    "a11y.menuOpen": "Open menu",
+    "a11y.menuClose": "Close menu",
+    // The brand name is data, not copy: it is interpolated, never translated.
+    "a11y.home": "{brand} home",
+    // The AiSummary callout under a page H1. Visible UI chrome, reused on every
+    // page that supplies a hero summary — so it lives here, not in page JSON.
+    // {phone} is data: the component splits the sentence on it and renders the
+    // number as a tel: link, so a locale can put it anywhere in the sentence.
+    "summary.quote": "Call {phone} for a free quote.",
   },
   it: {
     "nav.home": "Home",
@@ -75,15 +90,20 @@ export const strings = {
     "nav.company": "Azienda",
     "nav.contact": "Contatti",
     "nav.menu": "Menu",
-    "cta.start": "Inizia il tuo progetto",
-    "cta.work": "Guarda i lavori",
-    "cta.call": "Prenota una chiamata",
+    "cta.quote": "Richiedi un preventivo",
     "lang.label": "Lingua",
     "lang.switch": "Cambia lingua",
     "footer.services": "Servizi",
     "footer.company": "Azienda",
     "footer.contact": "Contatti",
     "skip.main": "Vai al contenuto",
+    "a11y.primaryNav": "Principale",
+    "a11y.breadcrumb": "Percorso di navigazione",
+    "a11y.theme": "Attiva/disattiva la modalità scura",
+    "a11y.menuOpen": "Apri il menu",
+    "a11y.menuClose": "Chiudi il menu",
+    "a11y.home": "Home di {brand}",
+    "summary.quote": "Chiamaci al {phone} per un preventivo gratuito.",
   },
 } as const;
 

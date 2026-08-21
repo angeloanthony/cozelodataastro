@@ -1,0 +1,3741 @@
+{
+  "version": 1,
+  "entries": {
+    "01252ebeacb02e852e00cf61a5fca47f94e319fd7c8cf2c93b334ef598d89962": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We developed our own approach — pillar-and-spoke architecture, hand-written code, cinematic motion, structured data, and AI integration.",
+      "target": "Abbiamo sviluppato un approccio nostro — architettura pillar-and-spoke, codice scritto a mano, animazioni cinematografiche, dati strutturati e integrazione dell’AI.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "01e47b707bfda5a1b509b09058985d18ba33a03271b2fe54c251b677dd4e398e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "$500",
+      "target": "$500",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "02d4058b91c1ea297cab8e6d06d6355834343d22f8bec092fc70e47d72b09d80": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "For more than 20 years, Ellen Cozelos built secure, mission-critical systems for NASA and the Department of Defense. Today she brings that same standard to businesses across Eastern Utah and beyond — because great technology shouldn't be reserved for the few.",
+      "target": "Per oltre 20 anni Ellen Cozelos ha costruito sistemi sicuri e mission-critical per la NASA e il Department of Defense. Oggi porta lo stesso standard alle aziende dell’Utah orientale e non solo — perché la grande tecnologia non dovrebbe restare riservata a pochi.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "04d5392d2b820992b2dd1f5a0fa221729c11fa3b96255d5f5833c5d49c687952": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Investment-grade pricing from Cozelos Data. Custom website projects from $2,500 and monthly growth plans from $295 — built to generate leads and lasting ROI.",
+      "target": "Prezzi di livello professionale da Cozelos Data. Un sito web su misura a partire da $2,500 e piani di crescita mensili da $295 — progettati per generare lead e un ROI duraturo.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "0544a7ef7164029e977078d2c8ae681f409211a4ec1bbe8bdca3c2e70e53188f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Slow, bloated, and plugin-heavy",
+      "target": "Lento, appesantito e pieno di plugin",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "05a5ec2ee63348555a8cc772a06aabec1e5907abcea5a97b5cf00bca85265178": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Tell us about your business. We'll show you exactly what we'd build — and the growth it's engineered to create.",
+      "target": "Raccontaci della tua attività. Ti mostreremo esattamente cosa costruiremmo — e la crescita che è progettato per generare.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "05dfb08f891c8db9106ccbf061777095c3d6d955f98b8b52d37b3e461579f4e8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The bottom line",
+      "target": "In conclusione",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "05f7626ab6f6f2c24df631b42d2dfa09011bbc8b03b284499c5fadc86b35364d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data is a proud Woman-Owned Small Business (WOSB) with active federal credentials — ready to support agencies with web development, SEO, video documentation, and AI tooling, without the overhead of large primes.",
+      "target": "Cozelos Data è orgogliosamente una Woman-Owned Small Business (WOSB) con credenziali federali attive — pronta a supportare le agenzie con sviluppo web, SEO, documentazione video e strumenti di AI, senza i costi dei grandi prime contractor.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "060651a460dc11d803a1f079d825f08e940c0bf06df608dda6dc5f71aa72bdbd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Woman-Owned Small Business",
+      "target": "Woman-Owned Small Business",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "0669ac76f137ae0e397d81b402272bdedc11d82b703d951f76fec0cbe9b0a205": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Long-term partnerships",
+      "target": "Partnership a lungo termine",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "06aa64f36839eaf0e728a45809c41e66141e081a04fbbca95226f8d6fe2d003b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Start the Conversation",
+      "target": "Iniziamo a parlarne",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.697Z"
+    },
+    "071914dc708ea958cd940ebb7e5ae8fa101f215fb9944fb2d9063ee42047d299": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You can buy a website almost anywhere. What you can't buy on the cheap is a strategy-led, owner-controlled, lightning-fast, secure growth platform with a team that stays invested in its growth. That's what we build — and it's why our clients stop thinking of their website as a bill and start treating it as one of their most valuable assets.",
+      "target": "Un sito web puoi comprarlo quasi ovunque. Quello che non puoi comprare a poco è una piattaforma di crescita guidata dalla strategia, di tua proprietà, velocissima e sicura, con un team che resta coinvolto nella sua crescita. È questo che costruiamo — ed è il motivo per cui i nostri clienti smettono di considerare il proprio sito una spesa e iniziano a trattarlo come uno dei loro asset più preziosi.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "07642ada4eaa5c64815ba75ef8187c4fa4f8f5801e412ffa0ee209872ff11073": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Across the Basin & beyond",
+      "target": "Nel Basin e oltre",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "0766560071afdae0131ff1535132a162a68c55b4636d8704c525783b0e09cc61": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Leave a Review",
+      "target": "Lascia una recensione",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "07de74a0480509849915055f42093bcfc3ae7412e0d6cc42e412a05499499e2b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "$795",
+      "target": "$795",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "08d455842d5a06070b3132e924333e7547e4736a953b175f8ff2bf45ecdeb23c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Content strategy & messaging",
+      "target": "Strategia dei contenuti e messaggio",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "09c3de1cc9c3b7b4ac9ca50abb399dc8651d2eb82324b6fe7ea233f57842c331": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Headquartered in Vernal, Utah",
+      "target": "Sede a Vernal, Utah",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "09db51f9d92c08756f4942192fd9bfd39b35243a936ad15c1e2358e4c7d49efd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Dedicated project team",
+      "target": "Team di progetto dedicato",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "0a049e9fc8f96ef253828ff374620e9c8defb9870b2789a439e01c561e68ed32": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We map the opportunity",
+      "target": "Mappiamo le opportunità",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "0b2f450a3df59261d50fe5136d663301a6af10eabc0bce2e09bac18fda627bc5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our Commitment",
+      "target": "Il nostro impegno",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "0b574a289800b24dd7d3e38f0d996668b185ecd2c2d1470ef545bb12e4ffe304": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Company",
+      "target": "Azienda",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "0b809e1dc6c5aadec5acdeecaf41649dc84e3eed17bba80a4182734220b172b7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Built once, then quietly neglected",
+      "target": "Costruito una volta e poi abbandonato",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "0c3ea4d55a0ac510cf2df8cad8ec93f0ce30a0d6567a351f9bd38af0e9afa050": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Origin",
+      "target": "Origine",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "0d54df8aa35a5089506f4d01268362474ba44916dde483942e042d2fa2b3a948": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Pay Invoice",
+      "target": "Paga la fattura",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "0d82ba80c1a3f30dc350d42dc510d16d128dfb98173330a3d5cd5fa70b262d8a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "100%",
+      "target": "100%",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "0d9e9fededf7a46a67ba5616a16016211d76891fc144976a1accbfe336ac831b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Description",
+      "target": "Descrizione",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "0f0924519b06ad850d1159c8690cd3b7feae7b036d312025deeabb52acb49643": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Technology engineered to produce leads, growth, and measurable ROI.",
+      "target": "Tecnologia progettata per generare lead, crescita e ROI misurabile.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "0f514360aca0e4a2e6ba7757d469b93ea6ad1405de65079a73503f0d850419a5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hosting, SSL & uptime monitoring",
+      "target": "Hosting, SSL e monitoraggio dell’uptime",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "11176f21e06bc4a253eb853fa1bca3b12405a03b08751716f9fc2d28a7fe9f91": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A security-first mindset shaped by defense-grade standards. Every build is hardened from the ground up, protecting your data, your customers, and your reputation long before a threat ever appears.",
+      "target": "Una mentalità security-first plasmata da standard di livello difesa. Ogni progetto è irrobustito fin dalle fondamenta, per proteggere i tuoi dati, i tuoi clienti e la tua reputazione molto prima che si presenti una minaccia.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "116c59bded80a36affe3ebc3cbb8f3d39fa645421e5a3dc7bd4eb590b0e96137": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "For businesses that need a professional, fast, credible presence — done right the first time.",
+      "target": "Per le aziende che hanno bisogno di una presenza professionale, veloce e credibile — fatta bene la prima volta.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "1177ed002573cc2045d1386e3e4f58c105d8d96f7ca006682f5f3f83599c84aa": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Office",
+      "target": "Ufficio",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.060Z"
+    },
+    "1186543e16b8eda0fc36864e2ae937cdcd30ed66fa83fa8def0b9ac7537cdcf5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Contact Cozelos Data, a premium digital agency in Vernal, Utah. The first conversation focuses on understanding your goals, not selling services — you'll leave with honest direction and a fixed quote, with no obligation. Call {phone}, email {email}, or send a message. We reply within one business day.",
+      "target": "Contatta Cozelos Data, agenzia digitale premium a Vernal, Utah. La prima conversazione serve a capire i tuoi obiettivi, non a venderti servizi — esci con indicazioni oneste e un preventivo a prezzo fisso, senza alcun impegno. Chiama {phone}, scrivi a {email} oppure mandaci un messaggio. Rispondiamo entro un giorno lavorativo.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "11d4d99514cf27056aad991f5b5286990dff45767e4c24a70bddc7a16030d08c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Credited toward your build",
+      "target": "Accreditato sul costo della realizzazione",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "1276b8e4263328b377d9e5bd1cff5de7315269e7171e348358d37f9e1df59bf2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "DUNS",
+      "target": "DUNS",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "127eaf3fc32b60052a26179d5dd0efb3aa3804eaa06bfc36a41b46a306b2e9a5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You own everything",
+      "target": "Possiedi tutto",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.701Z"
+    },
+    "1351b125f27d7a6117b43af94c228c6a056cad61fe56cfbc8de0100fe26897dc": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Market Leader",
+      "target": "Market Leader",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "142686fea9d3232ec2dad7c69b2fef49f82932df0106e172daa2ab1d89edd73d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Outcomes & growth",
+      "target": "Risultati e crescita",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "14f3c20531a9b5473c63adfb943ea5e81ec19df0fd4ad38c7ca3bf7e00120315": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Technology is not the goal. It is the tool.",
+      "target": "La tecnologia non è l’obiettivo. È lo strumento.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "155219d1d91739c7ff71eb5f3bc32d1eba2e5d15a092bf46988cec1f889d4b83": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Responsive & present",
+      "target": "Reattivi e presenti",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "155a7d6cb354cf3b74acb84d7a9115c921dcf5438a64613749e2e3a2d4f2dbd9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A growth platform should pay for itself — then keep paying.",
+      "target": "Una piattaforma di crescita deve ripagarsi da sola — e poi continuare a rendere.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "16278b0de974032455cfcdbf6b358fc0ec4828345747954757a4e56ff85ec7a0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Starting at",
+      "target": "A partire da",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "17d839268278632050bd23fbce301776c774f80dd5614c2ab55c6dda8bb4eede": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Tier",
+      "target": "Livello",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "180c7acc29efc925f4c460d557608e98e8b8a3244ca9ccf7dfa783b56bc6084a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A partner invested in your results, not just your launch",
+      "target": "Un partner coinvolto nei tuoi risultati, non solo nel tuo lancio",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "190a2886da006cb43c6c40e1e06270ae5cbde3d3a9fd2f050077b7030c0a4411": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Government",
+      "target": "Settore pubblico",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "19521b48ec86d2a9bbf3425ac74a3e3b5143d065b746f537f4fe66b56f8916af": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO Optimization",
+      "target": "Ottimizzazione SEO",
+      "origin": "committed",
+      "at": "2026-08-21T04:50:45.646Z"
+    },
+    "199879945dc16cd3ca23732ce84016b61ef594e7a99fbeb0937f28c943b86ec7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "For a line-by-line look at what's actually being built, see <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">what each of the six services includes</a>. Questions about timelines, ownership, or what happens after launch are answered in the <a href=\"/faq/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">frequently asked questions</a>.",
+      "target": "Per un quadro dettagliato di ciò che viene effettivamente costruito, guarda <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">che cosa include ciascuno dei sei servizi</a>. Le domande su tempi, proprietà o su cosa succede dopo il lancio trovano risposta nelle <a href=\"/faq/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">domande frequenti</a>.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "19b175b82cd856cc585b20d2102690f508ad40c0d0457128009067151d001020": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "See the Work",
+      "target": "Guarda i lavori",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "1a298a847555b40ae32f1f02e8a3afe09a986721519387393378d963c8e1536e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "M.S., Columbia University",
+      "target": "M.S., Columbia University",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "1b063eceaa7c5204c28a24ae91b01ce4d66d1fec4c769d46f9f9b033171a45c1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Online Marketing",
+      "target": "Marketing online",
+      "origin": "committed",
+      "at": "2026-08-21T04:50:45.646Z"
+    },
+    "1b4d2246c82cf7d24776a91434ec2897b6ea260a297e38c5e5b5c0c43ba0281b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Built to last",
+      "target": "Costruito per durare",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "1b4de25ad6cfcea49bf571644c80786f47c23943ac6195ac207f55af6d327a21": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Choose the scope that matches your ambition. Every tier is fully custom, hand-built, fast, secure, and yours to own — no templates, no lock-ins.",
+      "target": "Scegli lo scope che corrisponde alla tua ambizione. Ogni livello è completamente su misura, costruito a mano, veloce, sicuro e di tua proprietà — nessun template, nessun vincolo.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "1b9daccbeb84e4f113fe4652530969fc055b172cb221f30eeb0d582bb7970560": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Prefer to talk now?",
+      "target": "Preferisci parlarne subito?",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "1bf10d321acf46c5d5726ba89d127913b30d3735599096a53f35a0f41fa3cf67": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The more we know about your goals, the more useful our first conversation will be. We reply within one business day — and there's no obligation, ever.",
+      "target": "Più cose sappiamo dei tuoi obiettivi, più utile sarà la nostra prima conversazione. Rispondiamo entro un giorno lavorativo — e non c’è mai alcun impegno.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "1bf1fe44c783b9b7e4ef8edd971408f4bdd85a9945aa6ac7f14fe2d34af7484c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You have less time than you think. A visitor forms an opinion about your business in roughly 50 milliseconds — faster than they can read a single word. In that instant, design is doing all the talking. It signals whether you're serious, whether you're current, and whether you're worth a moment more of their day.",
+      "target": "Hai meno tempo di quanto pensi. Un visitatore si forma un’opinione sulla tua attività in circa 50 millisecondi — prima ancora di riuscire a leggere una sola parola. In quell’istante è il design a parlare per te. Dice se sei un’azienda seria, se sei al passo con i tempi e se meriti ancora un momento della sua giornata.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "1d199c719916676a0f68602e407bc0206237500bee50b4b08a478c1e42eca21b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We hand-build for speed from the first line of code, then guard it relentlessly. The result is a site that feels effortless — so the visitor stays long enough to become genuinely interested.",
+      "target": "Costruiamo a mano puntando alla velocità dalla prima riga di codice, e poi la difendiamo senza sosta. Il risultato è un sito che sembra non costare fatica — così il visitatore resta abbastanza a lungo da interessarsi davvero.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "1d6ffb96153c2d04931a114cb90b46f1258e335658ddd40be762033358e27426": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We start by understanding your business, your customers, and what success actually looks like for you — before we ever talk about a single deliverable.",
+      "target": "Partiamo dal capire la tua attività, i tuoi clienti e che cosa significa davvero successo per te — prima ancora di parlare di che cosa ti consegneremo.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "1db649c853d470e8fee866ffdae316b0726d07ce2d40b51bd046b26e42392b71": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Landing page creation",
+      "target": "Creazione di landing page",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "1e3aa76487407053fa85c1cfc4e7d5013fe5a7d2629002d149ff77c4271e4fb3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The first conversation isn't a sales pitch — it's about understanding your business, your goals, and what success looks like for you. Tell us where you want to go, and we'll show you how we'd help you get there.",
+      "target": "La prima conversazione non è una proposta commerciale — serve a capire la tua attività, i tuoi obiettivi e che cosa significa davvero successo per te. Dicci dove vuoi arrivare e ti mostreremo come ti aiuteremmo ad arrivarci.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "1ea241c5e5dcddf20f42c30b32c99b41d7d15f8894b395cc08c183769249c0d4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Search engine optimization is how the right people find you at the exact moment they're looking. We architect every site to be understood — by Google, and now by AI engines like ChatGPT and Claude — with structured data, clean content architecture, and local SEO that puts you in front of customers in your area. This is an audience you don't rent click by click; it's one that compounds.",
+      "target": "L’ottimizzazione per i motori di ricerca è ciò che permette alle persone giuste di trovarti nell’esatto momento in cui ti stanno cercando. Progettiamo ogni sito per essere compreso — da Google e ormai anche dai motori AI come ChatGPT e Claude — con dati strutturati, un’architettura dei contenuti pulita e una SEO locale che ti mette davanti ai clienti della tua zona. È un pubblico che non affitti clic dopo clic: è un pubblico che si accumula nel tempo.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "1efe84f169d4992f832e982adb0e2130d25abd87a8d11458ad59ab0db3c027b2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "$495",
+      "target": "$495",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "1f34d36371209e4d37c15384a9a9414379cb5b3116d6632961567475700a5ce0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Competitor analysis",
+      "target": "Analisi della concorrenza",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "20604d74c5bec70ed3d6f50a55bf346e5b4cec9f19d49ddbe5223b9bb55cfc5f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Speed & experience",
+      "target": "Velocità ed esperienza",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "207d9b6092d9e8cbcc64f0630d459d892d18e54a3c92f0fc99f40ed3c0a45c95": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our Philosophy",
+      "target": "La nostra filosofia",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "20b813e1f00d25edaab9a27dd980601413474166bf039c6db5a79430d20df238": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our Approach — How Cozelos Data Builds Digital Assets",
+      "target": "Il nostro approccio — Come Cozelos Data costruisce asset digitali",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.749Z"
+    },
+    "21488d9bec64c863509a7ee9f4455a3a0f48b72282905b9d07c526a13576bfbf": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Local roots",
+      "target": "Radici locali",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "2160d07785b64ac30a72b8142ff6949259886312f6e7f22696163c9e37b75561": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Now a WOSB-eligible, credentialed agency ready to support federal, state, and local government work alongside our local business clients.",
+      "target": "Oggi siamo un’agenzia con credenziali attive e idoneità WOSB, pronta a supportare il lavoro per il governo federale, statale e locale accanto ai nostri clienti locali.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "2239406a50b376ccc87ce041e89a33be1f52a4722bc7c52fe436244e506febf7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ellen Cozelos founded Cozelos Data — software engineer, cybersecurity and AI leader, 20+ years across NASA and DoD, Master's from Columbia University.",
+      "target": "Ellen Cozelos ha fondato Cozelos Data — ingegnere del software, esperta di cybersecurity e AI, oltre 20 anni tra NASA e DoD, Master alla Columbia University.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "225692151e3ec7c63611b42cd1b13e24b8719d9b3422d4ce3f2446d85237692d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Attract",
+      "target": "Attrarre",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "2260da418e83fd846c7a3244f98359850dd8610dab186bd632143a481ea83369": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Outcome-first",
+      "target": "Prima il risultato",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "252ced13c2a471e4ca3a8c8c166adc978832e58f3e2360abc50be72882b35ad8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Secure, reliable, and maintained — engineered to the standards of mission-critical systems, not disposable templates.",
+      "target": "Sicuro, affidabile e mantenuto nel tempo — progettato secondo gli standard dei sistemi mission-critical, non come un template usa e getta.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "25b719111653eb104375e2665a4f351f3742701747751c41803f16538b5b2944": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Expanded page architecture",
+      "target": "Architettura di pagine ampliata",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "263f0858a35fe1fd01bb610645424bddd20869b7be889046c02309a33a6b770d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Engineered to perform",
+      "target": "Progettato per rendere",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "27fdf0c7088d0aef8ab5cde7bd3218081584c29893f19e96bc0b0f88358c71af": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Let's build your growth engine.",
+      "target": "Costruiamo il tuo motore di crescita.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "2817d703d36eb685520e907edd93507374926d0a68956a8632569daff6a76548": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Invested in your results well beyond launch day, quarter after quarter.",
+      "target": "Coinvolti nei tuoi risultati ben oltre il giorno del lancio, trimestre dopo trimestre.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "282bd617ae955d96d301c8085f149932816df7610a00c0586ffa44d8806658a7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Build the Asset",
+      "target": "Costruisci l’asset",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "28cc2b19166f4b8502bd0c661c65eee72ecca12d14cde7b7f07935ba33b3046f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Trust isn't claimed in a pitch; it's proven in delivery — on time, in writing, and engineered to the standard the work demands.",
+      "target": "La fiducia non si dichiara in una presentazione: si dimostra nella consegna — nei tempi, per iscritto e all’altezza dello standard che il lavoro richiede.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "292cfc5b66f6e624f3520c3b74877cf4603809bec9dba05a78513199e2e6478b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "DUNS / UEI Active",
+      "target": "DUNS / UEI attivi",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "29919130e4bb33979f7e9478bca32eb69743bd6bfc748a98f7498c53ee7d6594": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A smaller attack surface means less to break and less to exploit.",
+      "target": "Una superficie d’attacco più piccola significa meno cose da rompere e da sfruttare.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "29c608698f3c214c8f264a927e4bb2ed08b36591d2af5ec2c2437ed63b565b88": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Why Cozelos Data — A Digital Asset, Not Just a Website",
+      "target": "Perché Cozelos Data — Un asset digitale, non solo un sito web",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.192Z"
+    },
+    "29c6e880d22afb867c3fd0b14899abcdcc4694101ef15135f469c895954e36b0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Mobile-first, sub-second load times",
+      "target": "Mobile-first, caricamento sotto il secondo",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "2c94758503c13dfc80e6ae87bfe043f44f1dddb56899845208818ca424db1633": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Businesses choose Cozelos Data because we lead with strategy, give clients full ownership of their domain, code, and content, build hand-coded sites that load in under a second, harden them against attack, design every page for measurable ROI, and stay on as a long-term partner that keeps the site improving quarter after quarter.",
+      "target": "Le aziende scelgono Cozelos Data perché partiamo dalla strategia, diamo ai clienti la piena proprietà di dominio, codice e contenuti, costruiamo siti scritti a mano che si caricano in meno di un secondo, li rendiamo sicuri, progettiamo ogni pagina per un ROI misurabile e restiamo come partner a lungo termine che migliora il sito trimestre dopo trimestre.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.192Z"
+    },
+    "2d608db6d3784d3a64a0703b0a3b21700ee1ef09e5372ff1e412ec6356c00741": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Trust is earned through performance.",
+      "target": "La fiducia si guadagna con i risultati.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "2df51a00b7b570e85b7c7734568d4010f45cba7c6b2a4548afe8a3caddb87f1e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Founder & Principal",
+      "target": "Fondatrice e Principal",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "2f1d3f5c6bff2851f50f54146446fec46a6363c3f6120699c6ab6da3d3cd3423": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Maintenance",
+      "target": "Maintenance",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "309737a0dd23e802e2b5d2adc3879eadc5541006b8544a7100ae101555dc16dc": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Website Design & Development",
+      "target": "Design e sviluppo web",
+      "origin": "committed",
+      "at": "2026-08-21T04:50:45.645Z"
+    },
+    "319572a5f17da7be7d8353e7e274c190daabd2eab57f8bc2ae334d2917341cf9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Read Ellen's full biography",
+      "target": "Leggi la biografia completa di Ellen",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "33fda8c3a7331e7a1ca92d26d5f354b9f1948a175d932e2b637cc93c14b3ef91": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cybersecurity & AI",
+      "target": "Cybersecurity e AI",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "3436820f487bda033786c289dcfbcf28b42ebe3d905022c8b43ec5696d9ebfcf": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Schedule a Call",
+      "target": "Prenota una chiamata",
+      "origin": "committed",
+      "at": "2026-08-21T05:04:23.632Z"
+    },
+    "34478c7a397bbb9df6857b7285cdaacaf59253c6db25199e581d700c942da892": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ownership of your domain, code, and content.",
+      "target": "Proprietà di dominio, codice e contenuti.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "347f56df2784c443d80c3869a5eb5d2cb5fa7edbc33c788081108ab7ff787f72": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Get Started",
+      "target": "Inizia ora",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "34b44b85e1533ce29fc749d916b539b1a27bcd3c82ab9b805ebe218f878861e4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "An investment in growth — priced for return.",
+      "target": "Un investimento nella crescita — con un prezzo pensato per il ritorno.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "351e52c683f8d66d2752c02407c68a5f1c10a60d559e31d5b8c1df5d9a32bfbb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "$1,500+",
+      "target": "$1,500+",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "357ab4670fdad7c2fdb40c19d6efbd78e7770baf3e73dced6b29528a7be58c86": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A bargain template that loads slowly, ranks nowhere, and converts no one isn't cheap — it's a recurring loss. A well-built growth platform is the opposite: it pays for itself in new business, then keeps earning for years — which is <a href=\"/why-cozelos-data/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">why we build an asset rather than a website</a>. Below is what that investment looks like.",
+      "target": "Un template a basso costo che si carica lentamente, non si posiziona da nessuna parte e non converte nessuno non è economico — è una perdita ricorrente. Una piattaforma di crescita costruita bene è l’opposto: si ripaga con nuovo business e continua a rendere per anni — ed è <a href=\"/why-cozelos-data/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">il motivo per cui costruiamo un asset invece di un sito web</a>. Qui sotto trovi com’è fatto quell’investimento.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "358617b4209a7b578a28b5e6246f28a1ea0b497490fb87adffff0239ba68c1f9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Honest & transparent",
+      "target": "Onesti e trasparenti",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "372b305afd8e790ab8f0c8115827c872512b34dccfc4add819e49f18dadc15a3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "5 fields",
+      "target": "5 discipline",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "37638eb0d889f037f977eb041917494a36de889059953ebf7f789124ab1ae15b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "When our neighbors' businesses win, we all win. Stronger local businesses mean more jobs, more opportunity, and a more resilient community. That's not a marketing line for us — it's the reason we set up shop here, and the standard we hold ourselves to on every project.",
+      "target": "Quando le imprese dei nostri vicini vincono, vinciamo tutti. Imprese locali più forti significano più lavoro, più opportunità e una comunità più solida. Per noi non è una frase di marketing — è il motivo per cui abbiamo aperto qui, e lo standard che ci imponiamo su ogni progetto.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "37f91685a7e6dd7e18d445e9f9410d13153217c2beda192ddb8e71d762116b3e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "So we design every page to earn the next five seconds, and the five after that. Attention is the price of admission. Without it, nothing else we build is ever seen.",
+      "target": "Per questo progettiamo ogni pagina perché si guadagni i cinque secondi successivi, e i cinque dopo ancora. L’attenzione è il biglietto d’ingresso. Senza, nulla di ciò che costruiamo verrà mai visto.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "38330c671c2030d5eab39e3b483c427bab99fb0f1a29c66d59481230b35832ce": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "How we got here.",
+      "target": "Come siamo arrivati qui.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "383e68317ac3cfb55d27106de8f83a624295c6c6d20c695e86491693333cf02c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Call us",
+      "target": "Chiamaci",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "38759c8742a7483730f17f89799ca99e8db2003a34ec08259085a2d81337f08e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Half of your visitors leave if a page takes more than three seconds to load — and they leave before they ever see what you offer. We build lean, hand-coded sites that paint in under a second on a phone, on real networks. Speed isn't a vanity metric; it's higher Google rankings, lower ad costs, and far more customers who actually stay.",
+      "target": "Metà dei tuoi visitatori se ne va se una pagina impiega più di tre secondi a caricarsi — e se ne va prima ancora di vedere cosa offri. Costruiamo siti leggeri, scritti a mano, che si disegnano in meno di un secondo su uno smartphone e su reti reali. La velocità non è una metrica di vanità: è posizionamento migliore su Google, costi pubblicitari più bassi e molti più clienti che restano.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "3893891f229e251f5655aedc1d2d47f0ce7b04417d789787bb75b2bf41e5f5fb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Performance tuning & Core Web Vitals",
+      "target": "Ottimizzazione delle prestazioni e Core Web Vitals",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "390c9808e8fcc8b4cb1880be829323690da8ba8cfbe72c81129a5c85438da869": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You own the domain, code, and content",
+      "target": "Possiedi dominio, codice e contenuti",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "3910011ad839808bcf8e37cad3169315bec6aba5ba348240eebd6af292e6dd7b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A custom Cozelos Data build isn't a generic theme stacked with plugins. It's a hand-engineered system that loads in under a second, has a far smaller attack surface, and needs less maintenance from day one. Every page is optimized for performance and search from the start — because the goal was never \"a website.\" The goal is more customers.",
+      "target": "Una realizzazione Cozelos Data su misura non è un tema generico farcito di plugin. È un sistema costruito a mano che si carica in meno di un secondo, ha una superficie di attacco molto più ridotta e richiede meno manutenzione fin dal primo giorno. Ogni pagina è ottimizzata per prestazioni e ricerca fin dall’inizio — perché l’obiettivo non è mai stato \"un sito web\". L’obiettivo è più clienti.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "39a6c37c04b93019294ef72134fccf6dfd14e00ab1c712ff6fec12343ff8aa27": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Strong partnerships produce the best results.",
+      "target": "Le partnership solide producono i risultati migliori.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "39d3cb10d775c327759591e6fd1e0bc191a4c51e895765a854e161551bfdde36": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Tap below to start a live chat with us right here — no app required. We usually reply within minutes during business hours.",
+      "target": "Tocca qui sotto per avviare una chat con noi direttamente da questa pagina — senza installare nessuna app. Durante l’orario di lavoro rispondiamo di solito in pochi minuti.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "3a2e2e1cb4ebfa4a251c5a00f7c642a06902e8626e943cc50edc407a0e66e288": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What you actually get when you work with us.",
+      "target": "Cosa ottieni davvero lavorando con noi.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "3a44a09881aa7902f0bbd940054aff49d13b82163e52f24c07260234170e9e8b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Essential Presence",
+      "target": "Essential Presence",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "3a45f3ab129a50b54e272e9e75694e17f869101ffba7317a5d8610ab31a31e65": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Four stages between a stranger and a customer.",
+      "target": "Quattro fasi tra uno sconosciuto e un cliente.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "3af03274cc7082337b6b3ff6a3dca50d0b071a31f0bc02773bfe817f666be832": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Founder & Principal, Cozelos Data",
+      "target": "Fondatrice e Principal, Cozelos Data",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "3b397a8726ce73988b1dab9ee56fccfa5487a0988c5c1000769a4eb16004bb3a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Monthly ranking reports",
+      "target": "Report mensili sui posizionamenti",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "3b90b54da551db0042b6e28882118ffed6bc59272c453f292b14e2ec5c7a8ff6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Attention, engagement, and traffic are only inputs. None of them pay the bills on their own. The final — and most important — stage is strategy: aiming everything at a business outcome. More calls. More bookings. More qualified leads. More revenue.",
+      "target": "Attenzione, coinvolgimento e traffico sono soltanto punti di partenza. Da soli non pagano le fatture. La fase finale — e più importante — è la strategia: orientare tutto verso un risultato di business. Più chiamate. Più prenotazioni. Più lead qualificati. Più fatturato.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "3bd3f82f47bb26c2107d9e1248cb892db8e66d118fc38093a47c2017d73d6fb5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data was founded by <strong class=\"text-[var(--text)]\">Ellen Cozelos</strong> — an accomplished software engineer, cybersecurity specialist, digital marketing professional, and AI expert with more than 20 years delivering innovative technology across government, aerospace, and commercial sectors.",
+      "target": "Cozelos Data è stata fondata da <strong class=\"text-[var(--text)]\">Ellen Cozelos</strong> — affermata ingegnere del software, specialista di cybersecurity, professionista del marketing digitale ed esperta di AI, con oltre 20 anni di tecnologia innovativa realizzata per il settore pubblico, aerospaziale e commerciale.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "3c42a671a7954af4ecef993f7a658ffd5773cdf1d74a12cee7f33699aecd2c3b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Need a capability statement?",
+      "target": "Ti serve un capability statement?",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "3d0e41d5341c91dd13572f4d3db85aa83a655681dbb6a87322231cfc7c9b4d0b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "“If it is important to our clients, it is important to us.”",
+      "target": "“Se è importante per i nostri clienti, è importante per noi.”",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "3d31b3b90eb9e5b9beb71ad8e7d80e8f0741223b37cd1801f2120f149156ad5e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Bespoke scope & architecture",
+      "target": "Scope e architettura su misura",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "3d48c3c16a3438b84b7ad01030bab0947c3769804af56a6c148482efe6679793": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What your investment buys",
+      "target": "Che cosa ottieni con il tuo investimento",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "3dda05c1f0aaf4c40aeadb7332c55d0b74e8d0a185b3b5c597e9fbfc96c72836": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Six Reasons",
+      "target": "Sei motivi",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "3e6a5fdd8f432c055d45ede48a6e9853bb48ca1cb668b3c4dd2766d44fbec45e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Areas of Expertise",
+      "target": "Aree di competenza",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "401306334382d6f4e3a75a54dbc5114e67313b134822108a3f01250d1fc7b16e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "See it applied across our services",
+      "target": "Guardalo applicato ai nostri servizi",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "405c2a820aebf34b7e8640386f302ff71c9c644c58c49eb9e5f8ae462497bb5f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Book a Session",
+      "target": "Prenota una sessione",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "41f5a8127947557105db784e69ed0d87d51c176a8d0d63f4f2cc84338f7549a7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "month",
+      "target": "mese",
+      "origin": "committed",
+      "at": "2026-08-21T06:16:11.101Z"
+    },
+    "42086c55478114b65215a923ca2e70cd655399b56a69df4ff34b3a6bede912d5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We don't build it and vanish. We stay invested.",
+      "target": "Non costruiamo e spariamo. Restiamo coinvolti.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "429846612071b1729d0b4215827aea13e7823f0db2ef0309d459acf9ea048444": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Strategy before pixels",
+      "target": "La strategia prima della grafica",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "436aabd742db0fe39e48ad6d07fe639c04024a76f8fef38556e7c706afd6d2b5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Text",
+      "target": "Scrivi",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "436fff907ece91aabfdafe04d627bfb344fe0b7e7c010773e606d37c13fe3476": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Minor content edits",
+      "target": "Piccole modifiche ai contenuti",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "439e97dbb16a33642e8e554399801e2e9242a84a7f662f79d0dbe96bd268d618": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "True partnership",
+      "target": "Partnership vera",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "4417053ce2ef46e5d053401a4d831a00d0c99ac8d4b91738831add00dc1c7f35": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "That mission shows up in the work as <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">six connected services</a> and in <a href=\"/why-cozelos-data/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">the standards we hold ourselves to</a> on every build.",
+      "target": "Questa missione si traduce nel lavoro in <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">sei servizi collegati</a> e negli <a href=\"/why-cozelos-data/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">standard che ci imponiamo</a> su ogni progetto.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "44fce3e25fa0afb97afd1c4aa1e9cdcf9bdc78ac1c2a39a5882ea569410ea331": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Real relationships",
+      "target": "Relazioni vere",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "45336fc37486eaded07f66259a49627074db099a4baaabaf6995570795d535d9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hand-built, sub-second, and secure",
+      "target": "Scritto a mano, sotto il secondo e sicuro",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "45a99d16ae7e68942abd31c0b0182d328cec4d2a26de25d988b44fef8144c440": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our work now powers tour operators, hotels, healthcare practices, storage facilities, pest control, luxury services, and genealogy researchers.",
+      "target": "Oggi il nostro lavoro sostiene tour operator, hotel, studi sanitari, self-storage, disinfestazione, servizi di lusso e ricercatori genealogici.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "45b1073f3adfb0ebeb4af3eeabe8b50577cc51414d9ee239ede128e290dbb0d1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hours",
+      "target": "Orari",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.060Z"
+    },
+    "471c4ee1884134b1460ae54cee33f922b125d5efcb92b31c748b8534e12a18cb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Secure by design",
+      "target": "Sicuro per progettazione",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "47d5f951876ecfa7dc3c9fc2a8f3ec1a770cc6dc44769c3f1dcea2db47d8ac9a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A real person, not a ticket queue — and a reply within one business day, before and after launch.",
+      "target": "Una persona vera, non una coda di ticket — e una risposta entro un giorno lavorativo, prima e dopo il lancio.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "47faee15842e516c8fbe68551a4705da48506eff14bb492075eec262d050a305": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Video Production",
+      "target": "Produzione video",
+      "origin": "committed",
+      "at": "2026-08-21T04:50:45.646Z"
+    },
+    "48452ae120bb2373bb44db208a72fc3a51e464eaae33258f79d0dff90f6133a5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Five disciplines. One unified advantage.",
+      "target": "Cinque discipline. Un unico vantaggio.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "4943d913d1e103a4bb1943ebf42969b6c15a949d1b291aff8b53effcef0b6822": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Fixed, transparent pricing with no surprise invoices",
+      "target": "Prezzi fissi e trasparenti, senza fatture a sorpresa",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "4a68b0e6a0f38ad2d2d2eefd42510803a443d2e0bba660488118f009e720a923": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Why We Exist",
+      "target": "Perché esistiamo",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "4ae3afa50ccd1f8745dc94ecdb25c408c7457d45530e820611c07b1a4036c09a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Schedule a Consultation",
+      "target": "Prenota una consulenza",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "4bbaf5e4503349e315044b54708b5ef86ebab8167dff11dc628e5c9f149100fd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "That rare combination is the reason Cozelos Data exists. Ellen founded the company on a conviction she'd felt for years: the businesses that power our communities — the contractors, clinics, hotels, and family shops — deserve the same caliber of technology as the agencies and enterprises she'd spent her career serving. Not a watered-down template. The real thing.",
+      "target": "È questa rara combinazione la ragione per cui esiste Cozelos Data. Ellen ha fondato l’azienda su una convinzione che coltivava da anni: le imprese che tengono in piedi le nostre comunità — imprese edili, cliniche, hotel e negozi a conduzione familiare — meritano tecnologia dello stesso livello di quella delle agenzie e delle grandi organizzazioni che aveva servito per tutta la carriera. Non un template annacquato. Quella vera.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "4c4c0b1756dd8c52ad7d625a65917ed83411f214f3d6548a4d47dbedec4e27e2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Advanced analytics & AI automation",
+      "target": "Analytics avanzati e automazione AI",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "4c9a24bd14121aaa89a90fa1af23dad603f3a562eb4bfb4ea0e21b171c7e80d5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Most agencies are strong in one area. Ellen's command of five — and how they reinforce one another — is what turns a website into a system for growth.",
+      "target": "La maggior parte delle agenzie è forte in una sola area. La padronanza di cinque da parte di Ellen — e il modo in cui si rafforzano a vicenda — è ciò che trasforma un sito web in un sistema per la crescita.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "4cb536f99cf8eeb5dc29a15710b2050db8ae6cf65d4ea389dae850472a8e31a9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The best work starts with understanding, not a pitch. Here's how the first conversation actually goes.",
+      "target": "Il lavoro migliore nasce dall’ascolto, non da una presentazione commerciale. Ecco come si svolge davvero la prima conversazione.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "4ce618d3664846717d76e0aae79ad096aa6507e47188c30a8be694d4a9837b06": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Contact",
+      "target": "Contatti",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.058Z"
+    },
+    "4d7d22431c7414a4f28822787443574b80f168f3f6e292d04f544d544cfe3238": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Digital Marketing",
+      "target": "Marketing digitale",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "4e2b958beeb53b833afd75dc47cbebddaf65343c03c628bf8e56a724c2e9cdc3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Great digital work isn't a pile of features — it's a sequence. Each stage earns the next, turning a passing glance into attention, attention into interest, interest into a customer, and customers into growth. This is how we think about every project we build.",
+      "target": "Il lavoro digitale fatto bene non è un cumulo di funzionalità — è una sequenza. Ogni fase si guadagna la successiva: trasforma uno sguardo distratto in attenzione, l’attenzione in interesse, l’interesse in un cliente e i clienti in crescita. È così che ragioniamo su ogni progetto che costruiamo.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "4e5881dffcfe0ccf727fee71cdacfd43b7714127915139b063ad2100bd630f7e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ongoing conversion strategy",
+      "target": "Strategia di conversione continuativa",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "4eee28122357c520e4ac5003029a38632b04314f74af9311a89068f1c912188b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Compounds",
+      "target": "Si moltiplica",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "4fe0b0662681cf234d55a658c597742736676517844e6e5ea79076660133c5ab": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Multi-site or multi-location builds",
+      "target": "Realizzazioni multi-sito o multi-sede",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "5074ceaabe5f4487b07bc8e1e646790e4e413c300306d32b8ddbf15fc757b04f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Your domain, code, and content are yours — always. No lock-ins, no hostage retainers, no surprises.",
+      "target": "Dominio, codice e contenuti sono tuoi — sempre. Nessun vincolo, nessun canone che ti tiene in ostaggio, nessuna sorpresa.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "50dad33d62c97f7e46f1182ed05480d7513734197e84f40624d25206df207aab": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Strategic Business Technology",
+      "target": "Tecnologia strategica per il business",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "5159d290f0d9dcbf34d057b5ddd98da5e8f15f881256ee9167718c65385c2eca": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our mission",
+      "target": "La nostra missione",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "5166a0ebce07c53508f6a66050afa99cf05bfafcc686ea529af28e093e3e9439": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We measure success the way you do — in leads, growth, and results that strengthen your business for years.",
+      "target": "Misuriamo il successo come lo misuri tu — in lead, crescita e risultati che rafforzano la tua impresa per anni.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "516af96102beb8a07848d166b2c4441107701f0d0ed44a73e91780de8e9d93d5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "About Cozelos Data — Enterprise Expertise, Built in Utah",
+      "target": "Chi siamo — Cozelos Data: competenza enterprise, costruita in Utah",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.694Z"
+    },
+    "52f990e539c7045648d6a9caf000529a034bc46c5260883206995e273448f7f2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Technology is never the point — people are. When a business grows stronger, families are supported, employees thrive, and entire communities get better. That's the real measure of our work: not the code we write or the rankings we earn, but the lives those results make better. It's why we do this.",
+      "target": "La tecnologia non è mai il punto — lo sono le persone. Quando un’impresa diventa più forte, le famiglie trovano sostegno, i dipendenti crescono e intere comunità stanno meglio. È questa la vera misura del nostro lavoro: non il codice che scriviamo o i posizionamenti che otteniamo, ma le vite che quei risultati rendono migliori. È per questo che lo facciamo.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "5473073a7494486b0f770662fa4c55b1c4e14e0faf76bd133588710c78e6306a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We chose to plant Cozelos Data in Vernal, Utah on purpose. The businesses of Eastern Utah and the Uintah Basin — the contractors, hotels, healthcare practices, tour operators, and family shops — are the backbone of their communities. They deserve technology built to the same standard as the aerospace and defense programs Ellen spent her career supporting.",
+      "target": "Abbiamo scelto di piantare Cozelos Data a Vernal, Utah, di proposito. Le imprese dell’Utah orientale e dello Uintah Basin — imprese edili, hotel, studi sanitari, tour operator e negozi a conduzione familiare — sono la spina dorsale delle loro comunità. Meritano una tecnologia costruita secondo lo stesso standard dei programmi aerospaziali e della difesa che Ellen ha supportato per tutta la carriera.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "54b179650e737459068509c620b4ba181426816838986c0539782780d014e00d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "FAQ",
+      "target": "FAQ",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "54c8c51a42755d69c83cf691566458da5dd2a7e37b5baaf7cdf18ff82cd891bb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Business Automation",
+      "target": "Automazione aziendale",
+      "origin": "committed",
+      "at": "2026-08-21T04:50:45.646Z"
+    },
+    "550741ab9bc16fb0d097039e4981f2996faf9d2f6ef7c8239489288adc88a1e5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Advanced & local SEO with schema markup",
+      "target": "SEO avanzata e locale con schema markup",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "55a0825ec0cb63c42610f989306cd5266c66d2528c0c07ce2c5db6103b275938": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Making Businesses Stronger. Making Life Better.",
+      "target": "Making Businesses Stronger. Making Life Better.",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.750Z"
+    },
+    "5622defe05e386f43df0d977f7653ce57029a5e9aaaea6a382ba3a544e3f9de8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Security monitoring & daily backups",
+      "target": "Monitoraggio della sicurezza e backup quotidiani",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "5720631af4ff8d87ba89c44ae0d2594d995a776a802a83fb228a219e7ccb43f4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our vision",
+      "target": "La nostra visione",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "57633a37d28d78000020513725382365ba5f263cc3494ae47e3dca45003b1ea1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The Playbook",
+      "target": "Il metodo",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "577b53fa7aaddbda27b82eb4d4244854ee1a04ade4c72ded6f2f57c913f7ae9f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Keep your asset fast, secure, and online.",
+      "target": "Mantieni il tuo asset veloce, sicuro e online.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "57eefc2e46270b35777f84c0260572756ec55a6fc10c9aae2e99b1244d965bc9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Every site is built for sub-second load times. Performance is a deliverable we hold ourselves to, not a maybe.",
+      "target": "Ogni sito è costruito per caricarsi in meno di un secondo. Le prestazioni sono un risultato di cui rispondiamo, non un forse.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "587bef8779343379c3ecbff4c86655a5fdf952f569e04754f1fd59bdfbf56f40": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "For businesses ready to dominate their market and become the obvious choice.",
+      "target": "Per le aziende pronte a dominare il proprio mercato e a diventare la scelta ovvia.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "5960587dd65d1e8436e238db5e33f317773964672a7611c6c41f2b881db2b48b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "$10,000–$30,000+",
+      "target": "$10,000–$30,000+",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "59c00417f07bc96c8ce171d939c94420956349203cfacb9bb67e9bb3f1a61f00": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our Approach",
+      "target": "Il nostro approccio",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "5ac9067dcd6185bda5481d219e0212ab6bbffa1a6d74230d56534bde476759bf": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A repeatable system",
+      "target": "Un sistema ripetibile",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "5ba26fc605139bd76453f8eea93eefeec3712854a200314131c83eb2fc85a1e3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Most agencies are good at one stage. They make pretty sites, or they chase rankings, or they run ads. We engineer all four to work as a single system — because attention without speed is wasted, traffic without strategy is noise, and a beautiful site no one can find is just an expensive secret. Stacked in order, they stop being features and start being a machine for growth.",
+      "target": "La maggior parte delle agenzie è brava in una fase sola. Fanno siti graziosi, oppure rincorrono i posizionamenti, oppure gestiscono campagne pubblicitarie. Noi progettiamo tutte e quattro le fasi perché lavorino come un sistema unico — perché l’attenzione senza velocità è sprecata, il traffico senza strategia è rumore e un sito bellissimo che nessuno trova è solo un segreto costoso. Impilate nell’ordine giusto, smettono di essere funzionalità e diventano una macchina per la crescita.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "5bd87e61b9b3a51ea23fbb131c0bce82a8cadcaff3ac2427bdbbc7ed7e3612ca": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "That's why we price by outcome, not by page count. You're not paying for pixels — you're investing in an asset that generates visibility, credibility, and revenue long after launch day.",
+      "target": "Ecco perché fissiamo il prezzo in base al risultato, non al numero di pagine. Non stai pagando dei pixel — stai investendo in un asset che genera visibilità, credibilità e fatturato molto dopo il giorno del lancio.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "5be2f35044662fb7b638cb2d3584d566853bd3586fa6baec37db2fb8acce23cd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We don't simply build websites — we create complete growth platforms engineered to generate leads, authority, and revenue for years. Here's how we structure that investment, and exactly what it's worth.",
+      "target": "Non costruiamo semplicemente siti web — creiamo vere e proprie piattaforme di crescita, progettate per generare lead, autorevolezza e fatturato per anni. Ecco come strutturiamo quell’investimento e quanto vale esattamente.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "5c48d99d55694696f6144912a5dfd4acf1de1da79a7df82868ba677a3d0f8223": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Let's scope your investment.",
+      "target": "Definiamo insieme il tuo investimento.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "5c826cff7cd8c190b49c0866f8bd0a6c64919b74ce6e52eaf612260d121eeb9a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Universal Entity Identifier active and current for FAR-compliant contracting.",
+      "target": "Universal Entity Identifier attivo e aggiornato per contratti conformi al FAR.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "5d45bc27cf4dd11b5a02abb55e8935c1904cbbb26c11a0fd41464c128336521b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Every quote is fixed in writing before work begins. No \"starting from\" footnotes, no surprise invoices.",
+      "target": "Ogni preventivo è fissato per iscritto prima dell’inizio dei lavori. Nessuna nota in calce con \"a partire da\", nessuna fattura a sorpresa.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "5d588b338219d6d084482031fd6c514a59c52fd733527509980d60e7ab834a11": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A secure, low-maintenance build that ages well",
+      "target": "Una realizzazione sicura, a bassa manutenzione, che invecchia bene",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "5de57ae233540a280bd09e4eeb6f828401e5c92104b947bf745595d012c3ea1b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Artificial Intelligence",
+      "target": "Intelligenza artificiale",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "5de5a0682761a137a0339a846a31a26d3ea064faae86cd17c9504bed40844b99": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Returns that grow long after launch day.",
+      "target": "Rendimenti che crescono ben oltre il giorno del lancio.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "5e3f149eb5c48723425772338c9deb857a277ac71cb178da7264391810cbb5c9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "If it's important to you, it's important to us.",
+      "target": "Se è importante per te, è importante per noi.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "5f6f18a643b16554753088d4551ef3ab73a92c5acfeb11891f5f190ce7500cbf": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You work directly with us — no call center, no runaround.",
+      "target": "Lavori direttamente con noi — nessun call center, nessun rimpallo.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "5f7e2277632f4d1f261a9e57d4570db305b3ad1f9d27afe9b1417b94d1c514aa": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Today",
+      "target": "Oggi",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "5fd0e54102ede73f877f1619fc5073375fbd600aa704d33e723b07a5066fa3b6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You rent it — locked hosting and builders",
+      "target": "Lo affitti — hosting e builder bloccati",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "5ff3520fb59055eef959f36de5c20a7e7b831a7f1a263e1f656feed9a42f5fd5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Two decades architecting secure, scalable systems for environments where failure isn't an option. For clients, that discipline becomes websites and platforms engineered to perform flawlessly — fast, reliable, and built to last.",
+      "target": "Vent’anni passati a progettare sistemi sicuri e scalabili per ambienti in cui il fallimento non è contemplato. Per i clienti quella disciplina diventa siti e piattaforme progettati per funzionare in modo impeccabile — veloci, affidabili e costruiti per durare.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "607413711191519a739637a2fb2485cd76ac7961e3e49074b3eb2e46980745e9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "one-time",
+      "target": "una tantum",
+      "origin": "committed",
+      "at": "2026-08-21T06:28:49.446Z"
+    },
+    "6167231ccd225de659d7b548f3288e17f746635640330486f6350623f58f2dd5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "If you don't earn attention, nothing else matters.",
+      "target": "Se non conquisti l’attenzione, tutto il resto non conta.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "621971d3709c16bceb0ac34efe8dafec0fd60933fb23d5d65838bfdfb139515c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Reach a real person — not a call center or a ticket queue.",
+      "target": "Parli con una persona vera — non con un call center o una coda di ticket.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "628584e820ab2112ec1ec5f2f41ec68341bf8be0af6c081e828a07d49e3c4d6e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Business-focused solutions",
+      "target": "Soluzioni orientate al business",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "62c721dafc24150959bb15c426fb8bd2bc9ed1107a90c5f4ed7120c741da967c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Reach us directly",
+      "target": "Contattaci direttamente",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "63321e71a64969b2d0c1a3d1ad748a2f9d23f3da9ceee62d9f30d1a678eca528": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Quarter over quarter",
+      "target": "Trimestre dopo trimestre",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "63c64d996d0fc761382c0eaaef9e49776c4b2c3471aaedc03c287a2ee4754967": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Accessibility work is measured against the W3C's <a href=\"https://www.w3.org/TR/WCAG21/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Web Content Accessibility Guidelines (WCAG) 2.1</a> at level AA, which contains every success criterion the Revised Section 508 Standards incorporate from WCAG 2.0. Set-aside eligibility follows the SBA's <a href=\"https://www.sba.gov/federal-contracting/contracting-assistance-programs/women-owned-small-business-federal-contract-program\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Women-Owned Small Business Federal Contract Program</a>.",
+      "target": "L’accessibilità è misurata rispetto alle <a href=\"https://www.w3.org/TR/WCAG21/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Web Content Accessibility Guidelines (WCAG) 2.1</a> del W3C, al livello AA, che contengono ogni criterio di successo che i Revised Section 508 Standards recepiscono dalle WCAG 2.0. L’idoneità set-aside segue il <a href=\"https://www.sba.gov/federal-contracting/contracting-assistance-programs/women-owned-small-business-federal-contract-program\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Women-Owned Small Business Federal Contract Program</a> della SBA.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "6460b8d652015905620b900a96d1708a0d0cfcfc9f5b9de2c412dada9e4e370d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Delivering innovative technology solutions",
+      "target": "Soluzioni tecnologiche innovative",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "64b4939602fd6896c48ee2fecbd8e48bf12c91d43e9fdbbdee2ce040d7379621": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Sub-second speed that lifts rankings and lowers ad costs",
+      "target": "Velocità sotto il secondo, che migliora i posizionamenti e abbassa i costi pubblicitari",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "64d6acbf34e6b20beb3451f68f5dda56f2cf202561ff1c2d3d143a743253b09f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Text us now",
+      "target": "Scrivici ora",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "64e32aec9edc52e1fc831cda2aeba905c25f85f039e8547b6dd0213fa4dc91f5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Enterprise expertise, with a personal hand on the work.",
+      "target": "Competenza enterprise, con una mano personale sul lavoro.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "653512a666cc46fa156499faa339d3d8150a7b2e61864cad9c595cd54ae1e0e1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Start here",
+      "target": "Inizia da qui",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "656cf8b07b8acbd7b392be9c3a8902299dd3ac70ffb6b2706265091440fe73cb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Measured in \"likes\" and page views",
+      "target": "Misurato in “like” e visualizzazioni",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "6605a970b0621bc7536f1f9088605c061747a7b3cb622ed28dd036472aaf2be2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Turn traffic into qualified leads and out-rank your local competition.",
+      "target": "Trasforma il traffico in lead qualificati e supera i concorrenti locali nei posizionamenti.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "660c15c90616565b028f729643d8bfe7e69a01294ea49107d6ad95bbadd7bec0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A fast site keeps the attention a beautiful one earned.",
+      "target": "Un sito veloce mantiene l’attenzione che un sito curato ha conquistato.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "66bf5f63a3f83ee640508d0859fa6078f9e46a3e467e8102924394daa89a5f4b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "System & data integrations",
+      "target": "Integrazioni di sistema e dati",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "6700511d3faaaf1a0fb06a7d60cd1f52bf5f3a4550e9815bf5e9b860fe2a0556": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Conversion-rate optimization",
+      "target": "Ottimizzazione del tasso di conversione",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "68ac017ab3ddd9bf29c6e35dc5a8c52b63925ac8c25ff9e235e2df9500e33eb1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Professional Growth",
+      "target": "Professional Growth",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "69685afb0b699d7a4b6dd54cef6e088c64b0168f75cab82e87e3fad719e412d4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Technology means nothing if no one sees it. Ellen pairs engineering with marketing strategy — SEO, advertising, and content — so the systems she builds don't just exist, they generate measurable demand.",
+      "target": "La tecnologia non conta nulla se nessuno la vede. Ellen unisce ingegneria e strategia di marketing — SEO, pubblicità e contenuti — così i sistemi che costruisce non si limitano a esistere: generano domanda misurabile.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "6a4651ad56189167a3c55a7acc99c43922a817e1462479d5173bd2451089f1de": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Headquartered in Vernal, invested in the Basin.",
+      "target": "Sede a Vernal, impegnati per il Basin.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "6af9e6fa7f6f4285d443dee19895a4bedd509fbf33468c58587eda77177117f8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Performance keeps visitors engaged.",
+      "target": "Le prestazioni mantengono vivo il coinvolgimento.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "6b534a2bb33cdcc2e3bc5e64a39ef4dcd08f7cce6b2a84e3d94aad539f079132": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "For more than two decades, Ellen supported mission-critical software development for <span class=\"font-semibold text-[var(--text)]\">NASA and Department of Defense</span> programs: secure, reliable, scalable systems engineered for environments where precision and performance aren't features but requirements. From Huntsville, Alabama — a city synonymous with aerospace — she learned a standard of work that most of the commercial world rarely sees.",
+      "target": "Per oltre vent’anni Ellen ha supportato lo sviluppo di software mission-critical per i programmi <span class=\"font-semibold text-[var(--text)]\">NASA e Department of Defense</span>: sistemi sicuri, affidabili e scalabili, progettati per ambienti in cui precisione e prestazioni non sono funzionalità ma requisiti. Da Huntsville, in Alabama — una città sinonimo di aerospazio — ha imparato uno standard di lavoro che il mondo commerciale vede raramente.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "6e3048f429a7921f3e07b996c56a410fd7a2f1af815c5233c1ca1de16c9a0e7b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ellen Cozelos is the founder of Cozelos Data, a software engineer, cybersecurity specialist, AI specialist, and digital marketing professional with more than 20 years of experience across NASA, Department of Defense, aerospace, and commercial programs. She holds a Master's degree from Columbia University and brings enterprise-grade technology to businesses throughout Eastern Utah and beyond, guided by a simple principle: if it is important to our clients, it is important to us.",
+      "target": "Ellen Cozelos è la fondatrice di Cozelos Data: ingegnere del software, esperta di cybersecurity, esperta di AI e professionista del marketing digitale, con oltre 20 anni di esperienza tra NASA, Department of Defense, programmi aerospaziali e commerciali. Ha conseguito un Master alla Columbia University e porta tecnologia di livello enterprise alle aziende dell’Utah orientale e non solo, guidata da un principio semplice: se è importante per i nostri clienti, è importante per noi.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "6ef01fb8077b37cb8038beb4537029b614ef437f537565986d72f7ea7fb40aec": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Start Your Project",
+      "target": "Inizia il tuo progetto",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "6f4ebd76ed99c4e1737195a802eacc9353de40e946e7117daee87576fdb39c5d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We Build Digital Assets That Grow Businesses.",
+      "target": "Costruiamo asset digitali che fanno crescere le imprese.",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.750Z"
+    },
+    "6f71d4a57a422569956662c99f0d0eca5e3481de013a1a068d715548b3044ab7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Look established, load instantly, and start getting found.",
+      "target": "Trasmetti solidità, carica all’istante e inizia a farti trovare.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "70f633c2aecce8d0a9b5b8f3716548eb47b2c981f201617dc0a872d40ad61182": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Every great build starts with strategy. In a focused working session we map your goals, your customers, and your competition — then hand you a clear plan and a fixed quote. It's the single highest-leverage hour you'll spend on your digital presence, and the fee is <strong class=\"text-[var(--text)]\">credited in full</strong> toward your project when you move forward.",
+      "target": "Ogni grande progetto parte dalla strategia. In una sessione di lavoro mirata mappiamo i tuoi obiettivi, i tuoi clienti e la tua concorrenza — poi ti consegniamo un piano chiaro e un preventivo a prezzo fisso. È l’ora a più alto rendimento che dedicherai alla tua presenza digitale, e il costo viene <strong class=\"text-[var(--text)]\">accreditato per intero</strong> sul tuo progetto quando decidi di procedere.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "725e89275182fb07114b10becf9847a229586768fa747759a769604c98983e3e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Secondary",
+      "target": "Secondario",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "72e43966aa78ebb1f1bae3106ae7276c289887fe995b143e5d6f3d5c25fd1188": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Secure & backed up",
+      "target": "Sicuro e con backup",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "72e785c3e066cae018ad698eb6dcf7ec98c41217b29f127322e5ebb813929fd3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Fully custom design — never a template",
+      "target": "Design completamente su misura — mai un template",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "731bf0f867eef0b2607372e390677fbcab72b2eb9aa4f3e33be5f8d4c7af9b54": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Sitemap",
+      "target": "Mappa del sito",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "73b8ce3edbeabe8f95d4c64e284d1922e5ab47dc7ee849a693bf82789f09f8a4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Terms",
+      "target": "Termini",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "74a613500060fdbf2c0662bfd603680ad6099bd8ab07167ce85b24968e4764fc": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Maintained and improving every quarter",
+      "target": "Mantenuto e migliorato ogni trimestre",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "74fc64bf736911766a65b2fb286942bf6e76d67c0fc1d7e27625a02e81c9ae81": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Email",
+      "target": "Email",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "7663f8c76de32138f3101fd50f62f67ff565f779e2a26bebdcbb064708c00166": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Strategy is what turns visitors into growth.",
+      "target": "La strategia è ciò che trasforma i visitatori in crescita.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "76c0a523f4e79d5d4119211326e9412400969b596867653480269844c6794a0c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Small enough to move fast, structured enough to hit milestones. Most sites in 4–6 weeks.",
+      "target": "Abbastanza piccoli per muoverci in fretta, abbastanza strutturati per rispettare le milestone. La maggior parte dei siti in 4–6 settimane.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "7774945db6ec2c53fc211caf5c3ef438c20d8e622978a45d6ca8113fd5b39553": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You work directly with Ellen — a partner, not a ticket queue.",
+      "target": "Lavori direttamente con Ellen — una partner, non una coda di ticket.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "77a0d868239adba46d87b807549927ff781905dc943bbe561e1a97f58cd0a54a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Custom and cinematic — unmistakably yours",
+      "target": "Su misura e cinematografico — inconfondibilmente tuo",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "7824b0464b842a0b675ee5dce00960dae53ed27c801ddb3adcff00d31bb4e25a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We listen first",
+      "target": "Prima ascoltiamo",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "783ced04f11acaa03a80d6edd3cb214c7145956312d3bf60da955ce6d6599ecd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Start with a discovery consultation. Bring your goals; Ellen will bring two decades of enterprise expertise — and an honest plan to get you there.",
+      "target": "Inizia con una consulenza conoscitiva. Porta i tuoi obiettivi; Ellen porterà vent’anni di competenza enterprise — e un piano onesto per arrivarci.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "78d26f434d327957708af9e232ea1f093110297a609819ee747e1f2e059588e5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data, a digital agency in Vernal, Utah, prices work as an investment, not a commodity. Custom website projects start at $2,500 (Essential Presence), $4,500 (Professional Growth), and $7,500 (Market Leader), with Enterprise builds scoped from $10,000. Ongoing monthly growth plans run from $295 (Maintenance) to $1,500+ (Full Marketing). Every project begins with a $500 Discovery Session, credited toward your build.",
+      "target": "Cozelos Data, agenzia digitale a Vernal, Utah, tratta il proprio lavoro come un investimento, non come una merce. I progetti di sito web su misura partono da $2,500 (Essential Presence), $4,500 (Professional Growth) e $7,500 (Market Leader), mentre le realizzazioni Enterprise sono quotate a partire da $10,000. I piani di crescita mensili vanno da $295 (Maintenance) a $1,500+ (Full Marketing). Ogni progetto inizia con una Discovery Session da $500, accreditata sul costo della realizzazione.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "79632ecb6573a8069b61d52e83eda00e27d622da61a0845f3feb67ffd6e4edfd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "scoped to fit",
+      "target": "quotato su misura",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "7a17f16a11e4b43cc7a98a64aefba070f4f2180d699b7b7c6f1f8a7986e30f18": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Google & Meta ad management",
+      "target": "Gestione delle campagne Google e Meta",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "7b77c583b0580bb4e16b74933fdbf4f5849e593adc7ddf07b12ca0cae1fe48ad": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Founder · Cozelos Data",
+      "target": "Fondatrice · Cozelos Data",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "7cda66cf1bc3330e120976988612f021b241abc6609bf6f9459aa56ab7df70fd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Technology is easy. Building trust is hard.",
+      "target": "La tecnologia è la parte facile. Costruire fiducia è la parte difficile.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "7cf892fcf83dd2ca3ea8c92d916efeacbac2d2c6675a0b7f3c2ac40978eb757d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO and AI search engineered from day one",
+      "target": "SEO e ricerca AI progettate dal primo giorno",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "7d61c345777cd6b4ab3a09c292b9494c743e537938d0c83d3357e04ef79e7864": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Done well, innovation isn't disruption for its own sake — it opens doors: new markets, new efficiencies, and new ways for a business to grow.",
+      "target": "Fatta bene, l’innovazione non è rottura fine a se stessa — apre porte: nuovi mercati, nuove efficienze e nuovi modi di far crescere un’azienda.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "7eddd35ba7bb584bc13c40229e2449ca1f98f7207025fa7ab626eaf97a172f43": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Full Marketing",
+      "target": "Full Marketing",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "803cc4cc535af598b13ccdbf0004556732add4592349cc77429fe28eea3a6cd2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We measure success the way you do: in leads, bookings, and revenue — not page views or vague “engagement.” A site that brings in a handful of new clients a month pays for itself in weeks and earns for years. Every page is designed around conversion, and we report on the numbers that actually move your business forward.",
+      "target": "Misuriamo il successo come lo misuri tu: in lead, prenotazioni e fatturato — non in visualizzazioni o vago “engagement”. Un sito che porta una manciata di nuovi clienti al mese si ripaga in poche settimane e rende per anni. Ogni pagina è progettata attorno alla conversione e rendicontiamo i numeri che fanno davvero avanzare la tua attività.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "82efb068757b99fcfbd906c5105dca977a4b682eaba2d48ee11d3d318c8d3081": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Everything in Professional Growth",
+      "target": "Tutto ciò che include Professional Growth",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "8335d9df6d3aa10badf015b9cfa7a6171f80ee9d691f6d73c38ba0f759648c66": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Long-term success comes from continuous improvement.",
+      "target": "Il successo a lungo termine nasce dal miglioramento continuo.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "8361b73f4a3c42bc793c018fcf33251afd4f17709b107f0c007f3c1ac8f9b477": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "20+ yrs",
+      "target": "20+ anni",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "83a7206688fbdf8ee510980ccf9f1cb54101aa9c75405525105f71e59dcf15dd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Status",
+      "target": "Stato",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "841e42ab28a89cfb168857ead077d56f4eef2b829322fb56e04bcd8d12d44688": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Not features for the sake of features — six advantages that show up directly in your rankings, your reputation, and your revenue.",
+      "target": "Non funzionalità fine a se stesse — sei vantaggi che si vedono direttamente nel tuo posizionamento, nella tua reputazione e nel tuo fatturato.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "84bc59388267a6f430550c2c39c32191c42058c17588675a8f2990f8234736f4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Whether you're a local business ready to grow or an agency in need of a credentialed partner, we'd love to hear what you're building. Start with a conversation — no pressure, no obligation.",
+      "target": "Che tu sia un’impresa locale pronta a crescere o un’agenzia in cerca di un partner con credenziali attive, ci farebbe piacere sapere cosa stai costruendo. Si parte da una conversazione — senza pressioni e senza impegno.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "84d8f44aa2033724534c6491fbb658328897f5e9123a013bf8b8bc0224f90836": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Internal linking & content architecture",
+      "target": "Link interni e architettura dei contenuti",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "851af6b790371bff24c9b2443af01086676466f0a2a88c2293379bf16d331a85": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "First paint on the websites we build.",
+      "target": "Primo rendering sui siti che costruiamo.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "85252ac774c53a060692b10c24a3937cfcbbe2f248e3eae6a464490dfc829def": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The rarest skill of all: translating complex technology into business outcomes. Ellen starts with your goals, then engineers the system that gets you there — turning innovation into growth you can measure.",
+      "target": "La competenza più rara di tutte: tradurre tecnologia complessa in risultati di business. Ellen parte dai tuoi obiettivi, poi progetta il sistema che ti ci porta — trasformando l’innovazione in crescita che puoi misurare.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "855a86cdcce61595388c1e924a0c91fa22d5c645dc7aa49dcf700187c6c611bd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Most Popular",
+      "target": "Il più scelto",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "85eeff6e5d6778969250d8b8d7d7487ecfd82f1e6335d8c84c54f11afc5194eb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "New SEO articles each month",
+      "target": "Nuovi articoli SEO ogni mese",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "8664e23f889b3438b717cd2bb4102f4b700be9b4f2c6af4682e259e6e79a6265": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Strategy turns customers into growth.",
+      "target": "La strategia trasforma i clienti in crescita.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "86ab41093bd496f9f2bdbd22fbedef1036b5c703ffbeb6873947719bf39e7c98": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Google indexing & launch support",
+      "target": "Indicizzazione Google e supporto al lancio",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "87656625204874b972cf6def7b5a2de9dbcfcf1e2c6be5ca20e80528d1ddaa92": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Serving clients across the country",
+      "target": "Al servizio di clienti in tutto il Paese",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "87cf7c7995566b800d7d674341e949f4221085e39c17bcaceda27abd44673624": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A Cozelos Data digital asset",
+      "target": "Un asset digitale Cozelos Data",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "883176b0f8f8f5a3b5c79009cdcd0314ffeadc6b0ad733d748decd053bccb6e6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Custom",
+      "target": "Su misura",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "8937b80797652887bdb35a4c422ea1ebc036006ca2c1b5a45bdf92b79643401c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Vernal, Utah • Serving clients nationwide.",
+      "target": "Vernal, Utah • Al servizio di clienti in tutti gli Stati Uniti.",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.750Z"
+    },
+    "899f3c1b4d776b82ef075e3f77ed777f44c91779201c614c043d6b02129dea9d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "EC",
+      "target": "EC",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "89aa8b42360a1c6eccee3c2db37bbedcbd1e240bcdca481660acf790ad341751": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We build digital assets that grow businesses — design, SEO, marketing, video, and automation, engineered to make businesses stronger and life better. Premium digital agency in Vernal, Utah.",
+      "target": "Costruiamo asset digitali che fanno crescere le imprese — design, SEO, marketing, video e automazione, progettati per rendere le aziende più forti e la vita migliore. Agenzia digitale premium a Vernal, Utah.",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "89ece3a3d0212d081fb7b6d814b31cd0e16541769bb7f165cf75e2c5dd9f12c1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Engineering · Security · AI · Marketing · Strategy",
+      "target": "Ingegneria · Sicurezza · AI · Marketing · Strategia",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "8a0dfe4e0c9cdc1fa8c267c72370c35ca50888f9614ac5e420ede44ba5b7effb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "20+ years in technology",
+      "target": "Oltre 20 anni nella tecnologia",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "8c6f6213a8c58c8617e34137bdafd69a2d894e79cd747369776feafee016ba49": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You leave with honest direction and a fixed quote — whether you build with us or not. No pressure, no obligation, no hard sell.",
+      "target": "Esci con indicazioni oneste e un preventivo a prezzo fisso — che poi decida di costruire con noi o meno. Nessuna pressione, nessun impegno, nessuna insistenza commerciale.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "8d120a7ba382b4399d6e58063274f9367487c2dc81ae8eb96a4dd2c7a5661e52": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Columbia",
+      "target": "Columbia",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "8d6128f06d20635c9bd057f8c0398b4ad60b0914239cc70c539de4ce70ef610f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Start with a Discovery Session. We'll map the opportunity, recommend the right tier, and give you a fixed quote — credited toward your build.",
+      "target": "Inizia con una Discovery Session. Mapperemo l’opportunità, ti consiglieremo il livello giusto e ti daremo un preventivo a prezzo fisso — accreditato sul costo della realizzazione.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "8dfa99b0415a0d13cd06c886156600ceaeabbbafae8ea647062924869fe6cdf9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Contact Cozelos Data — Let's Build Something That Lasts",
+      "target": "Contatti Cozelos Data — Costruiamo qualcosa che dura",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.057Z"
+    },
+    "8ef9f2fbd969bb822de25d8e6d76871ca4ad587639f15888969908be146918e6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data follows a four-stage framework called the Cozelos Method: Attract (beautiful design earns attention), Engage (performance keeps visitors engaged), Convert (SEO brings customers), and Grow (strategy turns customers into growth). Each stage builds on the one before it, turning a website into a growth platform engineered for measurable results.",
+      "target": "Cozelos Data segue un framework in quattro fasi chiamato Metodo Cozelos: Attrarre (un design curato conquista l’attenzione), Coinvolgere (le prestazioni mantengono vivo l’interesse), Convertire (la SEO porta clienti) e Crescere (la strategia trasforma i clienti in crescita). Ogni fase si appoggia alla precedente e trasforma un sito web in una piattaforma di crescita progettata per risultati misurabili.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "8fb64e6a91c5540891ddece0befecec0ec243ba1885dff8734cc949d6dcd9069": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "$7,500",
+      "target": "$7,500",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "902918d5e190bb8b3df05f014babc9d0b4b68f790760bbfbf36c35ed7299bc89": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Technology should solve business problems.",
+      "target": "La tecnologia deve risolvere problemi di business.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "90d573db980d4ddbbfb7b0012c9dd65ce88d6dd99df531e90705056c10bc3aa4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO and AI-search visibility that compounds over time",
+      "target": "Visibilità SEO e nella ricerca AI che si accumula nel tempo",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "917ccedbb4bf5f3df4d8c22ce65e116f05eaab8f8422f25429cba15af89c3347": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Request Statement",
+      "target": "Richiedi il documento",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "9196da6f989227d4c037c708b66d6d98c416a187bca8b336cd019ed9943e1adf": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Large pillar-and-spoke architecture",
+      "target": "Ampia architettura pillar-and-spoke",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "91a9d396455620a57a9e3a490fe59ab3aa5cf3c3574814b063cca8f0638102c3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Performance is respect for your visitor's time. Sub-second load times, buttery scrolling, instant interactions — these aren't engineering vanity. They're the difference between a visitor who explores and one who's already gone. Every hundred milliseconds you shave off shows up in conversions.",
+      "target": "Le prestazioni sono rispetto per il tempo di chi ti visita. Caricamenti sotto il secondo, scorrimento fluidissimo, interazioni istantanee — non sono vezzi da ingegneri. Sono la differenza tra un visitatore che esplora e uno che se n’è già andato. Ogni centinaio di millisecondi che togli si vede nelle conversioni.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "91af0f587a9d858e65414be2a7860754f98f2bb6441bfe2b68b4320b7149aca3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "NASA & DoD",
+      "target": "NASA e DoD",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "92434bc1660147be67e85c798b0986e5c5b3caf4f8e18daa680eb4c2ab090f60": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "$2,500",
+      "target": "$2,500",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "92fd4aab610f7d7af3cc43cd43668fa7faac30da1c5d6efd1488133615018b7d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Woman-Owned Small Business — qualifies for set-aside and sole-source opportunities.",
+      "target": "Woman-Owned Small Business — qualificata per opportunità set-aside e sole-source.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "9306efc2420189337603bb53898a9c8e4b6d02d4b1fb3f4ea64b535ac90538f9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data office location map",
+      "target": "Mappa della sede di Cozelos Data",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.060Z"
+    },
+    "9354f5081d0431e2c4659ee53f49f625a298d10b8680abcbe4718d3592610f34": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Where We're Rooted",
+      "target": "Dove abbiamo le radici",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "93d521ce302444bdf5ab5cdd4a662d9fbb0bbd733e2d3295ca224f5b5118d45e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Skip any one stage and the system breaks — a gorgeous site no one can find, or a fast site with nothing to convert. Done in order, they compound.",
+      "target": "Salta anche una sola fase e il sistema si rompe — un sito bellissimo che nessuno trova, oppure un sito velocissimo senza nulla da convertire. Eseguite nell’ordine giusto, si moltiplicano.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "94adab1174335c36d3f43865c4ba6b830e45d3d50d2eebe4fc8a484da8e720e9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Want to arrive with context? Skim <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">what a project typically costs</a> or read the <a href=\"/faq/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">answers to the questions most businesses ask first</a>.",
+      "target": "Vuoi arrivare preparato? Dai un’occhiata a <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">quanto costa di solito un progetto</a> oppure leggi le <a href=\"/faq/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">risposte alle domande che quasi tutte le aziende fanno per prime</a>.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "955929d0873020d3ecdc3d0bb3a03f342fea74eec7db50520ae129e64a9c2f71": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Privacy",
+      "target": "Privacy",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "962edbd309f7291a67e19d7ccc5383af44efe4c70e29b8d313d609a341599836": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "To build the growth platforms that make businesses stronger and life better — giving local and growing organizations the visibility, credibility, and technology they need to thrive, protect what matters most, and create new opportunities for the people they serve.",
+      "target": "Costruire le piattaforme di crescita che rendono le imprese più forti e la vita migliore — dando alle organizzazioni locali e in crescita la visibilità, la credibilità e la tecnologia necessarie per prosperare, proteggere ciò che conta di più e creare nuove opportunità per le persone che servono.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "96452a6c84724dc08bd2f77aebf26638405e5c82c894ef68abd7dc2f12a4728d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Everything in Essential Presence",
+      "target": "Tutto ciò che include Essential Presence",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "96a82b20dd0b0cbadb66cd628456df3581fa0674724c5fb58992270dee66c636": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Phone",
+      "target": "Telefono",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "982261b6344c6a5df75b9e566777c46a247f41aa66d87db9f31a89335ab225e8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Built in Vernal",
+      "target": "Nati a Vernal",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "98373a6f4d743ff95044b330fab431f8e103293dc2051192c9654c72af5b4212": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data is a Woman-Owned Small Business in Vernal, Utah, founded by Ellen Cozelos — 20+ years across NASA, DoD, and commercial technology.",
+      "target": "Cozelos Data è una Woman-Owned Small Business a Vernal, Utah, fondata da Ellen Cozelos — oltre 20 anni tra NASA, DoD e tecnologia commerciale.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "986c2aa3d114d9d39a2ab7cbcc4c958aefa78bc8da19185f42fcb42d4d9a95af": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Beautiful design isn't decoration — it's credibility made visible. Confident typography, intentional spacing, cinematic motion, and a clear visual hierarchy tell a visitor, before they've read anything, that the business behind the screen takes its craft seriously. A template that looks like ten thousand other businesses quietly says the opposite.",
+      "target": "Un design curato non è decorazione — è credibilità resa visibile. Una tipografia sicura, spaziature studiate, animazioni cinematografiche e una gerarchia visiva chiara dicono al visitatore, prima ancora che legga qualcosa, che l’azienda dietro allo schermo prende sul serio il proprio mestiere. Un template identico a diecimila altre aziende dice esattamente il contrario.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "998cf9af8fbe7de8881d778f3c1f91a41cfa8a3e7acf4fe2f58e4ea8d7a25487": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ellen Cozelos has spent her career on the hard part. More than the code, more than the credentials, she is the strategist clients rely on to turn complex technology into decisions that move a business forward — building for <span class=\"font-semibold text-[var(--text)]\">consequence</span>, the kind of systems where a single line carries real weight and “good enough” was never an option.",
+      "target": "Ellen Cozelos ha passato la carriera sulla parte difficile. Più del codice, più delle credenziali, è la stratega su cui i clienti contano per trasformare tecnologia complessa in decisioni che fanno avanzare un’azienda — costruendo per le <span class=\"font-semibold text-[var(--text)]\">conseguenze</span>, il tipo di sistemi in cui una singola riga pesa davvero e “abbastanza buono” non è mai stata un’opzione.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "9b281cba58266dd8d40d95edfaa45ae32e9eec16e24fa36303b56d56f1c7643a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The Cozelos Method",
+      "target": "Il Metodo Cozelos",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "9b5a2352281012b95db1648c1a8094e674131e9f53e9553a4902d2ad1c693edc": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ellen Cozelos — Founder of Cozelos Data | Technology Leader",
+      "target": "Ellen Cozelos — Fondatrice di Cozelos Data | Leader tecnologica",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.011Z"
+    },
+    "9bcf00089904e8bb26312139947aa200bb31b271ddebaf81831b426309b81c2f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Bloated websites stitched together from dozens of third-party plugins are a standing invitation to hackers and a constant maintenance headache. Our builds ship as fast, static, hardened pages with almost nothing to exploit — no sprawling admin panels, no plugin soup, no scramble to patch the next vulnerability. Your site stays online, stays safe, and stays yours.",
+      "target": "I siti appesantiti e messi insieme con decine di plugin di terze parti sono un invito aperto agli hacker e un continuo grattacapo di manutenzione. I nostri progetti nascono come pagine statiche, veloci e blindate, con quasi nulla da sfruttare — nessun pannello di amministrazione sterminato, nessuna accozzaglia di plugin, nessuna corsa a tappare la prossima vulnerabilità. Il tuo sito resta online, resta sicuro e resta tuo.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "9c254501d99e6d5e1692e11cf92195a0ade9a7704af6a6ae0fe67a82138a9d81": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "On-page SEO foundation",
+      "target": "Fondamenta SEO on-page",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "9d0615e95a239c71cb26791e586c373064fda22c8497ca777114439141e5b009": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data office in Vernal, Utah",
+      "target": "L’ufficio di Cozelos Data a Vernal, Utah",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "9d0da0eec5ccd1ee0b6dad66c3a900d92034ec585b9de7eba42b5f1245a5c797": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Let's build something that lasts.",
+      "target": "Costruiamo qualcosa che dura.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "9e3d54d1e55d83b6eb9c22bd20b51a4314a292d84b827432996661c21ca922d9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Why businesses choose Cozelos Data: strategy-led, owner-controlled, lightning fast, and built for measurable ROI — a long-term partner, not a one-time vendor.",
+      "target": "Perché le aziende scelgono Cozelos Data: strategia prima di tutto, proprietà totale, velocità estrema e ROI misurabile — un partner a lungo termine.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.192Z"
+    },
+    "a04ca26487d2ac515c1ee58128a5cba8172f2448759261dca2159d614b8c3e09": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Everything in Maintenance",
+      "target": "Tutto ciò che include Maintenance",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "a09d0b627e6e130e98ba90874d454149d6646d835dc3ba5c86e163452710c6b0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "NAICS Code",
+      "target": "Codice NAICS",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "a1bef81521380e77d5b6a743ca2cc9f9c6a87a159d2cf5f0a83ec8c3891b2baf": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We actually answer the phone. Clients on a plan get priority support and a team that stays engaged after launch.",
+      "target": "Al telefono rispondiamo davvero. I clienti con un piano attivo ricevono supporto prioritario e un team che resta coinvolto anche dopo il lancio.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "a24bfaaf3578618b1caa33de28c41f25446ad2693b0b640477cf880f19f3a3a4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "NASA & DoD programs",
+      "target": "Programmi NASA e DoD",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "a30f380fc2ef2e463dc5c258ea08badaeaef49d284c941f4a06a34db58776438": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Choose {name}",
+      "target": "Scegli {name}",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "a30f52f0c310ad3d7cf9677bdac8f754f6d539a87eec8b048ccf106507d4005f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Everything in Maintenance, plus active search growth.",
+      "target": "Tutto ciò che include Maintenance, più crescita attiva nella ricerca.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "a336e24a17096b86696bc69fe952faff8a3c55972ac8c40fe68a8c9dcddb44f2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "PRIMARY",
+      "target": "PRIMARIO",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "a344c24a05a018a1ce961c5a3d0b0b7ebfce4656ae740d1db43c55111be5a228": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "One-time project investments.",
+      "target": "Investimenti di progetto una tantum.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "a3d8647329562402ec872de07a5fa6d433138857bcd84e4e6ad702ea43b4e10a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "NAICS codes Cozelos Data contracts under",
+      "target": "Codici NAICS con cui Cozelos Data opera",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "a6fd6d50e0441be88932811a6ca4971c16614707384e006d872162586dc06fa2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Together we identify where the real growth is hiding — the leads you're missing, the searches you're losing, and the fastest path to results.",
+      "target": "Insieme individuiamo dove si nasconde la crescita reale — i lead che ti stanno sfuggendo, le ricerche in cui non compari e la strada più rapida verso i risultati.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "a71938988eafba59357030bcba5b4b8a0157652d9d36771cf34f44eab2fd0b3c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Content recommendations",
+      "target": "Suggerimenti sui contenuti",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "a753941911b5752ac16d5722e7a0b464144452b7498ef2f73a71a2f3d030b15f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "$4,500",
+      "target": "$4,500",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "a7d4707452bd657d05cab461657e4ab9a1e82e1d1a1c7a6f6ab0ba319e10d624": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Why Clients Choose Ellen",
+      "target": "Perché i clienti scelgono Ellen",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "a813ff2a7981ccc1c6682f16aafe14a06d87706e672208bfa8d489443af848b5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Anyone can make a page look nice. The hard part — the valuable part — is engineering it to produce a specific outcome: more calls, more bookings, more qualified leads. Before we design a single screen, we map your customers, your competitors, and the exact path from stranger to paying client. Every decision after that serves that goal.",
+      "target": "Chiunque può rendere gradevole una pagina. La parte difficile — quella di valore — è progettarla per produrre un risultato preciso: più chiamate, più prenotazioni, più lead qualificati. Prima di disegnare una sola schermata, mappiamo i tuoi clienti, i tuoi concorrenti e il percorso esatto che porta da sconosciuto a cliente pagante. Ogni decisione successiva serve a quell’obiettivo.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "a845505ede3d8bfe8dc63f3c0dc1b14c007340c5a3d7ab3ab28af0e706d0562e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Authority",
+      "target": "Authority",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "a8ece74c63a98d73812897f33a48b702db29c80b98a074a5dd654f67abdbe8a4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Why Cozelos Data",
+      "target": "Perché Cozelos Data",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.192Z"
+    },
+    "aa2ec854f63b681565126980cec4f9f8dc973e3ddd6bd6571ea28c710731f22d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Beautiful design earns attention.",
+      "target": "Un design curato conquista l’attenzione.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "aa36975a2128e2f3386e0818d05dfbe0c6c384a4581a0e908f06431f69b70abe": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Looks like a template anyone could buy",
+      "target": "Sembra un template che chiunque potrebbe comprare",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "aac033828c1b84f8fc383f04c287f6040f7ea3c3dacec0a9551c43493d3ce830": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Keyword tracking & technical SEO",
+      "target": "Monitoraggio delle keyword e SEO tecnica",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "ab85195c8f9fac0552260aa698c72fa508c5487ecf03aa7e2f27f2fc2df8e91b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our Promise",
+      "target": "La nostra promessa",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "ab9ee04c7b6f205686dee02f70365d733167ca9fc9cfbce7b7754934d8326c91": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "An asset you own outright — domain, code, and content",
+      "target": "Un asset di tua piena proprietà — dominio, codice e contenuti",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "abcdf55e669cf9caa730ca1fb900fb9622af1736f373f368cd2aa639760aca6f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "She leads by one guiding principle: if it's important to our clients, it's important to us.",
+      "target": "La guida una sola regola: se è importante per i nostri clienti, è importante per noi.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "aca33d73574c05d8a39649409e0c671b264fefa438b64dd73313ae70a55e9477": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Mission-critical software programs",
+      "target": "Programmi software mission-critical",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "adb9ad092ed210b187052716d79bb2c24ce5c92eefe8f4f714d2174c676e1735": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "When local businesses grow, the whole community gets stronger.",
+      "target": "Quando le imprese locali crescono, tutta la comunità diventa più forte.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "ae575d176defeccf0aaf2fa6bd8ba562162b96a5e55d5186c042a96d62ce7f39": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Strategy & roadmap",
+      "target": "Strategia e roadmap",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "ae654a1aef0c97b26915ac8db92ffab56e363f05849dcad0ea5d11a3c5d3d46d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Government & aerospace background",
+      "target": "Background pubblico e aerospaziale",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "af419e9303131d82fdbbb907bc4f0e9f05fd8685c0794395e9ad5e2a3b77a137": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Everything in SEO Growth",
+      "target": "Tutto ciò che include SEO Growth",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "b0438cf54d5feaca4210086da49e08dd6dbc40acf1cb0ee82bb2200a9b809b57": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Tools are never the point. The right technology, applied with intent, removes friction, wins customers, and moves the numbers that matter to your business.",
+      "target": "Gli strumenti non sono mai il punto. La tecnologia giusta, applicata con intenzione, elimina attriti, conquista clienti e muove i numeri che contano per la tua attività.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "b1b1a56203089d78c81117434c85c5f29ed0bb8b90b18054aca6770f5fc969bb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Her path was never narrow. Across government, aerospace, and commercial sectors, Ellen became fluent in disciplines that usually live in separate departments: <span class=\"font-semibold text-[var(--text)]\">software engineering, cybersecurity, artificial intelligence, digital marketing, and emerging technologies</span>. She earned a Master's degree from Columbia University and kept learning — because the technologies that move businesses forward never stop evolving.",
+      "target": "Il suo percorso non è mai stato ristretto. Tra settore pubblico, aerospaziale e commerciale, Ellen è diventata fluente in discipline che di solito vivono in reparti separati: <span class=\"font-semibold text-[var(--text)]\">ingegneria del software, cybersecurity, intelligenza artificiale, marketing digitale e tecnologie emergenti</span>. Ha conseguito un Master alla Columbia University e non ha mai smesso di studiare — perché le tecnologie che fanno crescere le aziende non smettono mai di evolversi.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "b33528891e7e0201f1cbaf538be6ad550c88599287a101d50e478b62c4799905": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Your domain. Your code. Your content. No exceptions.",
+      "target": "Il tuo dominio. Il tuo codice. I tuoi contenuti. Senza eccezioni.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "b3e1e39c52c903db916b9153ce1464532d64dbf88a6c78e1d18d4fd85e8bf23c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hiring an agency shouldn't be a leap of faith. Here's what you can count on from us — every project, every time.",
+      "target": "Affidarsi a un’agenzia non dovrebbe essere un atto di fede. Ecco su cosa puoi contare da parte nostra — in ogni progetto, sempre.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "b403e8b1e8cfde3394a8a75c2215c53fa4a4b3fa6b6028d67dcbc1e09b7fb4f7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "<1s",
+      "target": "<1s",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "b46807fab14b5b86208c0cbc02f26c9b02e33fe3e00949eed890a2593ee07d2e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Tell us about your business",
+      "target": "Raccontaci della tua attività",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "b55d7b151861032f7a6a72a1836e216f9fa424a975a651076df6119f5786686e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What makes her a trusted advisor isn't only the technical depth — it's how she leads with it. Ellen believes the best results come from genuine partnership, and she operates by a principle that has guided every engagement of her career:",
+      "target": "Ciò che la rende una consulente di fiducia non è solo la profondità tecnica — è il modo in cui la mette al servizio degli altri. Ellen è convinta che i risultati migliori nascano da una partnership autentica, e lavora secondo un principio che ha guidato ogni incarico della sua carriera:",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "b64a7c35adc959b85ba0f577e7624e614a9d34e4e153b968bdddaeabf5d28303": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO bolted on at the end, if at all",
+      "target": "SEO aggiunta alla fine, quando va bene",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "b77d026e38cbc5b50d13f4551238ec201975a9344625ac99158391b1c84bfa79": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The payoff: ",
+      "target": "Il risultato: ",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "b8302dc70c2ad095d124b13a0e3ea2b661ffad2040789cf1ffaa3772274476fa": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Two decades supporting NASA and Department of Defense mission-critical software.",
+      "target": "Vent’anni a supporto di software mission-critical per NASA e Department of Defense.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "b8db852e5db9e0d292359d9ad02c483fe51d9262283af0a90e91698033ba8d47": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Master's degree",
+      "target": "Laurea magistrale",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "b92c63e9b153f722a4d447651d60715d6a08ae4632f25dd530431f58041bc313": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A website launched and forgotten quietly loses value. These plans keep yours fast, secure, and climbing — so the asset appreciates instead of decaying.",
+      "target": "Un sito lanciato e poi dimenticato perde valore in silenzio. Questi piani mantengono il tuo veloce, sicuro e in salita — così l’asset si apprezza invece di deteriorarsi.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "b9728eeb00074f5e3080d3b73d3a0e766fe47232a529e225da57af9346e445a6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "For years, Ellen supported mission-critical software for NASA and Department of Defense programs — the kind of secure, reliable, scalable systems where precision and performance aren't features, but requirements. Her expertise spans software engineering, cybersecurity, artificial intelligence, and digital marketing: a rare combination that lets her solve complex problems and turn them into practical engines for growth.",
+      "target": "Per anni Ellen ha supportato software mission-critical per i programmi della NASA e del Department of Defense — quei sistemi sicuri, affidabili e scalabili in cui precisione e prestazioni non sono funzionalità, ma requisiti. La sua competenza spazia dall’ingegneria del software alla cybersecurity, dall’intelligenza artificiale al marketing digitale: una combinazione rara, che le permette di risolvere problemi complessi e trasformarli in motori concreti di crescita.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "ba27acd050593482a8aaf295de6a316010d0ddb8cb8fad95bd7c9aebc216c929": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Everything in Authority",
+      "target": "Tutto ciò che include Authority",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "bb80eaac7be7a82f1778869da87aef9559f7f535e6be9d54c3ba5d7befe46b54": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Visibility & search",
+      "target": "Visibilità e ricerca",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "bc27c8908a690d1c12d3c115d6cff3b3488fce75c31b049adf1058c821b651cd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The Difference",
+      "target": "La differenza",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.192Z"
+    },
+    "bc5dde5ace50e40161479274981ba17cce0ea5d4363e0a1d05a87c2c21bf0288": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO Growth",
+      "target": "SEO Growth",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "bc67539985acb7a5e2b0c971395d990c6f30ea19b1908d50c3e6e576695e4621": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Attract. Engage. Convert. Grow.",
+      "target": "Attrarre. Coinvolgere. Convertire. Crescere.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "bc9d98f4b5ec41f34faa8e7f0ebfd807698ff6301e620434abc87eaa3f6a5fad": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Explore Cozelos Data",
+      "target": "Scopri Cozelos Data",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "bd1b9ba9c6ad5b5418db74887c91f36f928a6f6029df693f7ecc99241f7d1740": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ellen Cozelos",
+      "target": "Ellen Cozelos",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "bd7c516c9b4bfcdc950af4be1ebaf8c3aa52e2efc1a8ba99f00fc1584463012b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Enterprise-level experience",
+      "target": "Esperienza di livello enterprise",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "c052d8c4f0717ae1a005872e5ffeee5d161357989bf7d13575f796ed8d427050": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "It's a simple line with serious implications. It means strategy before pixels, security before shortcuts, and a long-term commitment to seeing a client's business grow — not just shipping a website and moving on. For Ellen, technology was never the destination. It's the most powerful tool we have for making businesses stronger and life better.",
+      "target": "È una frase semplice con implicazioni serie. Significa strategia prima dei pixel, sicurezza prima delle scorciatoie e un impegno a lungo termine perché l’attività di un cliente cresca — non semplicemente consegnare un sito e passare oltre. Per Ellen la tecnologia non è mai stata il traguardo. È lo strumento più potente che abbiamo per rendere le aziende più forti e la vita migliore.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "c1492c6f45240410684a90b8d1ba5b7045fa912c3e980ac7da0975f2a64c49f4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Personal Mission",
+      "target": "Missione personale",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "c255c22007a91001da5020886fde6ee3601bc4d5a2ea89ba35ad4f6729e44982": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A dedicated growth partner",
+      "target": "Un partner di crescita dedicato",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "c27400ef580e708ba0282bab30bda0125bffbbcd230fb57510abcf35a5e6019a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Mission & vision.",
+      "target": "Missione e visione.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "c29619359e8be899c777f260da40f6945c090d7e999ecd9f1b8ef66535fee345": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Beautiful, fast, and found — now you have a steady stream of qualified visitors who were already searching for exactly what you offer.",
+      "target": "Bello, veloce e trovabile — a questo punto hai un flusso costante di visitatori qualificati che stavano già cercando esattamente ciò che offri.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "c2d963e07caa3ad51c80b3b115e62ba054d4ea7f403770c4eacb264828c3d7de": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Your site gets faster and ranks higher — not slower.",
+      "target": "Il tuo sito diventa più veloce e si posiziona meglio — non il contrario.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "c5afad18debb2dee6ea710aff49c078e1b32b6f2e2ff1410b08a9a328e9114b7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Credentialed, and built for government work.",
+      "target": "Credenziali attive, pronti per il settore pubblico.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "c5fb1f3c3ecf423b7d0261e972fddb0ca26c64100d4b8b8a2026a6fa83207a78": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Or call us directly:",
+      "target": "Oppure chiamaci direttamente:",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "c616b7f71419f05de7fcdcf62f50ca2e129585ce33b9f9b7fe49cd24fbaebcbb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SAM Ready",
+      "target": "Pronti su SAM",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "c67d96b0ab61f21dc1bc5a94f12e4df89007c9edaa836a97588e5084077c8ada": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The convictions behind the work.",
+      "target": "Le convinzioni dietro il lavoro.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "c6ea4879583e2fb1ee801f38c2ea20a5ed62da1a641f9c85c7827b366e465315": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What to Expect",
+      "target": "Cosa aspettarti",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "c74c6cb6986b4ce7f40f8774b594b957ca0b14ec1c1db83975253731f7f150d1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Call",
+      "target": "Chiama",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "c76388ff4efa21174932bf9ddb2f5b0e428c57cb67b9e266ff17e5c2fd1b2679": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Investment & Pricing — Web Design Growth Plans, Vernal UT",
+      "target": "Investimento e prezzi — Piani di crescita e web design, Vernal UT",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.390Z"
+    },
+    "c7d581cac6c9f1250bf5f2c5f374065d3cc6fc21b5a8270d08002b76727a5153": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "No sales pressure. Prefer email?",
+      "target": "Nessuna pressione commerciale. Preferisci l’email?",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "c8fb8f548eac2f4f0c59d02e9397de7f7445db990d6b426d08e81df52bfa1751": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Every decision starts with your business goals, not a template.",
+      "target": "Ogni decisione parte dai tuoi obiettivi di business, non da un template.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "c92f5dce588432f857c48bf0b9b833602db9a2a2ce413b8f2f4700aff6b5dae7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Sub-second load times, built by hand.",
+      "target": "Caricamento sotto il secondo, costruito a mano.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "c9345016c30f3830775716bde86d770680111b103569737800e1b6ed1e90f3c8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "$295",
+      "target": "$295",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "c9b71ca71e7d59b6a592eaf32e5d4a39cc7bfdaa1cc38258380bd3cd13340183": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Innovation should create opportunity.",
+      "target": "L’innovazione deve creare opportunità.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "ca04f1878d27a7ef3b9b61ea89f65a8685b287fe54ec5679394d2f9956030688": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A website is a cost. A digital asset is an advantage.",
+      "target": "Un sito web è un costo. Un asset digitale è un vantaggio.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.192Z"
+    },
+    "caa41342fccea1d149807f1c531be795762c1bf14b57716deb8652c76988828e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Engage",
+      "target": "Coinvolgere",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "cd2b165bb179aede0617cba21d5ae9db28e12a76aa00b2bb2a06e5c500226dd9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Measured in leads and revenue",
+      "target": "Misurato in lead e fatturato",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "cd597fdb9c17635782e8d138fbe036e7e7c40e2b587592aae055acfe5e426de8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Data Security",
+      "target": "Sicurezza dei dati",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "cdf0faf0575749e998fd629b5faae4bb518d51ab6d22e38bd9cd4ffdd9b88381": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ellen has a hand on every engagement — see <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">the client work that has come out of it</a>.",
+      "target": "Ellen mette mano a ogni progetto — guarda <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">i lavori per i clienti che ne sono nati</a>.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "ce2f836e8c66a6125d5422f7d95f001676627457c0855eb300777ef53d56838b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Engineered for speed",
+      "target": "Progettato per la velocità",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "cefaaa7eeb3de0a13a1abffa92922e72b1f39d91d6b3ee7e5f6efb20662ce47b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Aerospace-grade engineering for Main Street businesses.",
+      "target": "Ingegneria di livello aerospaziale per le imprese di quartiere.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "cf632b20fd538f7c60a0992dcc89f76a6ade7dfb6e28d1cdfd87b91787407dd6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO brings customers.",
+      "target": "La SEO porta clienti.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "cf90dfaec960d51fa7da931f1bb0beba3170341b0463b684561502a687b0319e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Google Business Profile optimization",
+      "target": "Ottimizzazione del Google Business Profile",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "cfa512b3cb28fec20785df5a8c30158d3dfcdd23c64a745517c3af9286b946ae": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Creative production & A/B testing",
+      "target": "Produzione creativa e A/B testing",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "cfc42be739654acc732fab68ca93c17862ac246a3f15e4e368764f0316269351": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "An online presence should get stronger every quarter. Ellen builds for the long game — systems that are maintained, refined, and always improving.",
+      "target": "Una presenza online dovrebbe rafforzarsi ogni trimestre. Ellen costruisce per il lungo periodo — sistemi mantenuti, affinati e sempre in miglioramento.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "d01a9245d56381ed72b753e31f06285b1c557ab9582da72a22853dcaed2b7736": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Active registration with a current UEI, ready for prime and sub-contracting awards.",
+      "target": "Registrazione attiva con UEI aggiornato, pronti per affidamenti come prime e come subappaltatore.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "d0aa6f0cb5f1850c65776459043b693d2d0c873759ca2ddd3993e638a4c47481": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A West where world-class technology isn't reserved for big cities and big budgets — where any ambitious business can compete, and win, on the strength of its work. We're building the agency that proves great engineering can come from anywhere and serve everyone.",
+      "target": "Un Ovest in cui la tecnologia di livello mondiale non sia riservata alle grandi città e ai grandi budget — dove qualsiasi impresa ambiziosa possa competere, e vincere, sulla forza del proprio lavoro. Stiamo costruendo l’agenzia che dimostra che la grande ingegneria può nascere ovunque e servire tutti.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "d0c7c395f2783102e6b1d94aa1492a83d2b6a93c6ed319ac198ff8af93c31f7c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Strategic thinking",
+      "target": "Pensiero strategico",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "d0e0e7972b333f1e1bedf0326de4c2553bc14629116eb778a20a6ce815a39fdb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Design and speed only matter to the people who actually arrive. The hard truth: the most beautiful website in the world is worthless if no one can find it. Visibility is the difference between a brochure that sits in a drawer and a storefront on the busiest street in town.",
+      "target": "Design e velocità contano solo per chi sul sito ci arriva davvero. La verità scomoda è questa: il sito web più bello del mondo non vale nulla se nessuno riesce a trovarlo. La visibilità è la differenza tra un dépliant chiuso in un cassetto e una vetrina sulla via più trafficata della città.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "d146171c00771ccb0267259a83a8e41d329c162afee24cbb3e9c76d066ba4b86": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "How Ellen leads is as deliberate as what she builds. Five principles guide every engagement.",
+      "target": "Il modo in cui Ellen guida è deliberato quanto ciò che costruisce. Cinque principi guidano ogni incarico.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "d1561dc38159272c5dea434c815eaa68f5fb60a57c97f80bc8ae9e199c217287": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Own the top of search and build a brand customers trust on sight.",
+      "target": "Conquista i primi posti nella ricerca e costruisci un marchio di cui i clienti si fidano a prima vista.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "d29be7111ff0a79b9c75712eede1ec360dbb61ffa15f31fc9e4f552c58a50861": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cyber Security",
+      "target": "Cybersecurity",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "d2e7ead49fe30dc01416906e429036597d32624e404e44c379ac4ea76f289601": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Convert",
+      "target": "Convertire",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "d44e2dfbe3224a41e9b164cd082ef5463fe9eb6cae560e90dc9455fc64658c4a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Your price is approved in writing before any work begins. No surprise invoices, no 'starting from' footnotes.",
+      "target": "Il tuo prezzo è approvato per iscritto prima che inizi qualsiasi lavoro. Nessuna fattura a sorpresa, nessuna nota in calce con 'a partire da'.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "d49f443b9719b9e57ca4a61f655f35e219b02c17c532639f8b0dd0a5b7eb1ddd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Software Engineering",
+      "target": "Ingegneria del software",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "d4bbcf1b4402557329bce4c2d917b32e7ed2b39e88b7d44ddb6d8c324de27360": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Priority technical support",
+      "target": "Supporto tecnico prioritario",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "d4cf69a3340d0eef09ebc89f3035071ff238c42d3a874b3750ad54b290edd30d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "WOSB Eligible",
+      "target": "Idoneità WOSB",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "d4f25f7f991eef08657c48f712d9bf38258ae04af46a6d3888bf827062f8126c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We actually answer",
+      "target": "Rispondiamo davvero",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "d5070b3dd3c84704877c63d9500cb26653a642745526781aa4bb51e78adea7f1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Static architecture with a minimal attack surface.",
+      "target": "Architettura statica con una superficie d’attacco minima.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "d5dc2bd34295eded898d86a64c449563427a1cce42afc9f6075a0710f80f6240": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Government-ready",
+      "target": "Pronti per il settore pubblico",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "d61de572992a0b75da7b29baa13b1daea0f96c438d69f2c16e59a753ae178114": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data builds digital assets in four layers: design earns attention, performance keeps visitors engaged, SEO brings customers, strategy drives growth.",
+      "target": "Cozelos Data costruisce asset digitali su quattro livelli: il design conquista l’attenzione, le prestazioni mantengono vivo l’interesse, la SEO porta clienti, la strategia genera crescita.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "d7076bc3ae86407ad218e1318decb8cb914774560d8955dc96d2cae54620a896": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "After launch, we keep your asset fast, secure, and climbing — monitoring uptime, refreshing content, and improving SEO quarter after quarter. When your business grows, your digital presence grows with it. You get a partner with skin in the game and a stake in your results, not a vendor who disappears the moment the invoice clears.",
+      "target": "Dopo il lancio manteniamo il tuo asset veloce, sicuro e in crescita — monitorando l’uptime, aggiornando i contenuti e migliorando la SEO trimestre dopo trimestre. Quando la tua attività cresce, la tua presenza digitale cresce con lei. Ottieni un partner che ci mette la faccia e ha un interesse nei tuoi risultati, non un fornitore che sparisce appena incassa la fattura.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "d783dc1ac3c58d0f8daf8aea4f9121f5165abac3089062d89aa1a92ba7cc1e2c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "First impressions",
+      "target": "Prime impressioni",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "d7a528c68eabf12777b4a29759e18279e4784018b497877a37a52554145286f8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Grow the Asset",
+      "target": "Fai crescere l’asset",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "d7c5a3395a95881b6a5f729f4b16588c691b2301497da8adc20e21f95a0d8623": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The Real Math",
+      "target": "I conti veri",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "d7d0fda4437ebb0a6955f9382f0c8eb86e9fd0c750727d54c9b21c818a8e8237": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "CAGE Code",
+      "target": "CAGE Code",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "d8f3ee2c12277e9b96e7677baa21d9e221ad6425e09e2b85aaafdcd09df87a45": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Why a custom asset costs more — and returns more.",
+      "target": "Perché un asset su misura costa di più — e rende di più.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "d9062e1b78d0be89ad7f58e3fa27ec7fbab64f311b6a1837de0b7d7277e19a3b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Guarantees, in writing.",
+      "target": "Garanzie, per iscritto.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "d949f6ad9bb6b043fdd8a3bee6f596eacdaf0e0dd32ffeae93bdd6f66e0c23f2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Four stages. One system.",
+      "target": "Quattro fasi. Un solo sistema.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "d9ad4d0be85bd0b338f713c1f42a300d9c8cf1c259b427ece1c1c10bc5b59429": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The work itself is broken down across <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">six connected services</a>, what an asset like this costs to build and grow is set out on the <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">investment page</a>, and the enterprise background these standards come from is on the <a href=\"/company/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">company and founder story</a>.",
+      "target": "Il lavoro vero e proprio si articola in <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">sei servizi collegati</a>, quanto costa costruire e far crescere un asset come questo è indicato nella <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">pagina investimento</a>, e il background enterprise da cui nascono questi standard è nella <a href=\"/company/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">storia dell’azienda e della fondatrice</a>.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "db64b58f2e961ce71dcb534448a5f448791e0be724eaba6ec2a6b461f675e1ce": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ellen believes strong partnerships create the best outcomes. You get a partner invested in your results, not a vendor counting deliverables.",
+      "target": "Ellen crede che le partnership solide producano i risultati migliori. Ottieni un partner che investe nei tuoi risultati, non un fornitore che conta i deliverable.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "dbcf5f0ee956a67fc3fb87184246142d41c803bf3b7971fe2558958d3e197009": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ongoing Support & Maintenance",
+      "target": "Supporto e manutenzione continui",
+      "origin": "committed",
+      "at": "2026-08-21T04:50:45.646Z"
+    },
+    "dca539b9f1d61e464d7479bbbad72633cb3c4772ca264b12e6040e4d55ff1a53": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We don't start with a design. We start with your business.",
+      "target": "Non partiamo da un design. Partiamo dalla tua attività.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "dca5b17d68a73dc21019ef1e76b9b5f2b8ee5c125d6c36766d515d5f8f3ee616": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Discovery Session",
+      "target": "Discovery Session",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "dd9d4fd6dc80d584a166cb2db35157e186741c68f90c530ea1b06cc6e4327cac": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The best outcomes come from genuine partnership — shared goals, honest communication, and a team that treats your success as its own.",
+      "target": "I risultati migliori nascono da una partnership autentica — obiettivi condivisi, comunicazione onesta e un team che tratta il tuo successo come il proprio.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "de4d97c7dceeccdbf9518e486e8332d90ec4ea68836636b436e4ff47e0fc5b0f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "For growing businesses that want to actively win customers — not just exist online.",
+      "target": "Per le aziende in crescita che vogliono conquistare attivamente clienti — non limitarsi a esistere online.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "de8ac4a938ae3cecdab860146c1060bd29f9e2ab44299819810f9cd265930e63": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Focused on outcomes",
+      "target": "Focalizzati sui risultati",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "dea1afe4ffe02beb36219835c2f1c58d8d02ca97e28ddf26a5b2be05976d1c11": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Conversion-focused copywriting",
+      "target": "Copywriting orientato alla conversione",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "deb490e4fc4ca40dcc18e0512b27c89a3ddea80dc73a499f0be1fe09dab8f6ef": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Compliance & accessibility (WCAG, CMS)",
+      "target": "Conformità e accessibilità (WCAG, CMS)",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "dec6b3e42d0bf0b02af35c168ffc4299da04d6c6e33870eecceef928623535c8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Practical AI that does real work — assistants that capture leads around the clock, automations that return hours to your team, and content engineered to be found by the AI tools customers now ask first.",
+      "target": "AI concreta che fa lavoro vero — assistenti che raccolgono lead 24 ore su 24, automazioni che restituiscono ore al tuo team e contenuti progettati per essere trovati dagli strumenti AI che i clienti ormai interrogano per primi.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "df0fa9741b94cbe1d9c41fec8bf71e605c311d538884103b8a1472439426ab45": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A long-term partnership",
+      "target": "Una partnership a lungo termine",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "dfc8c80ce2f841a12bfd1f9f3648e551d12c8b47a5c7f43968885734034d447e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Let's make your business stronger.",
+      "target": "Rendiamo la tua impresa più forte.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "dff6f25f68bc5458b2a5f962e2df6e4dca587388545ea4c7a4ef4a30e48918e5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Up to ~5 core pages",
+      "target": "Fino a ~5 pagine principali",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "e019509f0e1b52cf33722c7e52aba84b55b9916747167940533ff9da67a22e11": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data is a Woman-Owned Small Business in Vernal, Utah, founded by Ellen Cozelos — a software engineer, cybersecurity specialist, and AI expert with 20+ years across NASA, Department of Defense, aerospace, and commercial programs, and a Master's degree from Columbia University. The company's mission is simple: making businesses stronger and life better.",
+      "target": "Cozelos Data è una Woman-Owned Small Business a Vernal, Utah, fondata da Ellen Cozelos — ingegnere del software, specialista di cybersecurity ed esperta di AI con oltre 20 anni tra NASA, Department of Defense, programmi aerospaziali e commerciali, e un Master conseguito alla Columbia University. La missione dell’azienda è semplice: rendere le imprese più forti e la vita migliore.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "e04aa07f11369834d6f83fe449b40dce21e7b3441985583e6851a9579c3df1eb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Growth",
+      "target": "Crescita",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "e17512dcf9b18f8a16032e8ddf837bc9b879ca1125b0ff3726c5a68225ef6ef7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data brings two decades of NASA- and Department of Defense-grade engineering to the businesses that power our communities — making them stronger, and making life better.",
+      "target": "Cozelos Data porta due decenni di ingegneria di livello NASA e Department of Defense alle imprese che sostengono le nostre comunità — rendendole più forti e migliorando la vita delle persone.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "e17f14a53e5e94f6ad6dca18e491026f9afd7f7035b09b8502e5958cbcc41230": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Mon–Fri · {opens} – {closes} {timezone}",
+      "target": "Lun–Ven · {opens} – {closes} {timezone}",
+      "origin": "committed",
+      "at": "2026-08-21T05:18:47.256Z"
+    },
+    "e289dc94008634830ba063d22ef707799e829681ad39cb3de27630b307dda586": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Grow",
+      "target": "Crescere",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "e30d80049f097b6e266e514ebcdae790b932efd10e10306f65346b46bab3ab88": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "From Huntsville to the Uintah Basin.",
+      "target": "Da Huntsville allo Uintah Basin.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "e39dfec958e6fba314d4985cc941bc2700f1ce5125cadad127008bbd33173a8e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The Founder",
+      "target": "La fondatrice",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "e3b0f6737d508f9206165c3f0644aa53b15511c0fa667f188a0360dc4f3ed42e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Most agencies sell you a website. We hand you an asset.",
+      "target": "Le agenzie ti vendono un sito web. Noi ti consegniamo un asset.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.192Z"
+    },
+    "e620e1c1f873a46f4d347dca3c23aeb1d95439ca24d10d10011a28cfa00a46d2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Your domain, source code, and content are yours — always. No proprietary lock-ins, no hostage retainers.",
+      "target": "Il tuo dominio, il codice sorgente e i contenuti sono tuoi — sempre. Nessun vincolo proprietario, nessun contratto capestro.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "e62ac3b836adb300be0a0182b04b642caeba2ffb8d61e14e91907934c601d94e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Accessibility-conscious development aligned with WCAG 2.1 AA and Section 508.",
+      "target": "Sviluppo attento all’accessibilità, allineato a WCAG 2.1 AA e Section 508.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "e63756904fcd0be9d496601381995210786cd25147ee74193c5f9a8e72da5d0e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The strategic leader behind Cozelos Data.",
+      "target": "La leader strategica dietro Cozelos Data.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "e6f4f7ba2e63b1e6e0173d50e06354b2f723be26b0b82786a80e12619fd09422": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Founded on a single conviction: too many great Utah businesses run on websites that don't match the quality of their work.",
+      "target": "Fondata su una sola convinzione: troppe ottime imprese dello Utah hanno siti web che non sono all’altezza della qualità del loro lavoro.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "e725af63ee5aa6c52f26b17827ff50d1f1c8339a4a7c2dc8b600791e19131e85": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "About",
+      "target": "Chi siamo",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "e7266f8b5e536465d5a99c9d39415dab3292344f838000c933102c04cbb81a05": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our Story",
+      "target": "La nostra storia",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "e86b6ca03badb7ae16375542e877bf40cc27cb7ba81af3ea2ef940ace8f24f6f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Enterprise expertise, built for the businesses that matter.",
+      "target": "Competenza enterprise, al servizio delle imprese che contano.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "e8a5fdac5938285a510ad5659ffcf009107356eef86dac8f53d7ab263f267fe3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Holding a Master's degree from Columbia University and carrying her craft from Huntsville, Alabama to Eastern Utah, Ellen pairs enterprise-grade technical depth with a personal, client-centered approach. She founded Cozelos Data on a single conviction: the businesses that hold up our communities deserve the same caliber of technology as the Fortune 500 and the federal government — without the big-city overhead or the cold, transactional treatment.",
+      "target": "Con un Master conseguito alla Columbia University e un percorso che l’ha portata da Huntsville, in Alabama, fino all’Utah orientale, Ellen unisce una profondità tecnica di livello enterprise a un approccio personale e centrato sul cliente. Ha fondato Cozelos Data su una sola convinzione: le imprese che sostengono le nostre comunità meritano la stessa qualità tecnologica delle Fortune 500 e del governo federale — senza i costi delle grandi città e senza trattamenti freddi e impersonali.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "e8af1e3f01bef9d499f51e65a6a19cd00b8a4e8392fb8cd150e7d7c22062a28b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Monthly growth plans.",
+      "target": "Piani di crescita mensili.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "e8c7131b283aca6f1f773abafa4951fdc65513e1eeb9f4d6ac5be068e563babe": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Standards forged on systems where precision and performance are non-negotiable.",
+      "target": "Standard forgiati su sistemi in cui precisione e prestazioni non sono negoziabili.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "e9222a6d251d43add31f78683837edd5e80c9ef644945a38cf2a06cd60b5238e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We'll prepare and send a current capability statement tailored to your acquisition file, typically within 24 business hours. Have a solicitation? Send the SOL number and we'll respond with capability fit.",
+      "target": "Prepariamo e inviamo un capability statement aggiornato e calibrato sul tuo fascicolo di acquisizione, di norma entro 24 ore lavorative. Hai una solicitation? Inviaci il numero SOL e ti rispondiamo indicando la nostra capability fit.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "e94db797fff5280c5e803b7c71a034613d2472f0c2ac16a5a2dfb87100fab5bf": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Request a Quote",
+      "target": "Richiedi un preventivo",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "e9550774e9db49041c423e29e1104ae168566741464440352823e99056787ab5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A website is a one-time expense. A digital asset is an investment that compounds — generating leads, authority, and revenue for years. Here's why ambitious businesses across Utah and beyond trust us to build theirs.",
+      "target": "Un sito web è una spesa una tantum. Un asset digitale è un investimento che si moltiplica — genera lead, autorevolezza e fatturato per anni. Ecco perché le aziende ambiziose in Utah e altrove scelgono noi per costruirlo.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.192Z"
+    },
+    "e9ecd6159bd9f02f211cd1450b60865fc658a8dcccac972d1a278050e1373218": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A conversation about your goals — not our services.",
+      "target": "Una conversazione sui tuoi obiettivi — non sui nostri servizi.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "ea7b23d15838a16644264d082028bc2b456ea4303664250f2ef117453a0ad42e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Encrypted hosting, secure workflows, and clean handoff documentation every time.",
+      "target": "Hosting cifrato, flussi di lavoro sicuri e documentazione di consegna chiara, sempre.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "ea99869c0e905e13f26e790657b32ff1a224759b16672d33cf8bd2f47b6d0e37": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hardened",
+      "target": "Blindato",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "eaf8ffed99849853bb786cfa99a3949db689d52d020e3d84c4b91b277f72136c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A complete, managed growth engine with paid acquisition.",
+      "target": "Un motore di crescita completo e gestito, con acquisizione a pagamento.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "eb30d8a936f97732a19fba3b0d8ef8c4c253ce1d0cd436bc94a4eefa146fe70b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Attention is fragile. You can win it with a stunning first frame and lose it half a second later to a spinner. Most visitors abandon a page that takes more than three seconds to load — and on mobile, where the majority of your traffic now lives, slow sites bleed customers by the thousands.",
+      "target": "L’attenzione è fragile. Puoi conquistarla con una prima schermata straordinaria e perderla mezzo secondo dopo per colpa di una rotella di caricamento. La maggior parte dei visitatori abbandona una pagina che impiega più di tre secondi a caricarsi — e da mobile, dove ormai si concentra la maggioranza del tuo traffico, i siti lenti perdono clienti a migliaia.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "eb639d3a11204fbeada84a907f64d54bdf706a608c7c412c18759c2f016f3e6e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Community first",
+      "target": "Prima la comunità",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "eb8de0109a0e2b4ba81bf0ccc84fb0f337e32f4e85c206e691b1abe80b683647": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "For Ellen, the real mission was never the code. It's what the code makes possible: businesses that grow stronger, communities that become more resilient, and lives made better through thoughtful innovation and trusted partnership. Cozelos Data isn't a web design company. It's a strategic technology partner — built to help organizations strengthen their operations, protect what matters most, and create new opportunities for the people they serve.",
+      "target": "Per Ellen la vera missione non è mai stata il codice. È ciò che il codice rende possibile: aziende che diventano più forti, comunità più resilienti e vite migliori grazie a innovazione consapevole e partnership di fiducia. Cozelos Data non è un’agenzia di web design. È un partner tecnologico strategico — nato per aiutare le organizzazioni a rafforzare le proprie operazioni, proteggere ciò che conta di più e creare nuove opportunità per le persone che servono.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "eb9ffbe86b7971a1643fd1c9bd33381ba48d21068476c8362697b58c3c6626ec": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The most expensive website is the cheap one that costs you customers.",
+      "target": "Il sito web più costoso è quello economico che ti fa perdere clienti.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "eba044c95fb7bbe3039b2525782485602a8097bb35386768fa377e8679078ac3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ongoing plans flex with you — scale up or down anytime. No long-term contracts holding you in place.",
+      "target": "I piani continuativi si adattano a te — puoi aumentare o ridurre in qualsiasi momento. Nessun contratto a lungo termine che ti blocca.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "ebc7ac3ec89737cd7d4d71195b48280e35a14ea210a3b1cbf30da2e456772787": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Leadership Philosophy",
+      "target": "Filosofia di leadership",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "ed095e81de09d3ce19ffd9c34a024c8fb4475ffec01d61b003ad59dc90dbc7d1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "This is where most web projects stop short, and where ours begins. We design the path a visitor takes from first impression to paying customer, and we engineer every page, headline, and call-to-action to move them along it. Then we measure what actually matters — leads and revenue — and refine.",
+      "target": "È qui che la maggior parte dei progetti web si ferma, ed è qui che il nostro comincia. Progettiamo il percorso che un visitatore compie dalla prima impressione fino a diventare cliente pagante, e costruiamo ogni pagina, ogni titolo e ogni call-to-action per accompagnarlo lungo quel percorso. Poi misuriamo ciò che conta davvero — lead e fatturato — e miglioriamo.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "ed62d5761edbb9459124b1522d20ed055c99dd0b70b210e0b8aa0154169807ff": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Enterprise",
+      "target": "Enterprise",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "ed99f5b00fa351a7ccb024232c67b036ea9adc51bf33a939e9700a38586a7499": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Start a conversation with Cozelos Data in Vernal, Utah. The first conversation is about understanding your goals, not selling services. Call {phone}.",
+      "target": "Inizia una conversazione con Cozelos Data a Vernal, Utah. La prima conversazione serve a capire i tuoi obiettivi, non a venderti servizi. Chiama {phone}.",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.058Z"
+    },
+    "ee5ae1c7f77afc04bada7a2d901a7c1d50d009fbcb2764cf0976dc3d1f6475f9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Rapid Delivery",
+      "target": "Consegna rapida",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "ee95a23fc380604b66e17c779e0df47e1329e903830897465e265af589d6082e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Fixed quote, in writing",
+      "target": "Preventivo fisso, per iscritto",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "eee9bc55b147bfbcd0608cdedf422d2f94d03f7a0c6f3c1bba76a97efc813fba": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Month-to-month plans",
+      "target": "Piani mese per mese",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "efe153e28a517bc941630985c5272bbde9e13dd4a8ab8f780a2129f7116bc92c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A digital platform engineered to your exact operational needs.",
+      "target": "Una piattaforma digitale progettata sulle tue esatte esigenze operative.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "f10994d2a7d6674c1c699b8d973bd17c398cc2aa8403f408c04497fa9f612be4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Investment",
+      "target": "Investimento",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "f16fbaa47a8a3a7ce8eac4f0f36b7f9cfe2397a379bad72ceef72ba25a8bfded": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Meet Ellen Cozelos.",
+      "target": "Conosci Ellen Cozelos.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "f16febd46701490d73c5e8891e5a122f3f92966db1fdac6e57bb73946476e80f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Section 508",
+      "target": "Section 508",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "f1e09cb28c156f8613c83804e887ead9fe90af9b2af5423c0d4eefbb29b88432": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Built for ROI",
+      "target": "Costruito per il ROI",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "f210cdf30f3365523db83fc6495c1bba3ce69c3679ecca84ff256160a028d260": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Book a Discovery Session",
+      "target": "Prenota una Discovery Session",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "f22a4b8ecb22db626d34faf8bcedd0bbf76802785d8d7ed6ff4aa3b769294abe": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Contact forms & analytics setup",
+      "target": "Moduli di contatto e configurazione analytics",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "f3b93af77d08b711882d1931ad06a8a86c2573a082e455c5d5647dbd7ef912fe": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hardened static builds, SSL, daily backups, and monitoring keep your asset safe and online.",
+      "target": "Build statiche irrobustite, SSL, backup quotidiani e monitoraggio mantengono il tuo asset sicuro e online.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "f3f166faaae23553fed2c66aa9664e09675b21e76c95dfb56b4745e3e50b232c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Every project begins with strategy, never a template.",
+      "target": "Ogni progetto inizia dalla strategia, mai da un template.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "f4bbf943a5434490bd8bdb5f25ea30a45834fe6a440007a14854bd9212300b1c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Custom functionality & interactive tools",
+      "target": "Funzionalità su misura e strumenti interattivi",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "f66a0c3553805cc616bc85d4cb1f982ad74802c67ff19ac6f16ce256861760f3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Fixed quotes in writing, clear milestones, and straight answers. We tell you what we'd build and what it costs.",
+      "target": "Preventivi fissi per iscritto, milestone chiare e risposte dirette. Ti diciamo cosa costruiremmo e quanto costa.",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "f6f03686288a855e078534a90adb823dcd84c52906ce07a6864f32e59a3ffe56": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "For government, multi-location, and complex builds with serious requirements.",
+      "target": "Per enti pubblici, realtà multi-sede e progetti complessi con requisiti importanti.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "f6f60b13ebbee1f28fd605ff9a335bb017633a0dbdc2311304dae67ca8f545ae": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Personalized service",
+      "target": "Servizio personalizzato",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "f7984389fc25835162cc521f88f43c65c810fb89cbe918b10e34067b384a8c9e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "© {year} {brand}. All rights reserved.",
+      "target": "© {year} {brand}. Tutti i diritti riservati.",
+      "origin": "committed",
+      "at": "2026-08-21T04:57:00.751Z"
+    },
+    "f7f5523cedf58401f16f161615c56f61039f93883160841a7c6723123c83355d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The Story",
+      "target": "La storia",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "f98128214bfb21739b1f817b626c560edc889c35258f4cc75331ddabab877a70": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The market is flooded with people selling websites. Almost no one is building digital assets — the kind of online presence that keeps generating value for years. That distinction is everything.",
+      "target": "Il mercato è pieno di chi vende siti web. Quasi nessuno costruisce asset digitali — la presenza online che continua a generare valore per anni. Questa distinzione è tutto.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.192Z"
+    },
+    "f9eb6c6cf71f31dba62ab45a9acd1c7c0377e456220a579b6f04b12a7b228dad": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Compounding content and links that build market authority.",
+      "target": "Contenuti e link che si accumulano e costruiscono autorevolezza di mercato.",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.392Z"
+    },
+    "f9ee30ce8dd5d4b7e3720d8e790cbaba91346b1c0c2e77459db55e56c7d914a3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Big-league standards",
+      "target": "Standard da grandi leghe",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.695Z"
+    },
+    "fa12f2320adfc00e99c96a26ffc6d870d1e08aad025a6574b010224dbe86d174": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Let's build your digital foundation.",
+      "target": "Costruiamo le tue fondamenta digitali.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.194Z"
+    },
+    "fb248319551e6f302496295316eea3b8e7bfcd1c632032bbd308eecf2f168e56": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Visibility turns a great website into a source of customers.",
+      "target": "La visibilità trasforma un ottimo sito web in una fonte di clienti.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "fc4f09fd30f6804a683d4c3a25adc23de258a2ef56b6b2db17d5254acd35e552": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Most agencies quietly trap you — proprietary builders, locked hosting, content you can't export, and a monthly bill you can never escape. We do the opposite. You own the domain, the source code, the hosting account, and every word of content. If you ever decide to leave, we hand it all over — no drama, no ransom. Real assets are owned, not rented.",
+      "target": "La maggior parte delle agenzie ti intrappola in silenzio — builder proprietari, hosting bloccato, contenuti che non puoi esportare e una fattura mensile da cui non esci più. Noi facciamo il contrario. Possiedi il dominio, il codice sorgente, l’account di hosting e ogni parola dei contenuti. Se un giorno decidi di andartene, ti consegniamo tutto — senza drammi e senza riscatti. Gli asset veri si possiedono, non si affittano.",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "fd22c8dc173bda670c5226928d5cd2c968350cbf15608a3e073603f43faa4544": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A commodity website",
+      "target": "Un sito web qualunque",
+      "origin": "committed",
+      "at": "2026-08-21T03:47:43.193Z"
+    },
+    "fd337edc4543096ac64fc0ea193fa3c57f3fa1aae59096833ff3a378265b3096": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Strategy is what turns a website into a digital asset: a system that doesn't just look good, but actively grows the business behind it, year after year.",
+      "target": "La strategia è ciò che trasforma un sito web in un asset digitale: un sistema che non si limita ad avere un bell’aspetto, ma fa crescere attivamente l’azienda che ha dietro, anno dopo anno.",
+      "origin": "committed",
+      "at": "2026-08-21T05:30:05.750Z"
+    },
+    "fe311b8abbd44a8bfcf86bc9bcb6e9e048374644e11adb0024c69c62c92118b7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You get a clear plan",
+      "target": "Ricevi un piano chiaro",
+      "origin": "committed",
+      "at": "2026-08-21T04:09:16.059Z"
+    },
+    "fe45b9e9d3585369a8a2aec06891adcdb52dca2ef1756d4cdaa1f6f1eee36b9b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Video integration & cinematic motion",
+      "target": "Integrazione video e animazioni cinematografiche",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "fe9422efc7b4dbac2dd501b18346da932c90b71d3752a5a1a3920173113c7be3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data — founded by Ellen Cozelos in Vernal, Utah",
+      "target": "Cozelos Data — fondata da Ellen Cozelos a Vernal, Utah",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    },
+    "ff0f2e988586b5b6303d33c7cf13e8368fcc3299f4a5790ad702b9c25498313c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The Journey",
+      "target": "Il percorso",
+      "origin": "committed",
+      "at": "2026-08-21T06:55:12.696Z"
+    },
+    "ff0f3d3c6c2c722023813d7e2ec40dc701855c37cb6e1166db42d756bd23dcff": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Performance optimization",
+      "target": "Ottimizzazione delle prestazioni",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "ff55d475c6a60c089f85388b629ffa473bfbdbdc47461b90f78d0b3ada559f55": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Priority support & SLAs",
+      "target": "Supporto prioritario e SLA",
+      "origin": "committed",
+      "at": "2026-08-21T06:14:55.391Z"
+    },
+    "ffd46d89a592fb4a605bbfaf906e6a4c074d46bed0c9dbcd010b47eb973ac60c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Enterprise technology, brought home to the businesses that matter.",
+      "target": "Tecnologia enterprise, portata alle aziende che contano davvero.",
+      "origin": "committed",
+      "at": "2026-08-21T06:02:03.013Z"
+    }
+  }
+}

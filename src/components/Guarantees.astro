@@ -3,50 +3,30 @@
  * Guarantees — the concrete promises that de-risk hiring Cozelos Data. Built
  * from real commitments already made across the site (ownership, fixed quotes,
  * performance, responsiveness, security, month-to-month plans).
+ *
+ * Presentation only. /pricing/ is this section's single consumer, so its copy
+ * lives in that page's JSON and arrives as props — the same split every other
+ * page component uses.
  */
 import Section from "./Section.astro";
 import Icon from "./Icon.astro";
 
-const guarantees = [
-  {
-    icon: "lock",
-    title: "You own everything",
-    body: "Your domain, source code, and content are yours — always. No proprietary lock-ins, no hostage retainers.",
-  },
-  {
-    icon: "doc",
-    title: "Fixed quote, in writing",
-    body: "Your price is approved in writing before any work begins. No surprise invoices, no 'starting from' footnotes.",
-  },
-  {
-    icon: "bolt",
-    title: "Engineered to perform",
-    body: "Every site is built for sub-second load times. Performance is a deliverable we hold ourselves to, not a maybe.",
-  },
-  {
-    icon: "chat",
-    title: "We actually answer",
-    body: "A real person, not a ticket queue — and a reply within one business day, before and after launch.",
-  },
-  {
-    icon: "shield",
-    title: "Secure & backed up",
-    body: "Hardened static builds, SSL, daily backups, and monitoring keep your asset safe and online.",
-  },
-  {
-    icon: "check",
-    title: "Month-to-month plans",
-    body: "Ongoing plans flex with you — scale up or down anytime. No long-term contracts holding you in place.",
-  },
-];
+interface Guarantee { icon: string; title: string; body: string }
+interface Props {
+  eyebrow: string;
+  title: string;
+  lead: string;
+  items: Guarantee[];
+}
+const { eyebrow, title, lead, items } = Astro.props;
 ---
 <Section
-  eyebrow="Our Promise"
-  title="Guarantees, in writing."
-  lead="Hiring an agency shouldn't be a leap of faith. Here's what you can count on from us — every project, every time."
+  eyebrow={eyebrow}
+  title={title}
+  lead={lead}
 >
   <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    {guarantees.map((g, i) => (
+    {items.map((g, i) => (
       <div
         data-delay={i * 50}
         class="reveal flex gap-4 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-6 transition-colors duration-300 hover:border-[var(--color-brand)]/40"

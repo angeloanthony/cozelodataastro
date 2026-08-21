@@ -9,7 +9,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
-import { getLangFromUrl, isRtl, LOCALES } from "../data/i18n";
+import { getLangFromUrl, isRtl, LOCALES, t } from "../data/i18n";
 import { hreflangAlternates } from "../i18n/content";
 
 interface Crumb { name: string; href: string; }
@@ -159,7 +159,7 @@ const isMultilingual = alternates.length > 2;
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-[var(--color-brand)] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
-    >Skip to content</a>
+    >{t("skip.main", lang)}</a>
 
     <Header />
     {isMultilingual && (

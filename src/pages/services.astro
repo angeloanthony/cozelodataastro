@@ -4,7 +4,12 @@ import PageHero from "../components/PageHero.astro";
 import Section from "../components/Section.astro";
 import CTASection from "../components/CTASection.astro";
 import Icon from "../components/Icon.astro";
-import { services } from "../data/site";
+import { getLangFromUrl } from "../data/i18n";
+import { getServices } from "../i18n/shared";
+
+// Service labels resolve through the shared source, so this page and the footer
+// can never show two different names for the same service.
+const services = getServices(getLangFromUrl(Astro.url));
 
 const breadcrumbs = [
   { name: "Home", href: "/" },

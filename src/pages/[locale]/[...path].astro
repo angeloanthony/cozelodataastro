@@ -6,9 +6,19 @@
 import { getLocalizedContent } from "../../i18n/content";
 import { SLUG_BY_KEY } from "../../i18n/content-pages";
 import WhyCozelosDataPage from "../../components/content/WhyCozelosDataPage.astro";
+import ContactPage from "../../components/content/ContactPage.astro";
+import OurApproachPage from "../../components/content/OurApproachPage.astro";
+import EllenCozelosPage from "../../components/content/EllenCozelosPage.astro";
+import PricingPage from "../../components/content/PricingPage.astro";
+import CompanyPage from "../../components/content/CompanyPage.astro";
 
 const COMPONENTS: Record<string, any> = {
   "why-cozelos-data": WhyCozelosDataPage,
+  contact: ContactPage,
+  "our-approach": OurApproachPage,
+  "ellen-cozelos": EllenCozelosPage,
+  pricing: PricingPage,
+  company: CompanyPage,
 };
 
 export function getStaticPaths() {

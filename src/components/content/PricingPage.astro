@@ -1,0 +1,286 @@
+---
+/**
+ * PricingPage — THE template for /pricing/ (playbook §6.5).
+ *
+ * One shared component implements the page; the master route (/pricing/) and
+ * the dynamic localized route (/it/pricing/) both render it. All copy comes
+ * from src/i18n/content/<locale>/pricing.json.
+ *
+ * STRUCTURED DATA IS BUILT FROM THE MASTER, NOT THE LOCALE.
+ * The OfferCatalog below derives its prices and — critically — whether a figure
+ * is a floor or a fixed price from the copy itself (`/starting at|from/`). A
+ * translated prefix ("A partire da") would not match, and the page would then
+ * publish a FIXED price where the business only commits to a starting price.
+ * Reading the master content keeps the offer semantics correct in every locale,
+ * the same principle that keeps canonical entities English in the Person schema
+ * on /ellen-cozelos/. The visible page still renders the localized copy.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../PageHero.astro";
+import Section from "../Section.astro";
+import CTASection from "../CTASection.astro";
+import Guarantees from "../Guarantees.astro";
+import Icon from "../Icon.astro";
+import Button from "../Button.astro";
+import { site } from "../../data/site";
+import { getLangFromUrl, DEFAULT_LOCALE } from "../../data/i18n";
+import { getPageContent, localizeHref, interp } from "../../i18n/content";
+
+const lang = getLangFromUrl(Astro.url);
+const c = getPageContent<any>("pricing", lang);
+/** Master copy — the canonical source for the offer schema (see header note). */
+const m = getPageContent<any>("pricing", DEFAULT_LOCALE);
+
+const breadcrumbs = [
+  { name: "Home", href: localizeHref("/", lang) },
+  { name: c.breadcrumb, href: localizeHref("/pricing/", lang) },
+];
+
+const contactHref = localizeHref("/contact/", lang);
+
+// --- Offer / PriceSpecification structured data ----------------------------
+// Derived from the master `tiers` and `plans` rather than restated, so the
+// schema cannot drift from the prices rendered on the page. Published prices are
+// floors, not fixed quotes ("Starting at $2,500"), so they are emitted as
+// `minPrice`. Where the page gives no single figure — Enterprise
+// "$10,000–$30,000+", Full Marketing "$1,500+" — the floor is published and no
+// number is invented.
+
+/** Every dollar figure in a string, largest-first order preserved. */
+const dollars = (s: string) =>
+  [...s.matchAll(/\$([\d,]+)/g)].map((x) => Number(x[1].replace(/,/g, "")));
+
+/**
+ * Build a PriceSpecification from what the page actually displays.
+ * Returns null when no figure is shown, so nothing is fabricated.
+ */
+function priceSpec(display: string, context = "", recurring = false) {
+  const found = dollars(`${context} ${display}`);
+  if (!found.length) return null;
+  // A floor rather than a fixed price when the copy says so, carries a "+",
+  // or gives a range.
+  const isFloor =
+    /starting at|from/i.test(context) || /\+/.test(`${context}${display}`) || found.length > 1;
+  const base = {
+    "@type": recurring ? "UnitPriceSpecification" : "PriceSpecification",
+    priceCurrency: "USD",
+    ...(isFloor ? { minPrice: found[0] } : { price: found[0] }),
+    ...(recurring && {
+      referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+    }),
+  };
+  return base;
+}
+
+const orgRef = { "@id": `${site.url}/#organization` };
+
+const offerSchema = {
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": `${site.url}/pricing/#offers`,
+  name: "Website projects and monthly growth plans",
+  url: `${site.url}/pricing/`,
+  provider: orgRef,
+  itemListElement: [
+    ...m.tiers.map((t: any) => ({
+      "@type": "Offer",
+      name: t.name,
+      description: t.summary,
+      category: "Website design and development",
+      seller: orgRef,
+      ...(priceSpec(t.price, t.prefix) && { priceSpecification: priceSpec(t.price, t.prefix) }),
+    })),
+    ...m.plans.map((p: any) => ({
+      "@type": "Offer",
+      name: p.name,
+      description: p.summary,
+      category: "Website maintenance and marketing plan",
+      seller: orgRef,
+      ...(priceSpec(p.price, "", true) && { priceSpecification: priceSpec(p.price, "", true) }),
+    })),
+  ],
+};
+---
+<BaseLayout
+  title={c.meta.title}
+  description={c.meta.description}
+  breadcrumbs={breadcrumbs}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(offerSchema)} is:inline />
+
+  <PageHero
+    eyebrow={c.hero.eyebrow}
+    title={c.hero.title}
+    lead={c.hero.lead}
+    summary={c.hero.summary}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <!-- Pricing philosophy -->
+  <Section class="!pb-8">
+    <div class="reveal mx-auto max-w-3xl text-center">
+      <p class="font-display text-xl font-semibold leading-relaxed tracking-tight text-[var(--text)] sm:text-2xl">{c.philosophy.headline}</p>
+      <p class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]" set:html={c.philosophy.bodyHtml} />
+    </div>
+  </Section>
+
+  <!-- Discovery Session — the entry point -->
+  <Section class="!pt-8">
+    <div class="reveal grid items-center gap-8 overflow-hidden rounded-3xl border border-[var(--color-brand)]/30 bg-[var(--surface-2)] p-8 sm:p-10 lg:grid-cols-12">
+      <div class="lg:col-span-8">
+        <span class="inline-flex items-center gap-2 rounded-full bg-[var(--color-brand)]/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-[var(--color-brand)]">{c.discovery.badge}</span>
+        <h2 class="mt-4 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{c.discovery.title}</h2>
+        <p class="mt-3 max-w-2xl leading-relaxed text-[var(--text-muted)]" set:html={c.discovery.bodyHtml} />
+      </div>
+      <div class="lg:col-span-4">
+        <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-7 text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--text-subtle)]">{c.discovery.priceLabel}</p>
+          <p class="mt-2 font-display text-4xl font-extrabold text-gradient">{c.discovery.price}</p>
+          <p class="mt-1 text-sm text-[var(--text-muted)]">{c.discovery.priceNote}</p>
+          <Button href={contactHref} size="md" magnetic icon="arrow" class="mt-5 w-full justify-center">{c.discovery.cta}</Button>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- One-time project tiers -->
+  <Section
+    eyebrow={c.tiersSection.eyebrow}
+    title={c.tiersSection.title}
+    lead={c.tiersSection.lead}
+  >
+    <div class="grid gap-6 lg:grid-cols-4">
+      {c.tiers.map((t: any, i: number) => (
+        <div
+          data-delay={i * 60}
+          class:list={[
+            "reveal relative flex flex-col rounded-3xl border p-7 transition-[transform,box-shadow] duration-300 hover:-translate-y-1",
+            t.highlight
+              ? "border-[var(--color-brand)] bg-[var(--surface-2)] shadow-xl shadow-[var(--color-brand)]/10"
+              : "border-[var(--border)] bg-[var(--surface-2)]",
+          ]}
+        >
+          {t.highlight && (
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--color-brand)] px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">{c.tierBadge}</span>
+          )}
+          <h3 class="font-display text-lg font-bold tracking-tight">{t.name}</h3>
+          <div class="mt-4">
+            <p class="text-xs font-semibold uppercase tracking-wide text-[var(--text-subtle)]">{t.prefix}</p>
+            <p class="font-display text-3xl font-extrabold tracking-tight">{t.price}</p>
+            <p class="text-xs text-[var(--text-subtle)]">{t.suffix}</p>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-[var(--text-muted)]">{t.summary}</p>
+          <ul class="mt-5 flex-1 space-y-2.5">
+            {t.features.map((f: string) => (
+              <li class="flex items-start gap-2 text-sm text-[var(--text-muted)]">
+                <span class="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-full bg-[var(--color-brand)]/15 text-[var(--color-brand)]"><Icon name="check" size={11} /></span>
+                {f}
+              </li>
+            ))}
+          </ul>
+          <div class="mt-5 rounded-xl bg-[var(--surface-3)] p-3 text-xs leading-relaxed text-[var(--text-muted)]">
+            <span class="font-semibold text-[var(--text)]">{c.payoffLabel}</span>{t.outcome}
+          </div>
+          <Button
+            href={contactHref}
+            size="md"
+            variant={t.highlight ? "primary" : "secondary"}
+            icon="arrow"
+            class="mt-6 w-full justify-center"
+          >
+            {t.name === "Enterprise" ? c.tierCtaEnterprise : c.tierCta}
+          </Button>
+        </div>
+      ))}
+    </div>
+    <p class="reveal mt-6 text-center text-sm text-[var(--text-subtle)]">{c.tiersNote}</p>
+  </Section>
+
+  <!-- Monthly retainers -->
+  <Section
+    eyebrow={c.plansSection.eyebrow}
+    title={c.plansSection.title}
+    lead={c.plansSection.lead}
+  >
+    <div class="grid gap-6 lg:grid-cols-4">
+      {c.plans.map((p: any, i: number) => (
+        <div
+          data-delay={i * 60}
+          class:list={[
+            "reveal relative flex flex-col rounded-3xl border p-7 transition-[transform,box-shadow] duration-300 hover:-translate-y-1",
+            p.highlight
+              ? "border-[var(--color-brand)] bg-[var(--surface-2)] shadow-xl shadow-[var(--color-brand)]/10"
+              : "border-[var(--border)] bg-[var(--surface-2)]",
+          ]}
+        >
+          {p.highlight && (
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--color-brand)] px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">{c.tierBadge}</span>
+          )}
+          <h3 class="font-display text-lg font-bold tracking-tight">{p.name}</h3>
+          <div class="mt-4 flex items-baseline gap-1">
+            <span class="font-display text-3xl font-extrabold tracking-tight">{p.price}</span>
+            <span class="text-sm text-[var(--text-subtle)]">/{c.perMonth}</span>
+          </div>
+          <p class="mt-3 text-sm leading-relaxed text-[var(--text-muted)]">{p.summary}</p>
+          <ul class="mt-5 flex-1 space-y-2.5">
+            {p.features.map((f: string) => (
+              <li class="flex items-start gap-2 text-sm text-[var(--text-muted)]">
+                <span class="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-full bg-[var(--color-brand)]/15 text-[var(--color-brand)]"><Icon name="check" size={11} /></span>
+                {f}
+              </li>
+            ))}
+          </ul>
+          <Button
+            href={contactHref}
+            size="md"
+            variant={p.highlight ? "primary" : "secondary"}
+            icon="arrow"
+            class="mt-6 w-full justify-center"
+          >
+            {interp(c.planCta, { name: p.name })}
+          </Button>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <!-- Value reframe -->
+  <Section
+    eyebrow={c.math.eyebrow}
+    title={c.math.title}
+  >
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="reveal rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8">
+        <p class="leading-relaxed text-[var(--text-muted)]">{c.math.p1}</p>
+        <p class="mt-4 leading-relaxed text-[var(--text-muted)]">{c.math.p2}</p>
+        <p class="mt-4 leading-relaxed text-[var(--text-muted)]" set:html={c.math.p3Html} />
+      </div>
+      <div class="reveal rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8" data-delay="120">
+        <h3 class="font-display text-lg font-bold tracking-tight">{c.math.buysTitle}</h3>
+        <ul class="mt-5 space-y-3">
+          {c.math.buys.map((b: string) => (
+            <li class="flex items-start gap-3 text-[var(--text-muted)]">
+              <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-[var(--color-brand)]/15 text-[var(--color-brand)]"><Icon name="check" size={13} /></span>
+              {b}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <!-- De-risk the price: concrete guarantees right before the close -->
+  <Guarantees
+    eyebrow={c.guarantees.eyebrow}
+    title={c.guarantees.title}
+    lead={c.guarantees.lead}
+    items={c.guarantees.items}
+  />
+
+  <CTASection
+    title={c.cta.title}
+    body={c.cta.body}
+    primaryLabel={c.cta.primaryLabel}
+    secondaryLabel={c.cta.secondaryLabel}
+  />
+</BaseLayout>

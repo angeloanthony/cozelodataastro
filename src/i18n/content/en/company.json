@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "About Cozelos Data — Enterprise Expertise, Built in Utah",
+    "description": "Cozelos Data is a Woman-Owned Small Business in Vernal, Utah, founded by Ellen Cozelos — 20+ years across NASA, DoD, and commercial technology."
+  },
+  "breadcrumb": "Company",
+  "hero": {
+    "eyebrow": "Our Story",
+    "title": "Enterprise expertise, built for the businesses that matter.",
+    "lead": "Cozelos Data brings two decades of NASA- and Department of Defense-grade engineering to the businesses that power our communities — making them stronger, and making life better.",
+    "summary": "Cozelos Data is a Woman-Owned Small Business in Vernal, Utah, founded by Ellen Cozelos — a software engineer, cybersecurity specialist, and AI expert with 20+ years across NASA, Department of Defense, aerospace, and commercial programs, and a Master's degree from Columbia University. The company's mission is simple: making businesses stronger and life better."
+  },
+  "founder": {
+    "eyebrow": "The Founder",
+    "title": "Meet Ellen Cozelos.",
+    "paragraphsHtml": [
+      "Cozelos Data was founded by <strong class=\"text-[var(--text)]\">Ellen Cozelos</strong> — an accomplished software engineer, cybersecurity specialist, digital marketing professional, and AI expert with more than 20 years delivering innovative technology across government, aerospace, and commercial sectors.",
+      "For years, Ellen supported mission-critical software for NASA and Department of Defense programs — the kind of secure, reliable, scalable systems where precision and performance aren't features, but requirements. Her expertise spans software engineering, cybersecurity, artificial intelligence, and digital marketing: a rare combination that lets her solve complex problems and turn them into practical engines for growth.",
+      "Holding a Master's degree from Columbia University and carrying her craft from Huntsville, Alabama to Eastern Utah, Ellen pairs enterprise-grade technical depth with a personal, client-centered approach. She founded Cozelos Data on a single conviction: the businesses that hold up our communities deserve the same caliber of technology as the Fortune 500 and the federal government — without the big-city overhead or the cold, transactional treatment."
+    ],
+    "pullQuote": "She leads by one guiding principle: if it's important to our clients, it's important to us.",
+    "bioCta": "Read Ellen's full biography",
+    "card": {
+      "initials": "EC",
+      "name": "Ellen Cozelos",
+      "role": "Founder & Principal",
+      "creds": [
+        {
+          "icon": "bolt",
+          "label": "NASA & DoD programs"
+        },
+        {
+          "icon": "shield",
+          "label": "Cybersecurity & AI"
+        },
+        {
+          "icon": "award",
+          "label": "M.S., Columbia University"
+        },
+        {
+          "icon": "clock",
+          "label": "20+ years in technology"
+        }
+      ],
+      "imageAlt": "Cozelos Data office in Vernal, Utah",
+      "locationTitle": "Headquartered in Vernal, Utah",
+      "locationBody": "Serving clients across the country"
+    }
+  },
+  "mission": {
+    "eyebrow": "Why We Exist",
+    "title": "Mission & vision.",
+    "cards": [
+      {
+        "icon": "target",
+        "title": "Our mission",
+        "body": "To build the growth platforms that make businesses stronger and life better — giving local and growing organizations the visibility, credibility, and technology they need to thrive, protect what matters most, and create new opportunities for the people they serve."
+      },
+      {
+        "icon": "star",
+        "title": "Our vision",
+        "body": "A West where world-class technology isn't reserved for big cities and big budgets — where any ambitious business can compete, and win, on the strength of its work. We're building the agency that proves great engineering can come from anywhere and serve everyone."
+      }
+    ],
+    "noteHtml": "That mission shows up in the work as <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">six connected services</a> and in <a href=\"/why-cozelos-data/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">the standards we hold ourselves to</a> on every build."
+  },
+  "philosophy": {
+    "eyebrow": "Our Philosophy",
+    "body": "Technology is never the point — people are. When a business grows stronger, families are supported, employees thrive, and entire communities get better. That's the real measure of our work: not the code we write or the rankings we earn, but the lives those results make better. It's why we do this."
+  },
+  "community": {
+    "eyebrow": "Where We're Rooted",
+    "title": "From Huntsville to the Uintah Basin.",
+    "paragraphs": [
+      "We chose to plant Cozelos Data in Vernal, Utah on purpose. The businesses of Eastern Utah and the Uintah Basin — the contractors, hotels, healthcare practices, tour operators, and family shops — are the backbone of their communities. They deserve technology built to the same standard as the aerospace and defense programs Ellen spent her career supporting.",
+      "When our neighbors' businesses win, we all win. Stronger local businesses mean more jobs, more opportunity, and a more resilient community. That's not a marketing line for us — it's the reason we set up shop here, and the standard we hold ourselves to on every project."
+    ],
+    "cards": [
+      {
+        "icon": "pin",
+        "title": "Local roots",
+        "body": "Headquartered in Vernal, invested in the Basin."
+      },
+      {
+        "icon": "building",
+        "title": "Big-league standards",
+        "body": "Aerospace-grade engineering for Main Street businesses."
+      },
+      {
+        "icon": "chat",
+        "title": "Real relationships",
+        "body": "You work directly with us — no call center, no runaround."
+      },
+      {
+        "icon": "star",
+        "title": "Community first",
+        "body": "When local businesses grow, the whole community gets stronger."
+      }
+    ]
+  },
+  "government": {
+    "eyebrow": "Woman-Owned Small Business",
+    "title": "Credentialed, and built for government work.",
+    "lead": "Cozelos Data is a proud Woman-Owned Small Business (WOSB) with active federal credentials — ready to support agencies with web development, SEO, video documentation, and AI tooling, without the overhead of large primes.",
+    "credentials": {
+      "capabilities": [
+        {
+          "icon": "award",
+          "title": "WOSB Eligible",
+          "body": "Woman-Owned Small Business — qualifies for set-aside and sole-source opportunities."
+        },
+        {
+          "icon": "building",
+          "title": "SAM Ready",
+          "body": "Active registration with a current UEI, ready for prime and sub-contracting awards."
+        },
+        {
+          "icon": "doc",
+          "title": "DUNS / UEI Active",
+          "body": "Universal Entity Identifier active and current for FAR-compliant contracting."
+        },
+        {
+          "icon": "shield",
+          "title": "Section 508",
+          "body": "Accessibility-conscious development aligned with WCAG 2.1 AA and Section 508."
+        },
+        {
+          "icon": "bolt",
+          "title": "Rapid Delivery",
+          "body": "Small enough to move fast, structured enough to hit milestones. Most sites in 4–6 weeks."
+        },
+        {
+          "icon": "lock",
+          "title": "Data Security",
+          "body": "Encrypted hosting, secure workflows, and clean handoff documentation every time."
+        }
+      ],
+      "sourcesHtml": "Accessibility work is measured against the W3C's <a href=\"https://www.w3.org/TR/WCAG21/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Web Content Accessibility Guidelines (WCAG) 2.1</a> at level AA, which contains every success criterion the Revised Section 508 Standards incorporate from WCAG 2.0. Set-aside eligibility follows the SBA's <a href=\"https://www.sba.gov/federal-contracting/contracting-assistance-programs/women-owned-small-business-federal-contract-program\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Women-Owned Small Business Federal Contract Program</a>.",
+      "idLabels": {
+        "duns": "DUNS",
+        "cage": "CAGE Code",
+        "status": "Status"
+      },
+      "table": {
+        "caption": "NAICS codes Cozelos Data contracts under",
+        "code": "NAICS Code",
+        "description": "Description",
+        "tier": "Tier",
+        "primary": "PRIMARY",
+        "secondary": "Secondary"
+      }
+    },
+    "statement": {
+      "title": "Need a capability statement?",
+      "body": "We'll prepare and send a current capability statement tailored to your acquisition file, typically within 24 business hours. Have a solicitation? Send the SOL number and we'll respond with capability fit.",
+      "requestCta": "Request Statement"
+    }
+  },
+  "commitment": {
+    "eyebrow": "Our Commitment",
+    "title": "If it's important to you, it's important to us.",
+    "cards": [
+      {
+        "icon": "chat",
+        "title": "True partnership",
+        "body": "Ellen believes strong partnerships create the best outcomes. You get a partner invested in your results, not a vendor counting deliverables."
+      },
+      {
+        "icon": "lock",
+        "title": "You own everything",
+        "body": "Your domain, code, and content are yours — always. No lock-ins, no hostage retainers, no surprises."
+      },
+      {
+        "icon": "shield",
+        "title": "Built to last",
+        "body": "Secure, reliable, and maintained — engineered to the standards of mission-critical systems, not disposable templates."
+      },
+      {
+        "icon": "check",
+        "title": "Honest & transparent",
+        "body": "Fixed quotes in writing, clear milestones, and straight answers. We tell you what we'd build and what it costs."
+      },
+      {
+        "icon": "bolt",
+        "title": "Responsive & present",
+        "body": "We actually answer the phone. Clients on a plan get priority support and a team that stays engaged after launch."
+      },
+      {
+        "icon": "target",
+        "title": "Focused on outcomes",
+        "body": "We measure success the way you do — in leads, growth, and results that strengthen your business for years."
+      }
+    ]
+  },
+  "timeline": {
+    "eyebrow": "The Journey",
+    "title": "How we got here.",
+    "events": [
+      {
+        "year": "Origin",
+        "title": "Built in Vernal",
+        "body": "Founded on a single conviction: too many great Utah businesses run on websites that don't match the quality of their work."
+      },
+      {
+        "year": "The Playbook",
+        "title": "A repeatable system",
+        "body": "We developed our own approach — pillar-and-spoke architecture, hand-written code, cinematic motion, structured data, and AI integration."
+      },
+      {
+        "year": "Growth",
+        "title": "Across the Basin & beyond",
+        "body": "Our work now powers tour operators, hotels, healthcare practices, storage facilities, pest control, luxury services, and genealogy researchers."
+      },
+      {
+        "year": "Today",
+        "title": "Government-ready",
+        "body": "Now a WOSB-eligible, credentialed agency ready to support federal, state, and local government work alongside our local business clients."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Let's make your business stronger.",
+    "body": "Whether you're a local business ready to grow or an agency in need of a credentialed partner, we'd love to hear what you're building. Start with a conversation — no pressure, no obligation.",
+    "primaryLabel": "Start the Conversation"
+  }
+}

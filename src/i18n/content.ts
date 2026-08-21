@@ -118,3 +118,20 @@ export function hreflangAlternates(slug: string) {
 
 /** Registered pages — exported for tooling/validation. */
 export const REGISTERED_PAGES = CONTENT_PAGES;
+
+/**
+ * Interpolate {token} placeholders from the data layer into a content string
+ * (playbook §6.8, "never translate a number").
+ *
+ * Prices, phone numbers, addresses and dates must not appear literally in a
+ * translated file — they would go stale in one language and not the other, and
+ * a translator has no business rewriting them. They live in src/data/*, are
+ * written into the master as {tokens}, and are substituted here at render time.
+ * The engine validates placeholder parity, so a dropped token fails the build
+ * rather than silently rendering "{phone}" to a visitor.
+ */
+export function interp(s: string, vars: Record<string, string | number>): string {
+  let out = s;
+  for (const [k, v] of Object.entries(vars)) out = out.replaceAll(`{${k}}`, String(v));
+  return out;
+}

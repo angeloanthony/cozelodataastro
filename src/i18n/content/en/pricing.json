@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Investment & Pricing — Web Design Growth Plans, Vernal UT",
+    "description": "Investment-grade pricing from Cozelos Data. Custom website projects from $2,500 and monthly growth plans from $295 — built to generate leads and lasting ROI."
+  },
+  "breadcrumb": "Investment",
+  "hero": {
+    "eyebrow": "Investment",
+    "title": "An investment in growth — priced for return.",
+    "lead": "We don't simply build websites — we create complete growth platforms engineered to generate leads, authority, and revenue for years. Here's how we structure that investment, and exactly what it's worth.",
+    "summary": "Cozelos Data, a digital agency in Vernal, Utah, prices work as an investment, not a commodity. Custom website projects start at $2,500 (Essential Presence), $4,500 (Professional Growth), and $7,500 (Market Leader), with Enterprise builds scoped from $10,000. Ongoing monthly growth plans run from $295 (Maintenance) to $1,500+ (Full Marketing). Every project begins with a $500 Discovery Session, credited toward your build."
+  },
+  "philosophy": {
+    "headline": "The most expensive website is the cheap one that costs you customers.",
+    "bodyHtml": "A bargain template that loads slowly, ranks nowhere, and converts no one isn't cheap — it's a recurring loss. A well-built growth platform is the opposite: it pays for itself in new business, then keeps earning for years — which is <a href=\"/why-cozelos-data/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">why we build an asset rather than a website</a>. Below is what that investment looks like."
+  },
+  "discovery": {
+    "badge": "Start here",
+    "title": "Discovery Session",
+    "bodyHtml": "Every great build starts with strategy. In a focused working session we map your goals, your customers, and your competition — then hand you a clear plan and a fixed quote. It's the single highest-leverage hour you'll spend on your digital presence, and the fee is <strong class=\"text-[var(--text)]\">credited in full</strong> toward your project when you move forward.",
+    "priceLabel": "Strategy & roadmap",
+    "price": "$500",
+    "priceNote": "Credited toward your build",
+    "cta": "Book a Session"
+  },
+  "tiersSection": {
+    "eyebrow": "Build the Asset",
+    "title": "One-time project investments.",
+    "lead": "Choose the scope that matches your ambition. Every tier is fully custom, hand-built, fast, secure, and yours to own — no templates, no lock-ins."
+  },
+  "tiers": [
+    {
+      "highlight": false,
+      "name": "Essential Presence",
+      "price": "$2,500",
+      "prefix": "Starting at",
+      "suffix": "one-time",
+      "summary": "For businesses that need a professional, fast, credible presence — done right the first time.",
+      "features": [
+        "Fully custom design — never a template",
+        "Up to ~5 core pages",
+        "Mobile-first, sub-second load times",
+        "On-page SEO foundation",
+        "Contact forms & analytics setup",
+        "Google indexing & launch support"
+      ],
+      "outcome": "Look established, load instantly, and start getting found."
+    },
+    {
+      "highlight": true,
+      "name": "Professional Growth",
+      "price": "$4,500",
+      "prefix": "Starting at",
+      "suffix": "one-time",
+      "summary": "For growing businesses that want to actively win customers — not just exist online.",
+      "features": [
+        "Everything in Essential Presence",
+        "Expanded page architecture",
+        "Advanced & local SEO with schema markup",
+        "Conversion-focused copywriting",
+        "Performance tuning & Core Web Vitals",
+        "Content strategy & messaging"
+      ],
+      "outcome": "Turn traffic into qualified leads and out-rank your local competition."
+    },
+    {
+      "highlight": false,
+      "name": "Market Leader",
+      "price": "$7,500",
+      "prefix": "Starting at",
+      "suffix": "one-time",
+      "summary": "For businesses ready to dominate their market and become the obvious choice.",
+      "features": [
+        "Everything in Professional Growth",
+        "Large pillar-and-spoke architecture",
+        "Custom functionality & interactive tools",
+        "Video integration & cinematic motion",
+        "Advanced analytics & AI automation",
+        "Ongoing conversion strategy"
+      ],
+      "outcome": "Own the top of search and build a brand customers trust on sight."
+    },
+    {
+      "highlight": false,
+      "name": "Enterprise",
+      "price": "Custom",
+      "prefix": "$10,000–$30,000+",
+      "suffix": "scoped to fit",
+      "summary": "For government, multi-location, and complex builds with serious requirements.",
+      "features": [
+        "Bespoke scope & architecture",
+        "System & data integrations",
+        "Compliance & accessibility (WCAG, CMS)",
+        "Multi-site or multi-location builds",
+        "Dedicated project team",
+        "Priority support & SLAs"
+      ],
+      "outcome": "A digital platform engineered to your exact operational needs."
+    }
+  ],
+  "tierBadge": "Most Popular",
+  "payoffLabel": "The payoff: ",
+  "tierCta": "Get Started",
+  "tierCtaEnterprise": "Request a Quote",
+  "tiersNote": "Every quote is fixed in writing before work begins. No \"starting from\" footnotes, no surprise invoices.",
+  "plansSection": {
+    "eyebrow": "Grow the Asset",
+    "title": "Monthly growth plans.",
+    "lead": "A website launched and forgotten quietly loses value. These plans keep yours fast, secure, and climbing — so the asset appreciates instead of decaying."
+  },
+  "plans": [
+    {
+      "highlight": false,
+      "name": "Maintenance",
+      "price": "$295",
+      "summary": "Keep your asset fast, secure, and online.",
+      "features": [
+        "Hosting, SSL & uptime monitoring",
+        "Security monitoring & daily backups",
+        "Performance optimization",
+        "Minor content edits",
+        "Priority technical support"
+      ]
+    },
+    {
+      "highlight": true,
+      "name": "SEO Growth",
+      "price": "$495",
+      "summary": "Everything in Maintenance, plus active search growth.",
+      "features": [
+        "Everything in Maintenance",
+        "Keyword tracking & technical SEO",
+        "Google Business Profile optimization",
+        "Monthly ranking reports",
+        "Content recommendations"
+      ]
+    },
+    {
+      "highlight": false,
+      "name": "Authority",
+      "price": "$795",
+      "summary": "Compounding content and links that build market authority.",
+      "features": [
+        "Everything in SEO Growth",
+        "New SEO articles each month",
+        "Internal linking & content architecture",
+        "Landing page creation",
+        "Competitor analysis"
+      ]
+    },
+    {
+      "highlight": false,
+      "name": "Full Marketing",
+      "price": "$1,500+",
+      "summary": "A complete, managed growth engine with paid acquisition.",
+      "features": [
+        "Everything in Authority",
+        "Google & Meta ad management",
+        "Creative production & A/B testing",
+        "Conversion-rate optimization",
+        "A dedicated growth partner"
+      ]
+    }
+  ],
+  "perMonth": "month",
+  "planCta": "Choose {name}",
+  "math": {
+    "eyebrow": "The Real Math",
+    "title": "Why a custom asset costs more — and returns more.",
+    "p1": "A custom Cozelos Data build isn't a generic theme stacked with plugins. It's a hand-engineered system that loads in under a second, has a far smaller attack surface, and needs less maintenance from day one. Every page is optimized for performance and search from the start — because the goal was never \"a website.\" The goal is more customers.",
+    "p2": "That's why we price by outcome, not by page count. You're not paying for pixels — you're investing in an asset that generates visibility, credibility, and revenue long after launch day.",
+    "p3Html": "For a line-by-line look at what's actually being built, see <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">what each of the six services includes</a>. Questions about timelines, ownership, or what happens after launch are answered in the <a href=\"/faq/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">frequently asked questions</a>.",
+    "buysTitle": "What your investment buys",
+    "buys": [
+      "An asset you own outright — domain, code, and content",
+      "Sub-second speed that lifts rankings and lowers ad costs",
+      "SEO and AI-search visibility that compounds over time",
+      "A secure, low-maintenance build that ages well",
+      "Fixed, transparent pricing with no surprise invoices",
+      "A partner invested in your results, not just your launch"
+    ]
+  },
+  "guarantees": {
+    "eyebrow": "Our Promise",
+    "title": "Guarantees, in writing.",
+    "lead": "Hiring an agency shouldn't be a leap of faith. Here's what you can count on from us — every project, every time.",
+    "items": [
+      {
+        "icon": "lock",
+        "title": "You own everything",
+        "body": "Your domain, source code, and content are yours — always. No proprietary lock-ins, no hostage retainers."
+      },
+      {
+        "icon": "doc",
+        "title": "Fixed quote, in writing",
+        "body": "Your price is approved in writing before any work begins. No surprise invoices, no 'starting from' footnotes."
+      },
+      {
+        "icon": "bolt",
+        "title": "Engineered to perform",
+        "body": "Every site is built for sub-second load times. Performance is a deliverable we hold ourselves to, not a maybe."
+      },
+      {
+        "icon": "chat",
+        "title": "We actually answer",
+        "body": "A real person, not a ticket queue — and a reply within one business day, before and after launch."
+      },
+      {
+        "icon": "shield",
+        "title": "Secure & backed up",
+        "body": "Hardened static builds, SSL, daily backups, and monitoring keep your asset safe and online."
+      },
+      {
+        "icon": "check",
+        "title": "Month-to-month plans",
+        "body": "Ongoing plans flex with you — scale up or down anytime. No long-term contracts holding you in place."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Let's scope your investment.",
+    "body": "Start with a Discovery Session. We'll map the opportunity, recommend the right tier, and give you a fixed quote — credited toward your build.",
+    "primaryLabel": "Book a Discovery Session",
+    "secondaryLabel": "See the Work"
+  }
+}

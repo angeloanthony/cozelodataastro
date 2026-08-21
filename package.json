@@ -10,7 +10,12 @@
     "build": "astro check && astro build",
     "build:fast": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "i18n:check": "node scripts/i18n-check.mjs",
+    "translate": "node scripts/translate.js",
+    "translate:check": "node scripts/translate.js --check",
+    "translate:test": "node scripts/translate.test.mjs",
+    "translate:dry": "node scripts/translate.js --all --dry-run"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
@@ -28,6 +33,7 @@
     }
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.120.0",
     "vite": "^7.3.2"
   }
 }

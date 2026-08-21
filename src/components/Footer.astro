@@ -3,26 +3,38 @@
  * Footer — contact details, service links, government credentials, and social.
  */
 import { Image } from "astro:assets";
-import { site, services } from "../data/site";
+import { site } from "../data/site";
 import Icon from "./Icon.astro";
 import { getImage } from "../lib/images";
+import { getLangFromUrl, t } from "../data/i18n";
+import { localizeHref, interp } from "../i18n/content";
+import { getServices, getShared } from "../i18n/shared";
 
 const year = new Date().getFullYear();
 const logoImg = getImage("cozeloslogo.webp");
+
+// Same rule as the header: internal hrefs go through the one existence-aware
+// helper. tel:, mailto:, external URLs and /sitemap-index.xml are untouched —
+// localizeHref only rewrites a path whose slug has a committed translation.
+const lang = getLangFromUrl(Astro.url);
+const L = (href: string) => localizeHref(href, lang);
+// Service labels come from the shared source (domain 3), joined on site.ts slugs.
+const services = getServices(lang);
+// Footer prose + link labels are shared content (domain 3): they render on every
+// page, so translating them per page would let the copies drift.
+const sh = getShared(lang);
+const f = sh.footer;
 ---
 <footer class="relative mt-24 border-t border-[var(--border)] bg-[var(--surface-2)]">
   <!-- Brand reinforcement band -->
   <div class="border-b border-[var(--border)]">
     <div class="container-x py-14 text-center">
       <p class="font-display text-2xl font-extrabold leading-[1.2] tracking-tight sm:text-3xl">
-        We Build Digital Assets That Grow Businesses.
-      </p>
+{f.brandHeadline}</p>
       <p class="mt-2 font-display text-lg font-semibold text-[var(--text-muted)] sm:text-xl">
-        Making Businesses Stronger. Making Life Better.
-      </p>
+{f.tagline}</p>
       <p class="mt-4 text-sm text-[var(--text-subtle)]">
-        Vernal, Utah &bull; Serving clients nationwide.
-      </p>
+{f.locality}</p>
     </div>
   </div>
 
@@ -30,7 +42,7 @@ const logoImg = getImage("cozeloslogo.webp");
     <div class="grid gap-12 lg:grid-cols-12">
       <!-- Brand -->
       <div class="lg:col-span-4">
-        <a href="/" class="flex items-center gap-2.5" aria-label={`${site.name} home`}>
+        <a href={L("/")} class="flex items-center gap-2.5" aria-label={t("a11y.home", lang, { brand: site.name })}>
           {logoImg ? (
             <Image
               src={logoImg}
@@ -47,10 +59,7 @@ const logoImg = getImage("cozeloslogo.webp");
           </span>
         </a>
         <p class="mt-4 max-w-xs text-sm leading-relaxed text-[var(--text-muted)]">
-          We build digital assets that grow businesses — design, SEO, marketing,
-          video, and automation, engineered to make businesses stronger and life
-          better. Premium digital agency in Vernal, Utah.
-        </p>
+{f.description}</p>
         <div class="mt-6 flex gap-3">
           <a href={site.social.facebook} aria-label="Facebook" class="grid h-10 w-10 place-items-center rounded-xl border border-[var(--border)] text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3l.5-3H14V4.5c0-.9.3-1.5 1.6-1.5H17V.3C16.6.2 15.6 0 14.5 0 12 0 10.5 1.5 10.5 4v2H8v3h2.5v9h3.5V9z"/></svg>
@@ -69,17 +78,17 @@ const logoImg = getImage("cozeloslogo.webp");
           class="mt-5 inline-flex items-center gap-2 rounded-xl border border-[var(--border)] px-4 py-2.5 text-sm font-semibold text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
         >
           <Icon name="star" size={16} class="fill-current text-[var(--color-brand)]" />
-          Leave a Review
+          {f.review}
         </a>
       </div>
 
       <!-- Services -->
       <div class="lg:col-span-3">
-        <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--text-subtle)]">Services</h3>
+        <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--text-subtle)]">{t("footer.services", lang)}</h3>
         <ul class="mt-4 space-y-2.5 text-sm">
           {services.map((s) => (
             <li>
-              <a href={`/services/#${s.slug}`} class="link-underline text-[var(--text-muted)] transition-colors hover:text-[var(--text)]">
+              <a href={L(`/services/#${s.slug}`)} class="link-underline text-[var(--text-muted)] transition-colors hover:text-[var(--text)]">
                 {s.title}
               </a>
             </li>
@@ -89,24 +98,24 @@ const logoImg = getImage("cozeloslogo.webp");
 
       <!-- Company -->
       <div class="lg:col-span-2">
-        <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--text-subtle)]">Company</h3>
+        <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--text-subtle)]">{t("footer.company", lang)}</h3>
         <ul class="mt-4 space-y-2.5 text-sm">
-          <li><a href="/company/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">About</a></li>
-          <li><a href="/ellen-cozelos/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Ellen Cozelos</a></li>
-          <li><a href="/why-cozelos-data/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Why Cozelos Data</a></li>
-          <li><a href="/our-approach/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Our Approach</a></li>
-          <li><a href="/pricing/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Investment</a></li>
-          <li><a href="/portfolio/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Portfolio</a></li>
-          <li><a href="/faq/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">FAQ</a></li>
-          <li><a href="/company/#government" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Government</a></li>
-          <li><a href="/contact/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Contact</a></li>
-          <li><a href="/payment/" class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">Pay Invoice</a></li>
+          <li><a href={L("/company/")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{f.about}</a></li>
+          <li><a href={L("/ellen-cozelos/")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{f.ellen}</a></li>
+          <li><a href={L("/why-cozelos-data/")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{f.why}</a></li>
+          <li><a href={L("/our-approach/")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{f.approach}</a></li>
+          <li><a href={L("/pricing/")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{t("nav.pricing", lang)}</a></li>
+          <li><a href={L("/portfolio/")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{t("nav.portfolio", lang)}</a></li>
+          <li><a href={L("/faq/")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{f.faq}</a></li>
+          <li><a href={L("/company/#government")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{f.government}</a></li>
+          <li><a href={L("/contact/")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{t("nav.contact", lang)}</a></li>
+          <li><a href={L("/payment/")} class="link-underline text-[var(--text-muted)] hover:text-[var(--text)]">{f.payment}</a></li>
         </ul>
       </div>
 
       <!-- Contact -->
       <div class="lg:col-span-3">
-        <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--text-subtle)]">Contact</h3>
+        <h3 class="text-xs font-bold uppercase tracking-[0.16em] text-[var(--text-subtle)]">{t("footer.contact", lang)}</h3>
         <ul class="mt-4 space-y-3 text-sm text-[var(--text-muted)]">
           <li class="flex items-start gap-2.5">
             <Icon name="pin" size={16} class="mt-0.5 shrink-0 text-[var(--color-brand)]" />
@@ -122,7 +131,7 @@ const logoImg = getImage("cozeloslogo.webp");
           </li>
           <li class="flex items-center gap-2.5">
             <Icon name="clock" size={16} class="shrink-0 text-[var(--color-brand)]" />
-            <span>{site.hours}</span>
+            <span>{interp(sh.business.hours, site.hours)}</span>
           </li>
         </ul>
       </div>
@@ -137,11 +146,11 @@ const logoImg = getImage("cozeloslogo.webp");
     </div>
 
     <div class="mt-8 flex flex-col items-center justify-between gap-3 border-t border-[var(--border)] pt-6 text-xs text-[var(--text-subtle)] sm:flex-row">
-      <p>&copy; {year} {site.name}. All rights reserved.</p>
+      <p>{interp(f.copyright, { year, brand: site.name })}</p>
       <div class="flex gap-5">
-        <a href="/privacy/" class="hover:text-[var(--text)]">Privacy</a>
-        <a href="/terms/" class="hover:text-[var(--text)]">Terms</a>
-        <a href="/sitemap-index.xml" class="hover:text-[var(--text)]">Sitemap</a>
+        <a href={L("/privacy/")} class="hover:text-[var(--text)]">{f.privacy}</a>
+        <a href={L("/terms/")} class="hover:text-[var(--text)]">{f.terms}</a>
+        <a href="/sitemap-index.xml" class="hover:text-[var(--text)]">{f.sitemap}</a>
       </div>
     </div>
   </div>

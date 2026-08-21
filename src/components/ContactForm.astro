@@ -1,12 +1,30 @@
 ---
+/**
+ * ContactForm — the live-chat call-to-action block on /contact/.
+ *
+ * Used by exactly one page, so its copy is that page's body copy: it comes in
+ * as props from src/i18n/content/<locale>/contact.json rather than living here
+ * (playbook principle 7 — every string has exactly one authoritative source).
+ * The props are required on purpose; a default here would be a second source.
+ *
+ * Documented boundary (playbook §3, "external systems"): the chat itself is
+ * Tawk.to, an English-only vendor widget, so the transient "Connecting…" label
+ * in the client script below is deliberately not localized. Localizing the
+ * label while the widget it opens stays English would be theatre.
+ */
 import { site } from "../data/site";
 import Icon from "./Icon.astro";
+
+interface Props {
+  intro: string;
+  chatLabel: string;
+  callLabel: string;
+  emailNote: string;
+}
+const { intro, chatLabel, callLabel, emailNote } = Astro.props;
 ---
 <div class="space-y-6">
-  <p class="text-[var(--text-muted)] leading-relaxed">
-    Tap below to start a live chat with us right here — no app required.
-    We usually reply within minutes during business hours.
-  </p>
+  <p class="text-[var(--text-muted)] leading-relaxed">{intro}</p>
 
   <div class="flex flex-wrap items-center gap-4">
     <button
@@ -15,7 +33,7 @@ import Icon from "./Icon.astro";
       class="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--color-brand)]/25 transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-xl"
     >
       <Icon name="chat" size={18} />
-      <span>Text us now</span>
+      <span>{chatLabel}</span>
     </button>
 
     <a
@@ -23,12 +41,14 @@ import Icon from "./Icon.astro";
       class="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--border-strong)] bg-[var(--surface)] px-6 py-3.5 text-base font-semibold text-[var(--text)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
     >
       <Icon name="phone" size={18} />
-      <span>Call us</span>
+      <span>{callLabel}</span>
     </a>
   </div>
 
   <p class="text-sm text-[var(--text-subtle)]">
-    No sales pressure. Prefer email?
+    {/* Explicit {" "}: Astro collapses whitespace between an expression and the
+        next element, which would render "Prefer email?<a>" (playbook §10). */}
+    {emailNote}{" "}
     <a href={site.emailHref} class="font-medium text-[var(--color-brand)] hover:underline">{site.email}</a>
   </p>
 </div>

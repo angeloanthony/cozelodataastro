@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Contatti Cozelos Data — Costruiamo qualcosa che dura",
+    "description": "Inizia una conversazione con Cozelos Data a Vernal, Utah. La prima conversazione serve a capire i tuoi obiettivi, non a venderti servizi. Chiama {phone}."
+  },
+  "breadcrumb": "Contatti",
+  "hero": {
+    "eyebrow": "Iniziamo a parlarne",
+    "title": "Costruiamo qualcosa che dura.",
+    "lead": "La prima conversazione non è una proposta commerciale — serve a capire la tua attività, i tuoi obiettivi e che cosa significa davvero successo per te. Dicci dove vuoi arrivare e ti mostreremo come ti aiuteremmo ad arrivarci.",
+    "summary": "Contatta Cozelos Data, agenzia digitale premium a Vernal, Utah. La prima conversazione serve a capire i tuoi obiettivi, non a venderti servizi — esci con indicazioni oneste e un preventivo a prezzo fisso, senza alcun impegno. Chiama {phone}, scrivi a {email} oppure mandaci un messaggio. Rispondiamo entro un giorno lavorativo."
+  },
+  "expect": {
+    "eyebrow": "Cosa aspettarti",
+    "title": "Una conversazione sui tuoi obiettivi — non sui nostri servizi.",
+    "lead": "Il lavoro migliore nasce dall’ascolto, non da una presentazione commerciale. Ecco come si svolge davvero la prima conversazione.",
+    "linkNoteHtml": "Vuoi arrivare preparato? Dai un’occhiata a <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">quanto costa di solito un progetto</a> oppure leggi le <a href=\"/faq/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">risposte alle domande che quasi tutte le aziende fanno per prime</a>."
+  },
+  "steps": [
+    {
+      "icon": "chat",
+      "title": "Prima ascoltiamo",
+      "body": "Partiamo dal capire la tua attività, i tuoi clienti e che cosa significa davvero successo per te — prima ancora di parlare di che cosa ti consegneremo."
+    },
+    {
+      "icon": "target",
+      "title": "Mappiamo le opportunità",
+      "body": "Insieme individuiamo dove si nasconde la crescita reale — i lead che ti stanno sfuggendo, le ricerche in cui non compari e la strada più rapida verso i risultati."
+    },
+    {
+      "icon": "doc",
+      "title": "Ricevi un piano chiaro",
+      "body": "Esci con indicazioni oneste e un preventivo a prezzo fisso — che poi decida di costruire con noi o meno. Nessuna pressione, nessun impegno, nessuna insistenza commerciale."
+    }
+  ],
+  "form": {
+    "title": "Raccontaci della tua attività",
+    "body": "Più cose sappiamo dei tuoi obiettivi, più utile sarà la nostra prima conversazione. Rispondiamo entro un giorno lavorativo — e non c’è mai alcun impegno.",
+    "intro": "Tocca qui sotto per avviare una chat con noi direttamente da questa pagina — senza installare nessuna app. Durante l’orario di lavoro rispondiamo di solito in pochi minuti.",
+    "chatLabel": "Scrivici ora",
+    "callLabel": "Chiamaci",
+    "emailNote": "Nessuna pressione commerciale. Preferisci l’email?"
+  },
+  "quick": {
+    "title": "Preferisci parlarne subito?",
+    "body": "Parli con una persona vera — non con un call center o una coda di ticket.",
+    "callLabel": "Chiama",
+    "textLabel": "Scrivi",
+    "emailLabel": "Email"
+  },
+  "direct": {
+    "title": "Contattaci direttamente",
+    "phoneLabel": "Telefono",
+    "emailLabel": "Email",
+    "officeLabel": "Ufficio",
+    "hoursLabel": "Orari"
+  },
+  "map": {
+    "title": "Mappa della sede di Cozelos Data"
+  }
+}

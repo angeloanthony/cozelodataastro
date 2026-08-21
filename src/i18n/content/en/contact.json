@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Contact Cozelos Data — Let's Build Something That Lasts",
+    "description": "Start a conversation with Cozelos Data in Vernal, Utah. The first conversation is about understanding your goals, not selling services. Call {phone}."
+  },
+  "breadcrumb": "Contact",
+  "hero": {
+    "eyebrow": "Start the Conversation",
+    "title": "Let's build something that lasts.",
+    "lead": "The first conversation isn't a sales pitch — it's about understanding your business, your goals, and what success looks like for you. Tell us where you want to go, and we'll show you how we'd help you get there.",
+    "summary": "Contact Cozelos Data, a premium digital agency in Vernal, Utah. The first conversation focuses on understanding your goals, not selling services — you'll leave with honest direction and a fixed quote, with no obligation. Call {phone}, email {email}, or send a message. We reply within one business day."
+  },
+  "expect": {
+    "eyebrow": "What to Expect",
+    "title": "A conversation about your goals — not our services.",
+    "lead": "The best work starts with understanding, not a pitch. Here's how the first conversation actually goes.",
+    "linkNoteHtml": "Want to arrive with context? Skim <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">what a project typically costs</a> or read the <a href=\"/faq/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">answers to the questions most businesses ask first</a>."
+  },
+  "steps": [
+    {
+      "icon": "chat",
+      "title": "We listen first",
+      "body": "We start by understanding your business, your customers, and what success actually looks like for you — before we ever talk about a single deliverable."
+    },
+    {
+      "icon": "target",
+      "title": "We map the opportunity",
+      "body": "Together we identify where the real growth is hiding — the leads you're missing, the searches you're losing, and the fastest path to results."
+    },
+    {
+      "icon": "doc",
+      "title": "You get a clear plan",
+      "body": "You leave with honest direction and a fixed quote — whether you build with us or not. No pressure, no obligation, no hard sell."
+    }
+  ],
+  "form": {
+    "title": "Tell us about your business",
+    "body": "The more we know about your goals, the more useful our first conversation will be. We reply within one business day — and there's no obligation, ever.",
+    "intro": "Tap below to start a live chat with us right here — no app required. We usually reply within minutes during business hours.",
+    "chatLabel": "Text us now",
+    "callLabel": "Call us",
+    "emailNote": "No sales pressure. Prefer email?"
+  },
+  "quick": {
+    "title": "Prefer to talk now?",
+    "body": "Reach a real person — not a call center or a ticket queue.",
+    "callLabel": "Call",
+    "textLabel": "Text",
+    "emailLabel": "Email"
+  },
+  "direct": {
+    "title": "Reach us directly",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "officeLabel": "Office",
+    "hoursLabel": "Hours"
+  },
+  "map": {
+    "title": "Cozelos Data office location map"
+  }
+}

@@ -43,7 +43,18 @@ export const site = {
     country: "US",
   },
   geo: { latitude: 40.4555, longitude: -109.5287 },
-  hours: "Mon–Fri · 9:00 AM – 5:00 PM MT",
+  /**
+   * Business hours as DATA, not prose. The presentation string (day names,
+   * separators) is localized in src/i18n/content/<locale>/shared.json and
+   * interpolates these values, so the hours themselves are never translated
+   * and exist in exactly one place.
+   */
+  hours: {
+    opens: "9:00 AM",
+    closes: "5:00 PM",
+    /** Timezone abbreviation — an identifier, never translated. */
+    timezone: "MT",
+  },
   founder: "Ellen Cozelos",
   credentials: {
     wosb: "Woman-Owned Small Business (WOSB)",
@@ -346,7 +357,6 @@ export type Project = {
   solution: string;
   outcome: string;
   businessImpact: string;
-  services: string[];
   stack: string[];
   results: { metric: string; label: string }[];
   accent: string; // hex used for the card's glow / gradient
@@ -364,7 +374,6 @@ export const projects: Project[] = [
     tagline: "Italian Genealogy & Dual Citizenship",
     overview:
       "A bilingual (English / Italian) research firm specializing in Italian jure sanguinis citizenship and vital record retrieval. We built a 30+ page pillar-and-spoke site mapping geographic and regional service areas, with structured data and AI search optimization throughout.",
-    services: ["Website Design", "SEO", "Content Architecture", "Maintenance"],
     stack: ["Hand-built HTML/CSS", "JSON-LD Schema", "Hub & Spoke SEO", "llms.txt"],
     results: [
       { metric: "30+", label: "Indexed Pages" },
@@ -394,7 +403,6 @@ export const projects: Project[] = [
     tagline: "Parking Management Platform",
     overview:
       "A parking management platform designed to streamline reservations, customer communications, and parking operations. Built with a modern user experience, responsive design, and SEO-focused architecture.",
-    services: ["Website Design", "SEO", "Business Automation"],
     stack: ["Responsive Design", "Booking System", "Automation"],
     results: [
       { metric: "24/7", label: "Online Access" },
@@ -423,7 +431,6 @@ export const projects: Project[] = [
     summary: "Pillar architecture · 30+ pages · UTV tour booking system.",
     overview:
       "A guided UTV tour operator running on a 30+ page pillar architecture with an online booking flow built around their fleet, pricing, and trail experiences.",
-    services: ["Website Design", "SEO", "Booking System"],
     stack: ["Pillar Architecture", "Booking Flow", "Local SEO"],
     results: [
       { metric: "30+", label: "Pages" },
@@ -452,7 +459,6 @@ export const projects: Project[] = [
     tagline: "Hotel Website & Direct Bookings",
     overview:
       "A hospitality rebuild featuring a cinematic Ken Burns hero, a clean canonical SEO structure, and a rates presentation engineered for direct bookings.",
-    services: ["Website Design", "SEO", "Maintenance"],
     stack: ["Cinematic Hero", "Canonical SEO", "Rates Table"],
     results: [
       { metric: "Cinematic", label: "Hero" },
@@ -482,7 +488,6 @@ export const projects: Project[] = [
     tagline: "Medicare Insurance Practice",
     overview:
       "A licensed Medicare insurance practice built on a split-sitemap architecture across 27+ SEO pages, with CMS compliance baked into every page and an AEP anchor calendar.",
-    services: ["Website Design", "SEO", "Compliance"],
     stack: ["Split Sitemap", "CMS Compliance", "27+ SEO Pages"],
     results: [
       { metric: "27+", label: "SEO Pages" },
@@ -511,7 +516,6 @@ export const projects: Project[] = [
     summary: "14-page cinematic build · interactive price calculator.",
     overview:
       "A luxury transportation brand on a 14-page cinematic site with interactive widgets — a price calculator, prom planning timeline, venue map, and itinerary builder.",
-    services: ["Website Design", "Branding", "Interactive Tools"],
     stack: ["Hybrid Theme", "Price Calculator", "Leaflet Map"],
     results: [
       { metric: "14", label: "Pages" },
@@ -539,7 +543,6 @@ export const projects: Project[] = [
     summary: "Professional pest control services with online booking and local SEO.",
     overview:
       "A complete digital transformation for a local pest control company featuring service area mapping, online booking, and strong local SEO optimization across the Uintah Basin.",
-    services: ["Website Design", "SEO", "Booking System"],
     stack: ["Local SEO", "Service Area Pages", "Online Booking"],
     results: [
       { metric: "Local", label: "#1 Rankings" },
@@ -568,7 +571,6 @@ export const projects: Project[] = [
     tagline: "Medicare Insurance Practice",
     overview:
       "A licensed Medicare insurance practice built on a clean, CMS-compliant architecture with SEO-focused plan and location pages, structured data, and an enrollment-aligned content calendar.",
-    services: ["Website Design", "SEO", "Compliance"],
     stack: ["CMS Compliance", "Local SEO", "Structured Data"],
     results: [
       { metric: "CMS", label: "Compliant" },
@@ -626,234 +628,274 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
-export type Faq = { q: string; a: string; category: string };
+/* ---------------------------------------------------------------- FAQ ---
+ * FAQ identity is frozen here and is never derived from prose.
+ *
+ * Every question carries a stable `id`; every category carries a stable `id`
+ * plus an English `label`. The label is display copy and will move into the
+ * shared localized content source later — the ids never move and never
+ * translate. Nothing downstream may key off array position or English wording:
+ *
+ *   /faq/ anchors and <details name> groups  ->  FaqCategory.id
+ *   homepage teaser selection                ->  homepageFaqIds
+ *
+ * Reordering `faqs`, rewording a label, or adding an Italian translation must
+ * not change an anchor, an accordion group, or the homepage selection.
+ */
+
+/** A FAQ category: permanent identity + the current English display label. */
+export type FaqCategory = {
+  /** Permanent identifier. Drives /faq/ anchors and <details name> groups. */
+  id: string;
+  /** English display copy. Localized wording arrives later; the id does not. */
+  label: string;
+};
+
+/** Display order for the grouped /faq/ page. Order is presentation, not identity. */
+export const faqCategories: FaqCategory[] = [
+  { id: "pricing", label: "Pricing" },
+  { id: "timeline", label: "Timeline" },
+  { id: "ownership", label: "Ownership" },
+  { id: "seo", label: "SEO" },
+  { id: "hosting", label: "Hosting" },
+  { id: "maintenance", label: "Maintenance" },
+  { id: "ai", label: "AI" },
+  { id: "video", label: "Video" },
+  { id: "marketing", label: "Marketing" },
+  { id: "support", label: "Support" },
+  { id: "general", label: "General" },
+];
+
+export type Faq = {
+  /** Permanent identifier. Referenced by id, never by array position. */
+  id: string;
+  /** A FaqCategory.id — never the English label. */
+  categoryId: string;
+  q: string;
+  a: string;
+};
 
 // Answers are written for Google featured snippets and AI Overviews: the first
 // sentence is a direct, self-contained answer, followed by 1–2 supporting lines.
-// The `category` field groups them on the dedicated /faq/ page.
+// The `categoryId` field groups them on the dedicated /faq/ page.
 export const faqs: Faq[] = [
-  // — Homepage shows the first five (a deliberate cross-section) —
   {
-    category: "Pricing",
+    id: "website-cost",
+    categoryId: "pricing",
     q: "How much does a custom website cost?",
     a: "Custom website projects from Cozelos Data start at $2,500 for Essential Presence, $4,500 for Professional Growth, and $7,500 for Market Leader, with Enterprise builds scoped individually. Every project begins with a $500 Discovery Session that's credited toward your build, and you receive a fixed quote in writing before any work starts.",
   },
   {
-    category: "Timeline",
+    id: "build-duration",
+    categoryId: "timeline",
     q: "How long does it take to build a website?",
     a: "Most custom websites launch in 4–6 weeks from kickoff. Larger sites with many pages or heavy content writing take 8–10 weeks, and simple landing pages can go live in 2–3 weeks. You receive a clear schedule with milestones on day one.",
   },
   {
-    category: "Ownership",
+    id: "website-ownership",
+    categoryId: "ownership",
     q: "Do I own my website?",
     a: "Yes — completely. You own the domain, the hosting account, the source code, and all content. There are no proprietary builders or lock-ins, and we can transfer everything to you at any time. With Cozelos Data, your website is an asset you own outright.",
   },
   {
-    category: "SEO",
+    id: "google-ranking",
+    categoryId: "seo",
     q: "Will my new website actually rank on Google?",
     a: "Every website we build has SEO engineered in from day one — structured data, clean architecture, fast load times, sitemaps, and local optimization. Most clients see meaningful ranking improvement within 60–90 days, and the gains compound as content and authority grow.",
   },
   {
-    category: "Pricing",
+    id: "hidden-fees",
+    categoryId: "pricing",
     q: "Are there any hidden fees or surprise invoices?",
     a: "No. Your project quote is fixed and approved in writing before any work begins, so the price never changes mid-build. The only ongoing cost is an optional monthly plan, and that rate is locked too — no 'starting from' footnotes and no surprises.",
   },
 
   // — Pricing —
   {
-    category: "Pricing",
+    id: "custom-vs-template-cost",
+    categoryId: "pricing",
     q: "Why does a custom website cost more than a template?",
     a: "A custom website costs more because it's engineered, not assembled. Instead of a generic theme loaded with plugins, you get hand-built code that loads in under a second, ranks better, carries far less security risk, and needs less maintenance — so it returns more than its price over time.",
   },
 
   // — Timeline —
   {
-    category: "Timeline",
+    id: "project-start-lead-time",
+    categoryId: "timeline",
     q: "How quickly can you start my project?",
     a: "We can usually begin within one to two weeks of your Discovery Session. Once we agree on scope and you approve the fixed quote, we schedule a kickoff and start immediately — most clients move from first call to active design inside two weeks.",
   },
 
   // — Ownership —
   {
-    category: "Ownership",
+    id: "switching-providers",
+    categoryId: "ownership",
     q: "What happens if I want to leave or switch providers?",
     a: "You take everything with you. Because you own the domain, code, hosting, and content, leaving is simple: we hand over full access and files whenever you ask. We keep your business through results, not by holding your website hostage.",
   },
 
   // — SEO —
   {
-    category: "SEO",
+    id: "seo-timeframe",
+    categoryId: "seo",
     q: "How long does SEO take to work?",
     a: "SEO typically shows meaningful movement within 60–90 days, with stronger results building over 6–12 months. Technical fixes and local optimization can lift rankings within weeks, while competitive keywords take longer. Unlike paid ads, the visibility you earn keeps working without ongoing cost-per-click.",
   },
   {
-    category: "SEO",
+    id: "local-seo",
+    categoryId: "seo",
     q: "What is local SEO and do I need it?",
     a: "Local SEO helps your business appear when nearby customers search for what you offer — in Google Maps, the local pack, and 'near me' results. If you serve a specific area, you need it. We optimize your Google Business Profile, local citations, and location pages to capture that demand.",
   },
 
   // — Hosting —
   {
-    category: "Hosting",
+    id: "hosting-provided",
+    categoryId: "hosting",
     q: "Do you provide website hosting?",
     a: "Yes. We host on fast, secure, enterprise-grade infrastructure with SSL, daily backups, and uptime monitoring included in our monthly plans. Because our sites are built as lightweight static pages, they load almost instantly and stay online reliably — and you always own the hosting account.",
   },
   {
-    category: "Hosting",
+    id: "website-security",
+    categoryId: "hosting",
     q: "Is my website secure from hackers?",
     a: "Yes. We build static, hardened websites with a very small attack surface — no sprawling admin panels or vulnerable plugins to exploit. Every site ships with SSL encryption, security monitoring, and daily backups, so it stays safe, online, and protected.",
   },
 
   // — Maintenance —
   {
-    category: "Maintenance",
+    id: "maintenance-plan-needed",
+    categoryId: "maintenance",
     q: "Do I need a monthly maintenance plan?",
     a: "A maintenance plan is optional but strongly recommended. For $295/month, Maintenance keeps your site fast, secure, and backed up — with hosting, SSL, monitoring, performance tuning, and minor edits handled for you. Without upkeep, any website gradually slows down and slips out of search.",
   },
   {
-    category: "Maintenance",
+    id: "maintenance-inclusions",
+    categoryId: "maintenance",
     q: "What is included in ongoing website maintenance?",
     a: "Maintenance includes hosting, SSL, security monitoring, daily backups, uptime monitoring, performance optimization, minor content edits, and priority support. Higher tiers add SEO, content, and marketing. The goal is simple: your site gets faster and ranks higher every quarter, not slower.",
   },
 
   // — AI —
   {
-    category: "AI",
+    id: "ai-integration",
+    categoryId: "ai",
     q: "Can you add AI to my website or business?",
     a: "Yes. We build AI assistants and chatbots that capture leads and answer customer questions 24/7, plus automations that handle scheduling, follow-ups, and data entry. AI lets a small team respond instantly and never miss a lead, giving you back hours every week.",
   },
   {
-    category: "AI",
+    id: "ai-search-optimization",
+    categoryId: "ai",
     q: "What is AI search optimization and why does it matter?",
     a: "AI search optimization makes your business easy for tools like ChatGPT, Claude, and Google's AI Overviews to understand and recommend. We structure your content with schema and an llms.txt file so AI engines cite you accurately — capturing customers who now ask AI instead of searching.",
   },
 
   // — Video —
   {
-    category: "Video",
+    id: "video-production-offered",
+    categoryId: "video",
     q: "Do you offer video production?",
     a: "Yes. We produce cinematic brand films, 4K aerial drone footage, and vertical reels for Instagram, TikTok, and YouTube — fully filmed, color-graded, and sound-designed. Professional video makes your business look established and premium across your website, ads, and social channels.",
   },
   {
-    category: "Video",
+    id: "video-business-value",
+    categoryId: "video",
     q: "Why does my business need video?",
     a: "Video communicates energy, scale, and trust that photos can't, and it consistently earns higher engagement across websites, ads, and social media. It also gives you a reusable library of branded content. In a crowded feed, professional video is what makes a business stop the scroll.",
   },
 
   // — Marketing —
   {
-    category: "Marketing",
+    id: "paid-ads-management",
+    categoryId: "marketing",
     q: "Do you manage Google and Facebook ads?",
     a: "Yes. We build and manage Google Ads and Meta (Facebook & Instagram) campaigns end to end — creative, conversion-focused landing pages, pixel tracking, and A/B testing. We tune until cost-per-lead drops, then scale only the campaigns that produce measurable results.",
   },
   {
-    category: "Marketing",
+    id: "marketing-measurement",
+    categoryId: "marketing",
     q: "How do you measure marketing results?",
     a: "We measure the metrics that matter to your business: leads, bookings, cost per lead, and revenue — not vanity numbers like impressions. With proper conversion tracking in place, you get monthly reports showing exactly what your marketing spend produced and where it can improve.",
   },
   {
-    category: "Marketing",
+    id: "seo-vs-paid-ads",
+    categoryId: "marketing",
     q: "What's the difference between SEO and paid ads?",
     a: "Paid ads buy immediate traffic that stops the moment you stop paying. SEO earns traffic that compounds and keeps working for free over time. The best strategy uses both: ads for fast results today, and SEO for durable, lower-cost growth tomorrow.",
   },
 
   // — Support —
   {
-    category: "Support",
+    id: "human-support",
+    categoryId: "support",
     q: "Will I be able to reach a real person for support?",
     a: "Yes. You work directly with our team — not a ticket queue or a call center. Clients on a monthly plan get priority support, and we actually answer the phone. Clear communication and real responsiveness are part of how we work, before and after launch.",
   },
   {
-    category: "Support",
+    id: "post-launch-support",
+    categoryId: "support",
     q: "What happens after my website launches?",
     a: "Launch is the beginning, not the end. We set up analytics, submit your site for indexing, and — on a monthly plan — keep it updated, secure, and improving. As your business grows, we evolve the site with it, so your digital asset keeps getting better over time.",
   },
 
   // — General —
   {
-    category: "General",
+    id: "government-contracting",
+    categoryId: "general",
     q: "Do you work with government agencies?",
     a: "Yes. Cozelos Data is a Woman-Owned Small Business (WOSB) with an active DUNS (059220399) and CAGE code (897W0), contracting under NAICS 541511, 541512, 541513, and 513210. We build Section 508 / WCAG 2.1 AA accessible sites and provide a capability statement on request.",
   },
   {
-    category: "General",
+    id: "service-area",
+    categoryId: "general",
     q: "Are you based in Utah? Do you work with clients in other states?",
     a: "We're headquartered in Vernal, Utah, and work with clients anywhere in the country. Most projects run smoothly online, with occasional on-site visits for video shoots or strategy sessions. Wherever you are, you get the same fast, custom, search-optimized digital asset.",
   },
 ];
 
-// Display order for the grouped /faq/ page.
-export const faqCategories = [
-  "Pricing",
-  "Timeline",
-  "Ownership",
-  "SEO",
-  "Hosting",
-  "Maintenance",
-  "AI",
-  "Video",
-  "Marketing",
-  "Support",
-  "General",
+/**
+ * The homepage FAQ teaser, selected explicitly.
+ *
+ * This used to be `faqs.slice(0, 5)`, which made the homepage selection an
+ * accident of array order: reordering the master list silently changed the
+ * homepage. The five below are a deliberate cross-section — cost, timeline,
+ * ownership, SEO, and hidden fees — and stay put until someone changes this
+ * list on purpose. Order here is the render order.
+ */
+export const homepageFaqIds = [
+  "website-cost",
+  "build-duration",
+  "website-ownership",
+  "google-ranking",
+  "hidden-fees",
 ] as const;
 
-export type TimelineEvent = { year: string; title: string; body: string };
+/**
+ * Identity integrity. These invariants are what the rest of the FAQ
+ * architecture is allowed to assume, so they fail the build rather than
+ * degrade quietly once localized FAQ content exists.
+ */
+{
+  const catIds = faqCategories.map((c) => c.id);
+  const faqIds = faqs.map((f) => f.id);
+  const dupes = (xs: string[]) => xs.filter((x, i) => xs.indexOf(x) !== i);
+  const unknownCat = faqs.filter((f) => !catIds.includes(f.categoryId)).map((f) => f.id);
+  const unknownHome = homepageFaqIds.filter((id) => !faqIds.includes(id));
+  const problems = [
+    dupes(catIds).length ? `duplicate category id(s): ${dupes(catIds).join(", ")}` : "",
+    dupes(faqIds).length ? `duplicate faq id(s): ${dupes(faqIds).join(", ")}` : "",
+    unknownCat.length ? `unknown categoryId on faq(s): ${unknownCat.join(", ")}` : "",
+    unknownHome.length ? `homepageFaqIds with no matching faq: ${unknownHome.join(", ")}` : "",
+  ].filter(Boolean);
+  if (problems.length) throw new Error(`FAQ identity: ${problems.join("; ")}`);
+}
 
-export const timeline: TimelineEvent[] = [
-  {
-    year: "Origin",
-    title: "Built in Vernal",
-    body: "Founded on a single conviction: too many great Utah businesses run on websites that don't match the quality of their work.",
-  },
-  {
-    year: "The Playbook",
-    title: "A repeatable system",
-    body: "We developed our own approach — pillar-and-spoke architecture, hand-written code, cinematic motion, structured data, and AI integration.",
-  },
-  {
-    year: "Growth",
-    title: "Across the Basin & beyond",
-    body: "Our work now powers tour operators, hotels, healthcare practices, storage facilities, pest control, luxury services, and genealogy researchers.",
-  },
-  {
-    year: "Today",
-    title: "Government-ready",
-    body: "Now a WOSB-eligible, credentialed agency ready to support federal, state, and local government work alongside our local business clients.",
-  },
-];
-
-export const values = [
-  {
-    n: "01",
-    title: "Custom over template",
-    body: "Templates make every business look the same. Custom design makes you look like you mean it.",
-  },
-  {
-    n: "02",
-    title: "Speed is a feature",
-    body: "If your site takes six seconds to load, half your traffic left before they saw it. We obsess over performance.",
-  },
-  {
-    n: "03",
-    title: "SEO from day one",
-    body: "We don't bolt on SEO at the end. Schema, sitemaps, llms.txt, and hub-and-spoke architecture are baked in.",
-  },
-  {
-    n: "04",
-    title: "You own everything",
-    body: "Your domain, your hosting, your code, your content. No proprietary lock-ins, no retainer hostage situations.",
-  },
-  {
-    n: "05",
-    title: "Honest pricing",
-    body: "A fixed quote in writing before we start, and plans that scale with you. No surprise invoices, no \u201cstarting from\u201d footnotes.",
-  },
-  {
-    n: "06",
-    title: "Clear communication",
-    body: "Every milestone documented, every decision logged, every change approved. No mysteries, no surprises.",
-  },
-];
+/* Historical note — not documentation for the export below.
+ * The company story timeline used to live here. It was single-consumer prose
+ * (Timeline.astro -> /company/ only), so it moved into the page content at
+ * src/i18n/content/<locale>/company.json where it can be translated. The
+ * `values` list that sat below it had no consumers at all and was removed.
+ */
 
 export const naicsTable = [
   { code: "513210", desc: "Software Publishers", primary: false },

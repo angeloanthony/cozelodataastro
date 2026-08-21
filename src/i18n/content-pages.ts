@@ -18,6 +18,11 @@ export interface ContentPage {
 
 export const CONTENT_PAGES: ContentPage[] = [
   { key: "why-cozelos-data", slug: "why-cozelos-data" },
+  { key: "contact", slug: "contact" },
+  { key: "our-approach", slug: "our-approach" },
+  { key: "ellen-cozelos", slug: "ellen-cozelos" },
+  { key: "pricing", slug: "pricing" },
+  { key: "company", slug: "company" },
 ];
 
 export const SLUG_BY_KEY: Record<string, string> = Object.fromEntries(

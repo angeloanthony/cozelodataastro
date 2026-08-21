@@ -1,0 +1,37 @@
+{
+  "services": {
+    "website-design": { "title": "Website Design & Development" },
+    "video-production": { "title": "Video Production" },
+    "online-marketing": { "title": "Online Marketing" },
+    "seo": { "title": "SEO Optimization" },
+    "business-automation": { "title": "Business Automation" },
+    "ongoing-support": { "title": "Ongoing Support & Maintenance" }
+  },
+  "business": {
+    "hours": "Mon–Fri · {opens} – {closes} {timezone}"
+  },
+  "footer": {
+    "brandHeadline": "We Build Digital Assets That Grow Businesses.",
+    "tagline": "Making Businesses Stronger. Making Life Better.",
+    "locality": "Vernal, Utah • Serving clients nationwide.",
+    "description": "We build digital assets that grow businesses — design, SEO, marketing, video, and automation, engineered to make businesses stronger and life better. Premium digital agency in Vernal, Utah.",
+    "review": "Leave a Review",
+    "about": "About",
+    "ellen": "Ellen Cozelos",
+    "why": "Why Cozelos Data",
+    "approach": "Our Approach",
+    "faq": "FAQ",
+    "government": "Government",
+    "payment": "Pay Invoice",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "sitemap": "Sitemap",
+    "copyright": "© {year} {brand}. All rights reserved."
+  },
+  "cta": {
+    "start": "Start Your Project",
+    "work": "See the Work",
+    "call": "Schedule a Call",
+    "callNote": "Or call us directly:"
+  }
+}
