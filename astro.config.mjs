@@ -11,13 +11,29 @@ export default defineConfig({
   site: SITE,
   // Static output — fastest possible delivery, ideal for Lighthouse 95+.
   output: "static",
+  // i18n routing. English is the master language and stays at the root
+  // (prefixDefaultLocale: false), so every existing URL is unchanged. Italian
+  // is served from /it/*. Localized routes are emitted only where a translation
+  // actually exists — see src/i18n/content.ts.
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "it"],
+    routing: { prefixDefaultLocale: false },
+  },
   integrations: [
     sitemap({
       // Friendly, predictable change cadence for a marketing site.
       changefreq: "weekly",
       priority: 0.8,
       lastmod: new Date(),
+      // hreflang alternates. @astrojs/sitemap only emits an alternate for a page
+      // that exists in the build, so a missing translation is never advertised.
+      i18n: {
+        defaultLocale: "en",
+        locales: { en: "en-US", it: "it-IT" },
+      },
       // Keep utility/legal pages out of the sitemap (they're also noindex).
+      // endsWith also covers their /it/ counterparts.
       filter: (page) =>
         !["/payment/", "/terms/", "/privacy/"].some((p) => page.endsWith(p)),
       // Weight the URLs Google should prioritize crawling.

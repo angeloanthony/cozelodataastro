@@ -4,6 +4,19 @@
  * entire site. Keeps pages declarative and makes the codebase easy to maintain.
  */
 
+// Social profile URLs, rendered as footer icon links.
+//
+// These are kept separate from the structured-data `sameAs` list below, because
+// the two have different bars: a footer icon is a navigation affordance, while a
+// `sameAs` entry is an entity-resolution claim. An unverified handle in `sameAs`
+// points search engines at nothing and weakens the entity, so only profiles
+// confirmed by hand belong there.
+const social = {
+  facebook: "https://www.facebook.com/cozelosdata",
+  instagram: "https://www.instagram.com/cozelosdata",
+  linkedin: "https://www.linkedin.com/company/cozelosdata",
+} as const;
+
 export const site = {
   name: "Cozelos Data",
   legalName: "Cozelos Data",
@@ -40,12 +53,18 @@ export const site = {
   },
   // Google Business Profile "write a review" deep link (from your GBP dashboard).
   googleReviewHref: "https://g.page/r/CSm0JDFiiZShEBM/review",
-  social: {
-    // Placeholder handles — update when live profiles are created.
-    facebook: "https://www.facebook.com/cozelosdata",
-    instagram: "https://www.instagram.com/cozelosdata",
-    linkedin: "https://www.linkedin.com/company/cozelosdata",
-  },
+  social,
+  /**
+   * Structured-data `sameAs` — manually verified profiles only.
+   *
+   * Verified 2026-08-12: LinkedIn resolves to a real page titled
+   * "Cozelos Data LLC". Facebook and Instagram both block automated checks
+   * (Facebook returns HTTP 400 to every request including known-good URLs;
+   * Instagram serves a generic logged-out interstitial), so neither could be
+   * confirmed. They stay out of `sameAs` until someone opens them in a browser
+   * — a 30-second check that would let them be added straight back.
+   */
+  sameAs: [social.linkedin],
 } as const;
 
 export type NavItem = { label: string; href: string };

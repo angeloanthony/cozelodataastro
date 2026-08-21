@@ -11,20 +11,11 @@ interface Props {
 const { limit } = Astro.props;
 const list = limit ? faqs.slice(0, limit) : faqs;
 
-// FAQPage structured data — emitted for exactly the questions rendered below,
-// so the schema always matches what's visible (Google's requirement). Lets
-// these Q&As qualify for FAQ rich results and feed AI Overview citations.
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: list.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-};
+// No FAQPage structured data is emitted here. /faq/ owns the single canonical
+// FAQPage entity covering all 25 questions; this component renders a five-item
+// teaser on the homepage. Emitting a second FAQPage for that subset created two
+// competing entities for the same content set, so the subset one was removed.
 ---
-<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} is:inline />
 <div class="mx-auto max-w-3xl divide-y divide-[var(--border)] overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)]">
   {list.map((f, i) => (
     <details class="group" data-delay={i * 40} name="faq">

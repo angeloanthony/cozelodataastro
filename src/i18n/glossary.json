@@ -1,0 +1,46 @@
+{
+  "__comment": "Playbook §6.9. String value = keep verbatim. Object value = pinned per-locale translation. Enforced twice: in the model prompt AND by a deterministic post-pass, so a controlled term can never drift.",
+
+  "__comment_compliance": "US federal contracting identifiers and program names are NEVER translated (playbook §2, domain 3). They are legal identifiers, not prose. There is no Italian regulator vocabulary for them — the authority is the US program itself, so the English term is the official term.",
+  "WOSB": "WOSB",
+  "Woman-Owned Small Business": "Woman-Owned Small Business",
+  "CAGE": "CAGE",
+  "CAGE Code": "CAGE Code",
+  "DUNS": "DUNS",
+  "UEI": "UEI",
+  "NAICS": "NAICS",
+  "SAM.gov": "SAM.gov",
+  "Section 508": "Section 508",
+  "WCAG 2.1 AA": "WCAG 2.1 AA",
+
+  "__comment_brand": "Brand, people and place names.",
+  "Cozelos Data": "Cozelos Data",
+  "Ellen Cozelos": "Ellen Cozelos",
+  "Vernal": "Vernal",
+  "Uintah Basin": "Uintah Basin",
+  "Utah": "Utah",
+  "Making Businesses Stronger. Making Life Better.": "Making Businesses Stronger. Making Life Better.",
+
+  "__comment_products": "Product and tier names are SKUs, not prose.",
+  "Essential Presence": "Essential Presence",
+  "Professional Growth": "Professional Growth",
+  "Market Leader": "Market Leader",
+  "Discovery Session": "Discovery Session",
+
+  "__comment_technical": "Technical terms with an established English form in Italian industry usage.",
+  "SEO": "SEO",
+  "JSON-LD": "JSON-LD",
+  "llms.txt": "llms.txt",
+  "Core Web Vitals": "Core Web Vitals",
+  "Google Business Profile": "Google Business Profile",
+  "Lighthouse": "Lighthouse",
+
+  "__comment_pinned": "Pinned translations — the positioning vocabulary must be consistent across every page.",
+  "digital asset": { "it": "asset digitale" },
+  "digital assets": { "it": "asset digitali" },
+  "growth platform": { "it": "piattaforma di crescita" },
+  "custom website": { "it": "sito web su misura" },
+  "template": { "it": "template" },
+  "lead": { "it": "lead" },
+  "leads": { "it": "lead" }
+}

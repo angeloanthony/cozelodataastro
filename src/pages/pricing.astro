@@ -6,6 +6,7 @@ import CTASection from "../components/CTASection.astro";
 import Guarantees from "../components/Guarantees.astro";
 import Icon from "../components/Icon.astro";
 import Button from "../components/Button.astro";
+import { site } from "../data/site";
 
 const breadcrumbs = [
   { name: "Home", href: "/" },
@@ -139,12 +140,77 @@ const plans = [
     highlight: false,
   },
 ];
+
+// --- Offer / PriceSpecification structured data ----------------------------
+// Derived from the `tiers` and `plans` arrays above rather than restated, so the
+// schema cannot drift from the prices rendered on the page. Published prices are
+// floors, not fixed quotes ("Starting at $2,500"), so they are emitted as
+// `minPrice`. Where the page gives no single figure — Enterprise
+// "$10,000–$30,000+", Full Marketing "$1,500+" — the floor is published and no
+// number is invented.
+
+/** Every dollar figure in a string, largest-first order preserved. */
+const dollars = (s: string) =>
+  [...s.matchAll(/\$([\d,]+)/g)].map((m) => Number(m[1].replace(/,/g, "")));
+
+/**
+ * Build a PriceSpecification from what the page actually displays.
+ * Returns null when no figure is shown, so nothing is fabricated.
+ */
+function priceSpec(display: string, context = "", recurring = false) {
+  const found = dollars(`${context} ${display}`);
+  if (!found.length) return null;
+  // A floor rather than a fixed price when the copy says so, carries a "+",
+  // or gives a range.
+  const isFloor =
+    /starting at|from/i.test(context) || /\+/.test(`${context}${display}`) || found.length > 1;
+  const base = {
+    "@type": recurring ? "UnitPriceSpecification" : "PriceSpecification",
+    priceCurrency: "USD",
+    ...(isFloor ? { minPrice: found[0] } : { price: found[0] }),
+    ...(recurring && {
+      referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+    }),
+  };
+  return base;
+}
+
+const orgRef = { "@id": `${site.url}/#organization` };
+
+const offerSchema = {
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": `${site.url}/pricing/#offers`,
+  name: "Website projects and monthly growth plans",
+  url: `${site.url}/pricing/`,
+  provider: orgRef,
+  itemListElement: [
+    ...tiers.map((t) => ({
+      "@type": "Offer",
+      name: t.name,
+      description: t.summary,
+      category: "Website design and development",
+      seller: orgRef,
+      ...(priceSpec(t.price, t.prefix) && { priceSpecification: priceSpec(t.price, t.prefix) }),
+    })),
+    ...plans.map((p) => ({
+      "@type": "Offer",
+      name: p.name,
+      description: p.summary,
+      category: "Website maintenance and marketing plan",
+      seller: orgRef,
+      ...(priceSpec(p.price, "", true) && { priceSpecification: priceSpec(p.price, "", true) }),
+    })),
+  ],
+};
 ---
 <BaseLayout
   title="Investment & Pricing — Web Design Growth Plans, Vernal UT"
-  description="Transparent, investment-grade pricing from Cozelos Data. Custom website projects from $2,500 and monthly growth plans from $295 — built to generate leads, authority, and lasting ROI."
+  description="Investment-grade pricing from Cozelos Data. Custom website projects from $2,500 and monthly growth plans from $295 — built to generate leads and lasting ROI."
   breadcrumbs={breadcrumbs}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(offerSchema)} is:inline />
+
   <PageHero
     eyebrow="Investment"
     title="An investment in growth — priced for return."
@@ -163,7 +229,9 @@ const plans = [
         A bargain template that loads slowly, ranks nowhere, and converts no one
         isn't cheap — it's a recurring loss. A well-built growth platform is the
         opposite: it pays for itself in new business, then keeps earning for
-        years. Below is what that investment looks like.
+        years — which is
+        <a href="/why-cozelos-data/" class="font-semibold text-[var(--color-brand)] link-underline">why we build an asset rather than a website</a>.
+        Below is what that investment looks like.
       </p>
     </div>
   </Section>

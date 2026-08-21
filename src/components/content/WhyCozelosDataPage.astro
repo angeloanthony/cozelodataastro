@@ -1,0 +1,130 @@
+---
+/**
+ * WhyCozelosDataPage — THE template for /why-cozelos-data/ (playbook §6.5).
+ *
+ * One shared component implements the page; the master route (/why-cozelos-data/)
+ * and the dynamic localized route (/it/why-cozelos-data/) both render it. All
+ * copy comes from src/i18n/content/<locale>/why-cozelos-data.json — this file is
+ * presentation only.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../PageHero.astro";
+import Section from "../Section.astro";
+import CTASection from "../CTASection.astro";
+import Icon from "../Icon.astro";
+import Button from "../Button.astro";
+import { getLangFromUrl } from "../../data/i18n";
+import { getPageContent, localizeHref } from "../../i18n/content";
+
+const lang = getLangFromUrl(Astro.url);
+const c = getPageContent<any>("why-cozelos-data", lang);
+
+const breadcrumbs = [
+  { name: "Home", href: localizeHref("/", lang) },
+  { name: c.breadcrumb, href: localizeHref("/why-cozelos-data/", lang) },
+];
+---
+<BaseLayout
+  title={c.meta.title}
+  description={c.meta.description}
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow={c.hero.eyebrow}
+    title={c.hero.title}
+    lead={c.hero.lead}
+    summary={c.hero.summary}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <!-- The core argument: cost vs. asset -->
+  <Section
+    eyebrow={c.difference.eyebrow}
+    title={c.difference.title}
+    lead={c.difference.lead}
+  >
+    <div class="reveal grid gap-px overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--border)] md:grid-cols-2">
+      <!-- Commodity -->
+      <div class="bg-[var(--surface-2)] p-8 sm:p-10">
+        <h3 class="font-display text-lg font-bold tracking-tight text-[var(--text-muted)]">{c.difference.commodityHeading}</h3>
+        <ul class="mt-6 space-y-4">
+          {c.contrast.map((row: any) => (
+            <li class="flex items-start gap-3 text-sm leading-relaxed text-[var(--text-muted)]">
+              <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-[var(--surface-3)] text-[var(--text-subtle)]"><Icon name="close" size={12} /></span>
+              {row.commodity}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <!-- Asset -->
+      <div class="relative bg-[var(--surface-2)] p-8 sm:p-10">
+        <span class="pointer-events-none absolute inset-0 bg-[var(--color-brand)]/[0.05]" aria-hidden="true"></span>
+        <h3 class="relative font-display text-lg font-bold tracking-tight">{c.difference.assetHeading}</h3>
+        <ul class="relative mt-6 space-y-4">
+          {c.contrast.map((row: any) => (
+            <li class="flex items-start gap-3 text-sm font-medium leading-relaxed text-[var(--text)]">
+              <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-[var(--color-brand)]/15 text-[var(--color-brand)]"><Icon name="check" size={13} /></span>
+              {row.asset}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <!-- The six reasons -->
+  <Section
+    eyebrow={c.reasons.eyebrow}
+    title={c.reasons.title}
+    lead={c.reasons.lead}
+  >
+    <div class="space-y-6">
+      {c.pillars.map((p: any, i: number) => (
+        <div
+          data-delay={(i % 2) * 80}
+          class="reveal grid items-center gap-8 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-10 lg:grid-cols-12"
+        >
+          <!-- Narrative -->
+          <div class:list={["lg:col-span-8", i % 2 === 1 && "lg:order-last"]}>
+            <div class="flex items-center gap-4">
+              <span class="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]">
+                <Icon name={p.icon} size={26} />
+              </span>
+              <span class="font-mono text-sm font-semibold text-[var(--text-subtle)]">{p.n}</span>
+            </div>
+            <h3 class="mt-5 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{p.title}</h3>
+            <p class="mt-3 font-display text-lg font-semibold text-[var(--text)]">{p.lead}</p>
+            <p class="mt-3 leading-relaxed text-[var(--text-muted)]">{p.body}</p>
+          </div>
+          <!-- Proof callout -->
+          <div class="lg:col-span-4">
+            <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-7 text-center">
+              <p class="font-display text-3xl font-extrabold leading-none text-gradient sm:text-4xl">{p.stat}</p>
+              <p class="mt-3 text-sm leading-relaxed text-[var(--text-muted)]">{p.statLabel}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <!-- The bottom line -->
+  <Section class="!pt-4">
+    <div class="reveal mx-auto max-w-3xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-10 text-center sm:p-14">
+      <h2 class="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{c.bottomLine.heading}</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">{c.bottomLine.para1}</p>
+      <p class="mx-auto mt-4 max-w-2xl leading-relaxed text-[var(--text-muted)]" set:html={c.bottomLine.para2Html} />
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <Button href={localizeHref("/contact/", lang)} size="lg" magnetic icon="arrow">{c.bottomLine.ctaPrimary}</Button>
+        <Button href={localizeHref("/portfolio/", lang)} size="lg" variant="secondary">{c.bottomLine.ctaSecondary}</Button>
+      </div>
+    </div>
+  </Section>
+
+  <CTASection
+    title={c.cta.title}
+    body={c.cta.body}
+    primaryLabel={c.cta.primaryLabel}
+    secondaryLabel={c.cta.secondaryLabel}
+  />
+</BaseLayout>

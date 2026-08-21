@@ -6,7 +6,8 @@
       "Bash(grep -o \".\\\\{60\\\\}googletagmanager.\\\\{80\\\\}\\\\|.\\\\{40\\\\}gtag\\(.\\\\{60\\\\}\\\\|G-[A-Z0-9]\\\\{6,\\\\}\" dist/index.html)",
       "Bash(mkdir -p /c/Users/deluc/AppData/Local/Temp/claude/c--Users-deluc-Documents-cozelodataastro/40fb9688-0bf8-41cc-b1e6-c1745b7c395b/scratchpad/baseline)",
       "Bash(cp dist/sitemap-0.xml /c/Users/deluc/AppData/Local/Temp/claude/c--Users-deluc-Documents-cozelodataastro/40fb9688-0bf8-41cc-b1e6-c1745b7c395b/scratchpad/baseline/sitemap-0.before.xml)",
-      "Bash(cp dist/sitemap-index.xml /c/Users/deluc/AppData/Local/Temp/claude/c--Users-deluc-Documents-cozelodataastro/40fb9688-0bf8-41cc-b1e6-c1745b7c395b/scratchpad/baseline/sitemap-index.before.xml)"
+      "Bash(cp dist/sitemap-index.xml /c/Users/deluc/AppData/Local/Temp/claude/c--Users-deluc-Documents-cozelodataastro/40fb9688-0bf8-41cc-b1e6-c1745b7c395b/scratchpad/baseline/sitemap-index.before.xml)",
+      "Bash(grep -o 'Starting at\\\\|\\\\$[0-9,]\\\\+[+]\\\\?\\\\|\\\\$10,000–\\\\$30,000+' dist/pricing/index.html)"
     ]
   }
 }

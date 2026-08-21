@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Perché Cozelos Data — Un asset digitale, non solo un sito web",
+    "description": "Perché le aziende scelgono Cozelos Data: strategia prima di tutto, proprietà totale, velocità estrema e ROI misurabile — un partner a lungo termine."
+  },
+  "breadcrumb": "Perché Cozelos Data",
+  "hero": {
+    "eyebrow": "Perché Cozelos Data",
+    "title": "Le agenzie ti vendono un sito web. Noi ti consegniamo un asset.",
+    "lead": "Un sito web è una spesa una tantum. Un asset digitale è un investimento che si moltiplica — genera lead, autorevolezza e fatturato per anni. Ecco perché le aziende ambiziose in Utah e altrove scelgono noi per costruirlo.",
+    "summary": "Le aziende scelgono Cozelos Data perché partiamo dalla strategia, diamo ai clienti la piena proprietà di dominio, codice e contenuti, costruiamo siti scritti a mano che si caricano in meno di un secondo, li rendiamo sicuri, progettiamo ogni pagina per un ROI misurabile e restiamo come partner a lungo termine che migliora il sito trimestre dopo trimestre."
+  },
+  "difference": {
+    "eyebrow": "La differenza",
+    "title": "Un sito web è un costo. Un asset digitale è un vantaggio.",
+    "lead": "Il mercato è pieno di chi vende siti web. Quasi nessuno costruisce asset digitali — la presenza online che continua a generare valore per anni. Questa distinzione è tutto.",
+    "commodityHeading": "Un sito web qualunque",
+    "assetHeading": "Un asset digitale Cozelos Data"
+  },
+  "contrast": [
+    { "commodity": "Sembra un template che chiunque potrebbe comprare", "asset": "Su misura e cinematografico — inconfondibilmente tuo" },
+    { "commodity": "Lento, appesantito e pieno di plugin", "asset": "Scritto a mano, sotto il secondo e sicuro" },
+    { "commodity": "Lo affitti — hosting e builder bloccati", "asset": "Possiedi dominio, codice e contenuti" },
+    { "commodity": "SEO aggiunta alla fine, quando va bene", "asset": "SEO e ricerca AI progettate dal primo giorno" },
+    { "commodity": "Costruito una volta e poi abbandonato", "asset": "Mantenuto e migliorato ogni trimestre" },
+    { "commodity": "Misurato in “like” e visualizzazioni", "asset": "Misurato in lead e fatturato" }
+  ],
+  "reasons": {
+    "eyebrow": "Sei motivi",
+    "title": "Cosa ottieni davvero lavorando con noi.",
+    "lead": "Non funzionalità fine a se stesse — sei vantaggi che si vedono direttamente nel tuo posizionamento, nella tua reputazione e nel tuo fatturato."
+  },
+  "pillars": [
+    {
+      "n": "01",
+      "icon": "target",
+      "title": "La strategia prima della grafica",
+      "lead": "Non partiamo da un design. Partiamo dalla tua attività.",
+      "body": "Chiunque può rendere gradevole una pagina. La parte difficile — quella di valore — è progettarla per produrre un risultato preciso: più chiamate, più prenotazioni, più lead qualificati. Prima di disegnare una sola schermata, mappiamo i tuoi clienti, i tuoi concorrenti e il percorso esatto che porta da sconosciuto a cliente pagante. Ogni decisione successiva serve a quell’obiettivo.",
+      "stat": "Prima il risultato",
+      "statLabel": "Ogni progetto inizia dalla strategia, mai da un template."
+    },
+    {
+      "n": "02",
+      "icon": "lock",
+      "title": "Possiedi tutto",
+      "lead": "Il tuo dominio. Il tuo codice. I tuoi contenuti. Senza eccezioni.",
+      "body": "La maggior parte delle agenzie ti intrappola in silenzio — builder proprietari, hosting bloccato, contenuti che non puoi esportare e una fattura mensile da cui non esci più. Noi facciamo il contrario. Possiedi il dominio, il codice sorgente, l’account di hosting e ogni parola dei contenuti. Se un giorno decidi di andartene, ti consegniamo tutto — senza drammi e senza riscatti. Gli asset veri si possiedono, non si affittano.",
+      "stat": "100%",
+      "statLabel": "Proprietà di dominio, codice e contenuti."
+    },
+    {
+      "n": "03",
+      "icon": "bolt",
+      "title": "Progettato per la velocità",
+      "lead": "Caricamento sotto il secondo, costruito a mano.",
+      "body": "Metà dei tuoi visitatori se ne va se una pagina impiega più di tre secondi a caricarsi — e se ne va prima ancora di vedere cosa offri. Costruiamo siti leggeri, scritti a mano, che si disegnano in meno di un secondo su uno smartphone e su reti reali. La velocità non è una metrica di vanità: è posizionamento migliore su Google, costi pubblicitari più bassi e molti più clienti che restano.",
+      "stat": "<1s",
+      "statLabel": "Primo rendering sui siti che costruiamo."
+    },
+    {
+      "n": "04",
+      "icon": "shield",
+      "title": "Sicuro per progettazione",
+      "lead": "Una superficie d’attacco più piccola significa meno cose da rompere e da sfruttare.",
+      "body": "I siti appesantiti e messi insieme con decine di plugin di terze parti sono un invito aperto agli hacker e un continuo grattacapo di manutenzione. I nostri progetti nascono come pagine statiche, veloci e blindate, con quasi nulla da sfruttare — nessun pannello di amministrazione sterminato, nessuna accozzaglia di plugin, nessuna corsa a tappare la prossima vulnerabilità. Il tuo sito resta online, resta sicuro e resta tuo.",
+      "stat": "Blindato",
+      "statLabel": "Architettura statica con una superficie d’attacco minima."
+    },
+    {
+      "n": "05",
+      "icon": "award",
+      "title": "Costruito per il ROI",
+      "lead": "Una piattaforma di crescita deve ripagarsi da sola — e poi continuare a rendere.",
+      "body": "Misuriamo il successo come lo misuri tu: in lead, prenotazioni e fatturato — non in visualizzazioni o vago “engagement”. Un sito che porta una manciata di nuovi clienti al mese si ripaga in poche settimane e rende per anni. Ogni pagina è progettata attorno alla conversione e rendicontiamo i numeri che fanno davvero avanzare la tua attività.",
+      "stat": "Si moltiplica",
+      "statLabel": "Rendimenti che crescono ben oltre il giorno del lancio."
+    },
+    {
+      "n": "06",
+      "icon": "chat",
+      "title": "Una partnership a lungo termine",
+      "lead": "Non costruiamo e spariamo. Restiamo coinvolti.",
+      "body": "Dopo il lancio manteniamo il tuo asset veloce, sicuro e in crescita — monitorando l’uptime, aggiornando i contenuti e migliorando la SEO trimestre dopo trimestre. Quando la tua attività cresce, la tua presenza digitale cresce con lei. Ottieni un partner che ci mette la faccia e ha un interesse nei tuoi risultati, non un fornitore che sparisce appena incassa la fattura.",
+      "stat": "Trimestre dopo trimestre",
+      "statLabel": "Il tuo sito diventa più veloce e si posiziona meglio — non il contrario."
+    }
+  ],
+  "bottomLine": {
+    "heading": "In conclusione",
+    "para1": "Un sito web puoi comprarlo quasi ovunque. Quello che non puoi comprare a poco è una piattaforma di crescita guidata dalla strategia, di tua proprietà, velocissima e sicura, con un team che resta coinvolto nella sua crescita. È questo che costruiamo — ed è il motivo per cui i nostri clienti smettono di considerare il proprio sito una spesa e iniziano a trattarlo come uno dei loro asset più preziosi.",
+    "para2Html": "Il lavoro vero e proprio si articola in <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">sei servizi collegati</a>, quanto costa costruire e far crescere un asset come questo è indicato nella <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">pagina investimento</a>, e il background enterprise da cui nascono questi standard è nella <a href=\"/company/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">storia dell’azienda e della fondatrice</a>.",
+    "ctaPrimary": "Inizia il tuo progetto",
+    "ctaSecondary": "Guarda i lavori"
+  },
+  "cta": {
+    "title": "Costruiamo le tue fondamenta digitali.",
+    "body": "Raccontaci della tua attività. Ti mostreremo esattamente cosa costruiremmo — e la crescita che è progettato per generare.",
+    "primaryLabel": "Inizia il tuo progetto",
+    "secondaryLabel": "Guarda i lavori"
+  }
+}

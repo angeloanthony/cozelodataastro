@@ -1,0 +1,40 @@
+---
+/**
+ * LanguageSwitcher — existence-aware (playbook §6.3, principle 5).
+ * Only offers a locale that actually has this page, so it can never link to a
+ * 404. The entry for the current language points at the master URL, which is
+ * correct behaviour, not a leak (playbook §10).
+ */
+import { LOCALES, getLangFromUrl, t } from "../data/i18n";
+import { getAvailableLocales, localePageHref } from "../i18n/content";
+import { KEY_BY_SLUG } from "../i18n/content-pages";
+
+const lang = getLangFromUrl(Astro.url);
+const segs = Astro.url.pathname.split("/").filter(Boolean);
+if (segs[0] && LOCALES.some((l) => l.code === segs[0] && l.code !== "en")) segs.shift();
+const slug = segs.join("/");
+const key = KEY_BY_SLUG[slug];
+const available = key ? getAvailableLocales(key) : ["en"];
+---
+{available.length > 1 && (
+  <nav aria-label={t("lang.label", lang)} class="flex items-center gap-1.5">
+    {available.map((code) => {
+      const meta = LOCALES.find((l) => l.code === code)!;
+      const current = code === lang;
+      return (
+        <a
+          href={localePageHref(slug, code)}
+          hreflang={code}
+          lang={code}
+          aria-current={current ? "true" : undefined}
+          class:list={[
+            "rounded-full px-2.5 py-1 font-mono text-xs font-bold uppercase tracking-wider transition-colors",
+            current
+              ? "bg-[var(--color-brand)] text-white"
+              : "text-[var(--text-subtle)] hover:text-[var(--color-brand)]",
+          ]}
+        >{meta.flag}</a>
+      );
+    })}
+  </nav>
+)}

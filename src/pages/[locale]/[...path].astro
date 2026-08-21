@@ -1,0 +1,28 @@
+---
+/**
+ * Dynamic localized route (playbook §6.4). One route renders every translated
+ * page in every non-master locale, driven entirely by which JSON files exist.
+ */
+import { getLocalizedContent } from "../../i18n/content";
+import { SLUG_BY_KEY } from "../../i18n/content-pages";
+import WhyCozelosDataPage from "../../components/content/WhyCozelosDataPage.astro";
+
+const COMPONENTS: Record<string, any> = {
+  "why-cozelos-data": WhyCozelosDataPage,
+};
+
+export function getStaticPaths() {
+  // DATA ONLY. getStaticPaths is extracted into an isolated prerender chunk that
+  // cannot see the .astro component imports above — referencing COMPONENTS here
+  // throws "COMPONENTS is not defined" (playbook §6.3 / §12).
+  return getLocalizedContent()
+    .filter(({ page }) => page in SLUG_BY_KEY)
+    .map(({ locale, page }) => ({
+      params: { locale, path: SLUG_BY_KEY[page] || undefined },
+      props: { contentKey: page },
+    }));
+}
+
+const Page = COMPONENTS[Astro.props.contentKey];
+---
+<Page />
