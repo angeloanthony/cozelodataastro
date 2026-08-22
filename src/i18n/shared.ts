@@ -12,10 +12,19 @@
  * on /services/.
  *
  * src/data/site.ts keeps owning service STRUCTURE — order, slug, icon, imagery,
- * body copy, the relationships between them. This module owns only the
- * localized LABEL, joined on the slug, which is the stable identifier site.ts
+ * the relationships between them. This module owns the localized LABEL and
+ * one-line teaser, joined on the slug, which is the stable identifier site.ts
  * already exports and already uses for /services/#<slug> anchors. Nothing is
  * matched by array index or by the English string.
+ *
+ * `short` joined Step 24 (Services page localization) for the same reason as
+ * `title`: it renders in more than one place — the homepage's ServicesGrid
+ * card AND the Service JSON-LD `description` field on /services/ — so
+ * translating it per-page would let the copies drift. The full per-service
+ * body copy (problem/why/results/value/benefits/process/deliverables/cta) is
+ * single-consumer (only /services/ renders it) and lives in
+ * src/i18n/content/<locale>/services.json instead, exactly like Step 21 moved
+ * FAQ q/a there.
  *
  * shared.json is deliberately NOT registered in content-pages.ts: it is content
  * without a URL. The localized route filters on SLUG_BY_KEY, so it can never
@@ -26,7 +35,7 @@ import { services as SERVICE_STRUCTURE, type Service } from "../data/site";
 import { getPageContent } from "./content";
 
 export interface SharedContent {
-  services: Record<string, { title: string }>;
+  services: Record<string, { title: string; short: string }>;
   /**
    * Presentation of shared business data. The values themselves live in
    * src/data/site.ts and are interpolated in — a translator frames them,
@@ -85,5 +94,6 @@ export function getServices(locale: string): Service[] {
   return SERVICE_STRUCTURE.map((s) => ({
     ...s,
     title: shared.services?.[s.slug]?.title ?? s.title,
+    short: shared.services?.[s.slug]?.short ?? s.short,
   }));
 }

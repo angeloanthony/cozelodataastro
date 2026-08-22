@@ -25,6 +25,30 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "0433276acb2c15160574529c718845fe6cd10db4ceced7f1947a3051622f4e00": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Creative & landing page build",
+      "target": "Creazione di creatività e landing page",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "045f6a60c203c2a3ff66446761bd1d1bbbc059ab9a46257c36383abd1b4978ea": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Sub-second load times",
+      "target": "Tempi di caricamento sotto il secondo",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "04954c34d17ed5044e3961527019a3ae4beb60de89581bc502bc0092eec6ee5b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "AI assistant setup",
+      "target": "Configurazione dell'assistente AI",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "04d5392d2b820992b2dd1f5a0fa221729c11fa3b96255d5f5833c5d49c687952": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -97,6 +121,22 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.697Z"
     },
+    "06d111e3af15efd54119a145158a249d85797d3b995fbb900864b809cd163de7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Document & invoice automation",
+      "target": "Automazione di documenti e fatture",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "06f9be75bcc75c1bbcb0048ce44cd78295917bade0f773c552b70865a2767d75": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The benefit",
+      "target": "Il beneficio",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "071914dc708ea958cd940ebb7e5ae8fa101f215fb9944fb2d9063ee42047d299": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -136,6 +176,14 @@
       "target": "AI",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "08b1337db5c46c5074fa5daf0fe40d1ddc3b400c52841429e88f382bcaef1cfe": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our process",
+      "target": "Il nostro processo",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "08d455842d5a06070b3132e924333e7547e4736a953b175f8ff2bf45ecdeb23c": {
       "model": "claude-opus-5",
@@ -217,6 +265,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:57:00.751Z"
     },
+    "0d7de20d1cffb1faecee788965d57e320fd27610041b91a6390c97471efdeb41": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Paid traffic and social content that actually converts.",
+      "target": "Traffico a pagamento e contenuti social che convertono davvero.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.581Z"
+    },
     "0d8196908c9dc0b6c852d82854019502750e1eed0095fb86d7dfc6b071057c03": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -241,6 +297,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "0e252c3865648e169c73e3a19b2fd34ed2a163243b68778346841189d1d5a69a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Uptime monitoring",
+      "target": "Monitoraggio dell'uptime",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "0f0924519b06ad850d1159c8690cd3b7feae7b036d312025deeabb52acb49643": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -256,6 +320,14 @@
       "target": "Hosting, SSL e monitoraggio dell’uptime",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "1091d1793202269e574b1e128067ab8d9a7c20fd61b875eca13e861975cfea95": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Explore Automation",
+      "target": "Scopri l'automazione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "11176f21e06bc4a253eb853fa1bca3b12405a03b08751716f9fc2d28a7fe9f91": {
       "model": "claude-opus-5",
@@ -337,6 +409,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "1501578d1e7d3a60040526d4f60a8a6538ac2c271a5cb66f367881a284f02ca0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Campaign creative",
+      "target": "Creatività della campagna",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "155219d1d91739c7ff71eb5f3bc32d1eba2e5d15a092bf46988cec1f889d4b83": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -368,6 +448,14 @@
       "target": "A partire da",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "17c24f945e5a68cf0399ca8e6528c8846da3e40d0a834ba2c6149c3480f47deb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Conversion landing page",
+      "target": "Landing page di conversione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "17d839268278632050bd23fbce301776c774f80dd5614c2ab55c6dda8bb4eede": {
       "model": "claude-opus-5",
@@ -489,6 +577,14 @@
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
     },
+    "1caf984954da91753e681d49f011a5ad1cb0ca7f9428d9e8e24a5b73d501b8de": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Get a Video Quote",
+      "target": "Richiedi un preventivo video",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "1d199c719916676a0f68602e407bc0206237500bee50b4b08a478c1e42eca21b": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -505,6 +601,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
     },
+    "1db1ac5657f446d006874c41bd4f3aea57cec44f345ee4e43aedceabbcf2cbdf": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We build the full funnel: Google Ads and Meta (Facebook & Instagram) campaigns, conversion-focused landing pages, pixel tracking, and relentless A/B testing — then scale only the campaigns that actually produce leads.",
+      "target": "Costruiamo l'intero funnel: campagne Google Ads e Meta (Facebook e Instagram), landing page orientate alla conversione, tracciamento con pixel e A/B testing incessante — poi scaliamo solo le campagne che producono davvero lead.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "1db649c853d470e8fee866ffdae316b0726d07ce2d40b51bd046b26e42392b71": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -520,6 +624,14 @@
       "target": "La prima conversazione non è una proposta commerciale — serve a capire la tua attività, i tuoi obiettivi e che cosa significa davvero successo per te. Dicci dove vuoi arrivare e ti mostreremo come ti aiuteremmo ad arrivarci.",
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
+    },
+    "1e57d00207fb66ab7b790b8407f966ca55f60f0c8fd1917a01f9cb73bab4d265": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hosting, domain, and launch support included",
+      "target": "Hosting, dominio e supporto al lancio inclusi",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "1ea241c5e5dcddf20f42c30b32c99b41d7d15f8894b395cc08c183769249c0d4": {
       "model": "claude-opus-5",
@@ -544,6 +656,14 @@
       "target": "Analisi della concorrenza",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "1f55022b8c1e25e0800f8fc507f90934476345d54fad165890cb9bca5fa41f8e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "AI chat & lead capture",
+      "target": "Chat AI e acquisizione lead",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "20604d74c5bec70ed3d6f50a55bf346e5b4cec9f19d49ddbe5223b9bb55cfc5f": {
       "model": "claude-opus-5",
@@ -585,6 +705,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "218ef7df6f1270f6d8b784e40b91820a90120e0b21d8714d87782c45a2e64e00": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What We Do",
+      "target": "Cosa facciamo",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "2239406a50b376ccc87ce041e89a33be1f52a4722bc7c52fe436244e506febf7": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -617,6 +745,14 @@
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
     },
+    "252330d6e8775369477dc118776d645ef79673c4dcf02cbfa2ed14f73aeff5df": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Tool & data audit",
+      "target": "Audit di strumenti e dati",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "252ced13c2a471e4ca3a8c8c166adc978832e58f3e2360abc50be72882b35ad8": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -648,6 +784,22 @@
       "target": "Categorie delle FAQ",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "271a76f1030dfa0a5878367e2411e8758c1eba24e96ced620871569224f3ba5c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Conversion-optimized copy and layout",
+      "target": "Testi e layout ottimizzati per la conversione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "27c5be84b8c8e8e8198db169b1ad05964ed9d2c308df8c5bfae182ce069cb7b9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Monthly reporting",
+      "target": "Reportistica mensile",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "27fdf0c7088d0aef8ab5cde7bd3218081584c29893f19e96bc0b0f88358c71af": {
       "model": "claude-opus-5",
@@ -705,6 +857,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
     },
+    "29b131947e06ef60d51661dd49b2b97280e857701b678a0713485b462b35ead3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Launch & analytics setup",
+      "target": "Lancio e configurazione dell'analytics",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "29c608698f3c214c8f264a927e4bb2ed08b36591d2af5ec2c2437ed63b565b88": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -720,6 +880,14 @@
       "target": "Mobile-first, caricamento sotto il secondo",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "2c4266bf09a7bec2ffd418e052d0f2b0e08f9967b78f774b9819e590946d02f3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Handoff & support",
+      "target": "Consegna e supporto",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "2c94758503c13dfc80e6ae87bfe043f44f1dddb56899845208818ca424db1633": {
       "model": "claude-opus-5",
@@ -751,7 +919,23 @@
       "source": "Maintenance",
       "target": "Maintenance",
       "origin": "committed",
-      "at": "2026-08-22T14:27:43.283Z"
+      "at": "2026-08-22T17:38:48.577Z"
+    },
+    "2f90c5bb0609c211d80e4b0a9b0906dde6c7c3eb9acebd946750bd95fde9170a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Keyword & topic mapping",
+      "target": "Mappatura di keyword e argomenti",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "30742f1f02ea34ad53fdbe73735502d9ede1e64bb898b5a89a2c723e5965eee7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Review & content polish",
+      "target": "Revisione e rifinitura dei contenuti",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "309737a0dd23e802e2b5d2adc3879eadc5541006b8544a7100ae101555dc16dc": {
       "model": "claude-opus-5",
@@ -864,6 +1048,22 @@
       "target": "Onesti e trasparenti",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "3638f3367a764a713af606986d72be2a6583170d7b1de6612565753406b0ae60": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "More qualified leads, higher conversion rates, and a professional online presence that finally reflects the quality of your work — so the businesses that find you take you seriously.",
+      "target": "Più lead qualificati, tassi di conversione più alti e una presenza online professionale che finalmente rispecchia la qualità del tuo lavoro — così le aziende che ti trovano ti prendono sul serio.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "36957f8ab553f311a235c134eabe6acbf0833cf8e3dd03f874ba58feb5e4fa8e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Starting at {websiteStartingPrice}",
+      "target": "A partire da {websiteStartingPrice}",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "372b305afd8e790ab8f0c8115827c872512b34dccfc4add819e49f18dadc15a3": {
       "model": "claude-opus-5",
@@ -1001,6 +1201,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "3b76e9f2bccf5fca9b835af908101f36799fe974ecca38784a3a9dfd6f90e994": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Mobile-first, responsive on every screen",
+      "target": "Mobile-first, responsive su ogni schermo",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "3b90b54da551db0042b6e28882118ffed6bc59272c453f292b14e2ec5c7a8ff6": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1008,6 +1216,14 @@
       "target": "Attenzione, coinvolgimento e traffico sono soltanto punti di partenza. Da soli non pagano le fatture. La fase finale — e più importante — è la strategia: orientare tutto verso un risultato di business. Più chiamate. Più prenotazioni. Più lead qualificati. Più fatturato.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "3bbb279d09440aed2641e60dd4ed84a3c8dec9dcd8a21e179e5ba432d02a1f9a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Your website is your hardest-working employee — the first impression, the sales pitch, and the storefront all at once. A slow, generic template quietly turns away the customers you paid to attract, costing you leads you never even knew you had.",
+      "target": "Il tuo sito web è il tuo dipendente più instancabile — la prima impressione, l'argomento di vendita e la vetrina, tutto insieme. Un template lento e generico allontana silenziosamente i clienti che hai pagato per attirare, facendoti perdere lead che non hai mai nemmeno saputo di avere.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "3bcaa0070e5d3c8b816a735ebdb53b2a99817dfffadc4d2efb0318adf92c5731": {
       "model": "claude-opus-5",
@@ -1024,6 +1240,14 @@
       "target": "Cozelos Data è stata fondata da <strong class=\"text-[var(--text)]\">Ellen Cozelos</strong> — affermata ingegnere del software, specialista di cybersecurity, professionista del marketing digitale ed esperta di AI, con oltre 20 anni di tecnologia innovativa realizzata per il settore pubblico, aerospaziale e commerciale.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "3bfb96a205431a385ec6760d760206daad0745d36f96c46074b16590e8f9ad20": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Daily backups",
+      "target": "Backup quotidiani",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "3c42a671a7954af4ecef993f7a658ffd5773cdf1d74a12cee7f33699aecd2c3b": {
       "model": "claude-opus-5",
@@ -1073,6 +1297,30 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "3e7396c8c1455bfbeabdacc831139b2bc5f3890ba3ef156d841b843a18152330": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Shot list & scheduling",
+      "target": "Shot list e pianificazione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "3e9ac59ec29206a670696a915017bd802596d081de800de3f63d59a7ca6c10c7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "On-page & schema buildout",
+      "target": "Implementazione on-page e schema",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "3f504ae3a26c773e1474bab21731c2eafffc62f8cdc272a7d9ad711a7864d131": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "JSON-LD schema graphs",
+      "target": "Grafi di schema JSON-LD",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "401306334382d6f4e3a75a54dbc5114e67313b134822108a3f01250d1fc7b16e": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1081,6 +1329,14 @@
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
     },
+    "4025d44e3a9c79f602d2b7af8ee4882abda9606bfae1ad34723929a6abadfc46": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The solution",
+      "target": "La soluzione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "405c2a820aebf34b7e8640386f302ff71c9c644c58c49eb9e5f8ae462497bb5f": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1088,6 +1344,14 @@
       "target": "Prenota una sessione",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "413a2732c8c70ba6fd2af4c1c0e28668d42469ce8bf5a8b8b4655be4ff477667": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data delivers six connected services from one Vernal, Utah team — website design, SEO, video production, online marketing, business automation, and ongoing support — so design, content, and marketing compound instead of competing. Custom website projects start at {websiteStartingPrice}, with monthly growth plans from {maintenancePrice}.",
+      "target": "Cozelos Data offre sei servizi collegati con un unico team a Vernal, Utah — design di siti web, SEO, produzione video, marketing online, automazione aziendale e supporto continuo — così che design, contenuti e marketing si rafforzino a vicenda invece di competere tra loro. I progetti di sito web su misura partono da {websiteStartingPrice}, con piani di crescita mensili da {maintenancePrice}.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "41a3e979f3315af934b4990acda9cbc420233016be5ea2584c4c330f49bac409": {
       "model": "claude-opus-5",
@@ -1121,6 +1385,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
     },
+    "42f829ad9c6b8f4ab5b711385c8f6b748ba4618c1d1b1ada4f4ff1e99c80cfb2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Custom, cinematic websites engineered to convert.",
+      "target": "Siti web su misura e cinematografici, progettati per convertire.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.581Z"
+    },
     "436aabd742db0fe39e48ad6d07fe639c04024a76f8fef38556e7c706afd6d2b5": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1144,6 +1416,14 @@
       "target": "Partnership vera",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "43e2ce1369c42cec07493929ba995b790fe1880f443fb606dc760ec5ceac2f7a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We keep your site fast, secure, and improving every quarter.",
+      "target": "Manteniamo il tuo sito veloce, sicuro e in miglioramento ogni trimestre.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.581Z"
     },
     "4417053ce2ef46e5d053401a4d831a00d0c99ac8d4b91738831add00dc1c7f35": {
       "model": "claude-opus-5",
@@ -1176,6 +1456,14 @@
       "target": "Scritto a mano, sotto il secondo e sicuro",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
+    },
+    "45446b2eca085d9d6fe139857922568a18cd701b6d98520f08fb8956395932d1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Social-ready vertical cuts",
+      "target": "Montaggi verticali pronti per i social",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "45a99d16ae7e68942abd31c0b0182d328cec4d2a26de25d988b44fef8144c440": {
       "model": "claude-opus-5",
@@ -1313,6 +1601,22 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "4daac5c959c89cdd14a039da1853c23f6598aca9e984351e34789b5789c3f291": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Watch a 90-second overview of how we work and what you can expect.",
+      "target": "Guarda una panoramica di 90 secondi su come lavoriamo e cosa aspettarti.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "4dc1b829e1756e93b493fa7587d1840012702e3e9ea6c27bd9b01b74b66cef5b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Six unified digital services from one Vernal, Utah team: custom website design, SEO, video production, online marketing, business automation, and ongoing support.",
+      "target": "Sei servizi digitali integrati da un unico team a Vernal, Utah: design di siti web su misura, SEO, produzione video, marketing online, automazione aziendale e supporto continuo.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "4e2b958beeb53b833afd75dc47cbebddaf65343c03c628bf8e56a724c2e9cdc3": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1336,6 +1640,14 @@
       "target": "Si moltiplica",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
+    },
+    "4fc2336a4d6b36981d7727553d0dc729ba3d81bc128bb00f94d35da7852ede8b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Team training session",
+      "target": "Sessione di formazione per il team",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "4fe0b0662681cf234d55a658c597742736676517844e6e5ea79076660133c5ab": {
       "model": "claude-opus-5",
@@ -1393,6 +1705,22 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "52fa6dc7dfa3b408c058dec723ed9d4701b96e4d57926d47d52e991b7f3a3dfb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our website maintenance plan keeps your site fast, secure, and improving — security monitoring, daily backups, performance tuning, content updates, and uptime monitoring handled for you, every month.",
+      "target": "Il nostro piano di manutenzione mantiene il tuo sito veloce, sicuro e in continuo miglioramento — monitoraggio della sicurezza, backup quotidiani, ottimizzazione delle prestazioni, aggiornamenti dei contenuti e monitoraggio dell'uptime gestiti per te, ogni mese.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "545d2d8cda4621bcfd1932bc6adac05307b2c39c4d9191ae076134ce3cfea14d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Read Common Questions",
+      "target": "Leggi le domande frequenti",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "5473073a7494486b0f770662fa4c55b1c4e14e0faf76bd133588710c78e6306a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1424,6 +1752,14 @@
       "target": "SEO avanzata e locale con schema markup",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "5554bf089b3e2ef13e3094408ce25a3baed01597488099607a86153ee7e3d61b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Testing & training",
+      "target": "Test e formazione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "55a0825ec0cb63c42610f989306cd5266c66d2528c0c07ce2c5db6103b275938": {
       "model": "claude-opus-5",
@@ -1521,6 +1857,30 @@
       "origin": "committed",
       "at": "2026-08-21T04:57:00.751Z"
     },
+    "59d600a8e4d29c7be77b633a11a5d376b785a4ca201eae76d480db2221eb7744": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Benefits",
+      "target": "Vantaggi",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "5a2a76bed82700fbebdbea1c7ffb8a4836a03c87ef10dc8a54a2a4101c0d2622": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Onboarding & access",
+      "target": "Onboarding e accessi",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "5a4e7167346227126a531d2ec52e4afec888f837528d8632a29f693e66201e1b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Edit & color grade",
+      "target": "Montaggio e color grading",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "5ac9067dcd6185bda5481d219e0212ab6bbffa1a6d74230d56534bde476759bf": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1528,6 +1888,22 @@
       "target": "Un sistema ripetibile",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "5ae3d7c74f18b99c0d0a16fbf568bc6f5fc5f8b345a92a98e0b38f88dc918c97": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Delivery in every format",
+      "target": "Consegna in ogni formato",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "5b2a205bc10509539b4b548c5638e63bf188019f13b746d1cd0fffe47205093a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Professional video is a library of assets you own and reuse for years — fueling ads, landing pages, and social content long after the shoot, compounding your brand's authority every time it's seen.",
+      "target": "Un video professionale è una libreria di asset che possiedi e riutilizzi per anni — alimentando annunci, landing page e contenuti social molto tempo dopo le riprese, rafforzando l'autorevolezza del tuo brand ogni volta che viene visto.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "5ba26fc605139bd76453f8eea93eefeec3712854a200314131c83eb2fc85a1e3": {
       "model": "claude-opus-5",
@@ -1569,6 +1945,22 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "5cf05fb0d96db590641cc648e9b488a1cd38c71806b44a76f878b52647990414": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Unlike paid ads, SEO compounds. Every page and citation you earn keeps working for years, building a durable moat of organic visibility that competitors can't simply outspend.",
+      "target": "A differenza degli annunci a pagamento, la SEO si accumula nel tempo. Ogni pagina e citazione che guadagni continua a lavorare per anni, costruendo un vantaggio duraturo di visibilità organica che i concorrenti non possono semplicemente superare a suon di budget.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "5d265ee142512620fbbfd228b198bb79872fd15bb3a688e55dd47e10917460a3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Request Strategy Call",
+      "target": "Richiedi una chiamata strategica",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "5d45bc27cf4dd11b5a02abb55e8935c1904cbbb26c11a0fd41464c128336521b": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1593,6 +1985,14 @@
       "origin": "committed",
       "at": "2026-08-22T14:27:43.279Z"
     },
+    "5db1a474583e79283899d34fa9c97d532fdc7b59574019d43a33e41a456b55c9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Every service below is built on the same four layers — design, performance, search, and strategy — described in <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">our approach to building digital assets</a>. You can see what each one costs on the <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">investment and monthly growth plans</a> page, or see them working together in <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">real Utah client builds</a>. Every one is delivered by the same small team, led by <a href=\"/ellen-cozelos/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">founder Ellen Cozelos</a>.",
+      "target": "Ogni servizio qui sotto si basa sugli stessi quattro livelli — design, prestazioni, ricerca e strategia — descritti nel <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">nostro approccio alla costruzione di asset digitali</a>. Puoi vedere quanto costa ciascuno nella pagina <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">investimento e piani di crescita mensili</a>, oppure vederli lavorare insieme nelle <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">vere realizzazioni per clienti in Utah</a>. Ognuno viene erogato dallo stesso piccolo team, guidato dalla <a href=\"/ellen-cozelos/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">fondatrice Ellen Cozelos</a>.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "5de57ae233540a280bd09e4eeb6f828401e5c92104b947bf745595d012c3ea1b": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1616,6 +2016,14 @@
       "target": "Se è importante per te, è importante per noi.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "5e49628c8ed346dea9686c3e2ebf8b07e49ffb0a18fb437b3a99838631cfb721": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Content architecture plan",
+      "target": "Piano di architettura dei contenuti",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "5f625b5b5023cd75c7c4a3cd773cc77e87a97baeb6de0f8d3ab4a4972d6428a5": {
       "model": "claude-opus-5",
@@ -1673,6 +2081,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:28:49.446Z"
     },
+    "614cd41339974ad07bc32c6ba7e5361a5be717ee7a80e701e95fe0b4c1d844d1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The problem",
+      "target": "Il problema",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "6167231ccd225de659d7b548f3288e17f746635640330486f6350623f58f2dd5": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1720,6 +2136,22 @@
       "target": "L’accessibilità è misurata rispetto alle <a href=\"https://www.w3.org/TR/WCAG21/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Web Content Accessibility Guidelines (WCAG) 2.1</a> del W3C, al livello AA, che contengono ogni criterio di successo che i Revised Section 508 Standards recepiscono dalle WCAG 2.0. L’idoneità set-aside segue il <a href=\"https://www.sba.gov/federal-contracting/contracting-assistance-programs/women-owned-small-business-federal-contract-program\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-semibold text-[var(--color-brand)] link-underline\">Women-Owned Small Business Federal Contract Program</a> della SBA.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "63d3fde962f875a4499ede3095a536490cc90a7a9513d385652ceedc79df8e03": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Backup & security monitoring",
+      "target": "Monitoraggio di backup e sicurezza",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "6443a5300732bb5ae10de59cc613336363fa19470ec9c56f87eacd31cb79bb21": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hero brand film",
+      "target": "Brand film principale",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "6460b8d652015905620b900a96d1708a0d0cfcfc9f5b9de2c412dada9e4e370d": {
       "model": "claude-opus-5",
@@ -1769,6 +2201,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
     },
+    "6589f6178eed26a2a8eda98e5d1c287d6554cda2be42218153f990ea248b4bd6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cinematic video that elevates your brand on every platform.",
+      "target": "Video cinematografici che elevano il tuo brand su ogni piattaforma.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.581Z"
+    },
     "6605a970b0621bc7536f1f9088605c061747a7b3cb622ed28dd036472aaf2be2": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1801,6 +2241,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "68249abded4a3c18f898a881f3e1cedd0547bd53e5ff55a345ac98b6e84e302d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "AI and automation that give you hours back every week.",
+      "target": "AI e automazione che ti restituiscono ore preziose ogni settimana.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.581Z"
+    },
     "68ac017ab3ddd9bf29c6e35dc5a8c52b63925ac8c25ff9e235e2df9500e33eb1": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1808,6 +2256,14 @@
       "target": "Professional Growth",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "692409b5fecdbd26e9afaff657496dbec57f40d5bbaf3c9a7bcc5543775a4a09": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Web-optimized exports",
+      "target": "Esportazioni ottimizzate per il web",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "69685afb0b699d7a4b6dd54cef6e088c64b0168f75cab82e87e3fad719e412d4": {
       "model": "claude-opus-5",
@@ -1825,6 +2281,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "6ad5bd70f43e76075951ef9e897e27f7df78c4e7446c5be443c5831f800b8ce6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "CRM & data integrations",
+      "target": "Integrazioni CRM e dati",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "6af9e6fa7f6f4285d443dee19895a4bedd509fbf33468c58587eda77177117f8": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1840,6 +2304,30 @@
       "target": "Per oltre vent’anni Ellen ha supportato lo sviluppo di software mission-critical per i programmi <span class=\"font-semibold text-[var(--text)]\">NASA e Department of Defense</span>: sistemi sicuri, affidabili e scalabili, progettati per ambienti in cui precisione e prestazioni non sono funzionalità ma requisiti. Da Huntsville, in Alabama — una città sinonimo di aerospazio — ha imparato uno standard di lavoro che il mondo commerciale vede raramente.",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "6bfaba04d2b554178ef6569dce3e0566e65e72dd7f685fd4242655c84d1e5a50": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Security monitoring",
+      "target": "Monitoraggio della sicurezza",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "6c268c2204bdee36001a3e158fea48ac54165775807807173d5822072301c415": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Pillar & spoke content architecture",
+      "target": "Architettura dei contenuti pillar-and-spoke",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "6cd126f6fb2b8d459b579fe25d043e1e0aa69630b0a84f37417738636e2c4d53": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Scale the winners",
+      "target": "Scalare le campagne vincenti",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "6e3048f429a7921f3e07b996c56a410fd7a2f1af815c5233c1ca1de16c9a0e7b": {
       "model": "claude-opus-5",
@@ -1945,6 +2433,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
     },
+    "74d1aeafccec0b8814651214d0f042e2dd7fa464d60ac1501fcc9ac832861b54": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We engineer search engine optimization from the ground up — pillar-and-spoke content architecture, JSON-LD schema, local SEO, Google Business Profile tuning, and llms.txt so Google, ChatGPT, and Claude all understand exactly what you offer.",
+      "target": "Ingegnerizziamo l'ottimizzazione per i motori di ricerca dalle fondamenta — architettura dei contenuti pillar-and-spoke, schema JSON-LD, SEO locale, ottimizzazione del Google Business Profile e llms.txt, così che Google, ChatGPT e Claude capiscano esattamente cosa offri.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "74fc64bf736911766a65b2fb286942bf6e76d67c0fc1d7e27625a02e81c9ae81": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1977,6 +2473,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "77096ff81197971081013aa528fd0db9a8a9d58c2f39b8ba6c90ee49d3d2f4f8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Tracking configuration",
+      "target": "Configurazione del tracciamento",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "771e96c5df4fb533a56b8547bd445025a5926b1a150604488e5fdb2fb068d25a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2008,6 +2512,14 @@
       "target": "Prima ascoltiamo",
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
+    },
+    "783add2353965fe1c91f96eea49b13c4c3b304905c5ec0fa68e14563336e69ff": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Discovery call & goals",
+      "target": "Chiamata di scoperta e obiettivi",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "783ced04f11acaa03a80d6edd3cb214c7145956312d3bf60da955ce6d6599ecd": {
       "model": "claude-opus-5",
@@ -2065,6 +2577,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "7b7bb51f28925519afdb12b8da1b596cf168d6bc17936aa2ed0bcb3604f1a69a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Higher engagement, stronger brand recall, and content that makes a local business look established and premium across your website, ads, and social channels.",
+      "target": "Engagement più alto, maggiore riconoscibilità del brand e contenuti che fanno apparire un'attività locale solida e premium su sito web, annunci e canali social.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "7be2f5b61e083c51d69322d8b34c12430d8b4c09a149da62659f3ebd9f94742a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2072,6 +2592,14 @@
       "target": "Domande e Risposte",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "7c25c19cb405b9f9895947d5ec52640f8720e72e83906637ed22742b4525fc2c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Local & AI search setup",
+      "target": "Configurazione per la ricerca locale e AI",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "7c84e1fde34d180467a8cb1b48a0ce1070c70ea688e99e3d0d65a6d473b2f2af": {
       "model": "claude-opus-5",
@@ -2113,6 +2641,14 @@
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
     },
+    "7cfb3e9a420f85b5fdc414243e899c0cd7bd772aeddf22fcc7fbd64473939cde": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Automation is leverage that compounds: as you grow, the systems scale with you — handling more volume without more overhead, so profit isn't eaten up by headcount.",
+      "target": "L'automazione è una leva che si moltiplica nel tempo: mentre cresci, i sistemi crescono con te — gestendo più volume senza più costi generali, così il profitto non viene eroso dall'aumento del personale.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "7d61c345777cd6b4ab3a09c292b9494c743e537938d0c83d3357e04ef79e7864": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2144,6 +2680,22 @@
       "target": "Misuriamo il successo come lo misuri tu: in lead, prenotazioni e fatturato — non in visualizzazioni o vago “engagement”. Un sito che porta una manciata di nuovi clienti al mese si ripaga in poche settimane e rende per anni. Ogni pagina è progettata attorno alla conversione e rendicontiamo i numeri che fanno davvero avanzare la tua attività.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
+    },
+    "81a6e67ba13fd44c827ed224d151ecb6b2dd3c24441ab574d132da8cd6906c95": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Monthly ranking report",
+      "target": "Report mensile sui posizionamenti",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "81b9ef1909a57932e3ac9916582e8d9dc96f0291848d45b360e39c73dbf8b6fd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A beautiful website is invisible if it doesn't rank. Most sites are never indexed properly, never structured for AI search, and never appear when local customers in the Uintah Basin search for what you sell.",
+      "target": "Un sito web bellissimo è invisibile se non si posiziona. La maggior parte dei siti non viene mai indicizzata correttamente, non è mai strutturata per la ricerca AI e non compare mai quando i clienti locali nello Uintah Basin cercano ciò che vendi.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "828d250bc2057c63b299c5b989f982f4acf2f1ffbd11bbfb48dcebd41349fccd": {
       "model": "claude-opus-5",
@@ -2201,6 +2753,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "84bef4e79138dac2a9d250fccaac5915571dee19734119930312f778a7579ae9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Technical & content audit",
+      "target": "Audit tecnico e dei contenuti",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "84d8f44aa2033724534c6491fbb658328897f5e9123a013bf8b8bc0224f90836": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2233,6 +2793,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "859793de6ffd003ab8648b6c5db3b2ba7dbe894eb89ba7f3b52aa528dd4efbdb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Monthly update cadence",
+      "target": "Cadenza mensile degli aggiornamenti",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "859f3c9cdf97c205f906a72cab9f9a4eca556ac3fbf46bbc4be79ee8e49b7de4": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2248,6 +2816,22 @@
       "target": "Nuovi articoli SEO ogni mese",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "8607801a679038541c6c0690afc79ae7551dea5418f2685122be76891f974f3a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Custom internal tooling",
+      "target": "Strumenti interni su misura",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "8650abd2026963b75b78d23652d7aab81971988b2fb3304998be2e712da7b271": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Over time, a tuned acquisition system becomes a growth engine you can turn up on demand — turning advertising from a gamble into a reliable, repeatable source of revenue.",
+      "target": "Nel tempo, un sistema di acquisizione ottimizzato diventa un motore di crescita che puoi attivare su richiesta — trasformando la pubblicità da una scommessa in una fonte di fatturato affidabile e ripetibile.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "8664e23f889b3438b717cd2bb4102f4b700be9b4f2c6af4682e259e6e79a6265": {
       "model": "claude-opus-5",
@@ -2273,6 +2857,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "87a3eee74ec34a447693b59ac25b18aece999715a19c952fb1861ea9f007c1ef": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Baseline performance audit",
+      "target": "Audit iniziale delle prestazioni",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "87cf7c7995566b800d7d674341e949f4221085e39c17bcaceda27abd44673624": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2288,6 +2880,22 @@
       "target": "Su misura",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "8851deb785443739e7be6db99a5a742b6031cd1b4e2e88ed431f45163e6b9954": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "View Maintenance Plan",
+      "target": "Guarda il piano di manutenzione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "88fba8e7b8d1103c38f374b0cfa3ba5816bdcae542bb386149d56bd28d7e2fb4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Filming day",
+      "target": "Giornata di riprese",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "8937b80797652887bdb35a4c422ea1ebc036006ca2c1b5a45bdf92b79643401c": {
       "model": "claude-opus-5",
@@ -2321,6 +2929,22 @@
       "origin": "committed",
       "at": "2026-08-21T04:57:00.751Z"
     },
+    "89acf815bd45663bbc6eeae44f479e8a00d32840b0f8f59197c74e2bd278835f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Schema & sitemap implementation",
+      "target": "Implementazione di schema e sitemap",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "89eae6f41459dbaa724887bd8b821264baea73b615c61c4d3915d7962facf12d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ongoing reporting",
+      "target": "Reportistica continuativa",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "89ece3a3d0212d081fb7b6d814b31cd0e16541769bb7f165cf75e2c5dd9f12c1": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2336,6 +2960,46 @@
       "target": "Oltre 20 anni nella tecnologia",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "8afecc996105271f039fc68e011fdc23339b4465659f2bfbdb5dd17c0a08af4c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Six disciplines. One system built to grow your business.",
+      "target": "Sei discipline. Un unico sistema pensato per far crescere la tua attività.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "8b92df032d797af36141098259cdbd3050c3359791c47229230d2f59ac5d88b9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Priority support",
+      "target": "Supporto prioritario",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "8c12c40aee9d36bf87ba04f991ceedc15f398ab30175aaf7441a0103d6f843d8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Deliverables",
+      "target": "Cosa ricevi",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "8c43260d8e6c6839d75d36f543ed685935bd7c9f619c91c40ccadb6327fd5522": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Production website",
+      "target": "Sito web in produzione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "8c4cd362762a10c91d80ecf794f5706be130f9fcd063c50c02b19e799c16ffc7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Be found by the customers already searching for you.",
+      "target": "Fatti trovare dai clienti che ti stanno già cercando.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.581Z"
     },
     "8c6f6213a8c58c8617e34137bdafd69a2d894e79cd747369776feafee016ba49": {
       "model": "claude-opus-5",
@@ -2409,6 +3073,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "90c38f1e6b5726060651978d5f7404429692abc9ffdba1250633c00a1b595a83": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A fast, custom website is an appreciating asset. It keeps ranking, converting, and earning trust for years — needing fewer rebuilds and less maintenance than the cheap template it replaced.",
+      "target": "Un sito web veloce e su misura è un asset che si apprezza nel tempo. Continua a posizionarsi, convertire e guadagnare fiducia per anni — richiedendo meno ricostruzioni e meno manutenzione rispetto al template economico che ha sostituito.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "90d573db980d4ddbbfb7b0012c9dd65ce88d6dd99df531e90705056c10bc3aa4": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2449,6 +3121,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "9241f5b41a9cd164dcf2bb86940beaca206ca6e9d2ad94603e5df26387bdbb7c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cinematic color grading",
+      "target": "Color grading cinematografico",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "92434bc1660147be67e85c798b0986e5c5b3caf4f8e18daa680eb4c2ab090f60": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2481,6 +3161,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "93a86249fef5d0dd2edc653177e6a890b021f22e21918ef59393ca8dfc76226a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Automation build",
+      "target": "Costruzione dell'automazione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "93c680b85afdf4e495338ccc5f15baff6d58463fa55154f843d721160a104d3a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2496,6 +3184,14 @@
       "target": "Salta anche una sola fase e il sistema si rompe — un sito bellissimo che nessuno trova, oppure un sito velocissimo senza nulla da convertire. Eseguite nell’ordine giusto, si moltiplicano.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "949d53ec340f214c572cf212c146a66fa47caae0d5edbafad3585fac8985f708": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The long-term value",
+      "target": "Il valore a lungo termine",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "94adab1174335c36d3f43865c4ba6b830e45d3d50d2eebe4fc8a484da8e720e9": {
       "model": "claude-opus-5",
@@ -2529,6 +3225,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "9699de3b4cc5af2a67367909aaecc362df929c09619c84a9b007b6b1726aeab3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "How Cozelos Data works — a quick overview",
+      "target": "Come lavora Cozelos Data — una rapida panoramica",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "96a82b20dd0b0cbadb66cd628456df3581fa0674724c5fb58992270dee66c636": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2536,6 +3240,14 @@
       "target": "Telefono",
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
+    },
+    "977b4b56454c91ca635a5e45554d7dbd3bad126a32c99626df5b50d1c1f379cb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Services",
+      "target": "Servizi",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "978820081eb34f645647a4e0e37973b87ba373d64ecd6b936fd77c9aa84429a1": {
       "model": "claude-opus-5",
@@ -2624,6 +3336,22 @@
       "target": "Fondamenta SEO on-page",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "9caeb4bb7493d5d4667b0758f5dbecdf93ebcf6b6cdb99a42365b78b58d236fe": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Faster response times, fewer missed leads, and a team freed from busywork to focus on customers and revenue.",
+      "target": "Tempi di risposta più rapidi, meno lead persi e un team liberato dal lavoro ripetitivo per concentrarsi su clienti e fatturato.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "9cef494f5c3050870032bd38d140d2e4fc480b82ee1f77539ea36f5aa329e048": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Request SEO Audit",
+      "target": "Richiedi un audit SEO",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "9d0615e95a239c71cb26791e586c373064fda22c8497ca777114439141e5b009": {
       "model": "claude-opus-5",
@@ -2785,6 +3513,22 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "a7d8e51576000da3ac1de246df5c168e905e9fe3a70f3d3b1ed9cd72edb0ada5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "4K aerial drone footage",
+      "target": "Riprese aeree con drone in 4K",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "a803c8da69e553be04f4d3536875960ee148920f28e9d7834e064640820b3b25": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Manual scheduling, follow-ups, and data entry quietly drain the hours you should spend growing the business — and every slow reply is a lead that goes cold.",
+      "target": "La pianificazione manuale, i follow-up e l'inserimento dati prosciugano silenziosamente le ore che dovresti dedicare a far crescere l'attività — e ogni risposta lenta è un lead che si raffredda.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "a813ff2a7981ccc1c6682f16aafe14a06d87706e672208bfa8d489443af848b5": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2809,6 +3553,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.192Z"
     },
+    "a9a5df7efc168a8e83e8547dee117f4f6bac460d1d82e9e997d87ce27296ae0a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Meaningful ranking improvement within {seoTimeframeDays} days, more qualified organic traffic, and a steady stream of customers who were already searching for you — at no cost per click.",
+      "target": "Un miglioramento significativo dei posizionamenti entro {seoTimeframeDays} giorni, più traffico organico qualificato e un flusso costante di clienti che ti stavano già cercando — senza alcun costo per clic.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "aa2ec854f63b681565126980cec4f9f8dc973e3ddd6bd6571ea28c710731f22d": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2824,6 +3576,14 @@
       "target": "Sembra un template che chiunque potrebbe comprare",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
+    },
+    "aa944ae9e70a5fab7c1f10f66839ed749f17d48fdf7b7c976d7ebd25909aff61": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "AI search optimization (llms.txt)",
+      "target": "Ottimizzazione per la ricerca AI (llms.txt)",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "aac033828c1b84f8fc383f04c287f6040f7ea3c3dacec0a9551c43493d3ce830": {
       "model": "claude-opus-5",
@@ -2856,6 +3616,14 @@
       "target": "La guida una sola regola: se è importante per i nostri clienti, è importante per noi.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "aca1e0561ae964cb49354e5fa02ef6f4ac17e76451cfc0b0d22b0e80394cff4c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Photos can't capture the energy, scale, and credibility of your business — and in a feed full of competitors, static images get scrolled past in under a second.",
+      "target": "Le foto non riescono a catturare l'energia, la dimensione e la credibilità della tua attività — e in un feed pieno di concorrenti, le immagini statiche vengono scorse via in meno di un secondo.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "aca33d73574c05d8a39649409e0c671b264fefa438b64dd73313ae70a55e9477": {
       "model": "claude-opus-5",
@@ -2897,6 +3665,38 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "afae4369f87e37b58f9eb69bf4fcda60968f4056462c1668d2f643d97106c2ad": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Automated workflows",
+      "target": "Flussi di lavoro automatizzati",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "afd558b6f56138db4b1b5323fd88bcfe97cf3f1aaf2f56d3d15bb486bea040d5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Source code (you own it)",
+      "target": "Codice sorgente (di tua proprietà)",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "b01458b1898a10d7368a95dc1b9826d2f4d4ecc9d750d5e193f96a9136a3313f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A lower cost per lead, a predictable pipeline of new customers, and marketing spend you can finally measure to the dollar.",
+      "target": "Un costo per lead più basso, una pipeline prevedibile di nuovi clienti e una spesa di marketing che finalmente puoi misurare con precisione, fino all'ultimo centesimo.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "b01c69052c96b536e245ce52bb44522035d2b92d513d35caeec99e54c3ff4f4d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Conversion pixel setup",
+      "target": "Configurazione dei pixel di conversione",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "b0438cf54d5feaca4210086da49e08dd6dbc40acf1cb0ee82bb2200a9b809b57": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2905,6 +3705,22 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "b08caa2cbdaae6cd27a5801eb79b40d833f4de8658ca1b4f21d89d072bbc485e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Launch + handoff documentation",
+      "target": "Documentazione di lancio e consegna",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "b1059681b8927c30b330515b1a4ecfb857a0d583be377f79dafde8642ade6fc7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Not sure which service you need?",
+      "target": "Non sai quale servizio ti serve?",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "b13b6dd538db2aaa5d41e99ef9ee0cd05cc4600b6e2df3c5dc990c2c8a1c98e4": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2912,6 +3728,14 @@
       "target": "Video",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "b15ee083dcb5deaeabf867f1d80ae4c8587391962875c13fa7dfda235569a73e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Web Design, SEO & Marketing Services in Vernal, UT",
+      "target": "Servizi di Web Design, SEO e Marketing a Vernal, UT",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.578Z"
     },
     "b1b1a56203089d78c81117434c85c5f29ed0bb8b90b18054aca6770f5fc969bb": {
       "model": "claude-opus-5",
@@ -2977,6 +3801,22 @@
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
     },
+    "b4da0bf5baf33dd1ce25aea79555a500442c6cf788f57da613e8359f42536b6b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Most ad budgets quietly leak money — wrong audiences, no tracking, and a homepage that was never built to convert clicks into customers.",
+      "target": "La maggior parte dei budget pubblicitari perde denaro silenziosamente — pubblici sbagliati, nessun tracciamento e una homepage mai pensata per convertire i clic in clienti.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "b54f230cd94526d42f751e4b593de9cd4ef406089590c8020cc47fa5d98198ed": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Raw + graded footage",
+      "target": "Riprese grezze e gradate",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "b55d7b151861032f7a6a72a1836e216f9fa424a975a651076df6119f5786686e": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3008,6 +3848,14 @@
       "target": "Vent’anni a supporto di software mission-critical per NASA e Department of Defense.",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "b83827535dd650268acd8640286894d285aa490b6dec82de26742b7a4e59394e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Wireframe & design approval",
+      "target": "Wireframe e approvazione del design",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "b8c038457ac9034254b2c08c4eb5037ab26bfd428aa20ad1c62afa3392f94743": {
       "model": "claude-opus-5",
@@ -3048,6 +3896,14 @@
       "target": "Tutto ciò che include Authority",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "bb510c2922143ed2bcbe9c052c06efb3406e9345dfbb6a13af7190ddda067019": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "One team, no gaps between design, content, and marketing. Each service below answers the four questions that matter: the problem, the solution, the benefit, and the long-term value.",
+      "target": "Un solo team, senza cuciture tra design, contenuti e marketing. Ogni servizio qui sotto risponde alle quattro domande che contano: il problema, la soluzione, il beneficio e il valore a lungo termine.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "bb80eaac7be7a82f1778869da87aef9559f7f535e6be9d54c3ba5d7befe46b54": {
       "model": "claude-opus-5",
@@ -3105,6 +3961,38 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "bd9a0554ab3e05a63f2e38f3b42e10f3610aa2f66be597041e91bcc5d14a66af": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We connect your tools, add AI assistants and chatbots, and automate the repetitive work — instant lead responses, automated scheduling and reminders, CRM integrations, and invoice workflows tailored to how your business actually runs.",
+      "target": "Colleghiamo i tuoi strumenti, aggiungiamo assistenti AI e chatbot e automatizziamo il lavoro ripetitivo — risposte istantanee ai lead, pianificazione e promemoria automatizzati, integrazioni CRM e flussi di fatturazione su misura per come funziona davvero la tua attività.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "be238d6baee6dfb40e53f7a3c837e4a003ac397859af0c8b525b917074ccbb49": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Pixel & tracking setup",
+      "target": "Configurazione di pixel e tracciamento",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "be5b9984757b33e777b03ff7d25243288703e64a6cc2b8cc39c5597b3b513693": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "On-location filming",
+      "target": "Riprese sul posto",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "bf35f9d18ca79b111fc0c8d721cbec000cfa441997199a0a686fd0d2758a7519": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Accessible to WCAG 2.1 AA standards",
+      "target": "Accessibile secondo gli standard WCAG 2.1 AA",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "c052d8c4f0717ae1a005872e5ffeee5d161357989bf7d13575f796ed8d427050": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3120,6 +4008,14 @@
       "target": "Missione personale",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "c191bdf3d5364a49d70d8d3b0390e062416086197f41f6b5d0c12e14ca847bd8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Automated scheduling & reminders",
+      "target": "Pianificazione e promemoria automatizzati",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "c255c22007a91001da5020886fde6ee3601bc4d5a2ea89ba35ad4f6729e44982": {
       "model": "claude-opus-5",
@@ -3153,6 +4049,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
     },
+    "c489b8e6f9f5b5acd670ff52e31176899bf5f010c8e073a4075d0eaffb96c1f6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Meta & Google Ads management",
+      "target": "Gestione di Meta e Google Ads",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "c4ba0437d585f29d7efcec2e96d103ca0478eed3dbbfe7a472947c3b7a86f015": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3160,6 +4064,14 @@
       "target": "Qual è la differenza tra SEO e annunci a pagamento?",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "c53ae2d2e2e87cc5f034899c912932981f6806e7ba93aef2c8a98095725aa73b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A/B creative testing",
+      "target": "A/B testing sulle creatività",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "c5afad18debb2dee6ea710aff49c078e1b32b6f2e2ff1410b08a9a328e9114b7": {
       "model": "claude-opus-5",
@@ -3193,6 +4105,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "c6b6db38462493311866cd13dbad7439431509796edaae17f0da62b21273f681": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Workflow mapping",
+      "target": "Mappatura dei flussi di lavoro",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "c6ea4879583e2fb1ee801f38c2ea20a5ed62da1a641f9c85c7827b366e465315": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3200,6 +4120,14 @@
       "target": "Cosa aspettarti",
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
+    },
+    "c7046708a73709d5b5a50a15228bf8448ad2a4f2afcd0dccb95597938a830d94": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hand-built development",
+      "target": "Sviluppo costruito a mano",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "c74c6cb6986b4ce7f40f8774b594b957ca0b14ec1c1db83975253731f7f150d1": {
       "model": "claude-opus-5",
@@ -3272,6 +4200,22 @@
       "target": "Quanto velocemente potete iniziare il mio progetto?",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "c98904b22ff02c291dba135579f6b7adca0710f8e1d1a76de267ae2f2d38c097": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A maintained website appreciates instead of decaying. Quarter over quarter it gets faster, ranks higher, and outlasts the competitors who let theirs rot — protecting the investment you made.",
+      "target": "Un sito web mantenuto si apprezza invece di deteriorarsi. Trimestre dopo trimestre diventa più veloce, si posiziona meglio e dura più a lungo dei concorrenti che lasciano deperire il proprio — proteggendo l'investimento che hai fatto.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "c9a0dfbbc7c496f2915ee3739d29702fcb1895fbd867611d0a022b4787f586a1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Technical SEO fixes",
+      "target": "Correzioni SEO tecniche",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "c9a1ae0c6663ac22225e0b78308bb1345b5c18d1bc03fe1abc3f57744a9797d5": {
       "model": "claude-opus-5",
@@ -3352,6 +4296,14 @@
       "target": "Progettato per la velocità",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
+    },
+    "ce9635de0344a737e110dbdf0f566f7d37a3938583b11eb82b78610c1701d093": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Quarterly optimization",
+      "target": "Ottimizzazione trimestrale",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "ced3b02dc129b3d4016162080954c56ca420a75576c47a3fedc1a4846b4642a9": {
       "model": "claude-opus-5",
@@ -3481,6 +4433,14 @@
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
     },
+    "d41c54ce257655950135d40cea5da76552df6a1e4943b94324b5ce001657acd1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Reliable uptime, compounding SEO, and the peace of mind that your digital asset keeps getting better — without surprise invoices or technical headaches.",
+      "target": "Uptime affidabile, una SEO che si accumula nel tempo e la tranquillità di sapere che il tuo asset digitale continua a migliorare — senza fatture a sorpresa né grattacapi tecnici.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "d44e2dfbe3224a41e9b164cd082ef5463fe9eb6cae560e90dc9455fc64658c4a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3488,6 +4448,14 @@
       "target": "Il tuo prezzo è approvato per iscritto prima che inizi qualsiasi lavoro. Nessuna fattura a sorpresa, nessuna nota in calce con 'a partire da'.",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "d455cc055f1701edba1ba22fcedf7712a550bb323df88b754817bed7fe3da3f3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Audience targeting & retargeting",
+      "target": "Targeting e retargeting del pubblico",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "d49f443b9719b9e57ca4a61f655f35e219b02c17c532639f8b0dd0a5b7eb1ddd": {
       "model": "claude-opus-5",
@@ -3528,6 +4496,22 @@
       "target": "Architettura statica con una superficie d’attacco minima.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
+    },
+    "d508eb5d59df747e0020f6fc82e1c4dae04141400d4399e8b706dd9e8e17c457": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Workflow connectors",
+      "target": "Connettori di flusso di lavoro",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "d516d7dfd00c9195a1d93d2b2970f93b9f06d3bf21fce88fe7505129ed0e810e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Split sitemap indexes",
+      "target": "Indici sitemap suddivisi",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "d5dc2bd34295eded898d86a64c449563427a1cce42afc9f6075a0710f80f6240": {
       "model": "claude-opus-5",
@@ -3617,6 +4601,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "d91688d1ab1a80f6b69865e937cb42e071f37d50dcb0b39b92c325dc4302a844": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Most websites are built once and maintained by no one — slowly breaking, slowing down, and quietly falling out of Google's rankings until they need an expensive rebuild.",
+      "target": "La maggior parte dei siti web viene costruita una volta e non manutenuta da nessuno — si rompe lentamente, rallenta e scivola silenziosamente fuori dai posizionamenti Google finché non serve una costosa ricostruzione.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "d949f6ad9bb6b043fdd8a3bee6f596eacdaf0e0dd32ffeae93bdd6f66e0c23f2": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3632,6 +4624,22 @@
       "target": "Il lavoro vero e proprio si articola in <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">sei servizi collegati</a>, quanto costa costruire e far crescere un asset come questo è indicato nella <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">pagina investimento</a>, e il background enterprise da cui nascono questi standard è nella <a href=\"/company/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">storia dell’azienda e della fondatrice</a>.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
+    },
+    "da758d740af81a9010cca87e09bcc6140a632c52d7b9178b63a7fcf1c3ac6003": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Sound design and licensed music",
+      "target": "Sound design e musica su licenza",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "dae711511a588a7756abf17119addc74e0cd0a0acefb16e343356c7e8404bd6d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Launch & A/B testing",
+      "target": "Lancio e A/B testing",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "db2202b51134c25d424081b4232e948ca3ba22686d0bdd0d999a23fd47794478": {
       "model": "claude-opus-5",
@@ -3673,6 +4681,22 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "dcfe54c84b422dbd7a2d7e1f2726eb2b1af22d6c7aa77ffaff9f0b29d258b026": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Google Business Profile tuning",
+      "target": "Ottimizzazione del Google Business Profile",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "dd9668cfeecff9bf21cce42eeaa9be5e2644c78f331625e2edc4b587565d3720": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Integration documentation",
+      "target": "Documentazione delle integrazioni",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "dd9d4fd6dc80d584a166cb2db35157e186741c68f90c530ea1b06cc6e4327cac": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3688,6 +4712,14 @@
       "target": "Per le aziende in crescita che vogliono conquistare attivamente clienti — non limitarsi a esistere online.",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "de76e29c02fc19a014581c126f0c318c04d2204f149d0bfbaec7d521308e7a90": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our video production team in Vernal, Utah films cinematic brand films, 4K aerial drone footage, and vertical reels built for Instagram, TikTok, and YouTube — color-graded, sound-designed, and optimized for the web.",
+      "target": "Il nostro team di produzione video a Vernal, Utah gira brand film cinematografici, riprese aeree con drone in 4K e reel verticali pensati per Instagram, TikTok e YouTube — color-gradati, sonorizzati e ottimizzati per il web.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
     },
     "de8ac4a938ae3cecdab860146c1060bd29f9e2ab44299819810f9cd265930e63": {
       "model": "claude-opus-5",
@@ -3729,6 +4761,22 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
     },
+    "df1cb31c36b1692bd02d60c2026a6ef8926e5e6d9094db4ea75f3d99ed22264b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Creative brief",
+      "target": "Brief creativo",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "df57dfd6505c388397e7a4addb040172ca7e53bd0045fe459bba6bd488f6180b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Account & goals audit",
+      "target": "Audit dell'account e degli obiettivi",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "dfc8c80ce2f841a12bfd1f9f3648e551d12c8b47a5c7f43968885734034d447e": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3761,6 +4809,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "e12258fe3ed2d820a5acccc177d7709a8e235dbe8b4d556ededb315166c6caf3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We design and build custom websites in Vernal, Utah — engineered by hand, mobile-first, and optimized for search from the first line of code. Every page loads in under a second and is built around the exact moment a visitor decides to call, fill out a form, or buy.",
+      "target": "Progettiamo e costruiamo siti web su misura a Vernal, Utah — realizzati a mano, mobile-first e ottimizzati per la ricerca fin dalla prima riga di codice. Ogni pagina si carica in meno di un secondo ed è costruita intorno al momento esatto in cui un visitatore decide di chiamare, compilare un modulo o acquistare.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "e162519b29c082008f9a024b3c339f31d3195b2f9c48d0365d50a7efd564ff32": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3785,6 +4841,14 @@
       "origin": "committed",
       "at": "2026-08-21T05:18:47.256Z"
     },
+    "e20d4e97c2b08bf85dc3a4cac31cf0080f3b124fdb539c9e52d3c8ed942d7aa9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Monthly performance reports",
+      "target": "Report mensili sulle prestazioni",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "e2830157fb87bdd2263532459407c4b06a6876a0b1f8544a634e1b7a7f0dea0a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3800,6 +4864,14 @@
       "target": "Crescere",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "e2ee60b2ca968fc725b854d74bb905cacdad66a3c2c70562bf551567b18089b4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Tell us your goal. We'll tell you exactly what we'd build and what it would cost — no obligation.",
+      "target": "Raccontaci il tuo obiettivo. Ti diremo esattamente cosa costruiremmo e quanto costerebbe — senza impegno.",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "e30d80049f097b6e266e514ebcdae790b932efd10e10306f65346b46bab3ab88": {
       "model": "claude-opus-5",
@@ -3824,6 +4896,14 @@
       "target": "Le agenzie ti vendono un sito web. Noi ti consegniamo un asset.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.192Z"
+    },
+    "e3dbb2d4264c2533efe31334fe0b0e1eab7d0e871413da8c7b1cba487503c781": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Quarterly performance report",
+      "target": "Report trimestrale sulle prestazioni",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "e620e1c1f873a46f4d347dca3c23aeb1d95439ca24d10d10011a28cfa00a46d2": {
       "model": "claude-opus-5",
@@ -3985,6 +5065,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "eb7a6bcc83f5e9262d1698c494af41d7e798ca0f5928592e0ca8d875c9a07f95": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Analytics dashboard",
+      "target": "Dashboard di analytics",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "eb8de0109a0e2b4ba81bf0ccc84fb0f337e32f4e85c206e691b1abe80b683647": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4129,6 +5217,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "f38d2e24a021e39c0786825404f37bac694865cdeafcc20120c37ce373dccf93": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Vertical & horizontal cuts",
+      "target": "Montaggi verticali e orizzontali",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
     "f3b93af77d08b711882d1931ad06a8a86c2573a082e455c5d5647dbd7ef912fe": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4145,6 +5241,22 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
     },
+    "f41611e05eab61022ea2ccc284035b14ae449b0cbb3db134f9ae4d97c376a991": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Monthly content updates",
+      "target": "Aggiornamenti mensili dei contenuti",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
+    "f471ff8fbfbc39b8ff23f2af3f0e7476dcdb06e9eca4ba9578a0bc4dd5a9dcde": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "YouTube ad campaigns",
+      "target": "Campagne pubblicitarie su YouTube",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
+    },
     "f4bbf943a5434490bd8bdb5f25ea30a45834fe6a440007a14854bd9212300b1c": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4152,6 +5264,14 @@
       "target": "Funzionalità su misura e strumenti interattivi",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "f4ebd7db72b6bdfece164f2d9e36f8435a7f635addf67e03fb4f34e233c62dc3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Monthly maintenance",
+      "target": "Manutenzione mensile",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "f51c39d9bce0dac24c534ebf27901bf2608fc3ecd5e75e8946da0a9b00e49afe": {
       "model": "claude-opus-5",
@@ -4264,6 +5384,22 @@
       "target": "La visibilità trasforma un ottimo sito web in una fonte di clienti.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "fb7b50d51ee17b5aaca3b9661c361cf45a9f3c805da59fb4ce446305aa7f297e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Platform-optimized exports",
+      "target": "Esportazioni ottimizzate per piattaforma",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.579Z"
+    },
+    "fc1eba0e643ef13a59370b977a749856c00678eca2d95516999a788c65af5955": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Priority support channel",
+      "target": "Canale di supporto prioritario",
+      "origin": "committed",
+      "at": "2026-08-22T17:38:48.580Z"
     },
     "fc4f09fd30f6804a683d4c3a25adc23de258a2ef56b6b2db17d5254acd35e552": {
       "model": "claude-opus-5",

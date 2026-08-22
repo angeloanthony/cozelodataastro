@@ -1,11 +1,11 @@
 {
   "services": {
-    "website-design": { "title": "Design e sviluppo web" },
-    "video-production": { "title": "Produzione video" },
-    "online-marketing": { "title": "Marketing online" },
-    "seo": { "title": "Ottimizzazione SEO" },
-    "business-automation": { "title": "Automazione aziendale" },
-    "ongoing-support": { "title": "Supporto e manutenzione continui" }
+    "website-design": { "title": "Design e sviluppo web", "short": "Siti web su misura e cinematografici, progettati per convertire." },
+    "video-production": { "title": "Produzione video", "short": "Video cinematografici che elevano il tuo brand su ogni piattaforma." },
+    "online-marketing": { "title": "Marketing online", "short": "Traffico a pagamento e contenuti social che convertono davvero." },
+    "seo": { "title": "Ottimizzazione SEO", "short": "Fatti trovare dai clienti che ti stanno già cercando." },
+    "business-automation": { "title": "Automazione aziendale", "short": "AI e automazione che ti restituiscono ore preziose ogni settimana." },
+    "ongoing-support": { "title": "Supporto e manutenzione continui", "short": "Manteniamo il tuo sito veloce, sicuro e in miglioramento ogni trimestre." }
   },
   "business": {
     "hours": "Lun–Ven · {opens} – {closes} {timezone}"

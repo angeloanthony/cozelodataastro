@@ -80,6 +80,9 @@ export const strings = {
     // {phone} is data: the component splits the sentence on it and renders the
     // number as a tel: link, so a locale can put it anywhere in the sentence.
     "summary.quote": "Call {phone} for a free quote.",
+    // ServicesGrid's card link label — reused across every card, on the
+    // homepage and wherever else the grid renders. Chrome, not page content.
+    "cta.learnMore": "Learn more",
   },
   it: {
     "nav.home": "Home",
@@ -104,6 +107,7 @@ export const strings = {
     "a11y.menuClose": "Chiudi il menu",
     "a11y.home": "Home di {brand}",
     "summary.quote": "Chiamaci al {phone} per un preventivo gratuito.",
+    "cta.learnMore": "Scopri di più",
   },
 } as const;
 

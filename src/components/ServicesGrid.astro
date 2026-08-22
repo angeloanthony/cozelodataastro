@@ -5,7 +5,7 @@
  * animates independently of the card.
  */
 import { Image } from "astro:assets";
-import { getLangFromUrl } from "../data/i18n";
+import { getLangFromUrl, t } from "../data/i18n";
 import { getServices } from "../i18n/shared";
 import Icon from "./Icon.astro";
 import { getImage } from "../lib/images";
@@ -14,7 +14,8 @@ interface Props {
   limit?: number;
 }
 const { limit } = Astro.props;
-const services = getServices(getLangFromUrl(Astro.url));
+const lang = getLangFromUrl(Astro.url);
+const services = getServices(lang);
 const list = limit ? services.slice(0, limit) : services;
 ---
 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -73,7 +74,7 @@ const list = limit ? services.slice(0, limit) : services;
       </p>
 
       <span class="relative mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-brand)]" style="transform: translateZ(25px);">
-        Learn more
+        {t("cta.learnMore", lang)}
         <Icon name="arrow" size={16} class="transition-transform duration-300 group-hover:translate-x-1.5" />
       </span>
     </a>

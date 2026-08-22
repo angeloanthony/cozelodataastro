@@ -149,22 +149,24 @@ export const stats: Stat[] = [
   { value: 120, suffix: "+", label: "Projects Completed" },
 ];
 
+/**
+ * Service identity + structure only (Step 24 of the FAQ/i18n effort moved the
+ * single-consumer prose — problem/why/results/value/benefits/process/
+ * deliverables/cta — out to src/i18n/content/<locale>/services.json, keyed by
+ * `slug`, exactly the move Step 21 made for FAQ q/a). `title` and `short` stay
+ * here as the English structural fallback: they are the pre-existing,
+ * documented two-tier pattern (see src/i18n/shared.ts) where `shared.json`
+ * supplies the localized override, joined on `slug`, and this array supplies
+ * the English default a locale falls back to if a translation is missing.
+ */
 export type Service = {
   slug: string;
   index: string;
   title: string;
   short: string;
-  problem: string;
-  why: string;
-  results: string;
-  value: string;
-  benefits: string[];
-  process: string[];
-  deliverables: string[];
   icon: string; // key into the Icon component
   image?: string; // optional path under src/assets (falls back to icon tile)
   reelVideoId?: string; // optional YouTube ID — when set, a full-width video reel leads the section, above the (always visible) service copy
-  cta: string;
 };
 
 export const services: Service[] = [
@@ -173,223 +175,49 @@ export const services: Service[] = [
     index: "01",
     title: "Website Design & Development",
     short: "Custom, cinematic websites engineered to convert.",
-    problem:
-      "Your website is your hardest-working employee — the first impression, the sales pitch, and the storefront all at once. A slow, generic template quietly turns away the customers you paid to attract, costing you leads you never even knew you had.",
-    why: "We design and build custom websites in Vernal, Utah — engineered by hand, mobile-first, and optimized for search from the first line of code. Every page loads in under a second and is built around the exact moment a visitor decides to call, fill out a form, or buy.",
-    results:
-      "More qualified leads, higher conversion rates, and a professional online presence that finally reflects the quality of your work — so the businesses that find you take you seriously.",
-    value:
-      "A fast, custom website is an appreciating asset. It keeps ranking, converting, and earning trust for years — needing fewer rebuilds and less maintenance than the cheap template it replaced.",
-    benefits: [
-      "Fully custom design — never a template",
-      "Mobile-first, responsive on every screen",
-      "Sub-second load times",
-      "Conversion-optimized copy and layout",
-      "Hosting, domain, and launch support included",
-      "Accessible to WCAG 2.1 AA standards",
-    ],
-    process: [
-      "Discovery call & goals",
-      "Wireframe & design approval",
-      "Hand-built development",
-      "Review & content polish",
-      "Launch & analytics setup",
-    ],
-    deliverables: [
-      "Production website",
-      "Source code (you own it)",
-      "Analytics dashboard",
-      "Launch + handoff documentation",
-    ],
     icon: "browser",
     image: "services/web-development.webp",
     reelVideoId: "ApGH3skklec",
-    cta: `Starting at ${commercialFacts.websiteStartingPrice}`,
   },
   {
     slug: "video-production",
     index: "02",
     title: "Video Production",
     short: "Cinematic video that elevates your brand on every platform.",
-    problem:
-      "Photos can't capture the energy, scale, and credibility of your business — and in a feed full of competitors, static images get scrolled past in under a second.",
-    why: "Our video production team in Vernal, Utah films cinematic brand films, 4K aerial drone footage, and vertical reels built for Instagram, TikTok, and YouTube — color-graded, sound-designed, and optimized for the web.",
-    results:
-      "Higher engagement, stronger brand recall, and content that makes a local business look established and premium across your website, ads, and social channels.",
-    value:
-      "Professional video is a library of assets you own and reuse for years — fueling ads, landing pages, and social content long after the shoot, compounding your brand's authority every time it's seen.",
-    benefits: [
-      "4K aerial drone footage",
-      "On-location filming",
-      "Cinematic color grading",
-      "Vertical & horizontal cuts",
-      "Sound design and licensed music",
-      "Web-optimized exports",
-    ],
-    process: [
-      "Creative brief",
-      "Shot list & scheduling",
-      "Filming day",
-      "Edit & color grade",
-      "Delivery in every format",
-    ],
-    deliverables: [
-      "Hero brand film",
-      "Social-ready vertical cuts",
-      "Raw + graded footage",
-      "Platform-optimized exports",
-    ],
     icon: "video",
     image: "services/video-production.webp",
-    cta: "Get a Video Quote",
   },
   {
     slug: "online-marketing",
     index: "03",
     title: "Online Marketing",
     short: "Paid traffic and social content that actually converts.",
-    problem:
-      "Most ad budgets quietly leak money — wrong audiences, no tracking, and a homepage that was never built to convert clicks into customers.",
-    why: "We build the full funnel: Google Ads and Meta (Facebook & Instagram) campaigns, conversion-focused landing pages, pixel tracking, and relentless A/B testing — then scale only the campaigns that actually produce leads.",
-    results:
-      "A lower cost per lead, a predictable pipeline of new customers, and marketing spend you can finally measure to the dollar.",
-    value:
-      "Over time, a tuned acquisition system becomes a growth engine you can turn up on demand — turning advertising from a gamble into a reliable, repeatable source of revenue.",
-    benefits: [
-      "Meta & Google Ads management",
-      "YouTube ad campaigns",
-      "Conversion pixel setup",
-      "A/B creative testing",
-      "Audience targeting & retargeting",
-      "Monthly performance reports",
-    ],
-    process: [
-      "Account & goals audit",
-      "Creative & landing page build",
-      "Pixel & tracking setup",
-      "Launch & A/B testing",
-      "Scale the winners",
-    ],
-    deliverables: [
-      "Campaign creative",
-      "Conversion landing page",
-      "Tracking configuration",
-      "Monthly reporting",
-    ],
     icon: "target",
     image: "services/marketing.webp",
-    cta: "Request Strategy Call",
   },
   {
     slug: "seo",
     index: "04",
     title: "SEO Optimization",
     short: "Be found by the customers already searching for you.",
-    problem:
-      "A beautiful website is invisible if it doesn't rank. Most sites are never indexed properly, never structured for AI search, and never appear when local customers in the Uintah Basin search for what you sell.",
-    why: "We engineer search engine optimization from the ground up — pillar-and-spoke content architecture, JSON-LD schema, local SEO, Google Business Profile tuning, and llms.txt so Google, ChatGPT, and Claude all understand exactly what you offer.",
-    results:
-      `Meaningful ranking improvement within ${commercialFacts.seoTimeframeDays} days, more qualified organic traffic, and a steady stream of customers who were already searching for you — at no cost per click.`,
-    value:
-      "Unlike paid ads, SEO compounds. Every page and citation you earn keeps working for years, building a durable moat of organic visibility that competitors can't simply outspend.",
-    benefits: [
-      "Pillar & spoke content architecture",
-      "JSON-LD schema graphs",
-      "AI search optimization (llms.txt)",
-      "Google Business Profile tuning",
-      "Split sitemap indexes",
-      "Monthly ranking reports",
-    ],
-    process: [
-      "Technical & content audit",
-      "Keyword & topic mapping",
-      "On-page & schema buildout",
-      "Local & AI search setup",
-      "Ongoing reporting",
-    ],
-    deliverables: [
-      "Technical SEO fixes",
-      "Schema & sitemap implementation",
-      "Content architecture plan",
-      "Monthly ranking report",
-    ],
     icon: "search",
     image: "services/seo.webp",
-    cta: "Request SEO Audit",
   },
   {
     slug: "business-automation",
     index: "05",
     title: "Business Automation",
     short: "AI and automation that give you hours back every week.",
-    problem:
-      "Manual scheduling, follow-ups, and data entry quietly drain the hours you should spend growing the business — and every slow reply is a lead that goes cold.",
-    why: "We connect your tools, add AI assistants and chatbots, and automate the repetitive work — instant lead responses, automated scheduling and reminders, CRM integrations, and invoice workflows tailored to how your business actually runs.",
-    results:
-      "Faster response times, fewer missed leads, and a team freed from busywork to focus on customers and revenue.",
-    value:
-      "Automation is leverage that compounds: as you grow, the systems scale with you — handling more volume without more overhead, so profit isn't eaten up by headcount.",
-    benefits: [
-      "AI chat & lead capture",
-      "Automated scheduling & reminders",
-      "CRM & data integrations",
-      "Document & invoice automation",
-      "Workflow connectors",
-      "Custom internal tooling",
-    ],
-    process: [
-      "Workflow mapping",
-      "Tool & data audit",
-      "Automation build",
-      "Testing & training",
-      "Handoff & support",
-    ],
-    deliverables: [
-      "Automated workflows",
-      "AI assistant setup",
-      "Integration documentation",
-      "Team training session",
-    ],
     icon: "bolt",
     image: "services/automation.webp",
-    cta: "Explore Automation",
   },
   {
     slug: "ongoing-support",
     index: "06",
     title: "Ongoing Support & Maintenance",
     short: "We keep your site fast, secure, and improving every quarter.",
-    problem:
-      "Most websites are built once and maintained by no one — slowly breaking, slowing down, and quietly falling out of Google's rankings until they need an expensive rebuild.",
-    why: "Our website maintenance plan keeps your site fast, secure, and improving — security monitoring, daily backups, performance tuning, content updates, and uptime monitoring handled for you, every month.",
-    results:
-      "Reliable uptime, compounding SEO, and the peace of mind that your digital asset keeps getting better — without surprise invoices or technical headaches.",
-    value:
-      "A maintained website appreciates instead of decaying. Quarter over quarter it gets faster, ranks higher, and outlasts the competitors who let theirs rot — protecting the investment you made.",
-    benefits: [
-      "Monthly content updates",
-      "Security monitoring",
-      "Daily backups",
-      "Performance optimization",
-      "Uptime monitoring",
-      "Priority technical support",
-    ],
-    process: [
-      "Onboarding & access",
-      "Baseline performance audit",
-      "Monthly update cadence",
-      "Quarterly optimization",
-      "Priority support",
-    ],
-    deliverables: [
-      "Monthly maintenance",
-      "Backup & security monitoring",
-      "Quarterly performance report",
-      "Priority support channel",
-    ],
     icon: "shield",
     image: "services/ongoing-support.webp",
-    cta: "View Maintenance Plan",
   },
 ];
 
