@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Utah Web Design Portfolio — Real Business Results",
+    "description": "A growing roster of Utah business transformations: Forebear Find, Adventure Tours Vernal, Vernal Medicare, and more — custom design plus full SEO."
+  },
+  "breadcrumb": "Portfolio",
+  "hero": {
+    "eyebrow": "Selected Work",
+    "title": "Real businesses. Real transformations.",
+    "lead": "Utah businesses we've moved from invisible to in-demand — each one rebuilt as a fast, custom, search-ready online presence.",
+    "summary": "Cozelos Data has rebuilt 35+ Utah businesses — tour operators, hotels, healthcare practices, pest control, and genealogy researchers — from generic templates into fast, search-optimized digital systems. Every build pairs custom design with full pillar-and-spoke SEO, and clients own everything."
+  },
+  "orientationHtml": "Every build below came out of the same six disciplines — design, video, marketing, SEO, automation, and support — detailed on our <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">services page</a>. Each one followed <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">the same four-stage build process</a>. If you're weighing a project of your own, the <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">investment for a build like these</a> starts at {websiteStartingPrice}.",
+  "compareSection": {
+    "eyebrow": "Drag to Compare",
+    "title": "Same business. Modern presence.",
+    "lead": "Drag the slider to see what a Cozelos build replaces."
+  },
+  "compareAfter": {
+    "badge": "Cozelos Build",
+    "headline": "Sub-second · #1 ranked",
+    "sub": "Conversion engine"
+  },
+  "compareBefore": {
+    "badge": "Before",
+    "headline": "8.2s · Page 7",
+    "sub": "Static brochure"
+  },
+  "rosterSection": {
+    "eyebrow": "The Roster",
+    "title": "A growing portfolio.",
+    "lead": "Hover any project to see the stack, results, and a case-study link."
+  },
+  "caseStudiesSection": {
+    "eyebrow": "Case Studies",
+    "title": "Business transformations, not just websites.",
+    "lead": "Every project starts with a real business problem. Here's the challenge, the strategy, what we built, and the impact it created — for each client."
+  },
+  "sectionLabels": {
+    "challenge": "The challenge",
+    "strategy": "Our strategy",
+    "solution": "The solution",
+    "technologies": "Technologies",
+    "visitLiveSite": "Visit Live Site",
+    "outcomeLabel": "Outcome:",
+    "businessImpact": "Business impact"
+  },
+  "statsLabels": {
+    "sitesLaunched": "Sites Launched",
+    "viewsDelivered": "Views Delivered",
+    "leadsCreated": "Leads Created",
+    "clientRetention": "Client Retention"
+  },
+  "cta": {
+    "title": "Want to be next?",
+    "body": "Tell us about your business — we'll show you exactly what we'd build."
+  },
+  "projects": {
+    "forebear-find": {
+      "overview": "A bilingual (English / Italian) research firm specializing in Italian jure sanguinis citizenship and vital record retrieval. We built a 30+ page pillar-and-spoke site mapping geographic and regional service areas, with structured data and AI search optimization throughout.",
+      "challenge": "A specialized Italian genealogy and dual-citizenship firm had deep expertise but almost no online visibility — and needed to look credible to clients across two languages and two countries.",
+      "strategy": "Position the firm as the authority on Italian jure sanguinis citizenship by mapping every region and service into a pillar-and-spoke content architecture that ranks in both English and Italian.",
+      "solution": "A hand-built, 30+ page bilingual site with structured data, regional service pages, and AI-search optimization throughout — fast, polished, and effortless to navigate in either language.",
+      "outcome": "30+ pages indexed across two languages, sub-second load times, and a presence that finally matches the firm's expertise.",
+      "businessImpact": "Forebear Find now attracts qualified, ready-to-hire clients from organic search in both markets — turning a word-of-mouth practice into a discoverable, trusted brand."
+    },
+    "parkingway-it": {
+      "overview": "A parking management platform designed to streamline reservations, customer communications, and parking operations. Built with a modern user experience, responsive design, and SEO-focused architecture.",
+      "challenge": "A growing parking operation was managing reservations and customer communication by hand, with no central platform and a website that couldn't scale.",
+      "strategy": "Replace the manual workflow with a streamlined booking-and-management platform, wrapped in a modern, SEO-ready site that earns trust at first glance.",
+      "solution": "A responsive parking-management platform with online reservations, automated customer communications, and a clean, conversion-focused interface.",
+      "outcome": "24/7 online booking, a fully mobile-optimized experience, and an SEO-ready foundation built to grow.",
+      "businessImpact": "Customers now reserve and manage parking around the clock without a phone call — cutting manual work and capturing the bookings the old site quietly lost."
+    },
+    "adventure-tours-vernal": {
+      "overview": "A guided UTV tour operator running on a 30+ page pillar architecture with an online booking flow built around their fleet, pricing, and trail experiences.",
+      "challenge": "A guided UTV tour operator relied on phone calls and walk-ins, with a thin website that didn't rank for the high-intent searches travelers were making.",
+      "strategy": "Own local search for UTV and off-road tours around Vernal by building deep, trail-by-trail content and a frictionless path to booking.",
+      "solution": "A 30+ page pillar-architecture site organized around the fleet, pricing, and trail experiences, with an online booking flow and full local SEO.",
+      "outcome": "30+ pages targeting local search, an integrated booking system, and a build aimed squarely at the #1 local ranking.",
+      "businessImpact": "More tours booked online instead of over the phone, and a discoverable brand that captures travelers the moment they search — before they find a competitor."
+    },
+    "best-western-vernal-inn": {
+      "overview": "A hospitality rebuild featuring a cinematic Ken Burns hero, a clean canonical SEO structure, and a rates presentation engineered for direct bookings.",
+      "challenge": "A hotel was losing direct bookings to online travel agencies and running on a dated site that didn't reflect the quality of the property.",
+      "strategy": "Win back direct bookings with a cinematic first impression and a clean, canonical SEO structure that ranks the hotel for its own name and market.",
+      "solution": "A hospitality rebuild featuring a cinematic Ken Burns hero, a canonical SEO architecture, and a rates presentation engineered to drive direct reservations.",
+      "outcome": "A cinematic, high-trust presence, a clean canonical SEO rebuild, and a direct-booking-focused rates experience.",
+      "businessImpact": "Guests booking direct means higher margins per stay and less dependence on third-party commissions — value that compounds every season."
+    },
+    "vernal-medicare": {
+      "overview": "A licensed Medicare insurance practice built on a split-sitemap architecture across 27+ SEO pages, with CMS compliance baked into every page and an AEP anchor calendar.",
+      "challenge": "A licensed Medicare practice operates under strict CMS marketing rules and needed to rank for dozens of plan- and location-specific searches without risking compliance.",
+      "strategy": "Build broad, compliant search coverage through a split-sitemap architecture and an enrollment-aligned content calendar that captures seasonal demand.",
+      "solution": "A 27+ page site on a split-sitemap structure with CMS compliance baked into every page and an Annual Enrollment Period anchor calendar.",
+      "outcome": "27+ compliant SEO pages, a clean split-sitemap index, and a disciplined five-phase rollout.",
+      "businessImpact": "The practice now reaches Medicare-eligible clients across more searches and seasons — safely, compliantly, and without the risk of a costly violation."
+    },
+    "high-class-limousine": {
+      "overview": "A luxury transportation brand on a 14-page cinematic site with interactive widgets — a price calculator, prom planning timeline, venue map, and itinerary builder.",
+      "challenge": "A luxury transportation brand needed to feel unmistakably premium and make quoting and planning effortless for high-end events like proms and weddings.",
+      "strategy": "Translate 'luxury' into the experience itself — cinematic design paired with interactive tools that let clients price, plan, and book with confidence.",
+      "solution": "A 14-page cinematic site with four interactive tools: a price calculator, a prom-planning timeline, a venue map, and an itinerary builder.",
+      "outcome": "14 polished pages, 4 custom interactive tools, and a cinematic aesthetic that signals premium at every touch.",
+      "businessImpact": "Self-service quoting and planning capture leads after hours and qualify them before the first call — fewer tire-kickers, more booked events."
+    },
+    "wernex-pest-control": {
+      "overview": "A complete digital transformation for a local pest control company featuring service area mapping, online booking, and strong local SEO optimization across the Uintah Basin.",
+      "challenge": "A local pest-control company was invisible in search across its service area and had no way for customers to book without calling during business hours.",
+      "strategy": "Dominate local SEO across the Uintah Basin with dedicated service-area pages, and remove every barrier between an anxious customer and a booking.",
+      "solution": "A complete digital build with service-area mapping, online booking, and strong local SEO optimization across the region.",
+      "outcome": "#1 local rankings as the goal, an online booking system, and load times under two seconds.",
+      "businessImpact": "Customers find Wernex first and book on the spot — converting urgent, high-intent searches into scheduled jobs around the clock."
+    },
+    "alta-medicare": {
+      "overview": "A licensed Medicare insurance practice built on a clean, CMS-compliant architecture with SEO-focused plan and location pages, structured data, and an enrollment-aligned content calendar.",
+      "challenge": "A licensed Medicare practice operates under strict CMS marketing rules and needed to rank for plan- and location-specific searches without risking compliance.",
+      "strategy": "Build broad, compliant search coverage with dedicated plan and location pages and an enrollment-aligned content calendar that captures seasonal demand.",
+      "solution": "A clean, fast site with CMS compliance baked into every page, structured data throughout, and SEO-driven plan and location coverage.",
+      "outcome": "Compliant SEO coverage across plans and locations, sub-second load times, and a presence built to capture Annual Enrollment Period demand.",
+      "businessImpact": "The practice now reaches Medicare-eligible clients across more searches and seasons — safely, compliantly, and without the risk of a costly violation."
+    }
+  }
+}

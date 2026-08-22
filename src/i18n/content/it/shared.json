@@ -33,5 +33,84 @@
     "work": "Guarda i lavori",
     "call": "Prenota una chiamata",
     "callNote": "Oppure chiamaci direttamente:"
+  },
+  "projects": {
+    "forebear-find": {
+      "category": "Genealogia",
+      "tagline": "Genealogia italiana e doppia cittadinanza",
+      "summary": "Servizio di ricerca genealogica italiana e doppia cittadinanza.",
+      "results": [
+        { "metric": "30+", "label": "Pagine indicizzate" },
+        { "metric": "EN/IT", "label": "Sito bilingue" },
+        { "metric": "<1s", "label": "Tempo di caricamento" }
+      ]
+    },
+    "parkingway-it": {
+      "category": "Gestione dei parcheggi",
+      "tagline": "Piattaforma di gestione parcheggi",
+      "summary": "Piattaforma moderna di gestione parcheggi e sito web aziendale.",
+      "results": [
+        { "metric": "24/7", "label": "Accesso online" },
+        { "metric": "Mobile", "label": "Ottimizzato" },
+        { "metric": "SEO", "label": "Pronto" }
+      ]
+    },
+    "adventure-tours-vernal": {
+      "category": "Attività locale",
+      "summary": "Architettura pillar · oltre 30 pagine · sistema di prenotazione per tour in UTV.",
+      "results": [
+        { "metric": "30+", "label": "Pagine" },
+        { "metric": "Booking", "label": "Sistema" },
+        { "metric": "Local #1", "label": "Obiettivo di ricerca" }
+      ]
+    },
+    "best-western-vernal-inn": {
+      "category": "Ospitalità",
+      "tagline": "Sito web per hotel e prenotazioni dirette",
+      "summary": "Hero cinematografica in stile Ken Burns · rifacimento SEO canonico.",
+      "results": [
+        { "metric": "Cinematic", "label": "Hero" },
+        { "metric": "Canonical", "label": "Rifacimento SEO" },
+        { "metric": "Direct", "label": "Prenotazioni" }
+      ]
+    },
+    "vernal-medicare": {
+      "category": "Sanità",
+      "tagline": "Studio assicurativo Medicare",
+      "summary": "27 pagine SEO · rollout in 5 fasi · conformità CMS.",
+      "results": [
+        { "metric": "27+", "label": "Pagine SEO" },
+        { "metric": "CMS", "label": "Conforme" },
+        { "metric": "5-Phase", "label": "Rollout" }
+      ]
+    },
+    "high-class-limousine": {
+      "category": "Lusso",
+      "summary": "Sito cinematografico di 14 pagine · calcolatore di prezzo interattivo.",
+      "results": [
+        { "metric": "14", "label": "Pagine" },
+        { "metric": "4", "label": "Strumenti interattivi" },
+        { "metric": "Cinematic", "label": "Estetica" }
+      ]
+    },
+    "wernex-pest-control": {
+      "category": "Disinfestazione",
+      "summary": "Servizi professionali di disinfestazione con prenotazione online e SEO locale.",
+      "results": [
+        { "metric": "Local", "label": "Posizionamento #1" },
+        { "metric": "Booking", "label": "Sistema" },
+        { "metric": "<2s", "label": "Tempo di caricamento" }
+      ]
+    },
+    "alta-medicare": {
+      "category": "Sanità",
+      "tagline": "Studio assicurativo Medicare",
+      "summary": "Sito Medicare conforme CMS con pagine su piani e sedi ottimizzate per la SEO.",
+      "results": [
+        { "metric": "CMS", "label": "Conforme" },
+        { "metric": "Local", "label": "SEO" },
+        { "metric": "<1s", "label": "Tempo di caricamento" }
+      ]
+    }
   }
 }

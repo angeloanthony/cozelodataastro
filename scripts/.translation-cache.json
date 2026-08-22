@@ -73,6 +73,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
     },
+    "05decd1182ee781b2ee236f30ad3989e1dcb433551074e5404373a8292d863d1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ready",
+      "target": "Pronto",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "05dfb08f891c8db9106ccbf061777095c3d6d955f98b8b52d37b3e461579f4e8": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -136,6 +144,14 @@
       "target": "Il beneficio",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.579Z"
+    },
+    "0713d2fb2a1c740dd3422ea039348e97d10c0bd05838b76308b6aa17616604ea": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A 27+ page site on a split-sitemap structure with CMS compliance baked into every page and an Annual Enrollment Period anchor calendar.",
+      "target": "Un sito di oltre 27 pagine su una struttura a sitemap divisa, con la conformità CMS integrata in ogni pagina e un calendario ancorato al periodo di iscrizione annuale (AEP).",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "071914dc708ea958cd940ebb7e5ae8fa101f215fb9944fb2d9063ee42047d299": {
       "model": "claude-opus-5",
@@ -217,6 +233,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
     },
+    "0aa2543782e2bcaf5efe5bc1a2fa3162d84515a94b40cad0f35bfdd8c2fd9a62": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "<2s",
+      "target": "<2s",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
     "0b2f450a3df59261d50fe5136d663301a6af10eabc0bce2e09bac18fda627bc5": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -240,6 +264,14 @@
       "target": "Costruito una volta e poi abbandonato",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
+    },
+    "0bc986d5137b1fb51f9e543bced44a472630ccb0da05abd254a6ac0fbe14e00f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A guided UTV tour operator running on a 30+ page pillar architecture with an online booking flow built around their fleet, pricing, and trail experiences.",
+      "target": "Un operatore di tour guidati in UTV su un'architettura pillar di oltre 30 pagine, con un flusso di prenotazione online costruito attorno alla flotta, ai prezzi e alle esperienze sui sentieri.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "0c3ea4d55a0ac510cf2df8cad8ec93f0ce30a0d6567a351f9bd38af0e9afa050": {
       "model": "claude-opus-5",
@@ -297,6 +329,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "0da6d5556f0a11e570f4cee15f56f515b8510adb3e627a3c0675c54e58d68d9e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A hospitality rebuild featuring a cinematic Ken Burns hero, a canonical SEO architecture, and a rates presentation engineered to drive direct reservations.",
+      "target": "Un rifacimento nel settore ospitalità con una hero cinematografica in stile Ken Burns, un'architettura SEO canonica e una presentazione delle tariffe pensata per generare prenotazioni dirette.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "0e252c3865648e169c73e3a19b2fd34ed2a163243b68778346841189d1d5a69a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -304,6 +344,14 @@
       "target": "Monitoraggio dell'uptime",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "0e7e1ec3b174633d503796542dba92398b666e44141c6d37e816459ff926bb7f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Customers now reserve and manage parking around the clock without a phone call — cutting manual work and capturing the bookings the old site quietly lost.",
+      "target": "Ora i clienti prenotano e gestiscono il parcheggio a qualsiasi ora senza una telefonata — riducendo il lavoro manuale e recuperando le prenotazioni che il vecchio sito perdeva silenziosamente.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "0f0924519b06ad850d1159c8690cd3b7feae7b036d312025deeabb52acb49643": {
       "model": "claude-opus-5",
@@ -385,6 +433,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.701Z"
     },
+    "12d3ea477826fdfc7fda03dac96c32f49fe805e47ee1637dbe029ed412e2b5cc": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Build broad, compliant search coverage through a split-sitemap architecture and an enrollment-aligned content calendar that captures seasonal demand.",
+      "target": "Costruire una copertura di ricerca ampia e conforme attraverso un'architettura a sitemap divisa e un calendario editoriale allineato ai periodi di iscrizione, in grado di intercettare la domanda stagionale.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "1351b125f27d7a6117b43af94c228c6a056cad61fe56cfbc8de0100fe26897dc": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -448,6 +504,22 @@
       "target": "A partire da",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "174807810aaf039707065cbaf65bdfc4706d10a172bf970e6168ec5386cadfcb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Booking",
+      "target": "Booking",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
+    "176b0d6251215bd4c62c766e48b86de0c8545a0b8a90e46de9f6a146255e4184": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "EN/IT",
+      "target": "EN/IT",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "17c24f945e5a68cf0399ca8e6528c8846da3e40d0a834ba2c6149c3480f47deb": {
       "model": "claude-opus-5",
@@ -553,6 +625,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "1b918adbfdaeb4574e8e388f5c03ec20c2389d49355ac2494f769447311a251d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Guests booking direct means higher margins per stay and less dependence on third-party commissions — value that compounds every season.",
+      "target": "Gli ospiti che prenotano direttamente significano margini più alti per soggiorno e minore dipendenza dalle commissioni di terzi — un valore che si accumula stagione dopo stagione.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "1b9daccbeb84e4f113fe4652530969fc055b172cb221f30eeb0d582bb7970560": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -585,6 +665,14 @@
       "origin": "committed",
       "at": "2026-08-22T17:38:48.579Z"
     },
+    "1cfb2372dfda24718206943b589fb992980873adaa2e21bf0ca5838a629fc2c0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A hospitality rebuild featuring a cinematic Ken Burns hero, a clean canonical SEO structure, and a rates presentation engineered for direct bookings.",
+      "target": "Un rifacimento nel settore ospitalità con una hero cinematografica in stile Ken Burns, una struttura SEO canonica pulita e una presentazione delle tariffe pensata per le prenotazioni dirette.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "1d199c719916676a0f68602e407bc0206237500bee50b4b08a478c1e42eca21b": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -592,6 +680,22 @@
       "target": "Costruiamo a mano puntando alla velocità dalla prima riga di codice, e poi la difendiamo senza sosta. Il risultato è un sito che sembra non costare fatica — così il visitatore resta abbastanza a lungo da interessarsi davvero.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "1d50347b7058e4a6321e5285cefb8a64ae67fbbd03fac3a35cde379cc79500a7": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Selected Work",
+      "target": "Lavori selezionati",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "1d5168e9b37b3c4ca86768336220e96b1e2a37230295fd4715476f005952d379": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "8.2s · Page 7",
+      "target": "8,2s · Pagina 7",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "1d6ffb96153c2d04931a114cb90b46f1258e335658ddd40be762033358e27426": {
       "model": "claude-opus-5",
@@ -737,6 +841,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
     },
+    "2287a245c867a9c63e45a3d422e74437e39ce763ec6fdc6d3aea2b4c47901f5c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "#1 Rankings",
+      "target": "Posizionamento #1",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
     "23008dd9536a0296c1251c7fbee31e002fe91abb516e97c9c7a08d75b0fd2890": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -744,6 +856,38 @@
       "target": "Potete aggiungere l'AI al mio sito web o alla mia attività?",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "2312edc096d16c0f9da668fb20a0ba9fcf763714a4eb4f499148a063ee6f321a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Drag to Compare",
+      "target": "Trascina per confrontare",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "235eb276ea1dd2ce675a1b5b69e12ebef83d152b168726f7ead7b27ac1fe3b94": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Modern parking management platform and business website.",
+      "target": "Piattaforma moderna di gestione parcheggi e sito web aziendale.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
+    "24d8640427b79849c929737cbaf439c829cb3fb3a382559b985a9681d70f4c21": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A growing parking operation was managing reservations and customer communication by hand, with no central platform and a website that couldn't scale.",
+      "target": "Un'attività di parcheggio in crescita gestiva prenotazioni e comunicazioni con i clienti manualmente, senza una piattaforma centrale e con un sito web che non poteva scalare.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "25197688aacd8d8d9b334a6ea2c50a30a1a9b97fd5b058c9bbba2bdc137907ab": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Pages",
+      "target": "Pagine",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "252330d6e8775369477dc118776d645ef79673c4dcf02cbfa2ed14f73aeff5df": {
       "model": "claude-opus-5",
@@ -776,6 +920,14 @@
       "target": "Progettato per rendere",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "26fb1e561fd3d62041735aef078fdef025d24e13bb01463a4ccd031991dce5d4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Italian Genealogy & Dual Citizenship",
+      "target": "Genealogia italiana e doppia cittadinanza",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "270abe8252bbd6427c0e0f8b2573d0044977d8639fb250f61efed802cd87a356": {
       "model": "claude-opus-5",
@@ -824,6 +976,14 @@
       "target": "Costruisci l’asset",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "28a5e4b67e39e59f69469703e79f56a56c88674307d99f44573382c2a59b267c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "14 polished pages, 4 custom interactive tools, and a cinematic aesthetic that signals premium at every touch.",
+      "target": "14 pagine curate nei dettagli, 4 strumenti interattivi su misura e un'estetica cinematografica che comunica qualità premium a ogni interazione.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "28cc2b19166f4b8502bd0c661c65eee72ecca12d14cde7b7f07935ba33b3046f": {
       "model": "claude-opus-5",
@@ -881,6 +1041,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "2adb632f9ccd612cbe013497a555d96ebbdaa2a28e260f567a94fb6ce8382bcc": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Luxury",
+      "target": "Lusso",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
     "2c4266bf09a7bec2ffd418e052d0f2b0e08f9967b78f774b9819e590946d02f3": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -919,7 +1087,7 @@
       "source": "Maintenance",
       "target": "Maintenance",
       "origin": "committed",
-      "at": "2026-08-22T17:38:48.577Z"
+      "at": "2026-08-22T18:00:15.170Z"
     },
     "2f90c5bb0609c211d80e4b0a9b0906dde6c7c3eb9acebd946750bd95fde9170a": {
       "model": "claude-opus-5",
@@ -953,6 +1121,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "320ba34d24689fed018ca71ebedd05f62853f2c6909a793a2c1a4a2c9c8b3651": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Online Access",
+      "target": "Accesso online",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "33efb42cec638b9220f3de7ce369ef8300487e227224bcdbb2d47621e9822bb9": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -960,6 +1136,14 @@
       "target": "Quanto tempo serve perché la SEO funzioni?",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "33f1bd2a240be9a7013a147d6d06e245cb3771669143daaa4c4d12575fe8014e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A licensed Medicare insurance practice built on a clean, CMS-compliant architecture with SEO-focused plan and location pages, structured data, and an enrollment-aligned content calendar.",
+      "target": "Uno studio assicurativo Medicare autorizzato costruito su un'architettura pulita e conforme CMS, con pagine su piani e sedi ottimizzate per la SEO, dati strutturati e un calendario editoriale allineato ai periodi di iscrizione.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
     },
     "33fda8c3a7331e7a1ca92d26d5f354b9f1948a175d932e2b637cc93c14b3ef91": {
       "model": "claude-opus-5",
@@ -1049,6 +1233,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "35abfedc40778be720803b6f2f4980e293a666e944d0113496b35c9d2b4bc526": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Own local search for UTV and off-road tours around Vernal by building deep, trail-by-trail content and a frictionless path to booking.",
+      "target": "Dominare la ricerca locale per i tour in UTV e fuoristrada attorno a Vernal costruendo contenuti approfonditi, sentiero per sentiero, e un percorso di prenotazione senza attriti.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "3638f3367a764a713af606986d72be2a6583170d7b1de6612565753406b0ae60": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1129,6 +1321,14 @@
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
     },
+    "38df6598199a2fb7292236f5e9fb34ef9a9a1642bfc35966835490b3629837fd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Customers find Wernex first and book on the spot — converting urgent, high-intent searches into scheduled jobs around the clock.",
+      "target": "I clienti trovano Wernex per primo e prenotano sul momento — trasformando ricerche urgenti e ad alta intenzione in interventi programmati a qualsiasi ora.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
+    },
     "390c9808e8fcc8b4cb1880be829323690da8ba8cfbe72c81129a5c85438da869": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1144,6 +1344,14 @@
       "target": "Una realizzazione Cozelos Data su misura non è un tema generico farcito di plugin. È un sistema costruito a mano che si carica in meno di un secondo, ha una superficie di attacco molto più ridotta e richiede meno manutenzione fin dal primo giorno. Ogni pagina è ottimizzata per prestazioni e ricerca fin dall’inizio — perché l’obiettivo non è mai stato \"un sito web\". L’obiettivo è più clienti.",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "3958591dd3b3a2f6c1e6aa011db04d124202e4b4da7154d9ed04ee44ee153602": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Same business. Modern presence.",
+      "target": "Stessa azienda. Presenza moderna.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "39a6c37c04b93019294ef72134fccf6dfd14e00ab1c712ff6fec12343ff8aa27": {
       "model": "claude-opus-5",
@@ -1281,6 +1489,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "3dadc0c6597699c30d8dd84a33d1c87bb803dd153c420feeed04acf795330b5e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Client Retention",
+      "target": "Fidelizzazione clienti",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "3dda05c1f0aaf4c40aeadb7332c55d0b74e8d0a185b3b5c597e9fbfc96c72836": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1312,6 +1528,22 @@
       "target": "Implementazione on-page e schema",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "3f124f9e5a32b66405bd0f1a24b319aeeef5771e3c8a620af013deb5e253c518": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A licensed Medicare practice operates under strict CMS marketing rules and needed to rank for dozens of plan- and location-specific searches without risking compliance.",
+      "target": "Uno studio Medicare autorizzato opera secondo rigide regole di marketing CMS e doveva posizionarsi per decine di ricerche specifiche per piano e per località senza mettere a rischio la conformità.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "3f14861b02bc142b22be5f855b846b3b504f7ebb71512e5e6c5b2ebe3fc62605": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A growing roster of Utah business transformations: Forebear Find, Adventure Tours Vernal, Vernal Medicare, and more — custom design plus full SEO.",
+      "target": "Una rosa crescente di trasformazioni aziendali nello Utah: Forebear Find, Adventure Tours Vernal, Vernal Medicare e altre — design su misura più SEO completa.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "3f504ae3a26c773e1474bab21731c2eafffc62f8cdc272a7d9ad711a7864d131": {
       "model": "claude-opus-5",
@@ -1417,6 +1649,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "43c4fb85b18c211084eba91492343bbae4c89ee5798fba03c652c0655bd7dcc1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Rollout",
+      "target": "Rollout",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
     "43e2ce1369c42cec07493929ba995b790fe1880f443fb606dc760ec5ceac2f7a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1481,6 +1721,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:09:16.060Z"
     },
+    "46ad9c170e52c33369280f700f751a217db3a0698710f3a0a8800ad22a6ab627": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "5-Phase",
+      "target": "5-Phase",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
     "471c4ee1884134b1460ae54cee33f922b125d5efcb92b31c748b8534e12a18cb": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1488,6 +1736,14 @@
       "target": "Sicuro per progettazione",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
+    },
+    "473c8813e2c47589526a0312aaa39095ee1c090f34f94fae267f211f615bd97f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Replace the manual workflow with a streamlined booking-and-management platform, wrapped in a modern, SEO-ready site that earns trust at first glance.",
+      "target": "Sostituire il flusso di lavoro manuale con una piattaforma di prenotazione e gestione snella, racchiusa in un sito moderno e pronto per la SEO che ispira fiducia a prima vista.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "47d5f951876ecfa7dc3c9fc2a8f3ec1a770cc6dc44769c3f1dcea2db47d8ac9a": {
       "model": "claude-opus-5",
@@ -1512,6 +1768,14 @@
       "target": "Cinque discipline. Un unico vantaggio.",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "493b8581101b14059231b7904c25ced2c7866927ab95682353fcf60bbf24885e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "27 SEO pages · 5-phase rollout · CMS compliance.",
+      "target": "27 pagine SEO · rollout in 5 fasi · conformità CMS.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "4943d913d1e103a4bb1943ebf42969b6c15a949d1b291aff8b53effcef0b6822": {
       "model": "claude-opus-5",
@@ -1552,6 +1816,14 @@
       "target": "È questa rara combinazione la ragione per cui esiste Cozelos Data. Ellen ha fondato l’azienda su una convinzione che coltivava da anni: le imprese che tengono in piedi le nostre comunità — imprese edili, cliniche, hotel e negozi a conduzione familiare — meritano tecnologia dello stesso livello di quella delle agenzie e delle grandi organizzazioni che aveva servito per tutta la carriera. Non un template annacquato. Quella vera.",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "4bbce694d80370b660a03fe7d9113a08b2ed890258ca75f377770957d8f1d615": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Portfolio",
+      "target": "Portfolio",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "4c4c0b1756dd8c52ad7d625a65917ed83411f214f3d6548a4d47dbedec4e27e2": {
       "model": "claude-opus-5",
@@ -1641,6 +1913,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
     },
+    "4f25d033a8b868603091de6599c28343a9a9ee09f1d160be335e60063b3e35c4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A bilingual (English / Italian) research firm specializing in Italian jure sanguinis citizenship and vital record retrieval. We built a 30+ page pillar-and-spoke site mapping geographic and regional service areas, with structured data and AI search optimization throughout.",
+      "target": "Uno studio di ricerca bilingue (inglese/italiano) specializzato nella cittadinanza italiana jure sanguinis e nel recupero di atti anagrafici. Abbiamo realizzato un sito con architettura pillar-and-spoke di oltre 30 pagine che mappa le aree di servizio geografiche e regionali, con dati strutturati e ottimizzazione per la ricerca AI in ogni sezione.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "4fc2336a4d6b36981d7727553d0dc729ba3d81bc128bb00f94d35da7852ede8b": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1672,6 +1952,30 @@
       "target": "Tecnologia strategica per il business",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "50ffc519e8d20d74f1fc5b2a8a9660fcda2082e98540cab4fd3ee5b476450821": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Win back direct bookings with a cinematic first impression and a clean, canonical SEO structure that ranks the hotel for its own name and market.",
+      "target": "Riconquistare le prenotazioni dirette con una prima impressione cinematografica e una struttura SEO canonica e pulita che posiziona l'hotel per il proprio nome e mercato.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "5113a06a7287d0dec3c25ffcf084d6ab28dc046fdc94286a3f58f20184feed4d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "More tours booked online instead of over the phone, and a discoverable brand that captures travelers the moment they search — before they find a competitor.",
+      "target": "Più tour prenotati online invece che per telefono, e un brand facile da trovare che intercetta i viaggiatori nel momento stesso in cui cercano — prima che trovino un concorrente.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "511efec5f19d3570c25bc97f75188c6972a705fb2d7ef6d923fec1843166e5eb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Search Goal",
+      "target": "Obiettivo di ricerca",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "5159d290f0d9dcbf34d057b5ddd98da5e8f15f881256ee9167718c65385c2eca": {
       "model": "claude-opus-5",
@@ -1712,6 +2016,14 @@
       "target": "Il nostro piano di manutenzione mantiene il tuo sito veloce, sicuro e in continuo miglioramento — monitoraggio della sicurezza, backup quotidiani, ottimizzazione delle prestazioni, aggiornamenti dei contenuti e monitoraggio dell'uptime gestiti per te, ogni mese.",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "543d1d9a2807e48a8412616544885dbb737fc7e5580395df8d355c6696f3c39a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Real businesses. Real transformations.",
+      "target": "Aziende reali. Trasformazioni reali.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "545d2d8cda4621bcfd1932bc6adac05307b2c39c4d9191ae076134ce3cfea14d": {
       "model": "claude-opus-5",
@@ -1833,6 +2145,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "5825f586d8ab2f56c2432386aeaa6b520e0871a61eaa39436764deaac2bffec1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Local #1",
+      "target": "Local #1",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "587bef8779343379c3ecbff4c86655a5fdf952f569e04754f1fd59bdfbf56f40": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1840,6 +2160,22 @@
       "target": "Per le aziende pronte a dominare il proprio mercato e a diventare la scelta ovvia.",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "58acb43d19febadcbae4a954fb796eb67510339fdcae8562a2493fcddedb9b41": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Bookings",
+      "target": "Prenotazioni",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
+    "58e5cedf5d3669ad8dcf1bdda5dfe38162b69bb7a1c6ab8fc12ec6c24513bf65": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Build broad, compliant search coverage with dedicated plan and location pages and an enrollment-aligned content calendar that captures seasonal demand.",
+      "target": "Costruire una copertura di ricerca ampia e conforme con pagine dedicate ai piani e alle sedi e un calendario editoriale allineato ai periodi di iscrizione, in grado di intercettare la domanda stagionale.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
     },
     "5960587dd65d1e8436e238db5e33f317773964672a7611c6c41f2b881db2b48b": {
       "model": "claude-opus-5",
@@ -1872,6 +2208,14 @@
       "target": "Onboarding e accessi",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "5a41fc56035cef39349ffacca6f2d8f9a6359fb8980aa2288f8ebf7600635280": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Views Delivered",
+      "target": "Visualizzazioni generate",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "5a4e7167346227126a531d2ec52e4afec888f837528d8632a29f693e66201e1b": {
       "model": "claude-opus-5",
@@ -2057,6 +2401,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
     },
+    "5fec531de224ccf59d88864d4478ec47fa6ce8bbf3a812bab78a431b12c00344": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Interactive Tools",
+      "target": "Strumenti interattivi",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
     "5ff3520fb59055eef959f36de5c20a7e7b831a7f1a263e1f656feed9a42f5fd5": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2120,6 +2472,14 @@
       "target": "Contattaci direttamente",
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
+    },
+    "62d637c8b730a44c35a492f67487a02169628b4297a08f5c63b3e1ff7fa01cd3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A complete digital transformation for a local pest control company featuring service area mapping, online booking, and strong local SEO optimization across the Uintah Basin.",
+      "target": "Una trasformazione digitale completa per un'azienda locale di disinfestazione, con mappatura delle aree di servizio, prenotazione online e una forte ottimizzazione SEO locale in tutto lo Uintah Basin.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
     },
     "63321e71a64969b2d0c1a3d1ad748a2f9d23f3da9ceee62d9f30d1a678eca528": {
       "model": "claude-opus-5",
@@ -2241,6 +2601,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "671840b1f726512903a28781504ca52e0be7a41cd9071ae8ee011c33a5fcc441": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "30+ pages targeting local search, an integrated booking system, and a build aimed squarely at the #1 local ranking.",
+      "target": "Oltre 30 pagine mirate alla ricerca locale, un sistema di prenotazione integrato e una realizzazione puntata dritta al primo posto nel posizionamento locale.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "68249abded4a3c18f898a881f3e1cedd0547bd53e5ff55a345ac98b6e84e302d": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2256,6 +2624,14 @@
       "target": "Professional Growth",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "68f160b5aa8ad8c6863371419bf03002769085f59d7188066e2f944a4229b2ee": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Visit Live Site",
+      "target": "Visita il sito live",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "692409b5fecdbd26e9afaff657496dbec57f40d5bbaf3c9a7bcc5543775a4a09": {
       "model": "claude-opus-5",
@@ -2297,6 +2673,14 @@
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
     },
+    "6b3a68c84507d9ce8afdac30f84751a03326c863adf178f776f7c30abab093ed": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hero",
+      "target": "Hero",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "6b534a2bb33cdcc2e3bc5e64a39ef4dcd08f7cce6b2a84e3d94aad539f079132": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2328,6 +2712,30 @@
       "target": "Scalare le campagne vincenti",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "6d30d1dd75af0c772cf8f0096528f370c2432b10827175fc69a3c82eaff3b387": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Forebear Find now attracts qualified, ready-to-hire clients from organic search in both markets — turning a word-of-mouth practice into a discoverable, trusted brand.",
+      "target": "Forebear Find ora attira clienti qualificati e pronti a ingaggiare dalla ricerca organica in entrambi i mercati — trasformando uno studio basato sul passaparola in un brand affidabile e facile da trovare.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "6decf9f44926ae0afa076e3fb2c1a3f6680ed2a4e0db43fe47c9ff24d7d97372": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Parking Management Platform",
+      "target": "Piattaforma di gestione parcheggi",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
+    "6df26d26b73a90b87c22e2af5178c4012e8567d6b05f45c6b0de314c83fd0372": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Case Studies",
+      "target": "Case Study",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "6e3048f429a7921f3e07b996c56a410fd7a2f1af815c5233c1ca1de16c9a0e7b": {
       "model": "claude-opus-5",
@@ -2361,6 +2769,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "703febaad6908199d1ecc738ca22bb1f1d2a9567fdeec2e03af83d00a4c03feb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "#1 local rankings as the goal, an online booking system, and load times under two seconds.",
+      "target": "Il primo posto nel posizionamento locale come obiettivo, un sistema di prenotazione online e tempi di caricamento sotto i due secondi.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
+    },
     "70f633c2aecce8d0a9b5b8f3716548eb47b2c981f201617dc0a872d40ad61182": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2368,6 +2784,14 @@
       "target": "Ogni grande progetto parte dalla strategia. In una sessione di lavoro mirata mappiamo i tuoi obiettivi, i tuoi clienti e la tua concorrenza — poi ti consegniamo un piano chiaro e un preventivo a prezzo fisso. È l’ora a più alto rendimento che dedicherai alla tua presenza digitale, e il costo viene <strong class=\"text-[var(--text)]\">accreditato per intero</strong> sul tuo progetto quando decidi di procedere.",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "71d9d514c2ace7fed62211585430d3590979e385d75d61911c09f8d7a5e33a70": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A responsive parking-management platform with online reservations, automated customer communications, and a clean, conversion-focused interface.",
+      "target": "Una piattaforma di gestione parcheggi responsive con prenotazioni online, comunicazioni automatizzate con i clienti e un'interfaccia pulita orientata alla conversione.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "7236338397d187fc41abf6645fcd51e053e186fc30232d6da741348cc87f1b0c": {
       "model": "claude-opus-5",
@@ -2457,6 +2881,14 @@
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
     },
+    "75867f40a666d09cd50a5b696a174c43c8a954a810d3409f9a97253ff270b446": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A 14-page cinematic site with four interactive tools: a price calculator, a prom-planning timeline, a venue map, and an itinerary builder.",
+      "target": "Un sito cinematografico di 14 pagine con quattro strumenti interattivi: un calcolatore di prezzo, una timeline per la pianificazione del ballo di fine anno, una mappa delle location e un costruttore di itinerari.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "7663f8c76de32138f3101fd50f62f67ff565f779e2a26bebdcbb064708c00166": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2472,6 +2904,14 @@
       "target": "Abbastanza piccoli per muoverci in fretta, abbastanza strutturati per rispettare le milestone. La maggior parte dei siti in 4–6 settimane.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "77027fcce416f13baa267c9df0f340338f922bbf061cdd8ff9196b8b10f5359e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Business transformations, not just websites.",
+      "target": "Trasformazioni aziendali, non solo siti web.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "77096ff81197971081013aa528fd0db9a8a9d58c2f39b8ba6c90ee49d3d2f4f8": {
       "model": "claude-opus-5",
@@ -2497,6 +2937,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "778c829e58ff39282cfaca62ee1fee88e5afcb65bd5d007e3f2bf2a3fca78441": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A guided UTV tour operator relied on phone calls and walk-ins, with a thin website that didn't rank for the high-intent searches travelers were making.",
+      "target": "Un operatore di tour guidati in UTV dipendeva da telefonate e clienti senza prenotazione, con un sito web scarno che non si posizionava per le ricerche ad alta intenzione fatte dai viaggiatori.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "77a0d868239adba46d87b807549927ff781905dc943bbe561e1a97f58cd0a54a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2512,6 +2960,14 @@
       "target": "Prima ascoltiamo",
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
+    },
+    "7836245d666656f4c04b6e3004175410206a4b8ef7977abe5eb3d0d6bef5bc03": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Healthcare",
+      "target": "Sanità",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "783add2353965fe1c91f96eea49b13c4c3b304905c5ec0fa68e14563336e69ff": {
       "model": "claude-opus-5",
@@ -2553,6 +3009,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "79660fbb305a4faae5e08b4579e4035ea28e054df3143db43f87d03046009a37": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A parking management platform designed to streamline reservations, customer communications, and parking operations. Built with a modern user experience, responsive design, and SEO-focused architecture.",
+      "target": "Una piattaforma di gestione parcheggi progettata per semplificare le prenotazioni, la comunicazione con i clienti e le operazioni di parcheggio. Realizzata con un'esperienza utente moderna, design responsive e un'architettura orientata alla SEO.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "7a17f16a11e4b43cc7a98a64aefba070f4f2180d699b7b7c6f1f8a7986e30f18": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2568,6 +3032,14 @@
       "target": "Tempistiche",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "7afb5bceffb5b93cc888a6cf8390bee883fe59a5cd6bc5660438a2440cd99e69": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Position the firm as the authority on Italian jure sanguinis citizenship by mapping every region and service into a pillar-and-spoke content architecture that ranks in both English and Italian.",
+      "target": "Posizionare lo studio come autorità sulla cittadinanza italiana jure sanguinis mappando ogni regione e servizio in un'architettura di contenuti pillar-and-spoke che si posiziona sia in inglese sia in italiano.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "7b77c583b0580bb4e16b74933fdbf4f5849e593adc7ddf07b12ca0cae1fe48ad": {
       "model": "claude-opus-5",
@@ -2600,6 +3072,22 @@
       "target": "Configurazione per la ricerca locale e AI",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "7c5f8287942669dd83546155c56fc9c491fbdb83c104cb29916016607ecaae48": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "27+",
+      "target": "27+",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
+    "7c6f7e1ebf03c2c0d9f24d1c5b15faf811e25518ff741d93069228bcc1baf1c5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Compliant",
+      "target": "Conforme",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
     },
     "7c84e1fde34d180467a8cb1b48a0ce1070c70ea688e99e3d0d65a6d473b2f2af": {
       "model": "claude-opus-5",
@@ -2673,6 +3161,22 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "7f6cff7b52228f2fe685d2b54acd1b462c5881c8eafe1794449c1ce82fe1d4f1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A 30+ page pillar-architecture site organized around the fleet, pricing, and trail experiences, with an online booking flow and full local SEO.",
+      "target": "Un sito con architettura pillar di oltre 30 pagine organizzato attorno alla flotta, ai prezzi e alle esperienze sui sentieri, con un flusso di prenotazione online e SEO locale completa.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "802524076e3e6124dc280b780761e4cfbf29141bdf67ad9be663bbef80f70932": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hotel Website & Direct Bookings",
+      "target": "Sito web per hotel e prenotazioni dirette",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "803cc4cc535af598b13ccdbf0004556732add4592349cc77429fe28eea3a6cd2": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2680,6 +3184,14 @@
       "target": "Misuriamo il successo come lo misuri tu: in lead, prenotazioni e fatturato — non in visualizzazioni o vago “engagement”. Un sito che porta una manciata di nuovi clienti al mese si ripaga in poche settimane e rende per anni. Ogni pagina è progettata attorno alla conversione e rendicontiamo i numeri che fanno davvero avanzare la tua attività.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
+    },
+    "81954871570daf66158591c43f442e3fcc6e52a4c8549bf9d7a4a82f0834f165": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cinematic Ken Burns hero · canonical SEO rebuild.",
+      "target": "Hero cinematografica in stile Ken Burns · rifacimento SEO canonico.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "81a6e67ba13fd44c827ed224d151ecb6b2dd3c24441ab574d132da8cd6906c95": {
       "model": "claude-opus-5",
@@ -2696,6 +3208,14 @@
       "target": "Un sito web bellissimo è invisibile se non si posiziona. La maggior parte dei siti non viene mai indicizzata correttamente, non è mai strutturata per la ricerca AI e non compare mai quando i clienti locali nello Uintah Basin cercano ciò che vendi.",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "822771a579ffbe722f1409578f12b68fef77b63e83d6bf45a7c61626793d5f4d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Professional pest control services with online booking and local SEO.",
+      "target": "Servizi professionali di disinfestazione con prenotazione online e SEO locale.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
     },
     "828d250bc2057c63b299c5b989f982f4acf2f1ffbd11bbfb48dcebd41349fccd": {
       "model": "claude-opus-5",
@@ -2737,6 +3257,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "8413977a24c4118a37ca5ba5a4168ed464f54886ff99b77232cf2af2ce32f6f0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Local",
+      "target": "Local",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
     "841e42ab28a89cfb168857ead077d56f4eef2b829322fb56e04bcd8d12d44688": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2744,6 +3272,14 @@
       "target": "Non funzionalità fine a se stesse — sei vantaggi che si vedono direttamente nel tuo posizionamento, nella tua reputazione e nel tuo fatturato.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
+    },
+    "849cdf964f0ec1a11bfcb5af9c77bbed030bf78f787b925febe3c3b1a7831bf6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "CMS-compliant Medicare site with SEO-driven plan & location pages.",
+      "target": "Sito Medicare conforme CMS con pagine su piani e sedi ottimizzate per la SEO.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
     },
     "84bc59388267a6f430550c2c39c32191c42058c17588675a8f2990f8234736f4": {
       "model": "claude-opus-5",
@@ -2833,6 +3369,14 @@
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
     },
+    "8662b600e56f785e5d94940eabd132e9358c5d4c69524da60519f7e242b82b3d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Mobile",
+      "target": "Mobile",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "8664e23f889b3438b717cd2bb4102f4b700be9b4f2c6af4682e259e6e79a6265": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2840,6 +3384,14 @@
       "target": "La strategia trasforma i clienti in crescita.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "866a529a21533204a520a74b2d4386dbe6b602049a62e6270bf126897819e0f1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "14",
+      "target": "14",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
     },
     "86ab41093bd496f9f2bdbd22fbedef1036b5c703ffbeb6873947719bf39e7c98": {
       "model": "claude-opus-5",
@@ -2977,6 +3529,14 @@
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
     },
+    "8c0e8bc215aa8de476aa62885cb8d2b6455be38795750f8660c0f4f561ae1a0b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Business impact",
+      "target": "Impatto aziendale",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "8c12c40aee9d36bf87ba04f991ceedc15f398ab30175aaf7441a0103d6f843d8": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3073,6 +3633,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "9048ade040c0531470fd3a51dc9d834769b0a01084d377e46b7796ef5073b99d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The practice now reaches Medicare-eligible clients across more searches and seasons — safely, compliantly, and without the risk of a costly violation.",
+      "target": "Lo studio ora raggiunge i clienti idonei a Medicare su più ricerche e stagioni — in sicurezza, in conformità e senza il rischio di una violazione costosa.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "90c38f1e6b5726060651978d5f7404429692abc9ffdba1250633c00a1b595a83": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3137,6 +3705,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "92c368e5ca9d926f9630d22258cb659e73f5535ca34a366fbc7dc0688f7aec49": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO Rebuild",
+      "target": "Rifacimento SEO",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "92fd4aab610f7d7af3cc43cd43668fa7faac30da1c5d6efd1488133615018b7d": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3184,6 +3760,22 @@
       "target": "Salta anche una sola fase e il sistema si rompe — un sito bellissimo che nessuno trova, oppure un sito velocissimo senza nulla da convertire. Eseguite nell’ordine giusto, si moltiplicano.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "943ec588dfc45f62fd62618d6362810a532e0aac34c7e962bd4a978ccfa8cd41": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Pest Control",
+      "target": "Disinfestazione",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
+    "94500f0c261d56d566dd71cc1c9a7b07cdb0379e3001a8684ec79378f39c6e92": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Pillar architecture · 30+ pages · UTV tour booking system.",
+      "target": "Architettura pillar · oltre 30 pagine · sistema di prenotazione per tour in UTV.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "949d53ec340f214c572cf212c146a66fa47caae0d5edbafad3585fac8985f708": {
       "model": "claude-opus-5",
@@ -3241,6 +3833,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
     },
+    "972031c1007ee589f5314acc7e4079404a339be75908ba16a67625b07c9a9bb9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A growing portfolio.",
+      "target": "Un portfolio in crescita.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "977b4b56454c91ca635a5e45554d7dbd3bad126a32c99626df5b50d1c1f379cb": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3257,6 +3857,22 @@
       "origin": "committed",
       "at": "2026-08-22T14:04:48.056Z"
     },
+    "978b7463fd6b705631803e0944af125c831b13275f971df8542ece6a2c3dd85e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Indexed Pages",
+      "target": "Pagine indicizzate",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
+    "97a5909154c71f3b997f328338e4893e1bc14561c847a992702c5c83ddccbfda": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "30+ pages indexed across two languages, sub-second load times, and a presence that finally matches the firm's expertise.",
+      "target": "Oltre 30 pagine indicizzate in due lingue, tempi di caricamento inferiori al secondo e una presenza finalmente all'altezza della competenza dello studio.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "982261b6344c6a5df75b9e566777c46a247f41aa66d87db9f31a89335ab225e8": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3264,6 +3880,14 @@
       "target": "Nati a Vernal",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "982cc5db21bb21c2790739894236c7f396d8f4b2db82249b7fd5a6036169168a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Load Time",
+      "target": "Tempo di caricamento",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "98373a6f4d743ff95044b330fab431f8e103293dc2051192c9654c72af5b4212": {
       "model": "claude-opus-5",
@@ -3377,6 +4001,22 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.192Z"
     },
+    "9e459a1bccd59e54d097680ddafdc23cb999bd733c3da579c2da697e7f967fa6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Canonical",
+      "target": "Canonical",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
+    "9efa404e370bf78943a71eda743eae7caa3293501d9f42f3ac6bfe54e46823b9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Every build below came out of the same six disciplines — design, video, marketing, SEO, automation, and support — detailed on our <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">services page</a>. Each one followed <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">the same four-stage build process</a>. If you're weighing a project of your own, the <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">investment for a build like these</a> starts at {websiteStartingPrice}.",
+      "target": "Ogni realizzazione qui sotto nasce dalle stesse sei discipline — design, video, marketing, SEO, automazione e supporto — descritte nella nostra <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">pagina dei servizi</a>. Ognuna ha seguito <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">lo stesso processo di realizzazione in quattro fasi</a>. Se stai valutando un progetto tuo, <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">l'investimento per una realizzazione come queste</a> parte da {websiteStartingPrice}.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "a04ca26487d2ac515c1ee58128a5cba8172f2448759261dca2159d614b8c3e09": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3409,6 +4049,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "a1e55e788660fc322e22ace179e59ad20b9ece27ed3f08a9943bc9f1e7e948ae": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO Pages",
+      "target": "Pagine SEO",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "a2064afaa64168305c1c3ed05d1b33ea0a2bdb700c1f7e4071c6a74474d7f45e": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3424,6 +4072,14 @@
       "target": "Programmi NASA e DoD",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "a2e61d5ee9006138194485cae95d72816748026d7518771d9557904c71ac6cee": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hospitality",
+      "target": "Ospitalità",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "a30f380fc2ef2e463dc5c258ea08badaeaef49d284c941f4a06a34db58776438": {
       "model": "claude-opus-5",
@@ -3473,6 +4129,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "a44405eeb36816b5fc6b30388f75f1370e275c631488ffae5f8dcbeba5123dd3": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Tell us about your business — we'll show you exactly what we'd build.",
+      "target": "Raccontaci della tua attività — ti mostreremo esattamente cosa costruiremmo.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "a446d009b18a251df4446bc07195e1ab9e72f173a06a6e8d55a3a82f0264ab8c": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3480,6 +4144,22 @@
       "target": "Risposte dirette su prezzi, tempistiche, proprietà, SEO, hosting, manutenzione, AI, video e marketing — prima ancora di parlarci al telefono.",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "a493b0ac2f92914e45ce33343766c30936a70864f1675c2c34c30bcb86f2e456": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "4",
+      "target": "4",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
+    "a54bd993784e2cde9c33e7f1e820c18cf8a503ae89334561934259a06535f059": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A licensed Medicare insurance practice built on a split-sitemap architecture across 27+ SEO pages, with CMS compliance baked into every page and an AEP anchor calendar.",
+      "target": "Uno studio assicurativo Medicare autorizzato costruito su un'architettura a sitemap divisa su oltre 27 pagine SEO, con la conformità CMS integrata in ogni pagina e un calendario ancorato all'AEP.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "a6fd6d50e0441be88932811a6ca4971c16614707384e006d872162586dc06fa2": {
       "model": "claude-opus-5",
@@ -3577,6 +4257,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
     },
+    "aa48231c8364e6b62fe2ab0aa26a95de0a855d41dc1a3659dfc9d4134cc7c3db": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A hotel was losing direct bookings to online travel agencies and running on a dated site that didn't reflect the quality of the property.",
+      "target": "Un hotel stava perdendo prenotazioni dirette a favore delle agenzie di viaggio online e operava su un sito datato che non rifletteva la qualità della struttura.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "aa944ae9e70a5fab7c1f10f66839ed749f17d48fdf7b7c976d7ebd25909aff61": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3592,6 +4280,14 @@
       "target": "Monitoraggio delle keyword e SEO tecnica",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "ab7d4601bcd98476329ee52db3a465b5a085ce9f87a26482665d2da56bc5b4a9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Optimized",
+      "target": "Ottimizzato",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "ab85195c8f9fac0552260aa698c72fa508c5487ecf03aa7e2f27f2fc2df8e91b": {
       "model": "claude-opus-5",
@@ -3633,6 +4329,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "acb072769c535904d96dbceb54cda2bfb6a0bce428a4267879590cfbf6e0fc64": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A licensed Medicare practice operates under strict CMS marketing rules and needed to rank for plan- and location-specific searches without risking compliance.",
+      "target": "Uno studio Medicare autorizzato opera secondo rigide regole di marketing CMS e doveva posizionarsi per ricerche specifiche per piano e per sede senza mettere a rischio la conformità.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
+    },
     "adb9ad092ed210b187052716d79bb2c24ce5c92eefe8f4f714d2174c676e1735": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3640,6 +4344,22 @@
       "target": "Quando le imprese locali crescono, tutta la comunità diventa più forte.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "ae14474f85a6b6ba1c8c1827efa650a41664c2ef4d445bbbb7d02bf8b55296f9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Conversion engine",
+      "target": "Motore di conversione",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "ae437d6505dacb694ebe3e7b2f3a0063c92709923b1c1dc7962af0e6b8231904": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "14-page cinematic build · interactive price calculator.",
+      "target": "Sito cinematografico di 14 pagine · calcolatore di prezzo interattivo.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
     },
     "ae575d176defeccf0aaf2fa6bd8ba562162b96a5e55d5186c042a96d62ce7f39": {
       "model": "claude-opus-5",
@@ -3753,6 +4473,14 @@
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
     },
+    "b31ed5dabba8f7f160fa119e8958d6a73d3a3cfd8d9850c40ca307b988ad47a9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Every project starts with a real business problem. Here's the challenge, the strategy, what we built, and the impact it created — for each client.",
+      "target": "Ogni progetto parte da un problema aziendale reale. Ecco la sfida, la strategia, cosa abbiamo costruito e l'impatto generato — per ogni cliente.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "b33528891e7e0201f1cbaf538be6ad550c88599287a101d50e478b62c4799905": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3760,6 +4488,14 @@
       "target": "Il tuo dominio. Il tuo codice. I tuoi contenuti. Senza eccezioni.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
+    },
+    "b351fef34d397806be99fc62ee0ceeb53356103f309659054fd267fd946469b5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "System",
+      "target": "Sistema",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "b3b3f3ac7f63ebef7906e23198ecc1b889ff17d0843a668d2aeeae0c47489da8": {
       "model": "claude-opus-5",
@@ -3841,6 +4577,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "b7e246ec2636800606f0e4fee099e580959a8bdb7a7d9f807de172ba8495fba2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Sub-second · #1 ranked",
+      "target": "Meno di un secondo · #1 in classifica",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "b8302dc70c2ad095d124b13a0e3ea2b661ffad2040789cf1ffaa3772274476fa": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3856,6 +4600,14 @@
       "target": "Wireframe e approvazione del design",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.579Z"
+    },
+    "b8b01028a84c742a18fa04b59cce1d6539946950c2279f588c0c08167d7882eb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Leads Created",
+      "target": "Lead generati",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "b8c038457ac9034254b2c08c4eb5037ab26bfd428aa20ad1c62afa3392f94743": {
       "model": "claude-opus-5",
@@ -3896,6 +4648,22 @@
       "target": "Tutto ciò che include Authority",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "ba2b516184e14426aa43e5d2a0714b3e1061cf6d3144b1458dc5b6c921416e57": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A luxury transportation brand on a 14-page cinematic site with interactive widgets — a price calculator, prom planning timeline, venue map, and itinerary builder.",
+      "target": "Un brand di trasporto di lusso su un sito cinematografico di 14 pagine con widget interattivi — un calcolatore di prezzo, una timeline per la pianificazione del ballo di fine anno, una mappa delle location e un costruttore di itinerari.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "bb2bccc6ead37dc9ad2ab846098a1609f369ec92590a43f7c7d77426099c8591": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Dominate local SEO across the Uintah Basin with dedicated service-area pages, and remove every barrier between an anxious customer and a booking.",
+      "target": "Dominare la SEO locale in tutto lo Uintah Basin con pagine dedicate alle aree di servizio, ed eliminare ogni ostacolo tra un cliente in difficoltà e la prenotazione.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
     },
     "bb510c2922143ed2bcbe9c052c06efb3406e9345dfbb6a13af7190ddda067019": {
       "model": "claude-opus-5",
@@ -3969,6 +4737,22 @@
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
     },
+    "bdac500d5409c34764c08023c38e4049c04c66935eff1dcfc2a05d9cb2dc3c6b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Local Business",
+      "target": "Attività locale",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
+    "bdaf757ccff0c8d7824b1e9324c518a82a0d2dd6f82c84ec18eb6560fcb74a47": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A complete digital build with service-area mapping, online booking, and strong local SEO optimization across the region.",
+      "target": "Una realizzazione digitale completa con mappatura delle aree di servizio, prenotazione online e una forte ottimizzazione SEO locale in tutta la regione.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
+    },
     "be238d6baee6dfb40e53f7a3c837e4a003ac397859af0c8b525b917074ccbb49": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3976,6 +4760,14 @@
       "target": "Configurazione di pixel e tracciamento",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "be4c036c62f40578c5c02f9213cf16ff5180d288246a7dc0fedfe2e61005026e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Medicare Insurance Practice",
+      "target": "Studio assicurativo Medicare",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "be5b9984757b33e777b03ff7d25243288703e64a6cc2b8cc39c5597b3b513693": {
       "model": "claude-opus-5",
@@ -3992,6 +4784,14 @@
       "target": "Accessibile secondo gli standard WCAG 2.1 AA",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.579Z"
+    },
+    "bfe338e6f8fbe2531dd292fcb2c1dc53507519a77afd5a08ac0123c283c7e24b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Our strategy",
+      "target": "La nostra strategia",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "c052d8c4f0717ae1a005872e5ffeee5d161357989bf7d13575f796ed8d427050": {
       "model": "claude-opus-5",
@@ -4048,6 +4848,14 @@
       "target": "Il tuo sito diventa più veloce e si posiziona meglio — non il contrario.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
+    },
+    "c3a5987cb985a9d17f2b29f1316114ed60071923e139a52f384157ab431670af": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Sites Launched",
+      "target": "Siti lanciati",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "c489b8e6f9f5b5acd670ff52e31176899bf5f010c8e073a4075d0eaffb96c1f6": {
       "model": "claude-opus-5",
@@ -4112,6 +4920,14 @@
       "target": "Mappatura dei flussi di lavoro",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "c6e6310da1dedea8bac0cb2a4bfcd19a5a61948ef19c2c516e4c02656dac1734": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A specialized Italian genealogy and dual-citizenship firm had deep expertise but almost no online visibility — and needed to look credible to clients across two languages and two countries.",
+      "target": "Uno studio specializzato in genealogia italiana e doppia cittadinanza aveva una competenza profonda ma quasi nessuna visibilità online — e doveva apparire credibile a clienti in due lingue e due paesi.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "c6ea4879583e2fb1ee801f38c2ea20a5ed62da1a641f9c85c7827b366e465315": {
       "model": "claude-opus-5",
@@ -4257,6 +5073,14 @@
       "origin": "committed",
       "at": "2026-08-22T14:04:48.055Z"
     },
+    "cd0389e9d04f2e17cc19a893fb1b00b333edc20217050fb4708da9564ff2f506": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A clean, fast site with CMS compliance baked into every page, structured data throughout, and SEO-driven plan and location coverage.",
+      "target": "Un sito pulito e veloce con la conformità CMS integrata in ogni pagina, dati strutturati ovunque e una copertura di piani e sedi guidata dalla SEO.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
+    },
     "cd2b165bb179aede0617cba21d5ae9db28e12a76aa00b2bb2a06e5c500226dd9": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4280,6 +5104,14 @@
       "target": "Offrite servizi di produzione video?",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "cde5d1764e39b933f1dc59fe03baca6356ae425957b72f007c077fc7623fdb21": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Parking Management",
+      "target": "Gestione dei parcheggi",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "cdf0faf0575749e998fd629b5faae4bb518d51ab6d22e38bd9cd4ffdd9b88381": {
       "model": "claude-opus-5",
@@ -4312,6 +5144,14 @@
       "target": "Hosting",
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
+    },
+    "ced9316f717794abc5cbcfcf7a66d7bebe04780060eac4f3333a5bcb121c15da": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Self-service quoting and planning capture leads after hours and qualify them before the first call — fewer tire-kickers, more booked events.",
+      "target": "I preventivi e la pianificazione self-service catturano lead anche fuori orario e li qualificano prima della prima telefonata — meno curiosi, più eventi prenotati.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "cefaaa7eeb3de0a13a1abffa92922e72b1f39d91d6b3ee7e5f6efb20662ce47b": {
       "model": "claude-opus-5",
@@ -4353,6 +5193,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "cff502eda87a985901eda58c50ccc2812a2c502b60192268789150cca76ee4f1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Aesthetic",
+      "target": "Estetica",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
+    },
     "d01a9245d56381ed72b753e31f06285b1c557ab9582da72a22853dcaed2b7736": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4360,6 +5208,14 @@
       "target": "Registrazione attiva con UEI aggiornato, pronti per affidamenti come prime e come subappaltatore.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "d02e7694bfc08f5764ad18c5a43e0c0f8181d40bd564c481f6aa304488e18a3e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Technologies",
+      "target": "Tecnologie",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "d0aa6f0cb5f1850c65776459043b693d2d0c873759ca2ddd3993e638a4c47481": {
       "model": "claude-opus-5",
@@ -4433,6 +5289,14 @@
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
     },
+    "d4160fc43dfa4a41b94075e6b941af8f9cd405a5868bc82ccab7c25d606d4ca2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Static brochure",
+      "target": "Brochure statica",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "d41c54ce257655950135d40cea5da76552df6a1e4943b94324b5ce001657acd1": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4464,6 +5328,14 @@
       "target": "Ingegneria del software",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "d49fa0cc76602ce63817dd9735897ec25c932c89de899b209952bfe84feae732": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Before",
+      "target": "Prima",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "d4bbcf1b4402557329bce4c2d917b32e7ed2b39e88b7d44ddb6d8c324de27360": {
       "model": "claude-opus-5",
@@ -4609,6 +5481,14 @@
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
     },
+    "d92525b2aa9d1a22b705bac31e38bd3e14fa5482167a5dbaa74bb53b27425363": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Outcome:",
+      "target": "Risultato:",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "d949f6ad9bb6b043fdd8a3bee6f596eacdaf0e0dd32ffeae93bdd6f66e0c23f2": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4641,6 +5521,14 @@
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
     },
+    "db1a2547b806134248e0e71e53740ca57f550c48ba1ff5e1ba3cce3673eae712": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Utah Web Design Portfolio — Real Business Results",
+      "target": "Portfolio di Web Design in Utah — Risultati Aziendali Reali",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "db2202b51134c25d424081b4232e948ca3ba22686d0bdd0d999a23fd47794478": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4656,6 +5544,14 @@
       "target": "Ellen crede che le partnership solide producano i risultati migliori. Ottieni un partner che investe nei tuoi risultati, non un fornitore che conta i deliverable.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "dba2573b4ea7b01af9580ede2783a948ff3091df404ad079193aef866ed3bd61": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "24/7 online booking, a fully mobile-optimized experience, and an SEO-ready foundation built to grow.",
+      "target": "Prenotazione online 24/7, un'esperienza completamente ottimizzata per il mobile e una base pronta per la SEO costruita per crescere.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "dbcf5f0ee956a67fc3fb87184246142d41c803bf3b7971fe2558958d3e197009": {
       "model": "claude-opus-5",
@@ -4688,6 +5584,14 @@
       "target": "Ottimizzazione del Google Business Profile",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "dd56c2f9a1b1aa54f658d09397b5031988273ae1a8f1eade3b7162ebea21b773": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "27+ compliant SEO pages, a clean split-sitemap index, and a disciplined five-phase rollout.",
+      "target": "Oltre 27 pagine SEO conformi, un indice a sitemap divisa pulito e un rollout disciplinato in cinque fasi.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "dd9668cfeecff9bf21cce42eeaa9be5e2644c78f331625e2edc4b587565d3720": {
       "model": "claude-opus-5",
@@ -4753,6 +5657,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "dec866dbbb9175e2bad2d798ba6986016816c28c8a699ab9eb26f97e7fa6b777": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A local pest-control company was invisible in search across its service area and had no way for customers to book without calling during business hours.",
+      "target": "Un'azienda locale di disinfestazione era invisibile nelle ricerche in tutta la sua area di servizio e non offriva ai clienti alcun modo di prenotare senza chiamare durante l'orario di apertura.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
+    },
     "df0fa9741b94cbe1d9c41fec8bf71e605c311d538884103b8a1472439426ab45": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4769,6 +5681,14 @@
       "origin": "committed",
       "at": "2026-08-22T17:38:48.579Z"
     },
+    "df2f5439a2d736147eac48cab4c31d8cb3cdd12861fbad9095d39ed622f007ba": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A hand-built, 30+ page bilingual site with structured data, regional service pages, and AI-search optimization throughout — fast, polished, and effortless to navigate in either language.",
+      "target": "Un sito bilingue scritto a mano, di oltre 30 pagine, con dati strutturati, pagine di servizio regionali e ottimizzazione per la ricerca AI in ogni sezione — veloce, curato e facile da navigare in entrambe le lingue.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "df57dfd6505c388397e7a4addb040172ca7e53bd0045fe459bba6bd488f6180b": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4776,6 +5696,22 @@
       "target": "Audit dell'account e degli obiettivi",
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
+    },
+    "df7f75f074553778d7b3ca191c6b95135cca5faaae422f3998df8a0b369d8106": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Build",
+      "target": "Realizzazione Cozelos",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "df980f0f6140d4d09ddb81a1054c524dd13def26c524358ac22704c1716d15cc": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Italian genealogy & dual citizenship research service.",
+      "target": "Servizio di ricerca genealogica italiana e doppia cittadinanza.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "dfc8c80ce2f841a12bfd1f9f3648e551d12c8b47a5c7f43968885734034d447e": {
       "model": "claude-opus-5",
@@ -4905,6 +5841,30 @@
       "origin": "committed",
       "at": "2026-08-22T17:38:48.580Z"
     },
+    "e4e2da7cdf4f2561436ebf510f8c8367c7be7aab2c68a2c59c917edd51a1296b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A luxury transportation brand needed to feel unmistakably premium and make quoting and planning effortless for high-end events like proms and weddings.",
+      "target": "Un brand di trasporto di lusso doveva trasmettere un'immagine inequivocabilmente premium e rendere semplice richiedere preventivi e pianificare eventi di alto livello come balli di fine anno e matrimoni.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "e4ea901b820ee2af5048840a545a6fad666f1c8b39e2d7da8856226955499134": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Genealogy",
+      "target": "Genealogia",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
+    "e5a7b6f638dcf42cf85b10e71daea7a0907c74f9eeced1e8b55314b6acac06f5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Compliant SEO coverage across plans and locations, sub-second load times, and a presence built to capture Annual Enrollment Period demand.",
+      "target": "Copertura SEO conforme su piani e sedi, tempi di caricamento inferiori al secondo e una presenza costruita per intercettare la domanda del periodo di iscrizione annuale.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.169Z"
+    },
     "e620e1c1f873a46f4d347dca3c23aeb1d95439ca24d10d10011a28cfa00a46d2": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -4952,6 +5912,22 @@
       "target": "La nostra storia",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "e810b8c945f7ed50005695f29be662b9204f6221ac6e9b657b724d16115a42f2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data has rebuilt 35+ Utah businesses — tour operators, hotels, healthcare practices, pest control, and genealogy researchers — from generic templates into fast, search-optimized digital systems. Every build pairs custom design with full pillar-and-spoke SEO, and clients own everything.",
+      "target": "Cozelos Data ha ricostruito oltre 35 aziende dello Utah — tour operator, hotel, studi sanitari, disinfestazione e ricercatori genealogici — trasformandole da template generici in sistemi digitali veloci e ottimizzati per la ricerca. Ogni realizzazione unisce un design su misura a una SEO pillar-and-spoke completa, e i clienti sono proprietari di tutto.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
+    "e869110a0eb4333019218a094c4e0585f5f692bea10e21d56211ca30c9780ff8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Translate 'luxury' into the experience itself — cinematic design paired with interactive tools that let clients price, plan, and book with confidence.",
+      "target": "Tradurre il concetto di 'lusso' nell'esperienza stessa — un design cinematografico abbinato a strumenti interattivi che permettono ai clienti di ottenere preventivi, pianificare e prenotare con sicurezza.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "e86b6ca03badb7ae16375542e877bf40cc27cb7ba81af3ea2ef940ace8f24f6f": {
       "model": "claude-opus-5",
@@ -5025,6 +6001,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
     },
+    "e9f4886515c60ba7d423ff48720c60864cf4e1f6144bb6b93d989f1354bd660b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A cinematic, high-trust presence, a clean canonical SEO rebuild, and a direct-booking-focused rates experience.",
+      "target": "Una presenza cinematografica e altamente affidabile, un rifacimento SEO canonico pulito e un'esperienza tariffaria orientata alle prenotazioni dirette.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "ea7b23d15838a16644264d082028bc2b456ea4303664250f2ef117453a0ad42e": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -5081,6 +6065,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "eb9ec1ddc727b468a3fae717e9215ebc91d798aa706907975a93e2bdda03e54e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Want to be next?",
+      "target": "Vuoi essere il prossimo?",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "eb9ffbe86b7971a1643fd1c9bd33381ba48d21068476c8362697b58c3c6626ec": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -5105,6 +6097,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "ec806950c4fda419312c7a41fa6ebed0031562a7a59e8da7f08ca10ab9ad6562": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hover any project to see the stack, results, and a case-study link.",
+      "target": "Passa il mouse su un progetto per vedere lo stack, i risultati e il link al case study.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "ed095e81de09d3ce19ffd9c34a024c8fb4475ffec01d61b003ad59dc90dbc7d1": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -5112,6 +6112,14 @@
       "target": "È qui che la maggior parte dei progetti web si ferma, ed è qui che il nostro comincia. Progettiamo il percorso che un visitatore compie dalla prima impressione fino a diventare cliente pagante, e costruiamo ogni pagina, ogni titolo e ogni call-to-action per accompagnarlo lungo quel percorso. Poi misuriamo ciò che conta davvero — lead e fatturato — e miglioriamo.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "ed29c47ecaa2d4b078d37e4fd91f8fac4f3d7bef921cadc09ce77cfc5dea0077": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "30+",
+      "target": "30+",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "ed62d5761edbb9459124b1522d20ed055c99dd0b70b210e0b8aa0154169807ff": {
       "model": "claude-opus-5",
@@ -5161,6 +6169,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "efcfb1e8ed5fb73118b5affe539e5473ba3dc31bab5db99bea35e1b63b453b4f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Bilingual Build",
+      "target": "Sito bilingue",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "efe153e28a517bc941630985c5272bbde9e13dd4a8ab8f780a2129f7116bc92c": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -5168,6 +6184,14 @@
       "target": "Una piattaforma digitale progettata sulle tue esatte esigenze operative.",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "f0bf50898a08d07f0f974793b247f85324904d50570e2dff2ee7e114a7cd3762": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cinematic",
+      "target": "Cinematic",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
     },
     "f10994d2a7d6674c1c699b8d973bd17c398cc2aa8403f408c04497fa9f612be4": {
       "model": "claude-opus-5",
@@ -5329,6 +6353,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "f8d52dc244c4816ccfaf70d31af8abe9263a0f557cd1f7b2bbdc4b7135be4e22": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Direct",
+      "target": "Direct",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.173Z"
+    },
     "f98128214bfb21739b1f817b626c560edc889c35258f4cc75331ddabab877a70": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -5336,6 +6368,14 @@
       "target": "Il mercato è pieno di chi vende siti web. Quasi nessuno costruisce asset digitali — la presenza online che continua a generare valore per anni. Questa distinzione è tutto.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.192Z"
+    },
+    "f99bba6e0cc3425315b9103747931fcc34baeb395e1140873c62b3930065ba17": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The Roster",
+      "target": "La rosa",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "f9eb6c6cf71f31dba62ab45a9acd1c7c0377e456220a579b6f04b12a7b228dad": {
       "model": "claude-opus-5",
@@ -5353,6 +6393,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "fa0d815ae46baa2893eccd2c68bddd9234246fa28bc77b33f33ac79be2755412": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Drag the slider to see what a Cozelos build replaces.",
+      "target": "Trascina il cursore per vedere cosa sostituisce una realizzazione Cozelos.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "fa12f2320adfc00e99c96a26ffc6d870d1e08aad025a6574b010224dbe86d174": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -5369,6 +6417,14 @@
       "origin": "committed",
       "at": "2026-08-22T14:27:43.280Z"
     },
+    "faacdc58c594d193d0c660afc8c0448c2403024f7a50cf9a83d69b4d48fd62ab": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "The challenge",
+      "target": "La sfida",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
+    },
     "fafecf379745800c9d7068b7f3404a7d4950bbece0efff5a30d60f5679c5134a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -5384,6 +6440,14 @@
       "target": "La visibilità trasforma un ottimo sito web in una fonte di clienti.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "fb56188fed01e0e5ee57e09033cf06db7ec0c789344227ae2d0fc4d42cb73837": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Utah businesses we've moved from invisible to in-demand — each one rebuilt as a fast, custom, search-ready online presence.",
+      "target": "Aziende dello Utah che abbiamo portato dall'invisibilità alla richiesta — ognuna ricostruita come una presenza online veloce, su misura e pronta per la ricerca.",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.168Z"
     },
     "fb7b50d51ee17b5aaca3b9661c361cf45a9f3c805da59fb4ce446305aa7f297e": {
       "model": "claude-opus-5",
@@ -5456,6 +6520,14 @@
       "target": "Cozelos Data — fondata da Ellen Cozelos a Vernal, Utah",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "ff060c46bc20072a03332d33be3985ba8fd73274d8e82f90ac82778ddcd36fe6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "CMS",
+      "target": "CMS",
+      "origin": "committed",
+      "at": "2026-08-22T18:00:15.174Z"
     },
     "ff0f2e988586b5b6303d33c7cf13e8368fcc3299f4a5790ad702b9c25498313c": {
       "model": "claude-opus-5",

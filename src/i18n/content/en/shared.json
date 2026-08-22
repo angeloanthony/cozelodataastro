@@ -33,5 +33,84 @@
     "work": "See the Work",
     "call": "Schedule a Call",
     "callNote": "Or call us directly:"
+  },
+  "projects": {
+    "forebear-find": {
+      "category": "Genealogy",
+      "tagline": "Italian Genealogy & Dual Citizenship",
+      "summary": "Italian genealogy & dual citizenship research service.",
+      "results": [
+        { "metric": "30+", "label": "Indexed Pages" },
+        { "metric": "EN/IT", "label": "Bilingual Build" },
+        { "metric": "<1s", "label": "Load Time" }
+      ]
+    },
+    "parkingway-it": {
+      "category": "Parking Management",
+      "tagline": "Parking Management Platform",
+      "summary": "Modern parking management platform and business website.",
+      "results": [
+        { "metric": "24/7", "label": "Online Access" },
+        { "metric": "Mobile", "label": "Optimized" },
+        { "metric": "SEO", "label": "Ready" }
+      ]
+    },
+    "adventure-tours-vernal": {
+      "category": "Local Business",
+      "summary": "Pillar architecture · 30+ pages · UTV tour booking system.",
+      "results": [
+        { "metric": "30+", "label": "Pages" },
+        { "metric": "Booking", "label": "System" },
+        { "metric": "Local #1", "label": "Search Goal" }
+      ]
+    },
+    "best-western-vernal-inn": {
+      "category": "Hospitality",
+      "tagline": "Hotel Website & Direct Bookings",
+      "summary": "Cinematic Ken Burns hero · canonical SEO rebuild.",
+      "results": [
+        { "metric": "Cinematic", "label": "Hero" },
+        { "metric": "Canonical", "label": "SEO Rebuild" },
+        { "metric": "Direct", "label": "Bookings" }
+      ]
+    },
+    "vernal-medicare": {
+      "category": "Healthcare",
+      "tagline": "Medicare Insurance Practice",
+      "summary": "27 SEO pages · 5-phase rollout · CMS compliance.",
+      "results": [
+        { "metric": "27+", "label": "SEO Pages" },
+        { "metric": "CMS", "label": "Compliant" },
+        { "metric": "5-Phase", "label": "Rollout" }
+      ]
+    },
+    "high-class-limousine": {
+      "category": "Luxury",
+      "summary": "14-page cinematic build · interactive price calculator.",
+      "results": [
+        { "metric": "14", "label": "Pages" },
+        { "metric": "4", "label": "Interactive Tools" },
+        { "metric": "Cinematic", "label": "Aesthetic" }
+      ]
+    },
+    "wernex-pest-control": {
+      "category": "Pest Control",
+      "summary": "Professional pest control services with online booking and local SEO.",
+      "results": [
+        { "metric": "Local", "label": "#1 Rankings" },
+        { "metric": "Booking", "label": "System" },
+        { "metric": "<2s", "label": "Load Time" }
+      ]
+    },
+    "alta-medicare": {
+      "category": "Healthcare",
+      "tagline": "Medicare Insurance Practice",
+      "summary": "CMS-compliant Medicare site with SEO-driven plan & location pages.",
+      "results": [
+        { "metric": "CMS", "label": "Compliant" },
+        { "metric": "Local", "label": "SEO" },
+        { "metric": "<1s", "label": "Load Time" }
+      ]
+    }
   }
 }

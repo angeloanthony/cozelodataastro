@@ -30,8 +30,25 @@
  * without a URL. The localized route filters on SLUG_BY_KEY, so it can never
  * become a page — while the validators, which read the content directory, pick
  * it up automatically and hold en/it to the same structure.
+ *
+ * `projects` joined Step 25 (Portfolio localization) for the same reason as
+ * the service `title`/`short`: category, tagline and summary each render in
+ * more than one place — ProjectCard.astro (homepage FeaturedProjects AND the
+ * /portfolio/ grid) and, for `category`, the case-study section of
+ * PortfolioPage.astro too. Single-consumer project prose (overview/challenge/
+ * strategy/solution/outcome/businessImpact/results) is only ever read by
+ * PortfolioPage.astro and lives in src/i18n/content/<locale>/portfolio.json
+ * instead, exactly like `services.json` holds the single-consumer service body.
+ * Project identity (slug, name, accent, image, liveUrl, featured, stack) stays
+ * in src/data/site.ts, never translated — joined here by `slug`, never by
+ * array position.
  */
-import { services as SERVICE_STRUCTURE, type Service } from "../data/site";
+import {
+  services as SERVICE_STRUCTURE,
+  type Service,
+  projects as PROJECT_STRUCTURE,
+  type Project,
+} from "../data/site";
 import { getPageContent } from "./content";
 
 export interface SharedContent {
@@ -73,6 +90,22 @@ export interface SharedContent {
    * own label still wins — page-specific copy outranks the shared default.
    */
   cta: { start: string; work: string; call: string; callNote: string };
+  /**
+   * Localized project label + teaser + result badges, keyed by `Project.slug`
+   * (site.ts). `tagline` is optional — only the projects that carry one in
+   * site.ts carry one here; ProjectCard's `tagline ?? summary` fallback applies
+   * after localization, same as before it.
+   *
+   * `results` lives here rather than in portfolio.json because ProjectCard.astro
+   * (full variant) renders it too, not just PortfolioPage.astro's case-study
+   * section — the same "read from more than one file" rule that put category/
+   * tagline/summary here. Metric values that are pure notation ("30+", "<1s",
+   * "24/7") are identical in every locale; only the word-based ones translate.
+   */
+  projects: Record<
+    string,
+    { category: string; tagline?: string; summary: string; results: { metric: string; label: string }[] }
+  >;
 }
 
 /** The shared content object for a locale, falling back to master per file. */
@@ -95,5 +128,27 @@ export function getServices(locale: string): Service[] {
     ...s,
     title: shared.services?.[s.slug]?.title ?? s.title,
     short: shared.services?.[s.slug]?.short ?? s.short,
+  }));
+}
+
+/**
+ * site.ts projects with `category`/`tagline`/`summary` replaced by the
+ * localized versions. Same drop-in shape as getServices: every consumer keeps
+ * reading `p.category` / `p.tagline` / `p.summary` and gets the right
+ * language for free. Identity fields (slug, name, accent, image, liveUrl,
+ * featured, stack) are never touched — they pass through unchanged.
+ *
+ * The `?? p.category` / `?? p.summary` fallbacks are a safety net for a
+ * project added to site.ts but not yet translated, not the contract — see the
+ * getServices doc comment above for why.
+ */
+export function getProjects(locale: string): Project[] {
+  const shared = getShared(locale);
+  return PROJECT_STRUCTURE.map((p) => ({
+    ...p,
+    category: shared.projects?.[p.slug]?.category ?? p.category,
+    tagline: shared.projects?.[p.slug]?.tagline ?? p.tagline,
+    summary: shared.projects?.[p.slug]?.summary ?? p.summary,
+    results: shared.projects?.[p.slug]?.results ?? p.results,
   }));
 }

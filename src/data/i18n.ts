@@ -83,6 +83,13 @@ export const strings = {
     // ServicesGrid's card link label — reused across every card, on the
     // homepage and wherever else the grid renders. Chrome, not page content.
     "cta.learnMore": "Learn more",
+    // ProjectCard's link labels and image-alt framing (Step 25) — reused across
+    // every card, on the homepage (FeaturedProjects) and the /portfolio/ grid.
+    // Chrome, not page content, exactly like cta.learnMore above.
+    "card.viewProject": "View Project",
+    "card.visitWebsite": "Visit Website",
+    "card.viewCaseStudy": "View Case Study",
+    "card.imageAltSuffix": "website by Cozelos Data",
   },
   it: {
     "nav.home": "Home",
@@ -108,6 +115,10 @@ export const strings = {
     "a11y.home": "Home di {brand}",
     "summary.quote": "Chiamaci al {phone} per un preventivo gratuito.",
     "cta.learnMore": "Scopri di più",
+    "card.viewProject": "Vedi il progetto",
+    "card.visitWebsite": "Visita il sito",
+    "card.viewCaseStudy": "Vedi il case study",
+    "card.imageAltSuffix": "sito web di Cozelos Data",
   },
 } as const;
 

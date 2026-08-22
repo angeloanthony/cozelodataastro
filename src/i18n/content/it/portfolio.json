@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Portfolio di Web Design in Utah — Risultati Aziendali Reali",
+    "description": "Una rosa crescente di trasformazioni aziendali nello Utah: Forebear Find, Adventure Tours Vernal, Vernal Medicare e altre — design su misura più SEO completa."
+  },
+  "breadcrumb": "Portfolio",
+  "hero": {
+    "eyebrow": "Lavori selezionati",
+    "title": "Aziende reali. Trasformazioni reali.",
+    "lead": "Aziende dello Utah che abbiamo portato dall'invisibilità alla richiesta — ognuna ricostruita come una presenza online veloce, su misura e pronta per la ricerca.",
+    "summary": "Cozelos Data ha ricostruito oltre 35 aziende dello Utah — tour operator, hotel, studi sanitari, disinfestazione e ricercatori genealogici — trasformandole da template generici in sistemi digitali veloci e ottimizzati per la ricerca. Ogni realizzazione unisce un design su misura a una SEO pillar-and-spoke completa, e i clienti sono proprietari di tutto."
+  },
+  "orientationHtml": "Ogni realizzazione qui sotto nasce dalle stesse sei discipline — design, video, marketing, SEO, automazione e supporto — descritte nella nostra <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">pagina dei servizi</a>. Ognuna ha seguito <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">lo stesso processo di realizzazione in quattro fasi</a>. Se stai valutando un progetto tuo, <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">l'investimento per una realizzazione come queste</a> parte da {websiteStartingPrice}.",
+  "compareSection": {
+    "eyebrow": "Trascina per confrontare",
+    "title": "Stessa azienda. Presenza moderna.",
+    "lead": "Trascina il cursore per vedere cosa sostituisce una realizzazione Cozelos."
+  },
+  "compareAfter": {
+    "badge": "Realizzazione Cozelos",
+    "headline": "Meno di un secondo · #1 in classifica",
+    "sub": "Motore di conversione"
+  },
+  "compareBefore": {
+    "badge": "Prima",
+    "headline": "8,2s · Pagina 7",
+    "sub": "Brochure statica"
+  },
+  "rosterSection": {
+    "eyebrow": "La rosa",
+    "title": "Un portfolio in crescita.",
+    "lead": "Passa il mouse su un progetto per vedere lo stack, i risultati e il link al case study."
+  },
+  "caseStudiesSection": {
+    "eyebrow": "Case Study",
+    "title": "Trasformazioni aziendali, non solo siti web.",
+    "lead": "Ogni progetto parte da un problema aziendale reale. Ecco la sfida, la strategia, cosa abbiamo costruito e l'impatto generato — per ogni cliente."
+  },
+  "sectionLabels": {
+    "challenge": "La sfida",
+    "strategy": "La nostra strategia",
+    "solution": "La soluzione",
+    "technologies": "Tecnologie",
+    "visitLiveSite": "Visita il sito live",
+    "outcomeLabel": "Risultato:",
+    "businessImpact": "Impatto aziendale"
+  },
+  "statsLabels": {
+    "sitesLaunched": "Siti lanciati",
+    "viewsDelivered": "Visualizzazioni generate",
+    "leadsCreated": "Lead generati",
+    "clientRetention": "Fidelizzazione clienti"
+  },
+  "cta": {
+    "title": "Vuoi essere il prossimo?",
+    "body": "Raccontaci della tua attività — ti mostreremo esattamente cosa costruiremmo."
+  },
+  "projects": {
+    "forebear-find": {
+      "overview": "Uno studio di ricerca bilingue (inglese/italiano) specializzato nella cittadinanza italiana jure sanguinis e nel recupero di atti anagrafici. Abbiamo realizzato un sito con architettura pillar-and-spoke di oltre 30 pagine che mappa le aree di servizio geografiche e regionali, con dati strutturati e ottimizzazione per la ricerca AI in ogni sezione.",
+      "challenge": "Uno studio specializzato in genealogia italiana e doppia cittadinanza aveva una competenza profonda ma quasi nessuna visibilità online — e doveva apparire credibile a clienti in due lingue e due paesi.",
+      "strategy": "Posizionare lo studio come autorità sulla cittadinanza italiana jure sanguinis mappando ogni regione e servizio in un'architettura di contenuti pillar-and-spoke che si posiziona sia in inglese sia in italiano.",
+      "solution": "Un sito bilingue scritto a mano, di oltre 30 pagine, con dati strutturati, pagine di servizio regionali e ottimizzazione per la ricerca AI in ogni sezione — veloce, curato e facile da navigare in entrambe le lingue.",
+      "outcome": "Oltre 30 pagine indicizzate in due lingue, tempi di caricamento inferiori al secondo e una presenza finalmente all'altezza della competenza dello studio.",
+      "businessImpact": "Forebear Find ora attira clienti qualificati e pronti a ingaggiare dalla ricerca organica in entrambi i mercati — trasformando uno studio basato sul passaparola in un brand affidabile e facile da trovare."
+    },
+    "parkingway-it": {
+      "overview": "Una piattaforma di gestione parcheggi progettata per semplificare le prenotazioni, la comunicazione con i clienti e le operazioni di parcheggio. Realizzata con un'esperienza utente moderna, design responsive e un'architettura orientata alla SEO.",
+      "challenge": "Un'attività di parcheggio in crescita gestiva prenotazioni e comunicazioni con i clienti manualmente, senza una piattaforma centrale e con un sito web che non poteva scalare.",
+      "strategy": "Sostituire il flusso di lavoro manuale con una piattaforma di prenotazione e gestione snella, racchiusa in un sito moderno e pronto per la SEO che ispira fiducia a prima vista.",
+      "solution": "Una piattaforma di gestione parcheggi responsive con prenotazioni online, comunicazioni automatizzate con i clienti e un'interfaccia pulita orientata alla conversione.",
+      "outcome": "Prenotazione online 24/7, un'esperienza completamente ottimizzata per il mobile e una base pronta per la SEO costruita per crescere.",
+      "businessImpact": "Ora i clienti prenotano e gestiscono il parcheggio a qualsiasi ora senza una telefonata — riducendo il lavoro manuale e recuperando le prenotazioni che il vecchio sito perdeva silenziosamente."
+    },
+    "adventure-tours-vernal": {
+      "overview": "Un operatore di tour guidati in UTV su un'architettura pillar di oltre 30 pagine, con un flusso di prenotazione online costruito attorno alla flotta, ai prezzi e alle esperienze sui sentieri.",
+      "challenge": "Un operatore di tour guidati in UTV dipendeva da telefonate e clienti senza prenotazione, con un sito web scarno che non si posizionava per le ricerche ad alta intenzione fatte dai viaggiatori.",
+      "strategy": "Dominare la ricerca locale per i tour in UTV e fuoristrada attorno a Vernal costruendo contenuti approfonditi, sentiero per sentiero, e un percorso di prenotazione senza attriti.",
+      "solution": "Un sito con architettura pillar di oltre 30 pagine organizzato attorno alla flotta, ai prezzi e alle esperienze sui sentieri, con un flusso di prenotazione online e SEO locale completa.",
+      "outcome": "Oltre 30 pagine mirate alla ricerca locale, un sistema di prenotazione integrato e una realizzazione puntata dritta al primo posto nel posizionamento locale.",
+      "businessImpact": "Più tour prenotati online invece che per telefono, e un brand facile da trovare che intercetta i viaggiatori nel momento stesso in cui cercano — prima che trovino un concorrente."
+    },
+    "best-western-vernal-inn": {
+      "overview": "Un rifacimento nel settore ospitalità con una hero cinematografica in stile Ken Burns, una struttura SEO canonica pulita e una presentazione delle tariffe pensata per le prenotazioni dirette.",
+      "challenge": "Un hotel stava perdendo prenotazioni dirette a favore delle agenzie di viaggio online e operava su un sito datato che non rifletteva la qualità della struttura.",
+      "strategy": "Riconquistare le prenotazioni dirette con una prima impressione cinematografica e una struttura SEO canonica e pulita che posiziona l'hotel per il proprio nome e mercato.",
+      "solution": "Un rifacimento nel settore ospitalità con una hero cinematografica in stile Ken Burns, un'architettura SEO canonica e una presentazione delle tariffe pensata per generare prenotazioni dirette.",
+      "outcome": "Una presenza cinematografica e altamente affidabile, un rifacimento SEO canonico pulito e un'esperienza tariffaria orientata alle prenotazioni dirette.",
+      "businessImpact": "Gli ospiti che prenotano direttamente significano margini più alti per soggiorno e minore dipendenza dalle commissioni di terzi — un valore che si accumula stagione dopo stagione."
+    },
+    "vernal-medicare": {
+      "overview": "Uno studio assicurativo Medicare autorizzato costruito su un'architettura a sitemap divisa su oltre 27 pagine SEO, con la conformità CMS integrata in ogni pagina e un calendario ancorato all'AEP.",
+      "challenge": "Uno studio Medicare autorizzato opera secondo rigide regole di marketing CMS e doveva posizionarsi per decine di ricerche specifiche per piano e per località senza mettere a rischio la conformità.",
+      "strategy": "Costruire una copertura di ricerca ampia e conforme attraverso un'architettura a sitemap divisa e un calendario editoriale allineato ai periodi di iscrizione, in grado di intercettare la domanda stagionale.",
+      "solution": "Un sito di oltre 27 pagine su una struttura a sitemap divisa, con la conformità CMS integrata in ogni pagina e un calendario ancorato al periodo di iscrizione annuale (AEP).",
+      "outcome": "Oltre 27 pagine SEO conformi, un indice a sitemap divisa pulito e un rollout disciplinato in cinque fasi.",
+      "businessImpact": "Lo studio ora raggiunge i clienti idonei a Medicare su più ricerche e stagioni — in sicurezza, in conformità e senza il rischio di una violazione costosa."
+    },
+    "high-class-limousine": {
+      "overview": "Un brand di trasporto di lusso su un sito cinematografico di 14 pagine con widget interattivi — un calcolatore di prezzo, una timeline per la pianificazione del ballo di fine anno, una mappa delle location e un costruttore di itinerari.",
+      "challenge": "Un brand di trasporto di lusso doveva trasmettere un'immagine inequivocabilmente premium e rendere semplice richiedere preventivi e pianificare eventi di alto livello come balli di fine anno e matrimoni.",
+      "strategy": "Tradurre il concetto di 'lusso' nell'esperienza stessa — un design cinematografico abbinato a strumenti interattivi che permettono ai clienti di ottenere preventivi, pianificare e prenotare con sicurezza.",
+      "solution": "Un sito cinematografico di 14 pagine con quattro strumenti interattivi: un calcolatore di prezzo, una timeline per la pianificazione del ballo di fine anno, una mappa delle location e un costruttore di itinerari.",
+      "outcome": "14 pagine curate nei dettagli, 4 strumenti interattivi su misura e un'estetica cinematografica che comunica qualità premium a ogni interazione.",
+      "businessImpact": "I preventivi e la pianificazione self-service catturano lead anche fuori orario e li qualificano prima della prima telefonata — meno curiosi, più eventi prenotati."
+    },
+    "wernex-pest-control": {
+      "overview": "Una trasformazione digitale completa per un'azienda locale di disinfestazione, con mappatura delle aree di servizio, prenotazione online e una forte ottimizzazione SEO locale in tutto lo Uintah Basin.",
+      "challenge": "Un'azienda locale di disinfestazione era invisibile nelle ricerche in tutta la sua area di servizio e non offriva ai clienti alcun modo di prenotare senza chiamare durante l'orario di apertura.",
+      "strategy": "Dominare la SEO locale in tutto lo Uintah Basin con pagine dedicate alle aree di servizio, ed eliminare ogni ostacolo tra un cliente in difficoltà e la prenotazione.",
+      "solution": "Una realizzazione digitale completa con mappatura delle aree di servizio, prenotazione online e una forte ottimizzazione SEO locale in tutta la regione.",
+      "outcome": "Il primo posto nel posizionamento locale come obiettivo, un sistema di prenotazione online e tempi di caricamento sotto i due secondi.",
+      "businessImpact": "I clienti trovano Wernex per primo e prenotano sul momento — trasformando ricerche urgenti e ad alta intenzione in interventi programmati a qualsiasi ora."
+    },
+    "alta-medicare": {
+      "overview": "Uno studio assicurativo Medicare autorizzato costruito su un'architettura pulita e conforme CMS, con pagine su piani e sedi ottimizzate per la SEO, dati strutturati e un calendario editoriale allineato ai periodi di iscrizione.",
+      "challenge": "Uno studio Medicare autorizzato opera secondo rigide regole di marketing CMS e doveva posizionarsi per ricerche specifiche per piano e per sede senza mettere a rischio la conformità.",
+      "strategy": "Costruire una copertura di ricerca ampia e conforme con pagine dedicate ai piani e alle sedi e un calendario editoriale allineato ai periodi di iscrizione, in grado di intercettare la domanda stagionale.",
+      "solution": "Un sito pulito e veloce con la conformità CMS integrata in ogni pagina, dati strutturati ovunque e una copertura di piani e sedi guidata dalla SEO.",
+      "outcome": "Copertura SEO conforme su piani e sedi, tempi di caricamento inferiori al secondo e una presenza costruita per intercettare la domanda del periodo di iscrizione annuale.",
+      "businessImpact": "Lo studio ora raggiunge i clienti idonei a Medicare su più ricerche e stagioni — in sicurezza, in conformità e senza il rischio di una violazione costosa."
+    }
+  }
+}

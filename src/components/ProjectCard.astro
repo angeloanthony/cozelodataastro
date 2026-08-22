@@ -14,11 +14,22 @@
  *
  * Layout/sizing classes (carousel width, snap, grid placement) are passed in via
  * `class` by the parent so this component owns appearance, not flow.
+ *
+ * Locale-aware (Step 25): FeaturedProjects.astro (homepage) and PortfolioGrid.astro
+ * (/portfolio/, /it/portfolio/) both pass the raw, English `project` prop straight
+ * from site.ts — neither caller changed. This component alone resolves the
+ * rendering locale from Astro.url and overlays the localized category/tagline/
+ * summary from shared.json, exactly the way Footer.astro and ServicesGrid.astro
+ * already resolve their own locale. On the homepage (no /it/ route yet) that
+ * resolves to "en" every time, so English output is unaffected.
  */
 import { Image } from "astro:assets";
 import Icon from "./Icon.astro";
 import { getImage } from "../lib/images";
 import type { Project } from "../data/site";
+import { getLangFromUrl, t } from "../data/i18n";
+import { getShared } from "../i18n/shared";
+import { localizeHref } from "../i18n/content";
 
 interface Props {
   project: Project;
@@ -27,11 +38,18 @@ interface Props {
 }
 const { project: p, variant = "full", class: className = "" } = Astro.props;
 const img = p.image ? getImage(p.image) : undefined;
+const lang = getLangFromUrl(Astro.url);
+const localized = lang !== "en" ? getShared(lang).projects?.[p.slug] : undefined;
+const category = localized?.category ?? p.category;
+const tagline = localized?.tagline ?? p.tagline;
+const summary = localized?.summary ?? p.summary;
+const results = localized?.results ?? p.results;
+const portfolioAnchor = localizeHref(`/portfolio/#${p.slug}`, lang);
 ---
 
 {variant === "featured" ? (
   <a
-    href={`/portfolio/#${p.slug}`}
+    href={portfolioAnchor}
     class:list={[
       "reveal group relative flex flex-col overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] shadow-lg transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl",
       className,
@@ -43,7 +61,7 @@ const img = p.image ? getImage(p.image) : undefined;
       {img ? (
         <Image
           src={img}
-          alt={`${p.name} — ${p.category}`}
+          alt={`${p.name} — ${category}`}
           widths={[400, 600, 900]}
           sizes="(min-width: 768px) 46vw, 78vw"
           loading="lazy"
@@ -62,9 +80,9 @@ const img = p.image ? getImage(p.image) : undefined;
       <h3 class="font-display text-lg font-bold leading-tight tracking-tight sm:text-xl">
         {p.name}
       </h3>
-      <p class="mt-1.5 line-clamp-2 text-sm text-[var(--text-muted)]">{p.tagline ?? p.summary}</p>
+      <p class="mt-1.5 line-clamp-2 text-sm text-[var(--text-muted)]">{tagline ?? summary}</p>
       <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-brand)]">
-        View Project
+        {t("card.viewProject", lang)}
         <Icon
           name="arrow"
           size={16}
@@ -86,7 +104,7 @@ const img = p.image ? getImage(p.image) : undefined;
       {img ? (
         <Image
           src={img}
-          alt={`${p.name} — ${p.category} website by Cozelos Data`}
+          alt={`${p.name} — ${category} ${t("card.imageAltSuffix", lang)}`}
           widths={[500, 800, 1200]}
           sizes="(min-width: 768px) 440px, 92vw"
           loading="lazy"
@@ -101,7 +119,7 @@ const img = p.image ? getImage(p.image) : undefined;
 
       <!-- Category Badge -->
       <span class="absolute top-4 right-4 rounded-full border border-white/10 bg-black/70 px-3 py-1 text-[10px] font-semibold tracking-widest text-white backdrop-blur-md sm:top-6 sm:right-6 sm:px-5 sm:py-1.5 sm:text-xs">
-        {p.category}
+        {category}
       </span>
 
       <!-- Subtle shine overlay -->
@@ -111,11 +129,11 @@ const img = p.image ? getImage(p.image) : undefined;
     <!-- Content -->
     <div class="p-5 sm:p-8">
       <h3 class="font-display text-xl font-bold leading-tight tracking-tight sm:text-2xl">{p.name}</h3>
-      <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)] sm:mt-3 sm:text-base">{p.summary}</p>
+      <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)] sm:mt-3 sm:text-base">{summary}</p>
 
       <!-- Results -->
       <div class="mt-6 grid grid-cols-3 gap-3 border-t border-[var(--border)] pt-6 sm:mt-8 sm:gap-6 sm:pt-8">
-        {p.results.map((r) => (
+        {results.map((r) => (
           <div class="text-center">
             <div class="font-display text-2xl font-extrabold tracking-tighter sm:text-3xl" style={`color: ${p.accent}`}>{r.metric}</div>
             <div class="mt-1 text-[10px] font-medium uppercase tracking-[0.5px] text-[var(--text-subtle)] sm:text-xs">{r.label}</div>
@@ -132,12 +150,12 @@ const img = p.image ? getImage(p.image) : undefined;
 
       <!-- CTA -->
       <a
-        href={p.liveUrl ?? `/portfolio/#${p.slug}`}
+        href={p.liveUrl ?? portfolioAnchor}
         {...(p.liveUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         class="group/btn relative mt-6 inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-[var(--color-brand)] to-red-600 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl active:scale-[0.985] sm:mt-8 sm:py-4"
       >
         <span class="relative z-10 flex items-center gap-2">
-          {p.liveUrl ? "Visit Website" : "View Case Study"}
+          {p.liveUrl ? t("card.visitWebsite", lang) : t("card.viewCaseStudy", lang)}
           <Icon name={p.liveUrl ? "external" : "arrow"} size={18} class="transition-transform group-hover/btn:translate-x-1" />
         </span>
       </a>
