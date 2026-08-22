@@ -23,6 +23,7 @@ export const CONTENT_PAGES: ContentPage[] = [
   { key: "ellen-cozelos", slug: "ellen-cozelos" },
   { key: "pricing", slug: "pricing" },
   { key: "company", slug: "company" },
+  { key: "faq", slug: "faq" },
 ];
 
 export const SLUG_BY_KEY: Record<string, string> = Object.fromEntries(

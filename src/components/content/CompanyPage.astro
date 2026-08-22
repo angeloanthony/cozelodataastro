@@ -35,10 +35,10 @@ import Credentials from "../Credentials.astro";
 import CTASection from "../CTASection.astro";
 import Button from "../Button.astro";
 import Icon from "../Icon.astro";
-import { site } from "../../data/site";
+import { site, commercialFacts } from "../../data/site";
 import { getImage } from "../../lib/images";
 import { getLangFromUrl } from "../../data/i18n";
-import { getPageContent, localizeHref } from "../../i18n/content";
+import { getPageContent, localizeHref, interp } from "../../i18n/content";
 import { getShared } from "../../i18n/shared";
 
 const lang = getLangFromUrl(Astro.url);
@@ -186,7 +186,12 @@ const taglineLines = shared.footer.tagline.split(/(?<=\.)\s+/);
     lead={c.government.lead}
   >
     <Credentials
-      capabilities={c.government.credentials.capabilities}
+      capabilities={c.government.credentials.capabilities.map((cap: any) => ({
+        ...cap,
+        // Only "Rapid Delivery" carries a {websiteTimelineWeeks} token (Step
+        // 20); interp() is a no-op on every other capability's body.
+        body: interp(cap.body, commercialFacts),
+      }))}
       sourcesHtml={c.government.credentials.sourcesHtml}
       idLabels={c.government.credentials.idLabels}
       table={c.government.credentials.table}

@@ -9,8 +9,16 @@
  * have changed the homepage without anyone touching this component. Callers now
  * pass an explicit id list (defaulting to `homepageFaqIds`) and an id that does
  * not resolve fails the build instead of silently dropping a question.
+ *
+ * This component only ever renders on index.astro, which has no localized
+ * route yet — so it always reads the English master content (Step 21 moved
+ * question/answer prose out of site.ts into src/i18n/content/en/faq.json,
+ * keyed by the same `id`). If the homepage is localized in a future step,
+ * this needs `getLangFromUrl` wired through like FaqPage.astro.
  */
-import { faqs, homepageFaqIds } from "../data/site";
+import { faqs, homepageFaqIds, commercialFacts } from "../data/site";
+import { DEFAULT_LOCALE } from "../data/i18n";
+import { getPageContent, interp } from "../i18n/content";
 
 interface Props {
   /** FAQ ids to render, in render order. Defaults to the homepage selection. */
@@ -18,10 +26,14 @@ interface Props {
 }
 const { ids = homepageFaqIds } = Astro.props;
 
+const content = getPageContent<any>("faq", DEFAULT_LOCALE);
+
 const list = ids.map((id) => {
   const faq = faqs.find((f) => f.id === id);
   if (!faq) throw new Error(`FAQ.astro: no FAQ with id "${id}" in src/data/site.ts`);
-  return faq;
+  const text = content.faqs[id];
+  if (!text) throw new Error(`FAQ.astro: no FAQ content for id "${id}" in faq.json`);
+  return { ...faq, q: interp(text.q, commercialFacts), a: interp(text.a, commercialFacts) };
 });
 
 // No FAQPage structured data is emitted here. /faq/ owns the single canonical

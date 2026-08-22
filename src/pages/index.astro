@@ -20,7 +20,7 @@ import OurPromise from "../components/OurPromise.astro";
 import FAQ from "../components/FAQ.astro";
 import CTASection from "../components/CTASection.astro";
 import Button from "../components/Button.astro";
-import { stats, site } from "../data/site";
+import { stats, site, commercialFacts } from "../data/site";
 ---
 <BaseLayout
   title="Web Design & SEO in Vernal, Utah — Custom Sites That Rank"
@@ -124,7 +124,7 @@ import { stats, site } from "../data/site";
       <span class="text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand)]">The Investment</span>
       <h2 class="mt-4 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">An investment in growth — priced for return.</h2>
       <p class="mx-auto mt-3 max-w-xl text-lg leading-relaxed text-[var(--text-muted)]">
-        Custom projects start at $2,500, with monthly growth plans from $295.
+        Custom projects start at {commercialFacts.websiteStartingPrice}, with monthly growth plans from {commercialFacts.maintenancePrice}.
         Every engagement begins with a strategy session — credited toward your build.
       </p>
       <div class="mt-7 flex justify-center">

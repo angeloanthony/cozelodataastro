@@ -22,14 +22,34 @@ import CTASection from "../CTASection.astro";
 import Guarantees from "../Guarantees.astro";
 import Icon from "../Icon.astro";
 import Button from "../Button.astro";
-import { site } from "../../data/site";
+import { site, commercialFacts } from "../../data/site";
 import { getLangFromUrl, DEFAULT_LOCALE } from "../../data/i18n";
 import { getPageContent, localizeHref, interp } from "../../i18n/content";
 
 const lang = getLangFromUrl(Astro.url);
-const c = getPageContent<any>("pricing", lang);
+
+/**
+ * Resolve the {token} placeholders that stand in for the five canonical
+ * commercial facts (Step 20). The JSON stores the token, never the literal
+ * figure, so English and Italian read the same number without either copy
+ * retyping it — only `discovery.price`, `tiers[0].price` (Essential
+ * Presence), and `plans[0].price` (Maintenance) carry a token; every other
+ * tier/plan price is its own SKU-specific figure and is left untouched.
+ */
+function resolvePricingContent(content: any) {
+  return {
+    ...content,
+    meta: { ...content.meta, description: interp(content.meta.description, commercialFacts) },
+    hero: { ...content.hero, summary: interp(content.hero.summary, commercialFacts) },
+    discovery: { ...content.discovery, price: interp(content.discovery.price, commercialFacts) },
+    tiers: content.tiers.map((t: any) => ({ ...t, price: interp(t.price, commercialFacts) })),
+    plans: content.plans.map((p: any) => ({ ...p, price: interp(p.price, commercialFacts) })),
+  };
+}
+
+const c = resolvePricingContent(getPageContent<any>("pricing", lang));
 /** Master copy — the canonical source for the offer schema (see header note). */
-const m = getPageContent<any>("pricing", DEFAULT_LOCALE);
+const m = resolvePricingContent(getPageContent<any>("pricing", DEFAULT_LOCALE));
 
 const breadcrumbs = [
   { name: "Home", href: localizeHref("/", lang) },

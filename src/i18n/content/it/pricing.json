@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "Investimento e prezzi — Piani di crescita e web design, Vernal UT",
-    "description": "Prezzi di livello professionale da Cozelos Data. Un sito web su misura a partire da $2,500 e piani di crescita mensili da $295 — progettati per generare lead e un ROI duraturo."
+    "description": "Prezzi di livello professionale da Cozelos Data. Un sito web su misura a partire da {websiteStartingPrice} e piani di crescita mensili da {maintenancePrice} — progettati per generare lead e un ROI duraturo."
   },
   "breadcrumb": "Investimento",
   "hero": {
     "eyebrow": "Investimento",
     "title": "Un investimento nella crescita — con un prezzo pensato per il ritorno.",
     "lead": "Non costruiamo semplicemente siti web — creiamo vere e proprie piattaforme di crescita, progettate per generare lead, autorevolezza e fatturato per anni. Ecco come strutturiamo quell’investimento e quanto vale esattamente.",
-    "summary": "Cozelos Data, agenzia digitale a Vernal, Utah, tratta il proprio lavoro come un investimento, non come una merce. I progetti di sito web su misura partono da $2,500 (Essential Presence), $4,500 (Professional Growth) e $7,500 (Market Leader), mentre le realizzazioni Enterprise sono quotate a partire da $10,000. I piani di crescita mensili vanno da $295 (Maintenance) a $1,500+ (Full Marketing). Ogni progetto inizia con una Discovery Session da $500, accreditata sul costo della realizzazione."
+    "summary": "Cozelos Data, agenzia digitale a Vernal, Utah, tratta il proprio lavoro come un investimento, non come una merce. I progetti di sito web su misura partono da {websiteStartingPrice} (Essential Presence), $4,500 (Professional Growth) e $7,500 (Market Leader), mentre le realizzazioni Enterprise sono quotate a partire da $10,000. I piani di crescita mensili vanno da {maintenancePrice} (Maintenance) a $1,500+ (Full Marketing). Ogni progetto inizia con una Discovery Session da {discoverySessionPrice}, accreditata sul costo della realizzazione."
   },
   "philosophy": {
     "headline": "Il sito web più costoso è quello economico che ti fa perdere clienti.",
@@ -19,7 +19,7 @@
     "title": "Discovery Session",
     "bodyHtml": "Ogni grande progetto parte dalla strategia. In una sessione di lavoro mirata mappiamo i tuoi obiettivi, i tuoi clienti e la tua concorrenza — poi ti consegniamo un piano chiaro e un preventivo a prezzo fisso. È l’ora a più alto rendimento che dedicherai alla tua presenza digitale, e il costo viene <strong class=\"text-[var(--text)]\">accreditato per intero</strong> sul tuo progetto quando decidi di procedere.",
     "priceLabel": "Strategia e roadmap",
-    "price": "$500",
+    "price": "{discoverySessionPrice}",
     "priceNote": "Accreditato sul costo della realizzazione",
     "cta": "Prenota una sessione"
   },
@@ -32,7 +32,7 @@
     {
       "highlight": false,
       "name": "Essential Presence",
-      "price": "$2,500",
+      "price": "{websiteStartingPrice}",
       "prefix": "A partire da",
       "suffix": "una tantum",
       "summary": "Per le aziende che hanno bisogno di una presenza professionale, veloce e credibile — fatta bene la prima volta.",
@@ -112,7 +112,7 @@
     {
       "highlight": false,
       "name": "Maintenance",
-      "price": "$295",
+      "price": "{maintenancePrice}",
       "summary": "Mantieni il tuo asset veloce, sicuro e online.",
       "features": [
         "Hosting, SSL e monitoraggio dell’uptime",

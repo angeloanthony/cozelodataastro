@@ -8,6 +8,7 @@ import Button from "./Button.astro";
 import Icon from "./Icon.astro";
 import AiSummary from "./AiSummary.astro";
 import { getImage } from "../lib/images";
+import { commercialFacts } from "../data/site";
 
 const heroImage = getImage("hero/digital-ecosystem.webp");
 ---
@@ -89,7 +90,7 @@ const heroImage = getImage("hero/digital-ecosystem.webp");
         <AiSummary class="hero-summary mt-7">
           Cozelos Data is a Woman-Owned digital agency in Vernal, Utah building
           custom websites, SEO, video, and marketing for local and government
-          businesses. Custom projects start at $2,500, load in under a second,
+          businesses. Custom projects start at {commercialFacts.websiteStartingPrice}, load in under a second,
           and you own everything — the domain, code, and content.
         </AiSummary>
 
@@ -99,7 +100,7 @@ const heroImage = getImage("hero/digital-ecosystem.webp");
         </div>
 
         <div class="hero-trust reveal mt-8 flex items-center gap-5 text-sm text-[var(--text-subtle)]" data-delay="320">
-          <span class="inline-flex items-center gap-1.5"><Icon name="check" size={16} class="text-[var(--color-brand)]" /> From $2,500</span>
+          <span class="inline-flex items-center gap-1.5"><Icon name="check" size={16} class="text-[var(--color-brand)]" /> From {commercialFacts.websiteStartingPrice}</span>
           <span class="inline-flex items-center gap-1.5"><Icon name="check" size={16} class="text-[var(--color-brand)]" /> You own everything</span>
           <span class="inline-flex items-center gap-1.5"><Icon name="check" size={16} class="text-[var(--color-brand)]" /> No lock-ins</span>
         </div>

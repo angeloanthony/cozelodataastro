@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "Investment & Pricing — Web Design Growth Plans, Vernal UT",
-    "description": "Investment-grade pricing from Cozelos Data. Custom website projects from $2,500 and monthly growth plans from $295 — built to generate leads and lasting ROI."
+    "description": "Investment-grade pricing from Cozelos Data. Custom website projects from {websiteStartingPrice} and monthly growth plans from {maintenancePrice} — built to generate leads and lasting ROI."
   },
   "breadcrumb": "Investment",
   "hero": {
     "eyebrow": "Investment",
     "title": "An investment in growth — priced for return.",
     "lead": "We don't simply build websites — we create complete growth platforms engineered to generate leads, authority, and revenue for years. Here's how we structure that investment, and exactly what it's worth.",
-    "summary": "Cozelos Data, a digital agency in Vernal, Utah, prices work as an investment, not a commodity. Custom website projects start at $2,500 (Essential Presence), $4,500 (Professional Growth), and $7,500 (Market Leader), with Enterprise builds scoped from $10,000. Ongoing monthly growth plans run from $295 (Maintenance) to $1,500+ (Full Marketing). Every project begins with a $500 Discovery Session, credited toward your build."
+    "summary": "Cozelos Data, a digital agency in Vernal, Utah, prices work as an investment, not a commodity. Custom website projects start at {websiteStartingPrice} (Essential Presence), $4,500 (Professional Growth), and $7,500 (Market Leader), with Enterprise builds scoped from $10,000. Ongoing monthly growth plans run from {maintenancePrice} (Maintenance) to $1,500+ (Full Marketing). Every project begins with a {discoverySessionPrice} Discovery Session, credited toward your build."
   },
   "philosophy": {
     "headline": "The most expensive website is the cheap one that costs you customers.",
@@ -19,7 +19,7 @@
     "title": "Discovery Session",
     "bodyHtml": "Every great build starts with strategy. In a focused working session we map your goals, your customers, and your competition — then hand you a clear plan and a fixed quote. It's the single highest-leverage hour you'll spend on your digital presence, and the fee is <strong class=\"text-[var(--text)]\">credited in full</strong> toward your project when you move forward.",
     "priceLabel": "Strategy & roadmap",
-    "price": "$500",
+    "price": "{discoverySessionPrice}",
     "priceNote": "Credited toward your build",
     "cta": "Book a Session"
   },
@@ -32,7 +32,7 @@
     {
       "highlight": false,
       "name": "Essential Presence",
-      "price": "$2,500",
+      "price": "{websiteStartingPrice}",
       "prefix": "Starting at",
       "suffix": "one-time",
       "summary": "For businesses that need a professional, fast, credible presence — done right the first time.",
@@ -112,7 +112,7 @@
     {
       "highlight": false,
       "name": "Maintenance",
-      "price": "$295",
+      "price": "{maintenancePrice}",
       "summary": "Keep your asset fast, secure, and online.",
       "features": [
         "Hosting, SSL & uptime monitoring",

@@ -78,6 +78,56 @@ export const site = {
   sameAs: [social.linkedin],
 } as const;
 
+/**
+ * Commercial facts — the canonical source for five recurring dollar figures
+ * and timeframes (Step 20 of the FAQ/i18n effort).
+ *
+ * Before this, "$2,500" alone was independently hand-typed in nine-plus
+ * places across hero copy, page summaries, FAQ answers, and the pricing
+ * tiers. That's tolerable in English-only prose, but it becomes dangerous
+ * the moment a second locale exists: English $2,500, Italian $2.500, an FAQ
+ * answer, and a schema field would each need updating by hand, and nothing
+ * would catch it if one drifted. This module is the one place the FACT
+ * lives; every call site interpolates it rather than retyping it.
+ *
+ * Scope is intentionally narrow — these five values only. The surrounding
+ * marketing sentence ("Projects typically begin at...") stays page-specific
+ * copy and is not tokenized; only the recurring number/range is. The full
+ * pricing-tier table ($4,500, $7,500, $495, $795, $1,500+, Enterprise's
+ * $10,000+) is SKU-specific and lives only in pricing.json — it doesn't
+ * recur across pages, so it isn't part of this table.
+ *
+ * TS/Astro call sites (site.ts itself, faq.astro, index.astro, etc.)
+ * interpolate these directly with a template literal. Localized JSON content
+ * (pricing.json, company.json) cannot import TS, so it stores a `{token}`
+ * matching a key below and the rendering component resolves it with
+ * `interp()` (see src/i18n/content.ts) — the same convention that file's own
+ * docstring describes for prices, so English and Italian read the same
+ * number without either copy retyping it.
+ */
+export const commercialFacts = {
+  /** Lowest one-time price for a custom website build (Essential Presence tier). */
+  websiteStartingPrice: "$2,500",
+  /** Fee for the initial Discovery Session; credited toward the build. */
+  discoverySessionPrice: "$500",
+  /** Monthly Maintenance plan rate. */
+  maintenancePrice: "$295",
+  /**
+   * Typical custom-website build timeline, kickoff to launch — a bare number
+   * range, deliberately without a unit word. "Weeks" is prose that
+   * translates ("settimane" in Italian); the range itself does not. English
+   * call sites append " weeks" themselves; JSON content wraps the {token}
+   * with its own locale's unit word.
+   */
+  websiteTimelineWeeks: "4–6",
+  /**
+   * Typical timeframe before SEO shows meaningful ranking movement — a bare
+   * number range for the same reason as `websiteTimelineWeeks` above ("days"
+   * / "giorni" is prose, the range is not).
+   */
+  seoTimeframeDays: "60–90",
+} as const;
+
 export type NavItem = { label: string; href: string };
 
 export const primaryNav: NavItem[] = [
@@ -154,7 +204,7 @@ export const services: Service[] = [
     icon: "browser",
     image: "services/web-development.webp",
     reelVideoId: "ApGH3skklec",
-    cta: "Starting at $2,500",
+    cta: `Starting at ${commercialFacts.websiteStartingPrice}`,
   },
   {
     slug: "video-production",
@@ -239,7 +289,7 @@ export const services: Service[] = [
       "A beautiful website is invisible if it doesn't rank. Most sites are never indexed properly, never structured for AI search, and never appear when local customers in the Uintah Basin search for what you sell.",
     why: "We engineer search engine optimization from the ground up — pillar-and-spoke content architecture, JSON-LD schema, local SEO, Google Business Profile tuning, and llms.txt so Google, ChatGPT, and Claude all understand exactly what you offer.",
     results:
-      "Meaningful ranking improvement within 60–90 days, more qualified organic traffic, and a steady stream of customers who were already searching for you — at no cost per click.",
+      `Meaningful ranking improvement within ${commercialFacts.seoTimeframeDays} days, more qualified organic traffic, and a steady stream of customers who were already searching for you — at no cost per click.`,
     value:
       "Unlike paid ads, SEO compounds. Every page and citation you earn keeps working for years, building a durable moat of organic visibility that competitors can't simply outspend.",
     benefits: [
@@ -631,39 +681,43 @@ export const testimonials: Testimonial[] = [
 /* ---------------------------------------------------------------- FAQ ---
  * FAQ identity is frozen here and is never derived from prose.
  *
- * Every question carries a stable `id`; every category carries a stable `id`
- * plus an English `label`. The label is display copy and will move into the
- * shared localized content source later — the ids never move and never
- * translate. Nothing downstream may key off array position or English wording:
+ * Every question carries a stable `id`; every category carries a stable `id`.
+ * Nothing downstream may key off array position or English wording:
  *
  *   /faq/ anchors and <details name> groups  ->  FaqCategory.id
  *   homepage teaser selection                ->  homepageFaqIds
  *
- * Reordering `faqs`, rewording a label, or adding an Italian translation must
- * not change an anchor, an accordion group, or the homepage selection.
+ * Step 21 moved the English category label and question/answer prose that
+ * used to live here out to src/i18n/content/en/faq.json (mirrored for
+ * translation at src/i18n/content/it/faq.json), keyed by the same `id` —
+ * exactly the move this comment block already anticipated. `id` and
+ * `categoryId` are the only fields identity requires, so they are the only
+ * fields that remain here; FaqPage.astro (src/components/content/) and the
+ * homepage teaser (src/components/FAQ.astro) both join that content back onto
+ * this array's `id`/`categoryId`/order at render time. Reordering `faqs`,
+ * retranslating a label, or adding an Italian FAQ must not change an anchor,
+ * an accordion group, or the homepage selection.
  */
 
-/** A FAQ category: permanent identity + the current English display label. */
+/** A FAQ category: permanent identity only. Display label lives in faq.json. */
 export type FaqCategory = {
   /** Permanent identifier. Drives /faq/ anchors and <details name> groups. */
   id: string;
-  /** English display copy. Localized wording arrives later; the id does not. */
-  label: string;
 };
 
 /** Display order for the grouped /faq/ page. Order is presentation, not identity. */
 export const faqCategories: FaqCategory[] = [
-  { id: "pricing", label: "Pricing" },
-  { id: "timeline", label: "Timeline" },
-  { id: "ownership", label: "Ownership" },
-  { id: "seo", label: "SEO" },
-  { id: "hosting", label: "Hosting" },
-  { id: "maintenance", label: "Maintenance" },
-  { id: "ai", label: "AI" },
-  { id: "video", label: "Video" },
-  { id: "marketing", label: "Marketing" },
-  { id: "support", label: "Support" },
-  { id: "general", label: "General" },
+  { id: "pricing" },
+  { id: "timeline" },
+  { id: "ownership" },
+  { id: "seo" },
+  { id: "hosting" },
+  { id: "maintenance" },
+  { id: "ai" },
+  { id: "video" },
+  { id: "marketing" },
+  { id: "support" },
+  { id: "general" },
 ];
 
 export type Faq = {
@@ -671,186 +725,60 @@ export type Faq = {
   id: string;
   /** A FaqCategory.id — never the English label. */
   categoryId: string;
-  q: string;
-  a: string;
 };
 
-// Answers are written for Google featured snippets and AI Overviews: the first
-// sentence is a direct, self-contained answer, followed by 1–2 supporting lines.
-// The `categoryId` field groups them on the dedicated /faq/ page.
+// Question/answer prose lives in src/i18n/content/<locale>/faq.json, keyed by
+// `id` below. Answers there are written for Google featured snippets and AI
+// Overviews: the first sentence is a direct, self-contained answer, followed
+// by 1–2 supporting lines. The `categoryId` field groups them on /faq/.
 export const faqs: Faq[] = [
-  {
-    id: "website-cost",
-    categoryId: "pricing",
-    q: "How much does a custom website cost?",
-    a: "Custom website projects from Cozelos Data start at $2,500 for Essential Presence, $4,500 for Professional Growth, and $7,500 for Market Leader, with Enterprise builds scoped individually. Every project begins with a $500 Discovery Session that's credited toward your build, and you receive a fixed quote in writing before any work starts.",
-  },
-  {
-    id: "build-duration",
-    categoryId: "timeline",
-    q: "How long does it take to build a website?",
-    a: "Most custom websites launch in 4–6 weeks from kickoff. Larger sites with many pages or heavy content writing take 8–10 weeks, and simple landing pages can go live in 2–3 weeks. You receive a clear schedule with milestones on day one.",
-  },
-  {
-    id: "website-ownership",
-    categoryId: "ownership",
-    q: "Do I own my website?",
-    a: "Yes — completely. You own the domain, the hosting account, the source code, and all content. There are no proprietary builders or lock-ins, and we can transfer everything to you at any time. With Cozelos Data, your website is an asset you own outright.",
-  },
-  {
-    id: "google-ranking",
-    categoryId: "seo",
-    q: "Will my new website actually rank on Google?",
-    a: "Every website we build has SEO engineered in from day one — structured data, clean architecture, fast load times, sitemaps, and local optimization. Most clients see meaningful ranking improvement within 60–90 days, and the gains compound as content and authority grow.",
-  },
-  {
-    id: "hidden-fees",
-    categoryId: "pricing",
-    q: "Are there any hidden fees or surprise invoices?",
-    a: "No. Your project quote is fixed and approved in writing before any work begins, so the price never changes mid-build. The only ongoing cost is an optional monthly plan, and that rate is locked too — no 'starting from' footnotes and no surprises.",
-  },
+  { id: "website-cost", categoryId: "pricing" },
+  { id: "build-duration", categoryId: "timeline" },
+  { id: "website-ownership", categoryId: "ownership" },
+  { id: "google-ranking", categoryId: "seo" },
+  { id: "hidden-fees", categoryId: "pricing" },
 
   // — Pricing —
-  {
-    id: "custom-vs-template-cost",
-    categoryId: "pricing",
-    q: "Why does a custom website cost more than a template?",
-    a: "A custom website costs more because it's engineered, not assembled. Instead of a generic theme loaded with plugins, you get hand-built code that loads in under a second, ranks better, carries far less security risk, and needs less maintenance — so it returns more than its price over time.",
-  },
+  { id: "custom-vs-template-cost", categoryId: "pricing" },
 
   // — Timeline —
-  {
-    id: "project-start-lead-time",
-    categoryId: "timeline",
-    q: "How quickly can you start my project?",
-    a: "We can usually begin within one to two weeks of your Discovery Session. Once we agree on scope and you approve the fixed quote, we schedule a kickoff and start immediately — most clients move from first call to active design inside two weeks.",
-  },
+  { id: "project-start-lead-time", categoryId: "timeline" },
 
   // — Ownership —
-  {
-    id: "switching-providers",
-    categoryId: "ownership",
-    q: "What happens if I want to leave or switch providers?",
-    a: "You take everything with you. Because you own the domain, code, hosting, and content, leaving is simple: we hand over full access and files whenever you ask. We keep your business through results, not by holding your website hostage.",
-  },
+  { id: "switching-providers", categoryId: "ownership" },
 
   // — SEO —
-  {
-    id: "seo-timeframe",
-    categoryId: "seo",
-    q: "How long does SEO take to work?",
-    a: "SEO typically shows meaningful movement within 60–90 days, with stronger results building over 6–12 months. Technical fixes and local optimization can lift rankings within weeks, while competitive keywords take longer. Unlike paid ads, the visibility you earn keeps working without ongoing cost-per-click.",
-  },
-  {
-    id: "local-seo",
-    categoryId: "seo",
-    q: "What is local SEO and do I need it?",
-    a: "Local SEO helps your business appear when nearby customers search for what you offer — in Google Maps, the local pack, and 'near me' results. If you serve a specific area, you need it. We optimize your Google Business Profile, local citations, and location pages to capture that demand.",
-  },
+  { id: "seo-timeframe", categoryId: "seo" },
+  { id: "local-seo", categoryId: "seo" },
 
   // — Hosting —
-  {
-    id: "hosting-provided",
-    categoryId: "hosting",
-    q: "Do you provide website hosting?",
-    a: "Yes. We host on fast, secure, enterprise-grade infrastructure with SSL, daily backups, and uptime monitoring included in our monthly plans. Because our sites are built as lightweight static pages, they load almost instantly and stay online reliably — and you always own the hosting account.",
-  },
-  {
-    id: "website-security",
-    categoryId: "hosting",
-    q: "Is my website secure from hackers?",
-    a: "Yes. We build static, hardened websites with a very small attack surface — no sprawling admin panels or vulnerable plugins to exploit. Every site ships with SSL encryption, security monitoring, and daily backups, so it stays safe, online, and protected.",
-  },
+  { id: "hosting-provided", categoryId: "hosting" },
+  { id: "website-security", categoryId: "hosting" },
 
   // — Maintenance —
-  {
-    id: "maintenance-plan-needed",
-    categoryId: "maintenance",
-    q: "Do I need a monthly maintenance plan?",
-    a: "A maintenance plan is optional but strongly recommended. For $295/month, Maintenance keeps your site fast, secure, and backed up — with hosting, SSL, monitoring, performance tuning, and minor edits handled for you. Without upkeep, any website gradually slows down and slips out of search.",
-  },
-  {
-    id: "maintenance-inclusions",
-    categoryId: "maintenance",
-    q: "What is included in ongoing website maintenance?",
-    a: "Maintenance includes hosting, SSL, security monitoring, daily backups, uptime monitoring, performance optimization, minor content edits, and priority support. Higher tiers add SEO, content, and marketing. The goal is simple: your site gets faster and ranks higher every quarter, not slower.",
-  },
+  { id: "maintenance-plan-needed", categoryId: "maintenance" },
+  { id: "maintenance-inclusions", categoryId: "maintenance" },
 
   // — AI —
-  {
-    id: "ai-integration",
-    categoryId: "ai",
-    q: "Can you add AI to my website or business?",
-    a: "Yes. We build AI assistants and chatbots that capture leads and answer customer questions 24/7, plus automations that handle scheduling, follow-ups, and data entry. AI lets a small team respond instantly and never miss a lead, giving you back hours every week.",
-  },
-  {
-    id: "ai-search-optimization",
-    categoryId: "ai",
-    q: "What is AI search optimization and why does it matter?",
-    a: "AI search optimization makes your business easy for tools like ChatGPT, Claude, and Google's AI Overviews to understand and recommend. We structure your content with schema and an llms.txt file so AI engines cite you accurately — capturing customers who now ask AI instead of searching.",
-  },
+  { id: "ai-integration", categoryId: "ai" },
+  { id: "ai-search-optimization", categoryId: "ai" },
 
   // — Video —
-  {
-    id: "video-production-offered",
-    categoryId: "video",
-    q: "Do you offer video production?",
-    a: "Yes. We produce cinematic brand films, 4K aerial drone footage, and vertical reels for Instagram, TikTok, and YouTube — fully filmed, color-graded, and sound-designed. Professional video makes your business look established and premium across your website, ads, and social channels.",
-  },
-  {
-    id: "video-business-value",
-    categoryId: "video",
-    q: "Why does my business need video?",
-    a: "Video communicates energy, scale, and trust that photos can't, and it consistently earns higher engagement across websites, ads, and social media. It also gives you a reusable library of branded content. In a crowded feed, professional video is what makes a business stop the scroll.",
-  },
+  { id: "video-production-offered", categoryId: "video" },
+  { id: "video-business-value", categoryId: "video" },
 
   // — Marketing —
-  {
-    id: "paid-ads-management",
-    categoryId: "marketing",
-    q: "Do you manage Google and Facebook ads?",
-    a: "Yes. We build and manage Google Ads and Meta (Facebook & Instagram) campaigns end to end — creative, conversion-focused landing pages, pixel tracking, and A/B testing. We tune until cost-per-lead drops, then scale only the campaigns that produce measurable results.",
-  },
-  {
-    id: "marketing-measurement",
-    categoryId: "marketing",
-    q: "How do you measure marketing results?",
-    a: "We measure the metrics that matter to your business: leads, bookings, cost per lead, and revenue — not vanity numbers like impressions. With proper conversion tracking in place, you get monthly reports showing exactly what your marketing spend produced and where it can improve.",
-  },
-  {
-    id: "seo-vs-paid-ads",
-    categoryId: "marketing",
-    q: "What's the difference between SEO and paid ads?",
-    a: "Paid ads buy immediate traffic that stops the moment you stop paying. SEO earns traffic that compounds and keeps working for free over time. The best strategy uses both: ads for fast results today, and SEO for durable, lower-cost growth tomorrow.",
-  },
+  { id: "paid-ads-management", categoryId: "marketing" },
+  { id: "marketing-measurement", categoryId: "marketing" },
+  { id: "seo-vs-paid-ads", categoryId: "marketing" },
 
   // — Support —
-  {
-    id: "human-support",
-    categoryId: "support",
-    q: "Will I be able to reach a real person for support?",
-    a: "Yes. You work directly with our team — not a ticket queue or a call center. Clients on a monthly plan get priority support, and we actually answer the phone. Clear communication and real responsiveness are part of how we work, before and after launch.",
-  },
-  {
-    id: "post-launch-support",
-    categoryId: "support",
-    q: "What happens after my website launches?",
-    a: "Launch is the beginning, not the end. We set up analytics, submit your site for indexing, and — on a monthly plan — keep it updated, secure, and improving. As your business grows, we evolve the site with it, so your digital asset keeps getting better over time.",
-  },
+  { id: "human-support", categoryId: "support" },
+  { id: "post-launch-support", categoryId: "support" },
 
   // — General —
-  {
-    id: "government-contracting",
-    categoryId: "general",
-    q: "Do you work with government agencies?",
-    a: "Yes. Cozelos Data is a Woman-Owned Small Business (WOSB) with an active DUNS (059220399) and CAGE code (897W0), contracting under NAICS 541511, 541512, 541513, and 513210. We build Section 508 / WCAG 2.1 AA accessible sites and provide a capability statement on request.",
-  },
-  {
-    id: "service-area",
-    categoryId: "general",
-    q: "Are you based in Utah? Do you work with clients in other states?",
-    a: "We're headquartered in Vernal, Utah, and work with clients anywhere in the country. Most projects run smoothly online, with occasional on-site visits for video shoots or strategy sessions. Wherever you are, you get the same fast, custom, search-optimized digital asset.",
-  },
+  { id: "government-contracting", categoryId: "general" },
+  { id: "service-area", categoryId: "general" },
 ];
 
 /**

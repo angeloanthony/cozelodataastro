@@ -6,6 +6,7 @@ import CTASection from "../components/CTASection.astro";
 import Icon from "../components/Icon.astro";
 import { getLangFromUrl } from "../data/i18n";
 import { getServices } from "../i18n/shared";
+import { commercialFacts } from "../data/site";
 
 // Service labels resolve through the shared source, so this page and the footer
 // can never show two different names for the same service.
@@ -39,7 +40,7 @@ const serviceSchema = services.map((s) => ({
     eyebrow="What We Do"
     title="Six disciplines. One system built to grow your business."
     lead="One team, no gaps between design, content, and marketing. Each service below answers the four questions that matter: the problem, the solution, the benefit, and the long-term value."
-    summary="Cozelos Data delivers six connected services from one Vernal, Utah team — website design, SEO, video production, online marketing, business automation, and ongoing support — so design, content, and marketing compound instead of competing. Custom website projects start at $2,500, with monthly growth plans from $295."
+    summary={`Cozelos Data delivers six connected services from one Vernal, Utah team — website design, SEO, video production, online marketing, business automation, and ongoing support — so design, content, and marketing compound instead of competing. Custom website projects start at ${commercialFacts.websiteStartingPrice}, with monthly growth plans from ${commercialFacts.maintenancePrice}.`}
     breadcrumbs={breadcrumbs}
   >
     <!-- Hero explainer video: floats gently, lifts toward you on hover -->

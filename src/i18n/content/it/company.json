@@ -127,7 +127,7 @@
         {
           "icon": "bolt",
           "title": "Consegna rapida",
-          "body": "Abbastanza piccoli per muoverci in fretta, abbastanza strutturati per rispettare le milestone. La maggior parte dei siti in 4–6 settimane."
+          "body": "Abbastanza piccoli per muoverci in fretta, abbastanza strutturati per rispettare le milestone. La maggior parte dei siti in {websiteTimelineWeeks} settimane."
         },
         {
           "icon": "lock",

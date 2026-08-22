@@ -1,0 +1,131 @@
+---
+/**
+ * FaqPage — THE template for /faq/ (playbook §6.5, Step 21 of the FAQ/i18n effort).
+ *
+ * One shared component implements the page; the master route (/faq/) and the
+ * dynamic localized route (/it/faq/) both render it. IDENTITY (which FAQs
+ * exist, their order, and which category each belongs to) comes from
+ * src/data/site.ts — frozen there since Step 19 and never touched by
+ * translation. PROSE (category labels, questions, answers, hero/CTA copy)
+ * comes from src/i18n/content/<locale>/faq.json, keyed by the same `id` site.ts
+ * uses, so a translated file can never add, drop, or rename a question —
+ * i18n-check's structural mirror would fail first.
+ *
+ * Anchors and accordion group names are built from `FaqCategory.id`
+ * (`#pricing`, `name="faq-pricing"`, etc.), exactly as before Step 21 — moving
+ * the prose to JSON did not touch how the page is addressed.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../PageHero.astro";
+import Section from "../Section.astro";
+import CTASection from "../CTASection.astro";
+import { faqs, faqCategories, commercialFacts } from "../../data/site";
+import { getLangFromUrl } from "../../data/i18n";
+import { getPageContent, localizeHref, interp } from "../../i18n/content";
+
+const lang = getLangFromUrl(Astro.url);
+const c = getPageContent<any>("faq", lang);
+
+/** Resolve the {token} commercial-fact placeholders (Step 20). */
+const t = (s: string) => interp(s, commercialFacts);
+
+const breadcrumbs = [
+  { name: "Home", href: localizeHref("/", lang) },
+  { name: c.breadcrumb, href: localizeHref("/faq/", lang) },
+];
+
+// Join site.ts identity/order onto the localized text by `id` — never by
+// array position or English wording. A translated file missing an id would
+// throw here (and fail i18n:check's structural mirror first).
+function textFor(id: string) {
+  const entry = c.faqs[id];
+  if (!entry) throw new Error(`FaqPage.astro: no FAQ content for id "${id}" in faq.json (${lang})`);
+  return { q: t(entry.q), a: t(entry.a) };
+}
+
+// Grouped for the page body — same categoryId join as before Step 21.
+const grouped = faqCategories
+  .map((category) => ({
+    category: { id: category.id, label: c.categories[category.id] },
+    items: faqs
+      .filter((f) => f.categoryId === category.id)
+      .map((f) => ({ id: f.id, ...textFor(f.id) })),
+  }))
+  .filter((g) => g.items.length > 0);
+
+// One FAQPage schema covering all 25 questions, in the master array's order —
+// matches what's rendered so the Q&As qualify for FAQ rich results and AI
+// Overview citations in whichever locale the page is served.
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => {
+    const { q, a } = textFor(f.id);
+    return { "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } };
+  }),
+};
+---
+<BaseLayout
+  title={c.meta.title}
+  description={c.meta.description}
+  breadcrumbs={breadcrumbs}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} is:inline />
+
+  <PageHero
+    eyebrow={c.hero.eyebrow}
+    title={c.hero.title}
+    lead={c.hero.lead}
+    summary={t(c.hero.summary)}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <Section class="!pt-4">
+    <!-- Category quick-jump -->
+    <nav aria-label={c.categoriesNavLabel} class="reveal mb-12 flex flex-wrap gap-2.5">
+      {grouped.map((g) => (
+        <a
+          href={`#${g.category.id}`}
+          class="rounded-full border border-[var(--border-strong)] bg-[var(--surface-2)] px-4 py-2 text-sm font-semibold text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
+        >
+          {g.category.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="space-y-14">
+      {grouped.map((g) => (
+        <div id={g.category.id} class="scroll-mt-28">
+          <h2 class="reveal font-display text-2xl font-extrabold tracking-tight">{g.category.label}</h2>
+          <div class="reveal mt-5 divide-y divide-[var(--border)] overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)]">
+            {g.items.map((f, i) => (
+              <details class="group" data-delay={i * 30} name={`faq-${g.category.id}`}>
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-display text-base font-semibold tracking-tight transition-colors hover:text-[var(--color-brand)] [&::-webkit-details-marker]:hidden">
+                  {f.q}
+                  <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-all duration-300 group-open:rotate-45 group-open:border-[var(--color-brand)] group-open:text-[var(--color-brand)]">
+                    <span class="text-xl leading-none">+</span>
+                  </span>
+                </summary>
+                <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-[var(--ease-out-quint)] group-open:grid-rows-[1fr]">
+                  <div class="overflow-hidden">
+                    <p class="px-6 pb-6 text-[15px] leading-relaxed text-[var(--text-muted)]">{f.a}</p>
+                  </div>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p class="reveal mx-auto mt-12 max-w-2xl text-center leading-relaxed text-[var(--text-muted)]" set:html={c.noteHtml} />
+  </Section>
+
+  <CTASection
+    title={c.cta.title}
+    body={c.cta.body}
+    primaryLabel={c.cta.primaryLabel}
+    secondaryLabel={c.cta.secondaryLabel}
+    secondaryHref="/pricing/"
+  />
+</BaseLayout>

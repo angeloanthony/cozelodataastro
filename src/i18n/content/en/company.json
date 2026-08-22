@@ -127,7 +127,7 @@
         {
           "icon": "bolt",
           "title": "Rapid Delivery",
-          "body": "Small enough to move fast, structured enough to hit milestones. Most sites in 4–6 weeks."
+          "body": "Small enough to move fast, structured enough to hit milestones. Most sites in {websiteTimelineWeeks} weeks."
         },
         {
           "icon": "lock",

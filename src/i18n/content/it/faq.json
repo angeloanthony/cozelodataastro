@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Domande Frequenti — Cozelos Data",
+    "description": "Risposte su prezzi, tempistiche, proprietà, SEO, hosting, manutenzione, AI, video e marketing da Cozelos Data — agenzia digitale premium a Vernal, Utah."
+  },
+  "breadcrumb": "FAQ",
+  "hero": {
+    "eyebrow": "Domande e Risposte",
+    "title": "Tutto quello che vuoi davvero chiedere.",
+    "lead": "Risposte dirette su prezzi, tempistiche, proprietà, SEO, hosting, manutenzione, AI, video e marketing — prima ancora di parlarci al telefono.",
+    "summary": "Le domande più comuni su come lavorare con Cozelos Data: i progetti di sito web su misura partono da {websiteStartingPrice} con una Discovery Session da {discoverySessionPrice} accreditata sulla realizzazione; la maggior parte dei siti viene lanciata in {websiteTimelineWeeks} settimane; i clienti possiedono dominio, codice e contenuti al 100%; la SEO migliora tipicamente i posizionamenti entro {seoTimeframeDays} giorni; e i piani di crescita mensili partono da {maintenancePrice}/mese."
+  },
+  "categoriesNavLabel": "Categorie delle FAQ",
+  "categories": {
+    "pricing": "Prezzi",
+    "timeline": "Tempistiche",
+    "ownership": "Proprietà",
+    "seo": "SEO",
+    "hosting": "Hosting",
+    "maintenance": "Manutenzione",
+    "ai": "AI",
+    "video": "Video",
+    "marketing": "Marketing",
+    "support": "Supporto",
+    "general": "Generale"
+  },
+  "faqs": {
+    "website-cost": {
+      "q": "Quanto costa un sito web su misura?",
+      "a": "I progetti di sito web su misura di Cozelos Data partono da {websiteStartingPrice} per Essential Presence, $4,500 per Professional Growth e $7,500 per Market Leader, con le realizzazioni Enterprise quotate singolarmente. Ogni progetto inizia con una Discovery Session da {discoverySessionPrice}, accreditata sul costo della realizzazione, e ricevi un preventivo fisso per iscritto prima dell'inizio dei lavori."
+    },
+    "build-duration": {
+      "q": "Quanto tempo serve per realizzare un sito web?",
+      "a": "La maggior parte dei siti web su misura viene lanciata in {websiteTimelineWeeks} settimane dall'avvio del progetto. I siti più grandi, con molte pagine o una stesura dei contenuti più corposa, richiedono 8–10 settimane, mentre le landing page semplici possono andare online in 2–3 settimane. Ricevi un calendario chiaro con le milestone fin dal primo giorno."
+    },
+    "website-ownership": {
+      "q": "Il sito web è di mia proprietà?",
+      "a": "Sì — completamente. Il dominio, l'account di hosting, il codice sorgente e tutti i contenuti sono tuoi. Non ci sono builder proprietari né vincoli di alcun tipo, e possiamo trasferirti tutto in qualsiasi momento. Con Cozelos Data, il tuo sito web è un asset che possiedi al 100%."
+    },
+    "google-ranking": {
+      "q": "Il mio nuovo sito web si posizionerà davvero su Google?",
+      "a": "Ogni sito web che realizziamo ha la SEO integrata fin dal primo giorno — dati strutturati, architettura pulita, tempi di caricamento rapidi, sitemap e ottimizzazione locale. La maggior parte dei clienti vede un miglioramento significativo dei posizionamenti entro {seoTimeframeDays} giorni, e i risultati si accumulano man mano che contenuti e autorevolezza crescono."
+    },
+    "hidden-fees": {
+      "q": "Ci sono costi nascosti o fatture a sorpresa?",
+      "a": "No. Il preventivo del tuo progetto è fisso e approvato per iscritto prima dell'inizio dei lavori, quindi il prezzo non cambia mai a lavori in corso. L'unico costo continuativo è un piano mensile facoltativo, e anche quella tariffa è bloccata — nessuna nota in calce con 'a partire da' e nessuna sorpresa."
+    },
+    "custom-vs-template-cost": {
+      "q": "Perché un sito web su misura costa più di un template?",
+      "a": "Un sito web su misura costa di più perché è ingegnerizzato, non assemblato. Invece di un tema generico carico di plugin, ottieni codice costruito a mano che si carica in meno di un secondo, si posiziona meglio, comporta un rischio di sicurezza molto più basso e richiede meno manutenzione — così nel tempo rende più di quanto costa."
+    },
+    "project-start-lead-time": {
+      "q": "Quanto velocemente potete iniziare il mio progetto?",
+      "a": "Di solito possiamo iniziare entro una o due settimane dalla tua Discovery Session. Una volta definito lo scope e approvato il preventivo fisso, fissiamo il kickoff e partiamo subito — la maggior parte dei clienti passa dalla prima chiamata alla progettazione attiva in meno di due settimane."
+    },
+    "switching-providers": {
+      "q": "Cosa succede se voglio lasciare l'agenzia o cambiare fornitore?",
+      "a": "Ti porti via tutto. Dato che dominio, codice, hosting e contenuti sono tuoi, andartene è semplice: ti consegniamo accesso completo e file ogni volta che lo chiedi. Manteniamo la tua fiducia con i risultati, non tenendo il tuo sito web in ostaggio."
+    },
+    "seo-timeframe": {
+      "q": "Quanto tempo serve perché la SEO funzioni?",
+      "a": "La SEO mostra tipicamente un movimento significativo entro {seoTimeframeDays} giorni, con risultati più solidi che si costruiscono in 6–12 mesi. Le correzioni tecniche e l'ottimizzazione locale possono migliorare i posizionamenti nel giro di settimane, mentre le keyword più competitive richiedono più tempo. A differenza degli annunci a pagamento, la visibilità che guadagni continua a lavorare senza un costo per clic continuativo."
+    },
+    "local-seo": {
+      "q": "Cos'è la SEO locale e mi serve?",
+      "a": "La SEO locale aiuta la tua attività a comparire quando i clienti nelle vicinanze cercano ciò che offri — su Google Maps, nel local pack e nei risultati 'vicino a me'. Se servi un'area specifica, ti serve. Ottimizziamo il tuo Google Business Profile, le citazioni locali e le pagine di località per intercettare quella domanda."
+    },
+    "hosting-provided": {
+      "q": "Fornite l'hosting del sito web?",
+      "a": "Sì. Ospitiamo su un'infrastruttura veloce, sicura e di livello enterprise, con SSL, backup quotidiani e monitoraggio dell'uptime inclusi nei nostri piani mensili. Poiché i nostri siti sono costruiti come pagine statiche leggere, si caricano quasi istantaneamente e restano online in modo affidabile — e l'account di hosting resta sempre tuo."
+    },
+    "website-security": {
+      "q": "Il mio sito web è al sicuro dagli hacker?",
+      "a": "Sì. Costruiamo siti web statici e irrobustiti, con una superficie di attacco molto ridotta — niente pannelli di amministrazione sconfinati né plugin vulnerabili da sfruttare. Ogni sito viene consegnato con crittografia SSL, monitoraggio della sicurezza e backup quotidiani, così resta sicuro, online e protetto."
+    },
+    "maintenance-plan-needed": {
+      "q": "Ho bisogno di un piano di manutenzione mensile?",
+      "a": "Un piano di manutenzione è facoltativo ma fortemente consigliato. Per {maintenancePrice}/mese, il piano Maintenance mantiene il tuo sito veloce, sicuro e con backup regolari — con hosting, SSL, monitoraggio, ottimizzazione delle prestazioni e piccole modifiche gestite per te. Senza manutenzione, qualsiasi sito web rallenta gradualmente e scivola fuori dalla ricerca."
+    },
+    "maintenance-inclusions": {
+      "q": "Cosa include la manutenzione continuativa del sito web?",
+      "a": "Maintenance include hosting, SSL, monitoraggio della sicurezza, backup quotidiani, monitoraggio dell'uptime, ottimizzazione delle prestazioni, piccole modifiche ai contenuti e supporto prioritario. I livelli superiori aggiungono SEO, contenuti e marketing. L'obiettivo è semplice: il tuo sito diventa più veloce e si posiziona meglio ogni trimestre, non il contrario."
+    },
+    "ai-integration": {
+      "q": "Potete aggiungere l'AI al mio sito web o alla mia attività?",
+      "a": "Sì. Realizziamo assistenti AI e chatbot che catturano lead e rispondono alle domande dei clienti 24 ore su 24, oltre ad automazioni che gestiscono appuntamenti, follow-up e inserimento dati. L'intelligenza artificiale permette a un piccolo team di rispondere all'istante senza perdere mai un lead, restituendoti ore preziose ogni settimana."
+    },
+    "ai-search-optimization": {
+      "q": "Cos'è l'ottimizzazione per la ricerca AI e perché è importante?",
+      "a": "L'ottimizzazione per la ricerca AI rende la tua attività facile da comprendere e da consigliare per strumenti come ChatGPT, Claude e le AI Overviews di Google. Strutturiamo i tuoi contenuti con schema markup e un file llms.txt in modo che i motori AI ti citino con precisione — intercettando i clienti che oggi chiedono all'AI invece di cercare."
+    },
+    "video-production-offered": {
+      "q": "Offrite servizi di produzione video?",
+      "a": "Sì. Realizziamo brand film cinematografici, riprese aeree con drone in 4K e reel verticali per Instagram, TikTok e YouTube — girati, color-gradati e sonorizzati a regola d'arte. Un video professionale fa apparire la tua attività solida e premium su sito web, annunci e canali social."
+    },
+    "video-business-value": {
+      "q": "Perché la mia attività ha bisogno di video?",
+      "a": "Il video comunica energia, dimensione e fiducia che le foto non possono trasmettere, e ottiene sistematicamente un engagement più alto su siti web, annunci e social media. Ti offre inoltre una libreria di contenuti brandizzati riutilizzabile nel tempo. In un feed affollato, un video professionale è ciò che fa fermare lo scroll su un'attività."
+    },
+    "paid-ads-management": {
+      "q": "Gestite gli annunci su Google e Facebook?",
+      "a": "Sì. Costruiamo e gestiamo le campagne Google Ads e Meta (Facebook e Instagram) dall'inizio alla fine — creatività, landing page orientate alla conversione, tracciamento con pixel e A/B testing. Ottimizziamo finché il costo per lead non scende, poi scaliamo solo le campagne che producono risultati misurabili."
+    },
+    "marketing-measurement": {
+      "q": "Come misurate i risultati del marketing?",
+      "a": "Misuriamo le metriche che contano davvero per la tua attività: lead, prenotazioni, costo per lead e fatturato — non numeri di facciata come le impression. Con un tracciamento delle conversioni impostato correttamente, ricevi report mensili che mostrano esattamente cosa ha prodotto la tua spesa di marketing e dove può migliorare."
+    },
+    "seo-vs-paid-ads": {
+      "q": "Qual è la differenza tra SEO e annunci a pagamento?",
+      "a": "Gli annunci a pagamento comprano traffico immediato che si ferma nel momento in cui smetti di pagare. La SEO guadagna traffico che si accumula e continua a lavorare gratuitamente nel tempo. La strategia migliore usa entrambi: gli annunci per risultati rapidi oggi, la SEO per una crescita duratura e a costo più basso domani."
+    },
+    "human-support": {
+      "q": "Potrò parlare con una persona vera per l'assistenza?",
+      "a": "Sì. Lavori direttamente con il nostro team — non con una coda di ticket o un call center. I clienti con un piano mensile ricevono supporto prioritario, e rispondiamo davvero al telefono. Comunicazione chiara e reattività reale fanno parte del nostro modo di lavorare, prima e dopo il lancio."
+    },
+    "post-launch-support": {
+      "q": "Cosa succede dopo il lancio del mio sito web?",
+      "a": "Il lancio è l'inizio, non la fine. Configuriamo l'analytics, sottoponiamo il tuo sito all'indicizzazione e — con un piano mensile — lo manteniamo aggiornato, sicuro e in continuo miglioramento. Man mano che la tua attività cresce, facciamo evolvere il sito insieme a lei, così il tuo asset digitale continua a migliorare nel tempo."
+    },
+    "government-contracting": {
+      "q": "Lavorate con enti governativi?",
+      "a": "Sì. Cozelos Data è una Woman-Owned Small Business (WOSB) con DUNS attivo (059220399) e CAGE code (897W0), operativa sotto i codici NAICS 541511, 541512, 541513 e 513210. Realizziamo siti accessibili secondo Section 508 / WCAG 2.1 AA e forniamo un capability statement su richiesta."
+    },
+    "service-area": {
+      "q": "Siete basati in Utah? Lavorate con clienti in altri stati?",
+      "a": "Abbiamo sede a Vernal, Utah, e lavoriamo con clienti in tutto il Paese. La maggior parte dei progetti procede senza intoppi online, con visite in loco occasionali per riprese video o sessioni strategiche. Ovunque tu sia, ottieni lo stesso asset digitale veloce, su misura e ottimizzato per la ricerca."
+    }
+  },
+  "noteHtml": "Molte di queste risposte rimandano al lavoro stesso: ecco <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">cosa include ciascuno dei sei servizi</a> e <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">le realizzazioni per i clienti di cui parlano queste risposte</a>. Le domande su tempistiche e processo qui sopra seguono <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">le quattro fasi che attraversa ogni progetto</a>.",
+  "cta": {
+    "title": "Hai ancora una domanda?",
+    "body": "Se la tua domanda non trova risposta qui, chiedicelo direttamente. Diamo risposte dirette — senza pressioni, senza impegno.",
+    "primaryLabel": "Chiedici qualsiasi cosa",
+    "secondaryLabel": "Guarda i prezzi"
+  }
+}

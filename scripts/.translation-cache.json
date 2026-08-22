@@ -73,6 +73,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "0660b5f92482f1b8df11c219a45e25445ea4db7a5e723a6a7c8ac0e569329cbf": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Marketing",
+      "target": "Marketing",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "0669ac76f137ae0e397d81b402272bdedc11d82b703d951f76fec0cbe9b0a205": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -120,6 +128,14 @@
       "target": "$795",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "082c89c17289114688d90186bfa50cebd148631ca1c0bd895a3f281a337f8bab": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "AI",
+      "target": "AI",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "08d455842d5a06070b3132e924333e7547e4736a953b175f8ff2bf45ecdeb23c": {
       "model": "claude-opus-5",
@@ -185,6 +201,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "0d1292a4e71064d1fd2c4e6a03887898af413669a3d46fab83ec5ab3d872a1bb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Yes. We build AI assistants and chatbots that capture leads and answer customer questions 24/7, plus automations that handle scheduling, follow-ups, and data entry. AI lets a small team respond instantly and never miss a lead, giving you back hours every week.",
+      "target": "Sì. Realizziamo assistenti AI e chatbot che catturano lead e rispondono alle domande dei clienti 24 ore su 24, oltre ad automazioni che gestiscono appuntamenti, follow-up e inserimento dati. L'intelligenza artificiale permette a un piccolo team di rispondere all'istante senza perdere mai un lead, restituendoti ore preziose ogni settimana.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "0d54df8aa35a5089506f4d01268362474ba44916dde483942e042d2fa2b3a948": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -192,6 +216,14 @@
       "target": "Paga la fattura",
       "origin": "committed",
       "at": "2026-08-21T04:57:00.751Z"
+    },
+    "0d8196908c9dc0b6c852d82854019502750e1eed0095fb86d7dfc6b071057c03": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Every website we build has SEO engineered in from day one — structured data, clean architecture, fast load times, sitemaps, and local optimization. Most clients see meaningful ranking improvement within {seoTimeframeDays} days, and the gains compound as content and authority grow.",
+      "target": "Ogni sito web che realizziamo ha la SEO integrata fin dal primo giorno — dati strutturati, architettura pulita, tempi di caricamento rapidi, sitemap e ottimizzazione locale. La maggior parte dei clienti vede un miglioramento significativo dei posizionamenti entro {seoTimeframeDays} giorni, e i risultati si accumulano man mano che contenuti e autorevolezza crescono.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "0d82ba80c1a3f30dc350d42dc510d16d128dfb98173330a3d5cd5fa70b262d8a": {
       "model": "claude-opus-5",
@@ -321,6 +353,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
     },
+    "16163a307c5b84d010866ea7a5fd7f7967c67aba6603ba54cf7240988bc49bf1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "General",
+      "target": "Generale",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "16278b0de974032455cfcdbf6b358fc0ec4828345747954757a4e56ff85ec7a0": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -344,6 +384,14 @@
       "target": "Un partner coinvolto nei tuoi risultati, non solo nel tuo lancio",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "181fcb64fc19eabf49b135c5523c6835a74c4183e6bfd2759daac77a39796098": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Do I need a monthly maintenance plan?",
+      "target": "Ho bisogno di un piano di manutenzione mensile?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "190a2886da006cb43c6c40e1e06270ae5cbde3d3a9fd2f050077b7030c0a4411": {
       "model": "claude-opus-5",
@@ -392,6 +440,14 @@
       "target": "Marketing online",
       "origin": "committed",
       "at": "2026-08-21T04:50:45.646Z"
+    },
+    "1b39a83bd0cfe706b0e75b7936d96df4139c88da11530d0f99c6fddbca5f71a1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A maintenance plan is optional but strongly recommended. For {maintenancePrice}/month, Maintenance keeps your site fast, secure, and backed up — with hosting, SSL, monitoring, performance tuning, and minor edits handled for you. Without upkeep, any website gradually slows down and slips out of search.",
+      "target": "Un piano di manutenzione è facoltativo ma fortemente consigliato. Per {maintenancePrice}/mese, il piano Maintenance mantiene il tuo sito veloce, sicuro e con backup regolari — con hosting, SSL, monitoraggio, ottimizzazione delle prestazioni e piccole modifiche gestite per te. Senza manutenzione, qualsiasi sito web rallenta gradualmente e scivola fuori dalla ricerca.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "1b4d2246c82cf7d24776a91434ec2897b6ea260a297e38c5e5b5c0c43ba0281b": {
       "model": "claude-opus-5",
@@ -553,6 +609,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
     },
+    "23008dd9536a0296c1251c7fbee31e002fe91abb516e97c9c7a08d75b0fd2890": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Can you add AI to my website or business?",
+      "target": "Potete aggiungere l'AI al mio sito web o alla mia attività?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "252ced13c2a471e4ca3a8c8c166adc978832e58f3e2360abc50be72882b35ad8": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -576,6 +640,14 @@
       "target": "Progettato per rendere",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "270abe8252bbd6427c0e0f8b2573d0044977d8639fb250f61efed802cd87a356": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "FAQ categories",
+      "target": "Categorie delle FAQ",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "27fdf0c7088d0aef8ab5cde7bd3218081584c29893f19e96bc0b0f88358c71af": {
       "model": "claude-opus-5",
@@ -608,6 +680,14 @@
       "target": "La fiducia non si dichiara in una presentazione: si dimostra nella consegna — nei tempi, per iscritto e all’altezza dello standard che il lavoro richiede.",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "28f885f5afbc35e02cd9c94e270a478f93367967c7f18cc2bd09da74c2834e02": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Still have a question?",
+      "target": "Hai ancora una domanda?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "292cfc5b66f6e624f3520c3b74877cf4603809bec9dba05a78513199e2e6478b": {
       "model": "claude-opus-5",
@@ -671,7 +751,7 @@
       "source": "Maintenance",
       "target": "Maintenance",
       "origin": "committed",
-      "at": "2026-08-21T06:14:55.391Z"
+      "at": "2026-08-22T14:27:43.283Z"
     },
     "309737a0dd23e802e2b5d2adc3879eadc5541006b8544a7100ae101555dc16dc": {
       "model": "claude-opus-5",
@@ -689,6 +769,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "33efb42cec638b9220f3de7ce369ef8300487e227224bcdbb2d47621e9822bb9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "How long does SEO take to work?",
+      "target": "Quanto tempo serve perché la SEO funzioni?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "33fda8c3a7331e7a1ca92d26d5f354b9f1948a175d932e2b637cc93c14b3ef91": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -696,6 +784,14 @@
       "target": "Cybersecurity e AI",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "340b48aa3d6339755bf52cb98b3204a7a50f3297de3f5583b981492aed885100": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Will I be able to reach a real person for support?",
+      "target": "Potrò parlare con una persona vera per l'assistenza?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "3436820f487bda033786c289dcfbcf28b42ebe3d905022c8b43ec5696d9ebfcf": {
       "model": "claude-opus-5",
@@ -736,6 +832,22 @@
       "target": "$1,500+",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "354d2c49f4cba725c72beb8a3fafbeac1523ec9b957cc4778e3d7a2e5905b8f2": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Common questions about working with Cozelos Data: custom website projects start at {websiteStartingPrice} with a {discoverySessionPrice} Discovery Session credited toward the build; most sites launch in {websiteTimelineWeeks} weeks; clients own their domain, code, and content outright; SEO typically improves rankings within {seoTimeframeDays} days; and monthly growth plans run from {maintenancePrice}/month.",
+      "target": "Le domande più comuni su come lavorare con Cozelos Data: i progetti di sito web su misura partono da {websiteStartingPrice} con una Discovery Session da {discoverySessionPrice} accreditata sulla realizzazione; la maggior parte dei siti viene lanciata in {websiteTimelineWeeks} settimane; i clienti possiedono dominio, codice e contenuti al 100%; la SEO migliora tipicamente i posizionamenti entro {seoTimeframeDays} giorni; e i piani di crescita mensili partono da {maintenancePrice}/mese.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
+    "35586e64ff7fbe7c0a93c771e72aea2e2bb354aa77d24df35708c0de1749d42e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What is AI search optimization and why does it matter?",
+      "target": "Cos'è l'ottimizzazione per la ricerca AI e perché è importante?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "357ab4670fdad7c2fdb40c19d6efbd78e7770baf3e73dced6b29528a7be58c86": {
       "model": "claude-opus-5",
@@ -808,6 +920,14 @@
       "target": "Ottimizzazione delle prestazioni e Core Web Vitals",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "389c3ea11e0fd2e3fd35d0029fd1641d9c1284974701560ac196172526fb1d4f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We're headquartered in Vernal, Utah, and work with clients anywhere in the country. Most projects run smoothly online, with occasional on-site visits for video shoots or strategy sessions. Wherever you are, you get the same fast, custom, search-optimized digital asset.",
+      "target": "Abbiamo sede a Vernal, Utah, e lavoriamo con clienti in tutto il Paese. La maggior parte dei progetti procede senza intoppi online, con visite in loco occasionali per riprese video o sessioni strategiche. Ovunque tu sia, ottieni lo stesso asset digitale veloce, su misura e ottimizzato per la ricerca.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "390c9808e8fcc8b4cb1880be829323690da8ba8cfbe72c81129a5c85438da869": {
       "model": "claude-opus-5",
@@ -889,6 +1009,14 @@
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
     },
+    "3bcaa0070e5d3c8b816a735ebdb53b2a99817dfffadc4d2efb0318adf92c5731": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO typically shows meaningful movement within {seoTimeframeDays} days, with stronger results building over 6–12 months. Technical fixes and local optimization can lift rankings within weeks, while competitive keywords take longer. Unlike paid ads, the visibility you earn keeps working without ongoing cost-per-click.",
+      "target": "La SEO mostra tipicamente un movimento significativo entro {seoTimeframeDays} giorni, con risultati più solidi che si costruiscono in 6–12 mesi. Le correzioni tecniche e l'ottimizzazione locale possono migliorare i posizionamenti nel giro di settimane, mentre le keyword più competitive richiedono più tempo. A differenza degli annunci a pagamento, la visibilità che guadagni continua a lavorare senza un costo per clic continuativo.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "3bd3f82f47bb26c2107d9e1248cb892db8e66d118fc38093a47c2017d73d6fb5": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -961,6 +1089,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "41a3e979f3315af934b4990acda9cbc420233016be5ea2584c4c330f49bac409": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What happens if I want to leave or switch providers?",
+      "target": "Cosa succede se voglio lasciare l'agenzia o cambiare fornitore?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "41f5a8127947557105db784e69ed0d87d51c176a8d0d63f4f2cc84338f7549a7": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1016,6 +1152,14 @@
       "target": "Questa missione si traduce nel lavoro in <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">sei servizi collegati</a> e negli <a href=\"/why-cozelos-data/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">standard che ci imponiamo</a> su ogni progetto.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "443e98670cdd046f759433f7ae5894f6bdefe373080a3d8af148c24d7fb611cb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Small enough to move fast, structured enough to hit milestones. Most sites in {websiteTimelineWeeks} weeks.",
+      "target": "Abbastanza piccoli per muoverci in fretta, abbastanza strutturati per rispettare le milestone. La maggior parte dei siti in {websiteTimelineWeeks} settimane.",
+      "origin": "committed",
+      "at": "2026-08-22T14:04:48.050Z"
     },
     "44fce3e25fa0afb97afd1c4aa1e9cdcf9bdc78ac1c2a39a5882ea569410ea331": {
       "model": "claude-opus-5",
@@ -1089,6 +1233,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "4992dbabe7c0762ff27e166c878ac4263863a1c79e9f42c1a0774f4d373e93fc": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "How long does it take to build a website?",
+      "target": "Quanto tempo serve per realizzare un sito web?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "4a68b0e6a0f38ad2d2d2eefd42510803a443d2e0bba660488118f009e720a923": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1144,6 +1296,14 @@
       "target": "Contatti",
       "origin": "committed",
       "at": "2026-08-21T04:09:16.058Z"
+    },
+    "4d40eb2a0eabc33a54617d1784c21ff7b97a52af11e5d5a6cbbed408b287e45e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Do you work with government agencies?",
+      "target": "Lavorate con enti governativi?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "4d7d22431c7414a4f28822787443574b80f168f3f6e292d04f544d544cfe3238": {
       "model": "claude-opus-5",
@@ -1273,6 +1433,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:57:00.750Z"
     },
+    "5618d845682cc5a681860255ca00bf8d6cceeec30fe774c13d369e05f6cb1e7d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Do you provide website hosting?",
+      "target": "Fornite l'hosting del sito web?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "5622defe05e386f43df0d977f7653ce57029a5e9aaaea6a382ba3a544e3f9de8": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1281,6 +1449,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "5680ee091497d9d0adc3d17e79aa0add217a490a7710cadc9960c7e2b54fe6b6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "No. Your project quote is fixed and approved in writing before any work begins, so the price never changes mid-build. The only ongoing cost is an optional monthly plan, and that rate is locked too — no 'starting from' footnotes and no surprises.",
+      "target": "No. Il preventivo del tuo progetto è fisso e approvato per iscritto prima dell'inizio dei lavori, quindi il prezzo non cambia mai a lavori in corso. L'unico costo continuativo è un piano mensile facoltativo, e anche quella tariffa è bloccata — nessuna nota in calce con 'a partire da' e nessuna sorpresa.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "5720631af4ff8d87ba89c44ae0d2594d995a776a802a83fb228a219e7ccb43f4": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1288,6 +1464,14 @@
       "target": "La nostra visione",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "574499964b8d6a4de4d8684f5e7d14e42731d464de2e305aa1308b906c99bace": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We measure the metrics that matter to your business: leads, bookings, cost per lead, and revenue — not vanity numbers like impressions. With proper conversion tracking in place, you get monthly reports showing exactly what your marketing spend produced and where it can improve.",
+      "target": "Misuriamo le metriche che contano davvero per la tua attività: lead, prenotazioni, costo per lead e fatturato — non numeri di facciata come le impression. Con un tracciamento delle conversioni impostato correttamente, ricevi report mensili che mostrano esattamente cosa ha prodotto la tua spesa di marketing e dove può migliorare.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "57633a37d28d78000020513725382365ba5f263cc3494ae47e3dca45003b1ea1": {
       "model": "claude-opus-5",
@@ -1401,6 +1585,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "5d8b886031c9609e0fa37552afd41f882650f8faf4e67a1ff38ea9c87bbe69b1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Frequently Asked Questions — Cozelos Data",
+      "target": "Domande Frequenti — Cozelos Data",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.279Z"
+    },
     "5de57ae233540a280bd09e4eeb6f828401e5c92104b947bf745595d012c3ea1b": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1424,6 +1616,14 @@
       "target": "Se è importante per te, è importante per noi.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "5f625b5b5023cd75c7c4a3cd773cc77e87a97baeb6de0f8d3ab4a4972d6428a5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "If your question isn't answered here, ask us directly. We give straight answers — no pressure, no obligation.",
+      "target": "Se la tua domanda non trova risposta qui, chiedicelo direttamente. Diamo risposte dirette — senza pressioni, senza impegno.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "5f6f18a643b16554753088d4551ef3ab73a92c5acfeb11891f5f190ce7500cbf": {
       "model": "claude-opus-5",
@@ -1456,6 +1656,14 @@
       "target": "Vent’anni passati a progettare sistemi sicuri e scalabili per ambienti in cui il fallimento non è contemplato. Per i clienti quella disciplina diventa siti e piattaforme progettati per funzionare in modo impeccabile — veloci, affidabili e costruiti per durare.",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "5fff9f1b0fba66b75685ffc01e5223ed1e9658ef54102dd896ed1560b013faeb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Yes. We host on fast, secure, enterprise-grade infrastructure with SSL, daily backups, and uptime monitoring included in our monthly plans. Because our sites are built as lightweight static pages, they load almost instantly and stay online reliably — and you always own the hosting account.",
+      "target": "Sì. Ospitiamo su un'infrastruttura veloce, sicura e di livello enterprise, con SSL, backup quotidiani e monitoraggio dell'uptime inclusi nei nostri piani mensili. Poiché i nostri siti sono costruiti come pagine statiche leggere, si caricano quasi istantaneamente e restano online in modo affidabile — e l'account di hosting resta sempre tuo.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "607413711191519a739637a2fb2485cd76ac7961e3e49074b3eb2e46980745e9": {
       "model": "claude-opus-5",
@@ -1673,6 +1881,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "7236338397d187fc41abf6645fcd51e053e186fc30232d6da741348cc87f1b0c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Do you manage Google and Facebook ads?",
+      "target": "Gestite gli annunci su Google e Facebook?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "725e89275182fb07114b10becf9847a229586768fa747759a769604c98983e3e": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1713,6 +1929,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:57:00.751Z"
     },
+    "7462e159fda08256d698baede818092fa7694143b064bdad98c6f5a1a2e78ac6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ownership",
+      "target": "Proprietà",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "74a613500060fdbf2c0662bfd603680ad6099bd8ab07167ce85b24968e4764fc": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1729,6 +1953,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
     },
+    "75499029d3f0c89c2f06d9263a4fe9d3d7422a1600597810661812fe09535e19": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What is local SEO and do I need it?",
+      "target": "Cos'è la SEO locale e mi serve?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "7663f8c76de32138f3101fd50f62f67ff565f779e2a26bebdcbb064708c00166": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1744,6 +1976,14 @@
       "target": "Abbastanza piccoli per muoverci in fretta, abbastanza strutturati per rispettare le milestone. La maggior parte dei siti in 4–6 settimane.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
+    },
+    "771e96c5df4fb533a56b8547bd445025a5926b1a150604488e5fdb2fb068d25a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Pricing",
+      "target": "Prezzi",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "7774945db6ec2c53fc211caf5c3ef438c20d8e622978a45d6ca8113fd5b39553": {
       "model": "claude-opus-5",
@@ -1785,6 +2025,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "78de9b2923008f3b05d08c56dfab7e67aa5e987f4d4019d6a3aba70e97b8f84f": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Are you based in Utah? Do you work with clients in other states?",
+      "target": "Siete basati in Utah? Lavorate con clienti in altri stati?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "79632ecb6573a8069b61d52e83eda00e27d622da61a0845f3feb67ffd6e4edfd": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1801,6 +2049,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "7a1aba4812aa69cc2144ccb92de0e4e9d4d5f95dc58b5acb08945ca59237eee0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Timeline",
+      "target": "Tempistiche",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "7b77c583b0580bb4e16b74933fdbf4f5849e593adc7ddf07b12ca0cae1fe48ad": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1808,6 +2064,30 @@
       "target": "Fondatrice · Cozelos Data",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "7be2f5b61e083c51d69322d8b34c12430d8b4c09a149da62659f3ebd9f94742a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Questions & Answers",
+      "target": "Domande e Risposte",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
+    "7c84e1fde34d180467a8cb1b48a0ce1070c70ea688e99e3d0d65a6d473b2f2af": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Is my website secure from hackers?",
+      "target": "Il mio sito web è al sicuro dagli hacker?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
+    "7cac50a218cade63f33fb01a41ddc61e6edf1358f6f162424133a266b6c71e3d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Local SEO helps your business appear when nearby customers search for what you offer — in Google Maps, the local pack, and 'near me' results. If you serve a specific area, you need it. We optimize your Google Business Profile, local citations, and location pages to capture that demand.",
+      "target": "La SEO locale aiuta la tua attività a comparire quando i clienti nelle vicinanze cercano ciò che offri — su Google Maps, nel local pack e nei risultati 'vicino a me'. Se servi un'area specifica, ti serve. Ottimizziamo il tuo Google Business Profile, le citazioni locali e le pagine di località per intercettare quella domanda.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "7cda66cf1bc3330e120976988612f021b241abc6609bf6f9459aa56ab7df70fd": {
       "model": "claude-opus-5",
@@ -1825,6 +2105,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
     },
+    "7cf93fc1837fff95c8e7b30f3b0cd1c18dd1edb248c9e239a7734b5d2f74ebe0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Paid ads buy immediate traffic that stops the moment you stop paying. SEO earns traffic that compounds and keeps working for free over time. The best strategy uses both: ads for fast results today, and SEO for durable, lower-cost growth tomorrow.",
+      "target": "Gli annunci a pagamento comprano traffico immediato che si ferma nel momento in cui smetti di pagare. La SEO guadagna traffico che si accumula e continua a lavorare gratuitamente nel tempo. La strategia migliore usa entrambi: gli annunci per risultati rapidi oggi, la SEO per una crescita duratura e a costo più basso domani.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "7d61c345777cd6b4ab3a09c292b9494c743e537938d0c83d3357e04ef79e7864": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1832,6 +2120,14 @@
       "target": "Fatta bene, l’innovazione non è rottura fine a se stessa — apre porte: nuovi mercati, nuove efficienze e nuovi modi di far crescere un’azienda.",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "7d9c78d57ab92bdb592060c84389078fbb842eac587834fc08fd703d62812fb4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Yes. We build static, hardened websites with a very small attack surface — no sprawling admin panels or vulnerable plugins to exploit. Every site ships with SSL encryption, security monitoring, and daily backups, so it stays safe, online, and protected.",
+      "target": "Sì. Costruiamo siti web statici e irrobustiti, con una superficie di attacco molto ridotta — niente pannelli di amministrazione sconfinati né plugin vulnerabili da sfruttare. Ogni sito viene consegnato con crittografia SSL, monitoraggio della sicurezza e backup quotidiani, così resta sicuro, online e protetto.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "7eddd35ba7bb584bc13c40229e2449ca1f98f7207025fa7ab626eaf97a172f43": {
       "model": "claude-opus-5",
@@ -1848,6 +2144,14 @@
       "target": "Misuriamo il successo come lo misuri tu: in lead, prenotazioni e fatturato — non in visualizzazioni o vago “engagement”. Un sito che porta una manciata di nuovi clienti al mese si ripaga in poche settimane e rende per anni. Ogni pagina è progettata attorno alla conversione e rendicontiamo i numeri che fanno davvero avanzare la tua attività.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
+    },
+    "828d250bc2057c63b299c5b989f982f4acf2f1ffbd11bbfb48dcebd41349fccd": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Why does my business need video?",
+      "target": "Perché la mia attività ha bisogno di video?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "82efb068757b99fcfbd906c5105dca977a4b682eaba2d48ee11d3d318c8d3081": {
       "model": "claude-opus-5",
@@ -1929,6 +2233,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "859f3c9cdf97c205f906a72cab9f9a4eca556ac3fbf46bbc4be79ee8e49b7de4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "See Pricing",
+      "target": "Guarda i prezzi",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "85eeff6e5d6778969250d8b8d7d7487ecfd82f1e6335d8c84c54f11afc5194eb": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -1993,6 +2305,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "89a096186c884f61ae0ecbd2e5acb59138dce0317cc9d0a8a24e918a58a85984": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "How much does a custom website cost?",
+      "target": "Quanto costa un sito web su misura?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "89aa8b42360a1c6eccee3c2db37bbedcbd1e240bcdca481660acf790ad341751": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2025,6 +2345,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
     },
+    "8cafb2c29c38e37be62cf6112befbd18c69ce051765905a27d0a46bb59e1a98c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Everything you actually want to ask.",
+      "target": "Tutto quello che vuoi davvero chiedere.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "8d120a7ba382b4399d6e58063274f9367487c2dc81ae8eb96a4dd2c7a5661e52": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2040,6 +2368,14 @@
       "target": "Inizia con una Discovery Session. Mapperemo l’opportunità, ti consiglieremo il livello giusto e ti daremo un preventivo a prezzo fisso — accreditato sul costo della realizzazione.",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
+    },
+    "8db9a15432b1c65345ac124cde86bc13c842004d66b5db9a59d33f3dbcedca8b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What is included in ongoing website maintenance?",
+      "target": "Cosa include la manutenzione continuativa del sito web?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "8dfa99b0415a0d13cd06c886156600ceaeabbbafae8ea647062924869fe6cdf9": {
       "model": "claude-opus-5",
@@ -2145,6 +2481,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "93c680b85afdf4e495338ccc5f15baff6d58463fa55154f843d721160a104d3a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Investment-grade pricing from Cozelos Data. Custom website projects from {websiteStartingPrice} and monthly growth plans from {maintenancePrice} — built to generate leads and lasting ROI.",
+      "target": "Prezzi di livello professionale da Cozelos Data. Un sito web su misura a partire da {websiteStartingPrice} e piani di crescita mensili da {maintenancePrice} — progettati per generare lead e un ROI duraturo.",
+      "origin": "committed",
+      "at": "2026-08-22T14:04:48.055Z"
+    },
     "93d521ce302444bdf5ab5cdd4a662d9fbb0bbd733e2d3295ca224f5b5118d45e": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2193,6 +2537,14 @@
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
     },
+    "978820081eb34f645647a4e0e37973b87ba373d64ecd6b936fd77c9aa84429a1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "{maintenancePrice}",
+      "target": "{maintenancePrice}",
+      "origin": "committed",
+      "at": "2026-08-22T14:04:48.056Z"
+    },
     "982261b6344c6a5df75b9e566777c46a247f41aa66d87db9f31a89335ab225e8": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2216,6 +2568,22 @@
       "target": "Un design curato non è decorazione — è credibilità resa visibile. Una tipografia sicura, spaziature studiate, animazioni cinematografiche e una gerarchia visiva chiara dicono al visitatore, prima ancora che legga qualcosa, che l’azienda dietro allo schermo prende sul serio il proprio mestiere. Un template identico a diecimila altre aziende dice esattamente il contrario.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "989f8ce254a6b5e8b7f3e213320b841e214f596c2d0d67417f8638456c043841": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "{websiteStartingPrice}",
+      "target": "{websiteStartingPrice}",
+      "origin": "committed",
+      "at": "2026-08-22T14:04:48.055Z"
+    },
+    "996c76326377cd3a64f0e6f5f83a4331c345bcc22f9d34e09bd6a87149f2a770": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "SEO",
+      "target": "SEO",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "998cf9af8fbe7de8881d778f3c1f91a41cfa8a3e7acf4fe2f58e4ea8d7a25487": {
       "model": "claude-opus-5",
@@ -2297,6 +2665,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "a0a8a48a9a0820aa215d5bbb698953a4d1214ae8124929ee1c33d02f9383c30d": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Custom website projects from Cozelos Data start at {websiteStartingPrice} for Essential Presence, $4,500 for Professional Growth, and $7,500 for Market Leader, with Enterprise builds scoped individually. Every project begins with a {discoverySessionPrice} Discovery Session that's credited toward your build, and you receive a fixed quote in writing before any work starts.",
+      "target": "I progetti di sito web su misura di Cozelos Data partono da {websiteStartingPrice} per Essential Presence, $4,500 per Professional Growth e $7,500 per Market Leader, con le realizzazioni Enterprise quotate singolarmente. Ogni progetto inizia con una Discovery Session da {discoverySessionPrice}, accreditata sul costo della realizzazione, e ricevi un preventivo fisso per iscritto prima dell'inizio dei lavori.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "a1bef81521380e77d5b6a743ca2cc9f9c6a87a159d2cf5f0a83ec8c3891b2baf": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2304,6 +2680,14 @@
       "target": "Al telefono rispondiamo davvero. I clienti con un piano attivo ricevono supporto prioritario e un team che resta coinvolto anche dopo il lancio.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "a2064afaa64168305c1c3ed05d1b33ea0a2bdb700c1f7e4071c6a74474d7f45e": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Ask Us Anything",
+      "target": "Chiedici qualsiasi cosa",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "a24bfaaf3578618b1caa33de28c41f25446ad2693b0b640477cf880f19f3a3a4": {
       "model": "claude-opus-5",
@@ -2345,6 +2729,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "a3af856ae7a386702d7dacf5c965ee2ebd8c0eff93694d3e4d7e34a7455badc1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Will my new website actually rank on Google?",
+      "target": "Il mio nuovo sito web si posizionerà davvero su Google?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "a3d8647329562402ec872de07a5fa6d433138857bcd84e4e6ad702ea43b4e10a": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2352,6 +2744,14 @@
       "target": "Codici NAICS con cui Cozelos Data opera",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "a446d009b18a251df4446bc07195e1ab9e72f173a06a6e8d55a3a82f0264ab8c": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Straight answers on pricing, timelines, ownership, SEO, hosting, maintenance, AI, video, and marketing — before you ever get on a call.",
+      "target": "Risposte dirette su prezzi, tempistiche, proprietà, SEO, hosting, manutenzione, AI, video e marketing — prima ancora di parlarci al telefono.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "a6fd6d50e0441be88932811a6ca4971c16614707384e006d872162586dc06fa2": {
       "model": "claude-opus-5",
@@ -2505,6 +2905,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "b13b6dd538db2aaa5d41e99ef9ee0cd05cc4600b6e2df3c5dc990c2c8a1c98e4": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Video",
+      "target": "Video",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "b1b1a56203089d78c81117434c85c5f29ed0bb8b90b18054aca6770f5fc969bb": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2513,6 +2921,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "b2fd467adfe3d3c693a75690a68ed54207b3d3134f05155683efc39bc2889c39": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "We can usually begin within one to two weeks of your Discovery Session. Once we agree on scope and you approve the fixed quote, we schedule a kickoff and start immediately — most clients move from first call to active design inside two weeks.",
+      "target": "Di solito possiamo iniziare entro una o due settimane dalla tua Discovery Session. Una volta definito lo scope e approvato il preventivo fisso, fissiamo il kickoff e partiamo subito — la maggior parte dei clienti passa dalla prima chiamata alla progettazione attiva in meno di due settimane.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "b33528891e7e0201f1cbaf538be6ad550c88599287a101d50e478b62c4799905": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2520,6 +2936,14 @@
       "target": "Il tuo dominio. Il tuo codice. I tuoi contenuti. Senza eccezioni.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
+    },
+    "b3b3f3ac7f63ebef7906e23198ecc1b889ff17d0843a668d2aeeae0c47489da8": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Most custom websites launch in {websiteTimelineWeeks} weeks from kickoff. Larger sites with many pages or heavy content writing take 8–10 weeks, and simple landing pages can go live in 2–3 weeks. You receive a clear schedule with milestones on day one.",
+      "target": "La maggior parte dei siti web su misura viene lanciata in {websiteTimelineWeeks} settimane dall'avvio del progetto. I siti più grandi, con molte pagine o una stesura dei contenuti più corposa, richiedono 8–10 settimane, mentre le landing page semplici possono andare online in 2–3 settimane. Ricevi un calendario chiaro con le milestone fin dal primo giorno.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "b3e1e39c52c903db916b9153ce1464532d64dbf88a6c78e1d18d4fd85e8bf23c": {
       "model": "claude-opus-5",
@@ -2544,6 +2968,14 @@
       "target": "Raccontaci della tua attività",
       "origin": "committed",
       "at": "2026-08-21T04:09:16.059Z"
+    },
+    "b4cf83fcedb59e2305a947010eefe8bac02767a09f7e367e683736f6e8d5960b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Launch is the beginning, not the end. We set up analytics, submit your site for indexing, and — on a monthly plan — keep it updated, secure, and improving. As your business grows, we evolve the site with it, so your digital asset keeps getting better over time.",
+      "target": "Il lancio è l'inizio, non la fine. Configuriamo l'analytics, sottoponiamo il tuo sito all'indicizzazione e — con un piano mensile — lo manteniamo aggiornato, sicuro e in continuo miglioramento. Man mano che la tua attività cresce, facciamo evolvere il sito insieme a lei, così il tuo asset digitale continua a migliorare nel tempo.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "b55d7b151861032f7a6a72a1836e216f9fa424a975a651076df6119f5786686e": {
       "model": "claude-opus-5",
@@ -2576,6 +3008,14 @@
       "target": "Vent’anni a supporto di software mission-critical per NASA e Department of Defense.",
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
+    },
+    "b8c038457ac9034254b2c08c4eb5037ab26bfd428aa20ad1c62afa3392f94743": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Maintenance includes hosting, SSL, security monitoring, daily backups, uptime monitoring, performance optimization, minor content edits, and priority support. Higher tiers add SEO, content, and marketing. The goal is simple: your site gets faster and ranks higher every quarter, not slower.",
+      "target": "Maintenance include hosting, SSL, monitoraggio della sicurezza, backup quotidiani, monitoraggio dell'uptime, ottimizzazione delle prestazioni, piccole modifiche ai contenuti e supporto prioritario. I livelli superiori aggiungono SEO, contenuti e marketing. L'obiettivo è semplice: il tuo sito diventa più veloce e si posiziona meglio ogni trimestre, non il contrario.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "b8db852e5db9e0d292359d9ad02c483fe51d9262283af0a90e91698033ba8d47": {
       "model": "claude-opus-5",
@@ -2713,6 +3153,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
     },
+    "c4ba0437d585f29d7efcec2e96d103ca0478eed3dbbfe7a472947c3b7a86f015": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What's the difference between SEO and paid ads?",
+      "target": "Qual è la differenza tra SEO e annunci a pagamento?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "c5afad18debb2dee6ea710aff49c078e1b32b6f2e2ff1410b08a9a328e9114b7": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2769,6 +3217,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.390Z"
     },
+    "c7d536aed68eecb58c1420e34be74a3c1bf631567888886d93af5d24d205dd3b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "How do you measure marketing results?",
+      "target": "Come misurate i risultati del marketing?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "c7d581cac6c9f1250bf5f2c5f374065d3cc6fc21b5a8270d08002b76727a5153": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2785,6 +3241,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:02:03.013Z"
     },
+    "c913e7e27099daa0e7c0527651f88158f9bcbfd650c1389fb355f07c45d848d0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "What happens after my website launches?",
+      "target": "Cosa succede dopo il lancio del mio sito web?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "c92f5dce588432f857c48bf0b9b833602db9a2a2ce413b8f2f4700aff6b5dae7": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2800,6 +3264,22 @@
       "target": "$295",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "c93dbe9bf14d4be279b9773d397d9afdd3bfd11ce3d1f2ac06a6f254ebb7a117": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "How quickly can you start my project?",
+      "target": "Quanto velocemente potete iniziare il mio progetto?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
+    "c9a1ae0c6663ac22225e0b78308bb1345b5c18d1bc03fe1abc3f57744a9797d5": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Yes. We build and manage Google Ads and Meta (Facebook & Instagram) campaigns end to end — creative, conversion-focused landing pages, pixel tracking, and A/B testing. We tune until cost-per-lead drops, then scale only the campaigns that produce measurable results.",
+      "target": "Sì. Costruiamo e gestiamo le campagne Google Ads e Meta (Facebook e Instagram) dall'inizio alla fine — creatività, landing page orientate alla conversione, tracciamento con pixel e A/B testing. Ottimizziamo finché il costo per lead non scende, poi scaliamo solo le campagne che producono risultati misurabili.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "c9b71ca71e7d59b6a592eaf32e5d4a39cc7bfdaa1cc38258380bd3cd13340183": {
       "model": "claude-opus-5",
@@ -2825,6 +3305,14 @@
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
     },
+    "cb252c5a5387137d9e51f24ea3c8b4f9bb6fba40eeaad43bfea2991bf871cf02": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "{discoverySessionPrice}",
+      "target": "{discoverySessionPrice}",
+      "origin": "committed",
+      "at": "2026-08-22T14:04:48.055Z"
+    },
     "cd2b165bb179aede0617cba21d5ae9db28e12a76aa00b2bb2a06e5c500226dd9": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2841,6 +3329,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.695Z"
     },
+    "cda4d2203bd9ff79c2575466deaa32d92f824344dce8e660e3062bd1a51e60ee": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Do you offer video production?",
+      "target": "Offrite servizi di produzione video?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "cdf0faf0575749e998fd629b5faae4bb518d51ab6d22e38bd9cd4ffdd9b88381": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -2856,6 +3352,14 @@
       "target": "Progettato per la velocità",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.193Z"
+    },
+    "ced3b02dc129b3d4016162080954c56ca420a75576c47a3fedc1a4846b4642a9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Hosting",
+      "target": "Hosting",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "cefaaa7eeb3de0a13a1abffa92922e72b1f39d91d6b3ee7e5f6efb20662ce47b": {
       "model": "claude-opus-5",
@@ -2945,6 +3449,22 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "d17ad30a847ef1e9774d5bb7a5a207fb463f4c88e145289c8d6ad4064d1dff2b": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Cozelos Data, a digital agency in Vernal, Utah, prices work as an investment, not a commodity. Custom website projects start at {websiteStartingPrice} (Essential Presence), $4,500 (Professional Growth), and $7,500 (Market Leader), with Enterprise builds scoped from $10,000. Ongoing monthly growth plans run from {maintenancePrice} (Maintenance) to $1,500+ (Full Marketing). Every project begins with a {discoverySessionPrice} Discovery Session, credited toward your build.",
+      "target": "Cozelos Data, agenzia digitale a Vernal, Utah, tratta il proprio lavoro come un investimento, non come una merce. I progetti di sito web su misura partono da {websiteStartingPrice} (Essential Presence), $4,500 (Professional Growth) e $7,500 (Market Leader), mentre le realizzazioni Enterprise sono quotate a partire da $10,000. I piani di crescita mensili vanno da {maintenancePrice} (Maintenance) a $1,500+ (Full Marketing). Ogni progetto inizia con una Discovery Session da {discoverySessionPrice}, accreditata sul costo della realizzazione.",
+      "origin": "committed",
+      "at": "2026-08-22T14:04:48.055Z"
+    },
+    "d18efa89f12b1d47263893dccc3dec4a58d5ce6367126792bf2499404ce117de": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Video communicates energy, scale, and trust that photos can't, and it consistently earns higher engagement across websites, ads, and social media. It also gives you a reusable library of branded content. In a crowded feed, professional video is what makes a business stop the scroll.",
+      "target": "Il video comunica energia, dimensione e fiducia che le foto non possono trasmettere, e ottiene sistematicamente un engagement più alto su siti web, annunci e social media. Ti offre inoltre una libreria di contenuti brandizzati riutilizzabile nel tempo. In un feed affollato, un video professionale è ciò che fa fermare lo scroll su un'attività.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "d29be7111ff0a79b9c75712eede1ec360dbb61ffa15f31fc9e4f552c58a50861": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3025,6 +3545,14 @@
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
     },
+    "d66e3b7ac01b2fd494af6d7854595389cbea3ad72ed5520b14af2168bb50ceeb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "AI search optimization makes your business easy for tools like ChatGPT, Claude, and Google's AI Overviews to understand and recommend. We structure your content with schema and an llms.txt file so AI engines cite you accurately — capturing customers who now ask AI instead of searching.",
+      "target": "L'ottimizzazione per la ricerca AI rende la tua attività facile da comprendere e da consigliare per strumenti come ChatGPT, Claude e le AI Overviews di Google. Strutturiamo i tuoi contenuti con schema markup e un file llms.txt in modo che i motori AI ti citino con precisione — intercettando i clienti che oggi chiedono all'AI invece di cercare.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "d7076bc3ae86407ad218e1318decb8cb914774560d8955dc96d2cae54620a896": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3065,6 +3593,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "d7e85c9ad15b584d7c6369a384c273814f6607e56c1bee8749ff8e7bbf882978": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Yes. You work directly with our team — not a ticket queue or a call center. Clients on a monthly plan get priority support, and we actually answer the phone. Clear communication and real responsiveness are part of how we work, before and after launch.",
+      "target": "Sì. Lavori direttamente con il nostro team — non con una coda di ticket o un call center. I clienti con un piano mensile ricevono supporto prioritario, e rispondiamo davvero al telefono. Comunicazione chiara e reattività reale fanno parte del nostro modo di lavorare, prima e dopo il lancio.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "d8f3ee2c12277e9b96e7677baa21d9e221ad6425e09e2b85aaafdcd09df87a45": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3096,6 +3632,14 @@
       "target": "Il lavoro vero e proprio si articola in <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">sei servizi collegati</a>, quanto costa costruire e far crescere un asset come questo è indicato nella <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">pagina investimento</a>, e il background enterprise da cui nascono questi standard è nella <a href=\"/company/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">storia dell’azienda e della fondatrice</a>.",
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
+    },
+    "db2202b51134c25d424081b4232e948ca3ba22686d0bdd0d999a23fd47794478": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Why does a custom website cost more than a template?",
+      "target": "Perché un sito web su misura costa più di un template?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "db64b58f2e961ce71dcb534448a5f448791e0be724eaba6ec2a6b461f675e1ce": {
       "model": "claude-opus-5",
@@ -3217,6 +3761,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
     },
+    "e162519b29c082008f9a024b3c339f31d3195b2f9c48d0365d50a7efd564ff32": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Support",
+      "target": "Supporto",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "e17512dcf9b18f8a16032e8ddf837bc9b879ca1125b0ff3726c5a68225ef6ef7": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3232,6 +3784,14 @@
       "target": "Lun–Ven · {opens} – {closes} {timezone}",
       "origin": "committed",
       "at": "2026-08-21T05:18:47.256Z"
+    },
+    "e2830157fb87bdd2263532459407c4b06a6876a0b1f8544a634e1b7a7f0dea0a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Answers about pricing, timelines, ownership, SEO, hosting, maintenance, AI, video, and marketing from Cozelos Data — a premium digital agency in Vernal, Utah.",
+      "target": "Risposte su prezzi, tempistiche, proprietà, SEO, hosting, manutenzione, AI, video e marketing da Cozelos Data — agenzia digitale premium a Vernal, Utah.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "e289dc94008634830ba063d22ef707799e829681ad39cb3de27630b307dda586": {
       "model": "claude-opus-5",
@@ -3369,6 +3929,14 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.192Z"
     },
+    "e99a3056f31bd6a3054e725d8d2c53c867f1be07860368f5ef35a5d55a0328b6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "A custom website costs more because it's engineered, not assembled. Instead of a generic theme loaded with plugins, you get hand-built code that loads in under a second, ranks better, carries far less security risk, and needs less maintenance — so it returns more than its price over time.",
+      "target": "Un sito web su misura costa di più perché è ingegnerizzato, non assemblato. Invece di un tema generico carico di plugin, ottieni codice costruito a mano che si carica in meno di un secondo, si posiziona meglio, comporta un rischio di sicurezza molto più basso e richiede meno manutenzione — così nel tempo rende più di quanto costa.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "e9ecd6159bd9f02f211cd1450b60865fc658a8dcccac972d1a278050e1373218": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3489,6 +4057,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.392Z"
     },
+    "eec833305e234b5a4c5ff28b49e85d2822654d0d90c90e0e147996847db1b8c6": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Do I own my website?",
+      "target": "Il sito web è di mia proprietà?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "eee9bc55b147bfbcd0608cdedf422d2f94d03f7a0c6f3c1bba76a97efc813fba": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3577,6 +4153,14 @@
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
     },
+    "f51c39d9bce0dac24c534ebf27901bf2608fc3ecd5e75e8946da0a9b00e49afe": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Are there any hidden fees or surprise invoices?",
+      "target": "Ci sono costi nascosti o fatture a sorpresa?",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "f66a0c3553805cc616bc85d4cb1f982ad74802c67ff19ac6f16ce256861760f3": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3584,6 +4168,14 @@
       "target": "Preventivi fissi per iscritto, milestone chiare e risposte dirette. Ti diciamo cosa costruiremmo e quanto costa.",
       "origin": "committed",
       "at": "2026-08-21T06:55:12.696Z"
+    },
+    "f692a0759661d7cb81e3973fc3bdf12c921a96849dcd1eda8f273bd31702c6b0": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Several of these answers point at the work itself: here's <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">what each of the six services covers</a> and <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">the client builds these answers describe</a>. The timeline and process questions above follow <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">the four stages every project moves through</a>.",
+      "target": "Molte di queste risposte rimandano al lavoro stesso: ecco <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">cosa include ciascuno dei sei servizi</a> e <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">le realizzazioni per i clienti di cui parlano queste risposte</a>. Le domande su tempistiche e processo qui sopra seguono <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">le quattro fasi che attraversa ogni progetto</a>.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "f6f03686288a855e078534a90adb823dcd84c52906ce07a6864f32e59a3ffe56": {
       "model": "claude-opus-5",
@@ -3649,6 +4241,22 @@
       "origin": "committed",
       "at": "2026-08-21T03:47:43.194Z"
     },
+    "fa842653396155fa6d1923c36264a2f81ead7281fe095f47c10d5d36dfd9e2cb": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Yes. Cozelos Data is a Woman-Owned Small Business (WOSB) with an active DUNS (059220399) and CAGE code (897W0), contracting under NAICS 541511, 541512, 541513, and 513210. We build Section 508 / WCAG 2.1 AA accessible sites and provide a capability statement on request.",
+      "target": "Sì. Cozelos Data è una Woman-Owned Small Business (WOSB) con DUNS attivo (059220399) e CAGE code (897W0), operativa sotto i codici NAICS 541511, 541512, 541513 e 513210. Realizziamo siti accessibili secondo Section 508 / WCAG 2.1 AA e forniamo un capability statement su richiesta.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
+    "fafecf379745800c9d7068b7f3404a7d4950bbece0efff5a30d60f5679c5134a": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Yes. We produce cinematic brand films, 4K aerial drone footage, and vertical reels for Instagram, TikTok, and YouTube — fully filmed, color-graded, and sound-designed. Professional video makes your business look established and premium across your website, ads, and social channels.",
+      "target": "Sì. Realizziamo brand film cinematografici, riprese aeree con drone in 4K e reel verticali per Instagram, TikTok e YouTube — girati, color-gradati e sonorizzati a regola d'arte. Un video professionale fa apparire la tua attività solida e premium su sito web, annunci e canali social.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
+    },
     "fb248319551e6f302496295316eea3b8e7bfcd1c632032bbd308eecf2f168e56": {
       "model": "claude-opus-5",
       "locale": "it",
@@ -3680,6 +4288,14 @@
       "target": "La strategia è ciò che trasforma un sito web in un asset digitale: un sistema che non si limita ad avere un bell’aspetto, ma fa crescere attivamente l’azienda che ha dietro, anno dopo anno.",
       "origin": "committed",
       "at": "2026-08-21T05:30:05.750Z"
+    },
+    "fd595b301b51e39e616efa6d80c38c4c352163b8696c53745c2b0381c7f786e1": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "You take everything with you. Because you own the domain, code, hosting, and content, leaving is simple: we hand over full access and files whenever you ask. We keep your business through results, not by holding your website hostage.",
+      "target": "Ti porti via tutto. Dato che dominio, codice, hosting e contenuti sono tuoi, andartene è semplice: ti consegniamo accesso completo e file ogni volta che lo chiedi. Manteniamo la tua fiducia con i risultati, non tenendo il tuo sito web in ostaggio.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "fe311b8abbd44a8bfcf86bc9bcb6e9e048374644e11adb0024c69c62c92118b7": {
       "model": "claude-opus-5",
@@ -3728,6 +4344,14 @@
       "target": "Supporto prioritario e SLA",
       "origin": "committed",
       "at": "2026-08-21T06:14:55.391Z"
+    },
+    "ffc2603da13fc2b3961a4c1e13679673f527c7e94a00678266331de48f0dcbc9": {
+      "model": "claude-opus-5",
+      "locale": "it",
+      "source": "Yes — completely. You own the domain, the hosting account, the source code, and all content. There are no proprietary builders or lock-ins, and we can transfer everything to you at any time. With Cozelos Data, your website is an asset you own outright.",
+      "target": "Sì — completamente. Il dominio, l'account di hosting, il codice sorgente e tutti i contenuti sono tuoi. Non ci sono builder proprietari né vincoli di alcun tipo, e possiamo trasferirti tutto in qualsiasi momento. Con Cozelos Data, il tuo sito web è un asset che possiedi al 100%.",
+      "origin": "committed",
+      "at": "2026-08-22T14:27:43.280Z"
     },
     "ffd46d89a592fb4a605bbfaf906e6a4c074d46bed0c9dbcd010b47eb973ac60c": {
       "model": "claude-opus-5",

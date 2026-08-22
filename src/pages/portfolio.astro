@@ -7,7 +7,7 @@ import AnimatedCounter from "../components/AnimatedCounter.astro";
 import CTASection from "../components/CTASection.astro";
 import Icon from "../components/Icon.astro";
 import { Image } from "astro:assets";
-import { projects } from "../data/site";
+import { projects, commercialFacts } from "../data/site";
 import { getImage } from "../lib/images";
 import afterImage from "../assets/portfolio/forebearfind.webp";
 
@@ -39,7 +39,7 @@ const breadcrumbs = [
       <a href="/our-approach/" class="font-semibold text-[var(--color-brand)] link-underline">the same four-stage build process</a>.
       If you're weighing a project of your own, the
       <a href="/pricing/" class="font-semibold text-[var(--color-brand)] link-underline">investment for a build like these</a>
-      starts at $2,500.
+      starts at {commercialFacts.websiteStartingPrice}.
     </p>
   </Section>
 
