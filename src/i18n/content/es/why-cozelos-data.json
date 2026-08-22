@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "title": "Por Qué Cozelos Data — Un Activo Digital, No Solo un Sitio Web",
+    "description": "Por qué los negocios eligen Cozelos Data: liderados por estrategia, con control del propietario, ultrarrápidos y construidos para un ROI medible — un socio a largo plazo, no un proveedor de una sola vez."
+  },
+  "breadcrumb": "Por Qué Cozelos Data",
+  "hero": {
+    "eyebrow": "Por Qué Cozelos Data",
+    "title": "La mayoría de las agencias le venden un sitio web. Nosotros le entregamos un activo.",
+    "lead": "Un sitio web es un gasto único. Un activo digital es una inversión que se multiplica — generando leads, autoridad e ingresos durante años. Esta es la razón por la que negocios ambiciosos en todo Utah y más allá confían en nosotros para construir el suyo.",
+    "summary": "Los negocios eligen Cozelos Data porque lideramos con estrategia, damos a los clientes propiedad total de su dominio, código y contenido, construimos sitios hechos a mano que cargan en menos de un segundo, los protegemos contra ataques, diseñamos cada página para un ROI medible, y permanecemos como socios a largo plazo que mantienen el sitio mejorando trimestre tras trimestre."
+  },
+  "difference": {
+    "eyebrow": "La Diferencia",
+    "title": "Un sitio web es un costo. Un activo digital es una ventaja.",
+    "lead": "El mercado está lleno de personas que venden sitios web. Casi nadie construye activos digitales — el tipo de presencia en línea que sigue generando valor durante años. Esa distinción lo cambia todo.",
+    "commodityHeading": "Un sitio web genérico",
+    "assetHeading": "Un activo digital de Cozelos Data"
+  },
+  "contrast": [
+    {
+      "commodity": "Parece una plantilla que cualquiera podría comprar",
+      "asset": "Personalizado y cinematográfico — inconfundiblemente suyo"
+    },
+    {
+      "commodity": "Lento, sobrecargado y dependiente de plugins",
+      "asset": "Hecho a mano, ultrarrápido y seguro"
+    },
+    {
+      "commodity": "Usted lo alquila — hospedaje y constructores cerrados",
+      "asset": "Usted es dueño del dominio, el código y el contenido"
+    },
+    {
+      "commodity": "SEO agregado al final, si acaso",
+      "asset": "SEO y búsqueda por IA diseñados desde el primer día"
+    },
+    {
+      "commodity": "Construido una vez, luego silenciosamente descuidado",
+      "asset": "Mantenido y en mejora cada trimestre"
+    },
+    {
+      "commodity": "Medido en \"me gusta\" y visitas a la página",
+      "asset": "Medido en leads e ingresos"
+    }
+  ],
+  "reasons": {
+    "eyebrow": "Seis Razones",
+    "title": "Lo que realmente obtiene al trabajar con nosotros.",
+    "lead": "No son funciones por el simple hecho de tenerlas — son seis ventajas que se reflejan directamente en su posicionamiento, su reputación y sus ingresos."
+  },
+  "pillars": [
+    {
+      "n": "01",
+      "icon": "target",
+      "title": "Estrategia antes que diseño",
+      "lead": "No empezamos con un diseño. Empezamos con su negocio.",
+      "body": "Cualquiera puede hacer que una página se vea bien. La parte difícil — la parte valiosa — es diseñarla para producir un resultado específico: más llamadas, más reservas, más leads calificados. Antes de diseñar una sola pantalla, mapeamos a sus clientes, su competencia y el camino exacto de desconocido a cliente que paga. Cada decisión después de eso sirve a ese objetivo.",
+      "stat": "Enfocado en resultados",
+      "statLabel": "Cada proyecto comienza con estrategia, nunca con una plantilla."
+    },
+    {
+      "n": "02",
+      "icon": "lock",
+      "title": "Usted es dueño de todo",
+      "lead": "Su dominio. Su código. Su contenido. Sin excepciones.",
+      "body": "La mayoría de las agencias lo atrapan silenciosamente — constructores propietarios, hospedaje cerrado, contenido que no puede exportar y una factura mensual de la que nunca puede escapar. Nosotros hacemos lo contrario. Usted es dueño del dominio, el código fuente, la cuenta de hospedaje y cada palabra del contenido. Si alguna vez decide irse, se lo entregamos todo — sin drama, sin rescate. Los activos reales se poseen, no se alquilan.",
+      "stat": "100%",
+      "statLabel": "Propiedad de su dominio, código y contenido."
+    },
+    {
+      "n": "03",
+      "icon": "bolt",
+      "title": "Diseñado para la velocidad",
+      "lead": "Tiempos de carga de menos de un segundo, hechos a mano.",
+      "body": "La mitad de sus visitantes se van si una página tarda más de tres segundos en cargar — y se van antes de ver siquiera lo que usted ofrece. Construimos sitios ligeros y hechos a mano que se muestran en menos de un segundo en un teléfono, en redes reales. La velocidad no es una métrica vanidosa; es mejor posicionamiento en Google, menores costos de publicidad y muchos más clientes que realmente se quedan.",
+      "stat": "<1s",
+      "statLabel": "Primera carga en los sitios web que construimos."
+    },
+    {
+      "n": "04",
+      "icon": "shield",
+      "title": "Seguro por diseño",
+      "lead": "Una superficie de ataque más pequeña significa menos que romper y menos que explotar.",
+      "body": "Los sitios web sobrecargados con docenas de plugins de terceros son una invitación abierta a los hackers y un dolor de cabeza constante de mantenimiento. Nuestras construcciones se entregan como páginas rápidas, estáticas y reforzadas con casi nada que explotar — sin paneles de administración extensos, sin acumulación de plugins, sin carreras para parchar la próxima vulnerabilidad. Su sitio permanece en línea, seguro y suyo.",
+      "stat": "Reforzado",
+      "statLabel": "Arquitectura estática con una superficie de ataque mínima."
+    },
+    {
+      "n": "05",
+      "icon": "award",
+      "title": "Construido para el ROI",
+      "lead": "Una plataforma de crecimiento debería pagarse sola — y luego seguir pagando.",
+      "body": "Medimos el éxito de la misma forma que usted: en leads, reservas e ingresos — no en visitas a la página o un “engagement” vago. Un sitio que atrae a un puñado de clientes nuevos al mes se paga solo en semanas y genera ganancias durante años. Cada página está diseñada en torno a la conversión, y reportamos las cifras que realmente hacen avanzar su negocio.",
+      "stat": "Se multiplica",
+      "statLabel": "Retornos que crecen mucho después del lanzamiento."
+    },
+    {
+      "n": "06",
+      "icon": "chat",
+      "title": "Una asociación a largo plazo",
+      "lead": "No lo construimos y desaparecemos. Seguimos invertidos.",
+      "body": "Después del lanzamiento, mantenemos su activo rápido, seguro y en ascenso — monitoreando el tiempo de actividad, actualizando contenido y mejorando el SEO trimestre tras trimestre. Cuando su negocio crece, su presencia digital crece con él. Usted obtiene un socio con intereses en juego y una participación en sus resultados, no un proveedor que desaparece en cuanto se cobra la factura.",
+      "stat": "Trimestre tras trimestre",
+      "statLabel": "Su sitio se vuelve más rápido y posiciona más alto — nunca más lento."
+    }
+  ],
+  "bottomLine": {
+    "heading": "En resumen",
+    "para1": "Puede comprar un sitio web casi en cualquier lugar. Lo que no puede comprar barato es una plataforma de crecimiento liderada por estrategia, controlada por el propietario, ultrarrápida y segura, con un equipo que sigue invertido en su crecimiento. Eso es lo que construimos — y por eso nuestros clientes dejan de pensar en su sitio web como una factura y comienzan a tratarlo como uno de sus activos más valiosos.",
+    "para2Html": "El trabajo en sí se divide en <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">seis servicios conectados</a>, lo que cuesta construir y hacer crecer un activo como este se detalla en la <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">página de inversión</a>, y el trasfondo empresarial del que provienen estos estándares está en la <a href=\"/company/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">historia de la empresa y la fundadora</a>.",
+    "ctaPrimary": "Inicie su Proyecto",
+    "ctaSecondary": "Vea Nuestro Trabajo"
+  },
+  "cta": {
+    "title": "Construyamos su base digital.",
+    "body": "Cuéntenos sobre su negocio. Le mostraremos exactamente lo que construiríamos — y el crecimiento que está diseñado para crear.",
+    "primaryLabel": "Inicie su Proyecto",
+    "secondaryLabel": "Vea Nuestro Trabajo"
+  }
+}

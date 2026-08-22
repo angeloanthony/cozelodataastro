@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Inversión y Precios — Planes de Crecimiento de Diseño Web, Vernal UT",
+    "description": "Precios de nivel inversión de Cozelos Data. Proyectos de sitios web personalizados desde {websiteStartingPrice} y planes mensuales de crecimiento desde {maintenancePrice} — diseñados para generar leads y un ROI duradero."
+  },
+  "breadcrumb": "Inversión",
+  "hero": {
+    "eyebrow": "Inversión",
+    "title": "Una inversión en crecimiento — con precio pensado para el retorno.",
+    "lead": "No solo construimos sitios web — creamos plataformas de crecimiento completas diseñadas para generar leads, autoridad e ingresos durante años. Así es como estructuramos esa inversión, y exactamente lo que vale.",
+    "summary": "Cozelos Data, una agencia digital en Vernal, Utah, fija precios como una inversión, no como un producto genérico. Los proyectos de sitios web personalizados comienzan en {websiteStartingPrice} (Essential Presence), $4,500 (Professional Growth), y $7,500 (Market Leader), con proyectos Enterprise cotizados desde $10,000. Los planes mensuales de crecimiento continuo van desde {maintenancePrice} (Maintenance) hasta $1,500+ (Full Marketing). Cada proyecto comienza con una Discovery Session de {discoverySessionPrice}, acreditada hacia su proyecto."
+  },
+  "philosophy": {
+    "headline": "El sitio web más caro es el barato que le cuesta clientes.",
+    "bodyHtml": "Una plantilla de ganga que carga lentamente, no posiciona en ningún lado y no convierte a nadie no es barata — es una pérdida recurrente. Una plataforma de crecimiento bien construida es lo opuesto: se paga sola con nuevos negocios, y luego sigue generando ganancias durante años — que es <a href=\"/why-cozelos-data/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">por qué construimos un activo en lugar de un sitio web</a>. A continuación, en qué consiste esa inversión."
+  },
+  "discovery": {
+    "badge": "Empiece aquí",
+    "title": "Discovery Session",
+    "bodyHtml": "Todo gran proyecto comienza con estrategia. En una sesión de trabajo enfocada, mapeamos sus objetivos, sus clientes y su competencia — luego le entregamos un plan claro y una cotización fija. Es la hora de mayor impacto que invertirá en su presencia digital, y la tarifa se <strong class=\"text-[var(--text)]\">acredita en su totalidad</strong> hacia su proyecto cuando decide avanzar.",
+    "priceLabel": "Estrategia y hoja de ruta",
+    "price": "{discoverySessionPrice}",
+    "priceNote": "Acreditado hacia su proyecto",
+    "cta": "Reserve una Sesión"
+  },
+  "tiersSection": {
+    "eyebrow": "Construya el Activo",
+    "title": "Inversiones de proyecto de una sola vez.",
+    "lead": "Elija el alcance que coincide con su ambición. Cada nivel es completamente personalizado, hecho a mano, rápido, seguro y suyo para poseer — sin plantillas, sin ataduras."
+  },
+  "tiers": [
+    {
+      "highlight": false,
+      "name": "Essential Presence",
+      "price": "{websiteStartingPrice}",
+      "prefix": "Desde",
+      "suffix": "pago único",
+      "summary": "Para negocios que necesitan una presencia profesional, rápida y creíble — hecha bien desde la primera vez.",
+      "features": [
+        "Diseño completamente personalizado — nunca una plantilla",
+        "Hasta ~5 páginas principales",
+        "Diseño móvil primero, cargas de menos de un segundo",
+        "Fundamento de SEO en la página",
+        "Formularios de contacto y configuración de analítica",
+        "Indexación en Google y soporte de lanzamiento"
+      ],
+      "outcome": "Luzca establecido, cargue al instante y comience a ser encontrado."
+    },
+    {
+      "highlight": true,
+      "name": "Professional Growth",
+      "price": "$4,500",
+      "prefix": "Desde",
+      "suffix": "pago único",
+      "summary": "Para negocios en crecimiento que quieren ganar clientes activamente — no solo existir en línea.",
+      "features": [
+        "Todo lo de Essential Presence",
+        "Arquitectura de páginas ampliada",
+        "SEO avanzado y local con marcado de esquema",
+        "Redacción enfocada en la conversión",
+        "Ajuste de rendimiento y Core Web Vitals",
+        "Estrategia de contenido y mensajes"
+      ],
+      "outcome": "Convierta el tráfico en leads calificados y supere a su competencia local."
+    },
+    {
+      "highlight": false,
+      "name": "Market Leader",
+      "price": "$7,500",
+      "prefix": "Desde",
+      "suffix": "pago único",
+      "summary": "Para negocios listos para dominar su mercado y convertirse en la elección obvia.",
+      "features": [
+        "Todo lo de Professional Growth",
+        "Arquitectura amplia de pilares y ramificaciones",
+        "Funcionalidad personalizada y herramientas interactivas",
+        "Integración de video y movimiento cinematográfico",
+        "Analítica avanzada y automatización con IA",
+        "Estrategia de conversión continua"
+      ],
+      "outcome": "Domine la parte alta de las búsquedas y construya una marca en la que los clientes confían a primera vista."
+    },
+    {
+      "highlight": false,
+      "name": "Enterprise",
+      "price": "Personalizado",
+      "prefix": "$10,000–$30,000+",
+      "suffix": "cotizado a la medida",
+      "summary": "Para gobierno, múltiples ubicaciones y proyectos complejos con requisitos serios.",
+      "features": [
+        "Alcance y arquitectura a la medida",
+        "Integraciones de sistemas y datos",
+        "Cumplimiento y accesibilidad (WCAG, CMS)",
+        "Proyectos multisitio o multiubicación",
+        "Equipo de proyecto dedicado",
+        "Soporte prioritario y SLAs"
+      ],
+      "outcome": "Una plataforma digital diseñada para sus necesidades operativas exactas."
+    }
+  ],
+  "tierBadge": "Más Popular",
+  "payoffLabel": "El resultado: ",
+  "tierCta": "Comenzar",
+  "tierCtaEnterprise": "Solicitar una Cotización",
+  "tiersNote": "Cada cotización se fija por escrito antes de comenzar el trabajo. Sin notas de \"desde\", sin facturas sorpresa.",
+  "plansSection": {
+    "eyebrow": "Haga Crecer el Activo",
+    "title": "Planes mensuales de crecimiento.",
+    "lead": "Un sitio web lanzado y olvidado pierde valor silenciosamente. Estos planes mantienen el suyo rápido, seguro y en ascenso — para que el activo se aprecie en lugar de deteriorarse."
+  },
+  "plans": [
+    {
+      "highlight": false,
+      "name": "Maintenance",
+      "price": "{maintenancePrice}",
+      "summary": "Mantenga su activo rápido, seguro y en línea.",
+      "features": [
+        "Hospedaje, SSL y monitoreo de tiempo de actividad",
+        "Monitoreo de seguridad y copias de seguridad diarias",
+        "Optimización de rendimiento",
+        "Ediciones menores de contenido",
+        "Soporte técnico prioritario"
+      ]
+    },
+    {
+      "highlight": true,
+      "name": "SEO Growth",
+      "price": "$495",
+      "summary": "Todo lo de Maintenance, más crecimiento activo en búsquedas.",
+      "features": [
+        "Todo lo de Maintenance",
+        "Seguimiento de palabras clave y SEO técnico",
+        "Optimización de Google Business Profile",
+        "Reportes mensuales de posicionamiento",
+        "Recomendaciones de contenido"
+      ]
+    },
+    {
+      "highlight": false,
+      "name": "Authority",
+      "price": "$795",
+      "summary": "Contenido y enlaces que se multiplican y construyen autoridad de mercado.",
+      "features": [
+        "Todo lo de SEO Growth",
+        "Nuevos artículos de SEO cada mes",
+        "Enlazado interno y arquitectura de contenido",
+        "Creación de páginas de aterrizaje",
+        "Análisis de la competencia"
+      ]
+    },
+    {
+      "highlight": false,
+      "name": "Full Marketing",
+      "price": "$1,500+",
+      "summary": "Un motor de crecimiento completo y gestionado con adquisición pagada.",
+      "features": [
+        "Todo lo de Authority",
+        "Gestión de anuncios en Google y Meta",
+        "Producción creativa y pruebas A/B",
+        "Optimización de tasa de conversión",
+        "Un socio de crecimiento dedicado"
+      ]
+    }
+  ],
+  "perMonth": "mes",
+  "planCta": "Elegir {name}",
+  "math": {
+    "eyebrow": "Las Matemáticas Reales",
+    "title": "Por qué un activo personalizado cuesta más — y retorna más.",
+    "p1": "Un proyecto personalizado de Cozelos Data no es un tema genérico cargado de plugins. Es un sistema diseñado a mano que carga en menos de un segundo, tiene una superficie de ataque mucho más pequeña y necesita menos mantenimiento desde el primer día. Cada página está optimizada para el rendimiento y la búsqueda desde el inicio — porque el objetivo nunca fue \"un sitio web\". El objetivo son más clientes.",
+    "p2": "Por eso fijamos precios según el resultado, no según el número de páginas. Usted no está pagando por píxeles — está invirtiendo en un activo que genera visibilidad, credibilidad e ingresos mucho después del día del lanzamiento.",
+    "p3Html": "Para un vistazo detallado de lo que realmente se construye, vea <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">lo que incluye cada uno de los seis servicios</a>. Las preguntas sobre plazos, propiedad, o qué pasa después del lanzamiento se responden en las <a href=\"/faq/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">preguntas frecuentes</a>.",
+    "buysTitle": "Lo que su inversión compra",
+    "buys": [
+      "Un activo del que es dueño por completo — dominio, código y contenido",
+      "Velocidad de menos de un segundo que mejora el posicionamiento y reduce los costos de publicidad",
+      "Visibilidad en SEO y búsqueda por IA que se multiplica con el tiempo",
+      "Un proyecto seguro y de bajo mantenimiento que envejece bien",
+      "Precios fijos y transparentes sin facturas sorpresa",
+      "Un socio invertido en sus resultados, no solo en su lanzamiento"
+    ]
+  },
+  "guarantees": {
+    "eyebrow": "Nuestra Promesa",
+    "title": "Garantías, por escrito.",
+    "lead": "Contratar una agencia no debería ser un salto de fe. Esto es lo que puede esperar de nosotros — en cada proyecto, siempre.",
+    "items": [
+      {
+        "icon": "lock",
+        "title": "Usted es dueño de todo",
+        "body": "Su dominio, código fuente y contenido son suyos — siempre. Sin ataduras propietarias, sin contratos rehén."
+      },
+      {
+        "icon": "doc",
+        "title": "Cotización fija, por escrito",
+        "body": "Su precio se aprueba por escrito antes de comenzar cualquier trabajo. Sin facturas sorpresa, sin notas de \"desde\"."
+      },
+      {
+        "icon": "bolt",
+        "title": "Diseñado para el rendimiento",
+        "body": "Cada sitio está construido para tiempos de carga de menos de un segundo. El rendimiento es un entregable al que nos comprometemos, no un tal vez."
+      },
+      {
+        "icon": "chat",
+        "title": "De verdad respondemos",
+        "body": "Una persona real, no una cola de tickets — y una respuesta dentro de un día hábil, antes y después del lanzamiento."
+      },
+      {
+        "icon": "shield",
+        "title": "Seguro y respaldado",
+        "body": "Proyectos estáticos reforzados, SSL, copias de seguridad diarias y monitoreo mantienen su activo seguro y en línea."
+      },
+      {
+        "icon": "check",
+        "title": "Planes mes a mes",
+        "body": "Los planes continuos se ajustan a usted — suba o baje en cualquier momento. Sin contratos a largo plazo que lo aten."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Definamos el alcance de su inversión.",
+    "body": "Comience con una Discovery Session. Mapearemos la oportunidad, recomendaremos el nivel adecuado, y le daremos una cotización fija — acreditada hacia su proyecto.",
+    "primaryLabel": "Reserve una Discovery Session",
+    "secondaryLabel": "Vea Nuestro Trabajo"
+  }
+}

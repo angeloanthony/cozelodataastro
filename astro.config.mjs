@@ -13,11 +13,11 @@ export default defineConfig({
   output: "static",
   // i18n routing. English is the master language and stays at the root
   // (prefixDefaultLocale: false), so every existing URL is unchanged. Italian
-  // is served from /it/*. Localized routes are emitted only where a translation
-  // actually exists — see src/i18n/content.ts.
+  // is served from /it/*, Spanish (es-US) from /es/*. Localized routes are
+  // emitted only where a translation actually exists — see src/i18n/content.ts.
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "it"],
+    locales: ["en", "it", "es"],
     routing: { prefixDefaultLocale: false },
   },
   integrations: [
@@ -30,7 +30,7 @@ export default defineConfig({
       // that exists in the build, so a missing translation is never advertised.
       i18n: {
         defaultLocale: "en",
-        locales: { en: "en-US", it: "it-IT" },
+        locales: { en: "en-US", it: "it-IT", es: "es-US" },
       },
       // Keep utility/legal pages out of the sitemap (they're also noindex).
       // endsWith also covers their /it/ counterparts.

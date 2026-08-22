@@ -45,6 +45,7 @@ interface Props {
   h1Prefix?: string;
   h1GradientLead?: string;
   rotatingWords?: string[];
+  tagline?: string;
   kicker?: string;
   lead?: string;
   summaryHtml?: string;
@@ -58,6 +59,7 @@ const {
   h1Prefix = "We Build Digital Assets That",
   h1GradientLead = "Grow",
   rotatingWords = ["Businesses.", "Revenues.", "Reach."],
+  tagline = "Making Businesses Stronger. Making Life Better.",
   kicker = "Fast. Secure. Built to Rank.",
   lead = "We design and engineer complete digital systems that generate leads, build authority, and create long-term growth.",
   summaryHtml = "Cozelos Data is a Woman-Owned digital agency in Vernal, Utah building custom websites, SEO, video, and marketing for local and government businesses. Custom projects start at {websiteStartingPrice}, load in under a second, and you own everything — the domain, code, and content.",
@@ -148,7 +150,7 @@ const trustFromPrice = trust.fromPrice.replaceAll("{websiteStartingPrice}", comm
         </h1>
 
         <p class="reveal mt-4 font-display text-lg font-semibold tracking-tight text-[var(--text-muted)] sm:text-xl" data-delay="120">
-          Making Businesses Stronger. Making Life Better.
+          {tagline}
         </p>
 
         <p class="reveal mt-4 text-sm font-bold uppercase tracking-[0.18em] text-[var(--color-brand)]" data-delay="150">

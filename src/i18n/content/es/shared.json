@@ -1,0 +1,118 @@
+{
+  "schemaDescription": "Agencia digital premium en Vernal, Utah. Sitios web personalizados, SEO, producción de video, publicidad, branding y automatización empresarial para hacer crecer negocios locales y gubernamentales.",
+  "slogan": "Fortalecer los negocios. Mejorar la vida.",
+  "services": {
+    "website-design": { "title": "Diseño y Desarrollo Web", "short": "Sitios web personalizados y cinematográficos diseñados para convertir." },
+    "video-production": { "title": "Producción de Video", "short": "Video cinematográfico que eleva su marca en cada plataforma." },
+    "online-marketing": { "title": "Marketing en Línea", "short": "Tráfico pagado y contenido social que realmente convierte." },
+    "seo": { "title": "Optimización SEO", "short": "Que lo encuentren los clientes que ya lo están buscando." },
+    "business-automation": { "title": "Automatización Empresarial", "short": "IA y automatización que le devuelven horas cada semana." },
+    "ongoing-support": { "title": "Soporte y Mantenimiento Continuos", "short": "Mantenemos su sitio rápido, seguro y en mejora cada trimestre." }
+  },
+  "business": {
+    "hours": "Lun–Vie · {opens} – {closes} {timezone}"
+  },
+  "footer": {
+    "brandHeadline": "Creamos Activos Digitales que Hacen Crecer los Negocios.",
+    "tagline": "Fortalecer los negocios. Mejorar la vida.",
+    "locality": "Vernal, Utah • Atendemos a clientes en todo el país.",
+    "description": "Creamos activos digitales que hacen crecer los negocios — diseño, SEO, marketing, video y automatización, diseñados para fortalecer negocios y mejorar vidas. Agencia digital premium en Vernal, Utah.",
+    "review": "Dejar una Reseña",
+    "about": "Acerca de",
+    "ellen": "Ellen Cozelos",
+    "why": "Por Qué Cozelos Data",
+    "approach": "Nuestro Enfoque",
+    "faq": "Preguntas Frecuentes",
+    "government": "Gobierno",
+    "payment": "Pagar Factura",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "sitemap": "Mapa del Sitio",
+    "copyright": "© {year} {brand}. Todos los derechos reservados."
+  },
+  "cta": {
+    "start": "Inicie su Proyecto",
+    "work": "Vea Nuestro Trabajo",
+    "call": "Agende una Llamada",
+    "callNote": "O llámenos directamente:"
+  },
+  "projects": {
+    "forebear-find": {
+      "category": "Genealogía",
+      "tagline": "Genealogía Italiana y Doble Ciudadanía",
+      "summary": "Servicio de investigación de genealogía italiana y doble ciudadanía.",
+      "results": [
+        { "metric": "30+", "label": "Páginas Indexadas" },
+        { "metric": "EN/IT", "label": "Sitio Bilingüe" },
+        { "metric": "<1s", "label": "Tiempo de Carga" }
+      ]
+    },
+    "parkingway-it": {
+      "category": "Gestión de Estacionamiento",
+      "tagline": "Plataforma de Gestión de Estacionamiento",
+      "summary": "Plataforma moderna de gestión de estacionamiento y sitio web empresarial.",
+      "results": [
+        { "metric": "24/7", "label": "Acceso en Línea" },
+        { "metric": "Móvil", "label": "Optimizado" },
+        { "metric": "SEO", "label": "Listo" }
+      ]
+    },
+    "adventure-tours-vernal": {
+      "category": "Negocio Local",
+      "summary": "Arquitectura de pilares · 30+ páginas · sistema de reservas de tours en UTV.",
+      "results": [
+        { "metric": "30+", "label": "Páginas" },
+        { "metric": "Sistema de", "label": "Reservas" },
+        { "metric": "Local #1", "label": "Meta de Búsqueda" }
+      ]
+    },
+    "best-western-vernal-inn": {
+      "category": "Hospitalidad",
+      "tagline": "Sitio Web de Hotel y Reservas Directas",
+      "summary": "Hero cinematográfico Ken Burns · reconstrucción SEO canónica.",
+      "results": [
+        { "metric": "Cinematográfico", "label": "Hero" },
+        { "metric": "Canónica", "label": "Reconstrucción SEO" },
+        { "metric": "Directas", "label": "Reservas" }
+      ]
+    },
+    "vernal-medicare": {
+      "category": "Salud",
+      "tagline": "Práctica de Seguros Medicare",
+      "summary": "27 páginas SEO · implementación en 5 fases · cumplimiento CMS.",
+      "results": [
+        { "metric": "27+", "label": "Páginas SEO" },
+        { "metric": "CMS", "label": "En Cumplimiento" },
+        { "metric": "5 Fases", "label": "Implementación" }
+      ]
+    },
+    "high-class-limousine": {
+      "category": "Lujo",
+      "summary": "Sitio cinematográfico de 14 páginas · calculadora de precios interactiva.",
+      "results": [
+        { "metric": "14", "label": "Páginas" },
+        { "metric": "4", "label": "Herramientas Interactivas" },
+        { "metric": "Cinematográfica", "label": "Estética" }
+      ]
+    },
+    "wernex-pest-control": {
+      "category": "Control de Plagas",
+      "summary": "Servicios profesionales de control de plagas con reservas en línea y SEO local.",
+      "results": [
+        { "metric": "Local", "label": "Rankings #1" },
+        { "metric": "Sistema de", "label": "Reservas" },
+        { "metric": "<2s", "label": "Tiempo de Carga" }
+      ]
+    },
+    "alta-medicare": {
+      "category": "Salud",
+      "tagline": "Práctica de Seguros Medicare",
+      "summary": "Sitio compatible con CMS con páginas de planes y ubicaciones impulsadas por SEO.",
+      "results": [
+        { "metric": "CMS", "label": "En Cumplimiento" },
+        { "metric": "Local", "label": "SEO" },
+        { "metric": "<1s", "label": "Tiempo de Carga" }
+      ]
+    }
+  }
+}

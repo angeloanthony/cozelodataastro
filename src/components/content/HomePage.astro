@@ -29,9 +29,14 @@
  *               the two strings differ only in capitalization, and reusing
  *               the shared one would have silently changed this page's
  *               English casing. See MissionStatement.astro's doc comment.
- *   brand slogan "Making Businesses Stronger. Making Life Better." inside
- *               Hero's badge row is glossary-pinned (never translated
- *               anywhere on the site) and stays a literal in Hero.astro.
+ *   brand slogan "Making Businesses Stronger. Making Life Better." was
+ *               glossary-pinned (untranslated) through Step 31; Rocco
+ *               reversed that call afterward and asked for a real Italian/
+ *               Spanish rendering everywhere the slogan appears. It is now
+ *               `home.json`'s `hero.tagline` (own field, mirrors Hero's
+ *               title-case English rather than mission's sentence case),
+ *               passed into Hero.astro as a prop instead of a literal, plus
+ *               `shared.json`'s `slogan` field feeding Seo.astro's JSON-LD.
  */
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero from "../Hero.astro";
@@ -67,6 +72,7 @@ const c = getPageContent<any>("home", lang);
     h1Prefix={c.hero.h1Prefix}
     h1GradientLead={c.hero.h1GradientLead}
     rotatingWords={c.hero.rotatingWords}
+    tagline={c.hero.tagline}
     kicker={c.hero.kicker}
     lead={c.hero.lead}
     summaryHtml={c.hero.summaryHtml}

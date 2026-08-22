@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Portafolio de Diseño Web en Utah — Resultados Reales de Negocio",
+    "description": "Una lista creciente de transformaciones de negocios en Utah: Forebear Find, Adventure Tours Vernal, Vernal Medicare y más — diseño personalizado más SEO completo."
+  },
+  "breadcrumb": "Portafolio",
+  "hero": {
+    "eyebrow": "Trabajo Seleccionado",
+    "title": "Negocios reales. Transformaciones reales.",
+    "lead": "Negocios de Utah que llevamos de invisibles a muy solicitados — cada uno reconstruido como una presencia en línea rápida, personalizada y lista para la búsqueda.",
+    "summary": "Cozelos Data ha reconstruido más de 35 negocios en Utah — operadores de tours, hoteles, prácticas de salud, control de plagas e investigadores de genealogía — de plantillas genéricas a sistemas digitales rápidos y optimizados para la búsqueda. Cada proyecto combina diseño personalizado con SEO completo de pilares y ramificaciones, y los clientes son dueños de todo."
+  },
+  "orientationHtml": "Cada proyecto a continuación surgió de las mismas seis disciplinas — diseño, video, marketing, SEO, automatización y soporte — detalladas en nuestra <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">página de servicios</a>. Cada uno siguió <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">el mismo proceso de construcción de cuatro etapas</a>. Si está considerando un proyecto propio, la <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">inversión para un proyecto como estos</a> comienza en {websiteStartingPrice}.",
+  "compareSection": {
+    "eyebrow": "Arrastre para Comparar",
+    "title": "El mismo negocio. Presencia moderna.",
+    "lead": "Arrastre el control deslizante para ver lo que reemplaza un proyecto de Cozelos."
+  },
+  "compareAfter": {
+    "badge": "Proyecto Cozelos",
+    "headline": "Menos de un segundo · Posición #1",
+    "sub": "Motor de conversión"
+  },
+  "compareBefore": {
+    "badge": "Antes",
+    "headline": "8.2s · Página 7",
+    "sub": "Folleto estático"
+  },
+  "rosterSection": {
+    "eyebrow": "La Lista",
+    "title": "Un portafolio en crecimiento.",
+    "lead": "Pase el cursor sobre cualquier proyecto para ver la tecnología, los resultados y un enlace al caso de éxito."
+  },
+  "caseStudiesSection": {
+    "eyebrow": "Casos de Éxito",
+    "title": "Transformaciones de negocio, no solo sitios web.",
+    "lead": "Cada proyecto comienza con un problema de negocio real. Aquí está el desafío, la estrategia, lo que construimos y el impacto que creó — para cada cliente."
+  },
+  "sectionLabels": {
+    "challenge": "El desafío",
+    "strategy": "Nuestra estrategia",
+    "solution": "La solución",
+    "technologies": "Tecnologías",
+    "visitLiveSite": "Visitar Sitio en Vivo",
+    "outcomeLabel": "Resultado:",
+    "businessImpact": "Impacto en el negocio"
+  },
+  "statsLabels": {
+    "sitesLaunched": "Sitios Lanzados",
+    "viewsDelivered": "Vistas Entregadas",
+    "leadsCreated": "Leads Generados",
+    "clientRetention": "Retención de Clientes"
+  },
+  "cta": {
+    "title": "¿Quiere ser el siguiente?",
+    "body": "Cuéntenos sobre su negocio — le mostraremos exactamente lo que construiríamos."
+  },
+  "projects": {
+    "forebear-find": {
+      "overview": "Una firma de investigación bilingüe (inglés / italiano) especializada en ciudadanía por jure sanguinis italiano y obtención de registros vitales. Construimos un sitio de pilares y ramificaciones de más de 30 páginas que mapea áreas de servicio geográficas y regionales, con datos estructurados y optimización para búsqueda por IA en todo el sitio.",
+      "challenge": "Una firma especializada en genealogía italiana y doble ciudadanía tenía experiencia profunda pero casi ninguna visibilidad en línea — y necesitaba verse creíble ante clientes en dos idiomas y dos países.",
+      "strategy": "Posicionar a la firma como la autoridad en ciudadanía por jure sanguinis italiano mapeando cada región y servicio en una arquitectura de contenido de pilares y ramificaciones que posiciona tanto en inglés como en italiano.",
+      "solution": "Un sitio bilingüe hecho a mano de más de 30 páginas con datos estructurados, páginas de servicio regionales y optimización para búsqueda por IA en todo el sitio — rápido, pulido y sencillo de navegar en cualquier idioma.",
+      "outcome": "Más de 30 páginas indexadas en dos idiomas, tiempos de carga de menos de un segundo, y una presencia que finalmente iguala la experiencia de la firma.",
+      "businessImpact": "Forebear Find ahora atrae clientes calificados y listos para contratar desde la búsqueda orgánica en ambos mercados — convirtiendo una práctica de boca en boca en una marca reconocible y confiable."
+    },
+    "parkingway-it": {
+      "overview": "Una plataforma de gestión de estacionamiento diseñada para agilizar reservas, comunicaciones con clientes y operaciones de estacionamiento. Construida con una experiencia de usuario moderna, diseño responsivo y arquitectura enfocada en SEO.",
+      "challenge": "Una operación de estacionamiento en crecimiento manejaba reservas y comunicación con clientes manualmente, sin una plataforma central y con un sitio web que no podía escalar.",
+      "strategy": "Reemplazar el flujo de trabajo manual con una plataforma optimizada de reservas y gestión, envuelta en un sitio moderno y listo para SEO que gana confianza a primera vista.",
+      "solution": "Una plataforma responsiva de gestión de estacionamiento con reservas en línea, comunicaciones automatizadas con clientes y una interfaz limpia enfocada en la conversión.",
+      "outcome": "Reservas en línea las 24 horas, una experiencia completamente optimizada para móvil, y una base lista para SEO diseñada para crecer.",
+      "businessImpact": "Los clientes ahora reservan y gestionan el estacionamiento en cualquier momento sin una llamada telefónica — reduciendo el trabajo manual y capturando las reservas que el sitio anterior perdía silenciosamente."
+    },
+    "adventure-tours-vernal": {
+      "overview": "Un operador de tours guiados en UTV que funciona con una arquitectura de pilares de más de 30 páginas, con un flujo de reservas en línea construido en torno a su flota, precios y experiencias de senderos.",
+      "challenge": "Un operador de tours guiados en UTV dependía de llamadas telefónicas y visitas sin cita, con un sitio web escaso que no posicionaba para las búsquedas de alta intención que hacían los viajeros.",
+      "strategy": "Dominar la búsqueda local para tours en UTV y todoterreno alrededor de Vernal construyendo contenido profundo sendero por sendero y un camino sin fricciones hacia la reserva.",
+      "solution": "Un sitio de arquitectura de pilares de más de 30 páginas organizado en torno a la flota, precios y experiencias de senderos, con un flujo de reservas en línea y SEO local completo.",
+      "outcome": "Más de 30 páginas dirigidas a la búsqueda local, un sistema de reservas integrado, y un proyecto apuntado directamente a la posición #1 local.",
+      "businessImpact": "Más tours reservados en línea en lugar de por teléfono, y una marca reconocible que captura a los viajeros en el momento en que buscan — antes de que encuentren a un competidor."
+    },
+    "best-western-vernal-inn": {
+      "overview": "Una reconstrucción de hospitalidad con un hero cinematográfico Ken Burns, una estructura SEO canónica limpia, y una presentación de tarifas diseñada para reservas directas.",
+      "challenge": "Un hotel estaba perdiendo reservas directas ante agencias de viajes en línea y funcionaba con un sitio anticuado que no reflejaba la calidad de la propiedad.",
+      "strategy": "Recuperar reservas directas con una primera impresión cinematográfica y una estructura SEO canónica y limpia que posicione al hotel para su propio nombre y mercado.",
+      "solution": "Una reconstrucción de hospitalidad con un hero cinematográfico Ken Burns, una arquitectura SEO canónica, y una presentación de tarifas diseñada para impulsar reservas directas.",
+      "outcome": "Una presencia cinematográfica y de alta confianza, una reconstrucción SEO canónica limpia, y una experiencia de tarifas enfocada en reservas directas.",
+      "businessImpact": "Que los huéspedes reserven directamente significa mayores márgenes por estadía y menos dependencia de comisiones de terceros — un valor que se multiplica cada temporada."
+    },
+    "vernal-medicare": {
+      "overview": "Una práctica licenciada de seguros Medicare construida sobre una arquitectura de sitemap dividido en más de 27 páginas SEO, con cumplimiento CMS integrado en cada página y un calendario ancla de AEP.",
+      "challenge": "Una práctica licenciada de Medicare opera bajo estrictas normas de marketing de CMS y necesitaba posicionar para docenas de búsquedas específicas de planes y ubicaciones sin arriesgar el cumplimiento.",
+      "strategy": "Construir una amplia cobertura de búsqueda en cumplimiento a través de una arquitectura de sitemap dividido y un calendario de contenido alineado con la inscripción que capture la demanda estacional.",
+      "solution": "Un sitio de más de 27 páginas sobre una estructura de sitemap dividido con cumplimiento CMS integrado en cada página y un calendario ancla del Período de Inscripción Anual.",
+      "outcome": "Más de 27 páginas SEO en cumplimiento, un índice de sitemap dividido limpio, y una implementación disciplinada en cinco fases.",
+      "businessImpact": "La práctica ahora llega a clientes elegibles para Medicare en más búsquedas y temporadas — de manera segura, en cumplimiento, y sin el riesgo de una infracción costosa."
+    },
+    "high-class-limousine": {
+      "overview": "Una marca de transporte de lujo en un sitio cinematográfico de 14 páginas con widgets interactivos — una calculadora de precios, un cronograma de planificación de prom, un mapa de locaciones y un constructor de itinerarios.",
+      "challenge": "Una marca de transporte de lujo necesitaba sentirse inconfundiblemente premium y hacer que cotizar y planificar fuera sencillo para eventos de alto nivel como bailes de graduación y bodas.",
+      "strategy": "Traducir el \"lujo\" a la experiencia misma — diseño cinematográfico combinado con herramientas interactivas que permiten a los clientes cotizar, planificar y reservar con confianza.",
+      "solution": "Un sitio cinematográfico de 14 páginas con cuatro herramientas interactivas: una calculadora de precios, un cronograma de planificación de prom, un mapa de locaciones y un constructor de itinerarios.",
+      "outcome": "14 páginas pulidas, 4 herramientas interactivas personalizadas, y una estética cinematográfica que transmite calidad premium en cada punto de contacto.",
+      "businessImpact": "La cotización y planificación de autoservicio capturan leads fuera de horario y los califican antes de la primera llamada — menos curiosos, más eventos reservados."
+    },
+    "wernex-pest-control": {
+      "overview": "Una transformación digital completa para una empresa local de control de plagas con mapeo de áreas de servicio, reservas en línea y fuerte optimización de SEO local en toda la Uintah Basin.",
+      "challenge": "Una empresa local de control de plagas era invisible en las búsquedas de toda su área de servicio y no tenía forma de que los clientes reservaran sin llamar durante el horario laboral.",
+      "strategy": "Dominar el SEO local en toda la Uintah Basin con páginas dedicadas por área de servicio, y eliminar toda barrera entre un cliente ansioso y una reserva.",
+      "solution": "Una construcción digital completa con mapeo de áreas de servicio, reservas en línea y fuerte optimización de SEO local en toda la región.",
+      "outcome": "Posiciones locales #1 como meta, un sistema de reservas en línea, y tiempos de carga de menos de dos segundos.",
+      "businessImpact": "Los clientes encuentran a Wernex primero y reservan al instante — convirtiendo búsquedas urgentes y de alta intención en trabajos programados en cualquier momento."
+    },
+    "alta-medicare": {
+      "overview": "Una práctica licenciada de seguros Medicare construida sobre una arquitectura limpia y compatible con CMS, con páginas de planes y ubicaciones enfocadas en SEO, datos estructurados, y un calendario de contenido alineado con la inscripción.",
+      "challenge": "Una práctica licenciada de Medicare opera bajo estrictas normas de marketing de CMS y necesitaba posicionar para búsquedas específicas de planes y ubicaciones sin arriesgar el cumplimiento.",
+      "strategy": "Construir una amplia cobertura de búsqueda en cumplimiento con páginas dedicadas de planes y ubicaciones y un calendario de contenido alineado con la inscripción que capture la demanda estacional.",
+      "solution": "Un sitio limpio y rápido con cumplimiento CMS integrado en cada página, datos estructurados en todo el sitio, y cobertura de planes y ubicaciones impulsada por SEO.",
+      "outcome": "Cobertura SEO en cumplimiento a través de planes y ubicaciones, tiempos de carga de menos de un segundo, y una presencia construida para capturar la demanda del Período de Inscripción Anual.",
+      "businessImpact": "La práctica ahora llega a clientes elegibles para Medicare en más búsquedas y temporadas — de manera segura, en cumplimiento, y sin el riesgo de una infracción costosa."
+    }
+  }
+}

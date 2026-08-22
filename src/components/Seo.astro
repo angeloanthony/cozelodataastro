@@ -48,6 +48,10 @@ const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
 // site.description text as before; Italian pages get a real translation
 // instead of silently inheriting the English string.
 const orgDescription = getShared(lang).schemaDescription;
+// `slogan` was a hardcoded English literal (glossary-pinned) through Step 31;
+// reversed afterward — now locale-aware via shared.json, same pattern as
+// orgDescription above.
+const slogan = getShared(lang).slogan;
 
 // --- Structured data graph -------------------------------------------------
 const graph: Record<string, unknown>[] = [
@@ -57,7 +61,7 @@ const graph: Record<string, unknown>[] = [
     name: site.name,
     url: site.url,
     description: orgDescription,
-    slogan: "Making Businesses Stronger. Making Life Better.",
+    slogan,
     logo: new URL("/favicon.svg", site.url).href,
     image: ogImage,
     telephone: site.phone,

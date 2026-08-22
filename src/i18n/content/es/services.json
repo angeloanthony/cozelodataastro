@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "Diseño Web, SEO y Marketing en Vernal, UT",
+    "description": "Seis servicios digitales unificados de un equipo en Vernal, Utah: diseño de sitios web personalizados, SEO, producción de video, marketing en línea, automatización empresarial y soporte continuo."
+  },
+  "breadcrumb": "Servicios",
+  "hero": {
+    "eyebrow": "Lo Que Hacemos",
+    "title": "Seis disciplinas. Un sistema diseñado para hacer crecer su negocio.",
+    "lead": "Un equipo, sin brechas entre diseño, contenido y marketing. Cada servicio a continuación responde las cuatro preguntas que importan: el problema, la solución, el beneficio y el valor a largo plazo.",
+    "summary": "Cozelos Data entrega seis servicios conectados desde un equipo en Vernal, Utah — diseño de sitios web, SEO, producción de video, marketing en línea, automatización empresarial y soporte continuo — para que el diseño, el contenido y el marketing se multipliquen en lugar de competir. Los proyectos de sitios web personalizados comienzan en {websiteStartingPrice}, con planes mensuales de crecimiento desde {maintenancePrice}.",
+    "videoTitle": "Cómo trabaja Cozelos Data — un resumen rápido",
+    "videoCaption": "Vea un resumen de 90 segundos sobre cómo trabajamos y qué puede esperar."
+  },
+  "orientationHtml": "Cada servicio a continuación se construye sobre las mismas cuatro capas — diseño, rendimiento, búsqueda y estrategia — descritas en <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">nuestro enfoque para construir activos digitales</a>. Puede ver lo que cuesta cada uno en la página de <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">inversión y planes mensuales de crecimiento</a>, o verlos trabajando juntos en <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">proyectos reales de clientes en Utah</a>. Cada uno es entregado por el mismo equipo pequeño, liderado por <a href=\"/ellen-cozelos/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">la fundadora Ellen Cozelos</a>.",
+  "sectionLabels": {
+    "problem": "El problema",
+    "solution": "La solución",
+    "benefit": "El beneficio",
+    "value": "El valor a largo plazo",
+    "benefits": "Beneficios",
+    "process": "Nuestro proceso",
+    "deliverables": "Entregables"
+  },
+  "services": {
+    "website-design": {
+      "problem": "Su sitio web es su empleado más trabajador — la primera impresión, el discurso de ventas y la vitrina, todo al mismo tiempo. Una plantilla lenta y genérica silenciosamente aleja a los clientes que usted pagó por atraer, costándole leads que ni siquiera sabía que tenía.",
+      "why": "Diseñamos y construimos sitios web personalizados en Vernal, Utah — hechos a mano, con enfoque móvil primero, y optimizados para la búsqueda desde la primera línea de código. Cada página carga en menos de un segundo y está construida en torno al momento exacto en que un visitante decide llamar, llenar un formulario o comprar.",
+      "results": "Más leads calificados, tasas de conversión más altas y una presencia en línea profesional que por fin refleja la calidad de su trabajo — para que los negocios que lo encuentran lo tomen en serio.",
+      "value": "Un sitio web rápido y personalizado es un activo que se aprecia. Sigue posicionando, convirtiendo y ganando confianza durante años — necesitando menos reconstrucciones y menos mantenimiento que la plantilla barata que reemplazó.",
+      "benefits": [
+        "Diseño completamente personalizado — nunca una plantilla",
+        "Enfoque móvil primero, responsivo en cualquier pantalla",
+        "Tiempos de carga de menos de un segundo",
+        "Copy y diseño optimizados para la conversión",
+        "Hospedaje, dominio y soporte de lanzamiento incluidos",
+        "Accesible conforme al estándar WCAG 2.1 AA"
+      ],
+      "process": [
+        "Llamada de descubrimiento y objetivos",
+        "Wireframe y aprobación de diseño",
+        "Desarrollo hecho a mano",
+        "Revisión y pulido de contenido",
+        "Lanzamiento y configuración de analítica"
+      ],
+      "deliverables": [
+        "Sitio web de producción",
+        "Código fuente (usted es dueño)",
+        "Panel de analítica",
+        "Documentación de lanzamiento y entrega"
+      ],
+      "cta": "Desde {websiteStartingPrice}"
+    },
+    "video-production": {
+      "problem": "Las fotos no pueden capturar la energía, la escala y la credibilidad de su negocio — y en un feed lleno de competidores, las imágenes estáticas se desplazan en menos de un segundo.",
+      "why": "Nuestro equipo de producción de video en Vernal, Utah filma películas de marca cinematográficas, tomas aéreas 4K con drone y reels verticales hechos para Instagram, TikTok y YouTube — con corrección de color, diseño de sonido y optimización para la web.",
+      "results": "Mayor engagement, recordación de marca más fuerte, y contenido que hace que un negocio local se vea establecido y premium en su sitio web, anuncios y canales sociales.",
+      "value": "El video profesional es una biblioteca de activos que usted posee y reutiliza durante años — alimentando anuncios, páginas de aterrizaje y contenido social mucho después de la filmación, multiplicando la autoridad de su marca cada vez que se ve.",
+      "benefits": [
+        "Tomas aéreas 4K con drone",
+        "Filmación en sitio",
+        "Corrección de color cinematográfica",
+        "Cortes verticales y horizontales",
+        "Diseño de sonido y música con licencia",
+        "Exportaciones optimizadas para la web"
+      ],
+      "process": [
+        "Brief creativo",
+        "Lista de tomas y programación",
+        "Día de filmación",
+        "Edición y corrección de color",
+        "Entrega en todos los formatos"
+      ],
+      "deliverables": [
+        "Película de marca principal",
+        "Cortes verticales listos para redes sociales",
+        "Metraje crudo y corregido",
+        "Exportaciones optimizadas por plataforma"
+      ],
+      "cta": "Solicite una Cotización de Video"
+    },
+    "online-marketing": {
+      "problem": "La mayoría de los presupuestos publicitarios pierden dinero silenciosamente — audiencias equivocadas, sin seguimiento, y una página de inicio que nunca fue construida para convertir clics en clientes.",
+      "why": "Construimos el embudo completo: campañas de Google Ads y Meta (Facebook e Instagram), páginas de aterrizaje enfocadas en conversión, seguimiento con píxel y pruebas A/B implacables — luego escalamos solo las campañas que realmente producen leads.",
+      "results": "Un menor costo por lead, un flujo predecible de clientes nuevos, e inversión en marketing que por fin puede medir hasta el último dólar.",
+      "value": "Con el tiempo, un sistema de adquisición ajustado se convierte en un motor de crecimiento que puede activar a demanda — convirtiendo la publicidad de una apuesta en una fuente confiable y repetible de ingresos.",
+      "benefits": [
+        "Gestión de Meta y Google Ads",
+        "Campañas de anuncios en YouTube",
+        "Configuración de píxel de conversión",
+        "Pruebas creativas A/B",
+        "Segmentación de audiencia y retargeting",
+        "Reportes mensuales de rendimiento"
+      ],
+      "process": [
+        "Auditoría de cuentas y objetivos",
+        "Creatividad y construcción de página de aterrizaje",
+        "Configuración de píxel y seguimiento",
+        "Lanzamiento y pruebas A/B",
+        "Escalar los ganadores"
+      ],
+      "deliverables": [
+        "Creatividad de campaña",
+        "Página de aterrizaje de conversión",
+        "Configuración de seguimiento",
+        "Reporte mensual"
+      ],
+      "cta": "Solicite una Llamada de Estrategia"
+    },
+    "seo": {
+      "problem": "Un sitio web hermoso es invisible si no posiciona. La mayoría de los sitios nunca se indexan correctamente, nunca se estructuran para la búsqueda por IA, y nunca aparecen cuando los clientes locales de la Uintah Basin buscan lo que usted vende.",
+      "why": "Diseñamos la optimización para motores de búsqueda desde cero — arquitectura de contenido de pilares y ramificaciones, esquema JSON-LD, SEO local, ajuste de Google Business Profile, y llms.txt para que Google, ChatGPT y Claude entiendan exactamente lo que usted ofrece.",
+      "results": "Mejora significativa en el posicionamiento dentro de {seoTimeframeDays} días, más tráfico orgánico calificado, y un flujo constante de clientes que ya lo estaban buscando — sin costo por clic.",
+      "value": "A diferencia de los anuncios pagados, el SEO se multiplica. Cada página y citación que gana sigue funcionando durante años, construyendo un foso duradero de visibilidad orgánica que la competencia no puede simplemente superar con dinero.",
+      "benefits": [
+        "Arquitectura de contenido de pilares y ramificaciones",
+        "Grafos de esquema JSON-LD",
+        "Optimización para búsqueda por IA (llms.txt)",
+        "Ajuste de Google Business Profile",
+        "Índices de sitemap divididos",
+        "Reportes mensuales de posicionamiento"
+      ],
+      "process": [
+        "Auditoría técnica y de contenido",
+        "Mapeo de palabras clave y temas",
+        "Construcción en página y de esquema",
+        "Configuración de búsqueda local y por IA",
+        "Reportes continuos"
+      ],
+      "deliverables": [
+        "Correcciones técnicas de SEO",
+        "Implementación de esquema y sitemap",
+        "Plan de arquitectura de contenido",
+        "Reporte mensual de posicionamiento"
+      ],
+      "cta": "Solicite una Auditoría de SEO"
+    },
+    "business-automation": {
+      "problem": "La programación manual, los seguimientos y la captura de datos silenciosamente consumen las horas que debería invertir en hacer crecer el negocio — y cada respuesta lenta es un lead que se enfría.",
+      "why": "Conectamos sus herramientas, agregamos asistentes de IA y chatbots, y automatizamos el trabajo repetitivo — respuestas instantáneas a leads, programación y recordatorios automatizados, integraciones de CRM y flujos de trabajo de facturación adaptados a cómo funciona realmente su negocio.",
+      "results": "Tiempos de respuesta más rápidos, menos leads perdidos, y un equipo liberado del trabajo tedioso para enfocarse en los clientes y los ingresos.",
+      "value": "La automatización es apalancamiento que se multiplica: a medida que crece, los sistemas escalan con usted — manejando más volumen sin más gastos generales, para que la ganancia no se consuma en personal.",
+      "benefits": [
+        "Chat con IA y captura de leads",
+        "Programación y recordatorios automatizados",
+        "Integraciones de CRM y datos",
+        "Automatización de documentos y facturas",
+        "Conectores de flujo de trabajo",
+        "Herramientas internas personalizadas"
+      ],
+      "process": [
+        "Mapeo de flujo de trabajo",
+        "Auditoría de herramientas y datos",
+        "Construcción de la automatización",
+        "Pruebas y capacitación",
+        "Entrega y soporte"
+      ],
+      "deliverables": [
+        "Flujos de trabajo automatizados",
+        "Configuración de asistente de IA",
+        "Documentación de integración",
+        "Sesión de capacitación del equipo"
+      ],
+      "cta": "Explore la Automatización"
+    },
+    "ongoing-support": {
+      "problem": "La mayoría de los sitios web se construyen una vez y nadie los mantiene — deteriorándose lentamente, volviéndose más lentos y silenciosamente cayendo en el posicionamiento de Google hasta necesitar una reconstrucción costosa.",
+      "why": "Nuestro plan de mantenimiento de sitios web mantiene su sitio rápido, seguro y en mejora — monitoreo de seguridad, copias de seguridad diarias, ajuste de rendimiento, actualizaciones de contenido y monitoreo de tiempo de actividad, manejados por nosotros, cada mes.",
+      "results": "Tiempo de actividad confiable, SEO que se multiplica, y la tranquilidad de saber que su activo digital sigue mejorando — sin facturas sorpresa ni dolores de cabeza técnicos.",
+      "value": "Un sitio web mantenido se aprecia en lugar de deteriorarse. Trimestre tras trimestre se vuelve más rápido, posiciona más alto y supera a los competidores que dejan que el suyo se deteriore — protegiendo la inversión que hizo.",
+      "benefits": [
+        "Actualizaciones de contenido mensuales",
+        "Monitoreo de seguridad",
+        "Copias de seguridad diarias",
+        "Optimización de rendimiento",
+        "Monitoreo de tiempo de actividad",
+        "Soporte técnico prioritario"
+      ],
+      "process": [
+        "Incorporación y acceso",
+        "Auditoría de rendimiento base",
+        "Ritmo de actualización mensual",
+        "Optimización trimestral",
+        "Soporte prioritario"
+      ],
+      "deliverables": [
+        "Mantenimiento mensual",
+        "Monitoreo de respaldo y seguridad",
+        "Reporte trimestral de rendimiento",
+        "Canal de soporte prioritario"
+      ],
+      "cta": "Vea el Plan de Mantenimiento"
+    }
+  },
+  "cta": {
+    "title": "¿No está seguro de qué servicio necesita?",
+    "body": "Cuéntenos su objetivo. Le diremos exactamente lo que construiríamos y lo que costaría — sin obligación.",
+    "secondaryLabel": "Lea las Preguntas Comunes"
+  }
+}

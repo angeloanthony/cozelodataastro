@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Contacte a Cozelos Data — Construyamos Algo Duradero",
+    "description": "Inicie una conversación con Cozelos Data en Vernal, Utah. La primera conversación es para entender sus objetivos, no para venderle servicios. Llame al {phone}."
+  },
+  "breadcrumb": "Contacto",
+  "hero": {
+    "eyebrow": "Inicie la Conversación",
+    "title": "Construyamos algo duradero.",
+    "lead": "La primera conversación no es un discurso de ventas — se trata de entender su negocio, sus objetivos y cómo se ve el éxito para usted. Cuéntenos a dónde quiere llegar, y le mostraremos cómo lo ayudaríamos a lograrlo.",
+    "summary": "Contacte a Cozelos Data, una agencia digital premium en Vernal, Utah. La primera conversación se enfoca en entender sus objetivos, no en vender servicios — usted se irá con una dirección honesta y una cotización fija, sin obligación. Llame al {phone}, escriba a {email}, o envíe un mensaje. Respondemos dentro de un día hábil."
+  },
+  "expect": {
+    "eyebrow": "Qué Esperar",
+    "title": "Una conversación sobre sus objetivos — no sobre nuestros servicios.",
+    "lead": "El mejor trabajo comienza con comprensión, no con un discurso. Así es como realmente transcurre la primera conversación.",
+    "linkNoteHtml": "¿Quiere llegar con contexto? Revise <a href=\"/pricing/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">lo que normalmente cuesta un proyecto</a> o lea las <a href=\"/faq/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">respuestas a las preguntas que más negocios hacen primero</a>."
+  },
+  "steps": [
+    {
+      "icon": "chat",
+      "title": "Escuchamos primero",
+      "body": "Empezamos por entender su negocio, sus clientes y cómo se ve realmente el éxito para usted — antes de siquiera hablar de un solo entregable."
+    },
+    {
+      "icon": "target",
+      "title": "Mapeamos la oportunidad",
+      "body": "Juntos identificamos dónde se esconde el verdadero crecimiento — los leads que está perdiendo, las búsquedas que se le escapan y el camino más rápido hacia los resultados."
+    },
+    {
+      "icon": "doc",
+      "title": "Usted recibe un plan claro",
+      "body": "Se va con una dirección honesta y una cotización fija — trabaje con nosotros o no. Sin presión, sin obligación, sin venta agresiva."
+    }
+  ],
+  "form": {
+    "title": "Cuéntenos sobre su negocio",
+    "body": "Mientras más sepamos sobre sus objetivos, más útil será nuestra primera conversación. Respondemos dentro de un día hábil — y no hay obligación, nunca.",
+    "intro": "Toque a continuación para iniciar un chat en vivo con nosotros, aquí mismo — sin necesidad de una aplicación. Normalmente respondemos en minutos durante el horario laboral.",
+    "chatLabel": "Escríbanos ahora",
+    "callLabel": "Llámenos",
+    "emailNote": "Sin presión de ventas. ¿Prefiere el correo electrónico?"
+  },
+  "quick": {
+    "title": "¿Prefiere hablar ahora?",
+    "body": "Comuníquese con una persona real — no un centro de llamadas ni una cola de tickets.",
+    "callLabel": "Llamar",
+    "textLabel": "Enviar Mensaje",
+    "emailLabel": "Correo"
+  },
+  "direct": {
+    "title": "Comuníquese directamente",
+    "phoneLabel": "Teléfono",
+    "emailLabel": "Correo",
+    "officeLabel": "Oficina",
+    "hoursLabel": "Horario"
+  },
+  "map": {
+    "title": "Mapa de la ubicación de la oficina de Cozelos Data"
+  }
+}

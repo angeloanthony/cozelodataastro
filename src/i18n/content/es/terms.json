@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Términos de Servicio",
+    "description": "Los términos que rigen los servicios de Cozelos Data y el uso de este sitio web."
+  },
+  "breadcrumb": "Términos",
+  "hero": {
+    "eyebrow": "Legal",
+    "title": "Términos de Servicio",
+    "leadTemplate": "Última actualización: {date}"
+  },
+  "updated": "enero de 2026",
+  "intro": "Estos términos rigen su uso del sitio web de Cozelos Data y los servicios que proveemos. Por favor léalos cuidadosamente.",
+  "sections": [
+    { "h": "Acuerdo", "p": "Al contratar a Cozelos Data para servicios o usar este sitio web, usted acepta estos términos. Los términos específicos del proyecto, el alcance y los precios se confirman en una propuesta o factura por escrito antes de que comience cualquier trabajo, y esos documentos tienen prioridad cuando agregan más detalle." },
+    { "h": "Alcance y estimaciones", "p": "Las cotizaciones se basan en el alcance discutido al momento de la estimación. Los cambios significativos en el alcance pueden ajustar el cronograma y el costo; siempre confirmaremos cualquier cambio por escrito antes de proceder." },
+    { "h": "Términos de pago", "p": "La mayoría de los proyectos se facturan 50% al inicio y 50% en el lanzamiento, a menos que se acuerde lo contrario. Los planes de mantenimiento se facturan mensualmente. Las facturas vencen al recibirse, a menos que se indique un plazo diferente en la factura." },
+    { "h": "Propiedad del cliente", "p": "Tras el pago final, usted es dueño de los entregables que creamos para usted — su dominio, cuenta de hospedaje, código fuente y contenido. Usamos tecnologías estándar y neutrales en cuanto a proveedor, y transferiremos todo a usted a solicitud, sin ataduras propietarias." },
+    { "h": "Revisiones", "p": "Nuestro proceso estándar incluye dos rondas completas de diseño más ediciones menores ilimitadas de copy y activos durante la fase de construcción. El trabajo procede en hitos aprobados — el diseño se aprueba antes del código, y el código se aprueba antes del lanzamiento." },
+    { "h": "Garantías y responsabilidad", "p": "Entregamos nuestro trabajo con cuidado profesional, pero no podemos garantizar posicionamientos de búsqueda específicos ni resultados de negocio, ya que dependen de factores fuera de nuestro control. Nuestra responsabilidad por cualquier reclamo se limita al monto pagado por los servicios en cuestión." },
+    { "h": "Mantenimiento y soporte", "p": "Los planes de mantenimiento son opcionales y pueden cancelarse en cualquier momento. Después de la cancelación, usted conserva la propiedad total de su sitio y puede hospedarlo donde quiera. Los tiempos de respuesta de soporte se describen en su plan." },
+    { "h": "Terminación", "p": "Cualquiera de las partes puede terminar un acuerdo con aviso por escrito. Usted es responsable del pago del trabajo completado hasta la fecha de terminación, y entregaremos todos los entregables completados que haya pagado." }
+  ],
+  "contact": {
+    "title": "Preguntas",
+    "body": "Para cualquier cosa sobre estos términos, escriba a {email} o llame al {phone}."
+  }
+}

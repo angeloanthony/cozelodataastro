@@ -12,6 +12,7 @@
     "h1Prefix": "Costruiamo asset digitali pensati per",
     "h1GradientLead": "far crescere",
     "rotatingWords": ["Aziende.", "Ricavi.", "Portata."],
+    "tagline": "Rafforzare le aziende. Migliorare la vita.",
     "kicker": "Veloce. Sicuro. Pensato per il posizionamento.",
     "lead": "Progettiamo e realizziamo sistemi digitali completi che generano lead, costruiscono autorevolezza e creano crescita duratura.",
     "summaryHtml": "Cozelos Data è un'agenzia digitale Woman-Owned a Vernal, Utah, che realizza siti web su misura, SEO, video e marketing per imprese locali e per il settore pubblico. I progetti su misura partono da {websiteStartingPrice}, si caricano in meno di un secondo e tutto resta tuo — dominio, codice e contenuti.",
@@ -56,7 +57,7 @@
   "mission": {
     "label": "La Nostra Missione",
     "headlineHtml": "Non ci limitiamo a costruire siti web &mdash; costruiamo <span class=\"text-gradient\">asset digitali che fanno crescere le imprese.</span>",
-    "tagline": "Making businesses stronger. Making life better.",
+    "tagline": "Rafforzare le aziende. Migliorare la vita.",
     "body": "Un sito web è una spesa. Una piattaforma di crescita è un investimento — uno che genera lead, autorevolezza e ricavi per anni. Non costruiamo pagine che restano ferme online. Costruiamo sistemi che lavorano ogni giorno per la tua attività."
   },
   "quoteBlock": {

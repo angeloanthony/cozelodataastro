@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "Ellen Cozelos — Fundadora de Cozelos Data | Líder Tecnológica",
+    "description": "Ellen Cozelos fundó Cozelos Data — ingeniera de software, líder en ciberseguridad e IA, con más de 20 años de experiencia en la NASA y el DoD, Maestría de Columbia University."
+  },
+  "breadcrumb": "Ellen Cozelos",
+  "breadcrumbCompany": "Empresa",
+  "hero": {
+    "eyebrow": "Fundadora · Cozelos Data",
+    "title": "Tecnología empresarial, llevada a los negocios que importan.",
+    "lead": "Durante más de 20 años, Ellen Cozelos construyó sistemas seguros y de misión crítica para la NASA y el Departamento de Defensa. Hoy trae ese mismo estándar a los negocios del este de Utah y más allá — porque la gran tecnología no debería reservarse para unos pocos.",
+    "summary": "Ellen Cozelos es la fundadora de Cozelos Data, una ingeniera de software, especialista en ciberseguridad, especialista en IA y profesional de marketing digital con más de 20 años de experiencia en la NASA, el Departamento de Defensa, programas aeroespaciales y comerciales. Tiene una Maestría de Columbia University y lleva tecnología de nivel empresarial a negocios en todo el este de Utah y más allá, guiada por un principio simple: si es importante para nuestros clientes, es importante para nosotros."
+  },
+  "card": {
+    "initials": "EC",
+    "name": "Ellen Cozelos",
+    "role": "Fundadora y Principal, Cozelos Data",
+    "imageAlt": "Cozelos Data — fundada por Ellen Cozelos en Vernal, Utah",
+    "quote": "“Si es importante para nuestros clientes, es importante para nosotros.”",
+    "cta": "Agende una Consulta"
+  },
+  "story": {
+    "eyebrow": "La Historia",
+    "title": "La líder estratégica detrás de Cozelos Data.",
+    "leadIn": "La tecnología es fácil. Construir confianza es difícil.",
+    "paragraphsHtml": [
+      "Ellen Cozelos ha pasado su carrera en la parte difícil. Más que el código, más que las credenciales, ella es la estratega en quien los clientes confían para convertir tecnología compleja en decisiones que hacen avanzar un negocio — construyendo para <span class=\"font-semibold text-[var(--text)]\">consecuencias reales</span>, el tipo de sistemas donde una sola línea tiene un peso real y \"suficientemente bueno\" nunca fue una opción.",
+      "Durante más de dos décadas, Ellen apoyó el desarrollo de software de misión crítica para programas de la <span class=\"font-semibold text-[var(--text)]\">NASA y el Departamento de Defensa</span>: sistemas seguros, confiables y escalables diseñados para entornos donde la precisión y el rendimiento no son características, sino requisitos. Desde Huntsville, Alabama — una ciudad sinónimo de aeroespacio — aprendió un estándar de trabajo que el mundo comercial rara vez ve.",
+      "Su camino nunca fue estrecho. A través de los sectores gubernamental, aeroespacial y comercial, Ellen se volvió experta en disciplinas que normalmente viven en departamentos separados: <span class=\"font-semibold text-[var(--text)]\">ingeniería de software, ciberseguridad, inteligencia artificial, marketing digital y tecnologías emergentes</span>. Obtuvo una Maestría de Columbia University y nunca dejó de aprender — porque las tecnologías que hacen avanzar a los negocios nunca dejan de evolucionar.",
+      "Esa combinación poco común es la razón por la que existe Cozelos Data. Ellen fundó la empresa con una convicción que sintió durante años: los negocios que sostienen a nuestras comunidades — los contratistas, las clínicas, los hoteles y los negocios familiares — merecen la misma calidad de tecnología que las agencias y empresas a las que dedicó su carrera. No una plantilla diluida. Lo auténtico.",
+      "Lo que la convierte en una asesora de confianza no es solo la profundidad técnica — es cómo lidera con ella. Ellen cree que los mejores resultados provienen de una asociación genuina, y opera bajo un principio que ha guiado cada proyecto de su carrera:"
+    ],
+    "pullQuote": "“Si es importante para nuestros clientes, es importante para nosotros.”",
+    "closing": "Es una línea simple con implicaciones serias. Significa estrategia antes que diseño, seguridad antes que atajos, y un compromiso a largo plazo con ver crecer el negocio de un cliente — no solo entregar un sitio web y seguir adelante. Para Ellen, la tecnología nunca fue el destino. Es la herramienta más poderosa que tenemos para fortalecer negocios y mejorar vidas."
+  },
+  "stats": [
+    { "stat": "20+ años", "label": "Entregando soluciones tecnológicas innovadoras" },
+    { "stat": "NASA y DoD", "label": "Programas de software de misión crítica" },
+    { "stat": "Columbia", "label": "Maestría" },
+    { "stat": "5 áreas", "label": "Ingeniería · Seguridad · IA · Marketing · Estrategia" }
+  ],
+  "expertiseSection": {
+    "eyebrow": "Áreas de Experiencia",
+    "title": "Cinco disciplinas. Una ventaja unificada.",
+    "lead": "La mayoría de las agencias son fuertes en un área. El dominio de Ellen en cinco — y cómo se refuerzan entre sí — es lo que convierte un sitio web en un sistema de crecimiento."
+  },
+  "expertise": [
+    {
+      "icon": "browser",
+      "title": "Ingeniería de Software",
+      "body": "Dos décadas diseñando sistemas seguros y escalables para entornos donde el fallo no es una opción. Para los clientes, esa disciplina se convierte en sitios web y plataformas diseñadas para funcionar sin fallos — rápidos, confiables y hechos para durar."
+    },
+    {
+      "icon": "shield",
+      "title": "Ciberseguridad",
+      "body": "Una mentalidad de seguridad primero, formada por estándares de nivel de defensa. Cada proyecto se refuerza desde la base, protegiendo sus datos, sus clientes y su reputación mucho antes de que aparezca una amenaza."
+    },
+    {
+      "icon": "bolt",
+      "title": "Inteligencia Artificial",
+      "body": "IA práctica que hace un trabajo real — asistentes que capturan leads las 24 horas, automatizaciones que le devuelven horas a su equipo, y contenido diseñado para ser encontrado por las herramientas de IA que los clientes ahora consultan primero."
+    },
+    {
+      "icon": "target",
+      "title": "Marketing Digital",
+      "body": "La tecnología no significa nada si nadie la ve. Ellen combina ingeniería con estrategia de marketing — SEO, publicidad y contenido — para que los sistemas que construye no solo existan, sino que generen demanda medible."
+    },
+    {
+      "icon": "star",
+      "title": "Tecnología Empresarial Estratégica",
+      "body": "La habilidad más rara de todas: traducir tecnología compleja en resultados de negocio. Ellen comienza con sus objetivos, luego diseña el sistema que lo lleva hasta ahí — convirtiendo la innovación en crecimiento que se puede medir."
+    }
+  ],
+  "philosophySection": {
+    "eyebrow": "Filosofía de Liderazgo",
+    "title": "Las convicciones detrás del trabajo.",
+    "lead": "La forma en que Ellen lidera es tan deliberada como lo que construye. Cinco principios guían cada proyecto."
+  },
+  "philosophy": [
+    {
+      "n": "01",
+      "title": "La tecnología debe resolver problemas de negocio.",
+      "body": "Las herramientas nunca son el objetivo. La tecnología adecuada, aplicada con intención, elimina fricciones, gana clientes y mueve las cifras que importan para su negocio."
+    },
+    {
+      "n": "02",
+      "title": "La innovación debe crear oportunidad.",
+      "body": "Bien hecha, la innovación no es disrupción por sí misma — abre puertas: nuevos mercados, nuevas eficiencias y nuevas formas de crecer para un negocio."
+    },
+    {
+      "n": "03",
+      "title": "Las asociaciones sólidas producen los mejores resultados.",
+      "body": "Los mejores resultados provienen de una asociación genuina — objetivos compartidos, comunicación honesta y un equipo que trata su éxito como propio."
+    },
+    {
+      "n": "04",
+      "title": "La confianza se gana a través del desempeño.",
+      "body": "La confianza no se reclama en un discurso; se demuestra en la entrega — a tiempo, por escrito y diseñada al estándar que el trabajo exige."
+    },
+    {
+      "n": "05",
+      "title": "El éxito a largo plazo proviene de la mejora continua.",
+      "body": "Una presencia en línea debería fortalecerse cada trimestre. Ellen construye para el largo plazo — sistemas que se mantienen, se refinan y siempre mejoran."
+    }
+  ],
+  "whySection": {
+    "eyebrow": "Por Qué los Clientes Eligen a Ellen",
+    "title": "Experiencia empresarial, con una mano personal en el trabajo."
+  },
+  "whyEllen": [
+    { "icon": "building", "title": "Experiencia de nivel empresarial", "body": "Estándares forjados en sistemas donde la precisión y el rendimiento no son negociables." },
+    { "icon": "award", "title": "Trasfondo gubernamental y aeroespacial", "body": "Dos décadas apoyando software de misión crítica de la NASA y el Departamento de Defensa." },
+    { "icon": "target", "title": "Pensamiento estratégico", "body": "Cada decisión comienza con los objetivos de su negocio, no con una plantilla." },
+    { "icon": "bolt", "title": "Soluciones enfocadas en el negocio", "body": "Tecnología diseñada para producir leads, crecimiento y un ROI medible." },
+    { "icon": "chat", "title": "Servicio personalizado", "body": "Usted trabaja directamente con Ellen — una socia, no una cola de tickets." },
+    { "icon": "shield", "title": "Asociaciones a largo plazo", "body": "Invertida en sus resultados mucho después del lanzamiento, trimestre tras trimestre." }
+  ],
+  "whyNoteHtml": "Ellen tiene una mano en cada proyecto — vea <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">el trabajo de clientes que ha resultado de ello</a>.",
+  "mission": {
+    "eyebrow": "Misión Personal",
+    "title": "La tecnología no es la meta. Es la herramienta.",
+    "body": "Para Ellen, la verdadera misión nunca fue el código. Es lo que el código hace posible: negocios que se fortalecen, comunidades que se vuelven más resilientes y vidas mejoradas a través de la innovación reflexiva y la asociación de confianza. Cozelos Data no es una empresa de diseño web. Es una socia tecnológica estratégica — construida para ayudar a las organizaciones a fortalecer sus operaciones, proteger lo que más importa y crear nuevas oportunidades para las personas a las que sirven."
+  },
+  "cta": {
+    "title": "Construyamos algo duradero.",
+    "body": "Comience con una consulta de descubrimiento. Traiga sus objetivos; Ellen traerá dos décadas de experiencia empresarial — y un plan honesto para lograrlo.",
+    "primaryLabel": "Agende una Consulta",
+    "secondaryLabel": "Explore Cozelos Data"
+  }
+}

@@ -19,6 +19,11 @@ export interface LocaleMeta {
 export const LOCALES = [
   { code: "en", name: "English", flag: "US", dir: "ltr", ogLocale: "en_US", hreflang: "en-US" },
   { code: "it", name: "Italiano", flag: "IT", dir: "ltr", ogLocale: "it_IT", hreflang: "it-IT" },
+  // es-US, not es-ES/es-MX: targets the US Hispanic audience (Uintah Basin and
+  // nationwide clients), per Rocco's explicit call. Flag badge is "ES" (not
+  // "US", which English already uses) so the two switcher buttons stay visually
+  // distinct even though both hreflang to a US locale.
+  { code: "es", name: "Español", flag: "ES", dir: "ltr", ogLocale: "es_US", hreflang: "es-US" },
 ] as const satisfies readonly LocaleMeta[];
 
 export const DEFAULT_LOCALE = "en";
@@ -138,6 +143,41 @@ export const strings = {
     "testimonial.prev": "Testimonianza precedente",
     "testimonial.next": "Testimonianza successiva",
     "testimonial.goTo": "Vai alla testimonianza {n}",
+  },
+  es: {
+    "nav.home": "Inicio",
+    "nav.services": "Servicios",
+    "nav.why": "Por Qué Nosotros",
+    "nav.pricing": "Inversión",
+    "nav.portfolio": "Portafolio",
+    "nav.company": "Empresa",
+    "nav.contact": "Contacto",
+    "nav.menu": "Menú",
+    "cta.quote": "Solicitar una Cotización",
+    "lang.label": "Idioma",
+    "lang.switch": "Cambiar idioma",
+    "footer.services": "Servicios",
+    "footer.company": "Empresa",
+    "footer.contact": "Contacto",
+    "skip.main": "Saltar al contenido",
+    "a11y.primaryNav": "Principal",
+    "a11y.breadcrumb": "Ruta de navegación",
+    "a11y.theme": "Alternar modo oscuro",
+    "a11y.menuOpen": "Abrir menú",
+    "a11y.menuClose": "Cerrar menú",
+    "a11y.home": "Inicio de {brand}",
+    "summary.quote": "Llame al {phone} para una cotización gratuita.",
+    "cta.learnMore": "Más información",
+    "card.viewProject": "Ver Proyecto",
+    "card.visitWebsite": "Visitar Sitio Web",
+    "card.viewCaseStudy": "Ver Caso de Éxito",
+    "card.imageAltSuffix": "sitio web de Cozelos Data",
+    "carousel.swipe": "Deslizar",
+    "carousel.goToSlide": "Ir a la diapositiva {n}",
+    "carousel.goToProject": "Ir al proyecto {n}",
+    "testimonial.prev": "Testimonio anterior",
+    "testimonial.next": "Testimonio siguiente",
+    "testimonial.goTo": "Ir al testimonio {n}",
   },
 } as const;
 

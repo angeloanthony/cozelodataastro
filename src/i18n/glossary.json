@@ -19,7 +19,6 @@
   "Vernal": "Vernal",
   "Uintah Basin": "Uintah Basin",
   "Utah": "Utah",
-  "Making Businesses Stronger. Making Life Better.": "Making Businesses Stronger. Making Life Better.",
 
   "__comment_products": "Product and tier names are SKUs, not prose.",
   "Essential Presence": "Essential Presence",
@@ -27,7 +26,7 @@
   "Market Leader": "Market Leader",
   "Discovery Session": "Discovery Session",
 
-  "__comment_technical": "Technical terms with an established English form in Italian industry usage.",
+  "__comment_technical": "Technical terms with an established English form in the target industry's usage (Italian and Spanish alike).",
   "SEO": "SEO",
   "JSON-LD": "JSON-LD",
   "llms.txt": "llms.txt",
@@ -35,12 +34,13 @@
   "Google Business Profile": "Google Business Profile",
   "Lighthouse": "Lighthouse",
 
-  "__comment_pinned": "Pinned translations — the positioning vocabulary must be consistent across every page.",
-  "digital asset": { "it": "asset digitale" },
-  "digital assets": { "it": "asset digitali" },
-  "growth platform": { "it": "piattaforma di crescita" },
-  "custom website": { "it": "sito web su misura" },
-  "template": { "it": "template" },
-  "lead": { "it": "lead" },
-  "leads": { "it": "lead" }
+  "__comment_pinned": "Pinned translations — the positioning vocabulary must be consistent across every page. \"lead\"/\"leads\" stay untranslated in Spanish too: an established loanword in US Hispanic digital-marketing usage, same reasoning as the Italian pin.",
+  "digital asset": { "it": "asset digitale", "es": "activo digital" },
+  "digital assets": { "it": "asset digitali", "es": "activos digitales" },
+  "growth platform": { "it": "piattaforma di crescita", "es": "plataforma de crecimiento" },
+  "custom website": { "it": "sito web su misura", "es": "sitio web personalizado" },
+  "template": { "it": "template", "es": "plantilla" },
+  "lead": { "it": "lead", "es": "lead" },
+  "leads": { "it": "lead", "es": "leads" },
+  "Making Businesses Stronger. Making Life Better.": { "it": "Rafforzare le aziende. Migliorare la vita.", "es": "Fortalecer los negocios. Mejorar la vida." }
 }

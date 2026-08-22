@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Pague su Factura — Cozelos Data",
+    "description": "Pague de forma segura su factura de Cozelos Data. Aceptamos tarjeta, ACH y cheque, con recibos instantáneos y procesamiento compatible con PCI."
+  },
+  "breadcrumb": "Pagar",
+  "hero": {
+    "eyebrow": "Pagos de Clientes",
+    "title": "Pague su factura de forma segura.",
+    "lead": "¿Ya es cliente? Use el enlace seguro de su correo de factura, o comuníquese con nosotros y le enviaremos un nuevo enlace de pago de inmediato."
+  },
+  "payment": {
+    "title": "Realizar un pago",
+    "bodyStripe": "Pague de forma segura a través de nuestro checkout protegido por Stripe. Tenga a la mano su número de factura para que podamos identificar su pago.",
+    "bodyRequest": "Por su seguridad, los enlaces de pago se generan por factura. Contáctenos con su número de factura y le enviaremos su enlace de pago seguro de inmediato.",
+    "payNow": "Pagar Factura Ahora",
+    "requestLink": "Solicitar Enlace de Pago",
+    "badges": {
+      "pci": "Compatible con PCI",
+      "encryption": "Cifrado de 256 bits",
+      "receipt": "Recibo instantáneo"
+    }
+  },
+  "steps": {
+    "eyebrow": "Cómo Funciona",
+    "title": "Tres pasos sencillos.",
+    "items": [
+      { "icon": "mail", "title": "Reciba su factura", "body": "Le enviamos por correo una factura detallada con su número de referencia de proyecto y el monto adeudado." },
+      { "icon": "card", "title": "Pague de forma segura", "body": "Use el enlace seguro en su factura, o contáctenos para opciones de ACH, tarjeta o cheque." },
+      { "icon": "check", "title": "Confirmación instantánea", "body": "Recibe un recibo de inmediato, y nosotros volvemos directamente al trabajo." }
+    ]
+  },
+  "faqSection": {
+    "eyebrow": "Preguntas sobre Pagos",
+    "title": "Bueno saberlo."
+  },
+  "faqs": [
+    { "q": "¿Qué métodos de pago aceptan?", "a": "Las principales tarjetas de crédito y débito, transferencia bancaria ACH, y cheques comerciales. Los planes de mantenimiento recurrentes pueden configurarse para pago automático." },
+    { "q": "¿El pago en línea es seguro?", "a": "Sí. Los pagos se procesan a través de un procesador de pagos cifrado y compatible con PCI. Nunca vemos ni almacenamos los detalles completos de su tarjeta." },
+    { "q": "¿Cuándo se vence el pago?", "a": "La mayoría de los proyectos se facturan 50% al inicio y 50% en el lanzamiento. Los planes de mantenimiento se facturan mensualmente. Los términos siempre se confirman por escrito primero." },
+    { "q": "¿Puedo obtener un recibo o un W-9?", "a": "Por supuesto. Los recibos son automáticos, y con gusto le proporcionamos un W-9 o cualquier documentación que su contabilidad necesite." }
+  ],
+  "cta": {
+    "title": "¿Aún no es cliente?",
+    "body": "Vea lo que construiríamos para su negocio — y cuánto costaría.",
+    "primaryLabel": "Inicie un Proyecto",
+    "secondaryLabel": "Vea los Servicios"
+  }
+}

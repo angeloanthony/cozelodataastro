@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Nuestro Enfoque — Cómo Cozelos Data Construye Activos Digitales",
+    "description": "Cozelos Data construye activos digitales en cuatro capas: el diseño gana atención, el rendimiento mantiene a los visitantes interesados, el SEO trae clientes, la estrategia impulsa el crecimiento."
+  },
+  "breadcrumb": "Nuestro Enfoque",
+  "hero": {
+    "eyebrow": "Nuestro Enfoque",
+    "title": "Cuatro etapas entre un desconocido y un cliente.",
+    "lead": "El buen trabajo digital no es un montón de funciones — es una secuencia. Cada etapa da paso a la siguiente, convirtiendo una mirada pasajera en atención, la atención en interés, el interés en un cliente, y los clientes en crecimiento. Así es como pensamos cada proyecto que construimos.",
+    "summary": "Cozelos Data sigue un marco de cuatro etapas llamado el Método Cozelos: Atraer (el diseño hermoso gana atención), Enganchar (el rendimiento mantiene a los visitantes interesados), Convertir (el SEO trae clientes), y Crecer (la estrategia convierte a los clientes en crecimiento). Cada etapa se construye sobre la anterior, transformando un sitio web en una plataforma de crecimiento diseñada para resultados medibles."
+  },
+  "method": {
+    "eyebrow": "El Método Cozelos",
+    "title": "Atraer. Enganchar. Convertir. Crecer.",
+    "lead": "Sáltese cualquier etapa y el sistema se rompe — un sitio precioso que nadie encuentra, o un sitio rápido sin nada que convertir. Hecho en orden, se multiplican."
+  },
+  "chapters": [
+    {
+      "n": "01",
+      "icon": "star",
+      "stage": "Atraer",
+      "kicker": "Primeras impresiones",
+      "headline": "El diseño hermoso gana atención.",
+      "paragraphs": [
+        "Tiene menos tiempo del que cree. Un visitante forma una opinión sobre su negocio en aproximadamente 50 milisegundos — más rápido de lo que puede leer una sola palabra. En ese instante, el diseño es quien habla. Señala si usted es serio, si está actualizado y si vale la pena un momento más de su día.",
+        "El diseño hermoso no es decoración — es credibilidad hecha visible. Una tipografía segura, un espaciado intencional, un movimiento cinematográfico y una jerarquía visual clara le dicen a un visitante, antes de que haya leído nada, que el negocio detrás de la pantalla se toma en serio su oficio. Una plantilla que se parece a otros diez mil negocios dice silenciosamente lo contrario.",
+        "Por eso diseñamos cada página para ganar los próximos cinco segundos, y los cinco después de esos. La atención es el precio de entrada. Sin ella, nada más de lo que construimos se ve jamás."
+      ],
+      "takeaway": "Si no gana la atención, nada más importa."
+    },
+    {
+      "n": "02",
+      "icon": "bolt",
+      "stage": "Enganchar",
+      "kicker": "Velocidad y experiencia",
+      "headline": "El rendimiento mantiene a los visitantes interesados.",
+      "paragraphs": [
+        "La atención es frágil. Puede ganarla con un primer cuadro impresionante y perderla medio segundo después con un ícono de carga. La mayoría de los visitantes abandonan una página que tarda más de tres segundos en cargar — y en móvil, donde ahora vive la mayoría de su tráfico, los sitios lentos pierden clientes por miles.",
+        "El rendimiento es respeto por el tiempo de su visitante. Tiempos de carga de menos de un segundo, desplazamiento fluido, interacciones instantáneas — esto no es vanidad de ingeniería. Es la diferencia entre un visitante que explora y uno que ya se fue. Cada cien milisegundos que recorta se refleja en las conversiones.",
+        "Construimos a mano para la velocidad desde la primera línea de código, y luego la protegemos sin descanso. El resultado es un sitio que se siente sin esfuerzo — para que el visitante se quede el tiempo suficiente para interesarse de verdad."
+      ],
+      "takeaway": "Un sitio rápido conserva la atención que uno hermoso ganó."
+    },
+    {
+      "n": "03",
+      "icon": "search",
+      "stage": "Convertir",
+      "kicker": "Visibilidad y búsqueda",
+      "headline": "El SEO trae clientes.",
+      "paragraphs": [
+        "El diseño y la velocidad solo importan para las personas que realmente llegan. La dura verdad: el sitio web más hermoso del mundo no vale nada si nadie puede encontrarlo. La visibilidad es la diferencia entre un folleto que reposa en un cajón y una vitrina en la calle más transitada de la ciudad.",
+        "La optimización para motores de búsqueda es cómo las personas correctas lo encuentran en el momento exacto en que lo están buscando. Diseñamos cada sitio para que sea comprendido — por Google, y ahora por motores de IA como ChatGPT y Claude — con datos estructurados, arquitectura de contenido limpia y SEO local que lo pone frente a los clientes de su área. Esta es una audiencia que no se alquila clic por clic; es una que se multiplica.",
+        "Hermoso, rápido y encontrado — ahora tiene un flujo constante de visitantes calificados que ya estaban buscando exactamente lo que usted ofrece."
+      ],
+      "takeaway": "La visibilidad convierte un gran sitio web en una fuente de clientes."
+    },
+    {
+      "n": "04",
+      "icon": "target",
+      "stage": "Crecer",
+      "kicker": "Resultados y crecimiento",
+      "headline": "La estrategia convierte clientes en crecimiento.",
+      "paragraphs": [
+        "La atención, el enganche y el tráfico son solo insumos. Ninguno paga las cuentas por sí solo. La etapa final — y más importante — es la estrategia: dirigir todo hacia un resultado de negocio. Más llamadas. Más reservas. Más leads calificados. Más ingresos.",
+        "Aquí es donde la mayoría de los proyectos web se quedan cortos, y donde el nuestro comienza. Diseñamos el camino que recorre un visitante desde la primera impresión hasta convertirse en cliente que paga, y diseñamos cada página, titular y llamado a la acción para moverlo por ese camino. Luego medimos lo que realmente importa — leads e ingresos — y refinamos.",
+        "La estrategia es lo que convierte un sitio web en un activo digital: un sistema que no solo se ve bien, sino que hace crecer activamente el negocio detrás de él, año tras año."
+      ],
+      "takeaway": "La estrategia es lo que convierte visitantes en crecimiento."
+    }
+  ],
+  "synthesis": {
+    "title": "Cuatro etapas. Un sistema.",
+    "body": "La mayoría de las agencias son buenas en una etapa. Hacen sitios bonitos, o persiguen posicionamientos, o manejan anuncios. Nosotros diseñamos las cuatro para que trabajen como un solo sistema — porque la atención sin velocidad se desperdicia, el tráfico sin estrategia es ruido, y un sitio hermoso que nadie encuentra es solo un secreto costoso. Apiladas en orden, dejan de ser funciones y se convierten en una máquina de crecimiento.",
+    "ctaServices": "Véalo aplicado en nuestros servicios",
+    "ctaPrimary": "Inicie su Proyecto"
+  },
+  "cta": {
+    "title": "Construyamos su motor de crecimiento.",
+    "body": "Cuéntenos sobre su negocio. Le mostraremos exactamente lo que construiríamos — y el crecimiento que está diseñado para crear.",
+    "primaryLabel": "Inicie su Proyecto",
+    "secondaryLabel": "Vea Nuestro Trabajo"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Preguntas Frecuentes — Cozelos Data",
+    "description": "Respuestas sobre precios, plazos, propiedad, SEO, hospedaje, mantenimiento, IA, video y marketing de Cozelos Data — una agencia digital premium en Vernal, Utah."
+  },
+  "breadcrumb": "Preguntas Frecuentes",
+  "hero": {
+    "eyebrow": "Preguntas y Respuestas",
+    "title": "Todo lo que realmente quiere preguntar.",
+    "lead": "Respuestas directas sobre precios, plazos, propiedad, SEO, hospedaje, mantenimiento, IA, video y marketing — antes de llegar a una llamada.",
+    "summary": "Preguntas comunes sobre trabajar con Cozelos Data: los proyectos de sitios web personalizados comienzan en {websiteStartingPrice} con una Discovery Session de {discoverySessionPrice} acreditada hacia el proyecto; la mayoría de los sitios se lanzan en {websiteTimelineWeeks} semanas; los clientes son dueños de su dominio, código y contenido por completo; el SEO típicamente mejora el posicionamiento dentro de {seoTimeframeDays} días; y los planes mensuales de crecimiento van desde {maintenancePrice}/mes."
+  },
+  "categoriesNavLabel": "Categorías de preguntas frecuentes",
+  "categories": {
+    "pricing": "Precios",
+    "timeline": "Plazos",
+    "ownership": "Propiedad",
+    "seo": "SEO",
+    "hosting": "Hospedaje",
+    "maintenance": "Mantenimiento",
+    "ai": "IA",
+    "video": "Video",
+    "marketing": "Marketing",
+    "support": "Soporte",
+    "general": "General"
+  },
+  "faqs": {
+    "website-cost": {
+      "q": "¿Cuánto cuesta un sitio web personalizado?",
+      "a": "Los proyectos de sitios web personalizados de Cozelos Data comienzan en {websiteStartingPrice} para Essential Presence, $4,500 para Professional Growth, y $7,500 para Market Leader, con proyectos Enterprise cotizados individualmente. Cada proyecto comienza con una Discovery Session de {discoverySessionPrice} que se acredita hacia su proyecto, y usted recibe una cotización fija por escrito antes de comenzar cualquier trabajo."
+    },
+    "build-duration": {
+      "q": "¿Cuánto tiempo toma construir un sitio web?",
+      "a": "La mayoría de los sitios web personalizados se lanzan en {websiteTimelineWeeks} semanas desde el inicio. Los sitios más grandes con muchas páginas o redacción de contenido extensa toman de 8 a 10 semanas, y las páginas de aterrizaje simples pueden estar en línea en 2 a 3 semanas. Usted recibe un cronograma claro con hitos desde el primer día."
+    },
+    "website-ownership": {
+      "q": "¿Soy dueño de mi sitio web?",
+      "a": "Sí — completamente. Usted es dueño del dominio, la cuenta de hospedaje, el código fuente y todo el contenido. No hay constructores propietarios ni ataduras, y podemos transferirle todo en cualquier momento. Con Cozelos Data, su sitio web es un activo del que es dueño por completo."
+    },
+    "google-ranking": {
+      "q": "¿Mi nuevo sitio web realmente posicionará en Google?",
+      "a": "Cada sitio web que construimos tiene el SEO integrado desde el primer día — datos estructurados, arquitectura limpia, tiempos de carga rápidos, sitemaps y optimización local. La mayoría de los clientes ven una mejora significativa en el posicionamiento dentro de {seoTimeframeDays} días, y las ganancias se multiplican a medida que crecen el contenido y la autoridad."
+    },
+    "hidden-fees": {
+      "q": "¿Hay tarifas ocultas o facturas sorpresa?",
+      "a": "No. La cotización de su proyecto es fija y se aprueba por escrito antes de comenzar cualquier trabajo, así que el precio nunca cambia a mitad del proyecto. El único costo continuo es un plan mensual opcional, y esa tarifa también está fijada — sin notas de \"desde\" y sin sorpresas."
+    },
+    "custom-vs-template-cost": {
+      "q": "¿Por qué un sitio web personalizado cuesta más que una plantilla?",
+      "a": "Un sitio web personalizado cuesta más porque está diseñado, no ensamblado. En lugar de un tema genérico cargado de plugins, usted obtiene código hecho a mano que carga en menos de un segundo, posiciona mejor, conlleva mucho menos riesgo de seguridad y necesita menos mantenimiento — así que retorna más de lo que cuesta con el tiempo."
+    },
+    "project-start-lead-time": {
+      "q": "¿Qué tan rápido pueden comenzar mi proyecto?",
+      "a": "Normalmente podemos comenzar dentro de una a dos semanas después de su Discovery Session. Una vez que acordamos el alcance y usted aprueba la cotización fija, programamos un inicio y comenzamos de inmediato — la mayoría de los clientes pasan de la primera llamada al diseño activo en menos de dos semanas."
+    },
+    "switching-providers": {
+      "q": "¿Qué pasa si quiero irme o cambiar de proveedor?",
+      "a": "Se lleva todo con usted. Como es dueño del dominio, el código, el hospedaje y el contenido, irse es simple: le entregamos acceso completo y archivos cuando lo pida. Retenemos su negocio a través de resultados, no reteniendo su sitio web como rehén."
+    },
+    "seo-timeframe": {
+      "q": "¿Cuánto tiempo toma que funcione el SEO?",
+      "a": "El SEO típicamente muestra movimiento significativo dentro de {seoTimeframeDays} días, con resultados más fuertes acumulándose durante 6 a 12 meses. Las correcciones técnicas y la optimización local pueden elevar el posicionamiento en semanas, mientras que las palabras clave competitivas toman más tiempo. A diferencia de los anuncios pagados, la visibilidad que gana sigue funcionando sin costo continuo por clic."
+    },
+    "local-seo": {
+      "q": "¿Qué es el SEO local y lo necesito?",
+      "a": "El SEO local ayuda a que su negocio aparezca cuando los clientes cercanos buscan lo que usted ofrece — en Google Maps, el paquete local y los resultados de \"cerca de mí\". Si atiende a un área específica, lo necesita. Optimizamos su Google Business Profile, citaciones locales y páginas de ubicación para capturar esa demanda."
+    },
+    "hosting-provided": {
+      "q": "¿Proveen hospedaje de sitios web?",
+      "a": "Sí. Hospedamos en infraestructura rápida, segura y de nivel empresarial con SSL, copias de seguridad diarias y monitoreo de tiempo de actividad incluidos en nuestros planes mensuales. Como nuestros sitios se construyen como páginas estáticas ligeras, cargan casi instantáneamente y permanecen en línea de manera confiable — y usted siempre es dueño de la cuenta de hospedaje."
+    },
+    "website-security": {
+      "q": "¿Mi sitio web está seguro contra hackers?",
+      "a": "Sí. Construimos sitios web estáticos y reforzados con una superficie de ataque muy pequeña — sin paneles de administración extensos ni plugins vulnerables que explotar. Cada sitio se entrega con cifrado SSL, monitoreo de seguridad y copias de seguridad diarias, para que permanezca seguro, en línea y protegido."
+    },
+    "maintenance-plan-needed": {
+      "q": "¿Necesito un plan de mantenimiento mensual?",
+      "a": "Un plan de mantenimiento es opcional pero muy recomendado. Por {maintenancePrice}/mes, Maintenance mantiene su sitio rápido, seguro y respaldado — con hospedaje, SSL, monitoreo, ajuste de rendimiento y ediciones menores manejadas por nosotros. Sin mantenimiento, cualquier sitio web gradualmente se vuelve más lento y se desliza fuera de las búsquedas."
+    },
+    "maintenance-inclusions": {
+      "q": "¿Qué incluye el mantenimiento continuo del sitio web?",
+      "a": "El mantenimiento incluye hospedaje, SSL, monitoreo de seguridad, copias de seguridad diarias, monitoreo de tiempo de actividad, optimización de rendimiento, ediciones menores de contenido y soporte prioritario. Los niveles superiores agregan SEO, contenido y marketing. El objetivo es simple: su sitio se vuelve más rápido y posiciona más alto cada trimestre, nunca más lento."
+    },
+    "ai-integration": {
+      "q": "¿Pueden agregar IA a mi sitio web o negocio?",
+      "a": "Sí. Construimos asistentes de IA y chatbots que capturan leads y responden preguntas de clientes las 24 horas, además de automatizaciones que manejan programación, seguimientos y captura de datos. La IA le permite a un equipo pequeño responder instantáneamente y nunca perder un lead, devolviéndole horas cada semana."
+    },
+    "ai-search-optimization": {
+      "q": "¿Qué es la optimización para búsqueda por IA y por qué importa?",
+      "a": "La optimización para búsqueda por IA hace que su negocio sea fácil de entender y recomendar para herramientas como ChatGPT, Claude y los AI Overviews de Google. Estructuramos su contenido con esquema y un archivo llms.txt para que los motores de IA lo citen con precisión — capturando clientes que ahora le preguntan a la IA en lugar de buscar."
+    },
+    "video-production-offered": {
+      "q": "¿Ofrecen producción de video?",
+      "a": "Sí. Producimos películas de marca cinematográficas, tomas aéreas 4K con drone y reels verticales para Instagram, TikTok y YouTube — completamente filmados, corregidos de color y con diseño de sonido. El video profesional hace que su negocio se vea establecido y premium en su sitio web, anuncios y canales sociales."
+    },
+    "video-business-value": {
+      "q": "¿Por qué mi negocio necesita video?",
+      "a": "El video comunica energía, escala y confianza que las fotos no pueden, y consistentemente gana mayor engagement en sitios web, anuncios y redes sociales. También le da una biblioteca reutilizable de contenido de marca. En un feed saturado, el video profesional es lo que hace que un negocio detenga el desplazamiento."
+    },
+    "paid-ads-management": {
+      "q": "¿Gestionan anuncios de Google y Facebook?",
+      "a": "Sí. Construimos y gestionamos campañas de Google Ads y Meta (Facebook e Instagram) de principio a fin — creatividad, páginas de aterrizaje enfocadas en conversión, seguimiento con píxel y pruebas A/B. Ajustamos hasta que baje el costo por lead, y luego escalamos solo las campañas que producen resultados medibles."
+    },
+    "marketing-measurement": {
+      "q": "¿Cómo miden los resultados de marketing?",
+      "a": "Medimos las métricas que importan para su negocio: leads, reservas, costo por lead e ingresos — no números vanidosos como impresiones. Con el seguimiento de conversión adecuado en su lugar, usted recibe reportes mensuales que muestran exactamente qué produjo su inversión en marketing y dónde puede mejorar."
+    },
+    "seo-vs-paid-ads": {
+      "q": "¿Cuál es la diferencia entre SEO y anuncios pagados?",
+      "a": "Los anuncios pagados compran tráfico inmediato que se detiene en el momento en que deja de pagar. El SEO gana tráfico que se multiplica y sigue funcionando gratis con el tiempo. La mejor estrategia usa ambos: anuncios para resultados rápidos hoy, y SEO para un crecimiento duradero y de menor costo mañana."
+    },
+    "human-support": {
+      "q": "¿Podré comunicarme con una persona real para soporte?",
+      "a": "Sí. Usted trabaja directamente con nuestro equipo — no una cola de tickets ni un centro de llamadas. Los clientes con un plan mensual reciben soporte prioritario, y de verdad contestamos el teléfono. La comunicación clara y la capacidad de respuesta real son parte de cómo trabajamos, antes y después del lanzamiento."
+    },
+    "post-launch-support": {
+      "q": "¿Qué pasa después de que se lanza mi sitio web?",
+      "a": "El lanzamiento es el comienzo, no el final. Configuramos analítica, enviamos su sitio para indexación y — con un plan mensual — lo mantenemos actualizado, seguro y en mejora. A medida que su negocio crece, evolucionamos el sitio con él, para que su activo digital siga mejorando con el tiempo."
+    },
+    "government-contracting": {
+      "q": "¿Trabajan con agencias gubernamentales?",
+      "a": "Sí. Cozelos Data es una Woman-Owned Small Business (WOSB) con un DUNS activo (059220399) y código CAGE (897W0), contratando bajo NAICS 541511, 541512, 541513 y 513210. Construimos sitios accesibles conforme a Section 508 / WCAG 2.1 AA y proporcionamos una declaración de capacidades a solicitud."
+    },
+    "service-area": {
+      "q": "¿Están ubicados en Utah? ¿Trabajan con clientes en otros estados?",
+      "a": "Tenemos nuestra sede en Vernal, Utah, y trabajamos con clientes en cualquier parte del país. La mayoría de los proyectos se desarrollan sin problemas en línea, con visitas presenciales ocasionales para sesiones de video o de estrategia. Dondequiera que esté, obtiene el mismo activo digital rápido, personalizado y optimizado para la búsqueda."
+    }
+  },
+  "noteHtml": "Varias de estas respuestas apuntan al trabajo en sí: aquí está <a href=\"/services/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">lo que cubre cada uno de los seis servicios</a> y <a href=\"/portfolio/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">los proyectos de clientes que describen estas respuestas</a>. Las preguntas de plazos y proceso anteriores siguen <a href=\"/our-approach/\" class=\"font-semibold text-[var(--color-brand)] link-underline\">las cuatro etapas por las que pasa cada proyecto</a>.",
+  "cta": {
+    "title": "¿Todavía tiene una pregunta?",
+    "body": "Si su pregunta no está respondida aquí, pregúntenos directamente. Damos respuestas directas — sin presión, sin obligación.",
+    "primaryLabel": "Pregúntenos Cualquier Cosa",
+    "secondaryLabel": "Vea los Precios"
+  }
+}

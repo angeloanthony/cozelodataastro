@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Política de Privacidad",
+    "description": "Cómo Cozelos Data recopila, usa y protege su información."
+  },
+  "breadcrumb": "Privacidad",
+  "hero": {
+    "eyebrow": "Legal",
+    "title": "Política de Privacidad",
+    "leadTemplate": "Última actualización: {date}"
+  },
+  "updated": "enero de 2026",
+  "intro": "Cozelos Data (\"nosotros\", \"nos\" o \"nuestro\") respeta su privacidad. Esta política explica qué información recopilamos y cómo la usamos cuando visita nuestro sitio web o trabaja con nosotros.",
+  "sections": [
+    { "h": "Información que recopilamos", "p": "Cuando nos contacta a través de nuestro sitio web, solicita una cotización, o se convierte en cliente, podemos recopilar su nombre, dirección de correo electrónico, número de teléfono, nombre del negocio y cualquier detalle del proyecto que decida compartir. También recopilamos datos de analítica estándar y anonimizados, como las páginas visitadas y la ubicación general, para mejorar nuestro sitio." },
+    { "h": "Cómo usamos su información", "p": "Usamos su información únicamente para responder consultas, entregar y respaldar los servicios que ha solicitado, enviar facturas, y comunicarnos sobre sus proyectos. No vendemos, alquilamos ni intercambiamos su información personal con terceros." },
+    { "h": "Cookies y analítica", "p": "Nuestro sitio puede usar herramientas de analítica que respetan la privacidad para entender patrones de tráfico agregados. Estas herramientas no lo identifican personalmente. Puede deshabilitar las cookies en la configuración de su navegador en cualquier momento sin perder acceso al sitio." },
+    { "h": "Seguridad de datos", "p": "Usamos hospedaje cifrado y flujos de trabajo de desarrollo seguros. La información de pago es manejada exclusivamente por procesadores de terceros compatibles con PCI — nunca almacenamos los detalles completos de tarjetas en nuestros sistemas." },
+    { "h": "Servicios de terceros", "p": "Podemos usar proveedores de terceros de confianza para hospedaje, analítica, correo electrónico y procesamiento de pagos. Cada uno opera bajo su propia política de privacidad, y solo compartimos la información mínima necesaria para entregar nuestros servicios." },
+    { "h": "Sus derechos", "p": "Puede solicitar acceso, corrección o eliminación de la información personal que tenemos sobre usted en cualquier momento. Contáctenos y responderemos con prontitud." },
+    { "h": "Cambios a esta política", "p": "Podemos actualizar esta política a medida que evolucionan nuestras prácticas. Los cambios importantes se reflejarán con la fecha actualizada en la parte superior de esta página." }
+  ],
+  "contact": {
+    "title": "Contáctenos",
+    "body": "¿Preguntas sobre esta política? Escriba a {email} o llame al {phone}."
+  }
+}
