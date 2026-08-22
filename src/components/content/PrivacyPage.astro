@@ -1,0 +1,63 @@
+---
+/**
+ * PrivacyPage — THE template for /privacy/ (Step 29).
+ *
+ * One shared component implements the page; the master route (/privacy/) and
+ * the dynamic localized route (/it/privacy/) both render it. All copy comes
+ * from src/i18n/content/<locale>/privacy.json. Legal meaning is translated
+ * faithfully — no provision added, removed, or reworded in substance, only
+ * rendered in Italian. `noindex` is preserved from the pre-Step-29 page.
+ *
+ * `contact.body` carries two placeholders, {email} and {phone}, resolved the
+ * same way AiSummary.astro resolves `summary.quote`'s {phone} token: split the
+ * translated sentence on the literal placeholders so the actual contact
+ * details — which never translate — can be rendered as real links.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../PageHero.astro";
+import { site } from "../../data/site";
+import { getLangFromUrl } from "../../data/i18n";
+import { getPageContent, localizeHref, interp } from "../../i18n/content";
+
+const lang = getLangFromUrl(Astro.url);
+const c = getPageContent<any>("privacy", lang);
+
+const breadcrumbs = [
+  { name: "Home", href: localizeHref("/", lang) },
+  { name: c.breadcrumb, href: localizeHref("/privacy/", lang) },
+];
+
+const lead = interp(c.hero.leadTemplate, { date: c.updated });
+
+// "Questions about this policy? Email {email} or call {phone}." -> three parts.
+const [beforeEmail, afterEmailRaw] = c.contact.body.split("{email}");
+const [betweenEmailAndPhone, afterPhone] = afterEmailRaw.split("{phone}");
+---
+<BaseLayout
+  title={c.meta.title}
+  description={c.meta.description}
+  breadcrumbs={breadcrumbs}
+  noindex
+>
+  <PageHero eyebrow={c.hero.eyebrow} title={c.hero.title} lead={lead} breadcrumbs={breadcrumbs} />
+
+  <section class="container-x pb-20">
+    <div class="reveal mx-auto max-w-3xl space-y-8">
+      <p class="text-lg leading-relaxed text-[var(--text-muted)]">
+        {c.intro}
+      </p>
+      {c.sections.map((s: { h: string; p: string }) => (
+        <div>
+          <h2 class="font-display text-xl font-bold tracking-tight">{s.h}</h2>
+          <p class="mt-2 leading-relaxed text-[var(--text-muted)]">{s.p}</p>
+        </div>
+      ))}
+      <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface-2)] p-6">
+        <h2 class="font-display text-xl font-bold tracking-tight">{c.contact.title}</h2>
+        <p class="mt-2 leading-relaxed text-[var(--text-muted)]">
+          {beforeEmail}<a href={site.emailHref} class="font-semibold text-[var(--color-brand)] hover:underline">{site.email}</a>{betweenEmailAndPhone}<a href={site.phoneHref} class="font-semibold text-[var(--color-brand)] hover:underline">{site.phone}</a>{afterPhone}
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

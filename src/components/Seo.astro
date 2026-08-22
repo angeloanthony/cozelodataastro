@@ -6,6 +6,7 @@
  */
 import { site } from "../data/site";
 import { getLangFromUrl, getLocaleMeta } from "../data/i18n";
+import { getShared } from "../i18n/shared";
 
 interface Crumb { name: string; href: string; }
 
@@ -41,6 +42,12 @@ const ogLocale = getLocaleMeta(lang).ogLocale;
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogImage = new URL(image, site.url).href;
 const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+// Organization/ProfessionalService schema `description` (Step 29): locale-aware
+// via shared.json, independent of whichever `description` this page passed in
+// for its own <meta name="description">. English resolves to the same
+// site.description text as before; Italian pages get a real translation
+// instead of silently inheriting the English string.
+const orgDescription = getShared(lang).schemaDescription;
 
 // --- Structured data graph -------------------------------------------------
 const graph: Record<string, unknown>[] = [
@@ -49,7 +56,7 @@ const graph: Record<string, unknown>[] = [
     "@id": `${site.url}/#organization`,
     name: site.name,
     url: site.url,
-    description: site.description,
+    description: orgDescription,
     slogan: "Making Businesses Stronger. Making Life Better.",
     logo: new URL("/favicon.svg", site.url).href,
     image: ogImage,

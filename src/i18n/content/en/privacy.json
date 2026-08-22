@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Privacy Policy",
+    "description": "How Cozelos Data collects, uses, and protects your information."
+  },
+  "breadcrumb": "Privacy",
+  "hero": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "leadTemplate": "Last updated: {date}"
+  },
+  "updated": "January 2026",
+  "intro": "Cozelos Data (\"we,\" \"us,\" or \"our\") respects your privacy. This policy explains what information we collect and how we use it when you visit our website or work with us.",
+  "sections": [
+    { "h": "Information we collect", "p": "When you contact us through our website, request a quote, or become a client, we may collect your name, email address, phone number, business name, and any project details you choose to share. We also collect standard, anonymized analytics data such as pages visited and general location to improve our site." },
+    { "h": "How we use your information", "p": "We use your information solely to respond to inquiries, deliver and support the services you've requested, send invoices, and communicate about your projects. We do not sell, rent, or trade your personal information to third parties." },
+    { "h": "Cookies & analytics", "p": "Our site may use privacy-respecting analytics to understand aggregate traffic patterns. These tools do not identify you personally. You can disable cookies in your browser settings at any time without losing access to the site." },
+    { "h": "Data security", "p": "We use encrypted hosting and secure development workflows. Payment information is handled exclusively by PCI-compliant third-party processors — we never store full card details on our systems." },
+    { "h": "Third-party services", "p": "We may use trusted third-party providers for hosting, analytics, email, and payment processing. Each operates under its own privacy policy, and we only share the minimum information necessary to deliver our services." },
+    { "h": "Your rights", "p": "You may request access to, correction of, or deletion of the personal information we hold about you at any time. Contact us and we'll respond promptly." },
+    { "h": "Changes to this policy", "p": "We may update this policy as our practices evolve. Material changes will be reflected by the updated date at the top of this page." }
+  ],
+  "contact": {
+    "title": "Contact us",
+    "body": "Questions about this policy? Email {email} or call {phone}."
+  }
+}

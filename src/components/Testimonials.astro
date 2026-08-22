@@ -13,11 +13,13 @@
  */
 import { testimonials as defaultTestimonials, type Testimonial } from "../data/site";
 import Icon from "./Icon.astro";
+import { getLangFromUrl, t } from "../data/i18n";
 
 interface Props {
   items?: Testimonial[];
 }
 const { items: testimonials = defaultTestimonials } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
 <div class="reveal relative mx-auto max-w-3xl" data-testimonials>
   <div class="relative overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-12">
@@ -55,15 +57,15 @@ const { items: testimonials = defaultTestimonials } = Astro.props;
 
   <!-- Controls -->
   <div class="mt-6 flex items-center justify-center gap-4">
-    <button data-prev type="button" aria-label="Previous testimonial" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]">
+    <button data-prev type="button" aria-label={t("testimonial.prev", lang)} class="grid h-10 w-10 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]">
       <Icon name="arrow" size={18} class="rotate-180" />
     </button>
     <div data-dots class="flex items-center gap-2">
       {testimonials.map((_, i) => (
-        <button data-dot={i} type="button" aria-label={`Go to testimonial ${i + 1}`} class:list={["h-2 rounded-full transition-all duration-300", i === 0 ? "w-6 bg-[var(--color-brand)]" : "w-2 bg-[var(--border-strong)]"]}></button>
+        <button data-dot={i} type="button" aria-label={t("testimonial.goTo", lang, { n: i + 1 })} class:list={["h-2 rounded-full transition-all duration-300", i === 0 ? "w-6 bg-[var(--color-brand)]" : "w-2 bg-[var(--border-strong)]"]}></button>
       ))}
     </div>
-    <button data-next type="button" aria-label="Next testimonial" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]">
+    <button data-next type="button" aria-label={t("testimonial.next", lang)} class="grid h-10 w-10 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]">
       <Icon name="arrow" size={18} />
     </button>
   </div>

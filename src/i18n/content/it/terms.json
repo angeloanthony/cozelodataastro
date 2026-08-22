@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Termini di Servizio",
+    "description": "I termini che regolano i servizi di Cozelos Data e l'utilizzo di questo sito web."
+  },
+  "breadcrumb": "Termini",
+  "hero": {
+    "eyebrow": "Legale",
+    "title": "Termini di Servizio",
+    "leadTemplate": "Ultimo aggiornamento: {date}"
+  },
+  "updated": "Gennaio 2026",
+  "intro": "Questi termini regolano l'utilizzo del sito web di Cozelos Data e dei servizi che forniamo. Ti invitiamo a leggerli attentamente.",
+  "sections": [
+    { "h": "Accordo", "p": "Incaricando Cozelos Data per i servizi o utilizzando questo sito web, accetti questi termini. I termini specifici del progetto, l'ambito e i prezzi vengono confermati in una proposta scritta o in fattura prima dell'inizio dei lavori, e questi documenti prevalgono laddove aggiungano ulteriori dettagli." },
+    { "h": "Ambito e preventivi", "p": "I preventivi si basano sull'ambito discusso al momento della stima. Cambiamenti significativi all'ambito del progetto possono modificare tempistiche e costi; confermeremo sempre per iscritto qualsiasi modifica prima di procedere." },
+    { "h": "Termini di pagamento", "p": "La maggior parte dei progetti viene fatturata al 50% all'avvio e al 50% al lancio, salvo diverso accordo. I piani di manutenzione vengono fatturati mensilmente. Le fatture sono dovute al ricevimento, salvo diverso termine indicato in fattura." },
+    { "h": "Proprietà del cliente", "p": "Dopo il pagamento finale, sei proprietario di quanto realizziamo per te — il tuo dominio, l'account di hosting, il codice sorgente e i contenuti. Utilizziamo tecnologie standard e neutrali rispetto al fornitore e trasferiamo tutto su richiesta, senza vincoli proprietari." },
+    { "h": "Revisioni", "p": "La nostra realizzazione standard include due cicli completi di revisione del design, oltre a modifiche minori illimitate a testi e asset durante la fase di realizzazione. Il lavoro procede per milestone approvate — il design viene approvato prima del codice, e il codice viene approvato prima del lancio." },
+    { "h": "Garanzie e responsabilità", "p": "Realizziamo il nostro lavoro con cura professionale, ma non possiamo garantire specifici posizionamenti nei motori di ricerca o risultati aziendali, poiché dipendono da fattori al di fuori del nostro controllo. La nostra responsabilità per qualsiasi reclamo è limitata all'importo pagato per i servizi in questione." },
+    { "h": "Manutenzione e supporto", "p": "I piani di manutenzione sono facoltativi e possono essere annullati in qualsiasi momento. Dopo la cancellazione, mantieni la piena proprietà del tuo sito e puoi ospitarlo ovunque. I tempi di risposta del supporto sono descritti nel tuo piano." },
+    { "h": "Risoluzione", "p": "Entrambe le parti possono porre fine a un incarico con preavviso scritto. Sei responsabile del pagamento per il lavoro completato fino alla data di risoluzione, e ti consegneremo tutti i deliverable completati che hai pagato." }
+  ],
+  "contact": {
+    "title": "Domande",
+    "body": "Per qualsiasi domanda su questi termini, scrivi a {email} o chiama {phone}."
+  }
+}

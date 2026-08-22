@@ -90,6 +90,19 @@ export const strings = {
     "card.visitWebsite": "Visit Website",
     "card.viewCaseStudy": "View Case Study",
     "card.imageAltSuffix": "website by Cozelos Data",
+    // Carousel/accessibility chrome (Step 29). "{n}" is a literal placeholder,
+    // NOT resolved by t()'s `vars` substitution here — these three
+    // "goTo*"/"…Slide" strings are read into the client-side carousel script
+    // via a data attribute and the {n} is filled in per-dot at runtime
+    // (PortfolioGrid.astro / FeaturedProjects.astro), the same "never
+    // translate a number, interpolate at render" rule interp() applies to
+    // page content, just applied client-side.
+    "carousel.swipe": "Swipe",
+    "carousel.goToSlide": "Go to slide {n}",
+    "carousel.goToProject": "Go to project {n}",
+    "testimonial.prev": "Previous testimonial",
+    "testimonial.next": "Next testimonial",
+    "testimonial.goTo": "Go to testimonial {n}",
   },
   it: {
     "nav.home": "Home",
@@ -119,6 +132,12 @@ export const strings = {
     "card.visitWebsite": "Visita il sito",
     "card.viewCaseStudy": "Vedi il case study",
     "card.imageAltSuffix": "sito web di Cozelos Data",
+    "carousel.swipe": "Scorri",
+    "carousel.goToSlide": "Vai alla slide {n}",
+    "carousel.goToProject": "Vai al progetto {n}",
+    "testimonial.prev": "Testimonianza precedente",
+    "testimonial.next": "Testimonianza successiva",
+    "testimonial.goTo": "Vai alla testimonianza {n}",
   },
 } as const;
 

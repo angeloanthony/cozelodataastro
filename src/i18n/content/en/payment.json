@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Pay Your Invoice — Cozelos Data",
+    "description": "Securely pay your Cozelos Data invoice. We accept card, ACH, and check, with instant receipts and PCI-compliant processing."
+  },
+  "breadcrumb": "Pay",
+  "hero": {
+    "eyebrow": "Client Payments",
+    "title": "Pay your invoice securely.",
+    "lead": "Already a client? Use the secure link from your invoice email, or reach out and we'll send a fresh payment link right away."
+  },
+  "payment": {
+    "title": "Make a payment",
+    "bodyStripe": "Pay securely through our Stripe-protected checkout. Have your invoice number handy so we can match your payment.",
+    "bodyRequest": "For your security, payment links are generated per invoice. Contact us with your invoice number and we'll send your secure payment link immediately.",
+    "payNow": "Pay Invoice Now",
+    "requestLink": "Request Payment Link",
+    "badges": {
+      "pci": "PCI compliant",
+      "encryption": "256-bit encryption",
+      "receipt": "Instant receipt"
+    }
+  },
+  "steps": {
+    "eyebrow": "How It Works",
+    "title": "Three simple steps.",
+    "items": [
+      { "icon": "mail", "title": "Get your invoice", "body": "We email a detailed invoice with your project reference number and the amount due." },
+      { "icon": "card", "title": "Pay securely", "body": "Use the secure link in your invoice, or contact us for ACH, card, or check options." },
+      { "icon": "check", "title": "Instant confirmation", "body": "You receive a receipt immediately, and we get straight back to work." }
+    ]
+  },
+  "faqSection": {
+    "eyebrow": "Payment Questions",
+    "title": "Good to know."
+  },
+  "faqs": [
+    { "q": "What payment methods do you accept?", "a": "Major credit and debit cards, ACH bank transfer, and business checks. Recurring maintenance plans can be set to auto-pay." },
+    { "q": "Is online payment secure?", "a": "Yes. Payments are processed through a PCI-compliant, encrypted payment processor. We never see or store your full card details." },
+    { "q": "When is payment due?", "a": "Most projects are billed 50% to start and 50% at launch. Maintenance plans are billed monthly. Terms are always confirmed in writing first." },
+    { "q": "Can I get a receipt or W-9?", "a": "Absolutely. Receipts are automatic, and we're happy to provide a W-9 or any documentation your bookkeeping needs." }
+  ],
+  "cta": {
+    "title": "Not a client yet?",
+    "body": "See what we'd build for your business — and what it would cost.",
+    "primaryLabel": "Start a Project",
+    "secondaryLabel": "View Services"
+  }
+}

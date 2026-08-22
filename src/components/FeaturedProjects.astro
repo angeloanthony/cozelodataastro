@@ -13,6 +13,7 @@
  */
 import { projects } from "../data/site";
 import ProjectCard from "./ProjectCard.astro";
+import { getLangFromUrl, t } from "../data/i18n";
 
 interface Props {
   /** Max teaser cards to show. The homepage should stay curated, never exhaustive. */
@@ -23,11 +24,16 @@ const { limit = 5 } = Astro.props;
 // Only featured projects, capped. Add `featured: true` in site.ts to surface a
 // project here; everything else stays on the Portfolio page automatically.
 const list = projects.filter((p) => p.featured).slice(0, limit);
+const lang = getLangFromUrl(Astro.url);
+// The client script below fills "{n}" in per-dot at runtime — see the
+// carousel.* dictionary entries in src/data/i18n.ts.
+const dotLabelTemplate = t("carousel.goToProject", lang);
 ---
 
 <div class="relative">
   <div
     id="featured-carousel"
+    data-dot-label={dotLabelTemplate}
     class="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 -mx-4 px-4 scrollbar-hide md:mx-0 md:grid md:grid-cols-2 md:gap-7 md:overflow-visible md:px-0 md:pb-0"
     style="scrollbar-width: none; -ms-overflow-style: none;"
   >
@@ -52,10 +58,14 @@ const list = projects.filter((p) => p.featured).slice(0, limit);
       return;
     }
 
+    // Localized template with a literal "{n}" placeholder (data/i18n.ts
+    // carousel.goToProject), filled in per-dot here rather than at build time.
+    const dotLabelTemplate = track.dataset.dotLabel || "Go to project {n}";
+
     dotsWrap.innerHTML = cards
       .map(
         (_, i) =>
-          `<button aria-label="Go to project ${i + 1}" class="fdot h-2 w-2 rounded-full transition-all ${
+          `<button aria-label="${dotLabelTemplate.replace("{n}", String(i + 1))}" class="fdot h-2 w-2 rounded-full transition-all ${
             i === 0 ? "bg-[var(--color-brand)] scale-125" : "bg-gray-300 dark:bg-gray-600"
           }"></button>`
       )

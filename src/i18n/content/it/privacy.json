@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Informativa sulla privacy",
+    "description": "Come Cozelos Data raccoglie, utilizza e protegge le tue informazioni."
+  },
+  "breadcrumb": "Privacy",
+  "hero": {
+    "eyebrow": "Legale",
+    "title": "Informativa sulla privacy",
+    "leadTemplate": "Ultimo aggiornamento: {date}"
+  },
+  "updated": "Gennaio 2026",
+  "intro": "Cozelos Data (\"noi\", \"ci\" o \"nostro\") rispetta la tua privacy. Questa informativa spiega quali informazioni raccogliamo e come le utilizziamo quando visiti il nostro sito web o lavori con noi.",
+  "sections": [
+    { "h": "Informazioni che raccogliamo", "p": "Quando ci contatti tramite il nostro sito web, richiedi un preventivo o diventi cliente, potremmo raccogliere il tuo nome, indirizzo email, numero di telefono, ragione sociale ed eventuali dettagli del progetto che scegli di condividere. Raccogliamo inoltre dati analitici standard e anonimizzati, come le pagine visitate e la posizione approssimativa, per migliorare il nostro sito." },
+    { "h": "Come utilizziamo le tue informazioni", "p": "Utilizziamo le tue informazioni esclusivamente per rispondere alle richieste, fornire e supportare i servizi che hai richiesto, inviare fatture e comunicare in merito ai tuoi progetti. Non vendiamo, affittiamo né cediamo a terzi le tue informazioni personali." },
+    { "h": "Cookie e analytics", "p": "Il nostro sito può utilizzare strumenti di analisi rispettosi della privacy per comprendere i pattern di traffico aggregati. Questi strumenti non ti identificano personalmente. Puoi disabilitare i cookie nelle impostazioni del tuo browser in qualsiasi momento, senza perdere l'accesso al sito." },
+    { "h": "Sicurezza dei dati", "p": "Utilizziamo hosting crittografato e workflow di sviluppo sicuri. Le informazioni di pagamento sono gestite esclusivamente da processori terzi conformi PCI — non conserviamo mai i dettagli completi delle carte sui nostri sistemi." },
+    { "h": "Servizi di terze parti", "p": "Potremmo avvalerci di fornitori terzi affidabili per hosting, analytics, email e processo di pagamento. Ognuno opera secondo la propria informativa sulla privacy, e condividiamo solo le informazioni minime necessarie per fornire i nostri servizi." },
+    { "h": "I tuoi diritti", "p": "Puoi richiedere in qualsiasi momento l'accesso, la correzione o la cancellazione delle informazioni personali che conserviamo su di te. Contattaci e risponderemo prontamente." },
+    { "h": "Modifiche a questa informativa", "p": "Potremmo aggiornare questa informativa man mano che le nostre pratiche si evolvono. Le modifiche sostanziali saranno riflesse dalla data di aggiornamento in cima a questa pagina." }
+  ],
+  "contact": {
+    "title": "Contattaci",
+    "body": "Domande su questa informativa? Scrivi a {email} o chiama {phone}."
+  }
+}

@@ -15,6 +15,9 @@ import CompanyPage from "../../components/content/CompanyPage.astro";
 import FaqPage from "../../components/content/FaqPage.astro";
 import ServicesPage from "../../components/content/ServicesPage.astro";
 import PortfolioPage from "../../components/content/PortfolioPage.astro";
+import PaymentPage from "../../components/content/PaymentPage.astro";
+import PrivacyPage from "../../components/content/PrivacyPage.astro";
+import TermsPage from "../../components/content/TermsPage.astro";
 
 const COMPONENTS: Record<string, any> = {
   home: HomePage,
@@ -27,6 +30,9 @@ const COMPONENTS: Record<string, any> = {
   faq: FaqPage,
   services: ServicesPage,
   portfolio: PortfolioPage,
+  payment: PaymentPage,
+  privacy: PrivacyPage,
+  terms: TermsPage,
 };
 
 export function getStaticPaths() {

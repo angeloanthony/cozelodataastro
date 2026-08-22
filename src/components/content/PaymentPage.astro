@@ -1,0 +1,106 @@
+---
+/**
+ * PaymentPage — THE template for /payment/ (Step 29).
+ *
+ * One shared component implements the page; the master route (/payment/) and
+ * the dynamic localized route (/it/payment/) both render it. All copy comes
+ * from src/i18n/content/<locale>/payment.json.
+ *
+ * Payment functionality is NEVER localized: the Stripe Payment Link, phone,
+ * and email all come from src/data/site.ts unchanged in every locale — only
+ * the customer-facing language around them changes. `noindex` is preserved
+ * from the pre-Step-29 page: this is a utility page for existing clients, not
+ * an SEO landing page, in either locale.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../PageHero.astro";
+import Section from "../Section.astro";
+import CTASection from "../CTASection.astro";
+import Icon from "../Icon.astro";
+import { site } from "../../data/site";
+import { getLangFromUrl } from "../../data/i18n";
+import { getPageContent, localizeHref } from "../../i18n/content";
+
+const lang = getLangFromUrl(Astro.url);
+const c = getPageContent<any>("payment", lang);
+
+const breadcrumbs = [
+  { name: "Home", href: localizeHref("/", lang) },
+  { name: c.breadcrumb, href: localizeHref("/payment/", lang) },
+];
+
+// When a Stripe Payment Link is configured, the button pays directly; otherwise
+// it falls back to requesting a per-invoice link by email. Identical logic and
+// destinations to the pre-Step-29 page — only the visible copy is localized.
+const hasStripeLink = site.stripePaymentLink.length > 0;
+---
+<BaseLayout
+  title={c.meta.title}
+  description={c.meta.description}
+  breadcrumbs={breadcrumbs}
+  noindex
+>
+  <PageHero
+    eyebrow={c.hero.eyebrow}
+    title={c.hero.title}
+    lead={c.hero.lead}
+    breadcrumbs={breadcrumbs}
+  />
+
+  <Section class="!pt-4">
+    <div class="reveal mx-auto max-w-2xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 text-center sm:p-12">
+      <span class="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name="lock" size={30} /></span>
+      <h2 class="mt-6 font-display text-2xl font-extrabold tracking-tight">{c.payment.title}</h2>
+      <p class="mx-auto mt-3 max-w-md text-[var(--text-muted)]">{hasStripeLink ? c.payment.bodyStripe : c.payment.bodyRequest}</p>
+      <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        {hasStripeLink ? (
+          <a href={site.stripePaymentLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-7 py-3.5 font-semibold text-white transition-transform hover:-translate-y-0.5"><Icon name="card" size={18} />{c.payment.payNow}</a>
+        ) : (
+          <a href={`${site.emailHref}?subject=Invoice%20Payment`} class="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-7 py-3.5 font-semibold text-white transition-transform hover:-translate-y-0.5"><Icon name="card" size={18} />{c.payment.requestLink}</a>
+        )}
+        <a href={site.phoneHref} class="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--border-strong)] px-7 py-3.5 font-semibold transition-colors hover:border-[var(--color-brand)]"><Icon name="phone" size={18} />{site.phone}</a>
+      </div>
+      <div class="mt-7 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-[var(--text-subtle)]">
+        <span class="inline-flex items-center gap-1.5"><Icon name="shield" size={14} class="text-[var(--color-brand)]" />{c.payment.badges.pci}</span>
+        <span class="inline-flex items-center gap-1.5"><Icon name="lock" size={14} class="text-[var(--color-brand)]" />{c.payment.badges.encryption}</span>
+        <span class="inline-flex items-center gap-1.5"><Icon name="check" size={14} class="text-[var(--color-brand)]" />{c.payment.badges.receipt}</span>
+      </div>
+    </div>
+  </Section>
+
+  <Section eyebrow={c.steps.eyebrow} title={c.steps.title} center>
+    <div class="grid gap-6 md:grid-cols-3">
+      {c.steps.items.map((s: { icon: string; title: string; body: string }, i: number) => (
+        <div data-delay={i * 60} class="reveal rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-7 text-center">
+          <span class="mx-auto grid h-12 w-12 place-items-center rounded-xl bg-[var(--color-brand)]/10 text-[var(--color-brand)]"><Icon name={s.icon} size={22} /></span>
+          <h3 class="mt-4 font-display text-lg font-bold tracking-tight">{s.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{s.body}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+
+  <Section eyebrow={c.faqSection.eyebrow} title={c.faqSection.title} center>
+    <div class="mx-auto max-w-3xl divide-y divide-[var(--border)] overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)]">
+      {c.faqs.map((f: { q: string; a: string }) => (
+        <details class="group" name="pay-faq">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-display text-base font-semibold tracking-tight transition-colors hover:text-[var(--color-brand)] [&::-webkit-details-marker]:hidden">
+            {f.q}
+            <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-[var(--border)] text-[var(--text-muted)] transition-all duration-300 group-open:rotate-45 group-open:border-[var(--color-brand)] group-open:text-[var(--color-brand)]"><span class="text-xl leading-none">+</span></span>
+          </summary>
+          <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-[var(--ease-out-quint)] group-open:grid-rows-[1fr]">
+            <div class="overflow-hidden"><p class="px-6 pb-6 text-[15px] leading-relaxed text-[var(--text-muted)]">{f.a}</p></div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </Section>
+
+  <CTASection
+    title={c.cta.title}
+    body={c.cta.body}
+    primaryLabel={c.cta.primaryLabel}
+    secondaryLabel={c.cta.secondaryLabel}
+    secondaryHref="/services/"
+  />
+</BaseLayout>

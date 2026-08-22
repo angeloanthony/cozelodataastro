@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Paga la tua fattura — Cozelos Data",
+    "description": "Paga in tutta sicurezza la tua fattura Cozelos Data. Accettiamo carta, ACH e assegno, con ricevuta immediata e processo di pagamento conforme PCI."
+  },
+  "breadcrumb": "Pagamento",
+  "hero": {
+    "eyebrow": "Pagamenti clienti",
+    "title": "Paga la tua fattura in sicurezza.",
+    "lead": "Sei già cliente? Usa il link sicuro presente nell'email della tua fattura, oppure contattaci e ti invieremo subito un nuovo link di pagamento."
+  },
+  "payment": {
+    "title": "Effettua un pagamento",
+    "bodyStripe": "Paga in sicurezza tramite il nostro checkout protetto da Stripe. Tieni a portata di mano il numero della tua fattura, così possiamo abbinare il pagamento.",
+    "bodyRequest": "Per la tua sicurezza, i link di pagamento vengono generati per ogni singola fattura. Contattaci con il numero della tua fattura e ti invieremo subito il tuo link di pagamento sicuro.",
+    "payNow": "Paga ora la fattura",
+    "requestLink": "Richiedi link di pagamento",
+    "badges": {
+      "pci": "Conforme PCI",
+      "encryption": "Crittografia a 256 bit",
+      "receipt": "Ricevuta immediata"
+    }
+  },
+  "steps": {
+    "eyebrow": "Come funziona",
+    "title": "Tre semplici passaggi.",
+    "items": [
+      { "icon": "mail", "title": "Ricevi la fattura", "body": "Ti inviamo via email una fattura dettagliata con il numero di riferimento del progetto e l'importo dovuto." },
+      { "icon": "card", "title": "Paga in sicurezza", "body": "Usa il link sicuro presente nella fattura, oppure contattaci per le opzioni ACH, carta o assegno." },
+      { "icon": "check", "title": "Conferma immediata", "body": "Ricevi subito una ricevuta, e noi torniamo immediatamente al lavoro." }
+    ]
+  },
+  "faqSection": {
+    "eyebrow": "Domande sui pagamenti",
+    "title": "Cose utili da sapere."
+  },
+  "faqs": [
+    { "q": "Quali metodi di pagamento accettate?", "a": "Le principali carte di credito e debito, bonifico bancario ACH e assegni aziendali. I piani di manutenzione ricorrenti possono essere impostati con pagamento automatico." },
+    { "q": "Il pagamento online è sicuro?", "a": "Sì. I pagamenti vengono elaborati tramite un processore di pagamento crittografato e conforme PCI. Non vediamo né conserviamo mai i dettagli completi della tua carta." },
+    { "q": "Quando è dovuto il pagamento?", "a": "La maggior parte dei progetti viene fatturata al 50% all'avvio e al 50% al lancio. I piani di manutenzione vengono fatturati mensilmente. I termini vengono sempre confermati per iscritto in anticipo." },
+    { "q": "Posso ottenere una ricevuta o un W-9?", "a": "Assolutamente sì. Le ricevute sono automatiche, e siamo felici di fornire un modulo W-9 o qualsiasi documentazione necessaria alla tua contabilità." }
+  ],
+  "cta": {
+    "title": "Non sei ancora cliente?",
+    "body": "Scopri cosa realizzeremmo per la tua attività — e quanto costerebbe.",
+    "primaryLabel": "Inizia un progetto",
+    "secondaryLabel": "Guarda i servizi"
+  }
+}

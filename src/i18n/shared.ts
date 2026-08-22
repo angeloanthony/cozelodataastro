@@ -52,6 +52,15 @@ import {
 import { getPageContent } from "./content";
 
 export interface SharedContent {
+  /**
+   * Locale-aware Organization/ProfessionalService JSON-LD `description`
+   * (Step 29). Read by Seo.astro instead of the hardcoded `site.description`,
+   * so the graph's description renders in Italian on Italian pages. The
+   * English value is `site.description` verbatim — nothing about the English
+   * output changes; only the Italian locale gains a real translation instead
+   * of silently inheriting the English string.
+   */
+  schemaDescription: string;
   services: Record<string, { title: string; short: string }>;
   /**
    * Presentation of shared business data. The values themselves live in

@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Terms of Service",
+    "description": "The terms that govern Cozelos Data services and use of this website."
+  },
+  "breadcrumb": "Terms",
+  "hero": {
+    "eyebrow": "Legal",
+    "title": "Terms of Service",
+    "leadTemplate": "Last updated: {date}"
+  },
+  "updated": "January 2026",
+  "intro": "These terms govern your use of the Cozelos Data website and the services we provide. Please read them carefully.",
+  "sections": [
+    { "h": "Agreement", "p": "By engaging Cozelos Data for services or using this website, you agree to these terms. Project-specific terms, scope, and pricing are confirmed in a written proposal or invoice before any work begins, and those documents take precedence where they add detail." },
+    { "h": "Scope & estimates", "p": "Quotes are based on the scope discussed at the time of estimate. Significant changes to scope may adjust timeline and cost; we will always confirm any change in writing before proceeding." },
+    { "h": "Payment terms", "p": "Most projects are billed 50% to begin and 50% upon launch unless otherwise agreed. Maintenance plans are billed monthly. Invoices are due on receipt unless a different term is stated on the invoice." },
+    { "h": "Client ownership", "p": "Upon final payment, you own the deliverables we create for you — your domain, hosting account, source code, and content. We use vendor-neutral, standard technologies and will transfer everything to you on request, with no proprietary lock-ins." },
+    { "h": "Revisions", "p": "Our standard build includes two full design rounds plus unlimited minor copy and asset edits during the build phase. Work proceeds in approved milestones — design is approved before code, and code is approved before launch." },
+    { "h": "Warranties & liability", "p": "We deliver our work with professional care, but we cannot guarantee specific search rankings or business outcomes, as these depend on factors outside our control. Our liability for any claim is limited to the amount paid for the services in question." },
+    { "h": "Maintenance & support", "p": "Maintenance plans are optional and may be cancelled at any time. After cancellation you retain full ownership of your site and may host it anywhere. Support response times are described in your plan." },
+    { "h": "Termination", "p": "Either party may end an engagement with written notice. You are responsible for payment for work completed up to the termination date, and we will hand off all completed deliverables you've paid for." }
+  ],
+  "contact": {
+    "title": "Questions",
+    "body": "For anything about these terms, email {email} or call {phone}."
+  }
+}
