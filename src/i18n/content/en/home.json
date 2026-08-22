@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "title": "Web Design & SEO in Vernal, Utah — Custom Sites That Rank",
+    "description": "Premium digital agency in Vernal, Utah. Custom websites, SEO, video, advertising, branding, and automation built to grow your business. Call (435) 219-5120."
+  },
+  "marquee": {
+    "items": ["Tour Operators", "Hotels", "Healthcare", "Pest Control", "Self Storage", "Genealogy", "Luxury Services", "Law Firms", "Restaurants", "Contractors", "Government", "Medicare"],
+    "srLabel": "Industries served"
+  },
+  "hero": {
+    "badge": "Woman-Owned Small Business · Vernal, Utah",
+    "h1Prefix": "We Build Digital Assets That",
+    "h1GradientLead": "Grow",
+    "rotatingWords": ["Businesses.", "Revenues.", "Reach."],
+    "kicker": "Fast. Secure. Built to Rank.",
+    "lead": "We design and engineer complete digital systems that generate leads, build authority, and create long-term growth.",
+    "summaryHtml": "Cozelos Data is a Woman-Owned digital agency in Vernal, Utah building custom websites, SEO, video, and marketing for local and government businesses. Custom projects start at {websiteStartingPrice}, load in under a second, and you own everything — the domain, code, and content.",
+    "trust": {
+      "fromPrice": "From {websiteStartingPrice}",
+      "ownEverything": "You own everything",
+      "noLockIns": "No lock-ins"
+    },
+    "cards": {
+      "lighthouseLabel": "Lighthouse",
+      "performanceValue": "99",
+      "performanceLabel": "Performance",
+      "rankingLabel": "Ranking",
+      "rankingValue": "#1",
+      "rankingCaption": "Local search",
+      "loadTimeLabel": "Load Time",
+      "loadTimeValue": "0.9s",
+      "loadTimeCaption": "First paint",
+      "businessesBadge": "35+ Businesses",
+      "businessesCaption": "Served across Utah"
+    }
+  },
+  "problem": {
+    "line1": "Every day, potential customers search for businesses like yours.",
+    "line2": ["Some find your competitors.", "Some never find you at all."],
+    "bodyHtml": "Your online presence should be your <span class=\"font-semibold text-[var(--text)]\">hardest-working employee</span> — earning trust, generating leads, and creating opportunities 24 hours a day. That&rsquo;s why we build digital systems, not just websites."
+  },
+  "whyDifferent": {
+    "eyebrow": "Why We're Different",
+    "title": "The difference is night and day.",
+    "columnTypical": "Typical Agency",
+    "columnUs": "Cozelos Data",
+    "rows": [
+      { "typical": "Templates", "us": "Custom engineered" },
+      { "typical": "Slow", "us": "Lightning fast" },
+      { "typical": "Plugin dependent", "us": "Lean architecture" },
+      { "typical": "You rent", "us": "You own" },
+      { "typical": "Build and leave", "us": "Long-term partner" },
+      { "typical": "Vanity metrics", "us": "Business results" }
+    ]
+  },
+  "mission": {
+    "label": "Our Mission",
+    "headlineHtml": "We don&rsquo;t simply build websites &mdash; we build <span class=\"text-gradient\">digital assets that grow businesses.</span>",
+    "tagline": "Making businesses stronger. Making life better.",
+    "body": "A website is an expense. A growth platform is an investment — one that earns leads, authority, and revenue for years. We don&rsquo;t build pages that sit online. We build systems that go to work for your business every day."
+  },
+  "quoteBlock": {
+    "quotePlain": "Technology doesn&rsquo;t grow businesses. ",
+    "quoteGradient": "Strategy does.",
+    "caption": "Technology simply makes great strategy scalable."
+  },
+  "philosophy": {
+    "eyebrow": "Our Philosophy",
+    "title": "Four convictions behind every build.",
+    "lead": "Great digital work isn't a pile of features. It's a sequence — each layer earning the next.",
+    "pillars": [
+      { "n": "01", "title": "Beautiful design earns attention.", "body": "First impressions happen in milliseconds. Cinematic, intentional design earns the trust to keep someone reading." },
+      { "n": "02", "title": "Performance keeps visitors engaged.", "body": "Speed is respect. Sub-second loads and seamless motion hold attention instead of testing patience." },
+      { "n": "03", "title": "SEO brings customers.", "body": "Visibility is the difference between a brochure and a pipeline. We build to be found by the people already searching for you." },
+      { "n": "04", "title": "Strategy turns customers into growth.", "body": "Design, speed, and search only matter when aimed at outcomes. Every decision ladders up to revenue." }
+    ],
+    "cta": "See the Cozelos Method"
+  },
+  "whyChooseUs": {
+    "eyebrow": "Why Cozelos Data",
+    "title": "Why ambitious businesses choose us.",
+    "lead": "A website is a cost. A growth platform is a competitive advantage. Here's what sets ours apart.",
+    "reasons": [
+      { "icon": "bolt", "title": "Systems, not pages", "body": "We connect design, SEO, marketing, and automation into one system engineered to compound — not a disconnected set of deliverables." },
+      { "icon": "clock", "title": "Engineered for speed", "body": "Sub-second load times, built by hand. Faster sites rank higher, convert more, and respect every visitor's time." },
+      { "icon": "search", "title": "Built to be found", "body": "SEO and AI-search architecture are baked in from day one, so the right customers find you the moment they're looking." },
+      { "icon": "lock", "title": "You own everything", "body": "Your domain, your code, your content. No proprietary lock-ins, no hostage retainers — just assets that belong to you." },
+      { "icon": "target", "title": "Measured by results", "body": "We report on the outcomes that matter — leads, rankings, and revenue — not vanity metrics that only look good on a slide." },
+      { "icon": "shield", "title": "A long-term partner", "body": "Every milestone documented, every site monitored and improving. We stay invested long after launch day." }
+    ],
+    "cta": "See why businesses choose us"
+  },
+  "stats": {
+    "labels": {
+      "websites": "Websites Built",
+      "years": "Years Experience",
+      "businesses": "Businesses Served",
+      "projects": "Projects Completed"
+    }
+  },
+  "founder": {
+    "eyebrow": "The Leader Behind the Work",
+    "title": "Meet Ellen Cozelos.",
+    "titles": ["Software Engineer", "Cyber Security Specialist", "AI Professional", "Digital Strategist"],
+    "bodyHtml": "More than 20 years supporting <span class=\"font-semibold text-[var(--text)]\">NASA, Department of Defense programs</span>, and commercial organizations — now bringing that same enterprise standard to businesses like yours. The kind of partner who treats your success as the whole point.",
+    "cta": "Learn More",
+    "card": {
+      "name": "Ellen Cozelos",
+      "role": "Founder & Principal",
+      "imageAlt": "Cozelos Data — founded by Ellen Cozelos in Vernal, Utah"
+    }
+  },
+  "services": {
+    "eyebrow": "What We Do",
+    "title": "Six disciplines. One growth system.",
+    "lead": "Six services, one connected system. Each one makes the others work harder — and your business grow faster.",
+    "cta": "Explore all services"
+  },
+  "whoWeWorkWith": {
+    "eyebrow": "Who We Work With",
+    "title": "Built for businesses that take their work seriously.",
+    "lead": "Your industry has its own customers, language, and competition. These are the businesses we help win online every day.",
+    "industries": [
+      { "icon": "doc", "label": "Attorneys" },
+      { "icon": "shield", "label": "Medical Professionals" },
+      { "icon": "building", "label": "Contractors" },
+      { "icon": "pin", "label": "Tourism Companies" },
+      { "icon": "award", "label": "Government" },
+      { "icon": "star", "label": "Small Businesses" },
+      { "icon": "bolt", "label": "Manufacturers" },
+      { "icon": "chat", "label": "Nonprofits" }
+    ]
+  },
+  "process": {
+    "eyebrow": "How We Work",
+    "title": "A proven path from idea to growth.",
+    "lead": "No mystery, no surprises. A clear path from first call to lasting growth.",
+    "steps": [
+      { "n": "01", "title": "Discovery & Strategy", "body": "We start with your business — goals, customers, and the outcomes that define success. Strategy before pixels." },
+      { "n": "02", "title": "Design & Architecture", "body": "Cinematic design meets SEO architecture. We map every page, message, and conversion path before a line of code." },
+      { "n": "03", "title": "Build & Engineer", "body": "Hand-built for speed, security, and scale. No bloated templates — just clean, fast, custom engineering." },
+      { "n": "04", "title": "Launch & Optimize", "body": "We go live with analytics, search indexing, and performance dialed in — then watch the data and refine." },
+      { "n": "05", "title": "Grow & Support", "body": "The asset goes to work. Ongoing SEO, content, and maintenance keep it ranking, converting, and improving." }
+    ]
+  },
+  "results": {
+    "eyebrow": "The Results",
+    "title": "Stronger businesses, by every measure.",
+    "lead": "You don't buy a website. You buy outcomes — the kind that show up in your rankings, your leads, and your bottom line.",
+    "items": ["Faster websites", "Better Google rankings", "More qualified leads", "Higher conversion rates", "Greater credibility", "Lower long-term maintenance"]
+  },
+  "portfolio": {
+    "eyebrow": "Featured Work",
+    "title": "Real businesses. Measurable growth.",
+    "lead": "Utah businesses we moved from invisible to in-demand. See the full stories in the portfolio.",
+    "cta": "See all projects"
+  },
+  "testimonials": {
+    "eyebrow": "Client Voices",
+    "title": "They didn't buy a website. They built an asset.",
+    "reviewPrompt": "Worked with us? Share your experience.",
+    "reviewCta": "Leave a Google Review",
+    "items": [
+      { "quote": "Our old site took eight seconds to load and ranked nowhere. The new build loads instantly and we're finally getting calls from people who found us on Google.", "author": "Tour Operator", "role": "Adventure Tours, Vernal UT" },
+      { "quote": "They didn't just hand us a website — they built a system. Booking, SEO, and the brand all work together. It looks like a company ten times our size.", "author": "Hospitality Owner", "role": "Vernal, UT" },
+      { "quote": "Honest pricing, clear milestones, and they actually answer the phone. We own everything, which mattered to us. Best agency decision we've made.", "author": "Healthcare Practice", "role": "Uintah Basin, UT" },
+      { "quote": "The bilingual genealogy site they built ranks in two languages and reads beautifully. Clients constantly tell us how professional it feels.", "author": "Research Director", "role": "Forebear Find" }
+    ]
+  },
+  "promise": {
+    "eyebrow": "Our Promise",
+    "title": "A few things we'll never compromise on.",
+    "items": ["Every project is custom built", "You own your domain", "You own your code", "You own your content", "No lock-ins", "No shortcuts", "No templates disguised as custom work"],
+    "closing": "We build digital systems designed to serve your business for years."
+  },
+  "investment": {
+    "eyebrow": "The Investment",
+    "title": "An investment in growth — priced for return.",
+    "body": "Custom projects start at {websiteStartingPrice}, with monthly growth plans from {maintenancePrice}. Every engagement begins with a strategy session — credited toward your build.",
+    "cta": "See Investment & Plans"
+  },
+  "faqTeaser": {
+    "eyebrow": "Common Questions",
+    "title": "Everything you actually want to ask.",
+    "lead": "Pricing, timelines, ownership — straight answers before you ever get on a call.",
+    "cta": "Read all 25 FAQs"
+  },
+  "finalCta": {
+    "title": "Let's build your growth platform.",
+    "body": "Tell us about your business. We'll show you exactly what we'd build — and the growth it's engineered to create.",
+    "primaryLabel": "Start Your Project",
+    "secondaryLabel": "See the Work"
+  }
+}

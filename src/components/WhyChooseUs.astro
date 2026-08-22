@@ -2,49 +2,43 @@
 /**
  * WhyChooseUs — the differentiators that separate a Cozelos Data digital asset
  * from a commodity website. Outcome-first, not feature-first.
+ *
+ * Locale-aware (Step 27): props default to the English copy below so this
+ * component is unaffected when no props are passed; HomePage.astro is the
+ * only caller and supplies localized copy from home.json's `whyChooseUs`,
+ * plus `lang` so the CTA's href resolves to /it/why-cozelos-data/.
  */
 import Section from "./Section.astro";
 import Icon from "./Icon.astro";
 import Button from "./Button.astro";
+import { getLangFromUrl } from "../data/i18n";
+import { localizeHref } from "../i18n/content";
 
-const reasons = [
-  {
-    icon: "bolt",
-    title: "Systems, not pages",
-    body: "We connect design, SEO, marketing, and automation into one system engineered to compound — not a disconnected set of deliverables.",
-  },
-  {
-    icon: "clock",
-    title: "Engineered for speed",
-    body: "Sub-second load times, built by hand. Faster sites rank higher, convert more, and respect every visitor's time.",
-  },
-  {
-    icon: "search",
-    title: "Built to be found",
-    body: "SEO and AI-search architecture are baked in from day one, so the right customers find you the moment they're looking.",
-  },
-  {
-    icon: "lock",
-    title: "You own everything",
-    body: "Your domain, your code, your content. No proprietary lock-ins, no hostage retainers — just assets that belong to you.",
-  },
-  {
-    icon: "target",
-    title: "Measured by results",
-    body: "We report on the outcomes that matter — leads, rankings, and revenue — not vanity metrics that only look good on a slide.",
-  },
-  {
-    icon: "shield",
-    title: "A long-term partner",
-    body: "Every milestone documented, every site monitored and improving. We stay invested long after launch day.",
-  },
-];
+interface Reason { icon: string; title: string; body: string }
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  lead?: string;
+  reasons?: Reason[];
+  cta?: string;
+}
+const {
+  eyebrow = "Why Cozelos Data",
+  title = "Why ambitious businesses choose us.",
+  lead = "A website is a cost. A growth platform is a competitive advantage. Here's what sets ours apart.",
+  reasons = [
+    { icon: "bolt", title: "Systems, not pages", body: "We connect design, SEO, marketing, and automation into one system engineered to compound — not a disconnected set of deliverables." },
+    { icon: "clock", title: "Engineered for speed", body: "Sub-second load times, built by hand. Faster sites rank higher, convert more, and respect every visitor's time." },
+    { icon: "search", title: "Built to be found", body: "SEO and AI-search architecture are baked in from day one, so the right customers find you the moment they're looking." },
+    { icon: "lock", title: "You own everything", body: "Your domain, your code, your content. No proprietary lock-ins, no hostage retainers — just assets that belong to you." },
+    { icon: "target", title: "Measured by results", body: "We report on the outcomes that matter — leads, rankings, and revenue — not vanity metrics that only look good on a slide." },
+    { icon: "shield", title: "A long-term partner", body: "Every milestone documented, every site monitored and improving. We stay invested long after launch day." },
+  ],
+  cta = "See why businesses choose us",
+} = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
-<Section
-  eyebrow="Why Cozelos Data"
-  title="Why ambitious businesses choose us."
-  lead="A website is a cost. A growth platform is a competitive advantage. Here's what sets ours apart."
->
+<Section eyebrow={eyebrow} title={title} lead={lead}>
   <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
     {reasons.map((r, i) => (
       <div
@@ -60,6 +54,6 @@ const reasons = [
     ))}
   </div>
   <div class="mt-10 flex justify-center">
-    <Button href="/why-cozelos-data/" variant="secondary" size="lg" icon="arrow">See why businesses choose us</Button>
+    <Button href={localizeHref("/why-cozelos-data/", lang)} variant="secondary" size="lg" icon="arrow">{cta}</Button>
   </div>
 </Section>

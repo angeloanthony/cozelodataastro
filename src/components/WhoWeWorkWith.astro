@@ -2,25 +2,41 @@
 /**
  * WhoWeWorkWith — helps a visitor instantly self-identify with the brand by
  * naming the industries Cozelos Data serves.
+ *
+ * Locale-aware (Step 27): props default to the English copy below so this
+ * component is unaffected when no props are passed; HomePage.astro is the
+ * only caller and supplies localized copy from home.json's `whoWeWorkWith`.
  */
 import Section from "./Section.astro";
 import Icon from "./Icon.astro";
 
-const industries = [
-  { icon: "doc", label: "Attorneys" },
-  { icon: "shield", label: "Medical Professionals" },
-  { icon: "building", label: "Contractors" },
-  { icon: "pin", label: "Tourism Companies" },
-  { icon: "award", label: "Government" },
-  { icon: "star", label: "Small Businesses" },
-  { icon: "bolt", label: "Manufacturers" },
-  { icon: "chat", label: "Nonprofits" },
-];
+interface Industry { icon: string; label: string }
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  lead?: string;
+  industries?: Industry[];
+}
+const {
+  eyebrow = "Who We Work With",
+  title = "Built for businesses that take their work seriously.",
+  lead = "Your industry has its own customers, language, and competition. These are the businesses we help win online every day.",
+  industries = [
+    { icon: "doc", label: "Attorneys" },
+    { icon: "shield", label: "Medical Professionals" },
+    { icon: "building", label: "Contractors" },
+    { icon: "pin", label: "Tourism Companies" },
+    { icon: "award", label: "Government" },
+    { icon: "star", label: "Small Businesses" },
+    { icon: "bolt", label: "Manufacturers" },
+    { icon: "chat", label: "Nonprofits" },
+  ],
+} = Astro.props;
 ---
 <Section
-  eyebrow="Who We Work With"
-  title="Built for businesses that take their work seriously."
-  lead="Your industry has its own customers, language, and competition. These are the businesses we help win online every day."
+  eyebrow={eyebrow}
+  title={title}
+  lead={lead}
 >
   <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
     {industries.map((it, i) => (

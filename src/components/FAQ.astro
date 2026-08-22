@@ -10,14 +10,15 @@
  * pass an explicit id list (defaulting to `homepageFaqIds`) and an id that does
  * not resolve fails the build instead of silently dropping a question.
  *
- * This component only ever renders on index.astro, which has no localized
- * route yet — so it always reads the English master content (Step 21 moved
- * question/answer prose out of site.ts into src/i18n/content/en/faq.json,
- * keyed by the same `id`). If the homepage is localized in a future step,
- * this needs `getLangFromUrl` wired through like FaqPage.astro.
+ * This component only ever renders on index.astro. Locale-aware (Step 27):
+ * resolves the rendering locale from the URL, exactly like FaqPage.astro,
+ * instead of always reading the English master content — question/answer
+ * prose (moved out of site.ts into src/i18n/content/<locale>/faq.json by
+ * Step 21) now falls back to English per-question only where a translation
+ * is genuinely missing, via getPageContent's own locale-with-fallback.
  */
 import { faqs, homepageFaqIds, commercialFacts } from "../data/site";
-import { DEFAULT_LOCALE } from "../data/i18n";
+import { getLangFromUrl } from "../data/i18n";
 import { getPageContent, interp } from "../i18n/content";
 
 interface Props {
@@ -26,7 +27,8 @@ interface Props {
 }
 const { ids = homepageFaqIds } = Astro.props;
 
-const content = getPageContent<any>("faq", DEFAULT_LOCALE);
+const lang = getLangFromUrl(Astro.url);
+const content = getPageContent<any>("faq", lang);
 
 const list = ids.map((id) => {
   const faq = faqs.find((f) => f.id === id);

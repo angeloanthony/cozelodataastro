@@ -5,6 +5,7 @@
  */
 import { getLocalizedContent } from "../../i18n/content";
 import { SLUG_BY_KEY } from "../../i18n/content-pages";
+import HomePage from "../../components/content/HomePage.astro";
 import WhyCozelosDataPage from "../../components/content/WhyCozelosDataPage.astro";
 import ContactPage from "../../components/content/ContactPage.astro";
 import OurApproachPage from "../../components/content/OurApproachPage.astro";
@@ -16,6 +17,7 @@ import ServicesPage from "../../components/content/ServicesPage.astro";
 import PortfolioPage from "../../components/content/PortfolioPage.astro";
 
 const COMPONENTS: Record<string, any> = {
+  home: HomePage,
   "why-cozelos-data": WhyCozelosDataPage,
   contact: ContactPage,
   "our-approach": OurApproachPage,

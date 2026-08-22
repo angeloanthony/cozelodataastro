@@ -2,24 +2,42 @@
 /**
  * WhyDifferent — a head-to-head comparison that frames the typical agency
  * against the Cozelos Data standard. One of the strongest sales tools on the site.
+ *
+ * Locale-aware (Step 27): props default to the English copy below so this
+ * component is unaffected when no props are passed; HomePage.astro is the
+ * only caller and supplies localized copy from home.json's `whyDifferent`.
  */
 import Section from "./Section.astro";
 import Icon from "./Icon.astro";
 
-const rows = [
-  { typical: "Templates", us: "Custom engineered" },
-  { typical: "Slow", us: "Lightning fast" },
-  { typical: "Plugin dependent", us: "Lean architecture" },
-  { typical: "You rent", us: "You own" },
-  { typical: "Build and leave", us: "Long-term partner" },
-  { typical: "Vanity metrics", us: "Business results" },
-];
+interface Row { typical: string; us: string }
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  columnTypical?: string;
+  columnUs?: string;
+  rows?: Row[];
+}
+const {
+  eyebrow = "Why We're Different",
+  title = "The difference is night and day.",
+  columnTypical = "Typical Agency",
+  columnUs = "Cozelos Data",
+  rows = [
+    { typical: "Templates", us: "Custom engineered" },
+    { typical: "Slow", us: "Lightning fast" },
+    { typical: "Plugin dependent", us: "Lean architecture" },
+    { typical: "You rent", us: "You own" },
+    { typical: "Build and leave", us: "Long-term partner" },
+    { typical: "Vanity metrics", us: "Business results" },
+  ],
+} = Astro.props;
 ---
-<Section eyebrow="Why We're Different" title="The difference is night and day." center>
+<Section eyebrow={eyebrow} title={title} center>
   <div class="reveal mx-auto max-w-3xl overflow-hidden rounded-3xl border border-[var(--border)]">
     <div class="grid grid-cols-2 bg-[var(--surface-3)] text-xs font-bold uppercase tracking-[0.14em] sm:text-sm">
-      <div class="px-5 py-4 text-[var(--text-subtle)] sm:px-6">Typical Agency</div>
-      <div class="px-5 py-4 text-[var(--color-brand)] sm:px-6">Cozelos Data</div>
+      <div class="px-5 py-4 text-[var(--text-subtle)] sm:px-6">{columnTypical}</div>
+      <div class="px-5 py-4 text-[var(--color-brand)] sm:px-6">{columnUs}</div>
     </div>
     <div class="divide-y divide-[var(--border)]">
       {rows.map((r) => (

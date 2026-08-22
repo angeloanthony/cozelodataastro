@@ -2,41 +2,37 @@
 /**
  * ProcessSteps — the engagement journey from first call to ongoing growth,
  * shown as a connected five-step path.
+ *
+ * Locale-aware (Step 27): props default to the English copy below so this
+ * component is unaffected when no props are passed; HomePage.astro is the
+ * only caller and supplies localized copy from home.json's `process`.
  */
 import Section from "./Section.astro";
 
-const steps = [
-  {
-    n: "01",
-    title: "Discovery & Strategy",
-    body: "We start with your business — goals, customers, and the outcomes that define success. Strategy before pixels.",
-  },
-  {
-    n: "02",
-    title: "Design & Architecture",
-    body: "Cinematic design meets SEO architecture. We map every page, message, and conversion path before a line of code.",
-  },
-  {
-    n: "03",
-    title: "Build & Engineer",
-    body: "Hand-built for speed, security, and scale. No bloated templates — just clean, fast, custom engineering.",
-  },
-  {
-    n: "04",
-    title: "Launch & Optimize",
-    body: "We go live with analytics, search indexing, and performance dialed in — then watch the data and refine.",
-  },
-  {
-    n: "05",
-    title: "Grow & Support",
-    body: "The asset goes to work. Ongoing SEO, content, and maintenance keep it ranking, converting, and improving.",
-  },
-];
+interface Step { n: string; title: string; body: string }
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  lead?: string;
+  steps?: Step[];
+}
+const {
+  eyebrow = "How We Work",
+  title = "A proven path from idea to growth.",
+  lead = "No mystery, no surprises. A clear path from first call to lasting growth.",
+  steps = [
+    { n: "01", title: "Discovery & Strategy", body: "We start with your business — goals, customers, and the outcomes that define success. Strategy before pixels." },
+    { n: "02", title: "Design & Architecture", body: "Cinematic design meets SEO architecture. We map every page, message, and conversion path before a line of code." },
+    { n: "03", title: "Build & Engineer", body: "Hand-built for speed, security, and scale. No bloated templates — just clean, fast, custom engineering." },
+    { n: "04", title: "Launch & Optimize", body: "We go live with analytics, search indexing, and performance dialed in — then watch the data and refine." },
+    { n: "05", title: "Grow & Support", body: "The asset goes to work. Ongoing SEO, content, and maintenance keep it ranking, converting, and improving." },
+  ],
+} = Astro.props;
 ---
 <Section
-  eyebrow="How We Work"
-  title="A proven path from idea to growth."
-  lead="No mystery, no surprises. A clear path from first call to lasting growth."
+  eyebrow={eyebrow}
+  title={title}
+  lead={lead}
 >
   <ol class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
     {steps.map((s, i) => (

@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "title": "Web Design & SEO a Vernal, Utah — Siti su Misura Pensati per il Posizionamento",
+    "description": "Agenzia digitale premium a Vernal, Utah. Siti web su misura, SEO, video, pubblicità, branding e automazione, pensati per far crescere la tua attività. Chiamaci al (435) 219-5120."
+  },
+  "marquee": {
+    "items": ["Tour Operator", "Hotel", "Sanità", "Disinfestazione", "Self Storage", "Genealogia", "Servizi di Lusso", "Studi Legali", "Ristoranti", "Imprese Edili", "Settore Pubblico", "Medicare"],
+    "srLabel": "Settori serviti"
+  },
+  "hero": {
+    "badge": "Woman-Owned Small Business · Vernal, Utah",
+    "h1Prefix": "Costruiamo asset digitali pensati per",
+    "h1GradientLead": "far crescere",
+    "rotatingWords": ["Aziende.", "Ricavi.", "Portata."],
+    "kicker": "Veloce. Sicuro. Pensato per il posizionamento.",
+    "lead": "Progettiamo e realizziamo sistemi digitali completi che generano lead, costruiscono autorevolezza e creano crescita duratura.",
+    "summaryHtml": "Cozelos Data è un'agenzia digitale Woman-Owned a Vernal, Utah, che realizza siti web su misura, SEO, video e marketing per imprese locali e per il settore pubblico. I progetti su misura partono da {websiteStartingPrice}, si caricano in meno di un secondo e tutto resta tuo — dominio, codice e contenuti.",
+    "trust": {
+      "fromPrice": "A partire da {websiteStartingPrice}",
+      "ownEverything": "Tutto resta tuo",
+      "noLockIns": "Nessun vincolo"
+    },
+    "cards": {
+      "lighthouseLabel": "Lighthouse",
+      "performanceValue": "99",
+      "performanceLabel": "Prestazioni",
+      "rankingLabel": "Posizionamento",
+      "rankingValue": "#1",
+      "rankingCaption": "Ricerca locale",
+      "loadTimeLabel": "Tempo di Caricamento",
+      "loadTimeValue": "0.9s",
+      "loadTimeCaption": "Primo rendering",
+      "businessesBadge": "35+ Aziende",
+      "businessesCaption": "Servite in tutto lo Utah"
+    }
+  },
+  "problem": {
+    "line1": "Ogni giorno, potenziali clienti cercano aziende come la tua.",
+    "line2": ["Alcuni trovano i tuoi concorrenti.", "Altri non ti trovano affatto."],
+    "bodyHtml": "La tua presenza online dovrebbe essere il tuo <span class=\"font-semibold text-[var(--text)]\">dipendente più instancabile</span> — capace di guadagnare fiducia, generare lead e creare opportunità 24 ore su 24. Per questo costruiamo sistemi digitali, non semplici siti web."
+  },
+  "whyDifferent": {
+    "eyebrow": "Perché Siamo Diversi",
+    "title": "La differenza è netta.",
+    "columnTypical": "Agenzia Tipica",
+    "columnUs": "Cozelos Data",
+    "rows": [
+      { "typical": "Template predefiniti", "us": "Costruito su misura" },
+      { "typical": "Lento", "us": "Fulmineo" },
+      { "typical": "Dipendente da plugin", "us": "Architettura snella" },
+      { "typical": "Tu affitti", "us": "Tu possiedi" },
+      { "typical": "Costruiscono e se ne vanno", "us": "Partner di lungo periodo" },
+      { "typical": "Metriche di vanità", "us": "Risultati concreti" }
+    ]
+  },
+  "mission": {
+    "label": "La Nostra Missione",
+    "headlineHtml": "Non ci limitiamo a costruire siti web &mdash; costruiamo <span class=\"text-gradient\">asset digitali che fanno crescere le imprese.</span>",
+    "tagline": "Making businesses stronger. Making life better.",
+    "body": "Un sito web è una spesa. Una piattaforma di crescita è un investimento — uno che genera lead, autorevolezza e ricavi per anni. Non costruiamo pagine che restano ferme online. Costruiamo sistemi che lavorano ogni giorno per la tua attività."
+  },
+  "quoteBlock": {
+    "quotePlain": "La tecnologia non fa crescere le aziende. ",
+    "quoteGradient": "La strategia sì.",
+    "caption": "La tecnologia si limita a rendere scalabile una grande strategia."
+  },
+  "philosophy": {
+    "eyebrow": "La Nostra Filosofia",
+    "title": "Quattro convinzioni dietro ogni progetto.",
+    "lead": "Un buon lavoro digitale non è un insieme di funzionalità. È una sequenza — ogni livello conquista il successivo.",
+    "pillars": [
+      { "n": "01", "title": "Un design curato conquista l'attenzione.", "body": "Le prime impressioni si formano in millisecondi. Un design cinematografico e intenzionale guadagna la fiducia necessaria a farsi leggere." },
+      { "n": "02", "title": "Le prestazioni mantengono i visitatori coinvolti.", "body": "La velocità è rispetto. Caricamenti sotto il secondo e animazioni fluide catturano l'attenzione invece di mettere alla prova la pazienza." },
+      { "n": "03", "title": "La SEO porta clienti.", "body": "La visibilità è la differenza tra una brochure e una pipeline. Costruiamo per essere trovati da chi ti sta già cercando." },
+      { "n": "04", "title": "La strategia trasforma i clienti in crescita.", "body": "Design, velocità e ricerca contano solo se puntano a un risultato. Ogni decisione si traduce in ricavi." }
+    ],
+    "cta": "Scopri il Metodo Cozelos"
+  },
+  "whyChooseUs": {
+    "eyebrow": "Perché Cozelos Data",
+    "title": "Perché le aziende ambiziose scelgono noi.",
+    "lead": "Un sito web è un costo. Una piattaforma di crescita è un vantaggio competitivo. Ecco cosa ci distingue.",
+    "reasons": [
+      { "icon": "bolt", "title": "Sistemi, non pagine", "body": "Colleghiamo design, SEO, marketing e automazione in un unico sistema pensato per crescere nel tempo — non un insieme scollegato di deliverable." },
+      { "icon": "clock", "title": "Progettati per la velocità", "body": "Tempi di caricamento sotto il secondo, costruiti a mano. I siti più veloci si posizionano meglio, convertono di più e rispettano il tempo di ogni visitatore." },
+      { "icon": "search", "title": "Costruiti per essere trovati", "body": "Architettura SEO e per la ricerca AI integrate fin dal primo giorno, così i clienti giusti ti trovano nel momento in cui ti stanno cercando." },
+      { "icon": "lock", "title": "Tutto resta tuo", "body": "Il tuo dominio, il tuo codice, i tuoi contenuti. Nessun vincolo proprietario, nessun canone che ti tiene in ostaggio — solo asset che ti appartengono." },
+      { "icon": "target", "title": "Misurati sui risultati", "body": "Rendicontiamo i risultati che contano — lead, posizionamento e ricavi — non metriche di vanità che fanno bella figura solo su una slide." },
+      { "icon": "shield", "title": "Un partner di lungo periodo", "body": "Ogni traguardo documentato, ogni sito monitorato e migliorato. Restiamo coinvolti ben oltre il lancio." }
+    ],
+    "cta": "Scopri perché le aziende scelgono noi"
+  },
+  "stats": {
+    "labels": {
+      "websites": "Siti Realizzati",
+      "years": "Anni di Esperienza",
+      "businesses": "Aziende Servite",
+      "projects": "Progetti Completati"
+    }
+  },
+  "founder": {
+    "eyebrow": "La Guida Dietro il Lavoro",
+    "title": "Conosci Ellen Cozelos.",
+    "titles": ["Ingegnere del Software", "Specialista di Cybersecurity", "Esperta di AI", "Strategist Digitale"],
+    "bodyHtml": "Oltre 20 anni a supporto di <span class=\"font-semibold text-[var(--text)]\">programmi NASA e Department of Defense</span>, e di organizzazioni commerciali — portando oggi lo stesso standard enterprise alle imprese come la tua. Il tipo di partner che considera il tuo successo come l'unico obiettivo che conta.",
+    "cta": "Scopri di più",
+    "card": {
+      "name": "Ellen Cozelos",
+      "role": "Fondatrice e Principal",
+      "imageAlt": "Cozelos Data — fondata da Ellen Cozelos a Vernal, Utah"
+    }
+  },
+  "services": {
+    "eyebrow": "Cosa Facciamo",
+    "title": "Sei discipline. Un unico sistema di crescita.",
+    "lead": "Sei servizi, un sistema connesso. Ognuno rafforza gli altri — e fa crescere la tua attività più velocemente.",
+    "cta": "Scopri tutti i servizi"
+  },
+  "whoWeWorkWith": {
+    "eyebrow": "Con Chi Lavoriamo",
+    "title": "Pensato per le aziende che prendono sul serio il proprio lavoro.",
+    "lead": "Il tuo settore ha i suoi clienti, il suo linguaggio e la sua concorrenza. Queste sono le aziende che aiutiamo a vincere online ogni giorno.",
+    "industries": [
+      { "icon": "doc", "label": "Studi Legali" },
+      { "icon": "shield", "label": "Professionisti Sanitari" },
+      { "icon": "building", "label": "Imprese Edili" },
+      { "icon": "pin", "label": "Aziende del Turismo" },
+      { "icon": "award", "label": "Settore Pubblico" },
+      { "icon": "star", "label": "Piccole Imprese" },
+      { "icon": "bolt", "label": "Produttori" },
+      { "icon": "chat", "label": "Organizzazioni No-Profit" }
+    ]
+  },
+  "process": {
+    "eyebrow": "Come Lavoriamo",
+    "title": "Un percorso collaudato dall'idea alla crescita.",
+    "lead": "Nessun mistero, nessuna sorpresa. Un percorso chiaro dalla prima chiamata a una crescita duratura.",
+    "steps": [
+      { "n": "01", "title": "Scoperta e Strategia", "body": "Partiamo dalla tua attività — obiettivi, clienti e i risultati che definiscono il successo. Strategia prima dei pixel." },
+      { "n": "02", "title": "Design e Architettura", "body": "Design cinematografico incontra architettura SEO. Mappiamo ogni pagina, messaggio e percorso di conversione prima di scrivere una riga di codice." },
+      { "n": "03", "title": "Costruzione e Ingegneria", "body": "Costruito a mano per velocità, sicurezza e scalabilità. Nessun template appesantito — solo ingegneria pulita, veloce e su misura." },
+      { "n": "04", "title": "Lancio e Ottimizzazione", "body": "Andiamo online con analytics, indicizzazione e prestazioni già calibrate — poi osserviamo i dati e perfezioniamo." },
+      { "n": "05", "title": "Crescita e Supporto", "body": "L'asset si mette al lavoro. SEO, contenuti e manutenzione continui lo mantengono in crescita, in conversione e in miglioramento." }
+    ]
+  },
+  "results": {
+    "eyebrow": "I Risultati",
+    "title": "Aziende più forti, in ogni misura.",
+    "lead": "Non compri un sito web. Compri risultati — quelli che si vedono nel tuo posizionamento, nei tuoi lead e nel tuo fatturato.",
+    "items": ["Siti più veloci", "Migliore posizionamento su Google", "Più lead qualificati", "Tassi di conversione più alti", "Maggiore credibilità", "Manutenzione più economica nel tempo"]
+  },
+  "portfolio": {
+    "eyebrow": "Lavori in Evidenza",
+    "title": "Aziende reali. Crescita misurabile.",
+    "lead": "Aziende dello Utah che abbiamo portato dall'invisibilità alla richiesta. Scopri le storie complete nel portfolio.",
+    "cta": "Vedi tutti i progetti"
+  },
+  "testimonials": {
+    "eyebrow": "La Voce dei Clienti",
+    "title": "Non hanno comprato un sito web. Hanno costruito un asset.",
+    "reviewPrompt": "Hai lavorato con noi? Condividi la tua esperienza.",
+    "reviewCta": "Lascia una Recensione su Google",
+    "items": [
+      { "quote": "Il nostro vecchio sito impiegava otto secondi a caricarsi e non si posizionava da nessuna parte. Il nuovo sito si carica all'istante e finalmente riceviamo chiamate da persone che ci hanno trovato su Google.", "author": "Tour Operator", "role": "Adventure Tours, Vernal UT" },
+      { "quote": "Non ci hanno semplicemente consegnato un sito web — hanno costruito un sistema. Prenotazioni, SEO e brand lavorano insieme. Sembra il sito di un'azienda dieci volte più grande della nostra.", "author": "Titolare Struttura Ricettiva", "role": "Vernal, UT" },
+      { "quote": "Prezzi onesti, milestone chiare, e rispondono davvero al telefono. Per noi era importante possedere tutto. La migliore decisione che abbiamo preso scegliendo un'agenzia.", "author": "Studio Sanitario", "role": "Uintah Basin, UT" },
+      { "quote": "Il sito di genealogia bilingue che hanno costruito si posiziona in due lingue ed è bellissimo da leggere. I clienti ci dicono continuamente quanto sia professionale.", "author": "Direttrice Ricerca", "role": "Forebear Find" }
+    ]
+  },
+  "promise": {
+    "eyebrow": "La Nostra Promessa",
+    "title": "Alcune cose su cui non scenderemo mai a compromessi.",
+    "items": ["Ogni progetto è costruito su misura", "Il dominio è tuo", "Il codice è tuo", "I contenuti sono tuoi", "Nessun vincolo", "Nessuna scorciatoia", "Nessun template travestito da lavoro su misura"],
+    "closing": "Costruiamo sistemi digitali pensati per servire la tua attività per anni."
+  },
+  "investment": {
+    "eyebrow": "L'Investimento",
+    "title": "Un investimento in crescita — con un prezzo pensato per il ritorno.",
+    "body": "I progetti su misura partono da {websiteStartingPrice}, con piani mensili di crescita a partire da {maintenancePrice}. Ogni collaborazione inizia con una sessione strategica — il cui costo viene detratto dal progetto.",
+    "cta": "Scopri Investimento e Piani"
+  },
+  "faqTeaser": {
+    "eyebrow": "Domande Frequenti",
+    "title": "Tutto quello che vuoi davvero chiedere.",
+    "lead": "Prezzi, tempistiche, proprietà — risposte dirette prima ancora di sentirci al telefono.",
+    "cta": "Leggi tutte le 25 FAQ"
+  },
+  "finalCta": {
+    "title": "Costruiamo la tua piattaforma di crescita.",
+    "body": "Raccontaci della tua attività. Ti mostreremo esattamente cosa costruiremmo — e la crescita che è pensata per generare.",
+    "primaryLabel": "Inizia il Tuo Progetto",
+    "secondaryLabel": "Guarda i Lavori"
+  }
+}

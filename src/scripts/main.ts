@@ -160,7 +160,22 @@ function initWordRotator() {
     el.setAttribute("data-word-rotate-init", "true");
 
     // Words include the trailing period (so it hugs the word at every length).
-    const words = ["Businesses.", "Revenues.", "Reach."];
+    // Localized (Step 27): Hero.astro serializes the locale's rotating words
+    // onto data-words (JSON array) since this plain DOM script has no access
+    // to the i18n content system. Falls back to the English default so any
+    // other caller that doesn't set the attribute keeps working unchanged.
+    let words = ["Businesses.", "Revenues.", "Reach."];
+    try {
+      const raw = el.dataset.words;
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed) && parsed.every((w) => typeof w === "string") && parsed.length) {
+          words = parsed;
+        }
+      }
+    } catch {
+      // Malformed/missing attribute — keep the English default above.
+    }
 
     // Reserve a fixed width on the parent box equal to the widest word, so the
     // headline never reflows as the word changes length. Measured live (not

@@ -3,9 +3,21 @@
  * Testimonials — an accessible, auto-advancing carousel with manual controls
  * and dot indicators. Pauses on hover/focus. All logic is vanilla and
  * re-initializes after View Transitions.
+ *
+ * Locale-aware (Step 27): `items` defaults to site.ts's English `testimonials`
+ * so this component is unaffected when no prop is passed; HomePage.astro is
+ * the only caller and supplies localized copy from home.json's
+ * `testimonials.items`. `author`/`role` here are anonymized descriptors
+ * ("Tour Operator", "Vernal, UT"), not real client names, except "Forebear
+ * Find" — an existing portfolio project name — which stays untranslated.
  */
-import { testimonials } from "../data/site";
+import { testimonials as defaultTestimonials, type Testimonial } from "../data/site";
 import Icon from "./Icon.astro";
+
+interface Props {
+  items?: Testimonial[];
+}
+const { items: testimonials = defaultTestimonials } = Astro.props;
 ---
 <div class="reveal relative mx-auto max-w-3xl" data-testimonials>
   <div class="relative overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-12">

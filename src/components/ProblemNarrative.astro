@@ -2,22 +2,32 @@
 /**
  * ProblemNarrative — the emotional opening of the homepage story. Frames the
  * stakes from the customer's point of view before any pitch.
+ *
+ * Locale-aware (Step 27): props default to the English copy below so this
+ * component is unaffected when no props are passed; HomePage.astro is the
+ * only caller and supplies localized copy from home.json's `problem`.
  */
 import Section from "./Section.astro";
+
+interface Props {
+  line1?: string;
+  line2?: [string, string];
+  bodyHtml?: string;
+}
+const {
+  line1 = "Every day, potential customers search for businesses like yours.",
+  line2 = ["Some find your competitors.", "Some never find you at all."],
+  bodyHtml = 'Your online presence should be your <span class="font-semibold text-[var(--text)]">hardest-working employee</span> — earning trust, generating leads, and creating opportunities 24 hours a day. That&rsquo;s why we build digital systems, not just websites.',
+} = Astro.props;
 ---
 <Section class="!py-16">
   <div class="reveal mx-auto max-w-3xl text-center">
     <p class="font-display text-2xl font-extrabold leading-[1.25] tracking-tight sm:text-3xl">
-      Every day, potential customers search for businesses like yours.
+      {line1}
     </p>
     <p class="mt-4 font-display text-xl font-semibold leading-snug text-[var(--text-muted)] sm:text-2xl">
-      Some find your competitors.<br />Some never find you at all.
+      {line2[0]}<br />{line2[1]}
     </p>
-    <p class="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]">
-      Your online presence should be your
-      <span class="font-semibold text-[var(--text)]">hardest-working employee</span> —
-      earning trust, generating leads, and creating opportunities 24 hours a day.
-      That&rsquo;s why we build digital systems, not just websites.
-    </p>
+    <p class="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-[var(--text-muted)]" set:html={bodyHtml} />
   </div>
 </Section>

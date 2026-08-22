@@ -1,0 +1,255 @@
+---
+/**
+ * HomePage — THE template for `/` (playbook §6.5, extended for Step 27).
+ *
+ * One shared component implements the page; the master route (`/`) and the
+ * dynamic localized route (`/it/`) both render it. All page-specific copy
+ * comes from src/i18n/content/<locale>/home.json. Content that is shared
+ * across pages (service titles, project summaries, CTA defaults) is read via
+ * i18n/shared.ts instead of being duplicated here, exactly like every other
+ * content page.
+ *
+ * Ownership decisions made during the Step 27 audit, recorded here because
+ * they are the non-obvious part (mirrors CompanyPage.astro's own note):
+ *   ServicesGrid / FeaturedProjects+ProjectCard / CTASection
+ *               already resolve their own locale from Astro.url (Steps 24/25
+ *               and the pre-existing CTASection). They render here unchanged
+ *               — home.json owns only the Section eyebrow/title/lead/CTA text
+ *               that wraps them, never the service/project data itself.
+ *   FAQ         Step 21 left the homepage FAQ teaser hardcoded to English
+ *               because the homepage had no localized route. FAQ.astro now
+ *               resolves its own locale the same way; the five FAQ ids/order
+ *               (`homepageFaqIds`) are untouched, and no second Italian FAQ
+ *               source was created — it/faq.json is the only source.
+ *   stats       site.ts's `stats` keeps owning the numbers (identity/data);
+ *               home.json's `stats.labels` supplies the localized label,
+ *               joined by the new stable `Stat.id`, never by array position.
+ *   tagline     the on-page "Making businesses stronger..." line is its own
+ *               home.json field, not a read of shared.json's footer.tagline —
+ *               the two strings differ only in capitalization, and reusing
+ *               the shared one would have silently changed this page's
+ *               English casing. See MissionStatement.astro's doc comment.
+ *   brand slogan "Making Businesses Stronger. Making Life Better." inside
+ *               Hero's badge row is glossary-pinned (never translated
+ *               anywhere on the site) and stays a literal in Hero.astro.
+ */
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../Hero.astro";
+import Marquee from "../Marquee.astro";
+import Section from "../Section.astro";
+import ProblemNarrative from "../ProblemNarrative.astro";
+import WhyDifferent from "../WhyDifferent.astro";
+import MissionStatement from "../MissionStatement.astro";
+import Philosophy from "../Philosophy.astro";
+import WhyChooseUs from "../WhyChooseUs.astro";
+import FounderTeaser from "../FounderTeaser.astro";
+import ServicesGrid from "../ServicesGrid.astro";
+import WhoWeWorkWith from "../WhoWeWorkWith.astro";
+import ProcessSteps from "../ProcessSteps.astro";
+import Results from "../Results.astro";
+import FeaturedProjects from "../FeaturedProjects.astro";
+import AnimatedCounter from "../AnimatedCounter.astro";
+import Testimonials from "../Testimonials.astro";
+import OurPromise from "../OurPromise.astro";
+import FAQ from "../FAQ.astro";
+import CTASection from "../CTASection.astro";
+import Button from "../Button.astro";
+import { stats, site, commercialFacts } from "../../data/site";
+import { getLangFromUrl } from "../../data/i18n";
+import { getPageContent, localizeHref, interp } from "../../i18n/content";
+
+const lang = getLangFromUrl(Astro.url);
+const c = getPageContent<any>("home", lang);
+---
+<BaseLayout title={c.meta.title} description={c.meta.description}>
+  <Hero
+    badge={c.hero.badge}
+    h1Prefix={c.hero.h1Prefix}
+    h1GradientLead={c.hero.h1GradientLead}
+    rotatingWords={c.hero.rotatingWords}
+    kicker={c.hero.kicker}
+    lead={c.hero.lead}
+    summaryHtml={c.hero.summaryHtml}
+    trust={c.hero.trust}
+    cards={c.hero.cards}
+  />
+
+  <!-- Infinite scrolling band of industries we serve -->
+  <Marquee items={c.marquee.items} srLabel={c.marquee.srLabel} />
+
+  <!-- PROBLEM — the emotional opening -->
+  <ProblemNarrative line1={c.problem.line1} line2={c.problem.line2} bodyHtml={c.problem.bodyHtml} />
+
+  <!-- WHY BUSINESSES STRUGGLE — typical agency vs. Cozelos -->
+  <WhyDifferent
+    eyebrow={c.whyDifferent.eyebrow}
+    title={c.whyDifferent.title}
+    columnTypical={c.whyDifferent.columnTypical}
+    columnUs={c.whyDifferent.columnUs}
+    rows={c.whyDifferent.rows}
+  />
+
+  <!-- OUR PHILOSOPHY — mission + the core belief -->
+  <MissionStatement label={c.mission.label} headlineHtml={c.mission.headlineHtml} tagline={c.mission.tagline} body={c.mission.body} />
+
+  <Section class="!pt-4 !pb-16">
+    <figure class="reveal mx-auto max-w-3xl text-center">
+      <blockquote class="font-display text-3xl font-extrabold leading-[1.15] tracking-tight sm:text-4xl">
+        {c.quoteBlock.quotePlain}<span class="text-gradient">{c.quoteBlock.quoteGradient}</span>
+      </blockquote>
+      <figcaption class="mt-5 text-lg text-[var(--text-muted)]">
+        {c.quoteBlock.caption}
+      </figcaption>
+    </figure>
+  </Section>
+
+  <!-- OUR APPROACH — the four-layer philosophy + why us -->
+  <Philosophy
+    eyebrow={c.philosophy.eyebrow}
+    title={c.philosophy.title}
+    lead={c.philosophy.lead}
+    pillars={c.philosophy.pillars}
+    cta={c.philosophy.cta}
+  />
+  <WhyChooseUs
+    eyebrow={c.whyChooseUs.eyebrow}
+    title={c.whyChooseUs.title}
+    lead={c.whyChooseUs.lead}
+    reasons={c.whyChooseUs.reasons}
+    cta={c.whyChooseUs.cta}
+  />
+
+  <!-- PROOF — numbers + the leader behind the work -->
+  <Section class="!py-16">
+    <div class="reveal grid grid-cols-2 gap-8 rounded-[var(--radius-xl2)] border border-[var(--border)] bg-[var(--surface-2)] p-10 sm:gap-12 lg:grid-cols-4">
+      {stats.map((s) => (
+        <AnimatedCounter value={s.value} suffix={s.suffix} label={c.stats.labels[s.id] ?? s.label} class="reveal" />
+      ))}
+    </div>
+  </Section>
+
+  <FounderTeaser
+    eyebrow={c.founder.eyebrow}
+    title={c.founder.title}
+    titles={c.founder.titles}
+    bodyHtml={c.founder.bodyHtml}
+    cta={c.founder.cta}
+    card={c.founder.card}
+  />
+
+  <!-- SERVICES -->
+  <Section
+    eyebrow={c.services.eyebrow}
+    title={c.services.title}
+    lead={c.services.lead}
+  >
+    <ServicesGrid />
+    <div class="mt-10 flex justify-center">
+      <Button href={localizeHref("/services/", lang)} variant="secondary" size="lg" icon="arrow">{c.services.cta}</Button>
+    </div>
+  </Section>
+
+  <!-- WHO WE WORK WITH -->
+  <WhoWeWorkWith
+    eyebrow={c.whoWeWorkWith.eyebrow}
+    title={c.whoWeWorkWith.title}
+    lead={c.whoWeWorkWith.lead}
+    industries={c.whoWeWorkWith.industries}
+  />
+
+  <!-- PROCESS -->
+  <ProcessSteps
+    eyebrow={c.process.eyebrow}
+    title={c.process.title}
+    lead={c.process.lead}
+    steps={c.process.steps}
+  />
+
+  <!-- RESULTS -->
+  <Results
+    eyebrow={c.results.eyebrow}
+    title={c.results.title}
+    lead={c.results.lead}
+    items={c.results.items}
+  />
+
+  <!-- PROOF — featured work -->
+  <Section
+    eyebrow={c.portfolio.eyebrow}
+    title={c.portfolio.title}
+    lead={c.portfolio.lead}
+  >
+    <FeaturedProjects />
+    <div class="mt-10 flex justify-center">
+      <Button href={localizeHref("/portfolio/", lang)} variant="ghost" icon="arrow">{c.portfolio.cta}</Button>
+    </div>
+  </Section>
+
+  <!-- TESTIMONIALS -->
+  <Section
+    eyebrow={c.testimonials.eyebrow}
+    title={c.testimonials.title}
+    center
+  >
+    <Testimonials items={c.testimonials.items} />
+    <div class="reveal mt-10 flex flex-col items-center gap-3">
+      <p class="text-sm text-[var(--text-muted)]">{c.testimonials.reviewPrompt}</p>
+      <Button href={site.googleReviewHref} variant="secondary" icon="star" external class="animate-attention">
+        <span class="text-[var(--color-brand)]" aria-hidden="true">★★★★★</span>
+        {c.testimonials.reviewCta}
+      </Button>
+    </div>
+  </Section>
+
+  <!-- TRUST — our promise -->
+  <OurPromise eyebrow={c.promise.eyebrow} title={c.promise.title} items={c.promise.items} closing={c.promise.closing} />
+
+  <!-- INVESTMENT -->
+  <Section class="!py-16">
+    <div class="reveal mx-auto max-w-3xl rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 text-center sm:p-12">
+      <span class="text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand)]">{c.investment.eyebrow}</span>
+      <h2 class="mt-4 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{c.investment.title}</h2>
+      <p class="mx-auto mt-3 max-w-xl text-lg leading-relaxed text-[var(--text-muted)]">
+        {interp(c.investment.body, commercialFacts)}
+      </p>
+      <div class="mt-7 flex justify-center">
+        <Button href={localizeHref("/pricing/", lang)} size="lg" variant="secondary" icon="arrow">{c.investment.cta}</Button>
+      </div>
+    </div>
+  </Section>
+
+  <!-- FAQ -->
+  <Section
+    eyebrow={c.faqTeaser.eyebrow}
+    title={c.faqTeaser.title}
+    lead={c.faqTeaser.lead}
+    center
+  >
+    <FAQ />
+    <div class="mt-8 text-center">
+      <Button href={localizeHref("/faq/", lang)} variant="ghost" icon="arrow">{c.faqTeaser.cta}</Button>
+    </div>
+  </Section>
+
+  <!-- FINAL CTA -->
+  <CTASection
+    title={c.finalCta.title}
+    body={c.finalCta.body}
+    primaryLabel={c.finalCta.primaryLabel}
+    secondaryLabel={c.finalCta.secondaryLabel}
+  />
+</BaseLayout>
+
+<!--
+  Home-page-only background tint. This <style> ships only on the home page, so
+  overriding --surface here darkens the page background without touching other
+  routes. Both themes are nudged a step darker than the global defaults.
+-->
+<style is:global>
+  :root {
+    --surface: #f1f5f9;
+  }
+  .dark {
+    --surface: #06070b;
+  }
+</style>

@@ -140,13 +140,18 @@ export const primaryNav: NavItem[] = [
   { label: "Contact", href: "/contact/" },
 ];
 
-export type Stat = { value: number; suffix: string; label: string };
+// `id` is the stable join key for Step 27 (homepage localization) — the
+// homepage teaser looks up its label in home.json by `id`, never by array
+// position, matching the id-over-position rule Step 19 established for FAQ.
+// `label` stays as the English structural fallback (same safety net as
+// getServices()/getProjects() in i18n/shared.ts).
+export type Stat = { id: string; value: number; suffix: string; label: string };
 
 export const stats: Stat[] = [
-  { value: 40, suffix: "+", label: "Websites Built" },
-  { value: 8, suffix: "+", label: "Years Experience" },
-  { value: 35, suffix: "+", label: "Businesses Served" },
-  { value: 120, suffix: "+", label: "Projects Completed" },
+  { id: "websites", value: 40, suffix: "+", label: "Websites Built" },
+  { id: "years", value: 8, suffix: "+", label: "Years Experience" },
+  { id: "businesses", value: 35, suffix: "+", label: "Businesses Served" },
+  { id: "projects", value: 120, suffix: "+", label: "Projects Completed" },
 ];
 
 /**

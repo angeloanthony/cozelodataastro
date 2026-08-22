@@ -17,6 +17,7 @@ export interface ContentPage {
 }
 
 export const CONTENT_PAGES: ContentPage[] = [
+  { key: "home", slug: "" },
   { key: "why-cozelos-data", slug: "why-cozelos-data" },
   { key: "contact", slug: "contact" },
   { key: "our-approach", slug: "our-approach" },

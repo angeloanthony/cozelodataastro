@@ -2,38 +2,41 @@
 /**
  * Philosophy — the four convictions behind every Cozelos Data build, shown as a
  * deliberate progression from attention to growth.
+ *
+ * Locale-aware (Step 27): props default to the English copy below so this
+ * component is unaffected when no props are passed; HomePage.astro is the
+ * only caller and supplies localized copy from home.json's `philosophy`, plus
+ * `lang` so the CTA's href resolves to /it/our-approach/ where that route
+ * exists.
  */
 import Section from "./Section.astro";
 import Button from "./Button.astro";
+import { getLangFromUrl } from "../data/i18n";
+import { localizeHref } from "../i18n/content";
 
-const pillars = [
-  {
-    n: "01",
-    title: "Beautiful design earns attention.",
-    body: "First impressions happen in milliseconds. Cinematic, intentional design earns the trust to keep someone reading.",
-  },
-  {
-    n: "02",
-    title: "Performance keeps visitors engaged.",
-    body: "Speed is respect. Sub-second loads and seamless motion hold attention instead of testing patience.",
-  },
-  {
-    n: "03",
-    title: "SEO brings customers.",
-    body: "Visibility is the difference between a brochure and a pipeline. We build to be found by the people already searching for you.",
-  },
-  {
-    n: "04",
-    title: "Strategy turns customers into growth.",
-    body: "Design, speed, and search only matter when aimed at outcomes. Every decision ladders up to revenue.",
-  },
-];
+interface Pillar { n: string; title: string; body: string }
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  lead?: string;
+  pillars?: Pillar[];
+  cta?: string;
+}
+const {
+  eyebrow = "Our Philosophy",
+  title = "Four convictions behind every build.",
+  lead = "Great digital work isn't a pile of features. It's a sequence — each layer earning the next.",
+  pillars = [
+    { n: "01", title: "Beautiful design earns attention.", body: "First impressions happen in milliseconds. Cinematic, intentional design earns the trust to keep someone reading." },
+    { n: "02", title: "Performance keeps visitors engaged.", body: "Speed is respect. Sub-second loads and seamless motion hold attention instead of testing patience." },
+    { n: "03", title: "SEO brings customers.", body: "Visibility is the difference between a brochure and a pipeline. We build to be found by the people already searching for you." },
+    { n: "04", title: "Strategy turns customers into growth.", body: "Design, speed, and search only matter when aimed at outcomes. Every decision ladders up to revenue." },
+  ],
+  cta = "See the Cozelos Method",
+} = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
-<Section
-  eyebrow="Our Philosophy"
-  title="Four convictions behind every build."
-  lead="Great digital work isn't a pile of features. It's a sequence — each layer earning the next."
->
+<Section eyebrow={eyebrow} title={title} lead={lead}>
   <div class="grid gap-px overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--border)] sm:grid-cols-2">
     {pillars.map((p, i) => (
       <div
@@ -50,6 +53,6 @@ const pillars = [
     <!-- The Cozelos Method now lives on /our-approach/ (F1 consolidation). The
          label is kept: it is the branded framework name and still describes
          exactly what the destination page leads with. -->
-    <Button href="/our-approach/" variant="secondary" size="lg" icon="arrow">See the Cozelos Method</Button>
+    <Button href={localizeHref("/our-approach/", lang)} variant="secondary" size="lg" icon="arrow">{cta}</Button>
   </div>
 </Section>

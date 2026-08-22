@@ -2,16 +2,47 @@
 /**
  * FounderTeaser — surfaces Ellen Cozelos on the homepage. Her background is one
  * of the brand's biggest credibility assets, so it shouldn't stay buried.
+ *
+ * Locale-aware (Step 27): props default to the English copy below so this
+ * component is unaffected when no props are passed; HomePage.astro is the
+ * only caller and supplies localized copy from home.json's `founder`, plus
+ * `lang` so the CTA's href resolves to /it/ellen-cozelos/.
+ *
+ * Claim-sensitive (Step 26/27 carry-forward): `titles` and `bodyHtml` repeat
+ * the same NASA/DoD/cybersecurity framing already on /company/ and
+ * /ellen-cozelos/, which docs/seo/cozelos-seo-master-context.md §18/§20/§29
+ * flags as unverified/blocked. Translated faithfully here, exactly as
+ * Step 26 handled it on Company — not strengthened, not resolved.
  */
 import { Image } from "astro:assets";
 import Section from "./Section.astro";
 import Button from "./Button.astro";
 import { getImage } from "../lib/images";
+import { getLangFromUrl } from "../data/i18n";
+import { localizeHref } from "../i18n/content";
 
 const officeImg = getImage("CozeloOffice.webp");
-const titles = ["Software Engineer", "Cyber Security Specialist", "AI Professional", "Digital Strategist"];
+
+interface CardContent { name: string; role: string; imageAlt: string }
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  titles?: string[];
+  bodyHtml?: string;
+  cta?: string;
+  card?: CardContent;
+}
+const {
+  eyebrow = "The Leader Behind the Work",
+  title = "Meet Ellen Cozelos.",
+  titles = ["Software Engineer", "Cyber Security Specialist", "AI Professional", "Digital Strategist"],
+  bodyHtml = 'More than 20 years supporting <span class="font-semibold text-[var(--text)]">NASA, Department of Defense programs</span>, and commercial organizations — now bringing that same enterprise standard to businesses like yours. The kind of partner who treats your success as the whole point.',
+  cta = "Learn More",
+  card = { name: "Ellen Cozelos", role: "Founder & Principal", imageAlt: "Cozelos Data — founded by Ellen Cozelos in Vernal, Utah" },
+} = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
-<Section eyebrow="The Leader Behind the Work" title="Meet Ellen Cozelos.">
+<Section eyebrow={eyebrow} title={title}>
   <div class="reveal grid items-center gap-8 rounded-3xl border border-[var(--border)] bg-[var(--surface-2)] p-8 sm:p-10 lg:grid-cols-12">
     <!-- Narrative -->
     <div class="lg:col-span-7">
@@ -20,15 +51,9 @@ const titles = ["Software Engineer", "Cyber Security Specialist", "AI Profession
           <span class="rounded-full bg-[var(--color-brand)]/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wide text-[var(--color-brand)]">{t}</span>
         ))}
       </div>
-      <p class="mt-5 text-lg leading-relaxed text-[var(--text-muted)]">
-        More than 20 years supporting
-        <span class="font-semibold text-[var(--text)]">NASA, Department of Defense programs</span>,
-        and commercial organizations — now bringing that same enterprise standard
-        to businesses like yours. The kind of partner who treats your success as
-        the whole point.
-      </p>
+      <p class="mt-5 text-lg leading-relaxed text-[var(--text-muted)]" set:html={bodyHtml} />
       <div class="mt-6">
-        <Button href="/ellen-cozelos/" variant="secondary" icon="arrow">Learn More</Button>
+        <Button href={localizeHref("/ellen-cozelos/", lang)} variant="secondary" icon="arrow">{cta}</Button>
       </div>
     </div>
 
@@ -38,15 +63,15 @@ const titles = ["Software Engineer", "Cyber Security Specialist", "AI Profession
         <div class="flex items-center gap-4">
           <span class="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--color-brand)] font-display text-lg font-extrabold text-white">EC</span>
           <div>
-            <p class="font-display text-lg font-bold tracking-tight">Ellen Cozelos</p>
-            <p class="text-sm text-[var(--text-muted)]">Founder &amp; Principal</p>
+            <p class="font-display text-lg font-bold tracking-tight">{card.name}</p>
+            <p class="text-sm text-[var(--text-muted)]">{card.role}</p>
           </div>
         </div>
         {officeImg && (
           <div class="mt-5 overflow-hidden rounded-xl border border-[var(--border)]">
             <Image
               src={officeImg}
-              alt="Cozelos Data — founded by Ellen Cozelos in Vernal, Utah"
+              alt={card.imageAlt}
               widths={[400, 600]}
               sizes="(min-width: 1024px) 30vw, 92vw"
               loading="lazy"
