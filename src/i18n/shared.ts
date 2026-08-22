@@ -61,6 +61,13 @@ export interface SharedContent {
    * of silently inheriting the English string.
    */
   schemaDescription: string;
+  /**
+   * Locale-aware Organization/ProfessionalService JSON-LD `slogan`. Read by
+   * Seo.astro instead of a hardcoded English literal (was glossary-pinned
+   * verbatim through Step 31; Rocco reversed that call afterward). Same
+   * pattern as `schemaDescription` above.
+   */
+  slogan: string;
   services: Record<string, { title: string; short: string }>;
   /**
    * Presentation of shared business data. The values themselves live in
