@@ -4,6 +4,10 @@ dist/
 .astro/
 # dependencies
 node_modules/
+# local wrangler state (created by `wrangler pages dev` — see README, Contact form)
+.wrangler/
+# worker secrets for local `wrangler pages dev`
+.dev.vars
 # logs
 npm-debug.log*
 # environment

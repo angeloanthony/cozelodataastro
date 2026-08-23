@@ -1,0 +1,473 @@
+---
+/**
+ * ProjectInquiryForm — the asynchronous lead-capture path on /contact/.
+ *
+ * The page already offered live chat, phone and email. All three require the
+ * visitor to be available when we are. This adds the fourth option: write it
+ * down, send it, get a confirmation. It is ADDITIVE — nothing above it moved.
+ *
+ * COPY: like ContactForm.astro next to it, this component renders on exactly
+ * one page, so every user-facing string is that page's body copy and arrives as
+ * props from src/i18n/content/<locale>/contact.json (playbook principle 7 —
+ * one authoritative source per string). Nothing was added to the chrome
+ * dictionary in src/data/i18n.ts, which is for strings reused across pages.
+ *
+ * PROJECT TYPES: the options are the six services from src/data/site.ts, with
+ * their localized labels joined on `slug` via getServices() — the same join
+ * ServicesGrid and the footer use. No service name is retyped here, so the form
+ * cannot drift from the rest of the site, and no new terminology was invented.
+ * The value POSTed is the slug, never the label.
+ *
+ * SUBMISSION: POST JSON to /api/contact, handled by public/_worker.js (a
+ * Cloudflare Pages Worker scoped to /api/* by public/_routes.json). Validation
+ * happens twice — here for fast, localized feedback, and again on the server,
+ * which trusts nothing from this file.
+ *
+ * The client script is a progressive enhancement layered on a real, semantic
+ * form: real <label>s, real input types, real required attributes.
+ */
+import Button from "./Button.astro";
+import { site } from "../data/site";
+import { getServices } from "../i18n/shared";
+
+interface Props {
+  /** Active locale — POSTed so the notification says which site was used. */
+  lang: string;
+  /** The `inquiry` block of contact.json for this locale. */
+  copy: Record<string, string>;
+}
+const { lang, copy } = Astro.props;
+
+// Localized service labels, keyed by the stable slug that is actually submitted.
+const projectTypes = getServices(lang).map((s) => ({ value: s.slug, label: s.title }));
+
+const field =
+  "w-full rounded-2xl border border-[var(--border-strong)] bg-[var(--surface)] px-4 py-3 text-base text-[var(--text)] placeholder:text-[var(--text-subtle)] transition-colors hover:border-[var(--color-brand)]/50";
+const label = "block text-sm font-semibold tracking-tight text-[var(--text)]";
+const errorText = "mt-1.5 text-sm font-medium text-[var(--color-brand)]";
+---
+<div class="mt-8 border-t border-[var(--border)] pt-8">
+  <h3 id="inquiry-heading" class="font-display text-xl font-bold tracking-tight">{copy.title}</h3>
+  <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{copy.body}</p>
+
+  <form
+    id="project-inquiry"
+    class="mt-6"
+    novalidate
+    aria-labelledby="inquiry-heading"
+    data-inquiry-form
+    data-locale={lang}
+    data-sitekey={site.turnstileSiteKey}
+    data-endpoint="/api/contact"
+  >
+    <div class="grid gap-5 sm:grid-cols-2">
+      <!-- Name -->
+      <div>
+        <label class={label} for="inq-name">
+          {copy.nameLabel} <span class="text-[var(--color-brand)]" aria-hidden="true">*</span>
+        </label>
+        <input
+          id="inq-name"
+          name="name"
+          type="text"
+          required
+          maxlength="100"
+          autocomplete="name"
+          placeholder={copy.namePlaceholder}
+          class={`mt-1.5 ${field}`}
+          data-field="name"
+        />
+        <p id="inq-name-error" class={errorText} data-error-for="name" hidden></p>
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class={label} for="inq-email">
+          {copy.emailLabel} <span class="text-[var(--color-brand)]" aria-hidden="true">*</span>
+        </label>
+        <input
+          id="inq-email"
+          name="email"
+          type="email"
+          inputmode="email"
+          required
+          maxlength="254"
+          autocomplete="email"
+          spellcheck="false"
+          placeholder={copy.emailPlaceholder}
+          class={`mt-1.5 ${field}`}
+          data-field="email"
+        />
+        <p id="inq-email-error" class={errorText} data-error-for="email" hidden></p>
+      </div>
+
+      <!-- Phone (optional — see the worker's note on why it is not required) -->
+      <div>
+        <label class={label} for="inq-phone">
+          {copy.phoneLabel}
+          <span class="font-normal text-[var(--text-subtle)]">({copy.optional})</span>
+        </label>
+        <input
+          id="inq-phone"
+          name="phone"
+          type="tel"
+          inputmode="tel"
+          maxlength="40"
+          autocomplete="tel"
+          placeholder={copy.phonePlaceholder}
+          class={`mt-1.5 ${field}`}
+          data-field="phone"
+        />
+        <p id="inq-phone-error" class={errorText} data-error-for="phone" hidden></p>
+      </div>
+
+      <!-- Project type -->
+      <div>
+        <label class={label} for="inq-project-type">
+          {copy.projectTypeLabel} <span class="text-[var(--color-brand)]" aria-hidden="true">*</span>
+        </label>
+        <select
+          id="inq-project-type"
+          name="projectType"
+          required
+          class={`mt-1.5 ${field}`}
+          data-field="projectType"
+        >
+          <option value="" disabled selected>{copy.projectTypePlaceholder}</option>
+          {projectTypes.map((o) => <option value={o.value}>{o.label}</option>)}
+          <option value="other">{copy.projectTypeOther}</option>
+        </select>
+        <p id="inq-project-type-error" class={errorText} data-error-for="projectType" hidden></p>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="mt-5">
+      <label class={label} for="inq-message">
+        {copy.messageLabel} <span class="text-[var(--color-brand)]" aria-hidden="true">*</span>
+      </label>
+      <textarea
+        id="inq-message"
+        name="message"
+        required
+        rows="5"
+        maxlength="4000"
+        placeholder={copy.messagePlaceholder}
+        class={`mt-1.5 resize-y ${field}`}
+        data-field="message"></textarea>
+      <p id="inq-message-error" class={errorText} data-error-for="message" hidden></p>
+    </div>
+
+    <!--
+      Honeypot. Off-screen rather than display:none so naive bots that read the
+      DOM still fill it; hidden from assistive tech and unreachable by keyboard,
+      so no human ever encounters it. Anything in it means the submission is
+      discarded server-side.
+    -->
+    <div class="absolute h-0 w-0 overflow-hidden" aria-hidden="true">
+      <label for="inq-company-website">Company website</label>
+      <input
+        id="inq-company-website"
+        name="company_website"
+        type="text"
+        tabindex="-1"
+        autocomplete="off"
+      />
+    </div>
+
+    <!-- Cloudflare Turnstile mounts here (rendered explicitly by the script). -->
+    <div class="mt-5" data-turnstile></div>
+
+    <p class="mt-5 text-sm text-[var(--text-subtle)]" set:html={copy.privacyNoteHtml} />
+
+    <div class="mt-6">
+      <Button
+        type="submit"
+        size="lg"
+        id="inq-submit"
+        class="disabled:pointer-events-none disabled:opacity-60"
+      >
+        <span data-submit-label>{copy.submit}</span>
+      </Button>
+    </div>
+
+    <p class={`mt-4 ${errorText}`} data-form-error role="alert" hidden></p>
+  </form>
+
+  <!-- Success panel. Replaces the form once the server confirms receipt. -->
+  <div
+    class="rounded-2xl border border-[var(--color-brand)]/25 bg-[var(--color-brand)]/5 p-6"
+    data-inquiry-success
+    hidden
+  >
+    <p class="font-display text-lg font-bold tracking-tight">{copy.successTitle}</p>
+    <p class="mt-2 text-sm leading-relaxed text-[var(--text-muted)]">{copy.successBody}</p>
+  </div>
+
+  <!-- Persistent live region: announcements need a region already in the DOM. -->
+  <p class="sr-only" role="status" aria-live="polite" data-inquiry-live></p>
+
+  <!-- Localized strings the client script needs, kept out of the JS bundle so
+       the script stays locale-agnostic and the copy stays in contact.json.
+       `<` is escaped as < so no copy string can ever close this tag early. -->
+  <script
+    is:inline
+    type="application/json"
+    data-inquiry-messages
+    set:html={JSON.stringify({
+      sending: copy.sending,
+      submit: copy.submit,
+      success: `${copy.successTitle} ${copy.successBody}`,
+      name: copy.errorName,
+      email: copy.errorEmail,
+      phone: copy.errorPhone,
+      projectType: copy.errorProjectType,
+      message: copy.errorMessage,
+      spam: copy.errorSpam,
+      submitError: copy.errorSubmit,
+    }).replace(/</g, "\\u003c")}
+  />
+</div>
+
+<script>
+  /**
+   * Project-inquiry form behavior.
+   *
+   * Idempotent and re-entrant: Astro's ClientRouter swaps <body> on every
+   * client-side navigation, so this runs on `astro:page-load` and guards each
+   * element it has already wired — the same pattern ContactForm.astro uses.
+   */
+  const TURNSTILE_SRC = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+  const TURNSTILE_ACTION = "contact-inquiry";
+
+  type Messages = Record<string, string>;
+
+  /** Load the Turnstile API once per page load, shared by any widget on it. */
+  function loadTurnstile(): Promise<void> {
+    if (window.turnstile) return Promise.resolve();
+    if (!window.__cfTurnstileLoader) {
+      window.__cfTurnstileLoader = new Promise<void>((resolve, reject) => {
+        const s = document.createElement("script");
+        s.src = TURNSTILE_SRC;
+        s.async = true;
+        s.defer = true;
+        s.onload = () => {
+          // `render=explicit` resolves window.turnstile at load, but poll
+          // briefly rather than assume it — a missing API must not throw.
+          let waited = 0;
+          const poll = window.setInterval(() => {
+            waited += 100;
+            if (window.turnstile) {
+              window.clearInterval(poll);
+              resolve();
+            } else if (waited >= 5000) {
+              window.clearInterval(poll);
+              reject(new Error("turnstile-unavailable"));
+            }
+          }, 100);
+        };
+        s.onerror = () => reject(new Error("turnstile-blocked"));
+        document.head.appendChild(s);
+      });
+    }
+    return window.__cfTurnstileLoader;
+  }
+
+  function init() {
+    document.querySelectorAll<HTMLFormElement>("[data-inquiry-form]").forEach((form) => {
+      if (form.dataset.wired) return;
+      form.dataset.wired = "1";
+
+      const root = form.parentElement!;
+      const sitekey = form.dataset.sitekey || "";
+      const endpoint = form.dataset.endpoint || "/api/contact";
+      const locale = form.dataset.locale || "en";
+
+      const raw = root.querySelector("[data-inquiry-messages]")?.textContent || "{}";
+      let msg: Messages = {};
+      try {
+        msg = JSON.parse(raw) as Messages;
+      } catch {
+        msg = {};
+      }
+
+      const submit = form.querySelector<HTMLButtonElement>("#inq-submit")!;
+      const submitLabel = form.querySelector<HTMLElement>("[data-submit-label]")!;
+      const formError = form.querySelector<HTMLElement>("[data-form-error]")!;
+      const successPanel = root.querySelector<HTMLElement>("[data-inquiry-success]")!;
+      const live = root.querySelector<HTMLElement>("[data-inquiry-live]")!;
+      const turnstileHost = form.querySelector<HTMLElement>("[data-turnstile]")!;
+
+      /* ---- Turnstile ---- */
+      let widgetId: string | undefined;
+      loadTurnstile()
+        .then(() => {
+          widgetId = window.turnstile!.render(turnstileHost, {
+            sitekey,
+            action: TURNSTILE_ACTION,
+            theme: "auto",
+          });
+        })
+        .catch(() => {
+          /* Left unrendered on purpose: submitting without a token is rejected
+             server-side and the visitor gets the security-check message, with
+             the phone/email fallbacks still on the page. */
+        });
+
+      /* ---- field helpers ---- */
+      const fieldEl = (name: string) =>
+        form.querySelector<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>(
+          `[data-field="${name}"]`,
+        );
+
+      function showFieldError(name: string, text: string) {
+        const el = fieldEl(name);
+        const target = form.querySelector<HTMLElement>(`[data-error-for="${name}"]`);
+        if (!el || !target) return;
+        target.textContent = text;
+        target.hidden = false;
+        el.setAttribute("aria-invalid", "true");
+        el.setAttribute("aria-describedby", target.id);
+      }
+
+      function clearFieldError(name: string) {
+        const el = fieldEl(name);
+        const target = form.querySelector<HTMLElement>(`[data-error-for="${name}"]`);
+        if (!el || !target) return;
+        target.textContent = "";
+        target.hidden = true;
+        el.removeAttribute("aria-invalid");
+        el.removeAttribute("aria-describedby");
+      }
+
+      function clearAll() {
+        ["name", "email", "phone", "projectType", "message"].forEach(clearFieldError);
+        formError.hidden = true;
+        formError.textContent = "";
+      }
+
+      // Clearing on input keeps an error from lingering after it is fixed.
+      ["name", "email", "phone", "projectType", "message"].forEach((n) => {
+        const el = fieldEl(n);
+        el?.addEventListener("input", () => clearFieldError(n));
+        el?.addEventListener("change", () => clearFieldError(n));
+      });
+
+      /** Mirrors the server rules in public/_worker.js. The server is the authority. */
+      function validate(values: Record<string, string>): string[] {
+        const bad: string[] = [];
+        if (values.name.length < 2 || values.name.length > 100) bad.push("name");
+        if (
+          !values.email ||
+          values.email.length > 254 ||
+          !/^[^\s@,;:<>"'\\()[\]]+@[^\s@,;:<>"'\\()[\]]+\.[^\s@,;:<>"'\\()[\]]{2,}$/.test(values.email)
+        )
+          bad.push("email");
+        if (values.phone && (values.phone.length > 40 || !/^[0-9+()\-.\s]+$/.test(values.phone)))
+          bad.push("phone");
+        if (!values.projectType) bad.push("projectType");
+        if (values.message.length < 10 || values.message.length > 4000) bad.push("message");
+        return bad;
+      }
+
+      function setBusy(busy: boolean) {
+        submit.disabled = busy;
+        submit.setAttribute("aria-busy", busy ? "true" : "false");
+        submitLabel.textContent = busy ? msg.sending || "…" : msg.submit || "";
+      }
+
+      /* ---- submit ---- */
+      let inFlight = false;
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (inFlight) return; // second guard behind the disabled button
+
+        clearAll();
+
+        const values = {
+          name: (fieldEl("name")?.value || "").trim(),
+          email: (fieldEl("email")?.value || "").trim(),
+          phone: (fieldEl("phone")?.value || "").trim(),
+          projectType: (fieldEl("projectType")?.value || "").trim(),
+          message: (fieldEl("message")?.value || "").trim(),
+        };
+
+        const bad = validate(values);
+        if (bad.length) {
+          bad.forEach((n) => showFieldError(n, msg[n] || ""));
+          fieldEl(bad[0])?.focus();
+          return;
+        }
+
+        const token =
+          widgetId && window.turnstile ? window.turnstile.getResponse(widgetId) || "" : "";
+        if (!token) {
+          formError.textContent = msg.spam || "";
+          formError.hidden = false;
+          return;
+        }
+
+        inFlight = true;
+        setBusy(true);
+
+        try {
+          const res = await fetch(endpoint, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              ...values,
+              company_website: (
+                form.querySelector<HTMLInputElement>("#inq-company-website")?.value || ""
+              ).trim(),
+              locale,
+              turnstileToken: token,
+            }),
+          });
+
+          const data = (await res.json().catch(() => null)) as
+            | { ok?: boolean; error?: string; fields?: string[] }
+            | null;
+
+          if (res.ok && data?.ok) {
+            form.hidden = true;
+            successPanel.hidden = false;
+            live.textContent = msg.success || "";
+            successPanel.scrollIntoView({ behavior: "smooth", block: "center" });
+
+            // Analytics: two non-identifying dimensions only. Name, email,
+            // phone and the message body are NEVER sent to analytics.
+            window.gtag?.("event", "form_submission", {
+              locale,
+              project_type: values.projectType,
+            });
+            return;
+          }
+
+          if (data?.error === "validation" && Array.isArray(data.fields) && data.fields.length) {
+            data.fields.forEach((n) => showFieldError(n, msg[n] || ""));
+            fieldEl(data.fields[0])?.focus();
+          } else if (data?.error === "spam") {
+            formError.textContent = msg.spam || "";
+            formError.hidden = false;
+          } else {
+            formError.textContent = msg.submitError || "";
+            formError.hidden = false;
+          }
+        } catch {
+          // Network failure, offline, blocked request — same friendly fallback.
+          formError.textContent = msg.submitError || "";
+          formError.hidden = false;
+        } finally {
+          inFlight = false;
+          setBusy(false);
+          // Turnstile tokens are single-use: the widget must be reset before
+          // the visitor can try again, or the retry fails verification.
+          if (widgetId && window.turnstile) window.turnstile.reset(widgetId);
+        }
+      });
+    });
+  }
+
+  document.addEventListener("astro:page-load", init);
+</script>

@@ -54,10 +54,72 @@ project in `src/data/site.ts`. The lookup/fallback is handled by
 
 ## Notes
 
-- **Contact form** uses a `mailto:` fallback with client-side validation. To
-  capture submissions server-side, point the form `action` in
-  `src/components/ContactForm.astro` at an endpoint (Formspree, Netlify Forms, etc.).
+- **Project inquiry form** — see "Contact form" below. (`ContactForm.astro`, despite
+  the name, is the live-chat / call CTA block, not a form.)
 - **Dark mode** persists via `localStorage` and respects the OS preference.
 - All animations honor `prefers-reduced-motion`.
 - Build pins Vite to 7.x (see `overrides`) so Tailwind's plugin dedupes with
   Astro 6's bundler.
+
+## Contact form (project inquiry)
+
+`/contact/`, `/it/contact/` and `/es/contact/` carry an asynchronous project
+inquiry form alongside the existing chat / call / email options.
+
+| Piece | Where |
+| --- | --- |
+| Form UI + client script | `src/components/ProjectInquiryForm.astro` |
+| Copy (all three locales) | `src/i18n/content/<locale>/contact.json` → `inquiry` |
+| Server endpoint `POST /api/contact` | `public/_worker.js` |
+| Worker routing (scopes it to `/api/*`) | `public/_routes.json` |
+
+`public/` is copied verbatim into `dist/`, so `_worker.js` and `_routes.json`
+land at the root of the published output — where Cloudflare Pages looks for
+them. Every request outside `/api/*` is served straight from static assets and
+never touches the Worker.
+
+### Required configuration
+
+The form is **off until it is configured**, and renders nothing until then, so a
+half-configured deploy can never show a broken form.
+
+1. **Turnstile widget** — Cloudflare Dashboard → Turnstile → Add widget.
+   Mode `Managed`; domains `cozelosdata.com`, `www.cozelosdata.com`, and
+   `localhost` for local testing. Paste the **site key** into
+   `site.turnstileSiteKey` in `src/data/site.ts` (it is public by design), then
+   rebuild. Keep the **secret key** out of the repository.
+2. **Email Sending** — Cloudflare Dashboard → Compute & AI → Email Service →
+   Email Sending → onboard the sending domain (adds SPF/DKIM records
+   automatically since DNS is already on Cloudflare). Create an API token with
+   the email-sending permission.
+3. **Pages environment** — Pages project `cozelodataastro` → Settings →
+   Variables and Secrets (Production **and** Preview):
+
+   | Name | Type | Value |
+   | --- | --- | --- |
+   | `TURNSTILE_SECRET_KEY` | Secret | Turnstile widget secret |
+   | `CF_EMAIL_API_TOKEN` | Secret | API token with email-sending permission |
+   | `CF_ACCOUNT_ID` | Plaintext | Cloudflare account id |
+   | `CONTACT_FROM_EMAIL` | Plaintext | Sender, on the onboarded domain |
+   | `CONTACT_TO_EMAIL` | Plaintext | Where inquiries are delivered |
+   | `TURNSTILE_HOSTNAMES` | Plaintext | *Optional.* Comma-separated hostname allowlist; defaults to the request's own hostname |
+   | `CONTACT_FROM_NAME` | Plaintext | *Optional.* Display name on the notification |
+
+No secret belongs in this repository, in `src/`, or in client JavaScript. The
+only key that appears in the page HTML is the Turnstile **site** key, which is
+public by design.
+
+### Local testing
+
+```bash
+npm run build
+wrangler pages dev dist --port 8788 \
+  -b TURNSTILE_SECRET_KEY=... -b CF_ACCOUNT_ID=... -b CF_EMAIL_API_TOKEN=... \
+  -b CONTACT_FROM_EMAIL=... -b CONTACT_TO_EMAIL=...
+```
+
+To preview the form's layout before a real widget exists, temporarily set
+`site.turnstileSiteKey` to Cloudflare's always-passes test key
+`1x00000000000000000000AA`. Submissions will still be rejected (the test token
+reports hostname `example.com` and carries no action), which is the correct
+fail-closed behavior — never deploy with a test key.

@@ -14,6 +14,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../PageHero.astro";
 import Section from "../Section.astro";
 import ContactForm from "../ContactForm.astro";
+import ProjectInquiryForm from "../ProjectInquiryForm.astro";
 import Icon from "../Icon.astro";
 import { site } from "../../data/site";
 import { getLangFromUrl, t } from "../../data/i18n";
@@ -85,6 +86,11 @@ const mapQuery = encodeURIComponent(
               callLabel={c.form.callLabel}
               emailNote={c.form.emailNote}
             />
+            {/* Additive fourth path: chat / call / email stay exactly as they
+                were above; this adds the asynchronous written inquiry beneath
+                them. Rendered only once a Turnstile site key is configured —
+                see the note on site.turnstileSiteKey in src/data/site.ts. */}
+            {site.turnstileSiteKey && <ProjectInquiryForm lang={lang} copy={c.inquiry} />}
           </div>
         </div>
       </div>

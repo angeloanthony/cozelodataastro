@@ -34,6 +34,25 @@ export const site = {
   // Paste the full https://buy.stripe.com/... URL here. Leave "" to fall back to
   // the "request a link by email" button. Stripe account: acct_1FW1bTIMRuSrokBY.
   stripePaymentLink: "https://buy.stripe.com/6oU14ocQQ59M0RZ5HObQY03",
+  /**
+   * Cloudflare Turnstile SITE key for the project-inquiry form on /contact/
+   * (Cloudflare Dashboard → Turnstile → Add widget, mode "Managed", domains
+   * cozelosdata.com + www.cozelosdata.com + localhost). Paste the site key here
+   * — it is public by design and is meant to appear in the page HTML. The
+   * matching SECRET key is never stored in this repository: it goes into the
+   * Pages project as the TURNSTILE_SECRET_KEY environment secret.
+   *
+   * Same convention as `stripePaymentLink` above: leave "" and the feature
+   * stays off. With no site key there is no spam protection, so the inquiry
+   * form is not rendered at all and /contact/ behaves exactly as it did before
+   * — chat, call and email only. Shipping an unprotected public form, or one
+   * that always fails on submit, would be worse than shipping none.
+   *
+   * To preview the form locally before the real widget exists, paste
+   * Cloudflare's documented always-passes TEST site key "1x00000000000000000000AA"
+   * — never deploy with it.
+   */
+  turnstileSiteKey: "",
   address: {
     street: "431 East Main St. Suite 201",
     city: "Vernal",
