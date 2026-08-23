@@ -23,7 +23,7 @@ import Guarantees from "../Guarantees.astro";
 import Icon from "../Icon.astro";
 import Button from "../Button.astro";
 import { site, commercialFacts } from "../../data/site";
-import { getLangFromUrl, DEFAULT_LOCALE } from "../../data/i18n";
+import { getLangFromUrl, DEFAULT_LOCALE, t as tNav } from "../../data/i18n";
 import { getPageContent, localizeHref, interp } from "../../i18n/content";
 
 const lang = getLangFromUrl(Astro.url);
@@ -52,7 +52,7 @@ const c = resolvePricingContent(getPageContent<any>("pricing", lang));
 const m = resolvePricingContent(getPageContent<any>("pricing", DEFAULT_LOCALE));
 
 const breadcrumbs = [
-  { name: "Home", href: localizeHref("/", lang) },
+  { name: tNav("nav.home", lang), href: localizeHref("/", lang) },
   { name: c.breadcrumb, href: localizeHref("/pricing/", lang) },
 ];
 

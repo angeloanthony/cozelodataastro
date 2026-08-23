@@ -24,7 +24,7 @@ import Button from "../Button.astro";
 import { Image } from "astro:assets";
 import { site } from "../../data/site";
 import { getImage } from "../../lib/images";
-import { getLangFromUrl } from "../../data/i18n";
+import { getLangFromUrl, t } from "../../data/i18n";
 import { getPageContent, localizeHref } from "../../i18n/content";
 import { getShared } from "../../i18n/shared";
 
@@ -33,7 +33,7 @@ const c = getPageContent<any>("ellen-cozelos", lang);
 const brand = getShared(lang).footer;
 
 const breadcrumbs = [
-  { name: "Home", href: localizeHref("/", lang) },
+  { name: t("nav.home", lang), href: localizeHref("/", lang) },
   { name: c.breadcrumbCompany, href: localizeHref("/company/", lang) },
   { name: c.breadcrumb, href: localizeHref("/ellen-cozelos/", lang) },
 ];

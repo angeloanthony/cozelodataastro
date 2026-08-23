@@ -43,7 +43,7 @@ const c = getPageContent<any>("portfolio", lang);
 const projects = getProjects(lang);
 
 const breadcrumbs = [
-  { name: "Home", href: localizeHref("/", lang) },
+  { name: tChrome("nav.home", lang), href: localizeHref("/", lang) },
   { name: c.breadcrumb, href: localizeHref("/portfolio/", lang) },
 ];
 

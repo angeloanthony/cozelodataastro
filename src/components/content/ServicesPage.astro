@@ -25,7 +25,7 @@ import PageHero from "../PageHero.astro";
 import Section from "../Section.astro";
 import CTASection from "../CTASection.astro";
 import Icon from "../Icon.astro";
-import { getLangFromUrl } from "../../data/i18n";
+import { getLangFromUrl, t as tNav } from "../../data/i18n";
 import { getPageContent, localizeHref, interp } from "../../i18n/content";
 import { getServices } from "../../i18n/shared";
 import { commercialFacts } from "../../data/site";
@@ -35,7 +35,7 @@ const c = getPageContent<any>("services", lang);
 const services = getServices(lang);
 
 const breadcrumbs = [
-  { name: "Home", href: localizeHref("/", lang) },
+  { name: tNav("nav.home", lang), href: localizeHref("/", lang) },
   { name: c.breadcrumb, href: localizeHref("/services/", lang) },
 ];
 

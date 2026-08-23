@@ -13,14 +13,14 @@ import Section from "../Section.astro";
 import CTASection from "../CTASection.astro";
 import Icon from "../Icon.astro";
 import Button from "../Button.astro";
-import { getLangFromUrl } from "../../data/i18n";
+import { getLangFromUrl, t } from "../../data/i18n";
 import { getPageContent, localizeHref } from "../../i18n/content";
 
 const lang = getLangFromUrl(Astro.url);
 const c = getPageContent<any>("why-cozelos-data", lang);
 
 const breadcrumbs = [
-  { name: "Home", href: localizeHref("/", lang) },
+  { name: t("nav.home", lang), href: localizeHref("/", lang) },
   { name: c.breadcrumb, href: localizeHref("/why-cozelos-data/", lang) },
 ];
 ---
