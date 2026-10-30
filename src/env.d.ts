@@ -23,15 +23,6 @@ interface TurnstileApi {
 }
 
 interface Window {
-  Tawk_API?: {
-    maximize?: () => void;
-    minimize?: () => void;
-    toggle?: () => void;
-    onLoad?: () => void;
-    [key: string]: unknown;
-  };
-  Tawk_LoadStart?: Date;
-  __tawkLoaded?: boolean;
   turnstile?: TurnstileApi;
   /** Shared one-shot loader promise for the Turnstile script. */
   __cfTurnstileLoader?: Promise<void>;

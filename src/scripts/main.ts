@@ -266,8 +266,40 @@ function initHeaderState() {
   window.addEventListener("scroll", onScroll, { passive: true });
 }
 
+/* ---- Message links (SMS in the US, WhatsApp elsewhere) -------------------- */
+// The site is static, so the visitor's country comes from Cloudflare's trace
+// endpoint. Links ship as SMS and stay that way if the lookup fails. US
+// territories share the +1 dialing plan, so they count as domestic for texting.
+const SMS_COUNTRIES = ["US", "PR", "GU", "VI", "AS", "MP"];
+let countryLookup: Promise<string | null> | undefined;
+
+function getCountry() {
+  countryLookup ??= fetch("/cdn-cgi/trace")
+    .then((res) => (res.ok ? res.text() : ""))
+    .then((text) => {
+      const code = text.match(/^loc=([A-Z]{2})$/m)?.[1];
+      return code && code !== "XX" ? code : null;
+    })
+    .catch(() => null);
+  return countryLookup;
+}
+
+function initMessageLinks() {
+  getCountry().then((country) => {
+    if (!country || SMS_COUNTRIES.includes(country)) return;
+    document.querySelectorAll<HTMLAnchorElement>("[data-message-link]").forEach((link) => {
+      if (link.dataset.whatsappHref) link.href = link.dataset.whatsappHref;
+      link.target = "_blank";
+      link.rel = "noopener";
+      const label = link.querySelector("[data-message-label]");
+      if (label && link.dataset.whatsappLabel) label.textContent = link.dataset.whatsappLabel;
+    });
+  });
+}
+
 /* ---- Master init ---------------------------------------------------------- */
 function initAll() {
+  initMessageLinks();
   initReveals();
   initCounters();
   initMagnetic();

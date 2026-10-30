@@ -9,6 +9,8 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
+import Icon from "../components/Icon.astro";
+import { site } from "../data/site";
 import { getLangFromUrl, isRtl, LOCALES, t } from "../data/i18n";
 import { hreflangAlternates } from "../i18n/content";
 
@@ -104,52 +106,6 @@ const isMultilingual = alternates.length > 2;
       noindex={noindex}
     />
 
-    <!-- Tawk.to live chat — loaded once, kept alive across View Transitions -->
-    <script is:inline>
-      (function () {
-        // Inject the Tawk widget a single time per full page load.
-        if (!window.__tawkLoaded) {
-          window.__tawkLoaded = true;
-          window.Tawk_API = window.Tawk_API || {};
-          window.Tawk_LoadStart = new Date();
-          var s = document.createElement("script");
-          s.async = true;
-          s.src = "https://embed.tawk.to/6a1d2b484c7c4c1c2e811631/1jq0v254a";
-          s.setAttribute("charset", "UTF-8");
-          s.setAttribute("crossorigin", "*");
-          document.head.appendChild(s);
-        }
-
-        // Tawk injects its widget directly into <body>. Astro's ClientRouter
-        // replaces <body> on every client-side navigation, which would discard
-        // the widget — leaving it broken until a full refresh. So, right before
-        // a navigation swaps the body, move Tawk's nodes into #tawk-root, a
-        // container Astro carries across navigations intact (transition:persist).
-        // We only touch the widget at navigation time, never during normal use,
-        // so the chat behaves exactly as it would on a plain page load.
-        if (!window.__tawkStowBound) {
-          window.__tawkStowBound = true;
-          document.addEventListener("astro:before-swap", function () {
-            var root = document.getElementById("tawk-root");
-            if (!root) return;
-            // Tawk's widget is a <body>-level <div> holding iframes whose src is
-            // blank — and its id/class are randomized on every load, so we match
-            // on structure, not id. The site's own iframes (e.g. the contact-page
-            // map) live inside <main> with real URLs, so they're never caught.
-            var kids = Array.prototype.slice.call(document.body.children);
-            for (var i = 0; i < kids.length; i++) {
-              var el = kids[i];
-              if (el === root || root.contains(el) || el.tagName !== "DIV") continue;
-              var frame = el.querySelector("iframe");
-              if (!frame) continue;
-              var src = frame.getAttribute("src") || "";
-              if (src === "" || src === "about:blank") root.appendChild(el);
-            }
-          });
-        }
-      })();
-    </script>
-
     <!-- Smooth, animated page-to-page navigation -->
     <ClientRouter />
   </head>
@@ -174,13 +130,17 @@ const isMultilingual = alternates.length > 2;
 
     <Footer />
 
-    <!--
-      Persisted home for the Tawk.to chat widget. Astro carries elements with
-      transition:persist across client-side navigations, so the chat (moved in
-      here by the script in <head>) stays alive instead of being wiped on each
-      page change. Keep this present on every page.
-    -->
-    <div id="tawk-root" transition:persist="tawk-root"></div>
+    <!-- Floating message button: SMS in the US, WhatsApp elsewhere (scripts/main.ts) -->
+    <a
+      href={site.smsHref}
+      data-message-link
+      data-whatsapp-href={site.whatsappHref}
+      data-whatsapp-label={t("message.whatsapp", lang)}
+      class="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-full bg-[var(--color-brand)] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[var(--color-brand)]/25 transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-xl"
+    >
+      <Icon name="chat" size={18} />
+      <span data-message-label>{t("message.text", lang)}</span>
+    </a>
 
     <!-- Global interactions -->
     <script>

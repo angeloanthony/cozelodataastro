@@ -30,6 +30,7 @@ export const site = {
   email: "ellen.cozelos@cozelosdata.com",
   emailHref: "mailto:ellen.cozelos@cozelosdata.com",
   smsHref: "sms:+14352195120",
+  whatsappHref: "https://wa.me/14352195120",
   // Stripe-hosted Payment Link (Stripe Dashboard → Payments → Payment Links → Create).
   // Paste the full https://buy.stripe.com/... URL here. Leave "" to fall back to
   // the "request a link by email" button. Stripe account: acct_1FW1bTIMRuSrokBY.

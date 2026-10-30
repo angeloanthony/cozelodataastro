@@ -1,18 +1,14 @@
 ---
 /**
- * ContactForm — the live-chat call-to-action block on /contact/.
+ * ContactForm — the text/call call-to-action block on /contact/.
  *
  * Used by exactly one page, so its copy is that page's body copy: it comes in
  * as props from src/i18n/content/<locale>/contact.json rather than living here
  * (playbook principle 7 — every string has exactly one authoritative source).
  * The props are required on purpose; a default here would be a second source.
- *
- * Documented boundary (playbook §3, "external systems"): the chat itself is
- * Tawk.to, an English-only vendor widget, so the transient "Connecting…" label
- * in the client script below is deliberately not localized. Localizing the
- * label while the widget it opens stays English would be theatre.
  */
 import { site } from "../data/site";
+import { getLangFromUrl, t } from "../data/i18n";
 import Icon from "./Icon.astro";
 
 interface Props {
@@ -22,19 +18,22 @@ interface Props {
   emailNote: string;
 }
 const { intro, chatLabel, callLabel, emailNote } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
 <div class="space-y-6">
   <p class="text-[var(--text-muted)] leading-relaxed">{intro}</p>
 
   <div class="flex flex-wrap items-center gap-4">
-    <button
-      type="button"
-      data-tawk-open
+    <a
+      href={site.smsHref}
+      data-message-link
+      data-whatsapp-href={site.whatsappHref}
+      data-whatsapp-label={t("message.whatsapp", lang)}
       class="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-brand)] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--color-brand)]/25 transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-xl"
     >
       <Icon name="chat" size={18} />
-      <span>{chatLabel}</span>
-    </button>
+      <span data-message-label>{chatLabel}</span>
+    </a>
 
     <a
       href={site.phoneHref}
@@ -52,60 +51,3 @@ const { intro, chatLabel, callLabel, emailNote } = Astro.props;
     <a href={site.emailHref} class="font-medium text-[var(--color-brand)] hover:underline">{site.email}</a>
   </p>
 </div>
-
-<script>
-  // Open the Tawk.to live chat when "Text us now" is clicked.
-  //
-  // Tawk loads asynchronously and only finishes a couple of seconds after the
-  // page is ready, so `maximize` often isn't available on an early click. When
-  // that happens we show a brief loading state and open the chat the moment the
-  // widget finishes loading — rather than bouncing to the SMS link (which would
-  // pop the desktop "pick an app" dialog). SMS is only used as a last resort.
-  document.addEventListener("astro:page-load", () => {
-    document.querySelectorAll<HTMLElement>("[data-tawk-open]").forEach((btn) => {
-      if (btn.dataset.tawkWired) return;
-      btn.dataset.tawkWired = "1";
-
-      const canOpen = () =>
-        typeof window.Tawk_API?.maximize === "function";
-
-      btn.addEventListener("click", () => {
-        // Chat already loaded → open immediately.
-        if (canOpen()) {
-          window.Tawk_API!.maximize!();
-          return;
-        }
-
-        // Not ready yet (Tawk still downloading on a first, uncached visit).
-        // Show a loading state and poll until `maximize` exists — the same
-        // ready state a refresh reaches — then open. We deliberately do NOT
-        // rely on Tawk_API.onLoad here: Tawk captures that callback internally
-        // when it loads, so one assigned after the fact is silently ignored.
-        const label = btn.querySelector("span");
-        const original = label?.textContent ?? "";
-        btn.setAttribute("aria-busy", "true");
-        if (label) label.textContent = "Connecting…";
-
-        const reset = () => {
-          btn.removeAttribute("aria-busy");
-          if (label) label.textContent = original;
-        };
-
-        let waited = 0;
-        const poll = window.setInterval(() => {
-          waited += 250;
-          if (canOpen()) {
-            window.clearInterval(poll);
-            reset();
-            window.Tawk_API!.maximize!();
-          } else if (waited >= 12000) {
-            // Genuinely failed to load (blocked / offline) → SMS fallback.
-            window.clearInterval(poll);
-            reset();
-            window.location.href = "sms:+14352195120";
-          }
-        }, 250);
-      });
-    });
-  });
-</script>

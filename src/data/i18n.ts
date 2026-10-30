@@ -108,6 +108,10 @@ export const strings = {
     "testimonial.prev": "Previous testimonial",
     "testimonial.next": "Next testimonial",
     "testimonial.goTo": "Go to testimonial {n}",
+    // The message links: SMS by default, swapped to WhatsApp client-side for
+    // visitors outside the US (initMessageLinks in scripts/main.ts).
+    "message.text": "Text us",
+    "message.whatsapp": "WhatsApp us",
   },
   it: {
     "nav.home": "Home",
@@ -143,6 +147,8 @@ export const strings = {
     "testimonial.prev": "Testimonianza precedente",
     "testimonial.next": "Testimonianza successiva",
     "testimonial.goTo": "Vai alla testimonianza {n}",
+    "message.text": "Scrivici",
+    "message.whatsapp": "Scrivici su WhatsApp",
   },
   es: {
     "nav.home": "Inicio",
@@ -178,6 +184,8 @@ export const strings = {
     "testimonial.prev": "Testimonio anterior",
     "testimonial.next": "Testimonio siguiente",
     "testimonial.goTo": "Ir al testimonio {n}",
+    "message.text": "Envíenos un texto",
+    "message.whatsapp": "Escríbanos por WhatsApp",
   },
 } as const;
 
