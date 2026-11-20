@@ -112,6 +112,10 @@ export const strings = {
     // visitors outside the US (initMessageLinks in scripts/main.ts).
     "message.text": "Text us",
     "message.whatsapp": "WhatsApp us",
+    // Header "Review us on Google" tab (GoogleReviewBadge.astro). No rating
+    // or review count is shown; the badge only invites a review.
+    "review.badge": "Review us on Google",
+    "review.badgeAria": "Review us on Google (opens in a new tab)",
   },
   it: {
     "nav.home": "Home",
@@ -149,6 +153,8 @@ export const strings = {
     "testimonial.goTo": "Vai alla testimonianza {n}",
     "message.text": "Scrivici",
     "message.whatsapp": "Scrivici su WhatsApp",
+    "review.badge": "Recensiscici su Google",
+    "review.badgeAria": "Recensiscici su Google (si apre in una nuova scheda)",
   },
   es: {
     "nav.home": "Inicio",
@@ -186,6 +192,8 @@ export const strings = {
     "testimonial.goTo": "Ir al testimonio {n}",
     "message.text": "Envíenos un texto",
     "message.whatsapp": "Escríbanos por WhatsApp",
+    "review.badge": "Califíquenos en Google",
+    "review.badgeAria": "Califíquenos en Google (se abre en una pestaña nueva)",
   },
 } as const;
 

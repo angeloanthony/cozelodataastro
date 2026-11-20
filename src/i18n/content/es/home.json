@@ -161,6 +161,7 @@
     "title": "No compraron un sitio web. Construyeron un activo.",
     "reviewPrompt": "¿Trabajó con nosotros? Comparta su experiencia.",
     "reviewCta": "Dejar una Reseña en Google",
+    "reviewAria": "Dejar una reseña en Google (se abre en una pestaña nueva)",
     "items": [
       { "quote": "Nuestro sitio anterior tardaba ocho segundos en cargar y no aparecía en ningún lado. El nuevo carga al instante y por fin estamos recibiendo llamadas de personas que nos encontraron en Google.", "author": "Operador de Tours", "role": "Adventure Tours, Vernal UT" },
       { "quote": "No solo nos entregaron un sitio web — construyeron un sistema. Las reservas, el SEO y la marca trabajan juntos. Parece una empresa diez veces más grande que la nuestra.", "author": "Propietario de Hospitalidad", "role": "Vernal, UT" },

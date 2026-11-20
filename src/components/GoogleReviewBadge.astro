@@ -1,0 +1,127 @@
+---
+/**
+ * GoogleReviewBadge — the small "★★★★★ Review us on Google" tab in the header.
+ *
+ * Sits on the top edge of the glass bar, right-aligned above the theme toggle /
+ * quote button, so it adds no height to the header (--header-h is unchanged)
+ * and never competes with the nav or the wordmark for horizontal space.
+ *
+ * Deliberately shows no rating number or review count: those figures are not
+ * confirmed, so the badge is only an invitation to leave a review. The link is
+ * site.googleReviewHref (Google's write-a-review dialog).
+ *
+ * Motion: the stars flash in a left-to-right chase three times shortly after
+ * the first page load (finished in under 4s), and the chase replays once on
+ * hover/focus. The header is transition:persist'd, so the load chase does not
+ * re-run on every client-side navigation. No motion at all under
+ * prefers-reduced-motion.
+ */
+import { site } from "../data/site";
+import Icon from "./Icon.astro";
+import { getLangFromUrl, t } from "../data/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+<a
+  class="cz-gbadge"
+  href={site.googleReviewHref}
+  target="_blank"
+  rel="noopener"
+  aria-label={t("review.badgeAria", lang)}
+>
+  <span class="cz-gbadge__stars" aria-hidden="true">
+    {Array.from({ length: 5 }).map((_, i) => (
+      <span class="cz-gbadge__star" style={`--cz-i:${i}`}>
+        <Icon name="star" size={13} class="cz-gbadge__icon" />
+      </span>
+    ))}
+  </span>
+  <span class="cz-gbadge__label">{t("review.badge", lang)}</span>
+</a>
+
+<style>
+  .cz-gbadge {
+    /* Hangs across the bar's top border: half above it, half inside. */
+    position: absolute;
+    top: -11px;
+    right: 1rem;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    height: 22px;
+    padding: 0 0.625rem;
+    border: 1px solid var(--border-strong);
+    border-radius: 9999px;
+    background: var(--surface);
+    box-shadow: 0 2px 6px rgb(var(--shadow-color) / 0.08);
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-size: 0.6875rem; /* 11px */
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s var(--ease-spring);
+  }
+  .cz-gbadge:hover,
+  .cz-gbadge:focus-visible {
+    color: var(--color-brand);
+    border-color: var(--color-brand);
+  }
+  .cz-gbadge:focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+  /* The deep brand red is too dark for 11px text on the dark surface. */
+  :global(.dark) .cz-gbadge:hover,
+  :global(.dark) .cz-gbadge:focus-visible {
+    color: var(--color-brand-400);
+    border-color: var(--color-brand-400);
+    outline-color: var(--color-brand-400);
+  }
+
+  .cz-gbadge__stars {
+    display: inline-flex;
+    gap: 1px;
+  }
+  .cz-gbadge__star {
+    display: inline-flex;
+    color: #f5b301; /* Google-review gold */
+  }
+  .cz-gbadge__star :global(.cz-gbadge__icon) {
+    fill: currentColor;
+    stroke: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .cz-gbadge:hover,
+    .cz-gbadge:focus-visible {
+      transform: translateY(-1px);
+    }
+
+    /* Load chase on the wrapper span: 0.8s delay + 0.4s stagger + 3 x 0.9s
+       = finished by ~3.9s, then it stays still for good. */
+    .cz-gbadge__star {
+      animation: cz-gbadge-chase 0.9s ease-in-out calc(0.8s + var(--cz-i) * 0.1s) 3 both;
+    }
+    /* Hover/focus replay on the inner icon, so leaving the badge simply drops
+       this animation instead of restarting the load chase. */
+    .cz-gbadge:hover .cz-gbadge__star :global(.cz-gbadge__icon),
+    .cz-gbadge:focus-visible .cz-gbadge__star :global(.cz-gbadge__icon) {
+      animation: cz-gbadge-chase 0.9s ease-in-out calc(var(--cz-i) * 0.1s) 1 both;
+    }
+  }
+
+  @keyframes cz-gbadge-chase {
+    0%, 40%, 100% {
+      transform: none;
+      filter: none;
+    }
+    18% {
+      transform: scale(1.4) translateY(-1px);
+      filter: brightness(1.2) drop-shadow(0 0 3px rgb(245 179 1 / 0.85));
+    }
+  }
+</style>

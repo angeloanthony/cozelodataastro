@@ -59,7 +59,8 @@ import OurPromise from "../OurPromise.astro";
 import FAQ from "../FAQ.astro";
 import CTASection from "../CTASection.astro";
 import Button from "../Button.astro";
-import { stats, site, commercialFacts } from "../../data/site";
+import GoogleReviewButton from "../GoogleReviewButton.astro";
+import { stats, commercialFacts } from "../../data/site";
 import { getLangFromUrl } from "../../data/i18n";
 import { getPageContent, localizeHref, interp } from "../../i18n/content";
 
@@ -200,10 +201,7 @@ const c = getPageContent<any>("home", lang);
     <Testimonials items={c.testimonials.items} />
     <div class="reveal mt-10 flex flex-col items-center gap-3">
       <p class="text-sm text-[var(--text-muted)]">{c.testimonials.reviewPrompt}</p>
-      <Button href={site.googleReviewHref} variant="secondary" icon="star" external class="animate-attention">
-        <span class="text-[var(--color-brand)]" aria-hidden="true">★★★★★</span>
-        {c.testimonials.reviewCta}
-      </Button>
+      <GoogleReviewButton label={c.testimonials.reviewCta} ariaLabel={c.testimonials.reviewAria} />
     </div>
   </Section>
 
